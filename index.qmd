@@ -1,16 +1,22 @@
 ---
-title: "Appalachian A.I. Corps"
+title: ""
 format:
   html:
-    css: styles.css
+    css: styles-full.css
     toc: false
-    theme: united
+    theme: none
     include-in-header:
       text: |
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 ---
+::: {.custom-navbar}
+<div class="navbar-brand">Appalachian A.I. Corps</div>
+<nav class="navbar-links">
+  [Home](/) | [Modules](#modules) | [Contact](#)
+</nav>
+:::
 
 ::: {.hero}
 ::: {.hero-content}

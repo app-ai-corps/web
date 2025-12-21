@@ -27,5 +27,5 @@ website:
 format:
   html:
     theme: united
-    css: styles.css
+    css: styles-full.css
     toc: false

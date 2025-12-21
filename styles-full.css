@@ -33,10 +33,38 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: var(--smokey);
   background-color: var(--white);
+}
+
+/* Custom Navbar */
+.custom-navbar {
+  background-color: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: var(--valley);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar-links a {
+  color: var(--torch);
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-weight: 600;
+}
+
+.navbar-links a:hover {
+  color: var(--tennessee-orange);
 }
 
 /* Hero Section */
