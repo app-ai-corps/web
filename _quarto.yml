@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Appalachian A.I. Corps"
+  navbar:
+    background: "#00746F"
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Modules"
+        menu:
+          - text: "Water Quality"
+            href: modules/water-quality/
+    right:
+      - text: "About"
+        href: "#"
+      - text: "Contact"
+        href: "#"
+
+format:
+  html:
+    theme: none
+    css: styles.css
+    toc: false

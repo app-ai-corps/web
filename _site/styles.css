@@ -1,0 +1,220 @@
+/* Appalachian A.I. Corps Color Palette */
+:root {
+  /* Primary Colors */
+  --tennessee-orange: #FF8200;
+  --smokey: #58595B;
+  --white: #FFFFFF;
+  
+  /* Accent Colors */
+  --valley: #00746F;
+  --torch: #E05933;
+  --globe: #006C93;
+  --limestone: #F0EDE3;
+  --sunsphere: #FED535;
+  --river: #517C96;
+  --leconte: #8D2048;
+  --rock: #A7A9AC;
+  
+  --summit: #B9E1E2;
+  --legacy: #579594;
+  --buckskin: #705550;
+  --switchgrass: #ABC178;
+  --regalia: #754A7E;
+  --fountain: #2197A9;
+  --eureka: #EBE6A4;
+  --energy: #EE3E80;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--smokey);
+  background-color: var(--white);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--valley) 0%, var(--globe) 100%);
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  color: var(--limestone);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: var(--tennessee-orange);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 130, 0, 0.3);
+}
+
+.btn:hover {
+  background-color: var(--torch);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 130, 0, 0.4);
+  color: var(--white);
+}
+
+/* Modules Section */
+.modules-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.modules-section h2 {
+  font-size: 2.5rem;
+  color: var(--valley);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.module-card {
+  background: var(--white);
+  border: 3px solid var(--valley);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.module-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 116, 111, 0.2);
+  border-color: var(--tennessee-orange);
+}
+
+.module-card h3 {
+  color: var(--globe);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.module-card p {
+  color: var(--smokey);
+  margin-bottom: 1.5rem;
+}
+
+.module-link {
+  display: inline-block;
+  color: var(--tennessee-orange);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.module-link:hover {
+  color: var(--torch);
+}
+
+.coming-soon {
+  background: linear-gradient(135deg, var(--limestone) 0%, var(--summit) 100%);
+  border-color: var(--rock);
+}
+
+.coming-soon h3 {
+  color: var(--smokey);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--smokey);
+  color: var(--limestone);
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footer p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-link {
+  color: var(--sunsphere);
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--tennessee-orange);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1.5rem;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .hero-image {
+    max-width: 300px;
+  }
+  
+  .modules-section h2 {
+    font-size: 2rem;
+  }
+  
+  .module-grid {
+    grid-template-columns: 1fr;
+  }
+}
