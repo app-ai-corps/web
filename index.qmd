@@ -5,14 +5,12 @@ format:
     css: styles-main.css
     toc: false
     theme: none
-    include-in-header:
-      text: |
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 ---
 ::: {.custom-navbar}
-<div class="navbar-brand"><a href="/">Appalachian A.I. Corps</a></div>
+<div class="navbar-brand">
+  <a href="/"><img src="assets/logo.png" alt="AAIC Logo" class="navbar-logo"></a>
+  <span>Appalachian A.I. Corps</span>
+</div>
 <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
 <nav class="navbar-links" id="navbarLinks">
   [Home](/) | [Modules](#modules) | [Contact](#)
