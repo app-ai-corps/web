@@ -81,14 +81,14 @@ body {
 }
 
 .navbar-links a {
-  color: var(--torch);
+  color: var(--globe);
   text-decoration: none;
   margin: 0 1.5rem;
   font-weight: 600;
 }
 
 .navbar-links a:hover {
-  color: var(--tennessee-orange);
+  color: var(--torch);
 }
 
 /* Navbar toggle button - hidden by default */
@@ -305,4 +305,74 @@ body {
   .module-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Modules Page Styles */
+.modules-intro {
+  font-size: 1.25rem;
+  text-align: center;
+  color: var(--smokey);
+  margin: 2rem auto 3rem;
+  max-width: 800px;
+}
+
+.modules-section {
+  padding: 2rem 0 4rem;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.module-card {
+  background: var(--white);
+  border: 3px solid var(--valley);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.module-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 116, 111, 0.2);
+  border-color: var(--tennessee-orange);
+}
+
+.module-card h3 {
+  color: var(--globe);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.module-card p {
+  color: var(--smokey);
+  margin-bottom: 1.5rem;
+}
+
+.module-link {
+  display: inline-block;
+  color: var(--valley);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.module-link:hover {
+  color: var(--globe);
+}
+
+.coming-soon {
+  background: linear-gradient(135deg, var(--limestone) 0%, var(--summit) 100%);
+  border-color: var(--rock);
+}
+
+.coming-soon h3 {
+  color: var(--smokey);
 }
