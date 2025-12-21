@@ -18,6 +18,8 @@ website:
     right:
       - text: "About"
         href: "#"
+      - text: "Modules"
+        href: "#"
       - text: "Contact"
         href: "#"
 
