@@ -5,7 +5,7 @@ project:
 website:
   title: "Appalachian A.I. Corps"
   navbar:
-    logo: assets/logo_white.png
+    logo: assets/logo.png
     logo-alt: "Appalachian A.I. Corps logo." 
     background: "#ffffff"
     foreground: "#00746f"
