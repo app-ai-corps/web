@@ -28,7 +28,7 @@ function toggleMenu() {
 ::: {.hero-content}
 ![](assets/logo_white.png){.hero-image fig-alt="Appalachian A.I. Corps logo"}
 
-## Empowering Appalachia Through Artificial Intelligence
+# Empowering Appalachia Through Artificial Intelligence
 
 The Appalachian A.I. Corps is an initiative dedicated to empowering Appalachian communities to harness artificial intelligence technologies to support their region, communities, and families.
 
