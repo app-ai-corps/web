@@ -23,8 +23,8 @@ website:
       - text: "Contact"
         href: "#"
 
-format:
-  html:
-    theme: united
-    css: styles.css
-    toc: false
+  format:
+    html:
+      theme: united
+      css: styles.css
+      toc: false
