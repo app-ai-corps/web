@@ -114,6 +114,25 @@ body {
 @media (max-width: 768px) {
   .navbar-toggle {
     display: block;
+    z-index: 10;
+    flex-shrink: 0;
+  }
+  
+  .navbar-brand {
+    flex: 1;
+    max-width: calc(100% - 60px);
+    overflow: hidden;
+  }
+  
+  .navbar-logo {
+    height: 16px;
+  }
+  
+  .navbar-brand h1 {
+    font-size: 1.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .navbar-links {
@@ -126,6 +145,7 @@ body {
     flex-direction: column;
     padding: 1rem;
     text-align: center;
+    z-index: 9;
   }
   
   .navbar-links.show {
@@ -332,7 +352,7 @@ body {
 .modules-intro {
   font-size: 1.25rem;
   text-align: center;
-  color: var(--smokey);
+  color: var(--limestone);
   margin: 2rem auto 3rem;
   max-width: 800px;
 }
@@ -351,12 +371,6 @@ body {
   margin-right: auto;
 }
 
-.module-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 116, 111, 0.2);
-  border-color: var(--tennessee-orange);
-}
-
 .module-card {
   background: var(--white);
   border: 3px solid var(--torch);
@@ -365,6 +379,12 @@ body {
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: visible;
+}
+
+.module-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 116, 111, 0.2);
+  border-color: var(--tennessee-orange);
 }
 
 .module-card img {
@@ -403,6 +423,10 @@ body {
   color: var(--globe);
   text-decoration: none;
   transition: color 0.3s ease;
+}
+
+.module-card h3 a:hover {
+  color: var(--valley);
 }
 
 .module-card p {
