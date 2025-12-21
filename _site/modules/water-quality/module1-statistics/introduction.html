@@ -207,7 +207,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="lets-start-simple-meet-python-lists" class="level2">
 <h2 class="anchored" data-anchor-id="lets-start-simple-meet-python-lists">Let’s Start Simple: Meet Python Lists</h2>
 <p>In Python, we store multiple numbers in something called a <strong>list</strong>. It’s like a shopping list, but for data!</p>
-<div id="95b38f4d" class="cell" data-execution_count="1">
+<div id="df7d9dfe" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A list of pH readings (the square brackets [ ] make it a list)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>ph_readings <span class="op">=</span> [<span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.3</span>, <span class="fl">7.0</span>, <span class="fl">7.2</span>]</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -233,7 +233,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBDcmVhdGUgYSBsaXN0IG9m
 <section id="basic-operations-with-lists" class="level2">
 <h2 class="anchored" data-anchor-id="basic-operations-with-lists">Basic Operations with Lists</h2>
 <p>Once we have a list, we can do things with it:</p>
-<div id="9c4e9ac2" class="cell" data-execution_count="2">
+<div id="414b1f28" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Our nitrate readings from 5 rivers (in mg/L)</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>nitrate <span class="op">=</span> [<span class="fl">3.2</span>, <span class="fl">4.1</span>, <span class="fl">3.8</span>, <span class="fl">3.5</span>, <span class="fl">4.0</span>]</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -288,7 +288,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBwSCByZWFkaW5ncyBmcm9t
 <p>Let’s talk about what those pH and nitrate numbers actually mean:</p>
 <section id="ph-scale" class="level3">
 <h3 class="anchored" data-anchor-id="ph-scale">pH Scale</h3>
-<div id="955c03f6" class="cell" data-execution_count="3">
+<div id="6e041eff" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's visualize the pH scale</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -331,7 +331,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBwSCByZWFkaW5ncyBmcm9t
 <figcaption>Nitrate Test Strips</figcaption>
 </figure>
 </div>
-<div id="78a8708f" class="cell" data-execution_count="4">
+<div id="97f2306b" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize nitrate safety levels</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>categories <span class="op">=</span> [<span class="st">'Safe</span><span class="ch">\n</span><span class="st">(&lt; 2 mg/L)'</span>, <span class="st">'Acceptable</span><span class="ch">\n</span><span class="st">(2-5 mg/L)'</span>, <span class="st">'Concerning</span><span class="ch">\n</span><span class="st">(5-10 mg/L)'</span>, <span class="st">'UNSAFE</span><span class="ch">\n</span><span class="st">(&gt; 10 mg/L)'</span>]</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>colors_nitrate <span class="op">=</span> [<span class="st">'green'</span>, <span class="st">'lightgreen'</span>, <span class="st">'yellow'</span>, <span class="st">'red'</span>]</span>
@@ -364,7 +364,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBwSCByZWFkaW5ncyBmcm9t
 <section id="checking-if-water-is-safe" class="level2">
 <h2 class="anchored" data-anchor-id="checking-if-water-is-safe">Checking If Water Is Safe</h2>
 <p>Let’s use Python to check if water is safe:</p>
-<div id="7c714509" class="cell" data-execution_count="5">
+<div id="b3559db9" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's check a pH reading</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>pH_reading <span class="op">=</span> <span class="fl">7.2</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
