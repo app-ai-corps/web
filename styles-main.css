@@ -157,6 +157,10 @@ body {
 .hero-content {
   max-width: 900px;
   margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-image {
@@ -173,6 +177,8 @@ body {
   font-weight: 700;
   color: var(--white);
   line-height: 1.2;
+  text-align: center;
+  max-width: 100%;
 }
 
 .hero p {
