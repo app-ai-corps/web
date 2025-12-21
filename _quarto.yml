@@ -34,3 +34,4 @@ format:
     theme: none
     css: styles-main.css
     toc: false
+    anchor-sections: false
