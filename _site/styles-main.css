@@ -437,3 +437,38 @@ body {
 .coming-soon p {
   padding: 0;
 }
+
+/* Contact Page Styles */
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: var(--white);
+}
+
+.contact-box {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--white);
+  border: 3px solid var(--valley);
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.contact-box h3 {
+  color: var(--globe);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-box p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: var(--smokey);
+}
+
+.email-address {
+  color: var(--valley);
+  font-weight: 600;
+  font-size: 1.2rem;
+}

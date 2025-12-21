@@ -3,9 +3,9 @@ title: ""
 format:
   html:
     css: styles-main.css
-    toc: false
     theme: none
 ---
+
 ::: {.custom-navbar}
 <div class="navbar-brand">
   <a href="/"><img src="assets/logo.png" alt="AAIC Logo" class="navbar-logo"></a>
@@ -24,24 +24,26 @@ function toggleMenu() {
 }
 </script>
 
-::: {.hero}
+::: {.hero .hero-small}
 ::: {.hero-content}
-![](assets/logo_white.png){.hero-image fig-alt="Appalachian A.I. Corps logo"}
+## Get in Touch
 
-## Empowering Appalachia Through Artificial&nbsp;Intelligence
+::: {.modules-intro}
+Have questions about our modules or want to get involved? We'd love to hear from you.
+:::
 
-The Appalachian A.I. Corps is an initiative dedicated to empowering Appalachian communities to harness artificial intelligence technologies to support their region, communities, and families.
-
-We believe that the power of AI should be accessible to all. Through education, collaboration, and practical application, we're building a future where Appalachian communities lead in the intelligent use of technology.
-
-[Explore Our Modules](modules.html){.btn}
 :::
 :::
 
-::: {.logo-section}
-::: {.logo-grid}
-![](assets/tpte_logo.png){.partner-logo-ut fig-alt="University of Tennessee, Knoxville: Department of Theory & Practice in Teacher Education logo"}
-![](assets/aitn_logo.png){.partner-logo-aitn fig-alt="AI Tennessee logo"}
+::: {.contact-section}
+::: {.contact-box}
+
+### Contact Us
+
+For inquiries about the Appalachian A.I. Corps, our educational modules, or opportunities to collaborate, please reach out to us:
+
+**Email:** <span class="email-address">AAIC<span style="display:none">nospam</span>@<span style="display:none">nospam</span>utk.edu</span>
+
 :::
 :::
 
