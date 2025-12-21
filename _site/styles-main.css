@@ -185,10 +185,11 @@ body {
 .btn {
   display: inline-block;
   padding: 1rem 2.5rem;
-  background-color: var(--tennessee-orange);
+  background-color: var(--white);
   color: var(--globe);
   text-decoration: none;
   border-radius: 50px;
+  border: 3px solid var(--tennessee-orange);
   font-weight: 600;
   font-size: 1.1rem;
   transition: all 0.3s ease;
@@ -196,7 +197,8 @@ body {
 }
 
 .btn:hover {
-  background-color: var(--smokey);
+  background-color: var(--tennessee-orange);
+  border: 3px solid var(--tennessee-orange);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
   color: var(--white);
