@@ -359,7 +359,7 @@ body {
 
 .module-card {
   background: var(--white);
-  border: 3px solid var(--valley);
+  border: 3px solid var(--torch);
   border-radius: 12px;
   padding: 2rem;
   transition: all 0.3s ease;
