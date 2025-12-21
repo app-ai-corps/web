@@ -1,0 +1,26 @@
+---
+title: "AAIC Water Quality Education Modules"
+format: html
+---
+
+## Welcome!
+
+These interactive modules teach statistics, machine learning, and data science through water quality monitoring.
+
+### [Module 1: Statistics Fundamentals](module1-statistics/index.qmd)
+Learn mean, median, standard deviation, outliers, and scatterplots using pH and nitrate data.
+
+### Module 2: Predictive Modeling
+*Coming soon!*
+
+### Module 3: Gradient Updates
+*Coming soon!*
+
+### Module 4: Convolutional Neural Networks
+*Coming soon!*
+
+### Module 5: Graphing Sensor Data
+*Coming soon!*
+
+### Module 6: Mapping Data with GIS
+*Coming soon!*

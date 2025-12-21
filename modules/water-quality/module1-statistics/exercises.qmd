@@ -1,0 +1,74 @@
+---
+title: "Practice Exercises"
+format: live-html
+sidebar: module-1
+---
+
+## Put Your Skills to the Test! 🔬
+
+You've learned about mean, median, standard deviation, outliers, and scatterplots. Now it's time to practice with real water quality scenarios!
+
+## The Exercise
+
+We've created **one comprehensive exercise** that covers everything you learned in this module. You'll analyze real water quality data from multiple streams and make recommendations.
+
+**What you'll do:**
+- Calculate means, medians, and standard deviations
+- Identify outliers in sensor data
+- Create scatterplots to find relationships
+- Make decisions about water safety
+
+📊[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ghdU_4MvTRQEDip-2w95S_Whhlqx4Qta?usp=sharing)
+
+## How to Use Google Colab
+
+**First time using Google Colab?** It's easy!
+
+1. Click the link above
+2. Sign in with your Google account (if you aren't already)
+3. Click "Copy to Drive" to save your own copy
+4. Follow the instructions in the notebook
+5. Run code cells by clicking the ▶️ play button
+
+**You don't need to install anything - it all runs in your web browser!**
+
+---
+
+## What to Expect
+
+The exercise notebook includes:
+
+- 📝 Step-by-step instructions
+- 💡 Hints when you need help
+- ✅ Code to check your answers
+- 🎯 Real water quality scenarios
+- 🌊 Data from streams, rivers, and creeks
+
+**Time needed:** About 15-20 minutes
+
+---
+
+## Tips for Success
+
+- Read each question carefully
+- Try the code yourself before looking at hints
+- Run your code often to test it
+- Add comments to explain your thinking
+- Don't worry about making mistakes - that's how you learn!
+
+---
+
+## Need Help?
+
+- Each section has hints you can reveal
+- Example code is provided for tricky parts
+- Ask your teacher or classmates
+- Remember: Getting stuck is part of learning!
+
+---
+
+## Ready?
+
+**[🚀 Start the Exercise Now!](https://colab.research.google.com/drive/1ghdU_4MvTRQEDip-2w95S_Whhlqx4Qta?usp=sharing)**
+
+After you complete this exercise, you'll be ready to analyze your own water quality data from sensor buoys! 🎉

@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Water Quality"
+  navbar:
+    logo: aaic_letters.png
+    logo-alt: "Appalachian A.I. Corps logo."  
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Modules"
+        menu:
+          - text: "Module 1: Statistics"
+            href: module1-statistics/index.qmd
+          - text: "Module 2: Predictive Modeling"
+            href: module2-predictive-modeling/index.qmd
+          - text: "Module 3: Gradient Updates"
+            href: module3-gradient-updates/index.qmd
+          - text: "Module 4: CNNs"
+            href: module4-cnn/index.qmd
+          - text: "Module 5: Sensor Data"
+            href: module5-sensor-data/index.qmd
+          - text: "Module 6: GIS Mapping"
+            href: module6-gis/index.qmd
+
+  sidebar:
+    - id: module-1
+      title: "Module 1: Statistics"
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+        - module1-statistics/index.qmd
+        - text: "1. Introduction"
+          href: module1-statistics/introduction.qmd
+        - text: "2. Mean and SD"
+          href: module1-statistics/mean-sd.qmd
+        - text: "3. Median and Range"
+          href: module1-statistics/median-range.qmd
+        - text: "4. Outliers"
+          href: module1-statistics/outliers.qmd
+        - text: "5. Scatterplots"
+          href: module1-statistics/scatterplots.qmd
+        - text: "6. Exercises"
+          href: module1-statistics/exercises.qmd
+
+
+format:
+  html:
+    theme: united
+    toc: true
+    toc-location: right
+  live-html:
+    theme: united
+    toc: true
+    toc-location: right
