@@ -28,7 +28,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabby.min.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html-435ba6093e6f0817aa7405139811e7b1.min.css" rel="stylesheet" append-hash="true" data-mode="light">
@@ -49,7 +48,10 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="custom-navbar">
 <div class="navbar-brand">
-<p><a href="./"><img src="assets/logo.png" alt="AAIC Logo" class="navbar-logo"></a> <span>Appalachian A.I. Corps</span></p>
+<a href="./"><img src="assets/logo.png" alt="AAIC Logo" class="navbar-logo"></a>
+<h1>
+Appalachian A.I. Corps
+</h1>
 </div>
 <button class="navbar-toggle" onclick="toggleMenu()">
 ☰
@@ -64,9 +66,9 @@ function toggleMenu() {
   nav.classList.toggle('show');
 }
 </script>
-<div class="hero">
+<div class="hero hero-small">
 <section id="our-modules" class="hero-content">
-<h2 class="anchored">Our Modules</h2>
+<h2>Our Modules</h2>
 <div class="modules-intro">
 <p>Explore our educational modules designed to empower Appalachian communities through AI and technology.</p>
 </div>
@@ -75,12 +77,14 @@ function toggleMenu() {
 <div class="modules-section">
 <div class="module-grid">
 <section id="water-quality-monitoring" class="module-card">
-<h3 class="anchored">Water Quality Monitoring</h3>
+<h3>Water Quality Monitoring</h3>
+<p><a title="Brian Stansberry, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Nolichucky-river-shoals-tn1.jpg"><img width="512" alt="Photo of Shoals in Nolichucky River" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Nolichucky-river-shoals-tn1.jpg/512px-Nolichucky-river-shoals-tn1.jpg?20150127003031"></a></p>
 <p>Leveraging AI to monitor and protect Appalachian water resources.</p>
+<p><em>Intended for 9th-12th grade students.</em></p>
 <p><a href="modules/water-quality/" class="module-link">Learn More</a></p>
 </section>
 <section id="more-modules-coming-soon" class="module-card coming-soon">
-<h3 class="anchored">More Modules Coming Soon</h3>
+<h3>More Modules Coming Soon</h3>
 <p>We’re continuously developing new initiatives to serve our communities.</p>
 </section>
 </div>
@@ -88,7 +92,7 @@ function toggleMenu() {
 <div class="footer">
 <div class="footer-columns">
 <div class="footer-left">
-<p><img src="assets/logo_white.png" class="footer-logo img-fluid"></p>
+<p><img src="assets/logo_white.png" class="footer-logo img-fluid" alt="AAIC logo"></p>
 <p><strong>Appalachian A.I. Corps</strong><br>
 Empowering Appalachia Through Artificial Intelligence</p>
 </div>
@@ -108,13 +112,6 @@ Knoxville, TN</p>
     tabsets.forEach(function(tabset) {
       const tabby = new Tabby('#' + tabset.id);
     });
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

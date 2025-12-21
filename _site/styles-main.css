@@ -154,6 +154,11 @@ body {
   justify-content: center;
 }
 
+.hero-small {
+  min-height: auto;
+  padding: 7rem 2rem 3rem 2rem;
+}
+
 .hero-content {
   max-width: 900px;
   margin: 0 auto;
@@ -350,9 +355,10 @@ body {
   background: var(--white);
   border: 3px solid var(--valley);
   border-radius: 12px;
-  padding: 2rem;
+  padding: 0;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .module-card:hover {
@@ -361,15 +367,36 @@ body {
   border-color: var(--tennessee-orange);
 }
 
+.module-card {
+  background: var(--white);
+  border: 3px solid var(--valley);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+}
+
+.module-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
 .module-card h3 {
   color: var(--globe);
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0;
+  padding: 0;
 }
 
 .module-card p {
   color: var(--smokey);
   margin-bottom: 1.5rem;
+  padding: 0;
 }
 
 .module-link {
@@ -387,8 +414,14 @@ body {
 .coming-soon {
   background: linear-gradient(135deg, var(--limestone) 0%, var(--summit) 100%);
   border-color: var(--rock);
+  padding: 2rem;
 }
 
 .coming-soon h3 {
   color: var(--smokey);
+  padding: 0;
+}
+
+.coming-soon p {
+  padding: 0;
 }

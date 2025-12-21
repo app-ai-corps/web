@@ -9,7 +9,7 @@ format:
 ::: {.custom-navbar}
 <div class="navbar-brand">
   <a href="/"><img src="assets/logo.png" alt="AAIC Logo" class="navbar-logo"></a>
-  <span>Appalachian A.I. Corps</span>
+  <h1>Appalachian A.I. Corps</h1>
 </div>
 <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
 <nav class="navbar-links" id="navbarLinks">
@@ -24,7 +24,7 @@ function toggleMenu() {
 }
 </script>
 
-::: {.hero}
+::: {.hero .hero-small}
 ::: {.hero-content}
 ## Our Modules
 
@@ -40,7 +40,12 @@ Explore our educational modules designed to empower Appalachian communities thro
 ::: {.module-grid}
 ::: {.module-card}
 ### Water Quality Monitoring
-Leveraging AI to monitor and protect Appalachian water resources.
+
+<a title="Brian Stansberry, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Nolichucky-river-shoals-tn1.jpg"><img width="512" alt="Photo of Shoals in Nolichucky River" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Nolichucky-river-shoals-tn1.jpg/512px-Nolichucky-river-shoals-tn1.jpg?20150127003031"></a>
+
+Leveraging AI to monitor and protect Appalachian water resources.  
+
+*Intended for 9th-12th grade students.*
 
 [Learn More](modules/water-quality/){.module-link}
 :::
@@ -55,7 +60,7 @@ We're continuously developing new initiatives to serve our communities.
 ::: {.footer}
 ::: {.footer-columns}
 ::: {.footer-left}
-![](assets/logo_white.png){.footer-logo}
+![](assets/logo_white.png){.footer-logo fig-alt="AAIC logo"}
 
 **Appalachian A.I. Corps**  
 Empowering Appalachia Through Artificial Intelligence
