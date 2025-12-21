@@ -33,7 +33,7 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: var(--smokey);
   background-color: var(--white);
