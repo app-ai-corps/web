@@ -448,7 +448,7 @@ body {
   max-width: 700px;
   margin: 0 auto;
   background: var(--white);
-  border: 3px solid var(--valley);
+  border: 3px solid var(--torch);
   border-radius: 12px;
   padding: 3rem;
   text-align: center;
