@@ -83,7 +83,7 @@ body {
   display: inline-block;
   padding: 1rem 2.5rem;
   background-color: var(--tennessee-orange);
-  color: var(--smokey);
+  color: var(--globe);
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
@@ -93,10 +93,10 @@ body {
 }
 
 .btn:hover {
-  background-color: var(--torch);
+  background-color: var(--smokey);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(255, 130, 0, 0.4);
-  color: var(--smokey);
+  color: var(--white);
 }
 
 /* Modules Section */
@@ -148,7 +148,7 @@ body {
 
 .module-link {
   display: inline-block;
-  color: var(--valley);
+  color: var(--torch);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
