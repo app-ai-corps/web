@@ -1,0 +1,695 @@
+[
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "",
+    "text": "A scatterplot is a graph that shows if two things are related to each other.\nExample questions we can answer: - When pH goes up, does nitrate go up too? - When it rains more, does the creek get more polluted? - Are temperature and pH connected?\nEach dot on a scatterplot represents one measurement where you recorded BOTH values."
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#what-is-a-scatterplot",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#what-is-a-scatterplot",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "",
+    "text": "A scatterplot is a graph that shows if two things are related to each other.\nExample questions we can answer: - When pH goes up, does nitrate go up too? - When it rains more, does the creek get more polluted? - Are temperature and pH connected?\nEach dot on a scatterplot represents one measurement where you recorded BOTH values."
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#why-scatterplots-matter-for-water-quality",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#why-scatterplots-matter-for-water-quality",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "Why Scatterplots Matter for Water Quality",
+    "text": "Why Scatterplots Matter for Water Quality\nWhen you monitor streams, you’re measuring multiple things at once: - pH - Nitrate - Temperature - Dissolved oxygen - Turbidity (cloudiness)\nThe big question: Are any of these connected to each other?\nScatterplots help you discover relationships you might not see in a table of numbers!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#your-first-scatterplot",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#your-first-scatterplot",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "Your First Scatterplot",
+    "text": "Your First Scatterplot\nLet’s say scientists measured pH and nitrate in a creek on 8 different days. Let’s see if they’re related:\n\nimport matplotlib.pyplot as plt\n\n# Example: pH and nitrate measurements from the same days\nph_values = [7.0, 7.2, 7.1, 7.3, 7.2, 7.4, 7.1, 7.3]\nnitrate_values = [2.1, 2.8, 2.3, 3.2, 2.9, 3.5, 2.4, 3.1]\n\n# Create a scatterplot\nplt.figure(figsize=(10, 6))\nplt.scatter(ph_values, nitrate_values, s=150, alpha=0.7, edgecolors='black', color='blue')\nplt.xlabel('pH', fontsize=12)\nplt.ylabel('Nitrate (mg/L)', fontsize=12)\nplt.title('Does pH Relate to Nitrate?', fontsize=14)\nplt.grid(True, alpha=0.3)\nplt.show()\n\nprint(\"Each dot represents one day of measurements\")\nprint(\"pH values:\", ph_values)\nprint(\"Nitrate values:\", nitrate_values)\n\n\n\n\n\n\n\n\nEach dot represents one day of measurements\npH values: [7.0, 7.2, 7.1, 7.3, 7.2, 7.4, 7.1, 7.3]\nNitrate values: [2.1, 2.8, 2.3, 3.2, 2.9, 3.5, 2.4, 3.1]\n\n\nWhat do you see? As pH goes up, nitrate tends to go up too! That’s a relationship!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#types-of-relationships",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#types-of-relationships",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "Types of Relationships",
+    "text": "Types of Relationships\nThere are three main patterns you might see:\n\n1. Positive Relationship ↗️\nWhen one goes up, the other goes up too\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Example: Temperature vs Algae Growth\n# (Warmer water = More algae)\ntemperature = [15, 18, 20, 22, 25, 27, 30, 32]\nalgae = [5, 8, 12, 15, 22, 28, 38, 45]\n\nplt.figure(figsize=(10, 6))\nplt.scatter(temperature, algae, s=150, alpha=0.7, edgecolors='black', color='green')\nplt.xlabel('Water Temperature (°C)', fontsize=12)\nplt.ylabel('Algae Count', fontsize=12)\nplt.title('Positive Relationship: Both Go Up Together', fontsize=14)\nplt.grid(True, alpha=0.3)\nplt.show()\n\nprint(\"As temperature increases, algae increases!\")\nprint(\"This is a POSITIVE relationship ↗️\")\n\n\n\n\n\n\n\n\nAs temperature increases, algae increases!\nThis is a POSITIVE relationship ↗️\n\n\n\n\n2. Negative Relationship ↘️\nWhen one goes up, the other goes down\n\nimport matplotlib.pyplot as plt\n\n# Example: pH vs Fish Population\n# (Too high pH = Fewer fish can survive)\nph_levels = [6.5, 6.8, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5]\nfish_count = [45, 42, 40, 35, 28, 20, 12, 5]\n\nplt.figure(figsize=(10, 6))\nplt.scatter(ph_levels, fish_count, s=150, alpha=0.7, edgecolors='black', color='orange')\nplt.xlabel('pH Level', fontsize=12)\nplt.ylabel('Fish Count', fontsize=12)\nplt.title('Negative Relationship: One Goes Up, Other Goes Down', fontsize=14)\nplt.grid(True, alpha=0.3)\nplt.show()\n\nprint(\"As pH increases, fish count decreases!\")\nprint(\"This is a NEGATIVE relationship ↘️\")\n\n\n\n\n\n\n\n\nAs pH increases, fish count decreases!\nThis is a NEGATIVE relationship ↘️\n\n\n\n\n3. No Relationship (Random) 🤷\nThe dots are all over the place - no pattern!\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Example: pH vs Day of the Week\n# (These probably aren't related!)\nnp.random.seed(42)\nday_of_week = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nph_random = [7.2, 7.0, 7.3, 7.1, 7.2, 7.3, 7.1, 7.0, 7.2, 7.1]\n\nplt.figure(figsize=(10, 6))\nplt.scatter(day_of_week, ph_random, s=150, alpha=0.7, edgecolors='black', color='purple')\nplt.xlabel('Day Number', fontsize=12)\nplt.ylabel('pH', fontsize=12)\nplt.title('No Relationship: Just Random!', fontsize=14)\nplt.grid(True, alpha=0.3)\nplt.show()\n\nprint(\"No pattern here - pH doesn't depend on day number!\")\nprint(\"This is NO relationship 🤷\")\n\n\n\n\n\n\n\n\nNo pattern here - pH doesn't depend on day number!\nThis is NO relationship 🤷"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#try-it-create-your-own-scatterplot",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#try-it-create-your-own-scatterplot",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "Try It: Create Your Own Scatterplot",
+    "text": "Try It: Create Your Own Scatterplot"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#adding-a-trend-line",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#adding-a-trend-line",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "Adding a Trend Line",
+    "text": "Adding a Trend Line\nA trend line (also called a “line of best fit”) helps you see the pattern more clearly:\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Example data: Stream temperature vs dissolved oxygen\ntemperature = [10, 15, 20, 25, 30, 35]\noxygen = [11.0, 10.2, 9.0, 7.8, 6.5, 5.2]\n\n# Create scatterplot\nplt.figure(figsize=(10, 6))\nplt.scatter(temperature, oxygen, s=150, alpha=0.7, edgecolors='black', color='red')\n\n# Add trend line\nz = np.polyfit(temperature, oxygen, 1)  # Calculate line\np = np.poly1d(z)\nplt.plot(temperature, p(temperature), \"r--\", linewidth=2, label='Trend line')\n\nplt.xlabel('Temperature (°C)', fontsize=12)\nplt.ylabel('Dissolved Oxygen (mg/L)', fontsize=12)\nplt.title('Temperature vs Oxygen (with Trend Line)', fontsize=14)\nplt.legend(fontsize=11)\nplt.grid(True, alpha=0.3)\nplt.show()\n\nprint(\"The red dashed line shows the overall trend\")\nprint(\"Warmer water holds less oxygen!\")\n\n\n\n\n\n\n\n\nThe red dashed line shows the overall trend\nWarmer water holds less oxygen!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#correlation-measuring-how-strong-the-relationship-is",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#correlation-measuring-how-strong-the-relationship-is",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "Correlation: Measuring How Strong the Relationship Is",
+    "text": "Correlation: Measuring How Strong the Relationship Is\nScientists use a number called correlation (represented by “r”) to measure how strong a relationship is.\nCorrelation values: - r = +1: Perfect positive relationship (all dots on a line going up) - r = 0: No relationship (dots everywhere) - r = -1: Perfect negative relationship (all dots on a line going down)\n\nimport numpy as np\n\n# Example: Calculate correlation for pH and nitrate\nph = [7.0, 7.2, 7.1, 7.3, 7.2, 7.4, 7.1, 7.3]\nnitrate = [2.1, 2.8, 2.3, 3.2, 2.9, 3.5, 2.4, 3.1]\n\n# Calculate correlation\ncorrelation = np.corrcoef(ph, nitrate)[0, 1]\n\nprint(f\"Correlation (r) = {correlation:.3f}\")\n\nif correlation &gt; 0.7:\n    print(\"Strong positive relationship!\")\nelif correlation &gt; 0.3:\n    print(\"Moderate positive relationship\")\nelif correlation &gt; -0.3:\n    print(\"Weak or no relationship\")\nelif correlation &gt; -0.7:\n    print(\"Moderate negative relationship\")\nelse:\n    print(\"Strong negative relationship!\")\n\nCorrelation (r) = 0.989\nStrong positive relationship!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#visualizing-different-correlation-strengths",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#visualizing-different-correlation-strengths",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "Visualizing Different Correlation Strengths",
+    "text": "Visualizing Different Correlation Strengths\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Create examples with different correlations\nnp.random.seed(42)\n\nfig, axes = plt.subplots(2, 3, figsize=(15, 10))\n\ncorrelations = [1.0, 0.8, 0.4, 0.0, -0.4, -0.9]\ntitles = ['Perfect Positive\\n(r = 1.0)', 'Strong Positive\\n(r ≈ 0.8)', \n          'Weak Positive\\n(r ≈ 0.4)', 'No Relationship\\n(r ≈ 0.0)',\n          'Weak Negative\\n(r ≈ -0.4)', 'Strong Negative\\n(r ≈ -0.9)']\n\nfor idx, (ax, target_r, title) in enumerate(zip(axes.flat, correlations, titles)):\n    # Generate correlated data\n    x = np.random.normal(0, 1, 30)\n    if target_r == 0:\n        y = np.random.normal(0, 1, 30)\n    else:\n        noise = np.random.normal(0, np.sqrt(1 - target_r**2), 30)\n        y = target_r * x + noise\n    \n    actual_r = np.corrcoef(x, y)[0, 1]\n    \n    ax.scatter(x, y, alpha=0.6, s=50, edgecolors='black')\n    ax.set_title(f'{title}\\nActual r = {actual_r:.2f}', fontsize=10)\n    ax.grid(True, alpha=0.3)\n    \n    # Add trend line if there's correlation\n    if abs(target_r) &gt; 0.1:\n        z = np.polyfit(x, y, 1)\n        p = np.poly1d(z)\n        x_sorted = np.sort(x)\n        ax.plot(x_sorted, p(x_sorted), \"r--\", linewidth=2, alpha=0.7)\n\nplt.tight_layout()\nplt.show()\n\nprint(\"Notice:\")\nprint(\"- Strong correlation = Dots close to the line\")\nprint(\"- Weak correlation = Dots scattered\")\nprint(\"- No correlation = Complete scatter, no pattern\")\n\n\n\n\n\n\n\n\nNotice:\n- Strong correlation = Dots close to the line\n- Weak correlation = Dots scattered\n- No correlation = Complete scatter, no pattern"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#important-correlation-does-not-mean-causation",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#important-correlation-does-not-mean-causation",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "Important: Correlation Does NOT Mean Causation!",
+    "text": "Important: Correlation Does NOT Mean Causation!\n⚠️ BIG WARNING: Just because two things are correlated doesn’t mean one CAUSES the other!\nExample: Ice cream sales and drowning deaths are correlated (both go up in summer). But ice cream doesn’t CAUSE drowning! 🍦≠💀\n\nimport matplotlib.pyplot as plt\n\n# Example: Ice cream sales and drowning incidents\n# Both increase in summer, but ice cream doesn't cause drowning!\nmonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']\nice_cream_sales = [10, 12, 20, 35, 60, 85, 100, 95, 70, 40, 25, 15]\ndrownings = [1, 1, 2, 3, 7, 11, 14, 13, 9, 4, 2, 1]\n\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))\n\n# Line plot over time\nax1.plot(months, ice_cream_sales, marker='o', label='Ice Cream Sales', linewidth=2)\nax1.plot(months, drownings, marker='s', label='Drowning Incidents', linewidth=2)\nax1.set_xlabel('Month', fontsize=11)\nax1.set_ylabel('Count', fontsize=11)\nax1.set_title('Both Increase in Summer!', fontsize=12)\nax1.legend()\nax1.tick_params(axis='x', rotation=45)\nax1.grid(True, alpha=0.3)\n\n# Scatterplot\nax2.scatter(ice_cream_sales, drownings, s=150, alpha=0.7, edgecolors='black', color='orange')\nax2.set_xlabel('Ice Cream Sales', fontsize=11)\nax2.set_ylabel('Drowning Incidents', fontsize=11)\nax2.set_title('High Correlation... But No Causation!', fontsize=12)\nax2.grid(True, alpha=0.3)\n\nplt.tight_layout()\nplt.show()\n\ncorrelation = np.corrcoef(ice_cream_sales, drownings)[0, 1]\nprint(f\"Correlation: {correlation:.3f} (very strong!)\")\nprint(\"\\nBut ice cream doesn't cause drowning!\")\nprint(\"The REAL cause: WARM WEATHER\")\nprint(\"Warm weather → People buy ice cream\")\nprint(\"Warm weather → People go swimming → More drowning risk\")\n\n\n\n\n\n\n\n\nCorrelation: 0.994 (very strong!)\n\nBut ice cream doesn't cause drowning!\nThe REAL cause: WARM WEATHER\nWarm weather → People buy ice cream\nWarm weather → People go swimming → More drowning risk\n\n\nThe hidden factor (warm weather) is called a “confounding variable”"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#water-quality-examples",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#water-quality-examples",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "Water Quality Examples",
+    "text": "Water Quality Examples\n\nExample 1: Rainfall and Nitrate\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Example: More rain might wash fertilizer into the creek\nrainfall = [0, 5, 10, 15, 20, 25, 30, 35, 40]\nnitrate = [2.0, 2.3, 2.8, 3.5, 4.2, 5.1, 6.0, 6.8, 7.5]\n\nplt.figure(figsize=(10, 6))\nplt.scatter(rainfall, nitrate, s=150, alpha=0.7, edgecolors='black', color='brown')\n\n# Add trend line\nz = np.polyfit(rainfall, nitrate, 1)\np = np.poly1d(z)\nplt.plot(rainfall, p(rainfall), \"r--\", linewidth=2, label='Trend line')\n\nplt.axhline(y=10, color='red', linestyle=':', linewidth=2, alpha=0.5, label='EPA limit (10 mg/L)')\nplt.xlabel('Rainfall (mm)', fontsize=12)\nplt.ylabel('Nitrate (mg/L)', fontsize=12)\nplt.title('Rainfall vs Nitrate Levels', fontsize=14)\nplt.legend(fontsize=11)\nplt.grid(True, alpha=0.3)\nplt.show()\n\ncorrelation = np.corrcoef(rainfall, nitrate)[0, 1]\nprint(f\"Correlation: {correlation:.3f}\")\nprint(\"\\nInterpretation: More rain = More nitrate\")\nprint(\"Why? Rain washes fertilizer from farms into the creek!\")\n\n\n\n\n\n\n\n\nCorrelation: 0.993\n\nInterpretation: More rain = More nitrate\nWhy? Rain washes fertilizer from farms into the creek!\n\n\n\n\nExample 2: Temperature and pH\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Example: Temperature might affect pH slightly\ntemperature = [10, 12, 15, 18, 20, 22, 25, 28, 30]\nph = [7.4, 7.3, 7.2, 7.1, 7.0, 6.9, 6.8, 6.7, 6.6]\n\nplt.figure(figsize=(10, 6))\nplt.scatter(temperature, ph, s=150, alpha=0.7, edgecolors='black', color='red')\n\n# Add trend line\nz = np.polyfit(temperature, ph, 1)\np = np.poly1d(z)\nplt.plot(temperature, p(temperature), \"b--\", linewidth=2, label='Trend line')\n\nplt.axhline(y=6.5, color='green', linestyle=':', alpha=0.5, label='Safe pH range')\nplt.axhline(y=8.5, color='green', linestyle=':', alpha=0.5)\nplt.xlabel('Temperature (°C)', fontsize=12)\nplt.ylabel('pH', fontsize=12)\nplt.title('Temperature vs pH', fontsize=14)\nplt.legend(fontsize=11)\nplt.grid(True, alpha=0.3)\nplt.ylim(6, 8)\nplt.show()\n\ncorrelation = np.corrcoef(temperature, ph)[0, 1]\nprint(f\"Correlation: {correlation:.3f}\")\nprint(\"\\nInterpretation: Higher temperature = Slightly lower pH\")\nprint(\"Why? Warmer water can affect chemical reactions!\")\n\n\n\n\n\n\n\n\nCorrelation: -0.999\n\nInterpretation: Higher temperature = Slightly lower pH\nWhy? Warmer water can affect chemical reactions!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#try-it-find-your-own-relationships",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#try-it-find-your-own-relationships",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "Try It: Find Your Own Relationships",
+    "text": "Try It: Find Your Own Relationships"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#your-future-real-buoy-data-scatterplots",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#your-future-real-buoy-data-scatterplots",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "Your Future: Real Buoy Data Scatterplots",
+    "text": "Your Future: Real Buoy Data Scatterplots\nWhen you deploy sensor buoys, you’ll collect MANY variables at once: - pH - Nitrate - Temperature - Dissolved Oxygen - Turbidity (cloudiness) - Conductivity\nYou can make scatterplots to discover: - Which factors are connected? - What affects water quality the most? - When do pollution events happen? - How do different measurements relate?\nThis is how real scientists find patterns in environmental data! 🌊🔬"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#quick-reference-making-scatterplots",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#quick-reference-making-scatterplots",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "Quick Reference: Making Scatterplots",
+    "text": "Quick Reference: Making Scatterplots\nimport matplotlib.pyplot as plt\n\n# Your data\nx_values = [1, 2, 3, 4, 5]\ny_values = [2, 4, 5, 7, 9]\n\n# Create scatterplot\nplt.scatter(x_values, y_values)\nplt.xlabel('X Variable')\nplt.ylabel('Y Variable')\nplt.title('My Scatterplot')\nplt.show()\n\n# Calculate correlation\nimport numpy as np\ncorrelation = np.corrcoef(x_values, y_values)[0, 1]\nprint(f\"Correlation: {correlation:.3f}\")"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#key-takeaways",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#key-takeaways",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\n📊 Scatterplots show if two variables are related\n↗️ Positive relationship = Both go up together\n↘️ Negative relationship = One up, one down\n🤷 No relationship = Random scatter, no pattern\n📏 Correlation (r) = Number from -1 to +1 showing strength\n⚠️ Correlation ≠ Causation = Related doesn’t mean one causes the other!\n🔍 Look for confounding variables (hidden causes)\n🌊 Scatterplots help you understand complex water quality data"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/scatterplots.html#practice-challenge",
+    "href": "modules/water-quality/module1-statistics/scatterplots.html#practice-challenge",
+    "title": "Scatterplots - Finding Relationships Between Variables",
+    "section": "Practice Challenge",
+    "text": "Practice Challenge\nThink about these questions:\n\nIf pH and temperature are positively correlated, does that mean pH CAUSES temperature to change?\n(No! They’re both affected by other things)\nYou see that nitrate spikes after rainfall. What might be the cause?\n(Rain washes fertilizer from farms into the creek)\nYour scatterplot shows r = 0.05. What does that mean?\n(Almost no relationship - the variables aren’t connected)\n\nNext lesson: Time to put it all together with practice exercises using real water quality scenarios!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/introduction.html",
+    "href": "modules/water-quality/module1-statistics/introduction.html",
+    "title": "What Are Statistics? (And Why Should You Care?)",
+    "section": "",
+    "text": "Imagine you’re testing water from a stream. You measure the pH seven different times and get:\n7.1, 7.2, 7.0, 7.3, 7.1, 7.2, 7.1\nQuick - is the water safe? What’s the “typical” pH? Are any readings weird?\nThat’s hard to answer just by staring at the numbers! This is why we need statistics."
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/introduction.html#the-big-question",
+    "href": "modules/water-quality/module1-statistics/introduction.html#the-big-question",
+    "title": "What Are Statistics? (And Why Should You Care?)",
+    "section": "",
+    "text": "Imagine you’re testing water from a stream. You measure the pH seven different times and get:\n7.1, 7.2, 7.0, 7.3, 7.1, 7.2, 7.1\nQuick - is the water safe? What’s the “typical” pH? Are any readings weird?\nThat’s hard to answer just by staring at the numbers! This is why we need statistics."
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/introduction.html#what-are-statistics",
+    "href": "modules/water-quality/module1-statistics/introduction.html#what-are-statistics",
+    "title": "What Are Statistics? (And Why Should You Care?)",
+    "section": "What Are Statistics?",
+    "text": "What Are Statistics?\nStatistics = A fancy word for “using math to understand data”\nThink of statistics like a calculator that helps you: - Summarize lots of numbers into one useful number - Find patterns - Make decisions - Spot things that don’t fit\nReal-world example: When you check the weather app, it shows “Average temperature: 75°F” - that’s a statistic!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/introduction.html#why-do-scientists-use-statistics",
+    "href": "modules/water-quality/module1-statistics/introduction.html#why-do-scientists-use-statistics",
+    "title": "What Are Statistics? (And Why Should You Care?)",
+    "section": "Why Do Scientists Use Statistics?",
+    "text": "Why Do Scientists Use Statistics?\nScientists collect LOTS of data. Imagine you: - Test water at 10 different streams - Measure pH every day for a month - Check nitrate levels at 5 rivers\nThat’s a LOT of numbers! Statistics help you: 1. Summarize: “What’s the typical pH?” 2. Compare: “Is Stream A cleaner than Stream B?” 3. Detect problems: “Is this reading normal or is something wrong?” 4. Communicate: “Is this water safe?” (much clearer than listing 100 numbers!)"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/introduction.html#lets-start-simple-meet-python-lists",
+    "href": "modules/water-quality/module1-statistics/introduction.html#lets-start-simple-meet-python-lists",
+    "title": "What Are Statistics? (And Why Should You Care?)",
+    "section": "Let’s Start Simple: Meet Python Lists",
+    "text": "Let’s Start Simple: Meet Python Lists\nIn Python, we store multiple numbers in something called a list. It’s like a shopping list, but for data!\n\n# A list of pH readings (the square brackets [ ] make it a list)\nph_readings = [7.2, 7.1, 7.3, 7.0, 7.2]\n\nprint(\"Our pH readings:\", ph_readings)\n\nOur pH readings: [7.2, 7.1, 7.3, 7.0, 7.2]\n\n\nBreaking it down: - ph_readings = the name we gave our list (you can name it anything!) - = means “store this in the variable” - [7.2, 7.1, 7.3, 7.0, 7.2] = the actual numbers, separated by commas - print() = tells Python to show us the result"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/introduction.html#try-it-make-your-own-list",
+    "href": "modules/water-quality/module1-statistics/introduction.html#try-it-make-your-own-list",
+    "title": "What Are Statistics? (And Why Should You Care?)",
+    "section": "Try It: Make Your Own List",
+    "text": "Try It: Make Your Own List\n\n\n\n\n\n\nChallenge: Change the numbers in my_numbers and run it again!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/introduction.html#basic-operations-with-lists",
+    "href": "modules/water-quality/module1-statistics/introduction.html#basic-operations-with-lists",
+    "title": "What Are Statistics? (And Why Should You Care?)",
+    "section": "Basic Operations with Lists",
+    "text": "Basic Operations with Lists\nOnce we have a list, we can do things with it:\n\n# Our nitrate readings from 5 rivers (in mg/L)\nnitrate = [3.2, 4.1, 3.8, 3.5, 4.0]\n\nprint(\"Nitrate readings:\", nitrate)\nprint(\"Number of rivers tested:\", len(nitrate))\nprint(\"Lowest nitrate:\", min(nitrate), \"mg/L\")\nprint(\"Highest nitrate:\", max(nitrate), \"mg/L\")\n\nNitrate readings: [3.2, 4.1, 3.8, 3.5, 4.0]\nNumber of rivers tested: 5\nLowest nitrate: 3.2 mg/L\nHighest nitrate: 4.1 mg/L\n\n\nNew Python words: - len() = length (how many items) - min() = minimum (smallest number) - max() = maximum (biggest number)\nThese are called functions - they’re like tools that do specific jobs!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/introduction.html#try-it-explore-your-data",
+    "href": "modules/water-quality/module1-statistics/introduction.html#try-it-explore-your-data",
+    "title": "What Are Statistics? (And Why Should You Care?)",
+    "section": "Try It: Explore Your Data",
+    "text": "Try It: Explore Your Data"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/introduction.html#types-of-statistics-well-learn",
+    "href": "modules/water-quality/module1-statistics/introduction.html#types-of-statistics-well-learn",
+    "title": "What Are Statistics? (And Why Should You Care?)",
+    "section": "Types of Statistics We’ll Learn",
+    "text": "Types of Statistics We’ll Learn\n\n1. Measures of Center (What’s “Typical”?)\n\nMean = Average (add them all up, divide by how many)\nMedian = Middle number when you line them up\n\nExample: Test scores: 80, 85, 90, 95, 100 - Mean = (80+85+90+95+100) ÷ 5 = 90 - Median = 90 (it’s in the middle!)\n\n\n2. Measures of Spread (How Spread Out?)\n\nRange = Biggest minus smallest\nStandard Deviation = How far numbers typically are from average (we’ll explain this more later!)\n\nExample: Which is more consistent? - Stream A: pH readings of 7.0, 7.1, 7.0, 7.1 (very consistent!) - Stream B: pH readings of 6.5, 7.5, 6.8, 7.9 (all over the place!)"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/introduction.html#water-quality-what-were-measuring",
+    "href": "modules/water-quality/module1-statistics/introduction.html#water-quality-what-were-measuring",
+    "title": "What Are Statistics? (And Why Should You Care?)",
+    "section": "Water Quality: What We’re Measuring",
+    "text": "Water Quality: What We’re Measuring\n📺 Watch this video to learn more about pH:\n\nLet’s talk about what those pH and nitrate numbers actually mean:\n\npH Scale\n\n# Let's visualize the pH scale\nimport matplotlib.pyplot as plt\n\nph_scale = list(range(0, 15))\ncolors = ['red']*3 + ['orange']*3 + ['yellow', 'lightgreen'] + ['green']*3 + ['lightgreen', 'yellow'] + ['orange', 'red']\n\nplt.figure(figsize=(12, 3))\nplt.bar(ph_scale, [1]*15, color=colors, edgecolor='black', width=1)\nplt.xlabel('pH Value', fontsize=12)\nplt.title('pH Scale: Where Is Water Safe?', fontsize=14)\nplt.xticks(range(0, 15))\nplt.yticks([])\n\n# Mark safe drinking water range\nplt.axvline(x=6.5, color='blue', linewidth=3, linestyle='--', label='Safe range')\nplt.axvline(x=8.5, color='blue', linewidth=3, linestyle='--')\nplt.legend(fontsize=12)\n\nplt.tight_layout()\nplt.show()\n\nprint(\"Safe drinking water: pH between 6.5 and 8.5 (the blue zone)\")\n\n\n\n\n\n\n\n\nSafe drinking water: pH between 6.5 and 8.5 (the blue zone)\n\n\n\n\nNitrate Levels\n\n\n\nNitrate Test Strips\n\n\n\n# Visualize nitrate safety levels\ncategories = ['Safe\\n(&lt; 2 mg/L)', 'Acceptable\\n(2-5 mg/L)', 'Concerning\\n(5-10 mg/L)', 'UNSAFE\\n(&gt; 10 mg/L)']\ncolors_nitrate = ['green', 'lightgreen', 'yellow', 'red']\n\nplt.figure(figsize=(10, 6))\nplt.bar(categories, [1, 1, 1, 1], color=colors_nitrate, edgecolor='black', width=0.6)\nplt.ylabel('Safety Level', fontsize=12)\nplt.title('Nitrate Safety Levels', fontsize=14)\nplt.yticks([])\nplt.axhline(y=0.5, color='black', linewidth=2, linestyle='--')\nplt.text(3, 0.5, ' EPA Limit: 10 mg/L', fontsize=12, va='center')\n\nplt.tight_layout()\nplt.show()\n\nprint(\"Remember: Nitrate over 10 mg/L is NOT safe to drink!\")\n\n\n\n\n\n\n\n\nRemember: Nitrate over 10 mg/L is NOT safe to drink!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/introduction.html#checking-if-water-is-safe",
+    "href": "modules/water-quality/module1-statistics/introduction.html#checking-if-water-is-safe",
+    "title": "What Are Statistics? (And Why Should You Care?)",
+    "section": "Checking If Water Is Safe",
+    "text": "Checking If Water Is Safe\nLet’s use Python to check if water is safe:\n\n# Let's check a pH reading\npH_reading = 7.2\n\nprint(f\"The water has pH of {pH_reading}\")\n\n# Python can make decisions using 'if' statements!\nif pH_reading &gt;= 6.5 and pH_reading &lt;= 8.5:\n    print(\"✓ pH is in the safe range!\")\nelse:\n    print(\"✗ pH is outside the safe range!\")\n\nThe water has pH of 7.2\n✓ pH is in the safe range!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/introduction.html#try-it-be-a-water-inspector",
+    "href": "modules/water-quality/module1-statistics/introduction.html#try-it-be-a-water-inspector",
+    "title": "What Are Statistics? (And Why Should You Care?)",
+    "section": "Try It: Be a Water Inspector!",
+    "text": "Try It: Be a Water Inspector!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/introduction.html#whats-next",
+    "href": "modules/water-quality/module1-statistics/introduction.html#whats-next",
+    "title": "What Are Statistics? (And Why Should You Care?)",
+    "section": "What’s Next?",
+    "text": "What’s Next?\nNow you understand: - ✅ What statistics are (math to understand data) - ✅ How to create lists in Python - ✅ Basic functions: len(), min(), max() - ✅ What pH and nitrate mean - ✅ How to check if water is safe\nIn the next lesson, we’ll learn about the mean (average) - one of the most important statistics!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/introduction.html#key-python-words-we-learned",
+    "href": "modules/water-quality/module1-statistics/introduction.html#key-python-words-we-learned",
+    "title": "What Are Statistics? (And Why Should You Care?)",
+    "section": "Key Python Words We Learned",
+    "text": "Key Python Words We Learned\n\n\n\nWord\nWhat It Does\nExample\n\n\n\n\nlist\nStores multiple numbers\n[7.2, 7.1, 7.3]\n\n\nlen()\nCounts items\nlen([1,2,3]) = 3\n\n\nmin()\nFinds smallest\nmin([5,2,8]) = 2\n\n\nmax()\nFinds biggest\nmax([5,2,8]) = 8\n\n\nprint()\nShows results\nprint(\"Hi!\")\n\n\nif\nMakes decisions\nif pH &gt; 7:\n\n\n\nRemember: The best way to learn is by trying things! Change numbers, experiment, and see what happens. You can’t break anything! 😊"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html",
+    "href": "modules/water-quality/module1-statistics/median-range.html",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "",
+    "text": "Let’s say a scientist measures pH in a creek five times:\n7.1, 7.2, 7.1, 7.2, 14.5\nWait… 14.5? That’s impossible! pH only goes up to 14, and natural water is never that high. The sensor must have glitched!\nLet’s see what happens to the mean:\n\nimport numpy as np\n\n# Example pH readings with one bad measurement\nph_readings = [7.1, 7.2, 7.1, 7.2, 14.5]\n\nmean_ph = np.mean(ph_readings)\n\nprint(\"pH readings:\", ph_readings)\nprint(f\"Mean pH: {mean_ph:.2f}\")\nprint(\"\\nThat doesn't seem right! The mean is 8.82, but most readings were around 7.1\")\n\npH readings: [7.1, 7.2, 7.1, 7.2, 14.5]\nMean pH: 8.62\n\nThat doesn't seem right! The mean is 8.82, but most readings were around 7.1\n\n\nThat one weird number ruined our mean! We need a different tool…"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#a-problem-with-the-mean",
+    "href": "modules/water-quality/module1-statistics/median-range.html#a-problem-with-the-mean",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "",
+    "text": "Let’s say a scientist measures pH in a creek five times:\n7.1, 7.2, 7.1, 7.2, 14.5\nWait… 14.5? That’s impossible! pH only goes up to 14, and natural water is never that high. The sensor must have glitched!\nLet’s see what happens to the mean:\n\nimport numpy as np\n\n# Example pH readings with one bad measurement\nph_readings = [7.1, 7.2, 7.1, 7.2, 14.5]\n\nmean_ph = np.mean(ph_readings)\n\nprint(\"pH readings:\", ph_readings)\nprint(f\"Mean pH: {mean_ph:.2f}\")\nprint(\"\\nThat doesn't seem right! The mean is 8.82, but most readings were around 7.1\")\n\npH readings: [7.1, 7.2, 7.1, 7.2, 14.5]\nMean pH: 8.62\n\nThat doesn't seem right! The mean is 8.82, but most readings were around 7.1\n\n\nThat one weird number ruined our mean! We need a different tool…"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#enter-the-median",
+    "href": "modules/water-quality/module1-statistics/median-range.html#enter-the-median",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "Enter the Median!",
+    "text": "Enter the Median!\nThe median is the middle number when you line them up in order.\nWhy it’s useful: One weird number doesn’t ruin it!\n\nHow to Find the Median\nStep 1: Put the numbers in order from smallest to biggest\nStep 2: Find the middle number\n\nimport numpy as np\n\n# Same example readings\nph_readings = [7.1, 7.2, 7.1, 7.2, 14.5]\n\n# Let's sort them\nsorted_readings = sorted(ph_readings)\nprint(\"Original:\", ph_readings)\nprint(\"Sorted:\", sorted_readings)\n\n# Find the median (middle number)\nmedian_ph = np.median(ph_readings)\nmean_ph = np.mean(ph_readings)\n\nprint(f\"\\nMedian: {median_ph}\")\nprint(f\"Mean: {mean_ph:.2f}\")\nprint(\"\\nSee? The median (7.2) represents the 'typical' reading much better!\")\n\nOriginal: [7.1, 7.2, 7.1, 7.2, 14.5]\nSorted: [7.1, 7.1, 7.2, 7.2, 14.5]\n\nMedian: 7.2\nMean: 8.62\n\nSee? The median (7.2) represents the 'typical' reading much better!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#when-to-use-median-vs-mean",
+    "href": "modules/water-quality/module1-statistics/median-range.html#when-to-use-median-vs-mean",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "When to Use Median vs Mean",
+    "text": "When to Use Median vs Mean\n\n\n\nUse Median When:\nUse Mean When:\n\n\n\n\nYou have weird outliers\nAll data looks normal\n\n\nData is skewed (not symmetric)\nData is evenly spread\n\n\nYou want a “typical” value\nYou need to use ALL the data\n\n\n\nReal-world example: House prices often use median because a few mansions can make the mean misleading!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#try-it-mean-vs-median",
+    "href": "modules/water-quality/module1-statistics/median-range.html#try-it-mean-vs-median",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "Try It: Mean vs Median",
+    "text": "Try It: Mean vs Median"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#visualizing-mean-vs-median",
+    "href": "modules/water-quality/module1-statistics/median-range.html#visualizing-mean-vs-median",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "Visualizing Mean vs Median",
+    "text": "Visualizing Mean vs Median\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Two different example scenarios\nnormal_ph = [7.0, 7.1, 7.2, 7.1, 7.3, 7.2, 7.1]\noutlier_ph = [7.0, 7.1, 7.2, 7.1, 9.5, 7.2, 7.1]  # One bad reading\n\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))\n\n# Normal data\nax1.scatter(range(len(normal_ph)), normal_ph, s=150, alpha=0.7, color='blue')\nax1.axhline(y=np.mean(normal_ph), color='red', linestyle='--', linewidth=2, label=f'Mean = {np.mean(normal_ph):.2f}')\nax1.axhline(y=np.median(normal_ph), color='green', linestyle='--', linewidth=2, label=f'Median = {np.median(normal_ph):.2f}')\nax1.set_xlabel('Reading Number', fontsize=11)\nax1.set_ylabel('pH', fontsize=11)\nax1.set_title('Normal Data: Mean and Median Are Similar', fontsize=12)\nax1.legend()\nax1.grid(True, alpha=0.3)\nax1.set_ylim(6.5, 10)\n\n# With outlier\nax2.scatter(range(len(outlier_ph)), outlier_ph, s=150, alpha=0.7, color='orange')\nax2.axhline(y=np.mean(outlier_ph), color='red', linestyle='--', linewidth=2, label=f'Mean = {np.mean(outlier_ph):.2f}')\nax2.axhline(y=np.median(outlier_ph), color='green', linestyle='--', linewidth=2, label=f'Median = {np.median(outlier_ph):.2f}')\nax2.set_xlabel('Reading Number', fontsize=11)\nax2.set_ylabel('pH', fontsize=11)\nax2.set_title('With Outlier: Median Is More Reliable', fontsize=12)\nax2.legend()\nax2.grid(True, alpha=0.3)\nax2.set_ylim(6.5, 10)\n\nplt.tight_layout()\nplt.show()\n\nprint(\"Notice: The outlier pulls the mean up, but the median stays put!\")\n\n\n\n\n\n\n\n\nNotice: The outlier pulls the mean up, but the median stays put!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#even-vs-odd-number-of-values",
+    "href": "modules/water-quality/module1-statistics/median-range.html#even-vs-odd-number-of-values",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "Even vs Odd Number of Values",
+    "text": "Even vs Odd Number of Values\nWhen you have an odd number: The median is the middle number\nExample: [7.0, 7.1, 7.2, 7.3, 7.4] → Median is 7.2 (the 3rd number)\nWhen you have an even number: The median is the average of the two middle numbers\nExample: [7.0, 7.1, 7.2, 7.3] → Median is (7.1 + 7.2) ÷ 2 = 7.15\n\nimport numpy as np\n\n# Odd number of readings\nodd_example = [7.0, 7.1, 7.2, 7.3, 7.4]\nprint(\"Odd number of values:\", odd_example)\nprint(f\"Median: {np.median(odd_example)}\")\n\n# Even number of readings\neven_example = [7.0, 7.1, 7.2, 7.3]\nprint(\"\\nEven number of values:\", even_example)\nprint(f\"Median: {np.median(even_example)}\")\n\nOdd number of values: [7.0, 7.1, 7.2, 7.3, 7.4]\nMedian: 7.2\n\nEven number of values: [7.0, 7.1, 7.2, 7.3]\nMedian: 7.15"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#the-range-how-spread-out",
+    "href": "modules/water-quality/module1-statistics/median-range.html#the-range-how-spread-out",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "The Range: How Spread Out?",
+    "text": "The Range: How Spread Out?\nThe range is the simplest way to see how spread out your data is:\nRange = Biggest number - Smallest number\n\n# Two example creeks measured over a week\ncreek_a_ph = [7.1, 7.2, 7.1, 7.2, 7.1, 7.2, 7.1]  # Very stable\ncreek_b_ph = [6.5, 7.5, 6.8, 7.9, 6.6, 7.3, 7.4]  # All over the place\n\nrange_a = max(creek_a_ph) - min(creek_a_ph)\nrange_b = max(creek_b_ph) - min(creek_b_ph)\n\nprint(\"Creek A pH readings:\", creek_a_ph)\nprint(f\"  Min: {min(creek_a_ph)}, Max: {max(creek_a_ph)}\")\nprint(f\"  Range: {range_a}\")\n\nprint(\"\\nCreek B pH readings:\", creek_b_ph)\nprint(f\"  Min: {min(creek_b_ph)}, Max: {max(creek_b_ph)}\")\nprint(f\"  Range: {range_b}\")\n\nprint(f\"\\nCreek B has {range_b/range_a:.1f} times more variability!\")\n\nCreek A pH readings: [7.1, 7.2, 7.1, 7.2, 7.1, 7.2, 7.1]\n  Min: 7.1, Max: 7.2\n  Range: 0.10000000000000053\n\nCreek B pH readings: [6.5, 7.5, 6.8, 7.9, 6.6, 7.3, 7.4]\n  Min: 6.5, Max: 7.9\n  Range: 1.4000000000000004\n\nCreek B has 14.0 times more variability!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#visualizing-range",
+    "href": "modules/water-quality/module1-statistics/median-range.html#visualizing-range",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "Visualizing Range",
+    "text": "Visualizing Range\n\nimport matplotlib.pyplot as plt\n\ncreek_a_ph = [7.1, 7.2, 7.1, 7.2, 7.1, 7.2, 7.1]\ncreek_b_ph = [6.5, 7.5, 6.8, 7.9, 6.6, 7.3, 7.4]\n\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))\n\ndays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']\n\n# Creek A\nax1.plot(days, creek_a_ph, marker='o', markersize=10, linewidth=2, color='blue')\nax1.axhline(y=max(creek_a_ph), color='red', linestyle=':', alpha=0.5, label=f'Max: {max(creek_a_ph)}')\nax1.axhline(y=min(creek_a_ph), color='red', linestyle=':', alpha=0.5, label=f'Min: {min(creek_a_ph)}')\nax1.fill_between(range(len(days)), min(creek_a_ph), max(creek_a_ph), alpha=0.2, color='red')\nax1.set_xlabel('Day', fontsize=11)\nax1.set_ylabel('pH', fontsize=11)\nax1.set_title(f'Creek A: Small Range ({max(creek_a_ph) - min(creek_a_ph):.1f})', fontsize=12)\nax1.legend()\nax1.grid(True, alpha=0.3)\nax1.set_ylim(6, 8.5)\n\n# Creek B\nax2.plot(days, creek_b_ph, marker='o', markersize=10, linewidth=2, color='green')\nax2.axhline(y=max(creek_b_ph), color='red', linestyle=':', alpha=0.5, label=f'Max: {max(creek_b_ph)}')\nax2.axhline(y=min(creek_b_ph), color='red', linestyle=':', alpha=0.5, label=f'Min: {min(creek_b_ph)}')\nax2.fill_between(range(len(days)), min(creek_b_ph), max(creek_b_ph), alpha=0.2, color='red')\nax2.set_xlabel('Day', fontsize=11)\nax2.set_ylabel('pH', fontsize=11)\nax2.set_title(f'Creek B: Large Range ({max(creek_b_ph) - min(creek_b_ph):.1f})', fontsize=12)\nax2.legend()\nax2.grid(True, alpha=0.3)\nax2.set_ylim(6, 8.5)\n\nplt.tight_layout()\nplt.show()\n\nprint(\"The shaded area shows the range - how much the readings vary\")\n\n\n\n\n\n\n\n\nThe shaded area shows the range - how much the readings vary"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#try-it-analyze-a-river",
+    "href": "modules/water-quality/module1-statistics/median-range.html#try-it-analyze-a-river",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "Try It: Analyze a River",
+    "text": "Try It: Analyze a River"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#understanding-your-results",
+    "href": "modules/water-quality/module1-statistics/median-range.html#understanding-your-results",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "Understanding Your Results",
+    "text": "Understanding Your Results\nWhen you analyze water quality data, think about:\n\nIs the mean or median more useful?\n\nIf you have outliers → use median\nIf data looks normal → mean is fine\n\nWhat does the range tell you?\n\nSmall range = stable conditions (good!)\nLarge range = something is changing (investigate!)\n\nAre all readings in the safe zone?\n\npH: 6.5 to 8.5\nNitrate: less than 10 mg/L"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#comparing-two-streams",
+    "href": "modules/water-quality/module1-statistics/median-range.html#comparing-two-streams",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "Comparing Two Streams",
+    "text": "Comparing Two Streams\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Example: Stream near a farm vs stream in a forest\nfarm_stream_nitrate = [5.2, 6.1, 5.8, 5.5, 6.0, 5.7, 5.9]\nforest_stream_nitrate = [1.1, 1.3, 1.2, 1.4, 1.2, 1.3, 1.1]\n\n# Calculate stats\nprint(\"Farm Stream:\")\nprint(f\"  Median nitrate: {np.median(farm_stream_nitrate):.2f} mg/L\")\nprint(f\"  Range: {max(farm_stream_nitrate) - min(farm_stream_nitrate):.2f} mg/L\")\n\nprint(\"\\nForest Stream:\")\nprint(f\"  Median nitrate: {np.median(forest_stream_nitrate):.2f} mg/L\")\nprint(f\"  Range: {max(forest_stream_nitrate) - min(forest_stream_nitrate):.2f} mg/L\")\n\n# Visualize\nfig, ax = plt.subplots(figsize=(10, 6))\n\ndays = list(range(1, 8))\nax.plot(days, farm_stream_nitrate, marker='o', markersize=10, linewidth=2, label='Farm Stream', color='brown')\nax.plot(days, forest_stream_nitrate, marker='s', markersize=10, linewidth=2, label='Forest Stream', color='green')\nax.axhline(y=10, color='red', linestyle='--', linewidth=2, alpha=0.5, label='EPA Limit (10 mg/L)')\nax.set_xlabel('Day', fontsize=11)\nax.set_ylabel('Nitrate (mg/L)', fontsize=11)\nax.set_title('Comparing Two Streams', fontsize=13)\nax.legend(fontsize=11)\nax.grid(True, alpha=0.3)\n\nplt.show()\n\nprint(\"\\nWhat do you notice?\")\nprint(\"- Farm stream has higher nitrate (fertilizer runoff)\")\nprint(\"- Forest stream has lower, more stable nitrate\")\nprint(\"- Both are safe (below 10 mg/L) but farm stream is getting close!\")\n\nFarm Stream:\n  Median nitrate: 5.80 mg/L\n  Range: 0.90 mg/L\n\nForest Stream:\n  Median nitrate: 1.20 mg/L\n  Range: 0.30 mg/L\n\n\n\n\n\n\n\n\n\n\nWhat do you notice?\n- Farm stream has higher nitrate (fertilizer runoff)\n- Forest stream has lower, more stable nitrate\n- Both are safe (below 10 mg/L) but farm stream is getting close!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#range-vs-standard-deviation",
+    "href": "modules/water-quality/module1-statistics/median-range.html#range-vs-standard-deviation",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "Range vs Standard Deviation",
+    "text": "Range vs Standard Deviation\nYou learned about standard deviation in the last lesson. How is it different from range?\n\n\n\nRange\nStandard Deviation\n\n\n\n\nOnly uses 2 numbers (min & max)\nUses ALL the data\n\n\nEasy to calculate\nMore complex\n\n\nAffected by outliers\nAlso affected by outliers\n\n\nQuick and simple\nMore informative\n\n\n\nThink of it this way: - Range = “What’s the biggest difference I could see?” - Standard Deviation = “How far are numbers typically from the average?”\n\nimport numpy as np\n\n# Example to show the difference\ndata = [7.0, 7.1, 7.2, 7.1, 7.2, 7.3, 7.1]\n\nrange_val = max(data) - min(data)\nstd_val = np.std(data)\n\nprint(\"Data:\", data)\nprint(f\"Range: {range_val:.2f}\")\nprint(f\"Standard Deviation: {std_val:.3f}\")\nprint(\"\\nBoth tell us about spread, but in different ways!\")\n\nData: [7.0, 7.1, 7.2, 7.1, 7.2, 7.3, 7.1]\nRange: 0.30\nStandard Deviation: 0.090\n\nBoth tell us about spread, but in different ways!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#your-future-real-data-collection",
+    "href": "modules/water-quality/module1-statistics/median-range.html#your-future-real-data-collection",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "Your Future: Real Data Collection",
+    "text": "Your Future: Real Data Collection\nWhen you deploy sensor buoys in streams and creeks, you might see patterns like: - Daily cycles: pH changes from morning to evening - Weekly patterns: Different on weekdays vs weekends - Storm events: Sudden spikes in nitrate after heavy rain\nThe median and range will help you understand what’s “normal” vs what’s unusual!\nRight now you’re practicing with example data, but soon you’ll analyze your OWN measurements using these same skills! 🌊"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#quick-reference",
+    "href": "modules/water-quality/module1-statistics/median-range.html#quick-reference",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "Quick Reference",
+    "text": "Quick Reference\n\n\n\nStatistic\nWhat It Tells You\nHow to Calculate\n\n\n\n\nMean\nAverage value\nnp.mean(data)\n\n\nMedian\nMiddle value\nnp.median(data)\n\n\nRange\nHow spread out\nmax(data) - min(data)\n\n\nMin\nSmallest value\nmin(data)\n\n\nMax\nLargest value\nmax(data)"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#practice-challenge",
+    "href": "modules/water-quality/module1-statistics/median-range.html#practice-challenge",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "Practice Challenge",
+    "text": "Practice Challenge\nHere’s a challenge for you! Look at these nitrate readings:\n[3.1, 3.2, 3.0, 18.5, 3.3, 3.1, 3.2]\nBefore running code, think about: 1. Is there an outlier? 2. Will the mean or median be more useful? 3. What might cause that high reading?"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/median-range.html#key-takeaways",
+    "href": "modules/water-quality/module1-statistics/median-range.html#key-takeaways",
+    "title": "The Median and Range - Different Ways to Understand Data",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\n🎯 Median = Middle value when sorted (not affected by outliers!)\n📏 Range = Biggest - Smallest (simple way to see spread)\n✅ Use median when you have weird outliers or sensor errors\n✅ Use range to quickly see how variable your data is\n🔍 When data is normal, mean and median are similar\n⚠️ When there are outliers, median is more reliable\n🌊 Real stream data will have outliers - now you know how to handle them!\n\nNext lesson: We’ll learn how to spot those weird outliers and decide if they’re real pollution events or just sensor errors!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/index.html",
+    "href": "modules/water-quality/module1-statistics/index.html",
+    "title": "Water Quality Statistics - Let’s Learn Together!",
+    "section": "",
+    "text": "You’re about to become a water quality detective! In this module, you’ll learn how to analyze real water samples using something called statistics (don’t worry, it’s easier than it sounds) and a programming language called Python.\nNever used Python before? Perfect! This module is designed for complete beginners. We’ll teach you everything step by step."
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/index.html#welcome-scientists",
+    "href": "modules/water-quality/module1-statistics/index.html#welcome-scientists",
+    "title": "Water Quality Statistics - Let’s Learn Together!",
+    "section": "",
+    "text": "You’re about to become a water quality detective! In this module, you’ll learn how to analyze real water samples using something called statistics (don’t worry, it’s easier than it sounds) and a programming language called Python.\nNever used Python before? Perfect! This module is designed for complete beginners. We’ll teach you everything step by step."
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/index.html#what-will-you-learn",
+    "href": "modules/water-quality/module1-statistics/index.html#what-will-you-learn",
+    "title": "Water Quality Statistics - Let’s Learn Together!",
+    "section": "What Will You Learn?",
+    "text": "What Will You Learn?\nBy the end of this module, you’ll be able to:\n\n✅ Understand if water is safe to drink\n✅ Spot unusual water quality readings\n✅ Compare water from different streams or rivers\n✅ Use Python to analyze data (yes, real coding!)\n✅ Create graphs and charts like a scientist\n✅ Make decisions about water safety"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/index.html#what-is-water-quality",
+    "href": "modules/water-quality/module1-statistics/index.html#what-is-water-quality",
+    "title": "Water Quality Statistics - Let’s Learn Together!",
+    "section": "What is Water Quality?",
+    "text": "What is Water Quality?\nWhen scientists study water, they measure different things to see if it’s safe. We’ll focus on two important measurements:\n\n🌡️ pH (Acidity/Alkalinity)\nThink of pH like a thermometer, but for how acidic or basic water is:\n\npH of 7 = Neutral (like pure water)\nBelow 7 = Acidic (like lemon juice or vinegar)\nAbove 7 = Basic/Alkaline (like baking soda in water)\nSafe drinking water = Between 6.5 and 8.5\n\nReal-world example: If your pool has the wrong pH, your eyes sting when you swim!\n\n\n💧 Nitrate (A Type of Pollution)\nNitrate is a chemical that can get into water from: - Fertilizers from farms - Sewage and septic systems - Natural sources\nWhy we care: - Too much nitrate can make people sick - Safe limit = Less than 10 mg/L (milligrams per liter) - If it’s higher, the water isn’t safe to drink"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/index.html#what-is-python",
+    "href": "modules/water-quality/module1-statistics/index.html#what-is-python",
+    "title": "Water Quality Statistics - Let’s Learn Together!",
+    "section": "What is Python?",
+    "text": "What is Python?\nPython is a programming language - a way to give instructions to a computer. Think of it like writing a recipe, but for the computer!\nWhy Python? - Scientists use it to analyze data - It’s one of the easiest languages to learn - It can do math way faster than we can - It can create beautiful graphs\nDon’t worry! You don’t need to install anything. You can run Python code right here in your web browser!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/index.html#lets-try-python-right-now",
+    "href": "modules/water-quality/module1-statistics/index.html#lets-try-python-right-now",
+    "title": "Water Quality Statistics - Let’s Learn Together!",
+    "section": "Let’s Try Python Right Now!",
+    "text": "Let’s Try Python Right Now!\nClick the ▶️ button below to run your first Python code:\n\n\n\n\n\n\n🎉 You just ran Python code! See how it printed messages and did math?"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/index.html#try-it-yourself",
+    "href": "modules/water-quality/module1-statistics/index.html#try-it-yourself",
+    "title": "Water Quality Statistics - Let’s Learn Together!",
+    "section": "Try It Yourself!",
+    "text": "Try It Yourself!\nNow YOU try! Edit the code below. Change the numbers, change the message, then click ▶️:"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/index.html#what-youll-need",
+    "href": "modules/water-quality/module1-statistics/index.html#what-youll-need",
+    "title": "Water Quality Statistics - Let’s Learn Together!",
+    "section": "What You’ll Need",
+    "text": "What You’ll Need\nNothing! Everything works in your web browser. Just: - A computer or tablet - An internet connection - Your curiosity! 🧠"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/index.html#module-roadmap",
+    "href": "modules/water-quality/module1-statistics/index.html#module-roadmap",
+    "title": "Water Quality Statistics - Let’s Learn Together!",
+    "section": "Module Roadmap",
+    "text": "Module Roadmap\nHere’s what we’ll cover:\n\nIntroduction - What are statistics and why do scientists use them?\nMean and Standard Deviation - Finding the average and understanding if data is consistent\nMedian and Range - Another way to find the “middle” and see how spread out data is\nOutliers - Finding weird data that doesn’t fit (might be pollution or a broken sensor!)\nScatterplots - Creating graphs to see if two things are related\nExercises - Practice with real water quality scenarios"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/index.html#a-quick-preview",
+    "href": "modules/water-quality/module1-statistics/index.html#a-quick-preview",
+    "title": "Water Quality Statistics - Let’s Learn Together!",
+    "section": "A Quick Preview",
+    "text": "A Quick Preview\nHere’s a sneak peek of what you’ll be able to do:\n\n\n\n\n\n\nPretty cool, right? Soon you’ll understand every line of that code!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/index.html#ready-to-begin",
+    "href": "modules/water-quality/module1-statistics/index.html#ready-to-begin",
+    "title": "Water Quality Statistics - Let’s Learn Together!",
+    "section": "Ready to Begin?",
+    "text": "Ready to Begin?\nClick “Introduction” in the menu to start your journey as a water quality scientist!\nRemember: Everyone starts as a beginner. If something doesn’t make sense, that’s normal! Try it again, experiment, and ask questions.\nLet’s go! 🚀"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html",
+    "href": "modules/water-quality/module1-statistics/outliers.html",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "",
+    "text": "Outliers are data points that are very different from the rest of your data. They’re the “weird” numbers that don’t fit the pattern.\nExample: pH readings from a creek: 7.1, 7.2, 7.0, 7.1, 12.3, 7.2\nThat 12.3 is an outlier! It’s way higher than everything else."
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#what-are-outliers",
+    "href": "modules/water-quality/module1-statistics/outliers.html#what-are-outliers",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "",
+    "text": "Outliers are data points that are very different from the rest of your data. They’re the “weird” numbers that don’t fit the pattern.\nExample: pH readings from a creek: 7.1, 7.2, 7.0, 7.1, 12.3, 7.2\nThat 12.3 is an outlier! It’s way higher than everything else."
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#why-do-outliers-happen",
+    "href": "modules/water-quality/module1-statistics/outliers.html#why-do-outliers-happen",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "Why Do Outliers Happen?",
+    "text": "Why Do Outliers Happen?\nOutliers can happen for different reasons:\n\n1. Sensor Malfunction 🔧\n\nThe sensor glitched or needs calibration\nBattery was dying\nSensor got knocked around\n\n\n\n2. Real Pollution Event 🚨\n\nFactory dumped chemicals into the stream\nFarm fertilizer washed in after a storm\nSewage spill\n\n\n\n3. Natural Event 🌧️\n\nHeavy rain changed water chemistry\nAlgae bloom\nSeasonal variation\n\nYour job as a scientist: Figure out which reason it is!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#why-outliers-matter-for-water-quality",
+    "href": "modules/water-quality/module1-statistics/outliers.html#why-outliers-matter-for-water-quality",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "Why Outliers Matter for Water Quality",
+    "text": "Why Outliers Matter for Water Quality\nOutliers are REALLY important because:\n\nThey might be pollution! That weird high nitrate reading could mean someone dumped something bad\nThey mess up your statistics - Remember how the mean got messed up?\nThey could mean broken equipment - Your sensor might need fixing\nThey tell a story - What happened that day?"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#lets-spot-some-outliers",
+    "href": "modules/water-quality/module1-statistics/outliers.html#lets-spot-some-outliers",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "Let’s Spot Some Outliers!",
+    "text": "Let’s Spot Some Outliers!\nHere’s a simple way to spot outliers by looking at the data:\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Example: pH readings from a stream over 10 days\n# Most are normal, but Day 8 looks weird!\ndays = list(range(1, 11))\nph_readings = [7.2, 7.1, 7.3, 7.2, 7.1, 7.2, 7.1, 9.8, 7.2, 7.1]\n\n# Plot the data\nplt.figure(figsize=(10, 6))\nplt.plot(days, ph_readings, marker='o', markersize=10, linewidth=2, color='blue')\nplt.axhline(y=np.mean(ph_readings), color='red', linestyle='--', linewidth=2, label='Mean (affected by outlier!)')\nplt.axhline(y=np.median(ph_readings), color='green', linestyle='--', linewidth=2, label='Median (more reliable)')\n\n# Mark the outlier\nplt.scatter([8], [9.8], s=300, color='red', marker='X', zorder=5, label='Outlier!')\n\nplt.xlabel('Day', fontsize=12)\nplt.ylabel('pH', fontsize=12)\nplt.title('Can You Spot the Outlier?', fontsize=14)\nplt.legend(fontsize=11)\nplt.grid(True, alpha=0.3)\nplt.ylim(6, 11)\nplt.show()\n\nprint(\"pH readings:\", ph_readings)\nprint(f\"Mean: {np.mean(ph_readings):.2f} (pulled up by outlier)\")\nprint(f\"Median: {np.median(ph_readings):.2f} (not affected)\")\nprint(\"\\nDay 8 is definitely weird! Something happened that day.\")\n\n\n\n\n\n\n\n\npH readings: [7.2, 7.1, 7.3, 7.2, 7.1, 7.2, 7.1, 9.8, 7.2, 7.1]\nMean: 7.43 (pulled up by outlier)\nMedian: 7.20 (not affected)\n\nDay 8 is definitely weird! Something happened that day."
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#method-1-the-iqr-method-interquartile-range",
+    "href": "modules/water-quality/module1-statistics/outliers.html#method-1-the-iqr-method-interquartile-range",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "Method 1: The IQR Method (Interquartile Range)",
+    "text": "Method 1: The IQR Method (Interquartile Range)\nThis is a fancy way scientists detect outliers. Don’t worry, it’s easier than it sounds!\nThe idea: Most data should be in a certain range. If a number is way outside that range, it’s an outlier.\nHow it works: 1. Find Q1 (25th percentile) - 25% of data is below this 2. Find Q3 (75th percentile) - 75% of data is below this 3. Calculate IQR = Q3 - Q1 4. Anything below Q1 - 1.5×IQR is an outlier 5. Anything above Q3 + 1.5×IQR is an outlier\nDon’t memorize this! Python will do it for you.\n\nimport numpy as np\n\n# Example: Nitrate readings from a river\n# One reading is suspiciously high!\nnitrate = [2.1, 2.3, 2.2, 2.4, 2.2, 2.3, 15.0, 2.1, 2.2]\n\n# Calculate IQR\nq1 = np.percentile(nitrate, 25)  # 25th percentile\nq3 = np.percentile(nitrate, 75)  # 75th percentile\niqr = q3 - q1\n\n# Calculate outlier boundaries\nlower_bound = q1 - 1.5 * iqr\nupper_bound = q3 + 1.5 * iqr\n\nprint(\"Nitrate readings (mg/L):\", nitrate)\nprint(f\"\\nQ1 (25th percentile): {q1:.2f}\")\nprint(f\"Q3 (75th percentile): {q3:.2f}\")\nprint(f\"IQR: {iqr:.2f}\")\nprint(f\"\\nOutlier boundaries:\")\nprint(f\"  Lower bound: {lower_bound:.2f}\")\nprint(f\"  Upper bound: {upper_bound:.2f}\")\n\n# Find the outliers\noutliers = [x for x in nitrate if x &lt; lower_bound or x &gt; upper_bound]\nprint(f\"\\nOutliers detected: {outliers}\")\n\nNitrate readings (mg/L): [2.1, 2.3, 2.2, 2.4, 2.2, 2.3, 15.0, 2.1, 2.2]\n\nQ1 (25th percentile): 2.20\nQ3 (75th percentile): 2.30\nIQR: 0.10\n\nOutlier boundaries:\n  Lower bound: 2.05\n  Upper bound: 2.45\n\nOutliers detected: [15.0]"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#visualizing-outliers-with-a-box-plot",
+    "href": "modules/water-quality/module1-statistics/outliers.html#visualizing-outliers-with-a-box-plot",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "Visualizing Outliers with a Box Plot",
+    "text": "Visualizing Outliers with a Box Plot\nA box plot is a graph that shows outliers automatically! It’s like a detective tool for finding weird data.\n\nimport matplotlib.pyplot as plt\n\n# Example: pH readings with some outliers\nph_data = [7.1, 7.2, 7.0, 7.3, 7.2, 7.1, 9.5, 7.2, 7.1, 7.0, 5.0, 7.3]\n\nplt.figure(figsize=(10, 6))\nplt.boxplot(ph_data, vert=True, patch_artist=True, \n            boxprops=dict(facecolor='lightblue'),\n            medianprops=dict(color='red', linewidth=2))\nplt.ylabel('pH Level', fontsize=12)\nplt.title('Box Plot: Outliers Shown as Circles', fontsize=14)\nplt.grid(True, alpha=0.3, axis='y')\nplt.ylim(4, 10)\n\nplt.text(1.15, 9.5, '← High outlier', fontsize=11, va='center')\nplt.text(1.15, 5.0, '← Low outlier', fontsize=11, va='center')\n\nplt.show()\n\nprint(\"The circles show outliers!\")\nprint(\"The box shows where most of the 'normal' data is.\")\n\n\n\n\n\n\n\n\nThe circles show outliers!\nThe box shows where most of the 'normal' data is.\n\n\nReading a box plot: - The line in the middle = Median - The box = Where the middle 50% of data is - The whiskers (lines extending out) = Normal range - The circles = Outliers!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#try-it-detect-outliers",
+    "href": "modules/water-quality/module1-statistics/outliers.html#try-it-detect-outliers",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "Try It: Detect Outliers",
+    "text": "Try It: Detect Outliers"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#what-should-you-do-with-outliers",
+    "href": "modules/water-quality/module1-statistics/outliers.html#what-should-you-do-with-outliers",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "What Should You Do with Outliers?",
+    "text": "What Should You Do with Outliers?\nOnce you find an outlier, you have some choices:\n\nOption 1: Keep It ✅\nWhen to do this: - It’s a real measurement (like a pollution event) - You want to study what caused it - It’s important for your research\n\n# Example: Keep the outlier because it's a real pollution event\ndata_with_outlier = [2.1, 2.3, 2.2, 15.0, 2.4, 2.2]\nprint(\"Data with outlier:\", data_with_outlier)\nprint(f\"Mean: {np.mean(data_with_outlier):.2f}\")\nprint(\"\\nWe keep it because it shows a pollution event happened!\")\n\nData with outlier: [2.1, 2.3, 2.2, 15.0, 2.4, 2.2]\nMean: 4.37\n\nWe keep it because it shows a pollution event happened!\n\n\n\n\nOption 2: Remove It 🗑️\nWhen to do this: - It’s clearly a sensor error - It’s impossible (like pH of 20) - You want to see typical conditions\n\n# Example: Remove the outlier because it's a sensor error\ndata_with_outlier = [7.1, 7.2, 7.0, 15.0, 7.2, 7.1]\ndata_cleaned = [x for x in data_with_outlier if x &lt; 10]  # Remove anything above 10\n\nprint(\"Original data:\", data_with_outlier)\nprint(\"Cleaned data:\", data_cleaned)\nprint(f\"\\nMean before: {np.mean(data_with_outlier):.2f}\")\nprint(f\"Mean after: {np.mean(data_cleaned):.2f}\")\nprint(\"\\nMuch better! Now the mean makes sense.\")\n\nOriginal data: [7.1, 7.2, 7.0, 15.0, 7.2, 7.1]\nCleaned data: [7.1, 7.2, 7.0, 7.2, 7.1]\n\nMean before: 8.43\nMean after: 7.12\n\nMuch better! Now the mean makes sense.\n\n\n\n\nOption 3: Investigate It 🔍\nAlways do this first! - Check your field notes - What happened that day? - Look at weather data - Was there a storm? - Check the sensor - Is it working correctly? - Ask: Is this reading even possible?"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#real-world-detective-work",
+    "href": "modules/water-quality/module1-statistics/outliers.html#real-world-detective-work",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "Real-World Detective Work",
+    "text": "Real-World Detective Work\nLet’s practice being water quality detectives!\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Scenario: You're monitoring a stream near a farm\n# Here are nitrate readings over 2 weeks\ndays = list(range(1, 15))\nnitrate = [2.1, 2.3, 2.2, 2.4, 2.2, 8.5, 9.2, 3.0, 2.8, 2.9, 2.7, 2.8, 2.9, 2.6]\n\n# Plot it\nplt.figure(figsize=(12, 6))\nplt.plot(days, nitrate, marker='o', markersize=10, linewidth=2, color='brown')\nplt.axhline(y=np.median(nitrate), color='green', linestyle='--', linewidth=2, label='Median')\nplt.axhline(y=10, color='red', linestyle='--', linewidth=2, alpha=0.5, label='EPA Limit')\n\n# Highlight the spike\nplt.scatter([6, 7], [8.5, 9.2], s=300, color='red', marker='X', zorder=5, label='Spike!')\n\nplt.xlabel('Day', fontsize=12)\nplt.ylabel('Nitrate (mg/L)', fontsize=12)\nplt.title('Mystery: What Happened on Days 6-7?', fontsize=14)\nplt.legend(fontsize=11)\nplt.grid(True, alpha=0.3)\nplt.show()\n\nprint(\"Detective Questions:\")\nprint(\"1. Are Days 6-7 outliers? (YES - much higher than others)\")\nprint(\"2. Are they sensor errors? (Probably NOT - both days show high values)\")\nprint(\"3. What could cause this? (Possible: Heavy rain → fertilizer runoff)\")\nprint(\"4. Should we remove them? (NO - this is real data showing an event!)\")\nprint(\"\\nConclusion: This looks like a real pollution event to investigate!\")\n\n\n\n\n\n\n\n\nDetective Questions:\n1. Are Days 6-7 outliers? (YES - much higher than others)\n2. Are they sensor errors? (Probably NOT - both days show high values)\n3. What could cause this? (Possible: Heavy rain → fertilizer runoff)\n4. Should we remove them? (NO - this is real data showing an event!)\n\nConclusion: This looks like a real pollution event to investigate!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#comparing-with-and-without-outliers",
+    "href": "modules/water-quality/module1-statistics/outliers.html#comparing-with-and-without-outliers",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "Comparing With and Without Outliers",
+    "text": "Comparing With and Without Outliers\n\nimport numpy as np\n\n# Example: Creek pH data with one bad sensor reading\ncreek_ph = [7.1, 7.2, 7.0, 7.2, 14.5, 7.1, 7.2]\n\n# Calculate statistics both ways\nprint(\"WITH the outlier (14.5):\")\nprint(f\"  Mean: {np.mean(creek_ph):.2f}\")\nprint(f\"  Median: {np.median(creek_ph):.2f}\")\nprint(f\"  Standard Deviation: {np.std(creek_ph):.2f}\")\n\n# Remove the outlier (14.5 is impossible for creek water)\ncreek_ph_clean = [x for x in creek_ph if x &lt; 10]\n\nprint(\"\\nWITHOUT the outlier:\")\nprint(f\"  Mean: {np.mean(creek_ph_clean):.2f}\")\nprint(f\"  Median: {np.median(creek_ph_clean):.2f}\")\nprint(f\"  Standard Deviation: {np.std(creek_ph_clean):.2f}\")\n\nprint(\"\\nSee how much more accurate the statistics are without the bad reading?\")\n\nWITH the outlier (14.5):\n  Mean: 8.19\n  Median: 7.20\n  Standard Deviation: 2.58\n\nWITHOUT the outlier:\n  Mean: 7.13\n  Median: 7.15\n  Standard Deviation: 0.07\n\nSee how much more accurate the statistics are without the bad reading?"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#your-future-outliers-in-buoy-data",
+    "href": "modules/water-quality/module1-statistics/outliers.html#your-future-outliers-in-buoy-data",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "Your Future: Outliers in Buoy Data",
+    "text": "Your Future: Outliers in Buoy Data\nWhen you deploy sensor buoys in real streams, you’ll see outliers! Some will be:\nReal events to study: - 🌧️ Storm runoff events - 🏭 Pollution spills - 🦠 Algae blooms - 🌊 Seasonal changes\nEquipment issues to fix: - 🔋 Low battery - 🔧 Sensor needs calibration - 📡 Data transmission errors - 🐟 Something bumped the sensor\nThe skills you’re learning now will help you tell the difference!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#quick-reference-finding-outliers",
+    "href": "modules/water-quality/module1-statistics/outliers.html#quick-reference-finding-outliers",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "Quick Reference: Finding Outliers",
+    "text": "Quick Reference: Finding Outliers\n# IQR Method (copy this code!)\nimport numpy as np\n\ndata = [your_readings_here]\n\n# Calculate boundaries\nq1 = np.percentile(data, 25)\nq3 = np.percentile(data, 75)\niqr = q3 - q1\nlower = q1 - 1.5 * iqr\nupper = q3 + 1.5 * iqr\n\n# Find outliers\noutliers = [x for x in data if x &lt; lower or x &gt; upper]\nprint(\"Outliers:\", outliers)"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#try-it-multiple-outliers",
+    "href": "modules/water-quality/module1-statistics/outliers.html#try-it-multiple-outliers",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "Try It: Multiple Outliers",
+    "text": "Try It: Multiple Outliers"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#key-takeaways",
+    "href": "modules/water-quality/module1-statistics/outliers.html#key-takeaways",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\n🔍 Outliers = Data points that don’t fit the pattern\n⚠️ They could mean: pollution events, sensor errors, or data mistakes\n📊 IQR method = Math way to find outliers automatically\n📉 Box plots = Visual way to spot outliers (shown as circles)\n🤔 Always investigate before removing outliers\n✅ Keep outliers if they’re real events worth studying\n🗑️ Remove outliers if they’re equipment errors\n🌊 Real stream data will have outliers - you need to understand them!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/outliers.html#the-decision-tree",
+    "href": "modules/water-quality/module1-statistics/outliers.html#the-decision-tree",
+    "title": "Finding Weird Data - Spotting Outliers",
+    "section": "The Decision Tree",
+    "text": "The Decision Tree\nWhen you find an outlier, ask yourself:\n\nIs it possible? (pH of 20 = No, pH of 8.5 = Yes)\nWhat happened that day? (Check notes, weather, etc.)\nDoes it fit a pattern? (One spike vs multiple high readings)\nIs the sensor working? (Check calibration, battery)\n\nThen decide: Keep it, remove it, or investigate more!\nNext lesson: We’ll learn about scatterplots - how to see if two things (like pH and nitrate) are related!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/exercises.html",
+    "href": "modules/water-quality/module1-statistics/exercises.html",
+    "title": "Practice Exercises",
+    "section": "",
+    "text": "You’ve learned about mean, median, standard deviation, outliers, and scatterplots. Now it’s time to practice with real water quality scenarios!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/exercises.html#put-your-skills-to-the-test",
+    "href": "modules/water-quality/module1-statistics/exercises.html#put-your-skills-to-the-test",
+    "title": "Practice Exercises",
+    "section": "",
+    "text": "You’ve learned about mean, median, standard deviation, outliers, and scatterplots. Now it’s time to practice with real water quality scenarios!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/exercises.html#the-exercise",
+    "href": "modules/water-quality/module1-statistics/exercises.html#the-exercise",
+    "title": "Practice Exercises",
+    "section": "The Exercise",
+    "text": "The Exercise\nWe’ve created one comprehensive exercise that covers everything you learned in this module. You’ll analyze real water quality data from multiple streams and make recommendations.\nWhat you’ll do: - Calculate means, medians, and standard deviations - Identify outliers in sensor data - Create scatterplots to find relationships - Make decisions about water safety\n📊"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/exercises.html#how-to-use-google-colab",
+    "href": "modules/water-quality/module1-statistics/exercises.html#how-to-use-google-colab",
+    "title": "Practice Exercises",
+    "section": "How to Use Google Colab",
+    "text": "How to Use Google Colab\nFirst time using Google Colab? It’s easy!\n\nClick the link above\nSign in with your Google account (if you aren’t already)\nClick “Copy to Drive” to save your own copy\nFollow the instructions in the notebook\nRun code cells by clicking the ▶️ play button\n\nYou don’t need to install anything - it all runs in your web browser!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/exercises.html#what-to-expect",
+    "href": "modules/water-quality/module1-statistics/exercises.html#what-to-expect",
+    "title": "Practice Exercises",
+    "section": "What to Expect",
+    "text": "What to Expect\nThe exercise notebook includes:\n\n📝 Step-by-step instructions\n💡 Hints when you need help\n✅ Code to check your answers\n🎯 Real water quality scenarios\n🌊 Data from streams, rivers, and creeks\n\nTime needed: About 15-20 minutes"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/exercises.html#tips-for-success",
+    "href": "modules/water-quality/module1-statistics/exercises.html#tips-for-success",
+    "title": "Practice Exercises",
+    "section": "Tips for Success",
+    "text": "Tips for Success\n\nRead each question carefully\nTry the code yourself before looking at hints\nRun your code often to test it\nAdd comments to explain your thinking\nDon’t worry about making mistakes - that’s how you learn!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/exercises.html#need-help",
+    "href": "modules/water-quality/module1-statistics/exercises.html#need-help",
+    "title": "Practice Exercises",
+    "section": "Need Help?",
+    "text": "Need Help?\n\nEach section has hints you can reveal\nExample code is provided for tricky parts\nAsk your teacher or classmates\nRemember: Getting stuck is part of learning!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/exercises.html#ready",
+    "href": "modules/water-quality/module1-statistics/exercises.html#ready",
+    "title": "Practice Exercises",
+    "section": "Ready?",
+    "text": "Ready?\n🚀 Start the Exercise Now!\nAfter you complete this exercise, you’ll be ready to analyze your own water quality data from sensor buoys! 🎉"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "",
+    "text": "You already know what an average is!\nExample: If you got these test scores: 80, 85, 90, 95, 100\nYour average = (80 + 85 + 90 + 95 + 100) ÷ 5 = 90\nScientists call the average the mean. Same thing, fancier name!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#what-is-an-average",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#what-is-an-average",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "",
+    "text": "You already know what an average is!\nExample: If you got these test scores: 80, 85, 90, 95, 100\nYour average = (80 + 85 + 90 + 95 + 100) ÷ 5 = 90\nScientists call the average the mean. Same thing, fancier name!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#why-do-we-need-the-mean-for-water-quality",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#why-do-we-need-the-mean-for-water-quality",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "Why Do We Need the Mean for Water Quality?",
+    "text": "Why Do We Need the Mean for Water Quality?\nImagine a scientist is testing a creek and measures pH seven times:\n7.2, 7.1, 7.3, 7.0, 7.2, 7.3, 7.1\nInstead of listing all seven numbers, they can say: “The average pH is 7.17”\nThis is useful for: - 📊 Reporting to the community: “The creek’s pH is usually 7.2” - 🔍 Comparing different streams: “Creek A has pH 7.2, Creek B has pH 6.8” - 📅 Tracking changes: “Last month average was 7.5, now it’s 7.0 - something changed!”"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#calculating-mean-by-hand",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#calculating-mean-by-hand",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "Calculating Mean By Hand",
+    "text": "Calculating Mean By Hand\nLet’s calculate the mean pH from those seven readings:\n\n# Example pH readings from a creek\nph_readings = [7.2, 7.1, 7.3, 7.0, 7.2, 7.3, 7.1]\n\n# Step 1: Add them all up\ntotal = 7.2 + 7.1 + 7.3 + 7.0 + 7.2 + 7.3 + 7.1\nprint(\"Step 1 - Add them up:\", total)\n\n# Step 2: Count how many readings\ncount = 7\nprint(\"Step 2 - Count readings:\", count)\n\n# Step 3: Divide total by count\nmean_ph = total / count\nprint(\"Step 3 - Divide:\", mean_ph)\n\nprint(f\"\\n✓ The mean pH is {mean_ph:.2f}\")\n\nStep 1 - Add them up: 50.2\nStep 2 - Count readings: 7\nStep 3 - Divide: 7.171428571428572\n\n✓ The mean pH is 7.17"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#the-easy-way-let-python-do-it",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#the-easy-way-let-python-do-it",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "The Easy Way: Let Python Do It!",
+    "text": "The Easy Way: Let Python Do It!\nPython has built-in tools to calculate the mean. We’ll use something called NumPy (Numerical Python):\n\nimport numpy as np\n\n# Same pH readings\nph_readings = [7.2, 7.1, 7.3, 7.0, 7.2, 7.3, 7.1]\n\n# Calculate mean the easy way!\nmean_ph = np.mean(ph_readings)\n\nprint(\"pH readings:\", ph_readings)\nprint(f\"Mean pH: {mean_ph:.2f}\")\nprint(\"\\nThat was much easier! 😊\")\n\npH readings: [7.2, 7.1, 7.3, 7.0, 7.2, 7.3, 7.1]\nMean pH: 7.17\n\nThat was much easier! 😊\n\n\nBreaking it down: - import numpy as np = Load the NumPy tool (we only do this once) - np.mean() = NumPy’s function to calculate mean - .2f = Show 2 decimal places (7.17 instead of 7.17142857…)"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#try-it-calculate-mean-nitrate",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#try-it-calculate-mean-nitrate",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "Try It: Calculate Mean Nitrate",
+    "text": "Try It: Calculate Mean Nitrate"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#visualizing-the-mean",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#visualizing-the-mean",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "Visualizing the Mean",
+    "text": "Visualizing the Mean\nLet’s see what the mean looks like on a graph:\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Example: pH readings from a creek over one week\ndays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']\nph_readings = [7.2, 7.4, 7.1, 7.3, 7.2, 7.3, 7.2]\n\n# Calculate mean\nmean_ph = np.mean(ph_readings)\n\n# Create a graph\nplt.figure(figsize=(10, 6))\nplt.plot(days, ph_readings, marker='o', markersize=10, linewidth=2, label='Daily pH')\nplt.axhline(y=mean_ph, color='red', linestyle='--', linewidth=2, label=f'Mean = {mean_ph:.2f}')\nplt.xlabel('Day of Week', fontsize=12)\nplt.ylabel('pH Level', fontsize=12)\nplt.title('Creek pH Over One Week', fontsize=14)\nplt.legend(fontsize=11)\nplt.grid(True, alpha=0.3)\nplt.ylim(6.5, 8)\n\n# Add safe zone\nplt.axhline(y=6.5, color='green', linestyle=':', alpha=0.5)\nplt.axhline(y=8.5, color='green', linestyle=':', alpha=0.5)\nplt.fill_between(range(len(days)), 6.5, 8.5, alpha=0.1, color='green', label='Safe zone')\n\nplt.show()\n\nprint(f\"The red dashed line shows the mean pH: {mean_ph:.2f}\")\nprint(\"Notice how the mean is in the 'middle' of all the points!\")\n\n\n\n\n\n\n\n\nThe red dashed line shows the mean pH: 7.24\nNotice how the mean is in the 'middle' of all the points!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#understanding-standard-deviation",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#understanding-standard-deviation",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "Understanding Standard Deviation",
+    "text": "Understanding Standard Deviation\nThe mean tells us the average, but it doesn’t tell us if the readings are consistent or all over the place.\nStandard deviation (SD) tells us: How spread out are the numbers?\nThink of it like this:\nCreek A: pH readings are 7.1, 7.2, 7.1, 7.2, 7.1 (very consistent!)\nCreek B: pH readings are 6.5, 7.5, 6.8, 7.9, 6.6 (all over the place!)\nBoth might have similar means, but Creek A is more stable. Standard deviation measures this!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#what-standard-deviation-tells-us",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#what-standard-deviation-tells-us",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "What Standard Deviation Tells Us",
+    "text": "What Standard Deviation Tells Us\n\nSmall SD = Readings are close together (stable, consistent)\nLarge SD = Readings are spread out (variable, inconsistent)\n\nWhy it matters for water quality: - Stable readings = Good! Water conditions are consistent - Variable readings = Investigate! Could be pollution events, sensor problems, or natural changes"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#calculating-standard-deviation",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#calculating-standard-deviation",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "Calculating Standard Deviation",
+    "text": "Calculating Standard Deviation\n\nimport numpy as np\n\n# Two example creeks with same mean but different consistency\ncreek_a = [7.1, 7.2, 7.1, 7.2, 7.1, 7.2, 7.1]  # Stable creek\ncreek_b = [6.5, 7.5, 6.8, 7.9, 6.6, 7.3, 7.4]  # Variable creek\n\nmean_a = np.mean(creek_a)\nstd_a = np.std(creek_a)\n\nmean_b = np.mean(creek_b)\nstd_b = np.std(creek_b)\n\nprint(\"Creek A (Stable):\")\nprint(f\"  Mean pH: {mean_a:.2f}\")\nprint(f\"  Standard Deviation: {std_a:.3f}\")\nprint(f\"  Readings are usually within {mean_a - std_a:.2f} to {mean_a + std_a:.2f}\")\n\nprint(\"\\nCreek B (Variable):\")\nprint(f\"  Mean pH: {mean_b:.2f}\")\nprint(f\"  Standard Deviation: {std_b:.3f}\")\nprint(f\"  Readings are usually within {mean_b - std_b:.2f} to {mean_b + std_b:.2f}\")\n\nprint(f\"\\nCreek B has {std_b/std_a:.1f} times more variability!\")\nprint(\"A scientist would want to investigate WHY Creek B is so variable.\")\n\nCreek A (Stable):\n  Mean pH: 7.14\n  Standard Deviation: 0.049\n  Readings are usually within 7.09 to 7.19\n\nCreek B (Variable):\n  Mean pH: 7.14\n  Standard Deviation: 0.481\n  Readings are usually within 6.66 to 7.62\n\nCreek B has 9.7 times more variability!\nA scientist would want to investigate WHY Creek B is so variable."
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#visualizing-standard-deviation",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#visualizing-standard-deviation",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "Visualizing Standard Deviation",
+    "text": "Visualizing Standard Deviation\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Same two example creeks\ncreek_a = [7.1, 7.2, 7.1, 7.2, 7.1, 7.2, 7.1]\ncreek_b = [6.5, 7.5, 6.8, 7.9, 6.6, 7.3, 7.4]\n\nmean_a = np.mean(creek_a)\nstd_a = np.std(creek_a)\nmean_b = np.mean(creek_b)\nstd_b = np.std(creek_b)\n\n# Create side-by-side graphs\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))\n\ndays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']\n\n# Creek A - Stable\nax1.plot(days, creek_a, marker='o', markersize=10, linewidth=2, color='blue')\nax1.axhline(y=mean_a, color='red', linestyle='--', linewidth=2, label=f'Mean = {mean_a:.2f}')\nax1.axhline(y=mean_a + std_a, color='orange', linestyle=':', linewidth=2, label='±1 SD')\nax1.axhline(y=mean_a - std_a, color='orange', linestyle=':', linewidth=2)\nax1.fill_between(range(len(days)), mean_a - std_a, mean_a + std_a, alpha=0.2, color='orange')\nax1.set_xlabel('Day of Week', fontsize=11)\nax1.set_ylabel('pH Level', fontsize=11)\nax1.set_title(f'Creek A: Very Consistent (SD = {std_a:.3f})', fontsize=12)\nax1.legend()\nax1.grid(True, alpha=0.3)\nax1.set_ylim(6, 8.5)\n\n# Creek B - Variable\nax2.plot(days, creek_b, marker='o', markersize=10, linewidth=2, color='green')\nax2.axhline(y=mean_b, color='red', linestyle='--', linewidth=2, label=f'Mean = {mean_b:.2f}')\nax2.axhline(y=mean_b + std_b, color='orange', linestyle=':', linewidth=2, label='±1 SD')\nax2.axhline(y=mean_b - std_b, color='orange', linestyle=':', linewidth=2)\nax2.fill_between(range(len(days)), mean_b - std_b, mean_b + std_b, alpha=0.2, color='orange')\nax2.set_xlabel('Day of Week', fontsize=11)\nax2.set_ylabel('pH Level', fontsize=11)\nax2.set_title(f'Creek B: Very Variable (SD = {std_b:.3f})', fontsize=12)\nax2.legend()\nax2.grid(True, alpha=0.3)\nax2.set_ylim(6, 8.5)\n\nplt.tight_layout()\nplt.show()\n\nprint(\"The orange shaded area shows where most readings fall.\")\nprint(\"Creek A: narrow band = consistent\")\nprint(\"Creek B: wide band = variable\")\n\n\n\n\n\n\n\n\nThe orange shaded area shows where most readings fall.\nCreek A: narrow band = consistent\nCreek B: wide band = variable"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#what-could-cause-high-variability",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#what-could-cause-high-variability",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "What Could Cause High Variability?",
+    "text": "What Could Cause High Variability?\nIf a creek has high standard deviation (lots of variability), it might mean:\n\nPollution events - A factory dumps waste occasionally\nStorm runoff - Rain washes fertilizer from farms into the creek\nNatural cycles - Some creeks naturally vary (but usually not this much for pH)\nSensor problems - The equipment might need calibration\nDifferent sampling times - Morning vs afternoon can be different\n\nThis is why buoys are so useful - they can measure continuously and help you see these patterns!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#try-it-analyze-two-rivers",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#try-it-analyze-two-rivers",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "Try It: Analyze Two Rivers",
+    "text": "Try It: Analyze Two Rivers"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#your-future-real-data-collection",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#your-future-real-data-collection",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "Your Future: Real Data Collection",
+    "text": "Your Future: Real Data Collection\nRight now, you’re practicing with example data that we created for learning. But soon you’ll:\n\n🌊 Deploy sensor buoys in real streams and creeks\n📊 Collect your OWN pH and nitrate data\n🔬 Use these same Python skills to analyze YOUR measurements\n📈 See real patterns in water quality over time\n\nInstead of 7 measurements, you might have 700! That’s when mean and standard deviation become REALLY useful.\nFor now, let’s keep practicing with examples so you’ll be ready when it’s time for real data collection!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#quick-reference-python-functions",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#quick-reference-python-functions",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "Quick Reference: Python Functions",
+    "text": "Quick Reference: Python Functions\n\n\n\n\n\n\n\n\nFunction\nWhat It Does\nExample\n\n\n\n\nnp.mean()\nCalculates average\nnp.mean([7.1, 7.2, 7.3]) = 7.2\n\n\nnp.std()\nCalculates standard deviation\nnp.std([7.1, 7.2, 7.3]) = 0.082\n\n\nlen()\nCounts items\nlen([1, 2, 3]) = 3\n\n\nsum()\nAdds items\nsum([1, 2, 3]) = 6"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#key-takeaways",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#key-takeaways",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\n📊 Mean = Average value (add them up, divide by how many)\n📏 Standard Deviation = How spread out the data is\n✅ Small SD = Consistent, stable readings (usually good!)\n⚠️ Large SD = Variable readings (investigate why!)\n🔧 Python makes calculating these MUCH easier than by hand\n🌊 Soon you’ll use real buoy data with hundreds of measurements!"
+  },
+  {
+    "objectID": "modules/water-quality/module1-statistics/mean-sd.html#practice-challenge",
+    "href": "modules/water-quality/module1-statistics/mean-sd.html#practice-challenge",
+    "title": "Finding the Average (Mean) of Water Data",
+    "section": "Practice Challenge",
+    "text": "Practice Challenge\nLook at these example pH readings from a creek: [7.2, 7.1, 7.3, 7.2, 7.1]\nBefore running the code, try to guess: 1. Will the mean be closer to 7.0 or 7.5? 2. Will the standard deviation be big or small?\nThen run the code to check:\n\n\n\n\n\n\nNext up: We’ll learn about the median - another way to find the “middle” that’s sometimes better than the mean!"
+  }
+]
