@@ -193,7 +193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>7.1, 7.2, 7.1, 7.2, 14.5</strong></p>
 <p>Wait… 14.5? That’s impossible! pH only goes up to 14, and natural water is never that high. The sensor must have glitched!</p>
 <p>Let’s see what happens to the mean:</p>
-<div id="9fc43c75" class="cell" data-execution_count="1">
+<div id="70dc393c" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example pH readings with one bad measurement</span></span>
@@ -221,7 +221,7 @@ That doesn't seem right! The mean is 8.82, but most readings were around 7.1</co
 <h3 class="anchored" data-anchor-id="how-to-find-the-median">How to Find the Median</h3>
 <p><strong>Step 1:</strong> Put the numbers in order from smallest to biggest<br>
 <strong>Step 2:</strong> Find the middle number</p>
-<div id="bafe959a" class="cell" data-execution_count="2">
+<div id="c3e266b6" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Same example readings</span></span>
@@ -290,7 +290,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5w
 </section>
 <section id="visualizing-mean-vs-median" class="level2">
 <h2 class="anchored" data-anchor-id="visualizing-mean-vs-median">Visualizing Mean vs Median</h2>
-<div id="fcfff011" class="cell" data-execution_count="3">
+<div id="c12b83c3" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -344,7 +344,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5w
 <strong>Example:</strong> [7.0, 7.1, 7.2, 7.3, 7.4] → Median is 7.2 (the 3rd number)</p>
 <p><strong>When you have an even number:</strong> The median is the average of the two middle numbers<br>
 <strong>Example:</strong> [7.0, 7.1, 7.2, 7.3] → Median is (7.1 + 7.2) ÷ 2 = 7.15</p>
-<div id="3552a9a3" class="cell" data-execution_count="4">
+<div id="04f733a0" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Odd number of readings</span></span>
@@ -369,7 +369,7 @@ Median: 7.15</code></pre>
 <h2 class="anchored" data-anchor-id="the-range-how-spread-out">The Range: How Spread Out?</h2>
 <p>The <strong>range</strong> is the simplest way to see how spread out your data is:</p>
 <p><strong>Range = Biggest number - Smallest number</strong></p>
-<div id="3b4846a0" class="cell" data-execution_count="5">
+<div id="f9674d0f" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Two example creeks measured over a week</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>creek_a_ph <span class="op">=</span> [<span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>]  <span class="co"># Very stable</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>creek_b_ph <span class="op">=</span> [<span class="fl">6.5</span>, <span class="fl">7.5</span>, <span class="fl">6.8</span>, <span class="fl">7.9</span>, <span class="fl">6.6</span>, <span class="fl">7.3</span>, <span class="fl">7.4</span>]  <span class="co"># All over the place</span></span>
@@ -401,7 +401,7 @@ Creek B has 14.0 times more variability!</code></pre>
 </section>
 <section id="visualizing-range" class="level2">
 <h2 class="anchored" data-anchor-id="visualizing-range">Visualizing Range</h2>
-<div id="9c82a14d" class="cell" data-execution_count="6">
+<div id="abc0b2e4" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>creek_a_ph <span class="op">=</span> [<span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>]</span>
@@ -485,7 +485,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5w
 </section>
 <section id="comparing-two-streams" class="level2">
 <h2 class="anchored" data-anchor-id="comparing-two-streams">Comparing Two Streams</h2>
-<div id="1ba3ae96" class="cell" data-execution_count="7">
+<div id="9d7d7900" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -576,7 +576,7 @@ What do you notice?
 </tbody>
 </table>
 <p><strong>Think of it this way:</strong> - <strong>Range</strong> = “What’s the biggest difference I could see?” - <strong>Standard Deviation</strong> = “How far are numbers typically from the average?”</p>
-<div id="fa488cd1" class="cell" data-execution_count="8">
+<div id="4b77fdd7" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example to show the difference</span></span>

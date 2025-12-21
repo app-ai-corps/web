@@ -235,7 +235,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="lets-spot-some-outliers" class="level2">
 <h2 class="anchored" data-anchor-id="lets-spot-some-outliers">Let’s Spot Some Outliers!</h2>
 <p>Here’s a simple way to spot outliers by looking at the data:</p>
-<div id="31c0ebbc" class="cell" data-execution_count="1">
+<div id="94991b2a" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -287,7 +287,7 @@ Day 8 is definitely weird! Something happened that day.</code></pre>
 <p><strong>The idea:</strong> Most data should be in a certain range. If a number is way outside that range, it’s an outlier.</p>
 <p><strong>How it works:</strong> 1. Find Q1 (25th percentile) - 25% of data is below this 2. Find Q3 (75th percentile) - 75% of data is below this 3. Calculate IQR = Q3 - Q1 4. Anything below Q1 - 1.5×IQR is an outlier 5. Anything above Q3 + 1.5×IQR is an outlier</p>
 <p><strong>Don’t memorize this! Python will do it for you.</strong></p>
-<div id="63fc9c19" class="cell" data-execution_count="2">
+<div id="bbcff58a" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Nitrate readings from a river</span></span>
@@ -332,7 +332,7 @@ Outliers detected: [15.0]</code></pre>
 <section id="visualizing-outliers-with-a-box-plot" class="level2">
 <h2 class="anchored" data-anchor-id="visualizing-outliers-with-a-box-plot">Visualizing Outliers with a Box Plot</h2>
 <p>A <strong>box plot</strong> is a graph that shows outliers automatically! It’s like a detective tool for finding weird data.</p>
-<div id="dedf5a1d" class="cell" data-execution_count="3">
+<div id="1322d441" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: pH readings with some outliers</span></span>
@@ -385,7 +385,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5w
 <section id="option-1-keep-it" class="level3">
 <h3 class="anchored" data-anchor-id="option-1-keep-it">Option 1: Keep It ✅</h3>
 <p><strong>When to do this:</strong> - It’s a real measurement (like a pollution event) - You want to study what caused it - It’s important for your research</p>
-<div id="52cfecc1" class="cell" data-execution_count="4">
+<div id="3709ebae" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Keep the outlier because it's a real pollution event</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>data_with_outlier <span class="op">=</span> [<span class="fl">2.1</span>, <span class="fl">2.3</span>, <span class="fl">2.2</span>, <span class="fl">15.0</span>, <span class="fl">2.4</span>, <span class="fl">2.2</span>]</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Data with outlier:"</span>, data_with_outlier)</span>
@@ -402,7 +402,7 @@ We keep it because it shows a pollution event happened!</code></pre>
 <section id="option-2-remove-it" class="level3">
 <h3 class="anchored" data-anchor-id="option-2-remove-it">Option 2: Remove It 🗑️</h3>
 <p><strong>When to do this:</strong> - It’s clearly a sensor error - It’s impossible (like pH of 20) - You want to see typical conditions</p>
-<div id="54b96a7f" class="cell" data-execution_count="5">
+<div id="1806cf23" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Remove the outlier because it's a sensor error</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>data_with_outlier <span class="op">=</span> [<span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.0</span>, <span class="fl">15.0</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>]</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>data_cleaned <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> data_with_outlier <span class="cf">if</span> x <span class="op">&lt;</span> <span class="dv">10</span>]  <span class="co"># Remove anything above 10</span></span>
@@ -431,7 +431,7 @@ Much better! Now the mean makes sense.</code></pre>
 <section id="real-world-detective-work" class="level2">
 <h2 class="anchored" data-anchor-id="real-world-detective-work">Real-World Detective Work</h2>
 <p>Let’s practice being water quality detectives!</p>
-<div id="5c6ddc70" class="cell" data-execution_count="6">
+<div id="e077982c" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -482,7 +482,7 @@ Conclusion: This looks like a real pollution event to investigate!</code></pre>
 </section>
 <section id="comparing-with-and-without-outliers" class="level2">
 <h2 class="anchored" data-anchor-id="comparing-with-and-without-outliers">Comparing With and Without Outliers</h2>
-<div id="c60dcedf" class="cell" data-execution_count="7">
+<div id="47bbc279" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Creek pH data with one bad sensor reading</span></span>
