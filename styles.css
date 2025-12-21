@@ -83,7 +83,7 @@ body {
   display: inline-block;
   padding: 1rem 2.5rem;
   background-color: var(--tennessee-orange);
-  color: var(--white);
+  color: var(--smokey);
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
@@ -96,7 +96,7 @@ body {
   background-color: var(--torch);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(255, 130, 0, 0.4);
-  color: var(--white);
+  color: var(--smokey);
 }
 
 /* Modules Section */
@@ -148,14 +148,14 @@ body {
 
 .module-link {
   display: inline-block;
-  color: var(--tennessee-orange);
+  color: var(--valley);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .module-link:hover {
-  color: var(--torch);
+  color: var(--globe);
 }
 
 .coming-soon {
