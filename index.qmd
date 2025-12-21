@@ -9,7 +9,7 @@ format:
 ::: {.custom-navbar}
 <div class="navbar-brand">
   <a href="/"><img src="assets/logo.png" alt="AAIC Logo" class="navbar-logo"></a>
-  <span>Appalachian A.I. Corps</span>
+  <h1>Appalachian A.I. Corps</h1>
 </div>
 <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
 <nav class="navbar-links" id="navbarLinks">
@@ -28,7 +28,7 @@ function toggleMenu() {
 ::: {.hero-content}
 ![](assets/logo_white.png){.hero-image fig-alt="Appalachian A.I. Corps logo"}
 
-# Empowering Appalachia Through Artificial Intelligence
+## Empowering Appalachia Through Artificial Intelligence
 
 The Appalachian A.I. Corps is an initiative dedicated to empowering Appalachian communities to harness artificial intelligence technologies to support their region, communities, and families.
 
@@ -48,7 +48,7 @@ We believe that the power of AI should be accessible to all. Through education, 
 ::: {.footer}
 ::: {.footer-columns}
 ::: {.footer-left}
-![](assets/logo_white.png){.footer-logo}
+![](assets/logo_white.png){.footer-logo fig-alt="AAIC logo"}
 
 **Appalachian A.I. Corps**  
 Empowering Appalachia Through Artificial Intelligence
