@@ -28,14 +28,16 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html-435ba6093e6f0817aa7405139811e7b1.min.css" rel="stylesheet" append-hash="true" data-mode="light">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet">  
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../styles-main.css">
 </head>
 
 <body>
@@ -47,19 +49,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<h2 id="welcome" class="anchored">Welcome!</h2>
+<h2 id="welcome">Welcome!</h2>
 <p>These interactive modules teach statistics, machine learning, and data science through water quality monitoring.</p>
-<h3 id="module-1-statistics-fundamentals" class="anchored"><a href="../../modules/water-quality/module1-statistics/index.html">Module 1: Statistics Fundamentals</a></h3>
+<h3 id="module-1-statistics-fundamentals"><a href="../../modules/water-quality/module1-statistics/index.html">Module 1: Statistics Fundamentals</a></h3>
 <p>Learn mean, median, standard deviation, outliers, and scatterplots using pH and nitrate data.</p>
-<h3 id="module-2-predictive-modeling" class="anchored">Module 2: Predictive Modeling</h3>
+<h3 id="module-2-predictive-modeling">Module 2: Predictive Modeling</h3>
 <p><em>Coming soon!</em></p>
-<h3 id="module-3-gradient-updates" class="anchored">Module 3: Gradient Updates</h3>
+<h3 id="module-3-gradient-updates">Module 3: Gradient Updates</h3>
 <p><em>Coming soon!</em></p>
-<h3 id="module-4-convolutional-neural-networks" class="anchored">Module 4: Convolutional Neural Networks</h3>
+<h3 id="module-4-convolutional-neural-networks">Module 4: Convolutional Neural Networks</h3>
 <p><em>Coming soon!</em></p>
-<h3 id="module-5-graphing-sensor-data" class="anchored">Module 5: Graphing Sensor Data</h3>
+<h3 id="module-5-graphing-sensor-data">Module 5: Graphing Sensor Data</h3>
 <p><em>Coming soon!</em></p>
-<h3 id="module-6-mapping-data-with-gis" class="anchored">Module 6: Mapping Data with GIS</h3>
+<h3 id="module-6-mapping-data-with-gis">Module 6: Mapping Data with GIS</h3>
 <p><em>Coming soon!</em></p>
 
 
@@ -69,13 +71,6 @@ ul.task-list li input[type="checkbox"] {
     tabsets.forEach(function(tabset) {
       const tabby = new Tabby('#' + tabset.id);
     });
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

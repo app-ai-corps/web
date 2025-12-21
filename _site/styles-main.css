@@ -351,16 +351,6 @@ body {
   margin-right: auto;
 }
 
-.module-card {
-  background: var(--white);
-  border: 3px solid var(--valley);
-  border-radius: 12px;
-  padding: 0;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
 .module-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 116, 111, 0.2);
@@ -386,11 +376,33 @@ body {
   border-radius: 8px;
 }
 
+.image-credit {
+  font-size: 0.85rem;
+  color: var(--rock);
+  margin: 0.5rem 0 1rem 0;
+  font-style: italic;
+}
+
+.image-credit a {
+  color: var(--valley);
+  text-decoration: none;
+}
+
+.image-credit a:hover {
+  text-decoration: underline;
+}
+
 .module-card h3 {
   color: var(--globe);
   font-size: 1.5rem;
   margin: 0 0 1rem 0;
   padding: 0;
+}
+
+.module-card h3 a {
+  color: var(--globe);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .module-card p {
