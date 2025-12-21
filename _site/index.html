@@ -28,7 +28,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabby.min.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html-435ba6093e6f0817aa7405139811e7b1.min.css" rel="stylesheet" append-hash="true" data-mode="light">
@@ -70,7 +69,7 @@ function toggleMenu() {
 <div class="hero">
 <div class="hero-content">
 <p><img src="assets/logo_white.png" class="hero-image img-fluid" alt="Appalachian A.I. Corps logo"></p>
-<h2 id="empowering-appalachia-through-artificial-intelligence" class="anchored">Empowering Appalachia Through Artificial&nbsp;Intelligence</h2>
+<h2 id="empowering-appalachia-through-artificial-intelligence">Empowering Appalachia Through Artificial&nbsp;Intelligence</h2>
 <p>The Appalachian A.I. Corps is an initiative dedicated to empowering Appalachian communities to harness artificial intelligence technologies to support their region, communities, and families.</p>
 <p>We believe that the power of AI should be accessible to all. Through education, collaboration, and practical application, we’re building a future where Appalachian communities lead in the intelligent use of technology.</p>
 <p><a href="modules.html" class="btn">Explore Our Modules</a></p>
@@ -104,13 +103,6 @@ Knoxville, TN</p>
     tabsets.forEach(function(tabset) {
       const tabby = new Tabby('#' + tabset.id);
     });
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

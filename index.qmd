@@ -5,6 +5,7 @@ format:
     css: styles-main.css
     toc: false
     theme: none
+    anchor-sections: false
 ---
 ::: {.custom-navbar}
 <div class="navbar-brand">
