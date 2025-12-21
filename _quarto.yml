@@ -26,6 +26,11 @@ website:
 
 format:
   html:
-    theme: united
-    css: styles-full.css
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">  
+    theme: none
+    css: styles-main.css
     toc: false
