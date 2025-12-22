@@ -10,7 +10,7 @@ website:
     background: "#ffffff"
     foreground: "#00746f"
     left:
-          - text: "Water Quality Lessons"
+      - text: "Water Quality Lessons"
         menu:
           - text: "1 . Statistics Fundamentals"
             href: modules/water-quality/module1-statistics
@@ -36,5 +36,4 @@ format:
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">  
     theme: none
     css: styles-main.css
-    toc: false
     anchor-sections: false

@@ -3,6 +3,7 @@ title: ""
 format:
   html:
     css: styles-main.css
+    toc: false
     theme: none
 ---
 
