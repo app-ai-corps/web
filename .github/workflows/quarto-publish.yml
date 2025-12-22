@@ -32,6 +32,9 @@ jobs:
           # Render the main site
           quarto render
           
+          # Create the modules directory in the output
+          mkdir -p _site/modules/water-quality
+
           # Render the water-quality module separately with its own config
           cd modules/water-quality
           quarto render
