@@ -4,6 +4,7 @@ format:
   html:
     css: ../../styles-main.css
     theme: none
+    toc: false
 ---
 
 ::: {.custom-navbar}
