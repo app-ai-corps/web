@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "!modules/**"
 
 website:
   title: "Appalachian A.I. Corps"

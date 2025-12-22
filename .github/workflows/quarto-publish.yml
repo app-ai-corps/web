@@ -28,7 +28,17 @@ jobs:
           pip install jupyter nbformat nbclient ipykernel pandas numpy matplotlib
       
       - name: Render Quarto Project
-        run: quarto render
+        run: |
+          # Render the main site
+          quarto render
+          
+          # Render the water-quality module separately with its own config
+          cd modules/water-quality
+          quarto render
+          
+          # Copy the rendered module output to the main site output
+          cp -r _site/* ../../_site/modules/water-quality/
+          cd ../..
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
