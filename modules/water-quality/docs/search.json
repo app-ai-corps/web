@@ -55,7 +55,7 @@
     "href": "module1-statistics/median-range.html#try-it-mean-vs-median",
     "title": "The Median and Range - Different Ways to Understand Data",
     "section": "Try It: Mean vs Median",
-    "text": "Try It: Mean vs Median",
+    "text": "Try It: Mean vs Median\nimport numpy as np\n\n# Example: Nitrate readings from a river\n# Most are normal, but one day there was a pollution spill!\nnitrate_readings = [2.1, 2.3, 2.2, 2.4, 45.0, 2.2, 2.3]\n\nmean_nitrate = np.mean(nitrate_readings)\nmedian_nitrate = np.median(nitrate_readings)\n\nprint(\"Nitrate readings (mg/L):\", nitrate_readings)\nprint(f\"\\nMean: {mean_nitrate:.2f} mg/L\")\nprint(f\"Median: {median_nitrate:.2f} mg/L\")\n\nprint(\"\\nWhich one better represents the 'typical' nitrate level?\")\nprint(\"The median! That one spike from the spill doesn't mess it up.\")\n\n# Try removing the 45.0 and see what happens to both!",
     "crumbs": [
       "Home",
       "3. Median and Range"
@@ -110,7 +110,7 @@
     "href": "module1-statistics/median-range.html#try-it-analyze-a-river",
     "title": "The Median and Range - Different Ways to Understand Data",
     "section": "Try It: Analyze a River",
-    "text": "Try It: Analyze a River",
+    "text": "Try It: Analyze a River\nimport numpy as np\n\n# Example: pH readings from a river over two weeks\nriver_ph = [7.3, 7.2, 7.4, 7.1, 7.3, 7.2, 7.4, 7.3, 7.2, 7.1, 7.3, 7.4, 7.2, 7.3]\n\n# Calculate statistics\nmean_val = np.mean(river_ph)\nmedian_val = np.median(river_ph)\nrange_val = max(river_ph) - min(river_ph)\n\nprint(\"River pH readings:\", river_ph)\nprint(f\"\\nMean: {mean_val:.2f}\")\nprint(f\"Median: {median_val:.2f}\")\nprint(f\"Range: {range_val:.2f}\")\nprint(f\"Min: {min(river_ph)}, Max: {max(river_ph)}\")\n\n# Try adding an outlier (like 9.5) to the list and see what happens!",
     "crumbs": [
       "Home",
       "3. Median and Range"
@@ -176,7 +176,7 @@
     "href": "module1-statistics/median-range.html#practice-challenge",
     "title": "The Median and Range - Different Ways to Understand Data",
     "section": "Practice Challenge",
-    "text": "Practice Challenge\nHere’s a challenge for you! Look at these nitrate readings:\n[3.1, 3.2, 3.0, 18.5, 3.3, 3.1, 3.2]\nBefore running code, think about: 1. Is there an outlier? 2. Will the mean or median be more useful? 3. What might cause that high reading?",
+    "text": "Practice Challenge\nHere’s a challenge for you! Look at these nitrate readings:\n[3.1, 3.2, 3.0, 18.5, 3.3, 3.1, 3.2]\nBefore running code, think about: 1. Is there an outlier? 2. Will the mean or median be more useful? 3. What might cause that high reading?\nimport numpy as np\n\nnitrate = [3.1, 3.2, 3.0, 18.5, 3.3, 3.1, 3.2]\n\nprint(\"Nitrate readings:\", nitrate)\nprint(f\"Mean: {np.mean(nitrate):.2f} mg/L\")\nprint(f\"Median: {np.median(nitrate):.2f} mg/L\")\nprint(f\"Range: {max(nitrate) - min(nitrate):.2f} mg/L\")\n\nprint(\"\\nWhich statistic best represents typical conditions?\")\n\n# Try removing the 18.5 and see what changes!",
     "crumbs": [
       "Home",
       "3. Median and Range"
@@ -341,7 +341,7 @@
     "href": "module1-statistics/scatterplots.html#try-it-create-your-own-scatterplot",
     "title": "Scatterplots - Finding Relationships Between Variables",
     "section": "Try It: Create Your Own Scatterplot",
-    "text": "Try It: Create Your Own Scatterplot",
+    "text": "Try It: Create Your Own Scatterplot\nimport matplotlib.pyplot as plt\n\n# Example: Rainfall and Nitrate Levels\n# More rain → More fertilizer runoff → Higher nitrate?\nrainfall_mm = [0, 5, 2, 15, 8, 20, 3, 25, 10, 30]\nnitrate_levels = [2.0, 2.5, 2.2, 4.5, 3.2, 5.8, 2.4, 6.5, 3.8, 7.2]\n\n# YOUR TURN: Make a scatterplot\nplt.figure(figsize=(10, 6))\nplt.scatter(rainfall_mm, nitrate_levels, s=150, alpha=0.7, edgecolors='black', color='blue')\nplt.xlabel('Rainfall (mm)', fontsize=12)\nplt.ylabel('Nitrate (mg/L)', fontsize=12)\nplt.title('Does Rainfall Affect Nitrate?', fontsize=14)\nplt.grid(True, alpha=0.3)\nplt.show()\n\nprint(\"What relationship do you see?\")\nprint(\"Positive, negative, or no relationship?\")\n\n# Try changing the numbers to see different patterns!",
     "crumbs": [
       "Home",
       "5. Scatterplots"
@@ -407,7 +407,7 @@
     "href": "module1-statistics/scatterplots.html#try-it-find-your-own-relationships",
     "title": "Scatterplots - Finding Relationships Between Variables",
     "section": "Try It: Find Your Own Relationships",
-    "text": "Try It: Find Your Own Relationships",
+    "text": "Try It: Find Your Own Relationships\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Example data from a creek study\n# Day 1-10 measurements\nph_readings = [7.0, 7.2, 7.1, 7.3, 7.4, 7.2, 7.5, 7.3, 7.4, 7.6]\nnitrate_readings = [2.0, 2.5, 2.2, 3.0, 3.5, 2.8, 4.0, 3.2, 3.7, 4.5]\n\n# Create scatterplot\nplt.figure(figsize=(10, 6))\nplt.scatter(ph_readings, nitrate_readings, s=150, alpha=0.7, \n            edgecolors='black', color='purple')\n\n# Add trend line\nz = np.polyfit(ph_readings, nitrate_readings, 1)\np = np.poly1d(z)\nplt.plot(ph_readings, p(ph_readings), \"r--\", linewidth=2, label='Trend line')\n\nplt.xlabel('pH', fontsize=12)\nplt.ylabel('Nitrate (mg/L)', fontsize=12)\nplt.title('pH vs Nitrate: Is There a Relationship?', fontsize=14)\nplt.legend()\nplt.grid(True, alpha=0.3)\nplt.show()\n\n# Calculate correlation\ncorrelation = np.corrcoef(ph_readings, nitrate_readings)[0, 1]\nprint(f\"Correlation: {correlation:.3f}\")\n\nif correlation &gt; 0.5:\n    print(\"Strong positive relationship!\")\nelif correlation &gt; 0:\n    print(\"Weak positive relationship\")\nelse:\n    print(\"Negative or no relationship\")\n\n# Try changing the numbers to create different patterns!",
     "crumbs": [
       "Home",
       "5. Scatterplots"
@@ -517,7 +517,7 @@
     "href": "module1-statistics/mean-sd.html#try-it-calculate-mean-nitrate",
     "title": "Finding the Average (Mean) of Water Data",
     "section": "Try It: Calculate Mean Nitrate",
-    "text": "Try It: Calculate Mean Nitrate",
+    "text": "Try It: Calculate Mean Nitrate\nimport numpy as np\n\n# Here are example nitrate readings from a river (in mg/L)\n# Imagine a scientist collected these over one week\nnitrate_readings = [3.2, 4.1, 3.8, 3.5, 4.0, 3.7, 3.9]\n\n# YOUR TURN: Calculate the mean nitrate\nmean_nitrate = np.mean(nitrate_readings)\n\nprint(\"Nitrate readings (mg/L):\", nitrate_readings)\nprint(f\"Mean nitrate: {mean_nitrate:.2f} mg/L\")\n\n# Is it safe? (Remember: safe is less than 10 mg/L)\nif mean_nitrate &lt; 10:\n    print(\"✓ Average nitrate is SAFE\")\nelse:\n    print(\"✗ Average nitrate is TOO HIGH\")\n\n# Try changing the numbers and see what happens!",
     "crumbs": [
       "Home",
       "2. Mean and SD"
@@ -594,7 +594,7 @@
     "href": "module1-statistics/mean-sd.html#try-it-analyze-two-rivers",
     "title": "Finding the Average (Mean) of Water Data",
     "section": "Try It: Analyze Two Rivers",
-    "text": "Try It: Analyze Two Rivers",
+    "text": "Try It: Analyze Two Rivers\nimport numpy as np\n\n# Example: River A - Near a farm\nriver_a_nitrate = [8.5, 9.2, 8.8, 9.0, 8.7, 9.1, 8.9]\n\n# Example: River B - Near a forest\nriver_b_nitrate = [2.1, 2.3, 2.2, 2.4, 2.2, 2.3, 2.1]\n\n# Calculate means and standard deviations\nmean_a = np.mean(river_a_nitrate)\nstd_a = np.std(river_a_nitrate)\n\nmean_b = np.mean(river_b_nitrate)\nstd_b = np.std(river_b_nitrate)\n\nprint(\"River A (Near Farm):\")\nprint(f\"  Mean nitrate: {mean_a:.2f} mg/L\")\nprint(f\"  Standard Deviation: {std_a:.3f} mg/L\")\n\nprint(\"\\nRiver B (Near Forest):\")\nprint(f\"  Mean nitrate: {mean_b:.2f} mg/L\")\nprint(f\"  Standard Deviation: {std_b:.3f} mg/L\")\n\nprint(\"\\nQuestions to think about:\")\nprint(\"1. Which river has higher nitrate? (Look at the means)\")\nprint(\"2. Which river is more consistent? (Look at the SD)\")\nprint(\"3. Why might the farm river have higher nitrate?\")\nprint(\"4. Is either river unsafe to drink? (Remember: safe is &lt; 10 mg/L)\")\n\n# Try changing the numbers to see what happens!",
     "crumbs": [
       "Home",
       "2. Mean and SD"
@@ -638,7 +638,7 @@
     "href": "module1-statistics/mean-sd.html#practice-challenge",
     "title": "Finding the Average (Mean) of Water Data",
     "section": "Practice Challenge",
-    "text": "Practice Challenge\nLook at these example pH readings from a creek: [7.2, 7.1, 7.3, 7.2, 7.1]\nBefore running the code, try to guess: 1. Will the mean be closer to 7.0 or 7.5? 2. Will the standard deviation be big or small?\nThen run the code to check:\n\n\n\n\n\n\nNext up: We’ll learn about the median - another way to find the “middle” that’s sometimes better than the mean!",
+    "text": "Practice Challenge\nLook at these example pH readings from a creek: [7.2, 7.1, 7.3, 7.2, 7.1]\nBefore running the code, try to guess: 1. Will the mean be closer to 7.0 or 7.5? 2. Will the standard deviation be big or small?\nThen run the code to check:\nimport numpy as np\n\nph = [7.2, 7.1, 7.3, 7.2, 7.1]\n\nprint(\"Mean:\", np.mean(ph))\nprint(\"Standard Deviation:\", np.std(ph))\n\n# Were you close? Try changing the numbers to see what happens!\nNext up: We’ll learn about the median - another way to find the “middle” that’s sometimes better than the mean!",
     "crumbs": [
       "Home",
       "2. Mean and SD"
@@ -704,7 +704,7 @@
     "href": "module1-statistics/index.html#lets-try-python-right-now",
     "title": "Water Quality Statistics - Let’s Learn Together!",
     "section": "Let’s Try Python Right Now!",
-    "text": "Let’s Try Python Right Now!\nClick the ▶️ button below to run your first Python code:\n\n\n\n\n\n\n🎉 You just ran Python code! See how it printed messages and did math?",
+    "text": "Let’s Try Python Right Now!\nClick the ▶️ button below to run your first Python code:\n# This is a comment - Python ignores lines that start with #\n# Let's make Python do some math!\n\nprint(\"Hello, Water Scientist!\")\nprint(\"2 + 2 =\", 2 + 2)\nprint(\"10 divided by 2 =\", 10 / 2)\n🎉 You just ran Python code! See how it printed messages and did math?",
     "crumbs": [
       "Home",
       "Water Quality Statistics - Let's Learn Together!"
@@ -715,7 +715,7 @@
     "href": "module1-statistics/index.html#try-it-yourself",
     "title": "Water Quality Statistics - Let’s Learn Together!",
     "section": "Try It Yourself!",
-    "text": "Try It Yourself!\nNow YOU try! Edit the code below. Change the numbers, change the message, then click ▶️:",
+    "text": "Try It Yourself!\nNow YOU try! Edit the code below. Change the numbers, change the message, then click ▶️:\n# Change this message to your name!\nprint(\"My name is Student\")\n\n# Try different math problems\nprint(\"5 + 3 =\", 5 + 3)\nprint(\"20 - 7 =\", 20 - 7)\n\n# Can you make it calculate 15 times 4?",
     "crumbs": [
       "Home",
       "Water Quality Statistics - Let's Learn Together!"
@@ -748,7 +748,7 @@
     "href": "module1-statistics/index.html#a-quick-preview",
     "title": "Water Quality Statistics - Let’s Learn Together!",
     "section": "A Quick Preview",
-    "text": "A Quick Preview\nHere’s a sneak peek of what you’ll be able to do:\n\n\n\n\n\n\nPretty cool, right? Soon you’ll understand every line of that code!",
+    "text": "A Quick Preview\nHere’s a sneak peek of what you’ll be able to do:\n# This code analyzes pH readings from a stream\nph_readings = [7.2, 7.1, 7.3, 7.0, 7.2]\n\n# Calculate the average (you'll learn this soon!)\naverage_ph = sum(ph_readings) / len(ph_readings)\n\nprint(\"pH readings from the stream:\", ph_readings)\nprint(\"Average pH:\", average_ph)\n\nif average_ph &gt;= 6.5 and average_ph &lt;= 8.5:\n    print(\"✓ Water pH is SAFE for drinking!\")\nelse:\n    print(\"✗ Water pH is outside safe range!\")\nPretty cool, right? Soon you’ll understand every line of that code!",
     "crumbs": [
       "Home",
       "Water Quality Statistics - Let's Learn Together!"
@@ -847,7 +847,7 @@
     "href": "module1-statistics/outliers.html#try-it-detect-outliers",
     "title": "Finding Weird Data - Spotting Outliers",
     "section": "Try It: Detect Outliers",
-    "text": "Try It: Detect Outliers",
+    "text": "Try It: Detect Outliers\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Example: You're analyzing nitrate from a creek\n# Is there an outlier?\ncreek_nitrate = [3.1, 3.2, 3.0, 3.3, 18.5, 3.1, 3.2, 3.0]\n\n# Calculate IQR method\nq1 = np.percentile(creek_nitrate, 25)\nq3 = np.percentile(creek_nitrate, 75)\niqr = q3 - q1\nlower_bound = q1 - 1.5 * iqr\nupper_bound = q3 + 1.5 * iqr\n\nprint(\"Nitrate readings:\", creek_nitrate)\nprint(f\"\\nOutlier boundaries: {lower_bound:.2f} to {upper_bound:.2f}\")\n\n# Find outliers\noutliers = [x for x in creek_nitrate if x &lt; lower_bound or x &gt; upper_bound]\nprint(f\"Outliers found: {outliers}\")\n\n# Make a box plot\nplt.figure(figsize=(8, 6))\nplt.boxplot(creek_nitrate, vert=True, patch_artist=True,\n            boxprops=dict(facecolor='lightgreen'))\nplt.ylabel('Nitrate (mg/L)', fontsize=12)\nplt.title('Box Plot of Creek Nitrate', fontsize=13)\nplt.grid(True, alpha=0.3, axis='y')\nplt.show()\n\n# Try removing the 18.5 and run it again!",
     "crumbs": [
       "Home",
       "4. Outliers"
@@ -913,7 +913,7 @@
     "href": "module1-statistics/outliers.html#try-it-multiple-outliers",
     "title": "Finding Weird Data - Spotting Outliers",
     "section": "Try It: Multiple Outliers",
-    "text": "Try It: Multiple Outliers",
+    "text": "Try It: Multiple Outliers\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Example: pH readings with several outliers\nph_readings = [7.1, 7.2, 7.0, 9.5, 7.2, 7.1, 5.5, 7.3, 7.2, 7.1, 12.0, 7.2]\n\n# Make a box plot\nplt.figure(figsize=(10, 6))\nplt.boxplot(ph_readings, vert=True, patch_artist=True,\n            boxprops=dict(facecolor='lightcoral'))\nplt.ylabel('pH', fontsize=12)\nplt.title('How Many Outliers Can You Spot?', fontsize=13)\nplt.grid(True, alpha=0.3, axis='y')\nplt.show()\n\n# Calculate IQR method\nq1 = np.percentile(ph_readings, 25)\nq3 = np.percentile(ph_readings, 75)\niqr = q3 - q1\nlower = q1 - 1.5 * iqr\nupper = q3 + 1.5 * iqr\n\noutliers = [x for x in ph_readings if x &lt; lower or x &gt; upper]\n\nprint(\"pH readings:\", ph_readings)\nprint(f\"Outliers detected: {outliers}\")\nprint(\"\\nWhat do you think caused each outlier?\")",
     "crumbs": [
       "Home",
       "4. Outliers"
@@ -1001,7 +1001,7 @@
     "href": "module1-statistics/introduction.html#try-it-make-your-own-list",
     "title": "What Are Statistics? (And Why Should You Care?)",
     "section": "Try It: Make Your Own List",
-    "text": "Try It: Make Your Own List\n\n\n\n\n\n\nChallenge: Change the numbers in my_numbers and run it again!",
+    "text": "Try It: Make Your Own List\n# Create a list of your own numbers!\n# These could be temperatures, test scores, anything!\nmy_numbers = [10, 20, 30, 40, 50]\n\nprint(\"My list:\", my_numbers)\n\n# Let's see how many numbers are in the list\nprint(\"How many numbers:\", len(my_numbers))\n\n# 'len' means 'length' - it counts items in the list\nChallenge: Change the numbers in my_numbers and run it again!",
     "crumbs": [
       "Home",
       "1. Introduction"
@@ -1023,7 +1023,7 @@
     "href": "module1-statistics/introduction.html#try-it-explore-your-data",
     "title": "What Are Statistics? (And Why Should You Care?)",
     "section": "Try It: Explore Your Data",
-    "text": "Try It: Explore Your Data",
+    "text": "Try It: Explore Your Data\n# pH readings from different days\nmonday_to_friday = [7.2, 7.1, 7.3, 6.9, 7.2]\n\nprint(\"pH readings:\", monday_to_friday)\n\n# YOUR TURN: Use len(), min(), and max() to explore this data\n# Example:\nprint(\"Number of readings:\", len(monday_to_friday))\n\n# Now you try finding the minimum and maximum!",
     "crumbs": [
       "Home",
       "1. Introduction"
@@ -1067,7 +1067,7 @@
     "href": "module1-statistics/introduction.html#try-it-be-a-water-inspector",
     "title": "What Are Statistics? (And Why Should You Care?)",
     "section": "Try It: Be a Water Inspector!",
-    "text": "Try It: Be a Water Inspector!",
+    "text": "Try It: Be a Water Inspector!\n# YOUR TURN: Check if these water samples are safe\n\n# Sample 1\npH = 7.3\nnitrate = 4.2\n\nprint(\"=== Sample 1 ===\")\nprint(f\"pH: {pH}\")\nprint(f\"Nitrate: {nitrate} mg/L\")\n\n# Check pH (fill in the numbers!)\nif pH &gt;= 6.5 and pH &lt;= 8.5:\n    print(\"✓ pH is safe\")\nelse:\n    print(\"✗ pH is not safe\")\n\n# Check nitrate (fill in the number!)\nif nitrate &lt; 10:\n    print(\"✓ Nitrate is safe\")\nelse:\n    print(\"✗ Nitrate is not safe\")\n\n# Now try changing the pH and nitrate values to see what happens!",
     "crumbs": [
       "Home",
       "1. Introduction"
@@ -1100,13 +1100,13 @@
     "href": "index.html",
     "title": "AAIC Water Quality Education Modules",
     "section": "",
-    "text": "These interactive modules teach statistics, machine learning, and data science through water quality monitoring.\n\n\nLearn mean, median, standard deviation, outliers, and scatterplots using pH and nitrate data.\n\n\n\nComing soon!\n\n\n\nComing soon!\n\n\n\nComing soon!\n\n\n\nComing soon!\n\n\n\nComing soon!"
+    "text": "These interactive modules teach statistics, machine learning, and data science through water quality monitoring.\n\n\nLearn mean, median, standard deviation, outliers, and scatterplots using pH data.\n\n\n\nComing soon!\n\n\n\nComing soon!\n\n\n\nComing soon!\n\n\n\nComing soon!\n\n\n\nComing soon!"
   },
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "AAIC Water Quality Education Modules",
     "section": "",
-    "text": "These interactive modules teach statistics, machine learning, and data science through water quality monitoring.\n\n\nLearn mean, median, standard deviation, outliers, and scatterplots using pH and nitrate data.\n\n\n\nComing soon!\n\n\n\nComing soon!\n\n\n\nComing soon!\n\n\n\nComing soon!\n\n\n\nComing soon!"
+    "text": "These interactive modules teach statistics, machine learning, and data science through water quality monitoring.\n\n\nLearn mean, median, standard deviation, outliers, and scatterplots using pH data.\n\n\n\nComing soon!\n\n\n\nComing soon!\n\n\n\nComing soon!\n\n\n\nComing soon!\n\n\n\nComing soon!"
   }
 ]

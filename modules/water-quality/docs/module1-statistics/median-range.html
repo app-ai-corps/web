@@ -75,8 +75,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-434a87f1a65cf5564e22d224e5738d6d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
-<link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,8 +102,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
-<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 </head>
@@ -290,7 +286,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>7.1, 7.2, 7.1, 7.2, 14.5</strong></p>
 <p>Wait… 14.5? That’s impossible! pH only goes up to 14, and natural water is never that high. The sensor must have glitched!</p>
 <p>Let’s see what happens to the mean:</p>
-<div id="e4aa2333" class="cell" data-execution_count="1">
+<div id="e87486cc" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example pH readings with one bad measurement</span></span>
@@ -318,7 +314,7 @@ That doesn't seem right! The mean is 8.82, but most readings were around 7.1</co
 <h3 class="anchored" data-anchor-id="how-to-find-the-median">How to Find the Median</h3>
 <p><strong>Step 1:</strong> Put the numbers in order from smallest to biggest<br>
 <strong>Step 2:</strong> Find the middle number</p>
-<div id="98f06146" class="cell" data-execution_count="2">
+<div id="bb202d6a" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Same example readings</span></span>
@@ -376,53 +372,62 @@ See? The median (7.2) represents the 'typical' reading much better!</code></pre>
 </section>
 <section id="try-it-mean-vs-median" class="level2">
 <h2 class="anchored" data-anchor-id="try-it-mean-vs-median">Try It: Mean vs Median</h2>
-<div>
-<div id="pyodide-1" class="exercise-cell">
+<pre class="{pyodide}"><code>import numpy as np
 
-</div>
-<script type="pyodide-1-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5wXG5cbiMgRXhhbXBsZTogTml0cmF0ZSByZWFkaW5ncyBmcm9tIGEgcml2ZXJcbiMgTW9zdCBhcmUgbm9ybWFsLCBidXQgb25lIGRheSB0aGVyZSB3YXMgYSBwb2xsdXRpb24gc3BpbGwhXG5uaXRyYXRlX3JlYWRpbmdzID0gWzIuMSwgMi4zLCAyLjIsIDIuNCwgNDUuMCwgMi4yLCAyLjNdXG5cbm1lYW5fbml0cmF0ZSA9IG5wLm1lYW4obml0cmF0ZV9yZWFkaW5ncylcbm1lZGlhbl9uaXRyYXRlID0gbnAubWVkaWFuKG5pdHJhdGVfcmVhZGluZ3MpXG5cbnByaW50KFwiTml0cmF0ZSByZWFkaW5ncyAobWcvTCk6XCIsIG5pdHJhdGVfcmVhZGluZ3MpXG5wcmludChmXCJcXG5NZWFuOiB7bWVhbl9uaXRyYXRlOi4yZn0gbWcvTFwiKVxucHJpbnQoZlwiTWVkaWFuOiB7bWVkaWFuX25pdHJhdGU6LjJmfSBtZy9MXCIpXG5cbnByaW50KFwiXFxuV2hpY2ggb25lIGJldHRlciByZXByZXNlbnRzIHRoZSAndHlwaWNhbCcgbml0cmF0ZSBsZXZlbD9cIilcbnByaW50KFwiVGhlIG1lZGlhbiEgVGhhdCBvbmUgc3Bpa2UgZnJvbSB0aGUgc3BpbGwgZG9lc24ndCBtZXNzIGl0IHVwLlwiKVxuXG4jIFRyeSByZW1vdmluZyB0aGUgNDUuMCBhbmQgc2VlIHdoYXQgaGFwcGVucyB0byBib3RoISJ9
-</script>
-</div>
+# Example: Nitrate readings from a river
+# Most are normal, but one day there was a pollution spill!
+nitrate_readings = [2.1, 2.3, 2.2, 2.4, 45.0, 2.2, 2.3]
+
+mean_nitrate = np.mean(nitrate_readings)
+median_nitrate = np.median(nitrate_readings)
+
+print("Nitrate readings (mg/L):", nitrate_readings)
+print(f"\nMean: {mean_nitrate:.2f} mg/L")
+print(f"Median: {median_nitrate:.2f} mg/L")
+
+print("\nWhich one better represents the 'typical' nitrate level?")
+print("The median! That one spike from the spill doesn't mess it up.")
+
+# Try removing the 45.0 and see what happens to both!</code></pre>
 </section>
 <section id="visualizing-mean-vs-median" class="level2">
 <h2 class="anchored" data-anchor-id="visualizing-mean-vs-median">Visualizing Mean vs Median</h2>
-<div id="4a12c69b" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Two different example scenarios</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>normal_ph <span class="op">=</span> [<span class="fl">7.0</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.3</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>]</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>outlier_ph <span class="op">=</span> [<span class="fl">7.0</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">9.5</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>]  <span class="co"># One bad reading</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>fig, (ax1, ax2) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">6</span>))</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Normal data</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>ax1.scatter(<span class="bu">range</span>(<span class="bu">len</span>(normal_ph)), normal_ph, s<span class="op">=</span><span class="dv">150</span>, alpha<span class="op">=</span><span class="fl">0.7</span>, color<span class="op">=</span><span class="st">'blue'</span>)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>ax1.axhline(y<span class="op">=</span>np.mean(normal_ph), color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="ss">f'Mean = </span><span class="sc">{</span>np<span class="sc">.</span>mean(normal_ph)<span class="sc">:.2f}</span><span class="ss">'</span>)</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>ax1.axhline(y<span class="op">=</span>np.median(normal_ph), color<span class="op">=</span><span class="st">'green'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="ss">f'Median = </span><span class="sc">{</span>np<span class="sc">.</span>median(normal_ph)<span class="sc">:.2f}</span><span class="ss">'</span>)</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="st">'Reading Number'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>ax1.set_ylabel(<span class="st">'pH'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">'Normal Data: Mean and Median Are Similar'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>ax1.legend()</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>ax1.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>ax1.set_ylim(<span class="fl">6.5</span>, <span class="dv">10</span>)</span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="co"># With outlier</span></span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>ax2.scatter(<span class="bu">range</span>(<span class="bu">len</span>(outlier_ph)), outlier_ph, s<span class="op">=</span><span class="dv">150</span>, alpha<span class="op">=</span><span class="fl">0.7</span>, color<span class="op">=</span><span class="st">'orange'</span>)</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>ax2.axhline(y<span class="op">=</span>np.mean(outlier_ph), color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="ss">f'Mean = </span><span class="sc">{</span>np<span class="sc">.</span>mean(outlier_ph)<span class="sc">:.2f}</span><span class="ss">'</span>)</span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>ax2.axhline(y<span class="op">=</span>np.median(outlier_ph), color<span class="op">=</span><span class="st">'green'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="ss">f'Median = </span><span class="sc">{</span>np<span class="sc">.</span>median(outlier_ph)<span class="sc">:.2f}</span><span class="ss">'</span>)</span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>ax2.set_xlabel(<span class="st">'Reading Number'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>ax2.set_ylabel(<span class="st">'pH'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">'With Outlier: Median Is More Reliable'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>ax2.legend()</span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>ax2.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
-<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>ax2.set_ylim(<span class="fl">6.5</span>, <span class="dv">10</span>)</span>
-<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Notice: The outlier pulls the mean up, but the median stays put!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="b11fb7ac" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Two different example scenarios</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>normal_ph <span class="op">=</span> [<span class="fl">7.0</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.3</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>]</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>outlier_ph <span class="op">=</span> [<span class="fl">7.0</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">9.5</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>]  <span class="co"># One bad reading</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>fig, (ax1, ax2) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">6</span>))</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Normal data</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>ax1.scatter(<span class="bu">range</span>(<span class="bu">len</span>(normal_ph)), normal_ph, s<span class="op">=</span><span class="dv">150</span>, alpha<span class="op">=</span><span class="fl">0.7</span>, color<span class="op">=</span><span class="st">'blue'</span>)</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>ax1.axhline(y<span class="op">=</span>np.mean(normal_ph), color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="ss">f'Mean = </span><span class="sc">{</span>np<span class="sc">.</span>mean(normal_ph)<span class="sc">:.2f}</span><span class="ss">'</span>)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>ax1.axhline(y<span class="op">=</span>np.median(normal_ph), color<span class="op">=</span><span class="st">'green'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="ss">f'Median = </span><span class="sc">{</span>np<span class="sc">.</span>median(normal_ph)<span class="sc">:.2f}</span><span class="ss">'</span>)</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="st">'Reading Number'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>ax1.set_ylabel(<span class="st">'pH'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">'Normal Data: Mean and Median Are Similar'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>ax1.legend()</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>ax1.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>ax1.set_ylim(<span class="fl">6.5</span>, <span class="dv">10</span>)</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="co"># With outlier</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>ax2.scatter(<span class="bu">range</span>(<span class="bu">len</span>(outlier_ph)), outlier_ph, s<span class="op">=</span><span class="dv">150</span>, alpha<span class="op">=</span><span class="fl">0.7</span>, color<span class="op">=</span><span class="st">'orange'</span>)</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>ax2.axhline(y<span class="op">=</span>np.mean(outlier_ph), color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="ss">f'Mean = </span><span class="sc">{</span>np<span class="sc">.</span>mean(outlier_ph)<span class="sc">:.2f}</span><span class="ss">'</span>)</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>ax2.axhline(y<span class="op">=</span>np.median(outlier_ph), color<span class="op">=</span><span class="st">'green'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="ss">f'Median = </span><span class="sc">{</span>np<span class="sc">.</span>median(outlier_ph)<span class="sc">:.2f}</span><span class="ss">'</span>)</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>ax2.set_xlabel(<span class="st">'Reading Number'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>ax2.set_ylabel(<span class="st">'pH'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">'With Outlier: Median Is More Reliable'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>ax2.legend()</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>ax2.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>ax2.set_ylim(<span class="fl">6.5</span>, <span class="dv">10</span>)</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Notice: The outlier pulls the mean up, but the median stays put!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -441,18 +446,18 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5w
 <strong>Example:</strong> [7.0, 7.1, 7.2, 7.3, 7.4] → Median is 7.2 (the 3rd number)</p>
 <p><strong>When you have an even number:</strong> The median is the average of the two middle numbers<br>
 <strong>Example:</strong> [7.0, 7.1, 7.2, 7.3] → Median is (7.1 + 7.2) ÷ 2 = 7.15</p>
-<div id="bf3e4513" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Odd number of readings</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>odd_example <span class="op">=</span> [<span class="fl">7.0</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.3</span>, <span class="fl">7.4</span>]</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Odd number of values:"</span>, odd_example)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Median: </span><span class="sc">{</span>np<span class="sc">.</span>median(odd_example)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Even number of readings</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>even_example <span class="op">=</span> [<span class="fl">7.0</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.3</span>]</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Even number of values:"</span>, even_example)</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Median: </span><span class="sc">{</span>np<span class="sc">.</span>median(even_example)<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="2dca849c" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Odd number of readings</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>odd_example <span class="op">=</span> [<span class="fl">7.0</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.3</span>, <span class="fl">7.4</span>]</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Odd number of values:"</span>, odd_example)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Median: </span><span class="sc">{</span>np<span class="sc">.</span>median(odd_example)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Even number of readings</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>even_example <span class="op">=</span> [<span class="fl">7.0</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.3</span>]</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Even number of values:"</span>, even_example)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Median: </span><span class="sc">{</span>np<span class="sc">.</span>median(even_example)<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Odd number of values: [7.0, 7.1, 7.2, 7.3, 7.4]
 Median: 7.2
@@ -466,23 +471,23 @@ Median: 7.15</code></pre>
 <h2 class="anchored" data-anchor-id="the-range-how-spread-out">The Range: How Spread Out?</h2>
 <p>The <strong>range</strong> is the simplest way to see how spread out your data is:</p>
 <p><strong>Range = Biggest number - Smallest number</strong></p>
-<div id="2b89d568" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Two example creeks measured over a week</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>creek_a_ph <span class="op">=</span> [<span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>]  <span class="co"># Very stable</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>creek_b_ph <span class="op">=</span> [<span class="fl">6.5</span>, <span class="fl">7.5</span>, <span class="fl">6.8</span>, <span class="fl">7.9</span>, <span class="fl">6.6</span>, <span class="fl">7.3</span>, <span class="fl">7.4</span>]  <span class="co"># All over the place</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>range_a <span class="op">=</span> <span class="bu">max</span>(creek_a_ph) <span class="op">-</span> <span class="bu">min</span>(creek_a_ph)</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>range_b <span class="op">=</span> <span class="bu">max</span>(creek_b_ph) <span class="op">-</span> <span class="bu">min</span>(creek_b_ph)</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Creek A pH readings:"</span>, creek_a_ph)</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Min: </span><span class="sc">{</span><span class="bu">min</span>(creek_a_ph)<span class="sc">}</span><span class="ss">, Max: </span><span class="sc">{</span><span class="bu">max</span>(creek_a_ph)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Range: </span><span class="sc">{</span>range_a<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Creek B pH readings:"</span>, creek_b_ph)</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Min: </span><span class="sc">{</span><span class="bu">min</span>(creek_b_ph)<span class="sc">}</span><span class="ss">, Max: </span><span class="sc">{</span><span class="bu">max</span>(creek_b_ph)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Range: </span><span class="sc">{</span>range_b<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Creek B has </span><span class="sc">{</span>range_b<span class="op">/</span>range_a<span class="sc">:.1f}</span><span class="ss"> times more variability!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="b755395e" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Two example creeks measured over a week</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>creek_a_ph <span class="op">=</span> [<span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>]  <span class="co"># Very stable</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>creek_b_ph <span class="op">=</span> [<span class="fl">6.5</span>, <span class="fl">7.5</span>, <span class="fl">6.8</span>, <span class="fl">7.9</span>, <span class="fl">6.6</span>, <span class="fl">7.3</span>, <span class="fl">7.4</span>]  <span class="co"># All over the place</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>range_a <span class="op">=</span> <span class="bu">max</span>(creek_a_ph) <span class="op">-</span> <span class="bu">min</span>(creek_a_ph)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>range_b <span class="op">=</span> <span class="bu">max</span>(creek_b_ph) <span class="op">-</span> <span class="bu">min</span>(creek_b_ph)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Creek A pH readings:"</span>, creek_a_ph)</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Min: </span><span class="sc">{</span><span class="bu">min</span>(creek_a_ph)<span class="sc">}</span><span class="ss">, Max: </span><span class="sc">{</span><span class="bu">max</span>(creek_a_ph)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Range: </span><span class="sc">{</span>range_a<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Creek B pH readings:"</span>, creek_b_ph)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Min: </span><span class="sc">{</span><span class="bu">min</span>(creek_b_ph)<span class="sc">}</span><span class="ss">, Max: </span><span class="sc">{</span><span class="bu">max</span>(creek_b_ph)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Range: </span><span class="sc">{</span>range_b<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Creek B has </span><span class="sc">{</span>range_b<span class="op">/</span>range_a<span class="sc">:.1f}</span><span class="ss"> times more variability!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Creek A pH readings: [7.1, 7.2, 7.1, 7.2, 7.1, 7.2, 7.1]
   Min: 7.1, Max: 7.2
@@ -498,44 +503,44 @@ Creek B has 14.0 times more variability!</code></pre>
 </section>
 <section id="visualizing-range" class="level2">
 <h2 class="anchored" data-anchor-id="visualizing-range">Visualizing Range</h2>
-<div id="c7872ccc" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>creek_a_ph <span class="op">=</span> [<span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>]</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>creek_b_ph <span class="op">=</span> [<span class="fl">6.5</span>, <span class="fl">7.5</span>, <span class="fl">6.8</span>, <span class="fl">7.9</span>, <span class="fl">6.6</span>, <span class="fl">7.3</span>, <span class="fl">7.4</span>]</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>fig, (ax1, ax2) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">6</span>))</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>days <span class="op">=</span> [<span class="st">'Mon'</span>, <span class="st">'Tue'</span>, <span class="st">'Wed'</span>, <span class="st">'Thu'</span>, <span class="st">'Fri'</span>, <span class="st">'Sat'</span>, <span class="st">'Sun'</span>]</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Creek A</span></span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>ax1.plot(days, creek_a_ph, marker<span class="op">=</span><span class="st">'o'</span>, markersize<span class="op">=</span><span class="dv">10</span>, linewidth<span class="op">=</span><span class="dv">2</span>, color<span class="op">=</span><span class="st">'blue'</span>)</span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>ax1.axhline(y<span class="op">=</span><span class="bu">max</span>(creek_a_ph), color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">':'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, label<span class="op">=</span><span class="ss">f'Max: </span><span class="sc">{</span><span class="bu">max</span>(creek_a_ph)<span class="sc">}</span><span class="ss">'</span>)</span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>ax1.axhline(y<span class="op">=</span><span class="bu">min</span>(creek_a_ph), color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">':'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, label<span class="op">=</span><span class="ss">f'Min: </span><span class="sc">{</span><span class="bu">min</span>(creek_a_ph)<span class="sc">}</span><span class="ss">'</span>)</span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>ax1.fill_between(<span class="bu">range</span>(<span class="bu">len</span>(days)), <span class="bu">min</span>(creek_a_ph), <span class="bu">max</span>(creek_a_ph), alpha<span class="op">=</span><span class="fl">0.2</span>, color<span class="op">=</span><span class="st">'red'</span>)</span>
-<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="st">'Day'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>ax1.set_ylabel(<span class="st">'pH'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="ss">f'Creek A: Small Range (</span><span class="sc">{</span><span class="bu">max</span>(creek_a_ph) <span class="op">-</span> <span class="bu">min</span>(creek_a_ph)<span class="sc">:.1f}</span><span class="ss">)'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>ax1.legend()</span>
-<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>ax1.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
-<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>ax1.set_ylim(<span class="dv">6</span>, <span class="fl">8.5</span>)</span>
-<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Creek B</span></span>
-<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>ax2.plot(days, creek_b_ph, marker<span class="op">=</span><span class="st">'o'</span>, markersize<span class="op">=</span><span class="dv">10</span>, linewidth<span class="op">=</span><span class="dv">2</span>, color<span class="op">=</span><span class="st">'green'</span>)</span>
-<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>ax2.axhline(y<span class="op">=</span><span class="bu">max</span>(creek_b_ph), color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">':'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, label<span class="op">=</span><span class="ss">f'Max: </span><span class="sc">{</span><span class="bu">max</span>(creek_b_ph)<span class="sc">}</span><span class="ss">'</span>)</span>
-<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>ax2.axhline(y<span class="op">=</span><span class="bu">min</span>(creek_b_ph), color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">':'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, label<span class="op">=</span><span class="ss">f'Min: </span><span class="sc">{</span><span class="bu">min</span>(creek_b_ph)<span class="sc">}</span><span class="ss">'</span>)</span>
-<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>ax2.fill_between(<span class="bu">range</span>(<span class="bu">len</span>(days)), <span class="bu">min</span>(creek_b_ph), <span class="bu">max</span>(creek_b_ph), alpha<span class="op">=</span><span class="fl">0.2</span>, color<span class="op">=</span><span class="st">'red'</span>)</span>
-<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>ax2.set_xlabel(<span class="st">'Day'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>ax2.set_ylabel(<span class="st">'pH'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="ss">f'Creek B: Large Range (</span><span class="sc">{</span><span class="bu">max</span>(creek_b_ph) <span class="op">-</span> <span class="bu">min</span>(creek_b_ph)<span class="sc">:.1f}</span><span class="ss">)'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>ax2.legend()</span>
-<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a>ax2.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
-<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a>ax2.set_ylim(<span class="dv">6</span>, <span class="fl">8.5</span>)</span>
-<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"The shaded area shows the range - how much the readings vary"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="1b337ff0" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>creek_a_ph <span class="op">=</span> [<span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>]</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>creek_b_ph <span class="op">=</span> [<span class="fl">6.5</span>, <span class="fl">7.5</span>, <span class="fl">6.8</span>, <span class="fl">7.9</span>, <span class="fl">6.6</span>, <span class="fl">7.3</span>, <span class="fl">7.4</span>]</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>fig, (ax1, ax2) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">6</span>))</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>days <span class="op">=</span> [<span class="st">'Mon'</span>, <span class="st">'Tue'</span>, <span class="st">'Wed'</span>, <span class="st">'Thu'</span>, <span class="st">'Fri'</span>, <span class="st">'Sat'</span>, <span class="st">'Sun'</span>]</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Creek A</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>ax1.plot(days, creek_a_ph, marker<span class="op">=</span><span class="st">'o'</span>, markersize<span class="op">=</span><span class="dv">10</span>, linewidth<span class="op">=</span><span class="dv">2</span>, color<span class="op">=</span><span class="st">'blue'</span>)</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>ax1.axhline(y<span class="op">=</span><span class="bu">max</span>(creek_a_ph), color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">':'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, label<span class="op">=</span><span class="ss">f'Max: </span><span class="sc">{</span><span class="bu">max</span>(creek_a_ph)<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>ax1.axhline(y<span class="op">=</span><span class="bu">min</span>(creek_a_ph), color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">':'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, label<span class="op">=</span><span class="ss">f'Min: </span><span class="sc">{</span><span class="bu">min</span>(creek_a_ph)<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>ax1.fill_between(<span class="bu">range</span>(<span class="bu">len</span>(days)), <span class="bu">min</span>(creek_a_ph), <span class="bu">max</span>(creek_a_ph), alpha<span class="op">=</span><span class="fl">0.2</span>, color<span class="op">=</span><span class="st">'red'</span>)</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="st">'Day'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>ax1.set_ylabel(<span class="st">'pH'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="ss">f'Creek A: Small Range (</span><span class="sc">{</span><span class="bu">max</span>(creek_a_ph) <span class="op">-</span> <span class="bu">min</span>(creek_a_ph)<span class="sc">:.1f}</span><span class="ss">)'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>ax1.legend()</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>ax1.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>ax1.set_ylim(<span class="dv">6</span>, <span class="fl">8.5</span>)</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Creek B</span></span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>ax2.plot(days, creek_b_ph, marker<span class="op">=</span><span class="st">'o'</span>, markersize<span class="op">=</span><span class="dv">10</span>, linewidth<span class="op">=</span><span class="dv">2</span>, color<span class="op">=</span><span class="st">'green'</span>)</span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>ax2.axhline(y<span class="op">=</span><span class="bu">max</span>(creek_b_ph), color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">':'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, label<span class="op">=</span><span class="ss">f'Max: </span><span class="sc">{</span><span class="bu">max</span>(creek_b_ph)<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>ax2.axhline(y<span class="op">=</span><span class="bu">min</span>(creek_b_ph), color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">':'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, label<span class="op">=</span><span class="ss">f'Min: </span><span class="sc">{</span><span class="bu">min</span>(creek_b_ph)<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a>ax2.fill_between(<span class="bu">range</span>(<span class="bu">len</span>(days)), <span class="bu">min</span>(creek_b_ph), <span class="bu">max</span>(creek_b_ph), alpha<span class="op">=</span><span class="fl">0.2</span>, color<span class="op">=</span><span class="st">'red'</span>)</span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>ax2.set_xlabel(<span class="st">'Day'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>ax2.set_ylabel(<span class="st">'pH'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="ss">f'Creek B: Large Range (</span><span class="sc">{</span><span class="bu">max</span>(creek_b_ph) <span class="op">-</span> <span class="bu">min</span>(creek_b_ph)<span class="sc">:.1f}</span><span class="ss">)'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a>ax2.legend()</span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a>ax2.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
+<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a>ax2.set_ylim(<span class="dv">6</span>, <span class="fl">8.5</span>)</span>
+<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb12-36"><a href="#cb12-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-37"><a href="#cb12-37" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"The shaded area shows the range - how much the readings vary"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -550,14 +555,23 @@ Creek B has 14.0 times more variability!</code></pre>
 </section>
 <section id="try-it-analyze-a-river" class="level2">
 <h2 class="anchored" data-anchor-id="try-it-analyze-a-river">Try It: Analyze a River</h2>
-<div>
-<div id="pyodide-2" class="exercise-cell">
+<pre class="{pyodide}"><code>import numpy as np
 
-</div>
-<script type="pyodide-2-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5wXG5cbiMgRXhhbXBsZTogcEggcmVhZGluZ3MgZnJvbSBhIHJpdmVyIG92ZXIgdHdvIHdlZWtzXG5yaXZlcl9waCA9IFs3LjMsIDcuMiwgNy40LCA3LjEsIDcuMywgNy4yLCA3LjQsIDcuMywgNy4yLCA3LjEsIDcuMywgNy40LCA3LjIsIDcuM11cblxuIyBDYWxjdWxhdGUgc3RhdGlzdGljc1xubWVhbl92YWwgPSBucC5tZWFuKHJpdmVyX3BoKVxubWVkaWFuX3ZhbCA9IG5wLm1lZGlhbihyaXZlcl9waClcbnJhbmdlX3ZhbCA9IG1heChyaXZlcl9waCkgLSBtaW4ocml2ZXJfcGgpXG5cbnByaW50KFwiUml2ZXIgcEggcmVhZGluZ3M6XCIsIHJpdmVyX3BoKVxucHJpbnQoZlwiXFxuTWVhbjoge21lYW5fdmFsOi4yZn1cIilcbnByaW50KGZcIk1lZGlhbjoge21lZGlhbl92YWw6LjJmfVwiKVxucHJpbnQoZlwiUmFuZ2U6IHtyYW5nZV92YWw6LjJmfVwiKVxucHJpbnQoZlwiTWluOiB7bWluKHJpdmVyX3BoKX0sIE1heDoge21heChyaXZlcl9waCl9XCIpXG5cbiMgVHJ5IGFkZGluZyBhbiBvdXRsaWVyIChsaWtlIDkuNSkgdG8gdGhlIGxpc3QgYW5kIHNlZSB3aGF0IGhhcHBlbnMhIn0=
-</script>
-</div>
+# Example: pH readings from a river over two weeks
+river_ph = [7.3, 7.2, 7.4, 7.1, 7.3, 7.2, 7.4, 7.3, 7.2, 7.1, 7.3, 7.4, 7.2, 7.3]
+
+# Calculate statistics
+mean_val = np.mean(river_ph)
+median_val = np.median(river_ph)
+range_val = max(river_ph) - min(river_ph)
+
+print("River pH readings:", river_ph)
+print(f"\nMean: {mean_val:.2f}")
+print(f"Median: {median_val:.2f}")
+print(f"Range: {range_val:.2f}")
+print(f"Min: {min(river_ph)}, Max: {max(river_ph)}")
+
+# Try adding an outlier (like 9.5) to the list and see what happens!</code></pre>
 </section>
 <section id="understanding-your-results" class="level2">
 <h2 class="anchored" data-anchor-id="understanding-your-results">Understanding Your Results</h2>
@@ -582,42 +596,42 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5w
 </section>
 <section id="comparing-two-streams" class="level2">
 <h2 class="anchored" data-anchor-id="comparing-two-streams">Comparing Two Streams</h2>
-<div id="06fff383" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Stream near a farm vs stream in a forest</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>farm_stream_nitrate <span class="op">=</span> [<span class="fl">5.2</span>, <span class="fl">6.1</span>, <span class="fl">5.8</span>, <span class="fl">5.5</span>, <span class="fl">6.0</span>, <span class="fl">5.7</span>, <span class="fl">5.9</span>]</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>forest_stream_nitrate <span class="op">=</span> [<span class="fl">1.1</span>, <span class="fl">1.3</span>, <span class="fl">1.2</span>, <span class="fl">1.4</span>, <span class="fl">1.2</span>, <span class="fl">1.3</span>, <span class="fl">1.1</span>]</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate stats</span></span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Farm Stream:"</span>)</span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Median nitrate: </span><span class="sc">{</span>np<span class="sc">.</span>median(farm_stream_nitrate)<span class="sc">:.2f}</span><span class="ss"> mg/L"</span>)</span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Range: </span><span class="sc">{</span><span class="bu">max</span>(farm_stream_nitrate) <span class="op">-</span> <span class="bu">min</span>(farm_stream_nitrate)<span class="sc">:.2f}</span><span class="ss"> mg/L"</span>)</span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Forest Stream:"</span>)</span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Median nitrate: </span><span class="sc">{</span>np<span class="sc">.</span>median(forest_stream_nitrate)<span class="sc">:.2f}</span><span class="ss"> mg/L"</span>)</span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Range: </span><span class="sc">{</span><span class="bu">max</span>(forest_stream_nitrate) <span class="op">-</span> <span class="bu">min</span>(forest_stream_nitrate)<span class="sc">:.2f}</span><span class="ss"> mg/L"</span>)</span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize</span></span>
-<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>days <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">8</span>))</span>
-<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>ax.plot(days, farm_stream_nitrate, marker<span class="op">=</span><span class="st">'o'</span>, markersize<span class="op">=</span><span class="dv">10</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">'Farm Stream'</span>, color<span class="op">=</span><span class="st">'brown'</span>)</span>
-<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>ax.plot(days, forest_stream_nitrate, marker<span class="op">=</span><span class="st">'s'</span>, markersize<span class="op">=</span><span class="dv">10</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">'Forest Stream'</span>, color<span class="op">=</span><span class="st">'green'</span>)</span>
-<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>ax.axhline(y<span class="op">=</span><span class="dv">10</span>, color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, label<span class="op">=</span><span class="st">'EPA Limit (10 mg/L)'</span>)</span>
-<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">'Day'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'Nitrate (mg/L)'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Comparing Two Streams'</span>, fontsize<span class="op">=</span><span class="dv">13</span>)</span>
-<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a>ax.legend(fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
-<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">What do you notice?"</span>)</span>
-<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"- Farm stream has higher nitrate (fertilizer runoff)"</span>)</span>
-<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"- Forest stream has lower, more stable nitrate"</span>)</span>
-<span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"- Both are safe (below 10 mg/L) but farm stream is getting close!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="b026d0ed" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Stream near a farm vs stream in a forest</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>farm_stream_nitrate <span class="op">=</span> [<span class="fl">5.2</span>, <span class="fl">6.1</span>, <span class="fl">5.8</span>, <span class="fl">5.5</span>, <span class="fl">6.0</span>, <span class="fl">5.7</span>, <span class="fl">5.9</span>]</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>forest_stream_nitrate <span class="op">=</span> [<span class="fl">1.1</span>, <span class="fl">1.3</span>, <span class="fl">1.2</span>, <span class="fl">1.4</span>, <span class="fl">1.2</span>, <span class="fl">1.3</span>, <span class="fl">1.1</span>]</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate stats</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Farm Stream:"</span>)</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Median nitrate: </span><span class="sc">{</span>np<span class="sc">.</span>median(farm_stream_nitrate)<span class="sc">:.2f}</span><span class="ss"> mg/L"</span>)</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Range: </span><span class="sc">{</span><span class="bu">max</span>(farm_stream_nitrate) <span class="op">-</span> <span class="bu">min</span>(farm_stream_nitrate)<span class="sc">:.2f}</span><span class="ss"> mg/L"</span>)</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Forest Stream:"</span>)</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Median nitrate: </span><span class="sc">{</span>np<span class="sc">.</span>median(forest_stream_nitrate)<span class="sc">:.2f}</span><span class="ss"> mg/L"</span>)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Range: </span><span class="sc">{</span><span class="bu">max</span>(forest_stream_nitrate) <span class="op">-</span> <span class="bu">min</span>(forest_stream_nitrate)<span class="sc">:.2f}</span><span class="ss"> mg/L"</span>)</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>days <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">8</span>))</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>ax.plot(days, farm_stream_nitrate, marker<span class="op">=</span><span class="st">'o'</span>, markersize<span class="op">=</span><span class="dv">10</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">'Farm Stream'</span>, color<span class="op">=</span><span class="st">'brown'</span>)</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>ax.plot(days, forest_stream_nitrate, marker<span class="op">=</span><span class="st">'s'</span>, markersize<span class="op">=</span><span class="dv">10</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">'Forest Stream'</span>, color<span class="op">=</span><span class="st">'green'</span>)</span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>ax.axhline(y<span class="op">=</span><span class="dv">10</span>, color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, label<span class="op">=</span><span class="st">'EPA Limit (10 mg/L)'</span>)</span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">'Day'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'Nitrate (mg/L)'</span>, fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Comparing Two Streams'</span>, fontsize<span class="op">=</span><span class="dv">13</span>)</span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>ax.legend(fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">What do you notice?"</span>)</span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"- Farm stream has higher nitrate (fertilizer runoff)"</span>)</span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"- Forest stream has lower, more stable nitrate"</span>)</span>
+<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"- Both are safe (below 10 mg/L) but farm stream is getting close!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Farm Stream:
   Median nitrate: 5.80 mg/L
@@ -673,19 +687,19 @@ What do you notice?
 </tbody>
 </table>
 <p><strong>Think of it this way:</strong> - <strong>Range</strong> = “What’s the biggest difference I could see?” - <strong>Standard Deviation</strong> = “How far are numbers typically from the average?”</p>
-<div id="1602946f" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example to show the difference</span></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [<span class="fl">7.0</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.3</span>, <span class="fl">7.1</span>]</span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>range_val <span class="op">=</span> <span class="bu">max</span>(data) <span class="op">-</span> <span class="bu">min</span>(data)</span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>std_val <span class="op">=</span> np.std(data)</span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Data:"</span>, data)</span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Range: </span><span class="sc">{</span>range_val<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Standard Deviation: </span><span class="sc">{</span>std_val<span class="sc">:.3f}</span><span class="ss">"</span>)</span>
-<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Both tell us about spread, but in different ways!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="60d6ebcc" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example to show the difference</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [<span class="fl">7.0</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.3</span>, <span class="fl">7.1</span>]</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>range_val <span class="op">=</span> <span class="bu">max</span>(data) <span class="op">-</span> <span class="bu">min</span>(data)</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>std_val <span class="op">=</span> np.std(data)</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Data:"</span>, data)</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Range: </span><span class="sc">{</span>range_val<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Standard Deviation: </span><span class="sc">{</span>std_val<span class="sc">:.3f}</span><span class="ss">"</span>)</span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Both tell us about spread, but in different ways!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Data: [7.0, 7.1, 7.2, 7.1, 7.2, 7.3, 7.1]
 Range: 0.30
@@ -745,14 +759,18 @@ Both tell us about spread, but in different ways!</code></pre>
 <p>Here’s a challenge for you! Look at these nitrate readings:</p>
 <p><strong>[3.1, 3.2, 3.0, 18.5, 3.3, 3.1, 3.2]</strong></p>
 <p>Before running code, think about: 1. Is there an outlier? 2. Will the mean or median be more useful? 3. What might cause that high reading?</p>
-<div>
-<div id="pyodide-3" class="exercise-cell">
+<pre class="{pyodide}"><code>import numpy as np
 
-</div>
-<script type="pyodide-3-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5wXG5cbm5pdHJhdGUgPSBbMy4xLCAzLjIsIDMuMCwgMTguNSwgMy4zLCAzLjEsIDMuMl1cblxucHJpbnQoXCJOaXRyYXRlIHJlYWRpbmdzOlwiLCBuaXRyYXRlKVxucHJpbnQoZlwiTWVhbjoge25wLm1lYW4obml0cmF0ZSk6LjJmfSBtZy9MXCIpXG5wcmludChmXCJNZWRpYW46IHtucC5tZWRpYW4obml0cmF0ZSk6LjJmfSBtZy9MXCIpXG5wcmludChmXCJSYW5nZToge21heChuaXRyYXRlKSAtIG1pbihuaXRyYXRlKTouMmZ9IG1nL0xcIilcblxucHJpbnQoXCJcXG5XaGljaCBzdGF0aXN0aWMgYmVzdCByZXByZXNlbnRzIHR5cGljYWwgY29uZGl0aW9ucz9cIilcblxuIyBUcnkgcmVtb3ZpbmcgdGhlIDE4LjUgYW5kIHNlZSB3aGF0IGNoYW5nZXMhIn0=
-</script>
-</div>
+nitrate = [3.1, 3.2, 3.0, 18.5, 3.3, 3.1, 3.2]
+
+print("Nitrate readings:", nitrate)
+print(f"Mean: {np.mean(nitrate):.2f} mg/L")
+print(f"Median: {np.median(nitrate):.2f} mg/L")
+print(f"Range: {max(nitrate) - min(nitrate):.2f} mg/L")
+
+print("\nWhich statistic best represents typical conditions?")
+
+# Try removing the 18.5 and see what changes!</code></pre>
 </section>
 <section id="key-takeaways" class="level2">
 <h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
@@ -768,37 +786,9 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5w
 <p><strong>Next lesson:</strong> We’ll learn how to spot those weird outliers and decide if they’re real pollution events or just sensor errors!</p>
 
 
-<script type="pyodide-data">
-eyJvcHRpb25zIjp7ImVudiI6eyJQTE9UTFlfUkVOREVSRVIiOiJwbG90bHlfbWltZXR5cGUifSwiaW5kZXhVUkwiOiJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvcHlvZGlkZS92MC4yOC4xL2Z1bGwvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsicHlvZGlkZV9odHRwIiwibWljcm9waXAiLCJpcHl0aG9uIl19fQ==
-</script>
-<script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJweW9kaWRlLTMiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl8zID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS0zLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMy1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzMgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzMsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTIiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl8yID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS0yLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMi1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzIgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzIsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTEiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl8xID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS0xLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMS1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzEgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzEsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLXByZWx1ZGUiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJweW9kaWRlT2pzID0ge1xuICBjb25zdCB7XG4gICAgUHlvZGlkZUV2YWx1YXRvcixcbiAgICBQeW9kaWRlRW52aXJvbm1lbnRNYW5hZ2VyLFxuICAgIHNldHVwUHl0aG9uLFxuICAgIHN0YXJ0UHlvZGlkZVdvcmtlcixcbiAgICBiNjREZWNvZGUsXG4gICAgY29sbGFwc2VQYXRoLFxuICB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcblxuICBjb25zdCBzdGF0dXNDb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChcImV4ZXJjaXNlLWxvYWRpbmctc3RhdHVzXCIpO1xuICBjb25zdCBpbmRpY2F0b3JDb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChcImV4ZXJjaXNlLWxvYWRpbmctaW5kaWNhdG9yXCIpO1xuICBpbmRpY2F0b3JDb250YWluZXIuY2xhc3NMaXN0LnJlbW92ZShcImQtbm9uZVwiKTtcblxuICBsZXQgc3RhdHVzVGV4dCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIilcbiAgc3RhdHVzVGV4dC5jbGFzc0xpc3QgPSBcImV4ZXJjaXNlLWxvYWRpbmctZGV0YWlsc1wiO1xuICBzdGF0dXNUZXh0ID0gc3RhdHVzQ29udGFpbmVyLmFwcGVuZENoaWxkKHN0YXR1c1RleHQpO1xuICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYEluaXRpYWxpc2VgO1xuXG4gIC8vIEhvaXN0IGluZGljYXRvciBvdXQgZnJvbSBmaW5hbCBzbGlkZSB3aGVuIHJ1bm5pbmcgdW5kZXIgcmV2ZWFsXG4gIGNvbnN0IHJldmVhbFN0YXR1cyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucmV2ZWFsIC5leGVyY2lzZS1sb2FkaW5nLWluZGljYXRvclwiKTtcbiAgaWYgKHJldmVhbFN0YXR1cykge1xuICAgIHJldmVhbFN0YXR1cy5yZW1vdmUoKTtcbiAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJldmVhbCA+IC5zbGlkZXNcIikuYXBwZW5kQ2hpbGQocmV2ZWFsU3RhdHVzKTtcbiAgfVxuXG4gIC8vIE1ha2UgYW55IHJldmVhbCBzbGlkZXMgd2l0aCBsaXZlIGNlbGxzIHNjcm9sbGFibGVcbiAgZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbChcIi5yZXZlYWwgLmV4ZXJjaXNlLWNlbGxcIikuZm9yRWFjaCgoZWwpID0+IHtcbiAgICBlbC5jbG9zZXN0KCdzZWN0aW9uLnNsaWRlJykuY2xhc3NMaXN0LmFkZChcInNjcm9sbGFibGVcIik7XG4gIH0pXG5cbiAgLy8gUHlvZGlkZSBzdXBwbGVtZW50YWwgZGF0YSBhbmQgb3B0aW9uc1xuICBjb25zdCBkYXRhQ29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLWRhdGFcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBkYXRhID0gSlNPTi5wYXJzZShiNjREZWNvZGUoZGF0YUNvbnRlbnQpKTtcblxuICAvLyBHcmFiIGxpc3Qgb2YgcmVzb3VyY2VzIHRvIGJlIGRvd25sb2FkZWRcbiAgY29uc3QgZmlsZXNDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcInZmcy1maWxlXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgZmlsZXMgPSBKU09OLnBhcnNlKGI2NERlY29kZShmaWxlc0NvbnRlbnQpKTtcblxuICBsZXQgcHlvZGlkZVByb21pc2UgPSAoYXN5bmMgKCkgPT4ge1xuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgUHlvZGlkZWA7XG4gICAgY29uc3QgcHlvZGlkZSA9IGF3YWl0IHN0YXJ0UHlvZGlkZVdvcmtlcihkYXRhLm9wdGlvbnMpO1xuXG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyBwYWNrYWdlOiBtaWNyb3BpcGA7XG4gICAgYXdhaXQgcHlvZGlkZS5sb2FkUGFja2FnZShcIm1pY3JvcGlwXCIpO1xuICAgIGNvbnN0IG1pY3JvcGlwID0gYXdhaXQgcHlvZGlkZS5weWltcG9ydChcIm1pY3JvcGlwXCIpO1xuICAgIGF3YWl0IGRhdGEucGFja2FnZXMucGtncy5tYXAoKHBrZykgPT4gKCkgPT4ge1xuICAgICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyBwYWNrYWdlOiAke3BrZ31gO1xuICAgICAgcmV0dXJuIG1pY3JvcGlwLmluc3RhbGwocGtnKTtcbiAgICB9KS5yZWR1Y2UoKGN1ciwgbmV4dCkgPT4gY3VyLnRoZW4obmV4dCksIFByb21pc2UucmVzb2x2ZSgpKTtcbiAgICBhd2FpdCBtaWNyb3BpcC5kZXN0cm95KCk7XG5cbiAgICAvLyBEb3dubG9hZCBhbmQgaW5zdGFsbCByZXNvdXJjZXNcbiAgICBhd2FpdCBmaWxlcy5tYXAoKGZpbGUpID0+IGFzeW5jICgpID0+IHtcbiAgICAgIGNvbnN0IG5hbWUgPSBmaWxlLnN1YnN0cmluZyhmaWxlLmxhc3RJbmRleE9mKCcvJykgKyAxKTtcbiAgICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcmVzb3VyY2U6ICR7bmFtZX1gO1xuICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChmaWxlKTtcbiAgICAgIGlmICghcmVzcG9uc2Uub2spIHtcbiAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBDYW4ndCBkb3dubG9hZCBcXGAke2ZpbGV9XFxgLiBFcnJvciAke3Jlc3BvbnNlLnN0YXR1c306IFwiJHtyZXNwb25zZS5zdGF0dXNUZXh0fVwiLmApO1xuICAgICAgfVxuICAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlc3BvbnNlLmFycmF5QnVmZmVyKCk7XG5cbiAgICAgIC8vIFN0b3JlIFVSTHMgaW4gdGhlIGN3ZCB3aXRob3V0IGFueSBzdWJkaXJlY3Rvcnkgc3RydWN0dXJlXG4gICAgICBpZiAoZmlsZS5pbmNsdWRlcyhcIjovL1wiKSkge1xuICAgICAgICBmaWxlID0gbmFtZTtcbiAgICAgIH1cblxuICAgICAgLy8gQ29sbGFwc2UgaGlnaGVyIGRpcmVjdG9yeSBzdHJ1Y3R1cmVcbiAgICAgIGZpbGUgPSBjb2xsYXBzZVBhdGgoZmlsZSk7XG5cbiAgICAgIC8vIENyZWF0ZSBkaXJlY3RvcnkgdHJlZSwgaWdub3JpbmcgXCJkaXJlY3RvcnkgZXhpc3RzXCIgVkZTIGVycm9yc1xuICAgICAgY29uc3QgcGFydHMgPSBmaWxlLnNwbGl0KCcvJykuc2xpY2UoMCwgLTEpO1xuICAgICAgbGV0IHBhdGggPSAnJztcbiAgICAgIHdoaWxlIChwYXJ0cy5sZW5ndGggPiAwKSB7XG4gICAgICAgIHBhdGggKz0gcGFydHMuc2hpZnQoKSArICcvJztcbiAgICAgICAgdHJ5IHtcbiAgICAgICAgICBhd2FpdCBweW9kaWRlLkZTLm1rZGlyKHBhdGgpO1xuICAgICAgICB9IGNhdGNoIChlKSB7XG4gICAgICAgICAgaWYgKGUubmFtZSAhPT0gXCJFcnJub0Vycm9yXCIpIHRocm93IGU7XG4gICAgICAgICAgaWYgKGUuZXJybm8gIT09IDIwKSB7XG4gICAgICAgICAgICBjb25zdCBlcnJvclRleHRQdHIgPSBhd2FpdCBweW9kaWRlLl9tb2R1bGUuX3N0cmVycm9yKGUuZXJybm8pO1xuICAgICAgICAgICAgY29uc3QgZXJyb3JUZXh0ID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLlVURjhUb1N0cmluZyhlcnJvclRleHRQdHIpO1xuICAgICAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBGaWxlc3lzdGVtIEVycm9yICR7ZS5lcnJub30gXCIke2Vycm9yVGV4dH1cIi5gKTtcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH1cblxuICAgICAgLy8gV3JpdGUgdGhpcyBmaWxlIHRvIHRoZSBWRlNcbiAgICAgIHRyeSB7XG4gICAgICAgIHJldHVybiBhd2FpdCBweW9kaWRlLkZTLndyaXRlRmlsZShmaWxlLCBuZXcgVWludDhBcnJheShkYXRhKSk7XG4gICAgICB9IGNhdGNoIChlKSB7XG4gICAgICAgIGlmIChlLm5hbWUgIT09IFwiRXJybm9FcnJvclwiKSB0aHJvdyBlO1xuICAgICAgICBjb25zdCBlcnJvclRleHRQdHIgPSBhd2FpdCBweW9kaWRlLl9tb2R1bGUuX3N0cmVycm9yKGUuZXJybm8pO1xuICAgICAgICBjb25zdCBlcnJvclRleHQgPSBhd2FpdCBweW9kaWRlLl9tb2R1bGUuVVRGOFRvU3RyaW5nKGVycm9yVGV4dFB0cik7XG4gICAgICAgIHRocm93IG5ldyBFcnJvcihgRmlsZXN5c3RlbSBFcnJvciAke2UuZXJybm99IFwiJHtlcnJvclRleHR9XCIuYCk7XG4gICAgICB9XG4gICAgfSkucmVkdWNlKChjdXIsIG5leHQpID0+IGN1ci50aGVuKG5leHQpLCBQcm9taXNlLnJlc29sdmUoKSk7XG5cbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYFB5b2RpZGUgZW52aXJvbm1lbnQgc2V0dXBgO1xuICAgIGF3YWl0IHNldHVwUHl0aG9uKHB5b2RpZGUpO1xuXG4gICAgc3RhdHVzVGV4dC5yZW1vdmUoKTtcbiAgICBpZiAoc3RhdHVzQ29udGFpbmVyLmNoaWxkcmVuLmxlbmd0aCA9PSAwKSB7XG4gICAgICBzdGF0dXNDb250YWluZXIucGFyZW50Tm9kZS5yZW1vdmUoKTtcbiAgICB9XG4gICAgcmV0dXJuIHB5b2RpZGU7XG4gIH0pKCkuY2F0Y2goKGVycikgPT4ge1xuICAgIHN0YXR1c1RleHQuc3R5bGUuY29sb3IgPSBcInZhcigtLWV4ZXJjaXNlLWVkaXRvci1obC1lciwgI0FEMDAwMClcIjtcbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gZXJyLm1lc3NhZ2U7XG4gICAgLy9pbmRpY2F0b3JDb250YWluZXIucXVlcnlTZWxlY3RvcihcIi5zcGlubmVyLWdyb3dcIikuY2xhc3NMaXN0LmFkZChcImQtbm9uZVwiKTtcbiAgICB0aHJvdyBlcnI7XG4gIH0pO1xuXG4gIC8vIEtlZXAgdHJhY2sgb2YgaW5pdGlhbCBPSlMgYmxvY2sgcmVuZGVyXG4gIGNvbnN0IHJlbmRlcmVkT2pzID0ge307XG5cbiAgY29uc3QgcHJvY2VzcyA9IGFzeW5jIChjb250ZXh0LCBpbnB1dHMpID0+IHtcbiAgICBjb25zdCBweW9kaWRlID0gYXdhaXQgcHlvZGlkZVByb21pc2U7XG4gICAgY29uc3QgZXZhbHVhdG9yID0gbmV3IFB5b2RpZGVFdmFsdWF0b3IocHlvZGlkZSwgY29udGV4dCk7XG4gICAgYXdhaXQgZXZhbHVhdG9yLnByb2Nlc3MoaW5wdXRzKTtcbiAgICByZXR1cm4gZXZhbHVhdG9yLmNvbnRhaW5lcjtcbiAgfVxuXG4gIHJldHVybiB7XG4gICAgcHlvZGlkZVByb21pc2UsXG4gICAgcmVuZGVyZWRPanMsXG4gICAgcHJvY2VzcyxcbiAgfTtcbn1cbiJ9XX0=
-</script>
-<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
-<div id="exercise-loading-status" class="d-flex gap-2">
-
-</div>
-<div class="spinner-grow spinner-grow-sm">
-
-</div>
-</div>
-<script type="vfs-file">
-W10=
-</script>
 </section>
 
 </main> <!-- /main -->
-<script type="ojs-module-contents">
-eyJjb250ZW50cyI6W119
-</script>
-<script type="module">
-if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
-window._ojs.paths.runtimeToDoc = "../../module1-statistics";
-window._ojs.paths.runtimeToRoot = "../..";
-window._ojs.paths.docToRoot = "..";
-window._ojs.selfContained = false;
-window._ojs.runtime.interpretFromScriptTags();
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
