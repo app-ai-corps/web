@@ -49,14 +49,6 @@ Learn mean, median, standard deviation, outliers, and scatterplots using pH data
 [Start Lesson](module1-statistics/index.qmd){.module-link}
 :::
 
-::: {.lesson-item}
-### [Lesson 2: Predictive Modeling](#)
-
-Coming Soon!
-
-*Estimated time: 90 minutes*
-:::
-
 ::: {.lesson-item .coming-soon}
 ### More Lessons Coming Soon
 

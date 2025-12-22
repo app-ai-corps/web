@@ -547,7 +547,7 @@ body {
 .lesson-item p {
   color: var(--smokey);
   margin-bottom: 1rem;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 
 .lesson-item.coming-soon {
