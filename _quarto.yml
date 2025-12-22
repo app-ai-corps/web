@@ -10,19 +10,22 @@ website:
     background: "#ffffff"
     foreground: "#00746f"
     left:
-      - text: "Home"
-        href: index.qmd
-      - text: "Lessons"
+          - text: "Water Quality Lessons"
         menu:
-          - text: "Water Quality"
-            href: modules/water-quality/
+          - text: "1 . Statistics Fundamentals"
+            href: modules/water-quality/module1-statistics
+          - text: "2 . Predictive Modeling"
+          - text: "3 . Gradient Updates"
+          - text: "4 . Convolutional Neural Networks"
+          - text: "5 . Graphing Sensor Data"
+          - text: "6 . Mapping Data with GIS"
     right:
       - text: "Home"
         href: "/"
-      - text: modules.qmd
-        href: "#"
-      - text: contact.qmd
-        href: "#"
+      - text: "Modules"
+        href: modules.qmd
+      - text: "Contact"
+        href: contact.qmd
 
 format:
   html:
