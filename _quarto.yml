@@ -10,8 +10,9 @@ website:
     background: "#ffffff"
     foreground: "#00746f"
     left:
-      - text: "Water Quality Lessons"
+      - text: "Water Quality Home"
         href: modules/water-quality
+      - text: "Water Quality Lessons"
         menu:
           - text: "1 . Statistics Fundamentals"
             href: modules/water-quality/module1-statistics
