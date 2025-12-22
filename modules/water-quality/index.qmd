@@ -5,6 +5,7 @@ format:
     css: ../../styles-main.css
     theme: none
     toc: false
+    anchor-sections: false
 ---
 
 ::: {.custom-navbar}
