@@ -47,10 +47,34 @@ Learn mean, median, standard deviation, outliers, and scatterplots using pH data
 *Estimated time: 90 minutes*
 :::
 
-::: {.lesson-item .coming-soon}
-### More Lessons Coming Soon
+::: {.lesson-item}
+### [Lesson 2: Predictive Modeling](#)
 
-Additional lessons are currently in development.
+Coming Soon.
+:::
+
+::: {.lesson-item}
+### [Lesson 3: Gradient Updates](#)
+
+Coming Soon.
+:::
+
+::: {.lesson-item}
+### [Lesson 4: Convolutional Neural Networks](#)
+
+Coming Soon.
+:::
+
+::: {.lesson-item}
+### [Lesson 5: Graphing Sensor Data](#)
+
+Coming Soon.
+:::
+
+::: {.lesson-item}
+### [Lesson 6: Mapping Data with GIS](#)
+
+Coming Soon.
 :::
 
 :::
