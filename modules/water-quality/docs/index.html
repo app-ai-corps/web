@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>AAIC Water Quality Education Modules – Water Quality</title>
+<title>Water Quality</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,196 +20,101 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-html-435ba6093e6f0817aa7405139811e7b1.min.css" rel="stylesheet" append-hash="true" data-mode="light">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-434a87f1a65cf5564e22d224e5738d6d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
 
 
+<link rel="stylesheet" href="../../styles-main.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body>
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./aaic_letters.png" alt="Appalachian A.I. Corps logo." class="navbar-logo">
-    </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Water Quality</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-modules" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Modules</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-modules">    
-        <li>
-    <a class="dropdown-item" href="./module1-statistics/index.html">
- <span class="dropdown-text">Module 1: Statistics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./module2-predictive-modeling/index.qmd">
- <span class="dropdown-text">Module 2: Predictive Modeling</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./module3-gradient-updates/index.qmd">
- <span class="dropdown-text">Module 3: Gradient Updates</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./module4-cnn/index.qmd">
- <span class="dropdown-text">Module 4: CNNs</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./module5-sensor-data/index.qmd">
- <span class="dropdown-text">Module 5: Sensor Data</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./module6-gis/index.qmd">
- <span class="dropdown-text">Module 6: GIS Mapping</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+
+
+
+<nav id="TOC" role="doc-toc">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome!</a>
-  <ul class="collapse">
-  <li><a href="#module-1-statistics-fundamentals" id="toc-module-1-statistics-fundamentals" class="nav-link" data-scroll-target="#module-1-statistics-fundamentals">Module 1: Statistics Fundamentals</a></li>
-  <li><a href="#module-2-predictive-modeling" id="toc-module-2-predictive-modeling" class="nav-link" data-scroll-target="#module-2-predictive-modeling">Module 2: Predictive Modeling</a></li>
-  <li><a href="#module-3-gradient-updates" id="toc-module-3-gradient-updates" class="nav-link" data-scroll-target="#module-3-gradient-updates">Module 3: Gradient Updates</a></li>
-  <li><a href="#module-4-convolutional-neural-networks" id="toc-module-4-convolutional-neural-networks" class="nav-link" data-scroll-target="#module-4-convolutional-neural-networks">Module 4: Convolutional Neural Networks</a></li>
-  <li><a href="#module-5-graphing-sensor-data" id="toc-module-5-graphing-sensor-data" class="nav-link" data-scroll-target="#module-5-graphing-sensor-data">Module 5: Graphing Sensor Data</a></li>
-  <li><a href="#module-6-mapping-data-with-gis" id="toc-module-6-mapping-data-with-gis" class="nav-link" data-scroll-target="#module-6-mapping-data-with-gis">Module 6: Mapping Data with GIS</a></li>
-  </ul></li>
+  <li><a href="#water-quality-monitoring" id="toc-water-quality-monitoring">Water Quality Monitoring</a></li>
   </ul>
 </nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">AAIC Water Quality Education Modules</h1>
+<div class="custom-navbar">
+<div class="navbar-brand">
+<a href="./"><img src="../../assets/logo.png" alt="AAIC Logo" class="navbar-logo"></a>
+<h1>
+Appalachian A.I. Corps
+</h1>
+</div>
+<button class="navbar-toggle" onclick="toggleMenu()">
+☰
+</button>
+<nav class="navbar-links" id="navbarLinks">
+<a href=".">Home</a> | <a href="../../modules.html">Modules</a> | <a href="../../contact.html">Contact</a>
+</nav>
+</div>
+<script>
+function toggleMenu() {
+  const nav = document.getElementById('navbarLinks');
+  nav.classList.toggle('show');
+}
+</script>
+<div class="hero hero-xsmall hero-orange">
+<section id="water-quality-monitoring" class="hero-content">
+<h2 class="anchored">Water Quality Monitoring</h2>
+<div class="modules-intro">
+<p>A series of lessons using AI to explore and monitor Appalachian water resources.<br>
+<em>Designed for 9th-12th grade students.</em></p>
+</div>
+</section>
+</div>
+<div class="lesson-outline-section">
+<div class="lesson-outline">
+<section id="lesson-1-statistics-fundamentals" class="lesson-item">
+<h3 class="anchored"><a href="./module1-statistics/index.html">Lesson 1: Statistics Fundamentals</a></h3>
+<p>Learn mean, median, standard deviation, outliers, and scatterplots using pH data.</p>
+<p><em>Estimated time: 90 minutes</em></p>
+</section>
+<section id="more-lessons-coming-soon" class="lesson-item coming-soon">
+<h3 class="anchored">More Lessons Coming Soon</h3>
+<p>Additional lessons are currently in development.</p>
+</section>
+</div>
+</div>
+<div class="footer">
+<div class="footer-columns">
+<div class="footer-left">
+<p><img src="../../assets/logo_white.png" class="footer-logo img-fluid" alt="AAIC logo"></p>
+<p><strong>Appalachian A.I. Corps</strong><br>
+Empowering Appalachia Through Artificial Intelligence</p>
+</div>
+<div class="footer-right">
+<p><strong>University of Tennessee</strong><br>
+College of Education, Health, and Human Sciences<br>
+Department of Theory &amp; Practice in Teacher Education<br>
+Knoxville, TN</p>
+</div>
+</div>
 </div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="welcome" class="level2">
-<h2 class="anchored" data-anchor-id="welcome">Welcome!</h2>
-<p>These interactive modules teach statistics, machine learning, and data science through water quality monitoring.</p>
-<section id="module-1-statistics-fundamentals" class="level3">
-<h3 class="anchored" data-anchor-id="module-1-statistics-fundamentals"><a href="./module1-statistics/index.html">Module 1: Statistics Fundamentals</a></h3>
-<p>Learn mean, median, standard deviation, outliers, and scatterplots using pH data.</p>
-</section>
-<section id="module-2-predictive-modeling" class="level3">
-<h3 class="anchored" data-anchor-id="module-2-predictive-modeling">Module 2: Predictive Modeling</h3>
-<p><em>Coming soon!</em></p>
-</section>
-<section id="module-3-gradient-updates" class="level3">
-<h3 class="anchored" data-anchor-id="module-3-gradient-updates">Module 3: Gradient Updates</h3>
-<p><em>Coming soon!</em></p>
-</section>
-<section id="module-4-convolutional-neural-networks" class="level3">
-<h3 class="anchored" data-anchor-id="module-4-convolutional-neural-networks">Module 4: Convolutional Neural Networks</h3>
-<p><em>Coming soon!</em></p>
-</section>
-<section id="module-5-graphing-sensor-data" class="level3">
-<h3 class="anchored" data-anchor-id="module-5-graphing-sensor-data">Module 5: Graphing Sensor Data</h3>
-<p><em>Coming soon!</em></p>
-</section>
-<section id="module-6-mapping-data-with-gis" class="level3">
-<h3 class="anchored" data-anchor-id="module-6-mapping-data-with-gis">Module 6: Mapping Data with GIS</h3>
-<p><em>Coming soon!</em></p>
-
-
-</section>
-</section>
-
-</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -307,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
         },
         interactive: true,
         interactiveBorder: 10,
-        theme: 'quarto',
+        theme: 'light-border',
         placement: 'bottom-start',
       };
       if (contentFn) {
@@ -607,7 +512,6 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-</div> <!-- /content -->
 
 
 

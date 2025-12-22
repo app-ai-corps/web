@@ -1,26 +1,75 @@
 ---
-title: "AAIC Water Quality Education Modules"
-format: html
+title: ""
+format:
+  html:
+    css: ../../styles-main.css
+    theme: none
 ---
 
-## Welcome!
+::: {.custom-navbar}
+<div class="navbar-brand">
+  <a href="/"><img src="../../assets/logo.png" alt="AAIC Logo" class="navbar-logo"></a>
+  <h1>Appalachian A.I. Corps</h1>
+</div>
+<button class="navbar-toggle" onclick="toggleMenu()">☰</button>
+<nav class="navbar-links" id="navbarLinks">
+  [Home](/) | [Modules](../../modules.html) | [Contact](../../contact.html)
+</nav>
+:::
 
-These interactive modules teach statistics, machine learning, and data science through water quality monitoring.
+<script>
+function toggleMenu() {
+  const nav = document.getElementById('navbarLinks');
+  nav.classList.toggle('show');
+}
+</script>
 
-### [Module 1: Statistics Fundamentals](module1-statistics/index.qmd)
+::: {.hero .hero-xsmall .hero-orange}
+::: {.hero-content}
+## Water Quality Monitoring
+
+::: {.modules-intro}
+A series of lessons using AI to explore and monitor Appalachian water resources.  
+*Designed for 9th-12th grade students.*
+:::
+
+:::
+:::
+
+::: {.lesson-outline-section}
+::: {.lesson-outline}
+
+::: {.lesson-item}
+### [Lesson 1: Statistics Fundamentals](module1-statistics/index.qmd)
+
 Learn mean, median, standard deviation, outliers, and scatterplots using pH data.
 
-### Module 2: Predictive Modeling
-*Coming soon!*
+*Estimated time: 90 minutes*
+:::
 
-### Module 3: Gradient Updates
-*Coming soon!*
+::: {.lesson-item .coming-soon}
+### More Lessons Coming Soon
 
-### Module 4: Convolutional Neural Networks
-*Coming soon!*
+Additional lessons are currently in development.
+:::
 
-### Module 5: Graphing Sensor Data
-*Coming soon!*
+:::
+:::
 
-### Module 6: Mapping Data with GIS
-*Coming soon!*
+::: {.footer}
+::: {.footer-columns}
+::: {.footer-left}
+![](../../assets/logo_white.png){.footer-logo fig-alt="AAIC logo"}
+
+**Appalachian A.I. Corps**  
+Empowering Appalachia Through Artificial Intelligence
+:::
+
+::: {.footer-right}
+**University of Tennessee**  
+College of Education, Health, and Human Sciences  
+Department of Theory & Practice in Teacher Education  
+Knoxville, TN
+:::
+:::
+:::

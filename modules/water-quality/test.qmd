@@ -24,9 +24,9 @@ function toggleMenu() {
 }
 </script>
 
-::: {.hero .hero-small .hero-orange}
+::: {.hero .hero-xsmall .hero-orange}
 ::: {.hero-content}
-## Water Quality Monitoring Module
+## Water Quality Monitoring
 
 ::: {.modules-intro}
 A series of lessons using AI to explore and monitor Appalachian water resources.  
@@ -45,8 +45,6 @@ A series of lessons using AI to explore and monitor Appalachian water resources.
 Learn mean, median, standard deviation, outliers, and scatterplots using pH data.
 
 *Estimated time: 90 minutes*
-
-[Start Lesson](module1-statistics/index.qmd){.module-link}
 :::
 
 ::: {.lesson-item .coming-soon}
