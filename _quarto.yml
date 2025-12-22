@@ -11,6 +11,7 @@ website:
     foreground: "#00746f"
     left:
       - text: "Water Quality Lessons"
+        href: modules/water-quality
         menu:
           - text: "1 . Statistics Fundamentals"
             href: modules/water-quality/module1-statistics
