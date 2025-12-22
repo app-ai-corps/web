@@ -12,16 +12,16 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Modules"
+      - text: "Lessons"
         menu:
           - text: "Water Quality"
             href: modules/water-quality/
     right:
-      - text: "About"
+      - text: "Home"
+        href: "/"
+      - text: modules.qmd
         href: "#"
-      - text: "Modules"
-        href: "#"
-      - text: "Contact"
+      - text: contact.qmd
         href: "#"
 
 format:
