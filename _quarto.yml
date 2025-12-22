@@ -22,7 +22,7 @@ website:
           - text: "5 . Graphing Sensor Data"
           - text: "6 . Mapping Data with GIS"
     right:
-      - text: "Home"
+      - text: "AAIC Home"
         href: "/"
       - text: "Modules"
         href: modules.qmd
