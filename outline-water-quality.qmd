@@ -42,7 +42,7 @@ A series of lessons using AI to explore and monitor Appalachian water resources.
 ::: {.lesson-outline}
 
 ::: {.lesson-item}
-### [Lesson 1: Statistics Fundamentals](module1-statistics/index.qmd)
+### [Lesson 1: Statistics Fundamentals](modules/water-quality/module1-statistics/index.qmd)
 
 Learn mean, median, standard deviation, outliers, and scatterplots using pH data.
 
