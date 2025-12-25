@@ -40,9 +40,9 @@ Explore our educational modules designed to empower Appalachian communities thro
 ::: {.modules-section}
 ::: {.module-grid}
 ::: {.module-card}
-### [Water Quality Monitoring](modules/water-quality-outline)
+### [Water Quality Monitoring](modules/water-quality/)
 
-<a href="modules/water-quality-outline"><img width="512" alt="Nolichucky River in Greene County, TN" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Nolichucky-river-shoals-tn1.jpg/512px-Nolichucky-river-shoals-tn1.jpg?20150127003031"></a>
+<a href="modules/water-quality/"><img width="512" alt="Nolichucky River in Greene County, TN" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Nolichucky-river-shoals-tn1.jpg/512px-Nolichucky-river-shoals-tn1.jpg?20150127003031"></a>
 
 <p class="image-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Nolichucky-river-shoals-tn1.jpg">Brian Stansberry</a>, CC BY 3.0</p>
 
@@ -50,7 +50,7 @@ Leveraging AI to monitor and protect Appalachian water resources.
 
 *Intended for 9th-12th grade students.*
 
-[Learn More](modules/water-quality-outline){.module-link}
+[Learn More](modules/water-quality/){.module-link}
 :::
 
 ::: {.module-card .coming-soon}
