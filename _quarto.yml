@@ -12,25 +12,13 @@ website:
     logo-alt: "Appalachian A.I. Corps logo." 
     background: "#ffffff"
     foreground: "#00746f"
-    left:
-      - text: "Water Quality Home"
-        href: modules/water-quality
-      - text: "Water Quality Lessons"
-        menu:
-          - text: "1 . Statistics Fundamentals"
-            href: modules/water-quality/module1-statistics
-          - text: "2 . Predictive Modeling"
-          - text: "3 . Gradient Updates"
-          - text: "4 . Convolutional Neural Networks"
-          - text: "5 . Graphing Sensor Data"
-          - text: "6 . Mapping Data with GIS"
     right:
-      - text: "AAIC Home"
+      - text: "Home"
         href: "/"
       - text: "Modules"
-        href: modules.qmd
+        href: modules
       - text: "Contact"
-        href: contact.qmd
+        href: contact
 
 format:
   html:
