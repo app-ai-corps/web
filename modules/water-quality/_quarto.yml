@@ -26,8 +26,8 @@ website:
             href: module6-gis/index
 
   sidebar:
-    - id: module-1
-      title: "Module 1: Statistics"
+    - title: "Module 1: Statistics" 
+      id: module-1
       style: "floating"
       collapse-level: 2
       align: left
