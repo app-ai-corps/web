@@ -1,0 +1,30 @@
+/*-- scss:defaults --*/
+
+/* Appalachian A.I. Corps Theme Overrides */
+
+/* Primary colors */
+$primary: #00746F;        // Valley (teal) - replaces Yeti's blue
+$secondary: #58595B;      // Smokey (dark gray)
+$success: #579594;        // Legacy
+$info: #006C93;          // Globe
+$warning: #FF8200;        // Tennessee Orange
+$danger: #E05933;         // Torch
+
+/* Typography */
+$font-family-sans-serif: 'Montserrat', Helvetica, Arial, sans-serif;
+$headings-font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+$headings-font-weight: 700;
+
+/* Link colors */
+$link-color: #006C93;           // Globe
+$link-hover-color: #00746F;     // Valley
+
+/* Body */
+$body-color: #58595B;           // Smokey
+
+/*-- scss:rules --*/
+
+/* Additional custom rules if needed */
+.navbar-brand {
+  font-weight: 700;
+}
