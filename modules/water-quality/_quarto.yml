@@ -5,7 +5,7 @@ project:
 website:
   title: ""
   navbar:
-    logo: ../../assets/logo_modules.png
+    logo: ../assets/logo_modules.png
     logo-alt: "Appalachian A.I. Corps logo."  
     left:
       - text: "Water Quality Index"
