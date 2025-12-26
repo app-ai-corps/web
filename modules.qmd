@@ -71,8 +71,6 @@ Empowering Appalachia Through Artificial Intelligence
 
 ::: {.footer-right}
 **University of Tennessee**  
-College of Education, Health, and Human Sciences  
-Department of Theory & Practice in Teacher Education  
 Knoxville, TN
 :::
 :::
