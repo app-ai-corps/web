@@ -58,7 +58,6 @@ format:
   html:
     theme: 
       - united
-      - ../customize-theme.scss
     toc: true
     toc-location: right
     include-in-header:
@@ -69,6 +68,5 @@ format:
   live-html:
     theme: 
       - united
-      - ../customize-theme.scss
     toc: true
     toc-location: right
