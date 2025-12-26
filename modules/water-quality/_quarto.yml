@@ -39,7 +39,7 @@ website:
       collapse-level: 2
       align: left
       contents:
-        - Lesson Outline
+        - <b>Lesson Outline</b>
         - text: "1. Introduction"
           href: 1-statistics/introduction
         - text: "2. Mean and SD"
@@ -58,7 +58,7 @@ format:
   html:
     theme: 
       - yeti
-      - customize-theme.scss
+      - ../customize-theme.scss
     toc: true
     toc-location: right
     include-in-header:
@@ -69,6 +69,6 @@ format:
   live-html:
     theme: 
       - yeti
-      - customize-theme.scss
+      - ../customize-theme.scss
     toc: true
     toc-location: right
