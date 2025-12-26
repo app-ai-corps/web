@@ -8,7 +8,7 @@ website:
     logo: aaic_letters.png
     logo-alt: "Appalachian A.I. Corps logo."  
     left:
-      - text: "Water Quality Lesson Index"
+      - text: "Water Quality Index"
         href: index
       - text: "Water Quality Lessons"
         menu:
