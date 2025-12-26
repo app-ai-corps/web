@@ -1,7 +1,7 @@
 ---
 title: "Water Quality Statistics - Let's Learn Together!"
 format: live-html
-sidebar: module-1
+sidebar: lesson-1
 ---
 
 ## Welcome, Scientists! 🔬💧

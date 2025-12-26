@@ -1,7 +1,7 @@
 ---
 title: "Finding the Average (Mean) of Water Data"
 format: live-html
-sidebar: module-1
+sidebar: lesson-1
 ---
 
 ## What Is an Average?

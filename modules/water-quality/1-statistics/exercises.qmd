@@ -1,7 +1,7 @@
 ---
 title: "Practice Exercises"
 format: live-html
-sidebar: module-1
+sidebar: lesson-1
 ---
 
 ## Put Your Skills to the Test! 🔬

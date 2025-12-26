@@ -1,7 +1,7 @@
 ---
 title: "The Median and Range - Different Ways to Understand Data"
 format: live-html
-sidebar: module-1
+sidebar: lesson-1
 ---
 
 ## A Problem with the Mean

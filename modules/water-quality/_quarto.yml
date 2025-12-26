@@ -10,41 +10,41 @@ website:
     left:
       - text: "Home"
         href: index
-      - text: "Modules"
+      - text: "Water Quality Lessons"
         menu:
-          - text: "Module 1: Statistics"
-            href: module1-statistics/index
-          - text: "Module 2: Predictive Modeling"
-            href: module2-predictive-modeling/index
-          - text: "Module 3: Gradient Updates"
-            href: module3-gradient-updates/index
-          - text: "Module 4: CNNs"
-            href: module4-cnn/index
-          - text: "Module 5: Sensor Data"
-            href: module5-sensor-data/index
-          - text: "Module 6: GIS Mapping"
-            href: module6-gis/index
+          - text: "L1: Statistics"
+            href: 1-statistics/index
+          - text: "L2: Predictive Modeling"
+            href: 2-predictive-modeling/index
+          - text: "L3: Gradient Updates"
+            href: 3-gradient-updates/index
+          - text: "L4: CNNs"
+            href: 4-cnn/index
+          - text: "L5: Sensor Data"
+            href: 5-sensor-data/index
+          - text: "L6: GIS Mapping"
+            href: 6-gis/index
 
   sidebar:
-    - title: "Module 1: Statistics" 
-      id: module-1
+    - title: "Lesson 1: Statistics" 
+      id: lesson-1
       style: "floating"
       collapse-level: 2
       align: left
       contents:
-        - module1-statistics/index
+        - 1-statistics/index
         - text: "1. Introduction"
-          href: module1-statistics/introduction
+          href: 1-statistics/introduction
         - text: "2. Mean and SD"
-          href: module1-statistics/mean-sd
+          href: 1-statistics/mean-sd
         - text: "3. Median and Range"
-          href: module1-statistics/median-range
+          href: 1-statistics/median-range
         - text: "4. Outliers"
-          href: module1-statistics/outliers
+          href: 1-statistics/outliers
         - text: "5. Scatterplots"
-          href: module1-statistics/scatterplots
+          href: 1-statistics/scatterplots
         - text: "6. Exercises"
-          href: module1-statistics/exercises
+          href: 1-statistics/exercises
 
 
 format:
