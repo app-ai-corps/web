@@ -3,12 +3,12 @@ project:
   output-dir: _site
 
 website:
-  title: "Water Quality"
+  title: ""
   navbar:
     logo: aaic_letters.png
     logo-alt: "Appalachian A.I. Corps logo."  
     left:
-      - text: "Home"
+      - text: "Water Quality Lesson Index"
         href: index
       - text: "Water Quality Lessons"
         menu:
@@ -24,6 +24,13 @@ website:
             href: 5-sensor-data/index
           - text: "L6: GIS Mapping"
             href: 6-gis/index
+    right:
+      - text: "AAIC Home"
+        href: ../../
+      - text: "AAIC Modules"
+        href: ../../modules
+      - text: "Contact"
+        href: ../../contact
 
   sidebar:
     - title: "Lesson 1: Statistics" 

@@ -42,7 +42,7 @@ A series of lessons using AI to explore and monitor Appalachian water resources.
 ::: {.lesson-outline}
 
 ::: {.lesson-item}
-### [Lesson 1: Statistics Fundamentals](module1-statistics/)
+### [Lesson 1: Statistics Fundamentals](1-statistics/)
 
 Learn mean, median, standard deviation, outliers, and scatterplots using pH data.
 
