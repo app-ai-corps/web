@@ -57,7 +57,7 @@ website:
 format:
   html:
     theme: 
-      - yeti
+      - united
       - ../customize-theme.scss
     toc: true
     toc-location: right
@@ -68,7 +68,7 @@ format:
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   live-html:
     theme: 
-      - yeti
+      - united
       - ../customize-theme.scss
     toc: true
     toc-location: right
