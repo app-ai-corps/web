@@ -11,7 +11,6 @@ website:
       - text: "Water Quality Index"
         href: index
       - text: "Water Quality Lessons"
-        href: index
         menu:
           - text: "L1: Statistics"
             href: 1-statistics/index
