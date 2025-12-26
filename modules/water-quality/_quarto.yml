@@ -39,7 +39,7 @@ website:
       collapse-level: 2
       align: left
       contents:
-        - **Lesson Outline**
+        - Lesson Outline
         - text: "1. Introduction"
           href: 1-statistics/introduction
         - text: "2. Mean and SD"
@@ -56,7 +56,7 @@ website:
 
 format:
   html:
-    theme: united
+    theme: yeti
     toc: true
     toc-location: right
     include-in-header:
@@ -65,6 +65,6 @@ format:
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   live-html:
-    theme: united
+    theme: yeti
     toc: true
     toc-location: right
