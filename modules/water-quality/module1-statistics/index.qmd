@@ -1,7 +1,8 @@
 ---
 title: "Water Quality Statistics - Let's Learn Together!"
 format: live-html
-sidebar: module-1
+sidebar: 
+    - id: module-1
     - title: "Module 1: Statistics"
 ---
 
