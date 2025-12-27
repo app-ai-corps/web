@@ -22,7 +22,7 @@ body {
   background-color: #FFFFFF !important;
 }
 
-/* Link colors - Torch on hover */
+/* Link colors */
 a {
   color: #006C93;  /* Globe - default link color */
 }
@@ -30,23 +30,23 @@ a {
 /* Sidebar navigation links */
 .sidebar-navigation a:hover,
 .sidebar-item-text.sidebar-link:hover {
-  color: #d1461f !important;  /* Darker Torch */
+  color: #e65933 !important;  /* Darker Torch */
 }
 
 /* Active/current page in sidebar */
 .sidebar-navigation a.active,
 .sidebar-item.active a {
-  color: #d1461f !important;
+  color: #e65933 !important;
 }
 
 /* TOC links - hover/active only, remove default color */
 #TOC a:hover {
-  color: #B8451F !important;
+  color: #e65933 !important;
 }
 
 #TOC .toc-active a,
 #TOC a.active {
-  color: #B8451F !important;
+  color: #e65933 !important;
 }
 
 /* Change headings to Montserrat */
