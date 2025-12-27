@@ -27,15 +27,31 @@ a {
   color: #006C93;  /* Globe - default link color */
 }
 
-a:hover {
-  color: #D1461F !important;  /* Darker version of Torch on hover for accessibility */
+// a:hover {
+//   color: #D1461F !important;  /* Darker version of Torch on hover for accessibility */
+// }
+
+/* Sidebar navigation links */
+.sidebar-navigation a {
+  color: #006C93;  /* Globe - default */
 }
 
-/* Sidebar and TOC links specifically */
-.sidebar a:hover,
-.toc a:hover,
-#TOC a:hover {
-  color: #E05933 !important;  /* Torch */
+.sidebar-navigation a:hover,
+.sidebar-item-text.sidebar-link:hover {
+  color: #d1461f !important;  /* Darker Torch */
+  text-decoration: underline;
+}
+
+/* Active/current page in sidebar */
+.sidebar-navigation a.active,
+.sidebar-item.active a {
+  color: #d1461f !important;
+}
+
+/* TOC links */
+#TOC a:hover,
+.toc-active a {
+  color: #d1461f !important;
 }
 
 /* Change headings to Montserrat */
