@@ -32,14 +32,13 @@ a {
 // }
 
 /* Sidebar navigation links */
-.sidebar-navigation a {
-  color: #006C93;  /* Globe - default */
-}
+// .sidebar-navigation a {
+//   color: #006C93;  /* Globe - default */
+// }
 
 .sidebar-navigation a:hover,
 .sidebar-item-text.sidebar-link:hover {
   color: #d1461f !important;  /* Darker Torch */
-  text-decoration: underline;
 }
 
 /* Active/current page in sidebar */
