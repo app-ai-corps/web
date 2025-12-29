@@ -92,9 +92,9 @@ Empowering Appalachia Through Artificial Intelligence
 :::
 
 ::: {.footer-right}
-**University of Tennessee**  
-College of Education, Health, and Human Sciences  
 Department of Theory & Practice in Teacher Education  
+Min H. Kao Department of Electrical Engineering & Computer Science  
+**University of Tennessee**  
 Knoxville, TN
 :::
 :::
