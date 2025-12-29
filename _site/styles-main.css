@@ -255,9 +255,11 @@ body {
 .logo-grid {
   display: flex;
   justify-content: center;
-  max-width: 800px;
+  gap: 2.5rem;
+  max-width: 1200px;
   margin: 0 auto;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
 }
 
 .partner-logo-ut {
@@ -266,10 +268,11 @@ body {
   height: auto;
   flex: 0 0 auto;
   margin: 0 2.5rem;
+  align-self: flex-start;
 }
 
 .partner-logo-aitn {
-  max-width: 200px;
+  max-width: 100px;
   width: 100%;
   height: auto;
   flex: 0 0 auto;
