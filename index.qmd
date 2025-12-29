@@ -42,6 +42,7 @@ We believe that the power of AI should be accessible to all. Through education, 
 ::: {.logo-grid}
 ![](assets/tpte_logo.png){.partner-logo-ut fig-alt="University of Tennessee, Knoxville: Department of Theory & Practice in Teacher Education logo"}
 ![](assets/aitn_logo.png){.partner-logo-aitn fig-alt="AI Tennessee logo"}
+![](assets/eecs_logo.png){.partner-logo-ut fig-alt="University of Tennessee, Knoxville: Min H. Kao Department of Electrical Engineering & Computer Science logo"}
 :::
 :::
 
