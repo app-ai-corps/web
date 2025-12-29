@@ -262,7 +262,7 @@ body {
   flex-wrap: nowrap;
 }
 
-.partner-logo-ut {
+.partner-logo-tpte {
   max-width: 250px;
   width: 100%;
   height: auto;
@@ -279,10 +279,20 @@ body {
   margin: 0 2.5rem;
 }
 
+.partner-logo-eecs {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  flex: 0 0 auto;
+  margin: 0 2.5rem;
+  align-self: flex-start;
+}
+
 /* Responsive: stack on mobile */
 @media (max-width: 768px) {
-  .partner-logo-ut,
-  .partner-logo-aitn {
+  .partner-logo-tpte,
+  .partner-logo-aitn,
+  .partner-logo-eecs {
     margin: 2rem 0;  /* Vertical spacing when stacked */
   }
   
