@@ -50,7 +50,7 @@ Learn mean, median, standard deviation, outliers, and scatterplots using pH data
 :::
 
 ::: {.lesson-item}
-### [Lesson 2: Predictive Modeling](#)
+### [Lesson 2: Regression and Classification](#)
 
 Coming Soon.
 :::
