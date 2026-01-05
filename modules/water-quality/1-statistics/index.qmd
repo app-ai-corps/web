@@ -1,8 +1,12 @@
 ---
-title: "Water Quality Statistics - Let's Learn Together!"
+title: "Water Quality and Summary Statistics"
 format: live-html
 sidebar: lesson-1
 ---
+
+::: {.objective-container}
+In this lesson, you will learn how to use univariate and bivariate summary statistics to investigate water quality samples.
+:::
 
 ## Welcome, Scientists! 🔬💧
 
