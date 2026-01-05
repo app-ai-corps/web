@@ -55,10 +55,26 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-.objective-container {
+.gray-container {
   width: 100%;
   margin: 10px auto;
   background-color: #f5f5f5;
-  padding: 20px auto 10px;
+  padding: 15px 10px 5px 10px;
   border-radius: 5px;
+}
+
+.ltblue-container {
+  width: 100%;
+  margin: 10px auto;
+  background-color: #f1f9f9;
+  padding: 15px 10px 5px 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #dcdcdc;
+  border-style: solid;
+}
+
+.callout-style-default {
+  border-left: 5px solid #006C93 !important;
+  background-color: #FFFFFF;
 }

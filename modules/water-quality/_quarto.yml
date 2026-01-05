@@ -38,22 +38,24 @@ website:
       align: left
       contents:
         - <b>Lesson Contents</b>
-        - text: "1. Introduction"
+        - text: "1. Overview"
+          href: 1-statistics/
+        - text: "2. Intro to Water Quality"
           href: 1-statistics/introduction
-        - text: "2. Mean and SD"
+        - text: "3. Mean and SD"
           href: 1-statistics/mean-sd
-        - text: "3. Median and Range"
+        - text: "4. Median and Range"
           href: 1-statistics/median-range
-        - text: "4. Outliers"
+        - text: "5. Outliers"
           href: 1-statistics/outliers
-        - text: "5. Scatterplots"
-          href: 1-statistics/scatterplots
         - text: "6. Exercises"
           href: 1-statistics/exercises
 
 
 format:
   html:
+    link-external-newwindow: true
+    link-external-icon: true
     theme: united
     toc: true
     toc-location: right
@@ -63,6 +65,8 @@ format:
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   live-html:
+    link-external-newwindow: true
+    link-external-icon: true
     theme: 
       - united
       - ../custom-module-theme.scss

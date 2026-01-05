@@ -1,8 +1,62 @@
 ---
-title: "What Are Statistics? (And Why Should You Care?)"
+title: "Introduction to Water Quality"
 format: live-html
 sidebar: lesson-1
 ---
+
+## What is Water Quality?
+
+When scientists study water, they measure different things to see if it's safe. You may know from science that a water molecule is H<sub>2</sub>O.  
+
+:::{.callout-important}
+## **Question:**
+What does H<sub>2</sub>O mean?
+:::
+
+H<sub>2</sub>O is pure water, but water is almost always mixed with other things, like minerals, salts, and other chemicals. Some of these things help water be safe to drink, while others make it unsafe. It's also important to remember that water is used for different things, so for example, the same water can be safe for livestock and crop irrigation, but unsafe for human consumption.
+
+Water quality also changes over time. Weather, changes in land use, changes in industrial activities and agriculture, for example, can all affect water. We can measure certain chemicals and water characteristics to monitor how water is changing over time.
+
+<div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden;">
+  <iframe 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    src="https://edpuzzle.com/embed/media/695b558ffb53770c2e4fa1bd" 
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+## Today's Focus: Nitrates
+
+Today, we'll focus on one important measurement: **pH**. pH measures how acidic or basic a liquid/water is.
+
+
+
+ We'll focus on two important measurements:
+
+### 🌡️ pH (Acidity/Alkalinity)
+
+Think of pH like a thermometer, but for how acidic or basic water is:
+
+- **pH of 7** = Neutral (like pure water)
+- **Below 7** = Acidic (like lemon juice or vinegar)
+- **Above 7** = Basic/Alkaline (like baking soda in water)
+- **Safe drinking water** = Between 6.5 and 8.5
+
+**Real-world example:** If your pool has the wrong pH, your eyes sting when you swim!
+
+### 💧 Nitrate (A Type of Pollution)
+
+Nitrate is a chemical that can get into water from:
+- Fertilizers from farms
+- Sewage and septic systems
+- Natural sources
+
+**Why we care:**
+- Too much nitrate can make people sick
+- **Safe limit** = Less than 10 mg/L (milligrams per liter)
+- If it's higher, the water isn't safe to drink
+
 
 ## The Big Question
 

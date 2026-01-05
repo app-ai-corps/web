@@ -1,0 +1,102 @@
+---
+title: "Facilitator's Guide:<br>Water Quality and Summary Statistics"
+format: live-html
+---
+## Lesson Topics and Standards
+
+::: {.callout-note collapse="true"}
+## **Topics Covered:**  
+
+- Water quality and water safety in the community  
+  - Nitrates  
+- Introduction to Python programming 
+- Summary statistics:  
+  - Measures of center:  
+    - Mean  
+    - Median  
+  - Measures of spread:  
+    - Standard deviation  
+    - Range  
+  - Outliers  
+- Data visualization:  
+  - Boxplots  
+  - Histograms  
+
+:::
+
+::: {.callout-note collapse="true"}
+## **TN Standards Addressed:** 
+
+- *BIO1.LS2.1/ECO.LS2.13/EVSC.LS2.3:* Use mathematical and/or computational representations to support explanations of factors that affect the carrying capacity of ecosystems at different scales.    
+- *SCRE.ETS2.3:*  Identify the most appropriate scientific instruments and/or computer programs for different experiments and research, and learn to use, care for, and maintain them, gather data, and analyze results.    
+- *PSCI.PS1.7:* Develop, or use, a model to predict or explain a phenomenon by using appropriate indicators.    
+- *PSCI.PS1.8:* Develop, or use, a model to classify a substance as acidic, basic, or neutral by using pH tools and appropriate indicators.  
+- *SCRE.ETS3:* Applications of Science: Select and use appropriate data tables, graphs, and diagrams to represent data. Use mathematics and computational thinking to look for patterns in data.
+- *SCRE.ETS3:* Applications of Science: Select and use appropriate statistical procedures (descriptive statistics, t-tests, regression and correlation, chi-square, etc.) to analyze data.  
+- *A1.S.ID.A.1:* Use measures of center to solve real-world and mathematical problems.  
+- *A1.S.ID.A.3:* Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points.  
+- *AGSCIENCE 3.2:* Models: Employ mathematical models to explain growth patterns and rates, both density-
+dependent and density-independent factors, observed in ecosystems energy and
+nutrients flow.  
+- *AGSCIENCE 3.3:* Biodiversity: Evaluate the impact of habitat fragmentation, destruction, and other
+environmental pressures, such as invasive species, overharvesting, pollution, and climate
+change on local and global biodiversity (genetic, species, and ecosystems.) Distinguish
+between types of pollution (point and nonpoint sources) and their sources to predict the
+effects on environmental conditions (e.g., water, soil, and air), animal populations, and
+plant populations from various kinds of human activity.
+:::
+
+## Lesson Overview Video Tour
+
+## Slide Deck for Lesson
+
+## Handout for Lesson
+
+## Lesson Prep
+
+#### 1. Prepare Materials for Nitrates Lab
+The day before create water samples for nitrates lab. This will allow the nitrates to fully dissolve in the water.
+ 
+**Materials needed:**  
+  - Miracle-Gro Fertilizer (1 lb. or 1.5 lb. box of *water-soluable* blue crystal powder)  
+  - Clean bucket/container to mix water + Miracle-Gro  
+  - Empty gallon jugs/water-tight containers to hold/transport water samples  
+  - Small cups for student use (to hold samples for testing)  
+  - Nitrate/Nitrate test strips  
+  - Masking tape/ sharpies to label cups/samples  
+
+:::{.callout-important collapse="true"}
+## Nitrate Sample Creation Guide
+*Based on 4-5 small groups, with 3 water samples per group*
+
+**Normal/Low range (7-9 samples) - 0-5 ppm:**
+
+- 5-6 samples: Plain tap water (typically 0-2 ppm)
+- 2-3 samples: 1/16 tsp fertilizer per gallon water (~3-5 ppm)
+
+**Moderate range (3-4 samples) - 8-15 ppm:**
+
+- 3-4 samples: 1/8 tsp fertilizer per gallon (~8-12 ppm)
+
+**Extreme outliers (2-3 samples) - 30+ ppm:**
+
+- 1-2 samples: 1/2 tsp fertilizer per gallon (~30-40 ppm)
+- 1 sample: 1 tsp fertilizer per gallon (~50+ ppm, off the charts!)
+:::
+
+#### 2. Make Copies: 1 Lab Handout Per Student
+
+#### 3. Obtain 1 pack of like-colored Post-it Notes and 1 Sharpie/Group
+
+#### 4. Create and Share Link for Nitrates Lab Data Collection
+ - Our suggestion: Use a blank Google Sheet/Spreadsheet
+ - Could pair with Google Form for data submission (meaning full sheet could be view only)
+
+## Lesson Overview & Takeaways
+
+## Reference Materials
+
+Whole-Class Video Links:  
+- [Water Quality](){rel="noopener noreferrer"}  
+- [What is Statistics?](https://youtu.be/Ge9je05uYJ0?si=FspiImxmEBP8xHuN){rel="noopener noreferrer"}  
+- [Mean, Median & Mode](https://youtu.be/01WLS9X3FhY?si=0InxJE5vzH78qau3){rel="noopener noreferrer"}
