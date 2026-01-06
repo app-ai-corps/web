@@ -10,10 +10,8 @@ sidebar: lesson-1
 
 **Materials Needed:**  
 - Your computer  
-- A web browser (e.g., Chrome, Firefox, Safari)  
-- A pH strip ??  
-- Your water sample ??  
-- Notetaker handout ??
+- A web browser (e.g., Chrome, Firefox, Safari)    
+- Handout ??
 :::
 
 ::: {.callout-tip collapse="true"}

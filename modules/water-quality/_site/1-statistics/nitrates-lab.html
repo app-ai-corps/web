@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction to Water Quality</title>
+<title>Nitrates Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -183,7 +183,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Introduction to Water Quality</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Nitrates Lab</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -206,32 +206,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../1-statistics/introduction" class="sidebar-item-text sidebar-link">
+  <a href="../1-statistics/intro-water-quality" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2. Intro to Water Quality</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../1-statistics/nitrates-lab" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Nitrates Lab</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../1-statistics/intro-statistics" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Intro to Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../1-statistics/mean-sd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. Mean and SD</span></a>
+ <span class="menu-text">5. Mean and SD</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../1-statistics/median-range" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4. Median and Range</span></a>
+ <span class="menu-text">6. Median and Range</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../1-statistics/outliers" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5. Outliers</span></a>
+ <span class="menu-text">7. Outliers</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../1-statistics/exercises" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6. Exercises</span></a>
+ <span class="menu-text">8. Exercises</span></a>
   </div>
 </li>
     </ul>
@@ -283,7 +295,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introduction to Water Quality</h1>
+<h1 class="title">Nitrates Lab</h1>
 </div>
 
 
@@ -375,7 +387,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="lets-start-simple-meet-python-lists" class="level2">
 <h2 class="anchored" data-anchor-id="lets-start-simple-meet-python-lists">Let’s Start Simple: Meet Python Lists</h2>
 <p>In Python, we store multiple numbers in something called a <strong>list</strong>. It’s like a shopping list, but for data!</p>
-<div id="2c0d4a37" class="cell" data-execution_count="1">
+<div id="f6b856ed" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A list of pH readings (the square brackets [ ] make it a list)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>ph_readings <span class="op">=</span> [<span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.3</span>, <span class="fl">7.0</span>, <span class="fl">7.2</span>]</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -401,7 +413,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBDcmVhdGUgYSBsaXN0IG9m
 <section id="basic-operations-with-lists" class="level2">
 <h2 class="anchored" data-anchor-id="basic-operations-with-lists">Basic Operations with Lists</h2>
 <p>Once we have a list, we can do things with it:</p>
-<div id="5655e4c7" class="cell" data-execution_count="2">
+<div id="2e47da45" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Our nitrate readings from 5 rivers (in mg/L)</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>nitrate <span class="op">=</span> [<span class="fl">3.2</span>, <span class="fl">4.1</span>, <span class="fl">3.8</span>, <span class="fl">3.5</span>, <span class="fl">4.0</span>]</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -456,7 +468,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBwSCByZWFkaW5ncyBmcm9t
 <p>Let’s talk about what those pH and nitrate numbers actually mean:</p>
 <section id="ph-scale" class="level3">
 <h3 class="anchored" data-anchor-id="ph-scale">pH Scale</h3>
-<div id="8bcc2004" class="cell" data-execution_count="3">
+<div id="6e818aaa" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's visualize the pH scale</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -482,7 +494,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBwSCByZWFkaW5ncyBmcm9t
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="introduction_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="nitrates-lab_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -499,7 +511,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBwSCByZWFkaW5ncyBmcm9t
 <figcaption>Nitrate Test Strips</figcaption>
 </figure>
 </div>
-<div id="e81440e3" class="cell" data-execution_count="4">
+<div id="de5a05a0" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize nitrate safety levels</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>categories <span class="op">=</span> [<span class="st">'Safe</span><span class="ch">\n</span><span class="st">(&lt; 2 mg/L)'</span>, <span class="st">'Acceptable</span><span class="ch">\n</span><span class="st">(2-5 mg/L)'</span>, <span class="st">'Concerning</span><span class="ch">\n</span><span class="st">(5-10 mg/L)'</span>, <span class="st">'UNSAFE</span><span class="ch">\n</span><span class="st">(&gt; 10 mg/L)'</span>]</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>colors_nitrate <span class="op">=</span> [<span class="st">'green'</span>, <span class="st">'lightgreen'</span>, <span class="st">'yellow'</span>, <span class="st">'red'</span>]</span>
@@ -519,7 +531,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBwSCByZWFkaW5ncyBmcm9t
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="introduction_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="nitrates-lab_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -532,7 +544,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBwSCByZWFkaW5ncyBmcm9t
 <section id="checking-if-water-is-safe" class="level2">
 <h2 class="anchored" data-anchor-id="checking-if-water-is-safe">Checking If Water Is Safe</h2>
 <p>Let’s use Python to check if water is safe:</p>
-<div id="be109872" class="cell" data-execution_count="5">
+<div id="6032058b" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's check a pH reading</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>pH_reading <span class="op">=</span> <span class="fl">7.2</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>

@@ -35,9 +35,6 @@ format: live-html
 - *SCRE.ETS3:* Applications of Science: Select and use appropriate statistical procedures (descriptive statistics, t-tests, regression and correlation, chi-square, etc.) to analyze data.  
 - *A1.S.ID.A.1:* Use measures of center to solve real-world and mathematical problems.  
 - *A1.S.ID.A.3:* Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points.  
-- *AGSCIENCE 3.2:* Models: Employ mathematical models to explain growth patterns and rates, both density-
-dependent and density-independent factors, observed in ecosystems energy and
-nutrients flow.  
 - *AGSCIENCE 3.3:* Biodiversity: Evaluate the impact of habitat fragmentation, destruction, and other
 environmental pressures, such as invasive species, overharvesting, pollution, and climate
 change on local and global biodiversity (genetic, species, and ecosystems.) Distinguish

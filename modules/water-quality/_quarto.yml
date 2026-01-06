@@ -41,14 +41,18 @@ website:
         - text: "1. Overview"
           href: 1-statistics/
         - text: "2. Intro to Water Quality"
-          href: 1-statistics/introduction
-        - text: "3. Mean and SD"
+          href: 1-statistics/intro-water-quality
+        - text: "3. Nitrates Lab"
+          href: 1-statistics/nitrates-lab
+        - text: "4. Intro to Statistics"
+          href: 1-statistics/intro-statistics
+        - text: "5. Mean and SD"
           href: 1-statistics/mean-sd
-        - text: "4. Median and Range"
+        - text: "6. Median and Range"
           href: 1-statistics/median-range
-        - text: "5. Outliers"
+        - text: "7. Outliers"
           href: 1-statistics/outliers
-        - text: "6. Exercises"
+        - text: "8. Exercises"
           href: 1-statistics/exercises
 
 
