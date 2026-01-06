@@ -44,6 +44,7 @@ website:
           href: 1-statistics/intro-water-quality
         - text: "3. Nitrates Lab"
           href: 1-statistics/nitrates-lab
+        - text: "---"
         - text: "4. Intro to Statistics"
           href: 1-statistics/intro-statistics
         - text: "5. Mean and SD"
@@ -52,6 +53,7 @@ website:
           href: 1-statistics/median-range
         - text: "7. Outliers"
           href: 1-statistics/outliers
+        - text: "---"
         - text: "8. Exercises"
           href: 1-statistics/exercises
 

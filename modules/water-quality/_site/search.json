@@ -1090,5 +1090,103 @@
     "title": "Introduction to Water Quality",
     "section": "How much is too much?",
     "text": "How much is too much?"
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html",
+    "href": "1-statistics/intro-statistics.html",
+    "title": "Introduction to Statistics",
+    "section": "",
+    "text": "Imagine you’re testing water from a stream. You measure the pH seven different times and get:\n7.1, 7.2, 7.0, 7.3, 7.1, 7.2, 7.1\nQuick - is the water safe? What’s the “typical” pH? Are any readings weird?\nThat’s hard to answer just by staring at the numbers! This is why we need statistics."
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html#the-big-question",
+    "href": "1-statistics/intro-statistics.html#the-big-question",
+    "title": "Introduction to Statistics",
+    "section": "",
+    "text": "Imagine you’re testing water from a stream. You measure the pH seven different times and get:\n7.1, 7.2, 7.0, 7.3, 7.1, 7.2, 7.1\nQuick - is the water safe? What’s the “typical” pH? Are any readings weird?\nThat’s hard to answer just by staring at the numbers! This is why we need statistics."
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html#what-are-statistics",
+    "href": "1-statistics/intro-statistics.html#what-are-statistics",
+    "title": "Introduction to Statistics",
+    "section": "What Are Statistics?",
+    "text": "What Are Statistics?\nStatistics = A fancy word for “using math to understand data”\nThink of statistics like a calculator that helps you: - Summarize lots of numbers into one useful number - Find patterns - Make decisions - Spot things that don’t fit\nReal-world example: When you check the weather app, it shows “Average temperature: 75°F” - that’s a statistic!"
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html#why-do-scientists-use-statistics",
+    "href": "1-statistics/intro-statistics.html#why-do-scientists-use-statistics",
+    "title": "Introduction to Statistics",
+    "section": "Why Do Scientists Use Statistics?",
+    "text": "Why Do Scientists Use Statistics?\nScientists collect LOTS of data. Imagine you: - Test water at 10 different streams - Measure pH every day for a month - Check nitrate levels at 5 rivers\nThat’s a LOT of numbers! Statistics help you: 1. Summarize: “What’s the typical pH?” 2. Compare: “Is Stream A cleaner than Stream B?” 3. Detect problems: “Is this reading normal or is something wrong?” 4. Communicate: “Is this water safe?” (much clearer than listing 100 numbers!)"
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html#lets-start-simple-meet-python-lists",
+    "href": "1-statistics/intro-statistics.html#lets-start-simple-meet-python-lists",
+    "title": "Introduction to Statistics",
+    "section": "Let’s Start Simple: Meet Python Lists",
+    "text": "Let’s Start Simple: Meet Python Lists\nIn Python, we store multiple numbers in something called a list. It’s like a shopping list, but for data!\n\n# A list of pH readings (the square brackets [ ] make it a list)\nph_readings = [7.2, 7.1, 7.3, 7.0, 7.2]\n\nprint(\"Our pH readings:\", ph_readings)\n\nOur pH readings: [7.2, 7.1, 7.3, 7.0, 7.2]\n\n\nBreaking it down: - ph_readings = the name we gave our list (you can name it anything!) - = means “store this in the variable” - [7.2, 7.1, 7.3, 7.0, 7.2] = the actual numbers, separated by commas - print() = tells Python to show us the result"
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html#try-it-make-your-own-list",
+    "href": "1-statistics/intro-statistics.html#try-it-make-your-own-list",
+    "title": "Introduction to Statistics",
+    "section": "Try It: Make Your Own List",
+    "text": "Try It: Make Your Own List\n\n\n\n\n\n\nChallenge: Change the numbers in my_numbers and run it again!"
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html#basic-operations-with-lists",
+    "href": "1-statistics/intro-statistics.html#basic-operations-with-lists",
+    "title": "Introduction to Statistics",
+    "section": "Basic Operations with Lists",
+    "text": "Basic Operations with Lists\nOnce we have a list, we can do things with it:\n\n# Our nitrate readings from 5 rivers (in mg/L)\nnitrate = [3.2, 4.1, 3.8, 3.5, 4.0]\n\nprint(\"Nitrate readings:\", nitrate)\nprint(\"Number of rivers tested:\", len(nitrate))\nprint(\"Lowest nitrate:\", min(nitrate), \"mg/L\")\nprint(\"Highest nitrate:\", max(nitrate), \"mg/L\")\n\nNitrate readings: [3.2, 4.1, 3.8, 3.5, 4.0]\nNumber of rivers tested: 5\nLowest nitrate: 3.2 mg/L\nHighest nitrate: 4.1 mg/L\n\n\nNew Python words: - len() = length (how many items) - min() = minimum (smallest number) - max() = maximum (biggest number)\nThese are called functions - they’re like tools that do specific jobs!"
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html#try-it-explore-your-data",
+    "href": "1-statistics/intro-statistics.html#try-it-explore-your-data",
+    "title": "Introduction to Statistics",
+    "section": "Try It: Explore Your Data",
+    "text": "Try It: Explore Your Data"
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html#types-of-statistics-well-learn",
+    "href": "1-statistics/intro-statistics.html#types-of-statistics-well-learn",
+    "title": "Introduction to Statistics",
+    "section": "Types of Statistics We’ll Learn",
+    "text": "Types of Statistics We’ll Learn\n\n1. Measures of Center (What’s “Typical”?)\n\nMean = Average (add them all up, divide by how many)\nMedian = Middle number when you line them up\n\nExample: Test scores: 80, 85, 90, 95, 100 - Mean = (80+85+90+95+100) ÷ 5 = 90 - Median = 90 (it’s in the middle!)\n\n\n2. Measures of Spread (How Spread Out?)\n\nRange = Biggest minus smallest\nStandard Deviation = How far numbers typically are from average (we’ll explain this more later!)\n\nExample: Which is more consistent? - Stream A: pH readings of 7.0, 7.1, 7.0, 7.1 (very consistent!) - Stream B: pH readings of 6.5, 7.5, 6.8, 7.9 (all over the place!)"
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html#water-quality-what-were-measuring",
+    "href": "1-statistics/intro-statistics.html#water-quality-what-were-measuring",
+    "title": "Introduction to Statistics",
+    "section": "Water Quality: What We’re Measuring",
+    "text": "Water Quality: What We’re Measuring\n📺 Watch this video to learn more about pH:\n\nLet’s talk about what those pH and nitrate numbers actually mean:\n\npH Scale\n\n# Let's visualize the pH scale\nimport matplotlib.pyplot as plt\n\nph_scale = list(range(0, 15))\ncolors = ['red']*3 + ['orange']*3 + ['yellow', 'lightgreen'] + ['green']*3 + ['lightgreen', 'yellow'] + ['orange', 'red']\n\nplt.figure(figsize=(12, 3))\nplt.bar(ph_scale, [1]*15, color=colors, edgecolor='black', width=1)\nplt.xlabel('pH Value', fontsize=12)\nplt.title('pH Scale: Where Is Water Safe?', fontsize=14)\nplt.xticks(range(0, 15))\nplt.yticks([])\n\n# Mark safe drinking water range\nplt.axvline(x=6.5, color='blue', linewidth=3, linestyle='--', label='Safe range')\nplt.axvline(x=8.5, color='blue', linewidth=3, linestyle='--')\nplt.legend(fontsize=12)\n\nplt.tight_layout()\nplt.show()\n\nprint(\"Safe drinking water: pH between 6.5 and 8.5 (the blue zone)\")\n\n\n\n\n\n\n\n\nSafe drinking water: pH between 6.5 and 8.5 (the blue zone)\n\n\n\n\nNitrate Levels\n\n\n\nNitrate Test Strips\n\n\n\n# Visualize nitrate safety levels\ncategories = ['Safe\\n(&lt; 2 mg/L)', 'Acceptable\\n(2-5 mg/L)', 'Concerning\\n(5-10 mg/L)', 'UNSAFE\\n(&gt; 10 mg/L)']\ncolors_nitrate = ['green', 'lightgreen', 'yellow', 'red']\n\nplt.figure(figsize=(10, 6))\nplt.bar(categories, [1, 1, 1, 1], color=colors_nitrate, edgecolor='black', width=0.6)\nplt.ylabel('Safety Level', fontsize=12)\nplt.title('Nitrate Safety Levels', fontsize=14)\nplt.yticks([])\nplt.axhline(y=0.5, color='black', linewidth=2, linestyle='--')\nplt.text(3, 0.5, ' EPA Limit: 10 mg/L', fontsize=12, va='center')\n\nplt.tight_layout()\nplt.show()\n\nprint(\"Remember: Nitrate over 10 mg/L is NOT safe to drink!\")\n\n\n\n\n\n\n\n\nRemember: Nitrate over 10 mg/L is NOT safe to drink!"
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html#checking-if-water-is-safe",
+    "href": "1-statistics/intro-statistics.html#checking-if-water-is-safe",
+    "title": "Introduction to Statistics",
+    "section": "Checking If Water Is Safe",
+    "text": "Checking If Water Is Safe\nLet’s use Python to check if water is safe:\n\n# Let's check a pH reading\npH_reading = 7.2\n\nprint(f\"The water has pH of {pH_reading}\")\n\n# Python can make decisions using 'if' statements!\nif pH_reading &gt;= 6.5 and pH_reading &lt;= 8.5:\n    print(\"✓ pH is in the safe range!\")\nelse:\n    print(\"✗ pH is outside the safe range!\")\n\nThe water has pH of 7.2\n✓ pH is in the safe range!"
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html#try-it-be-a-water-inspector",
+    "href": "1-statistics/intro-statistics.html#try-it-be-a-water-inspector",
+    "title": "Introduction to Statistics",
+    "section": "Try It: Be a Water Inspector!",
+    "text": "Try It: Be a Water Inspector!"
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html#whats-next",
+    "href": "1-statistics/intro-statistics.html#whats-next",
+    "title": "Introduction to Statistics",
+    "section": "What’s Next?",
+    "text": "What’s Next?\nNow you understand: - ✅ What statistics are (math to understand data) - ✅ How to create lists in Python - ✅ Basic functions: len(), min(), max() - ✅ What pH and nitrate mean - ✅ How to check if water is safe\nIn the next lesson, we’ll learn about the mean (average) - one of the most important statistics!"
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html#key-python-words-we-learned",
+    "href": "1-statistics/intro-statistics.html#key-python-words-we-learned",
+    "title": "Introduction to Statistics",
+    "section": "Key Python Words We Learned",
+    "text": "Key Python Words We Learned\n\n\n\nWord\nWhat It Does\nExample\n\n\n\n\nlist\nStores multiple numbers\n[7.2, 7.1, 7.3]\n\n\nlen()\nCounts items\nlen([1,2,3]) = 3\n\n\nmin()\nFinds smallest\nmin([5,2,8]) = 2\n\n\nmax()\nFinds biggest\nmax([5,2,8]) = 8\n\n\nprint()\nShows results\nprint(\"Hi!\")\n\n\nif\nMakes decisions\nif pH &gt; 7:\n\n\n\nRemember: The best way to learn is by trying things! Change numbers, experiment, and see what happens. You can’t break anything! 😊"
   }
 ]
