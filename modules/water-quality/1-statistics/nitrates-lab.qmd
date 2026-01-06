@@ -4,72 +4,16 @@ format: live-html
 sidebar: lesson-1
 ---
 
-## What is Water Quality?
+## 🥽 Get Ready, Scientists!
+We are going to participate in a brief water quality lab to practice gathering data about nitrates and nitrates in water samples. You will need the following materials:
 
-When scientists study water, they measure different things to see if it's safe. You may know from science that a water molecule is H<sub>2</sub>O.  
-
-:::{.callout-important}
-## **Question:**
-What does H<sub>2</sub>O mean?
+:::{.ltblue-container}
+- several water quality samples per group
+- several nitrate/nitrate test strips per group
+- 1 lab notesheet per person
+- 1 computer with the [classwide spreadsheet]() open for data entry
+- pencils
 :::
-
-H<sub>2</sub>O is pure water, but water is almost always mixed with other things, like minerals, salts, and other chemicals. Some of these things help water be safe to drink, while others make it unsafe. It's also important to remember that water is used for different things, so for example, the same water can be safe for livestock and crop irrigation, but unsafe for human consumption.
-
-Water quality also changes over time. Weather, changes in land use, changes in industrial activities and agriculture, for example, can all affect water. We can measure certain chemicals and water characteristics to monitor how water is changing over time.
-
-<div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden;">
-  <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://edpuzzle.com/embed/media/695b558ffb53770c2e4fa1bd" 
-    frameborder="0" 
-    allowfullscreen>
-  </iframe>
-</div>
-
-## Today's Focus: Nitrogen
-
-The video above discusses a number of indicators of water quality. The graphic shown in the video has been recreated below.
-
-![Water Quality Indicators](images/water-quality-indicators.png){width="50%"}
-
-### Nitrogen as Nutrient
-
-Today, we'll focus on one important measurement—the concentration of nitrogen in water. When nitrogen and water combine, they form nitrates and nitrites. Both nitrates (NO<sub>3</sub>) and nitrites (NO<sub>2</sub>) are a common and natural component of water. In this way, the presence of nitrogen (via nitrates and nitrites in the water) is considered *a nutrient*.
-
-The presence of nitrogen in water is part of the nitrogen cycle, which is the process by which nitrogen is converted to other nutrients necessary for life. 
-
-<div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden;">
-  <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://edpuzzle.com/embed/media/695c86636c7ddd288faebc26" 
-    frameborder="0" 
-    allowfullscreen>
-  </iframe>
-</div>
-
-### Nitrogen as Pollutant
-
-While Nitrogen is a needed nutrient, in larger quantities it can become a *pollutant*. This excess nitrogen results primarily from agricultural operations (fertilizer runoff and livestock manure), sewage and septic systems (human waste), and acid rain.
-
-<div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden;">
-  <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://edpuzzle.com/embed/media/695c8e7d1b8b4b96f64b0e80" 
-    frameborder="0" 
-    allowfullscreen>
-  </iframe>
-</div>
-
-## Monitoring Nitrogen in the Water
-
-### 💧 Nitrate (A Type of Pollution)
-
-
-**Why we care:**
-- Too much nitrate can make people sick
-- **Safe limit** = Less than 10 mg/L (milligrams per liter)
-- If it's higher, the water isn't safe to drink
-
 
 ## The Big Question
 

@@ -851,7 +851,7 @@
     "href": "1-statistics/nitrates-lab.html",
     "title": "Nitrates Lab",
     "section": "",
-    "text": "When scientists study water, they measure different things to see if it’s safe. You may know from science that a water molecule is H2O.\n\n\n\n\n\n\nQuestion:\n\n\n\nWhat does H2O mean?\n\n\nH2O is pure water, but water is almost always mixed with other things, like minerals, salts, and other chemicals. Some of these things help water be safe to drink, while others make it unsafe. It’s also important to remember that water is used for different things, so for example, the same water can be safe for livestock and crop irrigation, but unsafe for human consumption.\nWater quality also changes over time. Weather, changes in land use, changes in industrial activities and agriculture, for example, can all affect water. We can measure certain chemicals and water characteristics to monitor how water is changing over time."
+    "text": "We are going to participate in a brief water quality lab to practice gathering data about nitrates and nitrates in water samples. You will need the following materials:\n\n\nseveral water quality samples per group\nseveral nitrate/nitrate test strips per group\n1 lab notesheet per person\n1 computer with the classwide spreadsheet open for data entry\npencils"
   },
   {
     "objectID": "1-statistics/nitrates-lab.html#what-is-water-quality",
@@ -984,14 +984,14 @@
     "href": "1-statistics/intro-water-quality.html#todays-focus-nitrogen",
     "title": "Introduction to Water Quality",
     "section": "Today’s Focus: Nitrogen",
-    "text": "Today’s Focus: Nitrogen\nThe video above discusses a number of indicators of water quality. The graphic shown in the video has been recreated below.\n\n\n\nWater Quality Indicators\n\n\n\nNitrogen as Nutrient\nToday, we’ll focus on one important measurement—the concentration of nitrogen in water. When nitrogen and water combine, they form nitrates and nitrites. Both nitrates (NO3) and nitrites (NO2) are a common and natural component of water. In this way, the presence of nitrogen (via nitrates and nitrites in the water) is considered a nutrient.\nThe presence of nitrogen in water is part of the nitrogen cycle, which is the process by which nitrogen is converted to other nutrients necessary for life.\n\n \n\n\n\nNitrogen as Pollutant\nWhile Nitrogen is a needed nutrient, in larger quantities it can become a pollutant. This excess nitrogen results primarily from agricultural operations (fertilizer runoff and livestock manure), sewage and septic systems (human waste), and acid rain."
+    "text": "Today’s Focus: Nitrogen\nThe video above discusses a number of indicators of water quality. The graphic shown in the video has been recreated below.\n\n\n\nWater Quality Indicators\n\n\n\nNitrogen as Nutrient\nToday, we’ll focus on one important measurement—the concentration of nitrogen in water. When nitrogen and water combine, they form nitrates and nitrites. Both nitrates (NO3) and nitrites (NO2) are a common and natural component of water. In this way, the presence of nitrogen (via nitrates and nitrites in the water) is considered a nutrient.\nThe presence of nitrogen in water is part of the nitrogen cycle, which is the process by which nitrogen is converted to other nutrients necessary for life.\n\n \n\n\n\nNitrogen as Pollutant\nWhile Nitrogen is a needed nutrient, in larger quantities it can become a pollutant. This excess nitrogen—observed as nitrates— results primarily from agricultural operations (fertilizer runoff and livestock manure), sewage and septic systems (human waste), and acid rain."
   },
   {
     "objectID": "1-statistics/intro-water-quality.html#monitoring-nitrogen-in-the-water",
     "href": "1-statistics/intro-water-quality.html#monitoring-nitrogen-in-the-water",
     "title": "Introduction to Water Quality",
     "section": "Monitoring Nitrogen in the Water",
-    "text": "Monitoring Nitrogen in the Water\n\n💧 Nitrate (A Type of Pollution)\nWhy we care: - Too much nitrate can make people sick - Safe limit = Less than 10 mg/L (milligrams per liter) - If it’s higher, the water isn’t safe to drink"
+    "text": "Monitoring Nitrogen in the Water\nToo much nitrogen in water can make both people and animals sick 🐟🐟🐟. The United States Environmental Protection Agency (EPA) sets limits on what is allowable concentrations of nitrates and nitrites in drinking water. These limits are legally enforceable.\n\n\n\n\n\n\nNitrate and Nitrite EPA Limits\n\n\n\nNitrates: 10 mg/L\nNitrites: 1 mg/L\n\n\nThe World Health Organization (WHO) also sets limits on allowable levels of nitrates and nitrites in drinking water. Their limits are very similar to those from the EPA.\n\nMonitoring Nitrogen: Your Local Utility\nLocal water utilities must survey and monitor the concentration of nitrogen in water to ensure that their water supply meets the EPA limits. They regularly conduct testing and report results to the appropriate regulatory agencies. You can look up the reported nitrate and nitrite values for your utility by using your zipcode.\n\n\n\nMonitoring Nitrogen: You and Other Citizen Scientists!\nThere are a variety of ways we, as private citizens, can monitor the concentration of nitrogen in our water. One way is to use test strips.\n\n\n\n\n\n\n\nNote that 10 mg/L is the EPA limit for nitrate and 1 mg/L is the EPA limit for nitrite."
   },
   {
     "objectID": "1-statistics/intro-water-quality.html#the-big-question",
@@ -1075,7 +1075,7 @@
     "href": "1-statistics/intro-water-quality.html#whats-next",
     "title": "Introduction to Water Quality",
     "section": "What’s Next?",
-    "text": "What’s Next?\nNow you understand: - ✅ What statistics are (math to understand data) - ✅ How to create lists in Python - ✅ Basic functions: len(), min(), max() - ✅ What pH and nitrate mean - ✅ How to check if water is safe\nIn the next lesson, we’ll learn about the mean (average) - one of the most important statistics!"
+    "text": "What’s Next?\n🧪 Now let’s practice testing nitrate and nitrite content in water samples. We’ll complete a brief water quality lab on the next page."
   },
   {
     "objectID": "1-statistics/intro-water-quality.html#key-python-words-we-learned",
@@ -1188,5 +1188,12 @@
     "title": "Introduction to Statistics",
     "section": "Key Python Words We Learned",
     "text": "Key Python Words We Learned\n\n\n\nWord\nWhat It Does\nExample\n\n\n\n\nlist\nStores multiple numbers\n[7.2, 7.1, 7.3]\n\n\nlen()\nCounts items\nlen([1,2,3]) = 3\n\n\nmin()\nFinds smallest\nmin([5,2,8]) = 2\n\n\nmax()\nFinds biggest\nmax([5,2,8]) = 8\n\n\nprint()\nShows results\nprint(\"Hi!\")\n\n\nif\nMakes decisions\nif pH &gt; 7:\n\n\n\nRemember: The best way to learn is by trying things! Change numbers, experiment, and see what happens. You can’t break anything! 😊"
+  },
+  {
+    "objectID": "1-statistics/nitrates-lab.html#get-ready-scientists",
+    "href": "1-statistics/nitrates-lab.html#get-ready-scientists",
+    "title": "Nitrates Lab",
+    "section": "",
+    "text": "We are going to participate in a brief water quality lab to practice gathering data about nitrates and nitrates in water samples. You will need the following materials:\n\n\nseveral water quality samples per group\nseveral nitrate/nitrate test strips per group\n1 lab notesheet per person\n1 computer with the classwide spreadsheet open for data entry\npencils"
   }
 ]
