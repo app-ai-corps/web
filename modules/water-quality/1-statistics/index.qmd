@@ -6,7 +6,7 @@ sidebar: lesson-1
 
 ::: {.gray-container}
 
-**Lesson Objective:** In this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate water quality samples.
+**Lesson Objective:** In this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate nitrates and nitrates inwater quality samples.
 
 **Materials Needed:**  
 - Your computer  
@@ -23,7 +23,7 @@ sidebar: lesson-1
 
 Over the next several weeks, we will work together to understand the water in our community, its importance, nutrients, and how we can protect it. 
 
-We will use aspects of computing and programming, statistics, and environmental and agricultural science to learn more about local waterways. In today's lesson, we will consider the role of pH in our water, how we measure it, analyze it, and consider its role in water quality and local ecosystems.
+We will use aspects of computing and programming, statistics, and environmental and agricultural science to learn more about local waterways. In today's lesson, we will consider the role of nitrogen in our water, how we measure it, analyze it, and consider its role in water quality and local ecosystems.
 
 **Never used programming before? Perfect!** This module is designed for complete beginners. We'll learn everything step by step.
 
@@ -106,7 +106,7 @@ You can even combine the strings and math!
 :::{.ltblue-container}
 
 ```{pyodide}
-print("2 + 3 =", 2 + 3))
+print("2 + 3 =", 2 + 3)
 ```
 
 :::

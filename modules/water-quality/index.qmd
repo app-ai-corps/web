@@ -44,7 +44,7 @@ A series of lessons using AI to explore and monitor Appalachian water resources.
 ::: {.lesson-item}
 ### [Lesson 1: Statistics Fundamentals](1-statistics/)
 
-Learn mean, median, standard deviation, outliers, and scatterplots using pH data.
+Learn mean, median, range, standard deviation, and outliers using nitrate/nitrite data.
 
 *Estimated time: 90 minutes*
 :::

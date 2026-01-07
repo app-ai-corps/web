@@ -14,7 +14,7 @@ We are going to participate in a brief water quality lab to practice gathering d
 - 1 computer with the submission form open for data entry
     - link to form will be provided by your teacher
 - pencils
-- 2 colors of sticky notes
+- 2 colors of sticky notes (1 for nitrates and 1 for nitrites)
 - 1 Sharpie marker
 :::
 
@@ -40,7 +40,7 @@ Assign roles to each person in your group:
         - test strips
 
 ## 🚀 Let's Do It!
-1. **Lab Technician:** Take the first water sample, share the sample letter with your team. Then, take one test strip and do the following:
+1. **Lab Technician:** Take the first water sample, share the sample letter with your team. Then, take one new test strip and do the following:
     - Dip strip into sample for 2 seconds. *DO NOT* move the test strip while submerged.
     - Remove test strip from water.
     - Hold test strip flat for 1 minute.
@@ -70,6 +70,6 @@ Submit the form and click the link to submit a new form for the next water sampl
 
 ## 👀 Looking Forward
 
-When finished, with the help of the *Data Recorder (Lab Report)*, make sure everyone in your group has a copy of the data table. 
+When finished, with the help of the *Data Recorder (Lab Report)*, make sure everyone in your group has a copy of the data table on their own sheet. 
 
 Good job, scientists! In the next portion of the workshop, we will analyze the data you've collected.
