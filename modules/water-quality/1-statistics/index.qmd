@@ -6,7 +6,7 @@ sidebar: lesson-1
 
 ::: {.gray-container}
 
-**Lesson Objective:** In this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate nitrates and nitrates inwater quality samples.
+**Lesson Objective:** In this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate nitrates and nitrates in water quality samples.
 
 **Materials Needed:**  
 - Your computer  
