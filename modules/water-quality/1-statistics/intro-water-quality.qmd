@@ -62,7 +62,7 @@ While Nitrogen is a needed nutrient, in larger quantities it can become a *pollu
 
 ## Monitoring Nitrogen in the Water
 
-Too much nitrogen in water can make both people and animals sick 🐟🐟🐟. The United States Environmental Protection Agency (EPA) sets limits on what is [allowable concentrations of nitrates and nitrites in drinking water](https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations). These limits are legally enforceable.
+Too much nitrogen in water can make both people and animals sick 🐟🐟🐟. The United States Environmental Protection Agency (EPA) sets limits on what are [allowable concentrations of nitrates and nitrites in drinking water](https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations). These limits are legally enforceable.
 
 :::{.callout-important}
 ### Nitrate and Nitrite EPA Limits
@@ -72,7 +72,7 @@ Too much nitrogen in water can make both people and animals sick 🐟🐟🐟. T
 
 :::
 
-The World Health Organization (WHO) also sets limits on [allowable levels of nitrates and nitrites](https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/chemical-hazards-in-drinking-water/nitrate-nitrite) in drinking water. Their limits are very similar to those from the EPA.
+The World Health Organization (WHO) also sets limits on [allowable levels of nitrates and nitrites](https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/chemical-hazards-in-drinking-water/nitrate-nitrite) in drinking water. Their limits are similar to those from the EPA.
 
 #### Monitoring Nitrogen: Your Local Utility
 
@@ -82,7 +82,7 @@ Local water utilities must survey and monitor the concentration of nitrogen in w
 
 #### Monitoring Nitrogen: You and Other Citizen Scientists!
 
-There are a variety of ways we, as private citizens, can monitor the concentration of nitrogen in our water. One way is to use test strips.
+There are a variety of ways we, as private citizens, can monitor the concentration of nitrogen in our water, too. One way is to use test strips.
 
 :::{.columns}
 :::{.column width = "33%"}

@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -259,27 +224,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#get-ready-scientists" id="toc-get-ready-scientists" class="nav-link active" data-scroll-target="#get-ready-scientists">🥽 Get Ready, Scientists!</a></li>
-  <li><a href="#the-big-question" id="toc-the-big-question" class="nav-link" data-scroll-target="#the-big-question">The Big Question</a></li>
-  <li><a href="#what-are-statistics" id="toc-what-are-statistics" class="nav-link" data-scroll-target="#what-are-statistics">What Are Statistics?</a></li>
-  <li><a href="#why-do-scientists-use-statistics" id="toc-why-do-scientists-use-statistics" class="nav-link" data-scroll-target="#why-do-scientists-use-statistics">Why Do Scientists Use Statistics?</a></li>
-  <li><a href="#lets-start-simple-meet-python-lists" id="toc-lets-start-simple-meet-python-lists" class="nav-link" data-scroll-target="#lets-start-simple-meet-python-lists">Let’s Start Simple: Meet Python Lists</a></li>
-  <li><a href="#try-it-make-your-own-list" id="toc-try-it-make-your-own-list" class="nav-link" data-scroll-target="#try-it-make-your-own-list">Try It: Make Your Own List</a></li>
-  <li><a href="#basic-operations-with-lists" id="toc-basic-operations-with-lists" class="nav-link" data-scroll-target="#basic-operations-with-lists">Basic Operations with Lists</a></li>
-  <li><a href="#try-it-explore-your-data" id="toc-try-it-explore-your-data" class="nav-link" data-scroll-target="#try-it-explore-your-data">Try It: Explore Your Data</a></li>
-  <li><a href="#types-of-statistics-well-learn" id="toc-types-of-statistics-well-learn" class="nav-link" data-scroll-target="#types-of-statistics-well-learn">Types of Statistics We’ll Learn</a>
-  <ul class="collapse">
-  <li><a href="#measures-of-center-whats-typical" id="toc-measures-of-center-whats-typical" class="nav-link" data-scroll-target="#measures-of-center-whats-typical">1. Measures of Center (What’s “Typical”?)</a></li>
-  <li><a href="#measures-of-spread-how-spread-out" id="toc-measures-of-spread-how-spread-out" class="nav-link" data-scroll-target="#measures-of-spread-how-spread-out">2. Measures of Spread (How Spread Out?)</a></li>
-  </ul></li>
-  <li><a href="#water-quality-what-were-measuring" id="toc-water-quality-what-were-measuring" class="nav-link" data-scroll-target="#water-quality-what-were-measuring">Water Quality: What We’re Measuring</a>
-  <ul class="collapse">
-  <li><a href="#ph-scale" id="toc-ph-scale" class="nav-link" data-scroll-target="#ph-scale">pH Scale</a></li>
-  <li><a href="#nitrate-levels" id="toc-nitrate-levels" class="nav-link" data-scroll-target="#nitrate-levels">Nitrate Levels</a></li>
-  </ul></li>
-  <li><a href="#checking-if-water-is-safe" id="toc-checking-if-water-is-safe" class="nav-link" data-scroll-target="#checking-if-water-is-safe">Checking If Water Is Safe</a></li>
-  <li><a href="#try-it-be-a-water-inspector" id="toc-try-it-be-a-water-inspector" class="nav-link" data-scroll-target="#try-it-be-a-water-inspector">Try It: Be a Water Inspector!</a></li>
-  <li><a href="#whats-next" id="toc-whats-next" class="nav-link" data-scroll-target="#whats-next">What’s Next?</a></li>
-  <li><a href="#key-python-words-we-learned" id="toc-key-python-words-we-learned" class="nav-link" data-scroll-target="#key-python-words-we-learned">Key Python Words We Learned</a></li>
+  <li><a href="#preparing-to-experiment" id="toc-preparing-to-experiment" class="nav-link" data-scroll-target="#preparing-to-experiment">🧑‍🔬 Preparing to Experiment!</a></li>
+  <li><a href="#lets-do-it" id="toc-lets-do-it" class="nav-link" data-scroll-target="#lets-do-it">🚀 Let’s Do It!</a></li>
+  <li><a href="#looking-forward" id="toc-looking-forward" class="nav-link" data-scroll-target="#looking-forward">👀 Looking Forward</a></li>
   </ul>
 </nav>
     </div>
@@ -307,279 +254,109 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="get-ready-scientists" class="level2">
 <h2 class="anchored" data-anchor-id="get-ready-scientists">🥽 Get Ready, Scientists!</h2>
-<p>We are going to participate in a brief water quality lab to practice gathering data about nitrates and nitrates in water samples. You will need the following materials:</p>
+<p>We are going to participate in a brief water quality lab to practice gathering data about nitrates and nitrates in water samples. Your group will need the following materials:</p>
 <div class="ltblue-container">
 <ul>
 <li>several water quality samples per group</li>
 <li>several nitrate/nitrate test strips per group</li>
 <li>1 lab notesheet per person</li>
-<li>1 computer with the <a href="">classwide spreadsheet</a> open for data entry</li>
+<li>1 computer with the submission form open for data entry
+<ul>
+<li>link to form will be provided by your teacher</li>
+</ul></li>
 <li>pencils</li>
+<li>2 colors of sticky notes</li>
+<li>1 Sharpie marker</li>
 </ul>
 </div>
 </section>
-<section id="the-big-question" class="level2">
-<h2 class="anchored" data-anchor-id="the-big-question">The Big Question</h2>
-<p>Imagine you’re testing water from a stream. You measure the pH seven different times and get:</p>
-<p><strong>7.1, 7.2, 7.0, 7.3, 7.1, 7.2, 7.1</strong></p>
-<p>Quick - is the water safe? What’s the “typical” pH? Are any readings weird?</p>
-<p>That’s hard to answer just by staring at the numbers! <strong>This is why we need statistics.</strong></p>
-</section>
-<section id="what-are-statistics" class="level2">
-<h2 class="anchored" data-anchor-id="what-are-statistics">What Are Statistics?</h2>
-<p><strong>Statistics</strong> = A fancy word for “using math to understand data”</p>
-<p>Think of statistics like a calculator that helps you: - Summarize lots of numbers into one useful number - Find patterns - Make decisions - Spot things that don’t fit</p>
-<p><strong>Real-world example:</strong> When you check the weather app, it shows “Average temperature: 75°F” - that’s a statistic!</p>
-</section>
-<section id="why-do-scientists-use-statistics" class="level2">
-<h2 class="anchored" data-anchor-id="why-do-scientists-use-statistics">Why Do Scientists Use Statistics?</h2>
-<p>Scientists collect LOTS of data. Imagine you: - Test water at 10 different streams - Measure pH every day for a month - Check nitrate levels at 5 rivers</p>
-<p>That’s a LOT of numbers! Statistics help you: 1. <strong>Summarize</strong>: “What’s the typical pH?” 2. <strong>Compare</strong>: “Is Stream A cleaner than Stream B?” 3. <strong>Detect problems</strong>: “Is this reading normal or is something wrong?” 4. <strong>Communicate</strong>: “Is this water safe?” (much clearer than listing 100 numbers!)</p>
-</section>
-<section id="lets-start-simple-meet-python-lists" class="level2">
-<h2 class="anchored" data-anchor-id="lets-start-simple-meet-python-lists">Let’s Start Simple: Meet Python Lists</h2>
-<p>In Python, we store multiple numbers in something called a <strong>list</strong>. It’s like a shopping list, but for data!</p>
-<div id="f03c7de0" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A list of pH readings (the square brackets [ ] make it a list)</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>ph_readings <span class="op">=</span> [<span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.3</span>, <span class="fl">7.0</span>, <span class="fl">7.2</span>]</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Our pH readings:"</span>, ph_readings)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Our pH readings: [7.2, 7.1, 7.3, 7.0, 7.2]</code></pre>
-</div>
-</div>
-<p><strong>Breaking it down:</strong> - <code>ph_readings</code> = the name we gave our list (you can name it anything!) - <code>=</code> means “store this in the variable” - <code>[7.2, 7.1, 7.3, 7.0, 7.2]</code> = the actual numbers, separated by commas - <code>print()</code> = tells Python to show us the result</p>
-</section>
-<section id="try-it-make-your-own-list" class="level2">
-<h2 class="anchored" data-anchor-id="try-it-make-your-own-list">Try It: Make Your Own List</h2>
-<div>
-<div id="pyodide-1" class="exercise-cell">
-
-</div>
-<script type="pyodide-1-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBDcmVhdGUgYSBsaXN0IG9mIHlvdXIgb3duIG51bWJlcnMhXG4jIFRoZXNlIGNvdWxkIGJlIHRlbXBlcmF0dXJlcywgdGVzdCBzY29yZXMsIGFueXRoaW5nIVxubXlfbnVtYmVycyA9IFsxMCwgMjAsIDMwLCA0MCwgNTBdXG5cbnByaW50KFwiTXkgbGlzdDpcIiwgbXlfbnVtYmVycylcblxuIyBMZXQncyBzZWUgaG93IG1hbnkgbnVtYmVycyBhcmUgaW4gdGhlIGxpc3RcbnByaW50KFwiSG93IG1hbnkgbnVtYmVyczpcIiwgbGVuKG15X251bWJlcnMpKVxuXG4jICdsZW4nIG1lYW5zICdsZW5ndGgnIC0gaXQgY291bnRzIGl0ZW1zIGluIHRoZSBsaXN0In0=
-</script>
-</div>
-<p><strong>Challenge:</strong> Change the numbers in <code>my_numbers</code> and run it again!</p>
-</section>
-<section id="basic-operations-with-lists" class="level2">
-<h2 class="anchored" data-anchor-id="basic-operations-with-lists">Basic Operations with Lists</h2>
-<p>Once we have a list, we can do things with it:</p>
-<div id="d5712c4d" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Our nitrate readings from 5 rivers (in mg/L)</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>nitrate <span class="op">=</span> [<span class="fl">3.2</span>, <span class="fl">4.1</span>, <span class="fl">3.8</span>, <span class="fl">3.5</span>, <span class="fl">4.0</span>]</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Nitrate readings:"</span>, nitrate)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of rivers tested:"</span>, <span class="bu">len</span>(nitrate))</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Lowest nitrate:"</span>, <span class="bu">min</span>(nitrate), <span class="st">"mg/L"</span>)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Highest nitrate:"</span>, <span class="bu">max</span>(nitrate), <span class="st">"mg/L"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Nitrate readings: [3.2, 4.1, 3.8, 3.5, 4.0]
-Number of rivers tested: 5
-Lowest nitrate: 3.2 mg/L
-Highest nitrate: 4.1 mg/L</code></pre>
-</div>
-</div>
-<p><strong>New Python words:</strong> - <code>len()</code> = length (how many items) - <code>min()</code> = minimum (smallest number) - <code>max()</code> = maximum (biggest number)</p>
-<p>These are called <strong>functions</strong> - they’re like tools that do specific jobs!</p>
-</section>
-<section id="try-it-explore-your-data" class="level2">
-<h2 class="anchored" data-anchor-id="try-it-explore-your-data">Try It: Explore Your Data</h2>
-<div>
-<div id="pyodide-2" class="exercise-cell">
-
-</div>
-<script type="pyodide-2-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBwSCByZWFkaW5ncyBmcm9tIGRpZmZlcmVudCBkYXlzXG5tb25kYXlfdG9fZnJpZGF5ID0gWzcuMiwgNy4xLCA3LjMsIDYuOSwgNy4yXVxuXG5wcmludChcInBIIHJlYWRpbmdzOlwiLCBtb25kYXlfdG9fZnJpZGF5KVxuXG4jIFlPVVIgVFVSTjogVXNlIGxlbigpLCBtaW4oKSwgYW5kIG1heCgpIHRvIGV4cGxvcmUgdGhpcyBkYXRhXG4jIEV4YW1wbGU6XG5wcmludChcIk51bWJlciBvZiByZWFkaW5nczpcIiwgbGVuKG1vbmRheV90b19mcmlkYXkpKVxuXG4jIE5vdyB5b3UgdHJ5IGZpbmRpbmcgdGhlIG1pbmltdW0gYW5kIG1heGltdW0hIn0=
-</script>
-</div>
-</section>
-<section id="types-of-statistics-well-learn" class="level2">
-<h2 class="anchored" data-anchor-id="types-of-statistics-well-learn">Types of Statistics We’ll Learn</h2>
-<section id="measures-of-center-whats-typical" class="level3">
-<h3 class="anchored" data-anchor-id="measures-of-center-whats-typical">1. Measures of Center (What’s “Typical”?)</h3>
+<section id="preparing-to-experiment" class="level2">
+<h2 class="anchored" data-anchor-id="preparing-to-experiment">🧑‍🔬 Preparing to Experiment!</h2>
+<p>Assign roles to each person in your group:</p>
 <ul>
-<li><strong>Mean</strong> = Average (add them all up, divide by how many)</li>
-<li><strong>Median</strong> = Middle number when you line them up</li>
-</ul>
-<p><strong>Example:</strong> Test scores: 80, 85, 90, 95, 100 - Mean = (80+85+90+95+100) ÷ 5 = 90 - Median = 90 (it’s in the middle!)</p>
-</section>
-<section id="measures-of-spread-how-spread-out" class="level3">
-<h3 class="anchored" data-anchor-id="measures-of-spread-how-spread-out">2. Measures of Spread (How Spread Out?)</h3>
+<li><strong>Role 1:</strong> Data Recorder (Lap Report)
 <ul>
-<li><strong>Range</strong> = Biggest minus smallest</li>
-<li><strong>Standard Deviation</strong> = How far numbers typically are from average (we’ll explain this more later!)</li>
+<li><em>Needs:</em>
+<ul>
+<li>1 lab handout<br>
+</li>
+<li>pencil<br>
+</li>
+</ul></li>
+</ul></li>
+<li><strong>Role 2:</strong> Data Recorder (Computer)
+<ul>
+<li><em>Needs:</em>
+<ul>
+<li>device (everyone else can put theirs away temporarily)<br>
+</li>
+<li>submission form pulled up in browser</li>
+</ul></li>
+</ul></li>
+<li><strong>Role 3:</strong> Data Recorder (Sticky Notes)
+<ul>
+<li><em>Needs:</em>
+<ul>
+<li>sticky notes (be clear which color is for nitrates and which is for nitrates)</li>
+<li>Sharpie</li>
+</ul></li>
+</ul></li>
+<li><strong>Role 4:</strong> Lab Technician
+<ul>
+<li><em>Needs:</em>
+<ul>
+<li>water samples</li>
+<li>test strips</li>
+</ul></li>
+</ul></li>
 </ul>
-<p><strong>Example:</strong> Which is more consistent? - Stream A: pH readings of 7.0, 7.1, 7.0, 7.1 (very consistent!) - Stream B: pH readings of 6.5, 7.5, 6.8, 7.9 (all over the place!)</p>
 </section>
+<section id="lets-do-it" class="level2">
+<h2 class="anchored" data-anchor-id="lets-do-it">🚀 Let’s Do It!</h2>
+<ol type="1">
+<li><strong>Lab Technician:</strong> Take the first water sample, share the sample letter with your team. Then, take one test strip and do the following:
+<ul>
+<li>Dip strip into sample for 2 seconds. <em>DO NOT</em> move the test strip while submerged.</li>
+<li>Remove test strip from water.</li>
+<li>Hold test strip flat for 1 minute.</li>
+<li>Compare the colors on the test strip to those provided below. The pad on the end of the test strip indicates <em>nitrate</em> values (top row below) the second pad indicates <em>nitrite</em> values (bottom row below). <img src="images/nitrate-test-strip-scale.png" class="img-fluid"><br>
+</li>
+<li>If the color is between two values, estimate the concentation the best you can. Often finding the midpoint between two colors is a good estimate.</li>
+<li>Share the result with your team.</li>
+</ul></li>
+<li><strong>Data Recorder (Lab Report):</strong> In the data table, record the following in one row per sample:
+<ul>
+<li>Sample letter</li>
+<li>Nitrate value</li>
+<li>Nitrite value</li>
+</ul></li>
+<li><strong>Data Recorder (Computer):</strong> On the data collection form, report:
+<ul>
+<li>Group number</li>
+<li>Sample letter</li>
+<li>Nitrate value</li>
+<li>Nitrite value</li>
+</ul></li>
+</ol>
+<p>Submit the form and click the link to submit a new form for the next water sample.</p>
+<ol start="4" type="1">
+<li><strong>Data Recorder (Sticky Notes):</strong>
+<ul>
+<li>On a nitrate-color sticky note, write the nitrate value for the sample. Put to the side.<br>
+</li>
+<li>On a nitrite-color sticky note, write the nitrite value for the sample. Put to the side.</li>
+</ul></li>
+</ol>
+<p><strong><em>REPEAT THIS PROCESS FOR ALL REMAINING SAMPLES</em></strong></p>
 </section>
-<section id="water-quality-what-were-measuring" class="level2">
-<h2 class="anchored" data-anchor-id="water-quality-what-were-measuring">Water Quality: What We’re Measuring</h2>
-<p><strong>📺 Watch this video to learn more about pH:</strong></p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/qCDSfihEhno" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>Let’s talk about what those pH and nitrate numbers actually mean:</p>
-<section id="ph-scale" class="level3">
-<h3 class="anchored" data-anchor-id="ph-scale">pH Scale</h3>
-<div id="fba3acca" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's visualize the pH scale</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>ph_scale <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">15</span>))</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">'red'</span>]<span class="op">*</span><span class="dv">3</span> <span class="op">+</span> [<span class="st">'orange'</span>]<span class="op">*</span><span class="dv">3</span> <span class="op">+</span> [<span class="st">'yellow'</span>, <span class="st">'lightgreen'</span>] <span class="op">+</span> [<span class="st">'green'</span>]<span class="op">*</span><span class="dv">3</span> <span class="op">+</span> [<span class="st">'lightgreen'</span>, <span class="st">'yellow'</span>] <span class="op">+</span> [<span class="st">'orange'</span>, <span class="st">'red'</span>]</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">3</span>))</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>plt.bar(ph_scale, [<span class="dv">1</span>]<span class="op">*</span><span class="dv">15</span>, color<span class="op">=</span>colors, edgecolor<span class="op">=</span><span class="st">'black'</span>, width<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'pH Value'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'pH Scale: Where Is Water Safe?'</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>plt.xticks(<span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">15</span>))</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>plt.yticks([])</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Mark safe drinking water range</span></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>plt.axvline(x<span class="op">=</span><span class="fl">6.5</span>, color<span class="op">=</span><span class="st">'blue'</span>, linewidth<span class="op">=</span><span class="dv">3</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, label<span class="op">=</span><span class="st">'Safe range'</span>)</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>plt.axvline(x<span class="op">=</span><span class="fl">8.5</span>, color<span class="op">=</span><span class="st">'blue'</span>, linewidth<span class="op">=</span><span class="dv">3</span>, linestyle<span class="op">=</span><span class="st">'--'</span>)</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>plt.legend(fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Safe drinking water: pH between 6.5 and 8.5 (the blue zone)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="nitrates-lab_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Safe drinking water: pH between 6.5 and 8.5 (the blue zone)</code></pre>
-</div>
-</div>
-</section>
-<section id="nitrate-levels" class="level3">
-<h3 class="anchored" data-anchor-id="nitrate-levels">Nitrate Levels</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/nitrate_strip.png" class="img-fluid figure-img"></p>
-<figcaption>Nitrate Test Strips</figcaption>
-</figure>
-</div>
-<div id="9fe3255d" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize nitrate safety levels</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>categories <span class="op">=</span> [<span class="st">'Safe</span><span class="ch">\n</span><span class="st">(&lt; 2 mg/L)'</span>, <span class="st">'Acceptable</span><span class="ch">\n</span><span class="st">(2-5 mg/L)'</span>, <span class="st">'Concerning</span><span class="ch">\n</span><span class="st">(5-10 mg/L)'</span>, <span class="st">'UNSAFE</span><span class="ch">\n</span><span class="st">(&gt; 10 mg/L)'</span>]</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>colors_nitrate <span class="op">=</span> [<span class="st">'green'</span>, <span class="st">'lightgreen'</span>, <span class="st">'yellow'</span>, <span class="st">'red'</span>]</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>plt.bar(categories, [<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>], color<span class="op">=</span>colors_nitrate, edgecolor<span class="op">=</span><span class="st">'black'</span>, width<span class="op">=</span><span class="fl">0.6</span>)</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Safety Level'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Nitrate Safety Levels'</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>plt.yticks([])</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>plt.axhline(y<span class="op">=</span><span class="fl">0.5</span>, color<span class="op">=</span><span class="st">'black'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, linestyle<span class="op">=</span><span class="st">'--'</span>)</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>plt.text(<span class="dv">3</span>, <span class="fl">0.5</span>, <span class="st">' EPA Limit: 10 mg/L'</span>, fontsize<span class="op">=</span><span class="dv">12</span>, va<span class="op">=</span><span class="st">'center'</span>)</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Remember: Nitrate over 10 mg/L is NOT safe to drink!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="nitrates-lab_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Remember: Nitrate over 10 mg/L is NOT safe to drink!</code></pre>
-</div>
-</div>
-</section>
-</section>
-<section id="checking-if-water-is-safe" class="level2">
-<h2 class="anchored" data-anchor-id="checking-if-water-is-safe">Checking If Water Is Safe</h2>
-<p>Let’s use Python to check if water is safe:</p>
-<div id="d614f8fa" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's check a pH reading</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>pH_reading <span class="op">=</span> <span class="fl">7.2</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The water has pH of </span><span class="sc">{</span>pH_reading<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Python can make decisions using 'if' statements!</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> pH_reading <span class="op">&gt;=</span> <span class="fl">6.5</span> <span class="kw">and</span> pH_reading <span class="op">&lt;=</span> <span class="fl">8.5</span>:</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"✓ pH is in the safe range!"</span>)</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"✗ pH is outside the safe range!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>The water has pH of 7.2
-✓ pH is in the safe range!</code></pre>
-</div>
-</div>
-</section>
-<section id="try-it-be-a-water-inspector" class="level2">
-<h2 class="anchored" data-anchor-id="try-it-be-a-water-inspector">Try It: Be a Water Inspector!</h2>
-<div>
-<div id="pyodide-3" class="exercise-cell">
-
-</div>
-<script type="pyodide-3-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBZT1VSIFRVUk46IENoZWNrIGlmIHRoZXNlIHdhdGVyIHNhbXBsZXMgYXJlIHNhZmVcblxuIyBTYW1wbGUgMVxucEggPSA3LjNcbm5pdHJhdGUgPSA0LjJcblxucHJpbnQoXCI9PT0gU2FtcGxlIDEgPT09XCIpXG5wcmludChmXCJwSDoge3BIfVwiKVxucHJpbnQoZlwiTml0cmF0ZToge25pdHJhdGV9IG1nL0xcIilcblxuIyBDaGVjayBwSCAoZmlsbCBpbiB0aGUgbnVtYmVycyEpXG5pZiBwSCA+PSA2LjUgYW5kIHBIIDw9IDguNTpcbiAgICBwcmludChcIuKckyBwSCBpcyBzYWZlXCIpXG5lbHNlOlxuICAgIHByaW50KFwi4pyXIHBIIGlzIG5vdCBzYWZlXCIpXG5cbiMgQ2hlY2sgbml0cmF0ZSAoZmlsbCBpbiB0aGUgbnVtYmVyISlcbmlmIG5pdHJhdGUgPCAxMDpcbiAgICBwcmludChcIuKckyBOaXRyYXRlIGlzIHNhZmVcIilcbmVsc2U6XG4gICAgcHJpbnQoXCLinJcgTml0cmF0ZSBpcyBub3Qgc2FmZVwiKVxuXG4jIE5vdyB0cnkgY2hhbmdpbmcgdGhlIHBIIGFuZCBuaXRyYXRlIHZhbHVlcyB0byBzZWUgd2hhdCBoYXBwZW5zISJ9
-</script>
-</div>
-</section>
-<section id="whats-next" class="level2">
-<h2 class="anchored" data-anchor-id="whats-next">What’s Next?</h2>
-<p>Now you understand: - ✅ What statistics are (math to understand data) - ✅ How to create lists in Python - ✅ Basic functions: len(), min(), max() - ✅ What pH and nitrate mean - ✅ How to check if water is safe</p>
-<p>In the next lesson, we’ll learn about the <strong>mean</strong> (average) - one of the most important statistics!</p>
-</section>
-<section id="key-python-words-we-learned" class="level2">
-<h2 class="anchored" data-anchor-id="key-python-words-we-learned">Key Python Words We Learned</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Word</th>
-<th>What It Does</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>list</code></td>
-<td>Stores multiple numbers</td>
-<td><code>[7.2, 7.1, 7.3]</code></td>
-</tr>
-<tr class="even">
-<td><code>len()</code></td>
-<td>Counts items</td>
-<td><code>len([1,2,3])</code> = 3</td>
-</tr>
-<tr class="odd">
-<td><code>min()</code></td>
-<td>Finds smallest</td>
-<td><code>min([5,2,8])</code> = 2</td>
-</tr>
-<tr class="even">
-<td><code>max()</code></td>
-<td>Finds biggest</td>
-<td><code>max([5,2,8])</code> = 8</td>
-</tr>
-<tr class="odd">
-<td><code>print()</code></td>
-<td>Shows results</td>
-<td><code>print("Hi!")</code></td>
-</tr>
-<tr class="even">
-<td><code>if</code></td>
-<td>Makes decisions</td>
-<td><code>if pH &gt; 7:</code></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Remember:</strong> The best way to learn is by trying things! Change numbers, experiment, and see what happens. You can’t break anything! 😊</p>
+<section id="looking-forward" class="level2">
+<h2 class="anchored" data-anchor-id="looking-forward">👀 Looking Forward</h2>
+<p>When finished, with the help of the <em>Data Recorder (Lab Report)</em>, make sure everyone in your group has a copy of the data table.</p>
+<p>Good job, scientists! In the next portion of the workshop, we will analyze the data you’ve collected.</p>
 
 
-<script type="pyodide-data">
-eyJvcHRpb25zIjp7ImVudiI6eyJQTE9UTFlfUkVOREVSRVIiOiJwbG90bHlfbWltZXR5cGUifSwiaW5kZXhVUkwiOiJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvcHlvZGlkZS92MC4yOC4xL2Z1bGwvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsicHlvZGlkZV9odHRwIiwibWljcm9waXAiLCJpcHl0aG9uIl19fQ==
-</script>
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJweW9kaWRlLTMiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl8zID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS0zLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMy1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzMgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzMsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTIiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl8yID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS0yLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMi1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzIgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzIsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTEiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl8xID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS0xLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMS1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzEgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzEsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLXByZWx1ZGUiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJweW9kaWRlT2pzID0ge1xuICBjb25zdCB7XG4gICAgUHlvZGlkZUV2YWx1YXRvcixcbiAgICBQeW9kaWRlRW52aXJvbm1lbnRNYW5hZ2VyLFxuICAgIHNldHVwUHl0aG9uLFxuICAgIHN0YXJ0UHlvZGlkZVdvcmtlcixcbiAgICBiNjREZWNvZGUsXG4gICAgY29sbGFwc2VQYXRoLFxuICB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcblxuICBjb25zdCBzdGF0dXNDb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChcImV4ZXJjaXNlLWxvYWRpbmctc3RhdHVzXCIpO1xuICBjb25zdCBpbmRpY2F0b3JDb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChcImV4ZXJjaXNlLWxvYWRpbmctaW5kaWNhdG9yXCIpO1xuICBpbmRpY2F0b3JDb250YWluZXIuY2xhc3NMaXN0LnJlbW92ZShcImQtbm9uZVwiKTtcblxuICBsZXQgc3RhdHVzVGV4dCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIilcbiAgc3RhdHVzVGV4dC5jbGFzc0xpc3QgPSBcImV4ZXJjaXNlLWxvYWRpbmctZGV0YWlsc1wiO1xuICBzdGF0dXNUZXh0ID0gc3RhdHVzQ29udGFpbmVyLmFwcGVuZENoaWxkKHN0YXR1c1RleHQpO1xuICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYEluaXRpYWxpc2VgO1xuXG4gIC8vIEhvaXN0IGluZGljYXRvciBvdXQgZnJvbSBmaW5hbCBzbGlkZSB3aGVuIHJ1bm5pbmcgdW5kZXIgcmV2ZWFsXG4gIGNvbnN0IHJldmVhbFN0YXR1cyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucmV2ZWFsIC5leGVyY2lzZS1sb2FkaW5nLWluZGljYXRvclwiKTtcbiAgaWYgKHJldmVhbFN0YXR1cykge1xuICAgIHJldmVhbFN0YXR1cy5yZW1vdmUoKTtcbiAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJldmVhbCA+IC5zbGlkZXNcIikuYXBwZW5kQ2hpbGQocmV2ZWFsU3RhdHVzKTtcbiAgfVxuXG4gIC8vIE1ha2UgYW55IHJldmVhbCBzbGlkZXMgd2l0aCBsaXZlIGNlbGxzIHNjcm9sbGFibGVcbiAgZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbChcIi5yZXZlYWwgLmV4ZXJjaXNlLWNlbGxcIikuZm9yRWFjaCgoZWwpID0+IHtcbiAgICBlbC5jbG9zZXN0KCdzZWN0aW9uLnNsaWRlJykuY2xhc3NMaXN0LmFkZChcInNjcm9sbGFibGVcIik7XG4gIH0pXG5cbiAgLy8gUHlvZGlkZSBzdXBwbGVtZW50YWwgZGF0YSBhbmQgb3B0aW9uc1xuICBjb25zdCBkYXRhQ29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLWRhdGFcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBkYXRhID0gSlNPTi5wYXJzZShiNjREZWNvZGUoZGF0YUNvbnRlbnQpKTtcblxuICAvLyBHcmFiIGxpc3Qgb2YgcmVzb3VyY2VzIHRvIGJlIGRvd25sb2FkZWRcbiAgY29uc3QgZmlsZXNDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcInZmcy1maWxlXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgZmlsZXMgPSBKU09OLnBhcnNlKGI2NERlY29kZShmaWxlc0NvbnRlbnQpKTtcblxuICBsZXQgcHlvZGlkZVByb21pc2UgPSAoYXN5bmMgKCkgPT4ge1xuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgUHlvZGlkZWA7XG4gICAgY29uc3QgcHlvZGlkZSA9IGF3YWl0IHN0YXJ0UHlvZGlkZVdvcmtlcihkYXRhLm9wdGlvbnMpO1xuXG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyBwYWNrYWdlOiBtaWNyb3BpcGA7XG4gICAgYXdhaXQgcHlvZGlkZS5sb2FkUGFja2FnZShcIm1pY3JvcGlwXCIpO1xuICAgIGNvbnN0IG1pY3JvcGlwID0gYXdhaXQgcHlvZGlkZS5weWltcG9ydChcIm1pY3JvcGlwXCIpO1xuICAgIGF3YWl0IGRhdGEucGFja2FnZXMucGtncy5tYXAoKHBrZykgPT4gKCkgPT4ge1xuICAgICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyBwYWNrYWdlOiAke3BrZ31gO1xuICAgICAgcmV0dXJuIG1pY3JvcGlwLmluc3RhbGwocGtnKTtcbiAgICB9KS5yZWR1Y2UoKGN1ciwgbmV4dCkgPT4gY3VyLnRoZW4obmV4dCksIFByb21pc2UucmVzb2x2ZSgpKTtcbiAgICBhd2FpdCBtaWNyb3BpcC5kZXN0cm95KCk7XG5cbiAgICAvLyBEb3dubG9hZCBhbmQgaW5zdGFsbCByZXNvdXJjZXNcbiAgICBhd2FpdCBmaWxlcy5tYXAoKGZpbGUpID0+IGFzeW5jICgpID0+IHtcbiAgICAgIGNvbnN0IG5hbWUgPSBmaWxlLnN1YnN0cmluZyhmaWxlLmxhc3RJbmRleE9mKCcvJykgKyAxKTtcbiAgICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcmVzb3VyY2U6ICR7bmFtZX1gO1xuICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChmaWxlKTtcbiAgICAgIGlmICghcmVzcG9uc2Uub2spIHtcbiAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBDYW4ndCBkb3dubG9hZCBcXGAke2ZpbGV9XFxgLiBFcnJvciAke3Jlc3BvbnNlLnN0YXR1c306IFwiJHtyZXNwb25zZS5zdGF0dXNUZXh0fVwiLmApO1xuICAgICAgfVxuICAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlc3BvbnNlLmFycmF5QnVmZmVyKCk7XG5cbiAgICAgIC8vIFN0b3JlIFVSTHMgaW4gdGhlIGN3ZCB3aXRob3V0IGFueSBzdWJkaXJlY3Rvcnkgc3RydWN0dXJlXG4gICAgICBpZiAoZmlsZS5pbmNsdWRlcyhcIjovL1wiKSkge1xuICAgICAgICBmaWxlID0gbmFtZTtcbiAgICAgIH1cblxuICAgICAgLy8gQ29sbGFwc2UgaGlnaGVyIGRpcmVjdG9yeSBzdHJ1Y3R1cmVcbiAgICAgIGZpbGUgPSBjb2xsYXBzZVBhdGgoZmlsZSk7XG5cbiAgICAgIC8vIENyZWF0ZSBkaXJlY3RvcnkgdHJlZSwgaWdub3JpbmcgXCJkaXJlY3RvcnkgZXhpc3RzXCIgVkZTIGVycm9yc1xuICAgICAgY29uc3QgcGFydHMgPSBmaWxlLnNwbGl0KCcvJykuc2xpY2UoMCwgLTEpO1xuICAgICAgbGV0IHBhdGggPSAnJztcbiAgICAgIHdoaWxlIChwYXJ0cy5sZW5ndGggPiAwKSB7XG4gICAgICAgIHBhdGggKz0gcGFydHMuc2hpZnQoKSArICcvJztcbiAgICAgICAgdHJ5IHtcbiAgICAgICAgICBhd2FpdCBweW9kaWRlLkZTLm1rZGlyKHBhdGgpO1xuICAgICAgICB9IGNhdGNoIChlKSB7XG4gICAgICAgICAgaWYgKGUubmFtZSAhPT0gXCJFcnJub0Vycm9yXCIpIHRocm93IGU7XG4gICAgICAgICAgaWYgKGUuZXJybm8gIT09IDIwKSB7XG4gICAgICAgICAgICBjb25zdCBlcnJvclRleHRQdHIgPSBhd2FpdCBweW9kaWRlLl9tb2R1bGUuX3N0cmVycm9yKGUuZXJybm8pO1xuICAgICAgICAgICAgY29uc3QgZXJyb3JUZXh0ID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLlVURjhUb1N0cmluZyhlcnJvclRleHRQdHIpO1xuICAgICAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBGaWxlc3lzdGVtIEVycm9yICR7ZS5lcnJub30gXCIke2Vycm9yVGV4dH1cIi5gKTtcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH1cblxuICAgICAgLy8gV3JpdGUgdGhpcyBmaWxlIHRvIHRoZSBWRlNcbiAgICAgIHRyeSB7XG4gICAgICAgIHJldHVybiBhd2FpdCBweW9kaWRlLkZTLndyaXRlRmlsZShmaWxlLCBuZXcgVWludDhBcnJheShkYXRhKSk7XG4gICAgICB9IGNhdGNoIChlKSB7XG4gICAgICAgIGlmIChlLm5hbWUgIT09IFwiRXJybm9FcnJvclwiKSB0aHJvdyBlO1xuICAgICAgICBjb25zdCBlcnJvclRleHRQdHIgPSBhd2FpdCBweW9kaWRlLl9tb2R1bGUuX3N0cmVycm9yKGUuZXJybm8pO1xuICAgICAgICBjb25zdCBlcnJvclRleHQgPSBhd2FpdCBweW9kaWRlLl9tb2R1bGUuVVRGOFRvU3RyaW5nKGVycm9yVGV4dFB0cik7XG4gICAgICAgIHRocm93IG5ldyBFcnJvcihgRmlsZXN5c3RlbSBFcnJvciAke2UuZXJybm99IFwiJHtlcnJvclRleHR9XCIuYCk7XG4gICAgICB9XG4gICAgfSkucmVkdWNlKChjdXIsIG5leHQpID0+IGN1ci50aGVuKG5leHQpLCBQcm9taXNlLnJlc29sdmUoKSk7XG5cbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYFB5b2RpZGUgZW52aXJvbm1lbnQgc2V0dXBgO1xuICAgIGF3YWl0IHNldHVwUHl0aG9uKHB5b2RpZGUpO1xuXG4gICAgc3RhdHVzVGV4dC5yZW1vdmUoKTtcbiAgICBpZiAoc3RhdHVzQ29udGFpbmVyLmNoaWxkcmVuLmxlbmd0aCA9PSAwKSB7XG4gICAgICBzdGF0dXNDb250YWluZXIucGFyZW50Tm9kZS5yZW1vdmUoKTtcbiAgICB9XG4gICAgcmV0dXJuIHB5b2RpZGU7XG4gIH0pKCkuY2F0Y2goKGVycikgPT4ge1xuICAgIHN0YXR1c1RleHQuc3R5bGUuY29sb3IgPSBcInZhcigtLWV4ZXJjaXNlLWVkaXRvci1obC1lciwgI0FEMDAwMClcIjtcbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gZXJyLm1lc3NhZ2U7XG4gICAgLy9pbmRpY2F0b3JDb250YWluZXIucXVlcnlTZWxlY3RvcihcIi5zcGlubmVyLWdyb3dcIikuY2xhc3NMaXN0LmFkZChcImQtbm9uZVwiKTtcbiAgICB0aHJvdyBlcnI7XG4gIH0pO1xuXG4gIC8vIEtlZXAgdHJhY2sgb2YgaW5pdGlhbCBPSlMgYmxvY2sgcmVuZGVyXG4gIGNvbnN0IHJlbmRlcmVkT2pzID0ge307XG5cbiAgY29uc3QgcHJvY2VzcyA9IGFzeW5jIChjb250ZXh0LCBpbnB1dHMpID0+IHtcbiAgICBjb25zdCBweW9kaWRlID0gYXdhaXQgcHlvZGlkZVByb21pc2U7XG4gICAgY29uc3QgZXZhbHVhdG9yID0gbmV3IFB5b2RpZGVFdmFsdWF0b3IocHlvZGlkZSwgY29udGV4dCk7XG4gICAgYXdhaXQgZXZhbHVhdG9yLnByb2Nlc3MoaW5wdXRzKTtcbiAgICByZXR1cm4gZXZhbHVhdG9yLmNvbnRhaW5lcjtcbiAgfVxuXG4gIHJldHVybiB7XG4gICAgcHlvZGlkZVByb21pc2UsXG4gICAgcmVuZGVyZWRPanMsXG4gICAgcHJvY2VzcyxcbiAgfTtcbn1cbiJ9XX0=
+eyJjb250ZW50cyI6W119
 </script>
 <div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
 <div id="exercise-loading-status" class="d-flex gap-2">
