@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-22c88ad874214f0aeee3335878c92ad2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ef1e1183c8756307733f0e7f451af57c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
 <link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -225,20 +225,14 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../1-statistics/center-spread" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6. Python: Center &amp; Spread</span></a>
+  <a href="../1-statistics/center-histograms" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Center &amp; Histograms</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../1-statistics/histograms" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6. Histograms</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../1-statistics/boxplots-outliers" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7. Boxplots &amp; Outliers</span></a>
+  <a href="../1-statistics/spread-boxplots-outliers" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Spread, Outliers, &amp; Boxplots</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
@@ -315,17 +309,28 @@ window.Quarto = {
 <p>The measures of center tell us about what is typical in a group of numbers. A set of numbers has different kinds of centers: a mean, a median, and a mode. Sometimes these measures will have the same value and sometimes they will be different. We calculate them in different ways.</p>
 <section id="mean" class="level4">
 <h4 class="anchored" data-anchor-id="mean">Mean</h4>
-<p>The <em>mean</em> is often called the “average”. To find the mean, we add up all of the numbers of interest and divide by how many numbers there are.</p>
+<p>The <em>mean</em> (<span class="math inline">\(\bar{x}\)</span>) is often called the “average”. To find the mean, we add up all of the numbers of interest and divide by how many numbers there are.</p>
+<div class="columns">
+<div class="column">
+<p>Formula:</p>
 <div class="ltorange-container">
-<p><span class="math inline">\(\frac{1 + 2 + 6 + 5 + 1}{5} = 3\)</span></p>
+<p><span class="math inline">\(\LARGE \bar{x} = \frac{\sum x}{n}\)</span></p>
+</div>
+<p>The sum of all x (all the values), divided by how many there are (n).</p>
+</div><div class="column">
+<p>Computation:</p>
+<div class="ltorange-container">
+<p><span class="math inline">\(\LARGE \frac{1 + 2 + 6 + 5 + 1}{5} = 3\)</span></p>
 </div>
 <p>The mean value of this sample dataset is <strong>3</strong>.</p>
+</div>
+</div>
 </section>
 <section id="median" class="level4">
 <h4 class="anchored" data-anchor-id="median">Median</h4>
 <p>The <em>median</em> is a different kind of measure of center. To calculate the median, you first line up all the values in your data set, then you find the middle value by position.</p>
 <div class="ltorange-container">
-<p><span class="math inline">\(1 + 1 + 2 + 5 + 6\)</span><br>
+<p><span class="math inline">\(\Large 1 + 1 + 2 + 5 + 6\)</span><br>
 <img src="images/vertical-arrow-torch.png" class="img-fluid" style="width:15.0%"></p>
 </div>
 <p>The median value of this sample dataset is <strong>2</strong>.</p>

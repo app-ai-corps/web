@@ -85,16 +85,7 @@ else:
     print("✗ Nitrate concentration is outside the safe range!")
 ```
 
-## What's Next?
-
-Now you understand:  
-- ✅ What statistics are (math to understand data)  
-- ✅ How to create lists in Python  
-- ✅ Basic functions: len(), min(), max()  
-- ✅ What nitrate and nitrite mean  
-- ✅ How to check if water is safe  
-
-## Key Python Words We Learned
+## Key Python Terms We Learned
 
 | Word | What It Does | Example |
 |------|-------------|---------|

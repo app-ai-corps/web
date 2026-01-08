@@ -3,6 +3,11 @@ title: "Finding Weird Data - Spotting Outliers"
 format: live-html
 sidebar: lesson-1
 ---
+### Measures of Spread
+The measures of spread tell us how spread out a set of numbers are. There are two main measures of spread: the *standard deviation* and the *range*. We calculate them in different ways.
+
+#### Standard Deviation
+The *standard deviation* tells us: *How far, on average, are the numbers from the mean?* The formula for the standard deviation is a bit more complicated:
 
 ## What Are Outliers?
 

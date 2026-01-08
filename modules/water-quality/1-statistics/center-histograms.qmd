@@ -1,8 +1,10 @@
 ---
-title: "Finding the Average (Mean) of Water Data"
+title: "Using Python for Statistics"
 format: live-html
 sidebar: lesson-1
 ---
+As you might have guessed, Python can do much more than just the functions **len()**, **min()**, and **max()**. In fact, it can help us calculate our measures of center!
+
 
 ### 2. Measures of Spread (How Spread Out?)
 
