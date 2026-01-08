@@ -119,76 +119,107 @@ print("Class nitrite median:", median_class_nitrite, "mg/L")
 
 ## Visualizing the Data & Measures of Center
 
-Let's see what the mean looks like on a graph:
-```{python}
+### Histograms By Hand
+A key practice in statistics is to visualize the data! One of the main types of plots we can use to do this is a **histogram**. A histogram uses bins to group the data and then plots the number of observations in each bin.
+
+:::{.callout-note}
+## *Data Recorder (Sticky Notes)*
+Grab those sticky notes from the lab!
+:::
+
+On the wall, you will find two areas prepared for your stickies. One has an axis binned for nitrates (look for a max value of 50+) and the other has an axis binned for nitrites (look for a max value of 10+). 
+
+Place your stickies in the correct bin, putting your nitrate values on the nitrate graph and the nitrite values on the nitrite graph.
+
+![](images/sticky-note-histograms.png)
+
+### Histograms with Python
+Python can also make histograms! Run the code blocks below to see a histogram of the class nitrate value (block #1) and the class nitrite values (block #2). Do the histograms look similar to the plots we made by hand?
+
+#### Histogram for Class Nitrate Readings
+```{pyodide}
 import matplotlib.pyplot as plt
-import numpy as np
 
-# Example: pH readings from a creek over one week
-days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-ph_readings = [7.2, 7.4, 7.1, 7.3, 7.2, 7.3, 7.2]
-
-# Calculate mean
-mean_ph = np.mean(ph_readings)
-
-# Create a graph
 plt.figure(figsize=(10, 6))
-plt.plot(days, ph_readings, marker='o', markersize=10, linewidth=2, label='Daily pH')
-plt.axhline(y=mean_ph, color='red', linestyle='--', linewidth=2, label=f'Mean = {mean_ph:.2f}')
-plt.xlabel('Day of Week', fontsize=12)
-plt.ylabel('pH Level', fontsize=12)
-plt.title('Creek pH Over One Week', fontsize=14)
-plt.legend(fontsize=11)
+plt.hist(class_nitrate, bins=10, edgecolor='black', color='plum')
+plt.xlabel('Nitrate Level (mg/L)')
+plt.ylabel('Frequency')
+plt.title('Class Nitrate Readings')
 plt.grid(True, alpha=0.3)
-plt.ylim(6.5, 8)
-
-# Add safe zone
-plt.axhline(y=6.5, color='green', linestyle=':', alpha=0.5)
-plt.axhline(y=8.5, color='green', linestyle=':', alpha=0.5)
-plt.fill_between(range(len(days)), 6.5, 8.5, alpha=0.1, color='green', label='Safe zone')
-
 plt.show()
-
-print(f"The red dashed line shows the mean pH: {mean_ph:.2f}")
-print("Notice how the mean is in the 'middle' of all the points!")
 ```
+
+##### Add Mean and Median
+Add the mean and median to the nitrate histogram.
+```{pyodide}
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.hist(class_nitrate, bins=10, edgecolor='black', color='plum')
+
+# Add vertical lines with labels in legend
+plt.axvline(mean_class_nitrate, color='red', linestyle='--', linewidth=2, 
+            label=f'Mean: {mean_class_nitrate:.1f}')
+plt.axvline(median_class_nitrate, color='blue', linestyle='--', linewidth=2, 
+            label=f'Median: {median_class_nitrate:.1f}')
+
+plt.xlabel('Nitrate Level (mg/L)')
+plt.ylabel('Frequency')
+plt.title('Class Nitrate Readings')
+plt.legend(loc='upper right')
+plt.grid(True, alpha=0.3)
+plt.show()
+```
+
+#### Histogram for Class Nitrite Readings
+```{pyodide}
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.hist(class_nitrite, bins=10, edgecolor='black', color='lemonchiffon')
+plt.xlabel('Nitrite Level (mg/L)')
+plt.ylabel('Frequency')
+plt.title('Class Nitrite Readings')
+plt.grid(True, alpha=0.3)
+plt.show()
+```
+
+##### Add Mean and Median
+Add the mean and median to the nitrite histogram.
+
+```{pyodide}
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.hist(class_nitrite, bins=10, edgecolor='black', color='lemonchiffon')
+
+# Add vertical lines with labels in legend
+plt.axvline(mean_class_nitrite, color='red', linestyle='--', linewidth=2, 
+            label=f'Mean: {mean_class_nitrite:.1f}')
+plt.axvline(median_class_nitrite, color='blue', linestyle='--', linewidth=2, 
+            label=f'Median: {median_class_nitrite:.1f}')
+
+plt.xlabel('Nitrite Level (mg/L)')
+plt.ylabel('Frequency')
+plt.title('Class Nitrite Readings')
+plt.legend(loc='upper right')
+plt.grid(True, alpha=0.3)
+plt.show()
+```
+
+:::{.callout-caution}
+## Question!
+What do you notice about the relationship between the mean and median on the nitrate and nitrite histograms? Why do you think that might be?
+:::
 
 ## Quick Reference: Python Functions
 
 | Function | What It Does | Example |
 |----------|-------------|---------|
 | `np.mean()` | Calculates average | `np.mean([7.1, 7.2, 7.3])` = 7.2 |
-| `np.std()` | Calculates standard deviation | `np.std([7.1, 7.2, 7.3])` = 0.082 |
+| `np.median()` | Calculates median | `np.median([7.1, 7.2, 7.3])` = 7.2 |
 | `len()` | Counts items | `len([1, 2, 3])` = 3 |
-| `sum()` | Adds items | `sum([1, 2, 3])` = 6 |
+| `max()` | Finds maximum | `max([1, 2, 3])` = 3 |
+| `min()` | Finds minimum | `min([1, 2, 3])` = 1 |
 
-## Key Takeaways
 
-- 📊 **Mean** = Average value (add them up, divide by how many)
-- 📏 **Standard Deviation** = How spread out the data is
-- ✅ Small SD = Consistent, stable readings (usually good!)
-- ⚠️ Large SD = Variable readings (investigate why!)
-- 🔧 Python makes calculating these MUCH easier than by hand
-- 🌊 Soon you'll use real buoy data with hundreds of measurements!
-
-## Practice Challenge
-
-Look at these example pH readings from a creek: **[7.2, 7.1, 7.3, 7.2, 7.1]**
-
-Before running the code, try to guess:
-1. Will the mean be closer to 7.0 or 7.5?
-2. Will the standard deviation be big or small?
-
-Then run the code to check:
-```{pyodide}
-import numpy as np
-
-ph = [7.2, 7.1, 7.3, 7.2, 7.1]
-
-print("Mean:", np.mean(ph))
-print("Standard Deviation:", np.std(ph))
-
-# Were you close? Try changing the numbers to see what happens!
-```
-
-**Next up:** We'll learn about the median - another way to find the "middle" that's sometimes better than the mean!
