@@ -6,11 +6,9 @@ sidebar: lesson-1
 
 ## The Big Question
 
-Imagine you're testing water from a stream. You measure the pH seven different times and get:
+With your group, you've just tested samples from a fictional body of water. You measured each of the four samples for nitrate concentration *and* nitrite concentration.
 
-**7.1, 7.2, 7.0, 7.3, 7.1, 7.2, 7.1**
-
-Quick - is the water safe? What's the "typical" pH? Are any readings weird?
+Quick - is the water safe? What's the "typical" concentration? Are any readings weird?
 
 That's hard to answer just by staring at the numbers! **This is why we need statistics.**
 
@@ -18,26 +16,24 @@ That's hard to answer just by staring at the numbers! **This is why we need stat
 
 **Statistics** = A fancy word for "using math to understand data"
 
-Think of statistics like a calculator that helps you:
-- Summarize lots of numbers into one useful number
-- Find patterns
-- Make decisions
-- Spot things that don't fit
+Think of statistics like a calculator that helps you:  
+- Summarize lots of numbers into one useful number  
+- Find patterns  
+- Make decisions  
+- Spot things that don't fit  
 
-**Real-world example:** When you check the weather app, it shows "Average temperature: 75°F" - that's a statistic!
+<div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden;">
+  <iframe 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    src="https://www.youtube.com/embed/Ge9je05uYJ0?si=FQeUzUxzzdQ1E4Aj" 
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+</div>
 
-## Why Do Scientists Use Statistics?
+## Let's Use Statistics to Understand Your Lab Data
 
-Scientists collect LOTS of data. Imagine you:
-- Test water at 10 different streams
-- Measure pH every day for a month
-- Check nitrate levels at 5 rivers
-
-That's a LOT of numbers! Statistics help you:
-1. **Summarize**: "What's the typical pH?"
-2. **Compare**: "Is Stream A cleaner than Stream B?"
-3. **Detect problems**: "Is this reading normal or is something wrong?"
-4. **Communicate**: "Is this water safe?" (much clearer than listing 100 numbers!)
+On your lab sheet, you have the nitrate and nitrite concentrations for each sample. Then, to the right, you have space to perform some statistical analyses and calculations.
 
 ## Let's Start Simple: Meet Python Lists
 

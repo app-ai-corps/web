@@ -410,14 +410,14 @@
     "href": "1-statistics/index.html",
     "title": "Water Quality and Summary Statistics",
     "section": "",
-    "text": "Lesson Objective: In this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate water quality samples.\nMaterials Needed:\n- Your computer\n- A web browser (e.g., Chrome, Firefox, Safari)\n- Handout ??"
+    "text": "Lesson Objective: In this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate nitrates and nitrates in water quality samples.\nMaterials Needed:\n- Your computer\n- A web browser (e.g., Chrome, Firefox, Safari)\n- Handout ??"
   },
   {
     "objectID": "1-statistics/index.html#welcome-scientists",
     "href": "1-statistics/index.html#welcome-scientists",
     "title": "Water Quality and Summary Statistics",
     "section": "🔬💧 Welcome, Scientists!",
-    "text": "🔬💧 Welcome, Scientists!\nOver the next several weeks, we will work together to understand the water in our community, its importance, nutrients, and how we can protect it.\nWe will use aspects of computing and programming, statistics, and environmental and agricultural science to learn more about local waterways. In today’s lesson, we will consider the role of pH in our water, how we measure it, analyze it, and consider its role in water quality and local ecosystems.\nNever used programming before? Perfect! This module is designed for complete beginners. We’ll learn everything step by step."
+    "text": "🔬💧 Welcome, Scientists!\nOver the next several weeks, we will work together to understand the water in our community, its importance, nutrients, and how we can protect it.\nWe will use aspects of computing and programming, statistics, and environmental and agricultural science to learn more about local waterways. In today’s lesson, we will consider the role of nitrogen in our water, how we measure it, analyze it, and consider its role in water quality and local ecosystems.\nNever used programming before? Perfect! This module is designed for complete beginners. We’ll learn everything step by step."
   },
   {
     "objectID": "1-statistics/index.html#what-will-you-learn",
@@ -480,7 +480,7 @@
     "href": "1-statistics/index.html#ready-to-begin",
     "title": "Water Quality and Summary Statistics",
     "section": "🚀 Ready to Begin?",
-    "text": "🚀 Ready to Begin?\nClick “Introduction” in the menu to start your journey as a water quality scientist!\nRemember: Everyone starts as a beginner. If something doesn’t make sense, that’s normal! Try it again, experiment, and ask questions.\nLet’s go! 🚀"
+    "text": "🚀 Ready to Begin?\nClick “Intro to Water Quality” in the left-hand menu to start your journey as a water quality scientist!\nRemember: Everyone starts as a beginner. If something doesn’t make sense, that’s normal! Try it again, experiment, and ask questions.\nLet’s go! 🚀"
   },
   {
     "objectID": "1-statistics/outliers.html",
@@ -753,7 +753,7 @@
     "href": "1-statistics/facilitator.html#lesson-prep",
     "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
     "section": "Lesson Prep",
-    "text": "Lesson Prep\n\n1. Prepare Materials for Nitrates Lab\nThe day before create water samples for nitrates lab. This will allow the nitrates to fully dissolve in the water.\nMaterials needed:\n- Miracle-Gro Fertilizer Liquid\n- Dropper/Pipette\n- Small cups for student use (to hold samples for testing)\n- Nitrate/Nitrate test strips\n- Masking tape/ sharpies to label cups/samples\n\n\n\n\n\n\nNitrate Sample Creation Guide\n\n\n\n\n\nMixing Guide - 4 Samples Per Group\nFor 5 groups × 4 samples = 20 total samples\nFill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dropper/pipette:\nNormal/Low Range (8 samples) - 0-5 ppm\n4 samples: Plain water (0 drops)\n4 samples: 1-2 drops per cup\nModerate Range (6 samples) - 8-12 ppm\n6 samples: 4-6 drops per cup\nMedium-High Range (3 samples) - 15-20 ppm\n3 samples: 8-10 drops per cup\nExtreme Outliers (3 samples) - 35-50 ppm\n2 samples: 20-25 drops per cup (~35-40 ppm)\n1 sample: 30+ drops per cup (50 ppm, maxes out strip)\n\n\n\n\n\n2. Make Copies: 1 Lab Handout Per Student\n\n\n3. Obtain 1 pack of like-colored Post-it Notes and 1 Sharpie/Group\n\n\n4. Create and Share Link for Nitrates Lab Data Collection\n\nMake sure you are logged into your school Google Account\nUse this link to make a copy of the Nitrate/Nitrite Lab Google Form\nOpen your copy of the Nitrate/Nitrite Lab Google Form. Publish the formDouble check the sharing settings to make sure all of your students can respond.\n\nWhile on the sharing settings, copy the respondent link and be prepared to share this link with your students, probably via email or your LMS. Close the sharing settings.\nOn the “Responses” tab, click “Link to Sheet” &gt; “Create a New Sheet” to aggregate all of the student responses into one spreadsheet.\nOpen the spreadsheet it generates (it may automatically open) and go to “File” &gt; “Share” &gt; “Publish to web” and use the following options:\n\nWhen you click publish, it will give you a link. Please be prepared to share this link with your students during the second half of class… perhaps via email or via LMS. They will need to copy/paste it to access the data. You can set this up well in advance of class.\n\nNote: If you are facilitating this module for more than one class, you will want to repeat this process once for each class, so that each class has their own submission form and spreadsheet.\nThis can be done well in advance, just make sure to keep the form link (respondent link) and spreadsheet link (publish to web link) for each class ready to disseminate."
+    "text": "Lesson Prep\n\n1. Prepare Materials for Nitrates Lab\nThe day before create water samples for nitrates lab. This will allow the nitrates to fully dissolve in the water.\nMaterials needed:\n- Miracle-Gro Fertilizer Liquid\n- Dropper/Pipette\n- Small cups for student use (to hold samples for testing)\n- Nitrate/Nitrate test strips\n- Masking tape/ sharpies to label cups/samples\n\n\n\n\n\n\nNitrate Sample Creation Guide\n\n\n\n\n\nMixing Guide - 4 Samples Per Group\nFor 5 groups × 4 samples = 20 total samples\nFill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dropper/pipette:\nNormal/Low Range (8 samples) - 0-5 ppm\n4 samples: Plain water (0 drops)\n4 samples: 1-2 drops per cup\nModerate Range (6 samples) - 8-12 ppm\n6 samples: 4-6 drops per cup\nMedium-High Range (3 samples) - 15-20 ppm\n3 samples: 8-10 drops per cup\nExtreme Outliers (3 samples) - 35-50 ppm\n2 samples: 20-25 drops per cup (~35-40 ppm)\n1 sample: 30+ drops per cup (50 ppm, maxes out strip)\n\n\n\n\n\n2. Make Copies: 1 Lab Handout Per Student\n\n\n3. Obtain Post-it Notes (2 Colors) and 1 Sharpie/Group\n\n\n4. Create and Share Link for Nitrates Lab Data Collection\n\nMake sure you are logged into your school Google Account\nUse this link to make a copy of the Nitrate/Nitrite Lab Google Form\nOpen your copy of the Nitrate/Nitrite Lab Google Form. Publish the formDouble check the sharing settings to make sure all of your students can respond.\n\nWhile on the sharing settings, copy the respondent link and be prepared to share this link with your students, probably via email or your LMS. Close the sharing settings.\nOn the “Responses” tab, click “Link to Sheet” &gt; “Create a New Sheet” to aggregate all of the student responses into one spreadsheet.\nOpen the spreadsheet it generates (it may automatically open) and go to “File” &gt; “Share” &gt; “Publish to web” and use the following options:\n\nWhen you click publish, it will give you a link. Please be prepared to share this link with your students during the second half of class… perhaps via email or via LMS. They will need to copy/paste it to access the data. You can set this up well in advance of class.\n\nNote: If you are facilitating this module for more than one class, you will want to repeat this process once for each class, so that each class has their own submission form and spreadsheet.\nThis can be done well in advance, just make sure to keep the form link (respondent link) and spreadsheet link (publish to web link) for each class ready to disseminate."
   },
   {
     "objectID": "1-statistics/facilitator.html#topics-and-standards",
@@ -851,7 +851,7 @@
     "href": "1-statistics/nitrates-lab.html",
     "title": "Nitrates Lab",
     "section": "",
-    "text": "We are going to participate in a brief water quality lab to practice gathering data about nitrates and nitrates in water samples. Your group will need the following materials:\n\n\nseveral water quality samples per group\nseveral nitrate/nitrate test strips per group\n1 lab notesheet per person\n1 computer with the submission form open for data entry\n\nlink to form will be provided by your teacher\n\npencils\n2 colors of sticky notes\n1 Sharpie marker"
+    "text": "We are going to participate in a brief water quality lab to practice gathering data about nitrates and nitrates in water samples. Your group will need the following materials:\n\n\nseveral water quality samples per group\nseveral nitrate/nitrate test strips per group\n1 lab notesheet per person\n1 computer with the submission form open for data entry\n\nlink to form will be provided by your teacher\n\npencils\n2 colors of sticky notes (1 color for nitrates and 1 color for nitrites)\n1 Sharpie marker"
   },
   {
     "objectID": "1-statistics/nitrates-lab.html#what-is-water-quality",
@@ -1096,28 +1096,28 @@
     "href": "1-statistics/intro-statistics.html",
     "title": "Introduction to Statistics",
     "section": "",
-    "text": "Imagine you’re testing water from a stream. You measure the pH seven different times and get:\n7.1, 7.2, 7.0, 7.3, 7.1, 7.2, 7.1\nQuick - is the water safe? What’s the “typical” pH? Are any readings weird?\nThat’s hard to answer just by staring at the numbers! This is why we need statistics."
+    "text": "With your group, you’ve just tested samples from a fictional body of water. You measured each of the four samples for nitrate concentration and nitrite concentration.\nQuick - is the water safe? What’s the “typical” concentration? Are any readings weird?\nThat’s hard to answer just by staring at the numbers! This is why we need statistics."
   },
   {
     "objectID": "1-statistics/intro-statistics.html#the-big-question",
     "href": "1-statistics/intro-statistics.html#the-big-question",
     "title": "Introduction to Statistics",
     "section": "",
-    "text": "Imagine you’re testing water from a stream. You measure the pH seven different times and get:\n7.1, 7.2, 7.0, 7.3, 7.1, 7.2, 7.1\nQuick - is the water safe? What’s the “typical” pH? Are any readings weird?\nThat’s hard to answer just by staring at the numbers! This is why we need statistics."
+    "text": "With your group, you’ve just tested samples from a fictional body of water. You measured each of the four samples for nitrate concentration and nitrite concentration.\nQuick - is the water safe? What’s the “typical” concentration? Are any readings weird?\nThat’s hard to answer just by staring at the numbers! This is why we need statistics."
   },
   {
     "objectID": "1-statistics/intro-statistics.html#what-are-statistics",
     "href": "1-statistics/intro-statistics.html#what-are-statistics",
     "title": "Introduction to Statistics",
     "section": "What Are Statistics?",
-    "text": "What Are Statistics?\nStatistics = A fancy word for “using math to understand data”\nThink of statistics like a calculator that helps you: - Summarize lots of numbers into one useful number - Find patterns - Make decisions - Spot things that don’t fit\nReal-world example: When you check the weather app, it shows “Average temperature: 75°F” - that’s a statistic!"
+    "text": "What Are Statistics?\nStatistics = A fancy word for “using math to understand data”\nThink of statistics like a calculator that helps you:\n- Summarize lots of numbers into one useful number\n- Find patterns\n- Make decisions\n- Spot things that don’t fit"
   },
   {
     "objectID": "1-statistics/intro-statistics.html#why-do-scientists-use-statistics",
     "href": "1-statistics/intro-statistics.html#why-do-scientists-use-statistics",
     "title": "Introduction to Statistics",
     "section": "Why Do Scientists Use Statistics?",
-    "text": "Why Do Scientists Use Statistics?\nScientists collect LOTS of data. Imagine you: - Test water at 10 different streams - Measure pH every day for a month - Check nitrate levels at 5 rivers\nThat’s a LOT of numbers! Statistics help you: 1. Summarize: “What’s the typical pH?” 2. Compare: “Is Stream A cleaner than Stream B?” 3. Detect problems: “Is this reading normal or is something wrong?” 4. Communicate: “Is this water safe?” (much clearer than listing 100 numbers!)"
+    "text": "Why Do Scientists Use Statistics?\nScientists collect LOTS of data. Imagine you:\n- Test water at 10 different streams\n- Measure nitrite and nitrate levels every day for a month\nThat’s a LOT of numbers! Statistics help you:\n1. Summarize: “What’s the typical nitrate concentration?”\n2. Compare: “Is Stream A cleaner than Stream B?”\n3. Detect problems: “Is this reading normal or is something wrong?”\n4. Communicate: “Is this water safe?” (much clearer than listing 100 numbers!)"
   },
   {
     "objectID": "1-statistics/intro-statistics.html#lets-start-simple-meet-python-lists",
@@ -1194,7 +1194,7 @@
     "href": "1-statistics/nitrates-lab.html#get-ready-scientists",
     "title": "Nitrates Lab",
     "section": "",
-    "text": "We are going to participate in a brief water quality lab to practice gathering data about nitrates and nitrates in water samples. Your group will need the following materials:\n\n\nseveral water quality samples per group\nseveral nitrate/nitrate test strips per group\n1 lab notesheet per person\n1 computer with the submission form open for data entry\n\nlink to form will be provided by your teacher\n\npencils\n2 colors of sticky notes\n1 Sharpie marker"
+    "text": "We are going to participate in a brief water quality lab to practice gathering data about nitrates and nitrates in water samples. Your group will need the following materials:\n\n\nseveral water quality samples per group\nseveral nitrate/nitrate test strips per group\n1 lab notesheet per person\n1 computer with the submission form open for data entry\n\nlink to form will be provided by your teacher\n\npencils\n2 colors of sticky notes (1 color for nitrates and 1 color for nitrites)\n1 Sharpie marker"
   },
   {
     "objectID": "1-statistics/nitrates-lab.html#preparing-to-experiment",
@@ -1215,13 +1215,20 @@
     "href": "1-statistics/nitrates-lab.html#lets-do-it",
     "title": "Nitrates Lab",
     "section": "🚀 Let’s Do It!",
-    "text": "🚀 Let’s Do It!\n\nLab Technician: Take the first water sample, share the sample letter with your team. Then, take one test strip and do the following:\n\nDip strip into sample for 2 seconds. DO NOT move the test strip while submerged.\nRemove test strip from water.\nHold test strip flat for 1 minute.\nCompare the colors on the test strip to those provided below. The pad on the end of the test strip indicates nitrate values (top row below) the second pad indicates nitrite values (bottom row below). \n\nIf the color is between two values, estimate the concentation the best you can. Often finding the midpoint between two colors is a good estimate.\nShare the result with your team.\n\nData Recorder (Lab Report): In the data table, record the following in one row per sample:\n\nSample letter\nNitrate value\nNitrite value\n\nData Recorder (Computer): On the data collection form, report:\n\nGroup number\nSample letter\nNitrate value\nNitrite value\n\n\nSubmit the form and click the link to submit a new form for the next water sample.\n\nData Recorder (Sticky Notes):\n\nOn a nitrate-color sticky note, write the nitrate value for the sample. Put to the side.\n\nOn a nitrite-color sticky note, write the nitrite value for the sample. Put to the side.\n\n\nREPEAT THIS PROCESS FOR ALL REMAINING SAMPLES"
+    "text": "🚀 Let’s Do It!\n\nLab Technician: Take the first water sample, share the sample letter with your team. Then, take one new test strip and do the following:\n\nDip strip into sample for 2 seconds. DO NOT move the test strip while submerged.\nRemove test strip from water.\nHold test strip flat for 1 minute.\nCompare the colors on the test strip to those provided below. The pad on the end of the test strip indicates nitrate values (top row below) the second pad indicates nitrite values (bottom row below). \n\nIf the color is between two values, estimate the concentation the best you can. Often finding the midpoint between two colors is a good estimate.\nShare the result with your team.\n\nData Recorder (Lab Report): In the data table, record the following in one row per sample:\n\nSample letter\nNitrate value\nNitrite value\n\nData Recorder (Computer): On the data collection form, report:\n\nGroup number\nSample letter\nNitrate value\nNitrite value\n\n\nSubmit the form and click the link to submit a new form for the next water sample.\n\nData Recorder (Sticky Notes):\n\nOn a nitrate-color sticky note, write the nitrate value for the sample. Put to the side.\n\nOn a nitrite-color sticky note, write the nitrite value for the sample. Put to the side.\n\n\nREPEAT THIS PROCESS FOR ALL REMAINING SAMPLES"
   },
   {
     "objectID": "1-statistics/nitrates-lab.html#looking-forward",
     "href": "1-statistics/nitrates-lab.html#looking-forward",
     "title": "Nitrates Lab",
     "section": "👀 Looking Forward",
-    "text": "👀 Looking Forward\nWhen finished, with the help of the Data Recorder (Lab Report), make sure everyone in your group has a copy of the data table.\nGood job, scientists! In the next portion of the workshop, we will analyze the data you’ve collected."
+    "text": "👀 Looking Forward\nWhen finished, with the help of the Data Recorder (Lab Report), make sure everyone in your group has a copy of the data table on their own sheet.\nGood job, scientists! In the next portion of the workshop, we will analyze the data you’ve collected."
+  },
+  {
+    "objectID": "1-statistics/intro-statistics.html#lets-use-statistics-to-understand-your-lab-data",
+    "href": "1-statistics/intro-statistics.html#lets-use-statistics-to-understand-your-lab-data",
+    "title": "Introduction to Statistics",
+    "section": "Let’s Use Statistics to Understand Your Lab Data",
+    "text": "Let’s Use Statistics to Understand Your Lab Data\nOn your lab sheet, you have the nitrate and nitrite concentrations for each sample. Then, to the right, you have space to perform some statistical analyses and calculations."
   }
 ]

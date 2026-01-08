@@ -241,6 +241,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">7. Outliers</span></a>
   </div>
 </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../1-statistics/exercises" class="sidebar-item-text sidebar-link">
@@ -259,7 +260,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#the-big-question" id="toc-the-big-question" class="nav-link active" data-scroll-target="#the-big-question">The Big Question</a></li>
   <li><a href="#what-are-statistics" id="toc-what-are-statistics" class="nav-link" data-scroll-target="#what-are-statistics">What Are Statistics?</a></li>
-  <li><a href="#why-do-scientists-use-statistics" id="toc-why-do-scientists-use-statistics" class="nav-link" data-scroll-target="#why-do-scientists-use-statistics">Why Do Scientists Use Statistics?</a></li>
+  <li><a href="#lets-use-statistics-to-understand-your-lab-data" id="toc-lets-use-statistics-to-understand-your-lab-data" class="nav-link" data-scroll-target="#lets-use-statistics-to-understand-your-lab-data">Let’s Use Statistics to Understand Your Lab Data</a></li>
   <li><a href="#lets-start-simple-meet-python-lists" id="toc-lets-start-simple-meet-python-lists" class="nav-link" data-scroll-target="#lets-start-simple-meet-python-lists">Let’s Start Simple: Meet Python Lists</a></li>
   <li><a href="#try-it-make-your-own-list" id="toc-try-it-make-your-own-list" class="nav-link" data-scroll-target="#try-it-make-your-own-list">Try It: Make Your Own List</a></li>
   <li><a href="#basic-operations-with-lists" id="toc-basic-operations-with-lists" class="nav-link" data-scroll-target="#basic-operations-with-lists">Basic Operations with Lists</a></li>
@@ -305,26 +306,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="the-big-question" class="level2">
 <h2 class="anchored" data-anchor-id="the-big-question">The Big Question</h2>
-<p>Imagine you’re testing water from a stream. You measure the pH seven different times and get:</p>
-<p><strong>7.1, 7.2, 7.0, 7.3, 7.1, 7.2, 7.1</strong></p>
-<p>Quick - is the water safe? What’s the “typical” pH? Are any readings weird?</p>
+<p>With your group, you’ve just tested samples from a fictional body of water. You measured each of the four samples for nitrate concentration <em>and</em> nitrite concentration.</p>
+<p>Quick - is the water safe? What’s the “typical” concentration? Are any readings weird?</p>
 <p>That’s hard to answer just by staring at the numbers! <strong>This is why we need statistics.</strong></p>
 </section>
 <section id="what-are-statistics" class="level2">
 <h2 class="anchored" data-anchor-id="what-are-statistics">What Are Statistics?</h2>
 <p><strong>Statistics</strong> = A fancy word for “using math to understand data”</p>
-<p>Think of statistics like a calculator that helps you: - Summarize lots of numbers into one useful number - Find patterns - Make decisions - Spot things that don’t fit</p>
-<p><strong>Real-world example:</strong> When you check the weather app, it shows “Average temperature: 75°F” - that’s a statistic!</p>
+<p>Think of statistics like a calculator that helps you:<br>
+- Summarize lots of numbers into one useful number<br>
+- Find patterns<br>
+- Make decisions<br>
+- Spot things that don’t fit</p>
+<div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden;">
+<p><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/Ge9je05uYJ0?si=FQeUzUxzzdQ1E4Aj" frameborder="0" allowfullscreen=""> </iframe></p>
+</div>
 </section>
-<section id="why-do-scientists-use-statistics" class="level2">
-<h2 class="anchored" data-anchor-id="why-do-scientists-use-statistics">Why Do Scientists Use Statistics?</h2>
-<p>Scientists collect LOTS of data. Imagine you: - Test water at 10 different streams - Measure pH every day for a month - Check nitrate levels at 5 rivers</p>
-<p>That’s a LOT of numbers! Statistics help you: 1. <strong>Summarize</strong>: “What’s the typical pH?” 2. <strong>Compare</strong>: “Is Stream A cleaner than Stream B?” 3. <strong>Detect problems</strong>: “Is this reading normal or is something wrong?” 4. <strong>Communicate</strong>: “Is this water safe?” (much clearer than listing 100 numbers!)</p>
+<section id="lets-use-statistics-to-understand-your-lab-data" class="level2">
+<h2 class="anchored" data-anchor-id="lets-use-statistics-to-understand-your-lab-data">Let’s Use Statistics to Understand Your Lab Data</h2>
+<p>On your lab sheet, you have the nitrate and nitrite concentrations for each sample. Then, to the right, you have space to perform some statistical analyses and calculations.</p>
 </section>
 <section id="lets-start-simple-meet-python-lists" class="level2">
 <h2 class="anchored" data-anchor-id="lets-start-simple-meet-python-lists">Let’s Start Simple: Meet Python Lists</h2>
 <p>In Python, we store multiple numbers in something called a <strong>list</strong>. It’s like a shopping list, but for data!</p>
-<div id="bbe2bded" class="cell" data-execution_count="1">
+<div id="148844cf" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A list of pH readings (the square brackets [ ] make it a list)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>ph_readings <span class="op">=</span> [<span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.3</span>, <span class="fl">7.0</span>, <span class="fl">7.2</span>]</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -350,7 +355,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBDcmVhdGUgYSBsaXN0IG9m
 <section id="basic-operations-with-lists" class="level2">
 <h2 class="anchored" data-anchor-id="basic-operations-with-lists">Basic Operations with Lists</h2>
 <p>Once we have a list, we can do things with it:</p>
-<div id="7af7b11b" class="cell" data-execution_count="2">
+<div id="adbb42a3" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Our nitrate readings from 5 rivers (in mg/L)</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>nitrate <span class="op">=</span> [<span class="fl">3.2</span>, <span class="fl">4.1</span>, <span class="fl">3.8</span>, <span class="fl">3.5</span>, <span class="fl">4.0</span>]</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -405,7 +410,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBwSCByZWFkaW5ncyBmcm9t
 <p>Let’s talk about what those pH and nitrate numbers actually mean:</p>
 <section id="ph-scale" class="level3">
 <h3 class="anchored" data-anchor-id="ph-scale">pH Scale</h3>
-<div id="ac0b2dd0" class="cell" data-execution_count="3">
+<div id="de4f2560" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's visualize the pH scale</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -448,7 +453,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBwSCByZWFkaW5ncyBmcm9t
 <figcaption>Nitrate Test Strips</figcaption>
 </figure>
 </div>
-<div id="094aae68" class="cell" data-execution_count="4">
+<div id="233fb1a2" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize nitrate safety levels</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>categories <span class="op">=</span> [<span class="st">'Safe</span><span class="ch">\n</span><span class="st">(&lt; 2 mg/L)'</span>, <span class="st">'Acceptable</span><span class="ch">\n</span><span class="st">(2-5 mg/L)'</span>, <span class="st">'Concerning</span><span class="ch">\n</span><span class="st">(5-10 mg/L)'</span>, <span class="st">'UNSAFE</span><span class="ch">\n</span><span class="st">(&gt; 10 mg/L)'</span>]</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>colors_nitrate <span class="op">=</span> [<span class="st">'green'</span>, <span class="st">'lightgreen'</span>, <span class="st">'yellow'</span>, <span class="st">'red'</span>]</span>
@@ -481,7 +486,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBwSCByZWFkaW5ncyBmcm9t
 <section id="checking-if-water-is-safe" class="level2">
 <h2 class="anchored" data-anchor-id="checking-if-water-is-safe">Checking If Water Is Safe</h2>
 <p>Let’s use Python to check if water is safe:</p>
-<div id="04405930" class="cell" data-execution_count="5">
+<div id="74a33003" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's check a pH reading</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>pH_reading <span class="op">=</span> <span class="fl">7.2</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
