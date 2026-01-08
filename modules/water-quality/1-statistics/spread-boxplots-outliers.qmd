@@ -4,6 +4,10 @@ format: live-html
 sidebar: lesson-1
 ---
 
+:::{.callout-important}
+## This page & exercises are under construction.
+:::
+
 ### 2. Measures of Spread (How Spread Out?)
 
 - **Range** = Biggest minus smallest
