@@ -10,13 +10,13 @@ sidebar: lesson-1
 
 **Materials Needed:**  
 - Your computer  
-- A web browser (e.g., Chrome, Firefox, Safari)    
-- Handout ??
+- A web browser (e.g., Chrome, Firefox, Safari)  
+- A calculator (any will do - your phone, computer calculator, or a TI-83)    
+- Printed student handout (including lab sheet)
 :::
 
-::: {.callout-tip collapse="true"}
-## **Facilitator/Teacher Resources:**
-[Link to Facilitator's Guide](facilitator)
+::: {.callout-tip}
+## [**Facilitator/Teacher Guide**](facilitator)
 :::
 
 ## 🔬💧 Welcome, Scientists!  

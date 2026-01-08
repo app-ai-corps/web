@@ -74,7 +74,23 @@ h1, h2, h3, h4, h5, h6 {
   border-style: solid;
 }
 
+.ltorange-container {
+  width: 60%;
+  margin: 10px auto;
+  background-color: #F9F0E6;
+  padding: 15px 10px 5px 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #dcdcdc;
+  border-style: solid;
+  text-align: center;
+}
+
 .callout-style-default {
   border-left: 5px solid #006C93 !important;
   background-color: #FFFFFF;
+}
+
+.math {
+  font-size: 2.0em;
 }

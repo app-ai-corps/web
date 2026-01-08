@@ -1,0 +1,108 @@
+---
+title: "Python Lists"
+format: live-html
+sidebar: lesson-1
+---
+
+## Let's Analyze Your Data With Python
+
+### Lists
+
+In Python, we store multiple numbers in something called a **list**.
+
+```{python}
+# Our sample dataset from above (the square brackets [ ] make it a list)
+sample_data = [1, 2, 6, 5, 1]
+
+print("Our sample data:", sample_data)
+```
+
+**Breaking it down:**  
+- `sample_data` = the name we gave our list (you can name it anything!)  
+- `=` means "store this in the variable `sample_data`"  
+- `[1, 2, 6, 5, 1]` = the actual numbers, separated by commas  
+- `print()` = tells Python to show us the result  
+
+#### Try It: Make Your Own Lists
+```{pyodide}
+# Create a list of your group's nitrate and nitrite readings!
+# Change the 10, 20, 30, 40 to your group's real values
+
+group_nitrate = [10, 20, 30, 40]
+group_nitrite = [10, 20, 30, 40]
+
+print("My group's nitrate readings:", group_nitrate)
+print("My group's nitrite readings:", group_nitrite)
+
+```
+
+### Basic Operations with Lists
+<hr>
+Once we have a list, we can do all kinds of things with it!
+
+#### len()
+
+The **len()** (length) function tells us how many items are in a list. We can use it to find the number of nitrate readings we took.
+
+```{pyodide}
+print("Number of samples tested:", len(group_nitrate))
+```
+
+#### min()
+The **min()** function finds the smallest number in a list. It will tell us what the lowest nitrate reading was.
+
+```{pyodide}
+print("Lowest nitrate:", min(group_nitrate), "mg/L")
+```
+
+#### max()
+The **max()** function finds the biggest number in a list. It will tell us what the highest nitrate reading was.
+
+```{pyodide}
+print("Highest nitrate:", max(group_nitrate), "mg/L")
+```
+
+**In Summary:**  
+- `len()` = length (how many items)  
+- `min()` = minimum (smallest number)  
+- `max()` = maximum (biggest number)  
+
+These are called **functions** - they're like tools that do specific jobs!
+
+## Checking If Water Is Safe
+
+Let's use Python to check if water is safe. We can tell Python the maximum EPA-allowed concentration of nitrate and have it compare the maximum nitrate reading with that cut-off.
+```{pyodide}
+# Let's check using your group's nitrate readings
+max_nitrate = max(group_nitrate)
+
+print("The water has a max nitrate concentration of", max_nitrate)
+
+# Python can make decisions using 'if' statements!
+if max_nitrate <= 10:
+    print("✓ Nitrate concentration is in the safe range!")
+else:
+    print("✗ Nitrate concentration is outside the safe range!")
+```
+
+## What's Next?
+
+Now you understand:  
+- ✅ What statistics are (math to understand data)  
+- ✅ How to create lists in Python  
+- ✅ Basic functions: len(), min(), max()  
+- ✅ What nitrate and nitrite mean  
+- ✅ How to check if water is safe  
+
+## Key Python Words We Learned
+
+| Word | What It Does | Example |
+|------|-------------|---------|
+| `list` | Stores multiple numbers | `[7.2, 7.1, 7.3]` |
+| `len()` | Counts items | `len([1,2,3])` = 3 |
+| `min()` | Finds smallest | `min([5,2,8])` = 2 |
+| `max()` | Finds biggest | `max([5,2,8])` = 8 |
+| `print()` | Shows results | `print("Hi!")` |
+| `if` | Makes decisions | `if pH > 7:` |
+
+**Remember:** The best way to learn is by trying things! Change numbers, experiment, and see what happens. You can't break anything! 😊

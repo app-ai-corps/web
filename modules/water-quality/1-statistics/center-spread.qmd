@@ -4,6 +4,15 @@ format: live-html
 sidebar: lesson-1
 ---
 
+### 2. Measures of Spread (How Spread Out?)
+
+- **Range** = Biggest minus smallest
+- **Standard Deviation** = How far numbers typically are from average (we'll explain this more later!)
+
+**Example:** Which is more consistent?
+- Stream A: pH readings of 7.0, 7.1, 7.0, 7.1 (very consistent!)
+- Stream B: pH readings of 6.5, 7.5, 6.8, 7.9 (all over the place!)
+
 ## What Is an Average?
 
 You already know what an average is! 

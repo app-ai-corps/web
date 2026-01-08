@@ -4,15 +4,13 @@ format: live-html
 sidebar: lesson-1
 ---
 
-## The Big Question
-
 With your group, you've just tested samples from a fictional body of water. You measured each of the four samples for nitrate concentration *and* nitrite concentration.
 
 Quick - is the water safe? What's the "typical" concentration? Are any readings weird?
 
 That's hard to answer just by staring at the numbers! **This is why we need statistics.**
 
-## What Are Statistics?
+## What Is Statistics?
 
 **Statistics** = A fancy word for "using math to understand data"
 
@@ -31,217 +29,47 @@ Think of statistics like a calculator that helps you:
   </iframe>
 </div>
 
-## Let's Use Statistics to Understand Your Lab Data
+## Let's Use Statistics!
+
+:::{.ltblue-container}
+**Sample Dataset For Examples Below**
+
+1, 2, 6, 5, 1
+:::
+
+
+### Measures of Center
+The measures of center tell us about what is typical in a group of numbers. A set of numbers has different kinds of centers: a mean, a median, and a mode. Sometimes these measures will have the same value and sometimes they will be different. We calculate them in different ways.
+
+#### Mean
+The *mean* is often called the "average". To find the mean, we add up all of the numbers of interest and divide by how many numbers there are.
+
+:::{.ltorange-container}
+$\frac{1 + 2 + 6 + 5 + 1}{5} = 3$
+:::
+
+The mean value of this sample dataset is **3**.
+
+#### Median
+The *median* is a different kind of measure of center. To calculate the median, you first line up all the values in your data set, then you find the middle value by position.
+
+:::{.ltorange-container}
+$1 + 1 + 2 + 5 + 6$  
+![](images/vertical-arrow-torch.png){width="15%"}
+:::
+
+The median value of this sample dataset is **2**.
+
+## Let's Analyze Your Lab Data
+
+:::{.callout-note}
+## Get your calculator ready!
+:::
 
 On your lab sheet, you have the nitrate and nitrite concentrations for each sample. Then, to the right, you have space to perform some statistical analyses and calculations.
 
-## Let's Start Simple: Meet Python Lists
+**To-do:** Using your calculator, calculate the mean estimates nitrate concentration and the mean nitrite concentration for your samples.
 
-In Python, we store multiple numbers in something called a **list**. It's like a shopping list, but for data!
-```{python}
-# A list of pH readings (the square brackets [ ] make it a list)
-ph_readings = [7.2, 7.1, 7.3, 7.0, 7.2]
+**To-do:**Then, calculate the median nitrate concentration and nitrite concentration for your samples.
 
-print("Our pH readings:", ph_readings)
-```
-
-**Breaking it down:**
-- `ph_readings` = the name we gave our list (you can name it anything!)
-- `=` means "store this in the variable"
-- `[7.2, 7.1, 7.3, 7.0, 7.2]` = the actual numbers, separated by commas
-- `print()` = tells Python to show us the result
-
-## Try It: Make Your Own List
-```{pyodide}
-# Create a list of your own numbers!
-# These could be temperatures, test scores, anything!
-my_numbers = [10, 20, 30, 40, 50]
-
-print("My list:", my_numbers)
-
-# Let's see how many numbers are in the list
-print("How many numbers:", len(my_numbers))
-
-# 'len' means 'length' - it counts items in the list
-```
-
-**Challenge:** Change the numbers in `my_numbers` and run it again!
-
-## Basic Operations with Lists
-
-Once we have a list, we can do things with it:
-```{python}
-# Our nitrate readings from 5 rivers (in mg/L)
-nitrate = [3.2, 4.1, 3.8, 3.5, 4.0]
-
-print("Nitrate readings:", nitrate)
-print("Number of rivers tested:", len(nitrate))
-print("Lowest nitrate:", min(nitrate), "mg/L")
-print("Highest nitrate:", max(nitrate), "mg/L")
-```
-
-**New Python words:**
-- `len()` = length (how many items)
-- `min()` = minimum (smallest number)
-- `max()` = maximum (biggest number)
-
-These are called **functions** - they're like tools that do specific jobs!
-
-## Try It: Explore Your Data
-```{pyodide}
-# pH readings from different days
-monday_to_friday = [7.2, 7.1, 7.3, 6.9, 7.2]
-
-print("pH readings:", monday_to_friday)
-
-# YOUR TURN: Use len(), min(), and max() to explore this data
-# Example:
-print("Number of readings:", len(monday_to_friday))
-
-# Now you try finding the minimum and maximum!
-```
-
-## Types of Statistics We'll Learn
-
-### 1. Measures of Center (What's "Typical"?)
-
-- **Mean** = Average (add them all up, divide by how many)
-- **Median** = Middle number when you line them up
-
-**Example:** Test scores: 80, 85, 90, 95, 100
-- Mean = (80+85+90+95+100) ÷ 5 = 90
-- Median = 90 (it's in the middle!)
-
-### 2. Measures of Spread (How Spread Out?)
-
-- **Range** = Biggest minus smallest
-- **Standard Deviation** = How far numbers typically are from average (we'll explain this more later!)
-
-**Example:** Which is more consistent?
-- Stream A: pH readings of 7.0, 7.1, 7.0, 7.1 (very consistent!)
-- Stream B: pH readings of 6.5, 7.5, 6.8, 7.9 (all over the place!)
-
-## Water Quality: What We're Measuring
-
-**📺 Watch this video to learn more about pH:**
-
-{{< video https://www.youtube.com/watch?v=qCDSfihEhno >}}
-
-Let's talk about what those pH and nitrate numbers actually mean:
-
-### pH Scale
-```{python}
-# Let's visualize the pH scale
-import matplotlib.pyplot as plt
-
-ph_scale = list(range(0, 15))
-colors = ['red']*3 + ['orange']*3 + ['yellow', 'lightgreen'] + ['green']*3 + ['lightgreen', 'yellow'] + ['orange', 'red']
-
-plt.figure(figsize=(12, 3))
-plt.bar(ph_scale, [1]*15, color=colors, edgecolor='black', width=1)
-plt.xlabel('pH Value', fontsize=12)
-plt.title('pH Scale: Where Is Water Safe?', fontsize=14)
-plt.xticks(range(0, 15))
-plt.yticks([])
-
-# Mark safe drinking water range
-plt.axvline(x=6.5, color='blue', linewidth=3, linestyle='--', label='Safe range')
-plt.axvline(x=8.5, color='blue', linewidth=3, linestyle='--')
-plt.legend(fontsize=12)
-
-plt.tight_layout()
-plt.show()
-
-print("Safe drinking water: pH between 6.5 and 8.5 (the blue zone)")
-```
-
-### Nitrate Levels
-
-![Nitrate Test Strips](images/nitrate_strip.png)
-
-
-```{python}
-# Visualize nitrate safety levels
-categories = ['Safe\n(< 2 mg/L)', 'Acceptable\n(2-5 mg/L)', 'Concerning\n(5-10 mg/L)', 'UNSAFE\n(> 10 mg/L)']
-colors_nitrate = ['green', 'lightgreen', 'yellow', 'red']
-
-plt.figure(figsize=(10, 6))
-plt.bar(categories, [1, 1, 1, 1], color=colors_nitrate, edgecolor='black', width=0.6)
-plt.ylabel('Safety Level', fontsize=12)
-plt.title('Nitrate Safety Levels', fontsize=14)
-plt.yticks([])
-plt.axhline(y=0.5, color='black', linewidth=2, linestyle='--')
-plt.text(3, 0.5, ' EPA Limit: 10 mg/L', fontsize=12, va='center')
-
-plt.tight_layout()
-plt.show()
-
-print("Remember: Nitrate over 10 mg/L is NOT safe to drink!")
-```
-
-## Checking If Water Is Safe
-
-Let's use Python to check if water is safe:
-```{python}
-# Let's check a pH reading
-pH_reading = 7.2
-
-print(f"The water has pH of {pH_reading}")
-
-# Python can make decisions using 'if' statements!
-if pH_reading >= 6.5 and pH_reading <= 8.5:
-    print("✓ pH is in the safe range!")
-else:
-    print("✗ pH is outside the safe range!")
-```
-
-## Try It: Be a Water Inspector!
-```{pyodide}
-# YOUR TURN: Check if these water samples are safe
-
-# Sample 1
-pH = 7.3
-nitrate = 4.2
-
-print("=== Sample 1 ===")
-print(f"pH: {pH}")
-print(f"Nitrate: {nitrate} mg/L")
-
-# Check pH (fill in the numbers!)
-if pH >= 6.5 and pH <= 8.5:
-    print("✓ pH is safe")
-else:
-    print("✗ pH is not safe")
-
-# Check nitrate (fill in the number!)
-if nitrate < 10:
-    print("✓ Nitrate is safe")
-else:
-    print("✗ Nitrate is not safe")
-
-# Now try changing the pH and nitrate values to see what happens!
-```
-
-## What's Next?
-
-Now you understand:
-- ✅ What statistics are (math to understand data)
-- ✅ How to create lists in Python
-- ✅ Basic functions: len(), min(), max()
-- ✅ What pH and nitrate mean
-- ✅ How to check if water is safe
-
-In the next lesson, we'll learn about the **mean** (average) - one of the most important statistics!
-
-## Key Python Words We Learned
-
-| Word | What It Does | Example |
-|------|-------------|---------|
-| `list` | Stores multiple numbers | `[7.2, 7.1, 7.3]` |
-| `len()` | Counts items | `len([1,2,3])` = 3 |
-| `min()` | Finds smallest | `min([5,2,8])` = 2 |
-| `max()` | Finds biggest | `max([5,2,8])` = 8 |
-| `print()` | Shows results | `print("Hi!")` |
-| `if` | Makes decisions | `if pH > 7:` |
-
-**Remember:** The best way to learn is by trying things! Change numbers, experiment, and see what happens. You can't break anything! 😊
+**RECORD THESE ON YOUR LAB SHEET**
