@@ -1922,7 +1922,7 @@
     "href": "1-statistics/center-histograms.html",
     "title": "Using Python for Statistics",
     "section": "",
-    "text": "As you might have guessed, Python can do much more than just the functions len(), min(), and max(). In fact, it can help us calculate our measures of center!"
+    "text": "As you might have guessed, Python can do much more than just the functions len(), min(), and max(). In fact, it can help us calculate our measures of center!\nYou have already calculated the mean and median by hand on your lab sheet. Now, let’s ask Python to do it!"
   },
   {
     "objectID": "1-statistics/center-histograms.html#what-is-an-average",
@@ -2042,5 +2042,47 @@
     "title": "Python Lists",
     "section": "Key Python Terms We Learned",
     "text": "Key Python Terms We Learned\n\n\n\nWord\nWhat It Does\nExample\n\n\n\n\nlist\nStores multiple numbers\n[7.2, 7.1, 7.3]\n\n\nlen()\nCounts items\nlen([1,2,3]) = 3\n\n\nmin()\nFinds smallest\nmin([5,2,8]) = 2\n\n\nmax()\nFinds biggest\nmax([5,2,8]) = 8\n\n\nprint()\nShows results\nprint(\"Hi!\")\n\n\nif\nMakes decisions\nif pH &gt; 7:\n\n\n\nRemember: The best way to learn is by trying things! Change numbers, experiment, and see what happens. You can’t break anything! 😊"
+  },
+  {
+    "objectID": "1-statistics/center-histograms.html#calculating-statistics-with-python",
+    "href": "1-statistics/center-histograms.html#calculating-statistics-with-python",
+    "title": "Using Python for Statistics",
+    "section": "Calculating Statistics With Python",
+    "text": "Calculating Statistics With Python\n\nMean\nPython has built-in tools to calculate the mean. We’ll use something called NumPy (Numerical Python). NumPy is one example of a library or package that you can add to Python. When you add a library to Python, you are increasing the functions availble to you. For example, we have many more options with NumPy than just len(), min(), and max().\nWe have to “import” these libraries in Python and then often give them a nickname. For example, we import NumPy as np instead of typing “numpy” all the time.\n\nimport numpy as np\n\n# Same sample dataset\nsample_data = [1, 2, 6, 5, 1]\n\n# Calculate mean the easy way!\nmean_sample = np.mean(sample_data)\n\nprint(\"mean of sample data:\", mean_sample)\n\nmean of sample data: 3.0\n\n\nBreaking it down:\n- import numpy as np = Load the NumPy library/package (we only do this once)\n- np.mean() = NumPy’s function to calculate mean"
+  },
+  {
+    "objectID": "1-statistics/center-histograms.html#your-turn-calculate-mean-nitrate",
+    "href": "1-statistics/center-histograms.html#your-turn-calculate-mean-nitrate",
+    "title": "Using Python for Statistics",
+    "section": "Your Turn: Calculate Mean Nitrate",
+    "text": "Your Turn: Calculate Mean Nitrate"
+  },
+  {
+    "objectID": "1-statistics/center-histograms.html#your-turn-calculate-your-groupsmean-nitrate",
+    "href": "1-statistics/center-histograms.html#your-turn-calculate-your-groupsmean-nitrate",
+    "title": "Using Python for Statistics",
+    "section": "Your Turn: Calculate Your Group’sMean Nitrate",
+    "text": "Your Turn: Calculate Your Group’sMean Nitrate"
+  },
+  {
+    "objectID": "1-statistics/center-histograms.html#your-turn-calculate-your-groups-mean-nitrate",
+    "href": "1-statistics/center-histograms.html#your-turn-calculate-your-groups-mean-nitrate",
+    "title": "Using Python for Statistics",
+    "section": "Your Turn: Calculate Your Group’s Mean Nitrate",
+    "text": "Your Turn: Calculate Your Group’s Mean Nitrate\nThe website doesn’t save your nitrate readings list from the previous page, so you’ll need to re-enter your data into the list below (Line 4) again."
+  },
+  {
+    "objectID": "1-statistics/center-histograms.html#class-data",
+    "href": "1-statistics/center-histograms.html#class-data",
+    "title": "Using Python for Statistics",
+    "section": "Class Data",
+    "text": "Class Data\nOne of the benefits of using Python is that is can handle much larger amount amounts of data with ease. For example, let’s consider the nitrate and nitrite data your whole class collected. We’ll do that by importing the data collected in the Google Form. That form sends the data to a spreadsheet, or CSV (comman separated values) file.\n\n\n\n\n\n\nYour teacher will provide the link to the CSV file for you to use.\n\n\n\n\n\n\nOnly edit the CSV URL in the code below. The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.\n\n\n\n\n\n\n\nCalculating the Class Nitrate and Nitrate Mean\nUsing the code written to calculate the mean for your group’s nitrate data, modify it to calculate the class nitrate and nitrite means.\n\n\n\n\n\n\n\n\nCalculating the Class Nitrate and Nitrite Median\nSimilarly, calculate the median for the class nitrate and nitrite data."
+  },
+  {
+    "objectID": "1-statistics/center-histograms.html#visualizing-the-data-measures-of-center",
+    "href": "1-statistics/center-histograms.html#visualizing-the-data-measures-of-center",
+    "title": "Using Python for Statistics",
+    "section": "Visualizing the Data & Measures of Center",
+    "text": "Visualizing the Data & Measures of Center\nLet’s see what the mean looks like on a graph:\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Example: pH readings from a creek over one week\ndays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']\nph_readings = [7.2, 7.4, 7.1, 7.3, 7.2, 7.3, 7.2]\n\n# Calculate mean\nmean_ph = np.mean(ph_readings)\n\n# Create a graph\nplt.figure(figsize=(10, 6))\nplt.plot(days, ph_readings, marker='o', markersize=10, linewidth=2, label='Daily pH')\nplt.axhline(y=mean_ph, color='red', linestyle='--', linewidth=2, label=f'Mean = {mean_ph:.2f}')\nplt.xlabel('Day of Week', fontsize=12)\nplt.ylabel('pH Level', fontsize=12)\nplt.title('Creek pH Over One Week', fontsize=14)\nplt.legend(fontsize=11)\nplt.grid(True, alpha=0.3)\nplt.ylim(6.5, 8)\n\n# Add safe zone\nplt.axhline(y=6.5, color='green', linestyle=':', alpha=0.5)\nplt.axhline(y=8.5, color='green', linestyle=':', alpha=0.5)\nplt.fill_between(range(len(days)), 6.5, 8.5, alpha=0.1, color='green', label='Safe zone')\n\nplt.show()\n\nprint(f\"The red dashed line shows the mean pH: {mean_ph:.2f}\")\nprint(\"Notice how the mean is in the 'middle' of all the points!\")\n\n\n\n\n\n\n\n\nThe red dashed line shows the mean pH: 7.24\nNotice how the mean is in the 'middle' of all the points!"
   }
 ]

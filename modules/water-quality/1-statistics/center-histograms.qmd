@@ -5,96 +5,46 @@ sidebar: lesson-1
 ---
 As you might have guessed, Python can do much more than just the functions **len()**, **min()**, and **max()**. In fact, it can help us calculate our measures of center!
 
+You have already calculated the mean and median by hand on your lab sheet. Now, let's ask Python to do it!
 
-### 2. Measures of Spread (How Spread Out?)
+## Calculating Statistics With Python
 
-- **Range** = Biggest minus smallest
-- **Standard Deviation** = How far numbers typically are from average (we'll explain this more later!)
+### Mean
 
-**Example:** Which is more consistent?
-- Stream A: pH readings of 7.0, 7.1, 7.0, 7.1 (very consistent!)
-- Stream B: pH readings of 6.5, 7.5, 6.8, 7.9 (all over the place!)
+Python has built-in tools to calculate the mean. We'll use something called **NumPy** (Numerical Python). NumPy is one example of a *library* or *package* that you can add to Python. When you add a library to Python, you are increasing the functions availble to you. For example, we have many more options with NumPy than just **len()**, **min()**, and **max()**.
 
-## What Is an Average?
+We have to "import" these libraries in Python and then often give them a nickname. For example, we import NumPy as `np` instead of typing "numpy" all the time.
 
-You already know what an average is! 
-
-**Example:** If you got these test scores: 80, 85, 90, 95, 100
-
-Your average = (80 + 85 + 90 + 95 + 100) ÷ 5 = **90**
-
-Scientists call the average the **mean**. Same thing, fancier name!
-
-## Why Do We Need the Mean for Water Quality?
-
-Imagine a scientist is testing a creek and measures pH seven times:
-
-**7.2, 7.1, 7.3, 7.0, 7.2, 7.3, 7.1**
-
-Instead of listing all seven numbers, they can say: **"The average pH is 7.17"**
-
-This is useful for:
-- 📊 Reporting to the community: "The creek's pH is usually 7.2"
-- 🔍 Comparing different streams: "Creek A has pH 7.2, Creek B has pH 6.8"
-- 📅 Tracking changes: "Last month average was 7.5, now it's 7.0 - something changed!"
-
-## Calculating Mean By Hand
-
-Let's calculate the mean pH from those seven readings:
-```{python}
-# Example pH readings from a creek
-ph_readings = [7.2, 7.1, 7.3, 7.0, 7.2, 7.3, 7.1]
-
-# Step 1: Add them all up
-total = 7.2 + 7.1 + 7.3 + 7.0 + 7.2 + 7.3 + 7.1
-print("Step 1 - Add them up:", total)
-
-# Step 2: Count how many readings
-count = 7
-print("Step 2 - Count readings:", count)
-
-# Step 3: Divide total by count
-mean_ph = total / count
-print("Step 3 - Divide:", mean_ph)
-
-print(f"\n✓ The mean pH is {mean_ph:.2f}")
-```
-
-## The Easy Way: Let Python Do It!
-
-Python has built-in tools to calculate the mean. We'll use something called **NumPy** (Numerical Python):
 ```{python}
 import numpy as np
 
-# Same pH readings
-ph_readings = [7.2, 7.1, 7.3, 7.0, 7.2, 7.3, 7.1]
+# Same sample dataset
+sample_data = [1, 2, 6, 5, 1]
 
 # Calculate mean the easy way!
-mean_ph = np.mean(ph_readings)
+mean_sample = np.mean(sample_data)
 
-print("pH readings:", ph_readings)
-print(f"Mean pH: {mean_ph:.2f}")
-print("\nThat was much easier! 😊")
+print("mean of sample data:", mean_sample)
 ```
 
-**Breaking it down:**
-- `import numpy as np` = Load the NumPy tool (we only do this once)
+**Breaking it down:**  
+- `import numpy as np` = Load the NumPy library/package (we only do this once)  
 - `np.mean()` = NumPy's function to calculate mean
-- `.2f` = Show 2 decimal places (7.17 instead of 7.17142857...)
 
-## Try It: Calculate Mean Nitrate
+## Your Turn: Calculate Your Group's Mean Nitrate
+The website doesn't save your nitrate readings list from the previous page, so you'll need to re-enter your data into the list below (Line 4) again.
+
 ```{pyodide}
 import numpy as np
 
-# Here are example nitrate readings from a river (in mg/L)
-# Imagine a scientist collected these over one week
-nitrate_readings = [3.2, 4.1, 3.8, 3.5, 4.0, 3.7, 3.9]
+# Recreate the list of your group's nitrate readings below
+group_nitrate = [10, 20, 30, 40]
 
-# YOUR TURN: Calculate the mean nitrate
-mean_nitrate = np.mean(nitrate_readings)
+# YOUR TURN: Calculate the mean nitrate reading for your group
+mean_nitrate = np.mean(group_nitrate)
 
-print("Nitrate readings (mg/L):", nitrate_readings)
-print(f"Mean nitrate: {mean_nitrate:.2f} mg/L")
+print("Group nitrate readings (mg/L):", group_nitrate)
+print("Group mean nitrate:", mean_nitrate, "mg/L")
 
 # Is it safe? (Remember: safe is less than 10 mg/L)
 if mean_nitrate < 10:
@@ -105,7 +55,69 @@ else:
 # Try changing the numbers and see what happens!
 ```
 
-## Visualizing the Mean
+## Class Data
+One of the benefits of using Python is that is can handle much larger amount amounts of data with ease. For example, let's consider the nitrate and nitrite data your whole class collected. We'll do that by importing the data collected in the Google Form. That form sends the data to a spreadsheet, or CSV (comman separated values) file.
+
+:::{.callout-important}
+## Your teacher will provide the link to the CSV file for you to use.
+:::
+
+Only edit the CSV URL in the code below. The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.
+
+```{pyodide}
+import requests
+import csv
+from io import StringIO
+
+# Replace the url with the one provided from your teacher. Make sure to keep the quotation marks!
+csv_url = "www.replace_this_with_your_csv_url.csv"
+
+# Get the data
+response = requests.get(csv_url)
+reader = csv.reader(StringIO(response.text))
+next(reader)  # Skip header row
+
+# Read all rows
+rows = list(reader)
+
+# Extract columns (change the index numbers to match your columns)
+class_nitrate = [int(row[3]) for row in rows]  # Fourth column (index 3)
+class_nitrite = [int(row[4]) for row in rows]  # Fifth column (index 4)
+
+print("Nitrate values:", class_nitrate)
+print("Nitrite values:", class_nitrite)
+```
+
+
+### Calculating the Class Nitrate and Nitrate Mean
+
+Using the code written to calculate the mean for your group's nitrate data, modify it to calculate the class nitrate and nitrite means.
+
+```{pyodide}
+import numpy as np
+
+# Calculate mean nitrate and nitrite for class data (replace the ???)
+mean_class_nitrate = np.mean(???)
+mean_class_nitrite = np.mean(???)
+
+print("Class nitrate:", mean_class_nitrate, "mg/L")
+print("Class nitrite:", mean_class_nitrite, "mg/L")
+```
+
+### Calculating the Class Nitrate and Nitrite Median
+
+Similarly, calculate the median for the class nitrate and nitrite data.
+
+```{pyodide}
+# Calculate median nitrate and nitrite for class data (replace the ???)
+median_class_nitrate = np.median(???)
+median_class_nitrite = np.median(???)
+
+print("Class nitrate median:", median_class_nitrate, "mg/L")
+print("Class nitrite median:", median_class_nitrite, "mg/L")
+```
+
+## Visualizing the Data & Measures of Center
 
 Let's see what the mean looks like on a graph:
 ```{python}
@@ -140,168 +152,6 @@ plt.show()
 print(f"The red dashed line shows the mean pH: {mean_ph:.2f}")
 print("Notice how the mean is in the 'middle' of all the points!")
 ```
-
-## Understanding Standard Deviation
-
-The **mean** tells us the average, but it doesn't tell us if the readings are consistent or all over the place.
-
-**Standard deviation (SD)** tells us: **How spread out are the numbers?**
-
-Think of it like this:
-
-**Creek A:** pH readings are 7.1, 7.2, 7.1, 7.2, 7.1 (very consistent!)  
-**Creek B:** pH readings are 6.5, 7.5, 6.8, 7.9, 6.6 (all over the place!)
-
-Both might have similar means, but Creek A is more stable. Standard deviation measures this!
-
-## What Standard Deviation Tells Us
-
-- **Small SD** = Readings are close together (stable, consistent)
-- **Large SD** = Readings are spread out (variable, inconsistent)
-
-**Why it matters for water quality:**
-- Stable readings = Good! Water conditions are consistent
-- Variable readings = Investigate! Could be pollution events, sensor problems, or natural changes
-
-## Calculating Standard Deviation
-```{python}
-import numpy as np
-
-# Two example creeks with same mean but different consistency
-creek_a = [7.1, 7.2, 7.1, 7.2, 7.1, 7.2, 7.1]  # Stable creek
-creek_b = [6.5, 7.5, 6.8, 7.9, 6.6, 7.3, 7.4]  # Variable creek
-
-mean_a = np.mean(creek_a)
-std_a = np.std(creek_a)
-
-mean_b = np.mean(creek_b)
-std_b = np.std(creek_b)
-
-print("Creek A (Stable):")
-print(f"  Mean pH: {mean_a:.2f}")
-print(f"  Standard Deviation: {std_a:.3f}")
-print(f"  Readings are usually within {mean_a - std_a:.2f} to {mean_a + std_a:.2f}")
-
-print("\nCreek B (Variable):")
-print(f"  Mean pH: {mean_b:.2f}")
-print(f"  Standard Deviation: {std_b:.3f}")
-print(f"  Readings are usually within {mean_b - std_b:.2f} to {mean_b + std_b:.2f}")
-
-print(f"\nCreek B has {std_b/std_a:.1f} times more variability!")
-print("A scientist would want to investigate WHY Creek B is so variable.")
-```
-
-## Visualizing Standard Deviation
-```{python}
-import matplotlib.pyplot as plt
-import numpy as np
-
-# Same two example creeks
-creek_a = [7.1, 7.2, 7.1, 7.2, 7.1, 7.2, 7.1]
-creek_b = [6.5, 7.5, 6.8, 7.9, 6.6, 7.3, 7.4]
-
-mean_a = np.mean(creek_a)
-std_a = np.std(creek_a)
-mean_b = np.mean(creek_b)
-std_b = np.std(creek_b)
-
-# Create side-by-side graphs
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
-
-days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-
-# Creek A - Stable
-ax1.plot(days, creek_a, marker='o', markersize=10, linewidth=2, color='blue')
-ax1.axhline(y=mean_a, color='red', linestyle='--', linewidth=2, label=f'Mean = {mean_a:.2f}')
-ax1.axhline(y=mean_a + std_a, color='orange', linestyle=':', linewidth=2, label='±1 SD')
-ax1.axhline(y=mean_a - std_a, color='orange', linestyle=':', linewidth=2)
-ax1.fill_between(range(len(days)), mean_a - std_a, mean_a + std_a, alpha=0.2, color='orange')
-ax1.set_xlabel('Day of Week', fontsize=11)
-ax1.set_ylabel('pH Level', fontsize=11)
-ax1.set_title(f'Creek A: Very Consistent (SD = {std_a:.3f})', fontsize=12)
-ax1.legend()
-ax1.grid(True, alpha=0.3)
-ax1.set_ylim(6, 8.5)
-
-# Creek B - Variable
-ax2.plot(days, creek_b, marker='o', markersize=10, linewidth=2, color='green')
-ax2.axhline(y=mean_b, color='red', linestyle='--', linewidth=2, label=f'Mean = {mean_b:.2f}')
-ax2.axhline(y=mean_b + std_b, color='orange', linestyle=':', linewidth=2, label='±1 SD')
-ax2.axhline(y=mean_b - std_b, color='orange', linestyle=':', linewidth=2)
-ax2.fill_between(range(len(days)), mean_b - std_b, mean_b + std_b, alpha=0.2, color='orange')
-ax2.set_xlabel('Day of Week', fontsize=11)
-ax2.set_ylabel('pH Level', fontsize=11)
-ax2.set_title(f'Creek B: Very Variable (SD = {std_b:.3f})', fontsize=12)
-ax2.legend()
-ax2.grid(True, alpha=0.3)
-ax2.set_ylim(6, 8.5)
-
-plt.tight_layout()
-plt.show()
-
-print("The orange shaded area shows where most readings fall.")
-print("Creek A: narrow band = consistent")
-print("Creek B: wide band = variable")
-```
-
-## What Could Cause High Variability?
-
-If a creek has high standard deviation (lots of variability), it might mean:
-
-1. **Pollution events** - A factory dumps waste occasionally
-2. **Storm runoff** - Rain washes fertilizer from farms into the creek
-3. **Natural cycles** - Some creeks naturally vary (but usually not this much for pH)
-4. **Sensor problems** - The equipment might need calibration
-5. **Different sampling times** - Morning vs afternoon can be different
-
-This is why **buoys** are so useful - they can measure continuously and help you see these patterns!
-
-## Try It: Analyze Two Rivers
-```{pyodide}
-import numpy as np
-
-# Example: River A - Near a farm
-river_a_nitrate = [8.5, 9.2, 8.8, 9.0, 8.7, 9.1, 8.9]
-
-# Example: River B - Near a forest
-river_b_nitrate = [2.1, 2.3, 2.2, 2.4, 2.2, 2.3, 2.1]
-
-# Calculate means and standard deviations
-mean_a = np.mean(river_a_nitrate)
-std_a = np.std(river_a_nitrate)
-
-mean_b = np.mean(river_b_nitrate)
-std_b = np.std(river_b_nitrate)
-
-print("River A (Near Farm):")
-print(f"  Mean nitrate: {mean_a:.2f} mg/L")
-print(f"  Standard Deviation: {std_a:.3f} mg/L")
-
-print("\nRiver B (Near Forest):")
-print(f"  Mean nitrate: {mean_b:.2f} mg/L")
-print(f"  Standard Deviation: {std_b:.3f} mg/L")
-
-print("\nQuestions to think about:")
-print("1. Which river has higher nitrate? (Look at the means)")
-print("2. Which river is more consistent? (Look at the SD)")
-print("3. Why might the farm river have higher nitrate?")
-print("4. Is either river unsafe to drink? (Remember: safe is < 10 mg/L)")
-
-# Try changing the numbers to see what happens!
-```
-
-## Your Future: Real Data Collection
-
-Right now, you're practicing with example data that we created for learning. But soon you'll:
-
-- 🌊 Deploy sensor buoys in real streams and creeks
-- 📊 Collect your OWN pH and nitrate data
-- 🔬 Use these same Python skills to analyze YOUR measurements
-- 📈 See real patterns in water quality over time
-
-Instead of 7 measurements, you might have 700! That's when mean and standard deviation become REALLY useful.
-
-For now, let's keep practicing with examples so you'll be ready when it's time for real data collection!
 
 ## Quick Reference: Python Functions
 
