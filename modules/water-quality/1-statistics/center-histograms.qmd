@@ -68,26 +68,36 @@ One of the benefits of using Python is that is can handle much larger amount amo
 
 Only edit the CSV URL in the code below (Line 6). The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.
 
-```{pyodide}
+```{python}
+#| echo: false
+#| output: false
+
 import requests
 import csv
 from io import StringIO
 
-# Replace the url with the one provided from your teacher. Make sure to keep the quotation marks!
+def load_class_data(csv_url):
+    response = requests.get(csv_url)
+    reader = csv.reader(StringIO(response.text))
+    next(reader)  # Skip header
+    rows = list(reader)
+    
+    class_nitrate = [int(row[3]) for row in rows]
+    class_nitrite = [int(row[4]) for row in rows]
+    
+    return class_nitrate, class_nitrite
+```
+
+```{pyodide}
+# Replace the url with the one provided from your teacher. 
+# Make sure to keep the quotation marks!
+
 csv_url = "www.replace_this_with_your_csv_url.csv"
 
 # Get the data
-response = requests.get(csv_url)
-reader = csv.reader(StringIO(response.text))
-next(reader)  # Skip header row
+class_nitrate, class_nitrite = load_class_data(csv_url)
 
-# Read all rows
-rows = list(reader)
-
-# Extract columns
-class_nitrate = [int(row[3]) for row in rows]  # Fourth column (index 3)
-class_nitrite = [int(row[4]) for row in rows]  # Fifth column (index 4)
-
+# Preview the data
 print("Nitrate values:", class_nitrate)
 print("Nitrite values:", class_nitrite)
 ```
@@ -156,7 +166,7 @@ plt.show()
 ##### Add Mean and Median
 Add the mean and median to the nitrate histogram.
 ```{pyodide}
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 plt.figure(figsize=(10, 6))
 plt.hist(class_nitrate, bins=10, edgecolor='black', color='plum')
@@ -177,7 +187,7 @@ plt.show()
 
 #### Histogram for Class Nitrite Readings
 ```{pyodide}
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 plt.figure(figsize=(10, 6))
 plt.hist(class_nitrite, bins=10, edgecolor='black', color='lemonchiffon')
@@ -192,7 +202,7 @@ plt.show()
 Add the mean and median to the nitrite histogram.
 
 ```{pyodide}
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 plt.figure(figsize=(10, 6))
 plt.hist(class_nitrite, bins=10, edgecolor='black', color='lemonchiffon')
