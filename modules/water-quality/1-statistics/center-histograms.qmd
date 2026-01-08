@@ -13,7 +13,7 @@ You have already calculated the mean and median by hand on your lab sheet. Now, 
 
 Python has built-in tools to calculate the mean. We'll use something called **NumPy** (Numerical Python). NumPy is one example of a *library* or *package* that you can add to Python. When you add a library to Python, you are increasing the functions availble to you. For example, we have many more options with NumPy than just **len()**, **min()**, and **max()**.
 
-We have to "import" these libraries in Python and then often give them a nickname. For example, we import NumPy as `np` instead of typing "numpy" all the time.
+We have to "import" these libraries in Python and then often give them a nickname. For example, we import NumPy as `np` instead of typing "numpy" all the time. An example of how this work has been written (and already run) below.
 
 ```{python}
 import numpy as np
@@ -33,6 +33,10 @@ print("mean of sample data:", mean_sample)
 
 ## Your Turn: Calculate Your Group's Mean Nitrate
 The website doesn't save your nitrate readings list from the previous page, so you'll need to re-enter your data into the list below (Line 4) again.
+
+**YOUR TURN:**  
+- Recreate the list of your group's nitrate readings below  
+- Run the block
 
 ```{pyodide}
 import numpy as np
@@ -62,7 +66,7 @@ One of the benefits of using Python is that is can handle much larger amount amo
 ## Your teacher will provide the link to the CSV file for you to use.
 :::
 
-Only edit the CSV URL in the code below. The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.
+Only edit the CSV URL in the code below (Line 6). The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.
 
 ```{pyodide}
 import requests
@@ -80,7 +84,7 @@ next(reader)  # Skip header row
 # Read all rows
 rows = list(reader)
 
-# Extract columns (change the index numbers to match your columns)
+# Extract columns
 class_nitrate = [int(row[3]) for row in rows]  # Fourth column (index 3)
 class_nitrite = [int(row[4]) for row in rows]  # Fifth column (index 4)
 

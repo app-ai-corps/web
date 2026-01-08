@@ -1808,112 +1808,112 @@
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html",
     "href": "1-statistics/spread-boxplots-outliers.html",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "",
-    "text": "The measures of spread tell us how spread out a set of numbers are. There are two main measures of spread: the standard deviation and the range. We calculate them in different ways.\n\n\nThe standard deviation tells us: How far, on average, are the numbers from the mean? The formula for the standard deviation is a bit more complicated:"
+    "text": "A second and final statistical measure we’ll discuss today is spread. Just as it sounds, measures of spread tell us how spread out our data are. Spread, also referred to as variability, is the backbone of statistics!\nTo-Do: We need to re-load the class csv data since the webpage doesn’t save things from page-to-page. Please paste the csv link again in the block below and run it."
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#what-are-outliers",
     "href": "1-statistics/spread-boxplots-outliers.html#what-are-outliers",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "What Are Outliers?",
     "text": "What Are Outliers?\nOutliers are data points that are very different from the rest of your data. They’re the “weird” numbers that don’t fit the pattern.\nExample: pH readings from a creek: 7.1, 7.2, 7.0, 7.1, 12.3, 7.2\nThat 12.3 is an outlier! It’s way higher than everything else."
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#why-do-outliers-happen",
     "href": "1-statistics/spread-boxplots-outliers.html#why-do-outliers-happen",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "Why Do Outliers Happen?",
     "text": "Why Do Outliers Happen?\nOutliers can happen for different reasons:\n\n1. Sensor Malfunction 🔧\n\nThe sensor glitched or needs calibration\nBattery was dying\nSensor got knocked around\n\n\n\n2. Real Pollution Event 🚨\n\nFactory dumped chemicals into the stream\nFarm fertilizer washed in after a storm\nSewage spill\n\n\n\n3. Natural Event 🌧️\n\nHeavy rain changed water chemistry\nAlgae bloom\nSeasonal variation\n\nYour job as a scientist: Figure out which reason it is!"
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#why-outliers-matter-for-water-quality",
     "href": "1-statistics/spread-boxplots-outliers.html#why-outliers-matter-for-water-quality",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "Why Outliers Matter for Water Quality",
     "text": "Why Outliers Matter for Water Quality\nOutliers are REALLY important because:\n\nThey might be pollution! That weird high nitrate reading could mean someone dumped something bad\nThey mess up your statistics - Remember how the mean got messed up?\nThey could mean broken equipment - Your sensor might need fixing\nThey tell a story - What happened that day?"
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#lets-spot-some-outliers",
     "href": "1-statistics/spread-boxplots-outliers.html#lets-spot-some-outliers",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "Let’s Spot Some Outliers!",
     "text": "Let’s Spot Some Outliers!\nHere’s a simple way to spot outliers by looking at the data:\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Example: pH readings from a stream over 10 days\n# Most are normal, but Day 8 looks weird!\ndays = list(range(1, 11))\nph_readings = [7.2, 7.1, 7.3, 7.2, 7.1, 7.2, 7.1, 9.8, 7.2, 7.1]\n\n# Plot the data\nplt.figure(figsize=(10, 6))\nplt.plot(days, ph_readings, marker='o', markersize=10, linewidth=2, color='blue')\nplt.axhline(y=np.mean(ph_readings), color='red', linestyle='--', linewidth=2, label='Mean (affected by outlier!)')\nplt.axhline(y=np.median(ph_readings), color='green', linestyle='--', linewidth=2, label='Median (more reliable)')\n\n# Mark the outlier\nplt.scatter([8], [9.8], s=300, color='red', marker='X', zorder=5, label='Outlier!')\n\nplt.xlabel('Day', fontsize=12)\nplt.ylabel('pH', fontsize=12)\nplt.title('Can You Spot the Outlier?', fontsize=14)\nplt.legend(fontsize=11)\nplt.grid(True, alpha=0.3)\nplt.ylim(6, 11)\nplt.show()\n\nprint(\"pH readings:\", ph_readings)\nprint(f\"Mean: {np.mean(ph_readings):.2f} (pulled up by outlier)\")\nprint(f\"Median: {np.median(ph_readings):.2f} (not affected)\")\nprint(\"\\nDay 8 is definitely weird! Something happened that day.\")\n\n\n\n\n\n\n\n\npH readings: [7.2, 7.1, 7.3, 7.2, 7.1, 7.2, 7.1, 9.8, 7.2, 7.1]\nMean: 7.43 (pulled up by outlier)\nMedian: 7.20 (not affected)\n\nDay 8 is definitely weird! Something happened that day."
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#method-1-the-iqr-method-interquartile-range",
     "href": "1-statistics/spread-boxplots-outliers.html#method-1-the-iqr-method-interquartile-range",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "Method 1: The IQR Method (Interquartile Range)",
     "text": "Method 1: The IQR Method (Interquartile Range)\nThis is a fancy way scientists detect outliers. Don’t worry, it’s easier than it sounds!\nThe idea: Most data should be in a certain range. If a number is way outside that range, it’s an outlier.\nHow it works: 1. Find Q1 (25th percentile) - 25% of data is below this 2. Find Q3 (75th percentile) - 75% of data is below this 3. Calculate IQR = Q3 - Q1 4. Anything below Q1 - 1.5×IQR is an outlier 5. Anything above Q3 + 1.5×IQR is an outlier\nDon’t memorize this! Python will do it for you.\n\nimport numpy as np\n\n# Example: Nitrate readings from a river\n# One reading is suspiciously high!\nnitrate = [2.1, 2.3, 2.2, 2.4, 2.2, 2.3, 15.0, 2.1, 2.2]\n\n# Calculate IQR\nq1 = np.percentile(nitrate, 25)  # 25th percentile\nq3 = np.percentile(nitrate, 75)  # 75th percentile\niqr = q3 - q1\n\n# Calculate outlier boundaries\nlower_bound = q1 - 1.5 * iqr\nupper_bound = q3 + 1.5 * iqr\n\nprint(\"Nitrate readings (mg/L):\", nitrate)\nprint(f\"\\nQ1 (25th percentile): {q1:.2f}\")\nprint(f\"Q3 (75th percentile): {q3:.2f}\")\nprint(f\"IQR: {iqr:.2f}\")\nprint(f\"\\nOutlier boundaries:\")\nprint(f\"  Lower bound: {lower_bound:.2f}\")\nprint(f\"  Upper bound: {upper_bound:.2f}\")\n\n# Find the outliers\noutliers = [x for x in nitrate if x &lt; lower_bound or x &gt; upper_bound]\nprint(f\"\\nOutliers detected: {outliers}\")\n\nNitrate readings (mg/L): [2.1, 2.3, 2.2, 2.4, 2.2, 2.3, 15.0, 2.1, 2.2]\n\nQ1 (25th percentile): 2.20\nQ3 (75th percentile): 2.30\nIQR: 0.10\n\nOutlier boundaries:\n  Lower bound: 2.05\n  Upper bound: 2.45\n\nOutliers detected: [15.0]"
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#visualizing-outliers-with-a-box-plot",
     "href": "1-statistics/spread-boxplots-outliers.html#visualizing-outliers-with-a-box-plot",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "Visualizing Outliers with a Box Plot",
     "text": "Visualizing Outliers with a Box Plot\nA box plot is a graph that shows outliers automatically! It’s like a detective tool for finding weird data.\n\nimport matplotlib.pyplot as plt\n\n# Example: pH readings with some outliers\nph_data = [7.1, 7.2, 7.0, 7.3, 7.2, 7.1, 9.5, 7.2, 7.1, 7.0, 5.0, 7.3]\n\nplt.figure(figsize=(10, 6))\nplt.boxplot(ph_data, vert=True, patch_artist=True, \n            boxprops=dict(facecolor='lightblue'),\n            medianprops=dict(color='red', linewidth=2))\nplt.ylabel('pH Level', fontsize=12)\nplt.title('Box Plot: Outliers Shown as Circles', fontsize=14)\nplt.grid(True, alpha=0.3, axis='y')\nplt.ylim(4, 10)\n\nplt.text(1.15, 9.5, '← High outlier', fontsize=11, va='center')\nplt.text(1.15, 5.0, '← Low outlier', fontsize=11, va='center')\n\nplt.show()\n\nprint(\"The circles show outliers!\")\nprint(\"The box shows where most of the 'normal' data is.\")\n\n\n\n\n\n\n\n\nThe circles show outliers!\nThe box shows where most of the 'normal' data is.\n\n\nReading a box plot: - The line in the middle = Median - The box = Where the middle 50% of data is - The whiskers (lines extending out) = Normal range - The circles = Outliers!"
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#try-it-detect-outliers",
     "href": "1-statistics/spread-boxplots-outliers.html#try-it-detect-outliers",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "Try It: Detect Outliers",
     "text": "Try It: Detect Outliers"
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#what-should-you-do-with-outliers",
     "href": "1-statistics/spread-boxplots-outliers.html#what-should-you-do-with-outliers",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "What Should You Do with Outliers?",
     "text": "What Should You Do with Outliers?\nOnce you find an outlier, you have some choices:\n\nOption 1: Keep It ✅\nWhen to do this: - It’s a real measurement (like a pollution event) - You want to study what caused it - It’s important for your research\n\n# Example: Keep the outlier because it's a real pollution event\ndata_with_outlier = [2.1, 2.3, 2.2, 15.0, 2.4, 2.2]\nprint(\"Data with outlier:\", data_with_outlier)\nprint(f\"Mean: {np.mean(data_with_outlier):.2f}\")\nprint(\"\\nWe keep it because it shows a pollution event happened!\")\n\nData with outlier: [2.1, 2.3, 2.2, 15.0, 2.4, 2.2]\nMean: 4.37\n\nWe keep it because it shows a pollution event happened!\n\n\n\n\nOption 2: Remove It 🗑️\nWhen to do this: - It’s clearly a sensor error - It’s impossible (like pH of 20) - You want to see typical conditions\n\n# Example: Remove the outlier because it's a sensor error\ndata_with_outlier = [7.1, 7.2, 7.0, 15.0, 7.2, 7.1]\ndata_cleaned = [x for x in data_with_outlier if x &lt; 10]  # Remove anything above 10\n\nprint(\"Original data:\", data_with_outlier)\nprint(\"Cleaned data:\", data_cleaned)\nprint(f\"\\nMean before: {np.mean(data_with_outlier):.2f}\")\nprint(f\"Mean after: {np.mean(data_cleaned):.2f}\")\nprint(\"\\nMuch better! Now the mean makes sense.\")\n\nOriginal data: [7.1, 7.2, 7.0, 15.0, 7.2, 7.1]\nCleaned data: [7.1, 7.2, 7.0, 7.2, 7.1]\n\nMean before: 8.43\nMean after: 7.12\n\nMuch better! Now the mean makes sense.\n\n\n\n\nOption 3: Investigate It 🔍\nAlways do this first! - Check your field notes - What happened that day? - Look at weather data - Was there a storm? - Check the sensor - Is it working correctly? - Ask: Is this reading even possible?"
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#real-world-detective-work",
     "href": "1-statistics/spread-boxplots-outliers.html#real-world-detective-work",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "Real-World Detective Work",
     "text": "Real-World Detective Work\nLet’s practice being water quality detectives!\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Scenario: You're monitoring a stream near a farm\n# Here are nitrate readings over 2 weeks\ndays = list(range(1, 15))\nnitrate = [2.1, 2.3, 2.2, 2.4, 2.2, 8.5, 9.2, 3.0, 2.8, 2.9, 2.7, 2.8, 2.9, 2.6]\n\n# Plot it\nplt.figure(figsize=(12, 6))\nplt.plot(days, nitrate, marker='o', markersize=10, linewidth=2, color='brown')\nplt.axhline(y=np.median(nitrate), color='green', linestyle='--', linewidth=2, label='Median')\nplt.axhline(y=10, color='red', linestyle='--', linewidth=2, alpha=0.5, label='EPA Limit')\n\n# Highlight the spike\nplt.scatter([6, 7], [8.5, 9.2], s=300, color='red', marker='X', zorder=5, label='Spike!')\n\nplt.xlabel('Day', fontsize=12)\nplt.ylabel('Nitrate (mg/L)', fontsize=12)\nplt.title('Mystery: What Happened on Days 6-7?', fontsize=14)\nplt.legend(fontsize=11)\nplt.grid(True, alpha=0.3)\nplt.show()\n\nprint(\"Detective Questions:\")\nprint(\"1. Are Days 6-7 outliers? (YES - much higher than others)\")\nprint(\"2. Are they sensor errors? (Probably NOT - both days show high values)\")\nprint(\"3. What could cause this? (Possible: Heavy rain → fertilizer runoff)\")\nprint(\"4. Should we remove them? (NO - this is real data showing an event!)\")\nprint(\"\\nConclusion: This looks like a real pollution event to investigate!\")\n\n\n\n\n\n\n\n\nDetective Questions:\n1. Are Days 6-7 outliers? (YES - much higher than others)\n2. Are they sensor errors? (Probably NOT - both days show high values)\n3. What could cause this? (Possible: Heavy rain → fertilizer runoff)\n4. Should we remove them? (NO - this is real data showing an event!)\n\nConclusion: This looks like a real pollution event to investigate!"
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#comparing-with-and-without-outliers",
     "href": "1-statistics/spread-boxplots-outliers.html#comparing-with-and-without-outliers",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "Comparing With and Without Outliers",
     "text": "Comparing With and Without Outliers\n\nimport numpy as np\n\n# Example: Creek pH data with one bad sensor reading\ncreek_ph = [7.1, 7.2, 7.0, 7.2, 14.5, 7.1, 7.2]\n\n# Calculate statistics both ways\nprint(\"WITH the outlier (14.5):\")\nprint(f\"  Mean: {np.mean(creek_ph):.2f}\")\nprint(f\"  Median: {np.median(creek_ph):.2f}\")\nprint(f\"  Standard Deviation: {np.std(creek_ph):.2f}\")\n\n# Remove the outlier (14.5 is impossible for creek water)\ncreek_ph_clean = [x for x in creek_ph if x &lt; 10]\n\nprint(\"\\nWITHOUT the outlier:\")\nprint(f\"  Mean: {np.mean(creek_ph_clean):.2f}\")\nprint(f\"  Median: {np.median(creek_ph_clean):.2f}\")\nprint(f\"  Standard Deviation: {np.std(creek_ph_clean):.2f}\")\n\nprint(\"\\nSee how much more accurate the statistics are without the bad reading?\")\n\nWITH the outlier (14.5):\n  Mean: 8.19\n  Median: 7.20\n  Standard Deviation: 2.58\n\nWITHOUT the outlier:\n  Mean: 7.13\n  Median: 7.15\n  Standard Deviation: 0.07\n\nSee how much more accurate the statistics are without the bad reading?"
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#your-future-outliers-in-buoy-data",
     "href": "1-statistics/spread-boxplots-outliers.html#your-future-outliers-in-buoy-data",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "Your Future: Outliers in Buoy Data",
     "text": "Your Future: Outliers in Buoy Data\nWhen you deploy sensor buoys in real streams, you’ll see outliers! Some will be:\nReal events to study: - 🌧️ Storm runoff events - 🏭 Pollution spills - 🦠 Algae blooms - 🌊 Seasonal changes\nEquipment issues to fix: - 🔋 Low battery - 🔧 Sensor needs calibration - 📡 Data transmission errors - 🐟 Something bumped the sensor\nThe skills you’re learning now will help you tell the difference!"
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#quick-reference-finding-outliers",
     "href": "1-statistics/spread-boxplots-outliers.html#quick-reference-finding-outliers",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "Quick Reference: Finding Outliers",
     "text": "Quick Reference: Finding Outliers\n# IQR Method (copy this code!)\nimport numpy as np\n\ndata = [your_readings_here]\n\n# Calculate boundaries\nq1 = np.percentile(data, 25)\nq3 = np.percentile(data, 75)\niqr = q3 - q1\nlower = q1 - 1.5 * iqr\nupper = q3 + 1.5 * iqr\n\n# Find outliers\noutliers = [x for x in data if x &lt; lower or x &gt; upper]\nprint(\"Outliers:\", outliers)"
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#try-it-multiple-outliers",
     "href": "1-statistics/spread-boxplots-outliers.html#try-it-multiple-outliers",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "Try It: Multiple Outliers",
     "text": "Try It: Multiple Outliers"
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#key-takeaways",
     "href": "1-statistics/spread-boxplots-outliers.html#key-takeaways",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "Key Takeaways",
     "text": "Key Takeaways\n\n🔍 Outliers = Data points that don’t fit the pattern\n⚠️ They could mean: pollution events, sensor errors, or data mistakes\n📊 IQR method = Math way to find outliers automatically\n📉 Box plots = Visual way to spot outliers (shown as circles)\n🤔 Always investigate before removing outliers\n✅ Keep outliers if they’re real events worth studying\n🗑️ Remove outliers if they’re equipment errors\n🌊 Real stream data will have outliers - you need to understand them!"
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#the-decision-tree",
     "href": "1-statistics/spread-boxplots-outliers.html#the-decision-tree",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "The Decision Tree",
     "text": "The Decision Tree\nWhen you find an outlier, ask yourself:\n\nIs it possible? (pH of 20 = No, pH of 8.5 = Yes)\nWhat happened that day? (Check notes, weather, etc.)\nDoes it fit a pattern? (One spike vs multiple high readings)\nIs the sensor working? (Check calibration, battery)\n\nThen decide: Keep it, remove it, or investigate more!\nNext lesson: We’ll learn about scatterplots - how to see if two things (like pH and nitrate) are related!"
   },
@@ -2048,7 +2048,7 @@
     "href": "1-statistics/center-histograms.html#calculating-statistics-with-python",
     "title": "Using Python for Statistics",
     "section": "Calculating Statistics With Python",
-    "text": "Calculating Statistics With Python\n\nMean\nPython has built-in tools to calculate the mean. We’ll use something called NumPy (Numerical Python). NumPy is one example of a library or package that you can add to Python. When you add a library to Python, you are increasing the functions availble to you. For example, we have many more options with NumPy than just len(), min(), and max().\nWe have to “import” these libraries in Python and then often give them a nickname. For example, we import NumPy as np instead of typing “numpy” all the time.\n\nimport numpy as np\n\n# Same sample dataset\nsample_data = [1, 2, 6, 5, 1]\n\n# Calculate mean the easy way!\nmean_sample = np.mean(sample_data)\n\nprint(\"mean of sample data:\", mean_sample)\n\nmean of sample data: 3.0\n\n\nBreaking it down:\n- import numpy as np = Load the NumPy library/package (we only do this once)\n- np.mean() = NumPy’s function to calculate mean"
+    "text": "Calculating Statistics With Python\n\nMean\nPython has built-in tools to calculate the mean. We’ll use something called NumPy (Numerical Python). NumPy is one example of a library or package that you can add to Python. When you add a library to Python, you are increasing the functions availble to you. For example, we have many more options with NumPy than just len(), min(), and max().\nWe have to “import” these libraries in Python and then often give them a nickname. For example, we import NumPy as np instead of typing “numpy” all the time. An example of how this work has been written (and already run) below.\n\nimport numpy as np\n\n# Same sample dataset\nsample_data = [1, 2, 6, 5, 1]\n\n# Calculate mean the easy way!\nmean_sample = np.mean(sample_data)\n\nprint(\"mean of sample data:\", mean_sample)\n\nmean of sample data: 3.0\n\n\nBreaking it down:\n- import numpy as np = Load the NumPy library/package (we only do this once)\n- np.mean() = NumPy’s function to calculate mean"
   },
   {
     "objectID": "1-statistics/center-histograms.html#your-turn-calculate-mean-nitrate",
@@ -2069,14 +2069,14 @@
     "href": "1-statistics/center-histograms.html#your-turn-calculate-your-groups-mean-nitrate",
     "title": "Using Python for Statistics",
     "section": "Your Turn: Calculate Your Group’s Mean Nitrate",
-    "text": "Your Turn: Calculate Your Group’s Mean Nitrate\nThe website doesn’t save your nitrate readings list from the previous page, so you’ll need to re-enter your data into the list below (Line 4) again."
+    "text": "Your Turn: Calculate Your Group’s Mean Nitrate\nThe website doesn’t save your nitrate readings list from the previous page, so you’ll need to re-enter your data into the list below (Line 4) again.\nYOUR TURN:\n- Recreate the list of your group’s nitrate readings below\n- Run the block"
   },
   {
     "objectID": "1-statistics/center-histograms.html#class-data",
     "href": "1-statistics/center-histograms.html#class-data",
     "title": "Using Python for Statistics",
     "section": "Class Data",
-    "text": "Class Data\nOne of the benefits of using Python is that is can handle much larger amount amounts of data with ease. For example, let’s consider the nitrate and nitrite data your whole class collected. We’ll do that by importing the data collected in the Google Form. That form sends the data to a spreadsheet, or CSV (comman separated values) file.\n\n\n\n\n\n\nYour teacher will provide the link to the CSV file for you to use.\n\n\n\n\n\n\nOnly edit the CSV URL in the code below. The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.\n\n\n\n\n\n\n\nCalculating the Class Nitrate and Nitrate Mean\nUsing the code written to calculate the mean for your group’s nitrate data, modify it to calculate the class nitrate and nitrite means.\n\n\n\n\n\n\n\n\nCalculating the Class Nitrate and Nitrite Median\nSimilarly, calculate the median for the class nitrate and nitrite data."
+    "text": "Class Data\nOne of the benefits of using Python is that is can handle much larger amount amounts of data with ease. For example, let’s consider the nitrate and nitrite data your whole class collected. We’ll do that by importing the data collected in the Google Form. That form sends the data to a spreadsheet, or CSV (comman separated values) file.\n\n\n\n\n\n\nYour teacher will provide the link to the CSV file for you to use.\n\n\n\n\n\n\nOnly edit the CSV URL in the code below (Line 6). The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.\n\n\n\n\n\n\n\nCalculating the Class Nitrate and Nitrate Mean\nUsing the code written to calculate the mean for your group’s nitrate data, modify it to calculate the class nitrate and nitrite means.\n\n\n\n\n\n\n\n\nCalculating the Class Nitrate and Nitrite Median\nSimilarly, calculate the median for the class nitrate and nitrite data."
   },
   {
     "objectID": "1-statistics/center-histograms.html#visualizing-the-data-measures-of-center",
@@ -2084,5 +2084,61 @@
     "title": "Using Python for Statistics",
     "section": "Visualizing the Data & Measures of Center",
     "text": "Visualizing the Data & Measures of Center\n\nHistograms By Hand\nA key practice in statistics is to visualize the data! One of the main types of plots we can use to do this is a histogram. A histogram uses bins to group the data and then plots the number of observations in each bin.\n\n\n\n\n\n\nData Recorder (Sticky Notes)\n\n\n\nGrab those sticky notes from the lab!\n\n\nOn the wall, you will find two areas prepared for your stickies. One has an axis binned for nitrates (look for a max value of 50+) and the other has an axis binned for nitrites (look for a max value of 10+).\nPlace your stickies in the correct bin, putting your nitrate values on the nitrate graph and the nitrite values on the nitrite graph.\n\n\n\nHistograms with Python\nPython can also make histograms! Run the code blocks below to see a histogram of the class nitrate value (block #1) and the class nitrite values (block #2). Do the histograms look similar to the plots we made by hand?\n\nHistogram for Class Nitrate Readings\n\n\n\n\n\n\n\nAdd Mean and Median\nAdd the mean and median to the nitrate histogram.\n\n\n\n\n\n\n\n\n\nHistogram for Class Nitrite Readings\n\n\n\n\n\n\n\nAdd Mean and Median\nAdd the mean and median to the nitrite histogram.\n\n\n\n\n\n\n\n\n\n\n\n\nQuestion!\n\n\n\nWhat do you notice about the relationship between the mean and median on the nitrate and nitrite histograms? Why do you think that might be?"
+  },
+  {
+    "objectID": "1-statistics/spread-boxplots-outliers.html#understanding-standard-deviation",
+    "href": "1-statistics/spread-boxplots-outliers.html#understanding-standard-deviation",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Understanding Standard Deviation",
+    "text": "Understanding Standard Deviation\nThe mean tells us the average, but it doesn’t tell us if the readings are consistent or all over the place.\nStandard deviation (SD) tells us: How spread out are the numbers?\nThink of it like this:\nCreek A: pH readings are 7.1, 7.2, 7.1, 7.2, 7.1 (very consistent!)\nCreek B: pH readings are 6.5, 7.5, 6.8, 7.9, 6.6 (all over the place!)\nBoth might have similar means, but Creek A is more stable. Standard deviation measures this!"
+  },
+  {
+    "objectID": "1-statistics/spread-boxplots-outliers.html#what-standard-deviation-tells-us",
+    "href": "1-statistics/spread-boxplots-outliers.html#what-standard-deviation-tells-us",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "What Standard Deviation Tells Us",
+    "text": "What Standard Deviation Tells Us\n\nSmall SD = Readings are close together (stable, consistent)\nLarge SD = Readings are spread out (variable, inconsistent)\n\nWhy it matters for water quality: - Stable readings = Good! Water conditions are consistent - Variable readings = Investigate! Could be pollution events, sensor problems, or natural changes"
+  },
+  {
+    "objectID": "1-statistics/spread-boxplots-outliers.html#calculating-standard-deviation",
+    "href": "1-statistics/spread-boxplots-outliers.html#calculating-standard-deviation",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Calculating Standard Deviation",
+    "text": "Calculating Standard Deviation\n\nimport numpy as np\n\n# Two example creeks with same mean but different consistency\ncreek_a = [7.1, 7.2, 7.1, 7.2, 7.1, 7.2, 7.1]  # Stable creek\ncreek_b = [6.5, 7.5, 6.8, 7.9, 6.6, 7.3, 7.4]  # Variable creek\n\nmean_a = np.mean(creek_a)\nstd_a = np.std(creek_a)\n\nmean_b = np.mean(creek_b)\nstd_b = np.std(creek_b)\n\nprint(\"Creek A (Stable):\")\nprint(f\"  Mean pH: {mean_a:.2f}\")\nprint(f\"  Standard Deviation: {std_a:.3f}\")\nprint(f\"  Readings are usually within {mean_a - std_a:.2f} to {mean_a + std_a:.2f}\")\n\nprint(\"\\nCreek B (Variable):\")\nprint(f\"  Mean pH: {mean_b:.2f}\")\nprint(f\"  Standard Deviation: {std_b:.3f}\")\nprint(f\"  Readings are usually within {mean_b - std_b:.2f} to {mean_b + std_b:.2f}\")\n\nprint(f\"\\nCreek B has {std_b/std_a:.1f} times more variability!\")\nprint(\"A scientist would want to investigate WHY Creek B is so variable.\")\n\nCreek A (Stable):\n  Mean pH: 7.14\n  Standard Deviation: 0.049\n  Readings are usually within 7.09 to 7.19\n\nCreek B (Variable):\n  Mean pH: 7.14\n  Standard Deviation: 0.481\n  Readings are usually within 6.66 to 7.62\n\nCreek B has 9.7 times more variability!\nA scientist would want to investigate WHY Creek B is so variable."
+  },
+  {
+    "objectID": "1-statistics/spread-boxplots-outliers.html#visualizing-standard-deviation",
+    "href": "1-statistics/spread-boxplots-outliers.html#visualizing-standard-deviation",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Visualizing Standard Deviation",
+    "text": "Visualizing Standard Deviation\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Same two example creeks\ncreek_a = [7.1, 7.2, 7.1, 7.2, 7.1, 7.2, 7.1]\ncreek_b = [6.5, 7.5, 6.8, 7.9, 6.6, 7.3, 7.4]\n\nmean_a = np.mean(creek_a)\nstd_a = np.std(creek_a)\nmean_b = np.mean(creek_b)\nstd_b = np.std(creek_b)\n\n# Create side-by-side graphs\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))\n\ndays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']\n\n# Creek A - Stable\nax1.plot(days, creek_a, marker='o', markersize=10, linewidth=2, color='blue')\nax1.axhline(y=mean_a, color='red', linestyle='--', linewidth=2, label=f'Mean = {mean_a:.2f}')\nax1.axhline(y=mean_a + std_a, color='orange', linestyle=':', linewidth=2, label='±1 SD')\nax1.axhline(y=mean_a - std_a, color='orange', linestyle=':', linewidth=2)\nax1.fill_between(range(len(days)), mean_a - std_a, mean_a + std_a, alpha=0.2, color='orange')\nax1.set_xlabel('Day of Week', fontsize=11)\nax1.set_ylabel('pH Level', fontsize=11)\nax1.set_title(f'Creek A: Very Consistent (SD = {std_a:.3f})', fontsize=12)\nax1.legend()\nax1.grid(True, alpha=0.3)\nax1.set_ylim(6, 8.5)\n\n# Creek B - Variable\nax2.plot(days, creek_b, marker='o', markersize=10, linewidth=2, color='green')\nax2.axhline(y=mean_b, color='red', linestyle='--', linewidth=2, label=f'Mean = {mean_b:.2f}')\nax2.axhline(y=mean_b + std_b, color='orange', linestyle=':', linewidth=2, label='±1 SD')\nax2.axhline(y=mean_b - std_b, color='orange', linestyle=':', linewidth=2)\nax2.fill_between(range(len(days)), mean_b - std_b, mean_b + std_b, alpha=0.2, color='orange')\nax2.set_xlabel('Day of Week', fontsize=11)\nax2.set_ylabel('pH Level', fontsize=11)\nax2.set_title(f'Creek B: Very Variable (SD = {std_b:.3f})', fontsize=12)\nax2.legend()\nax2.grid(True, alpha=0.3)\nax2.set_ylim(6, 8.5)\n\nplt.tight_layout()\nplt.show()\n\nprint(\"The orange shaded area shows where most readings fall.\")\nprint(\"Creek A: narrow band = consistent\")\nprint(\"Creek B: wide band = variable\")\n\n\n\n\n\n\n\n\nThe orange shaded area shows where most readings fall.\nCreek A: narrow band = consistent\nCreek B: wide band = variable"
+  },
+  {
+    "objectID": "1-statistics/spread-boxplots-outliers.html#what-could-cause-high-variability",
+    "href": "1-statistics/spread-boxplots-outliers.html#what-could-cause-high-variability",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "What Could Cause High Variability?",
+    "text": "What Could Cause High Variability?\nIf a creek has high standard deviation (lots of variability), it might mean:\n\nPollution events - A factory dumps waste occasionally\nStorm runoff - Rain washes fertilizer from farms into the creek\nNatural cycles - Some creeks naturally vary (but usually not this much for pH)\nSensor problems - The equipment might need calibration\nDifferent sampling times - Morning vs afternoon can be different\n\nThis is why buoys are so useful - they can measure continuously and help you see these patterns!"
+  },
+  {
+    "objectID": "1-statistics/spread-boxplots-outliers.html#try-it-analyze-two-rivers",
+    "href": "1-statistics/spread-boxplots-outliers.html#try-it-analyze-two-rivers",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Try It: Analyze Two Rivers",
+    "text": "Try It: Analyze Two Rivers"
+  },
+  {
+    "objectID": "1-statistics/spread-boxplots-outliers.html#your-future-real-data-collection",
+    "href": "1-statistics/spread-boxplots-outliers.html#your-future-real-data-collection",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Your Future: Real Data Collection",
+    "text": "Your Future: Real Data Collection\nRight now, you’re practicing with example data that we created for learning. But soon you’ll:\n\n🌊 Deploy sensor buoys in real streams and creeks\n📊 Collect your OWN pH and nitrate data\n🔬 Use these same Python skills to analyze YOUR measurements\n📈 See real patterns in water quality over time\n\nInstead of 7 measurements, you might have 700! That’s when mean and standard deviation become REALLY useful.\nFor now, let’s keep practicing with examples so you’ll be ready when it’s time for real data collection!\n\nMeasures of Spread\nThe measures of spread tell us how spread out a set of numbers are. There are two main measures of spread: the standard deviation and the range. We calculate them in different ways.\n\nStandard Deviation\nThe standard deviation tells us: How far, on average, are the numbers from the mean? The formula for the standard deviation is a bit more complicated:"
+  },
+  {
+    "objectID": "1-statistics/spread-boxplots-outliers.html#two-measures-of-spread",
+    "href": "1-statistics/spread-boxplots-outliers.html#two-measures-of-spread",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Two Measures of Spread",
+    "text": "Two Measures of Spread\nToday, we’ll discuss two measures of spread: the range and the standard deviation.\n\nRange\nThe range is a fairly simple calculation. It’s the biggest number minus the smallest number. Or, put differently, the maximum minus the minimum in a dataset.\n\nmax() - min()\n\nHere is an example of finding the range using our sample dataset:\n\n\n\n\n\n\nYOUR TURN: Find the range of the class nitrate and class nitrate data! Fill in the ??? with the appropriate object name and run the block.\n\n\n\n\n\n\n\n\nStandard Deviation\nHow far numbers typically are from average (we’ll explain this more later!)\nExample: Which is more consistent? - Stream A: pH readings of 7.0, 7.1, 7.0, 7.1 (very consistent!) - Stream B: pH readings of 6.5, 7.5, 6.8, 7.9 (all over the place!)"
   }
 ]

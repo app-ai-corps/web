@@ -306,8 +306,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="mean" class="level3">
 <h3 class="anchored" data-anchor-id="mean">Mean</h3>
 <p>Python has built-in tools to calculate the mean. We’ll use something called <strong>NumPy</strong> (Numerical Python). NumPy is one example of a <em>library</em> or <em>package</em> that you can add to Python. When you add a library to Python, you are increasing the functions availble to you. For example, we have many more options with NumPy than just <strong>len()</strong>, <strong>min()</strong>, and <strong>max()</strong>.</p>
-<p>We have to “import” these libraries in Python and then often give them a nickname. For example, we import NumPy as <code>np</code> instead of typing “numpy” all the time.</p>
-<div id="be8632b8" class="cell" data-execution_count="1">
+<p>We have to “import” these libraries in Python and then often give them a nickname. For example, we import NumPy as <code>np</code> instead of typing “numpy” all the time. An example of how this work has been written (and already run) below.</p>
+<div id="f05a14f7" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Same sample dataset</span></span>
@@ -329,6 +329,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="your-turn-calculate-your-groups-mean-nitrate" class="level2">
 <h2 class="anchored" data-anchor-id="your-turn-calculate-your-groups-mean-nitrate">Your Turn: Calculate Your Group’s Mean Nitrate</h2>
 <p>The website doesn’t save your nitrate readings list from the previous page, so you’ll need to re-enter your data into the list below (Line 4) again.</p>
+<p><strong>YOUR TURN:</strong><br>
+- Recreate the list of your group’s nitrate readings below<br>
+- Run the block</p>
 <div>
 <div id="pyodide-1" class="exercise-cell">
 
@@ -354,13 +357,13 @@ Your teacher will provide the link to the CSV file for you to use.
 
 </div>
 </div>
-<p>Only edit the CSV URL in the code below. The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.</p>
+<p>Only edit the CSV URL in the code below (Line 6). The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.</p>
 <div>
 <div id="pyodide-2" class="exercise-cell">
 
 </div>
 <script type="pyodide-2-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IHJlcXVlc3RzXG5pbXBvcnQgY3N2XG5mcm9tIGlvIGltcG9ydCBTdHJpbmdJT1xuXG4jIFJlcGxhY2UgdGhlIHVybCB3aXRoIHRoZSBvbmUgcHJvdmlkZWQgZnJvbSB5b3VyIHRlYWNoZXIuIE1ha2Ugc3VyZSB0byBrZWVwIHRoZSBxdW90YXRpb24gbWFya3MhXG5jc3ZfdXJsID0gXCJ3d3cucmVwbGFjZV90aGlzX3dpdGhfeW91cl9jc3ZfdXJsLmNzdlwiXG5cbiMgR2V0IHRoZSBkYXRhXG5yZXNwb25zZSA9IHJlcXVlc3RzLmdldChjc3ZfdXJsKVxucmVhZGVyID0gY3N2LnJlYWRlcihTdHJpbmdJTyhyZXNwb25zZS50ZXh0KSlcbm5leHQocmVhZGVyKSAgIyBTa2lwIGhlYWRlciByb3dcblxuIyBSZWFkIGFsbCByb3dzXG5yb3dzID0gbGlzdChyZWFkZXIpXG5cbiMgRXh0cmFjdCBjb2x1bW5zIChjaGFuZ2UgdGhlIGluZGV4IG51bWJlcnMgdG8gbWF0Y2ggeW91ciBjb2x1bW5zKVxuY2xhc3Nfbml0cmF0ZSA9IFtpbnQocm93WzNdKSBmb3Igcm93IGluIHJvd3NdICAjIEZvdXJ0aCBjb2x1bW4gKGluZGV4IDMpXG5jbGFzc19uaXRyaXRlID0gW2ludChyb3dbNF0pIGZvciByb3cgaW4gcm93c10gICMgRmlmdGggY29sdW1uIChpbmRleCA0KVxuXG5wcmludChcIk5pdHJhdGUgdmFsdWVzOlwiLCBjbGFzc19uaXRyYXRlKVxucHJpbnQoXCJOaXRyaXRlIHZhbHVlczpcIiwgY2xhc3Nfbml0cml0ZSkifQ==
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IHJlcXVlc3RzXG5pbXBvcnQgY3N2XG5mcm9tIGlvIGltcG9ydCBTdHJpbmdJT1xuXG4jIFJlcGxhY2UgdGhlIHVybCB3aXRoIHRoZSBvbmUgcHJvdmlkZWQgZnJvbSB5b3VyIHRlYWNoZXIuIE1ha2Ugc3VyZSB0byBrZWVwIHRoZSBxdW90YXRpb24gbWFya3MhXG5jc3ZfdXJsID0gXCJ3d3cucmVwbGFjZV90aGlzX3dpdGhfeW91cl9jc3ZfdXJsLmNzdlwiXG5cbiMgR2V0IHRoZSBkYXRhXG5yZXNwb25zZSA9IHJlcXVlc3RzLmdldChjc3ZfdXJsKVxucmVhZGVyID0gY3N2LnJlYWRlcihTdHJpbmdJTyhyZXNwb25zZS50ZXh0KSlcbm5leHQocmVhZGVyKSAgIyBTa2lwIGhlYWRlciByb3dcblxuIyBSZWFkIGFsbCByb3dzXG5yb3dzID0gbGlzdChyZWFkZXIpXG5cbiMgRXh0cmFjdCBjb2x1bW5zXG5jbGFzc19uaXRyYXRlID0gW2ludChyb3dbM10pIGZvciByb3cgaW4gcm93c10gICMgRm91cnRoIGNvbHVtbiAoaW5kZXggMylcbmNsYXNzX25pdHJpdGUgPSBbaW50KHJvd1s0XSkgZm9yIHJvdyBpbiByb3dzXSAgIyBGaWZ0aCBjb2x1bW4gKGluZGV4IDQpXG5cbnByaW50KFwiTml0cmF0ZSB2YWx1ZXM6XCIsIGNsYXNzX25pdHJhdGUpXG5wcmludChcIk5pdHJpdGUgdmFsdWVzOlwiLCBjbGFzc19uaXRyaXRlKSJ9
 </script>
 </div>
 <section id="calculating-the-class-nitrate-and-nitrate-mean" class="level3">
