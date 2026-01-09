@@ -15,7 +15,7 @@ Python has built-in tools to calculate the mean. We'll use something called **Nu
 
 We have to "import" these libraries in Python and then often give them a nickname. For example, we import NumPy as `np` instead of typing "numpy" all the time. An example of how this work has been written (and already run) below.
 
-```{python}
+```{pyodide}
 import numpy as np
 
 # Same sample dataset
@@ -39,8 +39,6 @@ The website doesn't save your nitrate readings list from the previous page, so y
 - Run the block
 
 ```{pyodide}
-import numpy as np
-
 # Recreate the list of your group's nitrate readings below
 group_nitrate = [10, 20, 30, 40]
 
@@ -98,8 +96,6 @@ print("Nitrite values:", class_nitrite)
 Using the code written to calculate the mean for your group's nitrate data, modify it to calculate the class nitrate and nitrite means.
 
 ```{pyodide}
-import numpy as np
-
 # Calculate mean nitrate and nitrite for class data (replace the ???)
 mean_class_nitrate = np.mean(???)
 mean_class_nitrite = np.mean(???)
@@ -156,8 +152,6 @@ plt.show()
 ##### Add Mean and Median
 Add the mean and median to the nitrate histogram.
 ```{pyodide}
-import matplotlib.pyplot as plt
-
 plt.figure(figsize=(10, 6))
 plt.hist(class_nitrate, bins=10, edgecolor='black', color='plum')
 
@@ -177,8 +171,6 @@ plt.show()
 
 #### Histogram for Class Nitrite Readings
 ```{pyodide}
-import matplotlib.pyplot as plt
-
 plt.figure(figsize=(10, 6))
 plt.hist(class_nitrite, bins=10, edgecolor='black', color='lemonchiffon')
 plt.xlabel('Nitrite Level (mg/L)')
@@ -192,8 +184,6 @@ plt.show()
 Add the mean and median to the nitrite histogram.
 
 ```{pyodide}
-import matplotlib.pyplot as plt
-
 plt.figure(figsize=(10, 6))
 plt.hist(class_nitrite, bins=10, edgecolor='black', color='lemonchiffon')
 

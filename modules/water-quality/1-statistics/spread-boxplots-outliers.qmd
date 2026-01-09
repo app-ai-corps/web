@@ -80,8 +80,6 @@ print("Standard Deviation of sample data:", sample_stdev)
 
 **YOUR TURN:** Find the standard deviation of the class nitrate and class nitrite data! Fill in the `???` with the appropriate object name and run the block.
 ```{pyodide}
-import numpy as np
-
 class_nitrate_stdev = np.std(???)
 class_nitrite_stdev = np.std(???)
 
@@ -142,7 +140,6 @@ We can also use a **boxplot** to visualize outliers automatically! It's like a d
 
 ```{pyodide}
 import matplotlib.pyplot as plt
-import numpy as np
 
 plt.figure(figsize=(10, 6))
 plt.boxplot(sample_woutlier, vert=True, patch_artist=True, 
@@ -173,9 +170,6 @@ print("The box shows where most of the other data is.")
 **Your Turn:** Create a Boxplot for the Class Nitrate Data
 
 ```{pyodide}
-import numpy as np
-import matplotlib.pyplot as plt
-
 plt.figure(figsize=(8, 6))
 plt.boxplot(class_nitrate, vert=True, patch_artist=True,
             boxprops=dict(facecolor='plum'))
@@ -190,9 +184,6 @@ plt.show()
 **Your Turn:** Create a Boxplot for the Class Nitrite Data
 
 ```{pyodide}
-import numpy as np
-import matplotlib.pyplot as plt
-
 plt.figure(figsize=(8, 6))
 plt.boxplot(class_nitrite, vert=True, patch_artist=True,
             boxprops=dict(facecolor='lemonchiffon'))

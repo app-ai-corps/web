@@ -10,7 +10,7 @@ sidebar: lesson-1
 
 In Python, we store multiple numbers in something called a **list**.
 
-```{python}
+```{pyodide}
 # Our sample dataset from above (the square brackets [ ] make it a list)
 sample_data = [1, 2, 6, 5, 1]
 
