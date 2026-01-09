@@ -101,7 +101,9 @@ If a creek's reading has high standard deviation (lots of variability in compari
 
 It might also signal that your data has one or more ***outliers***.
 
-## What Are Outliers?
+## Outliers
+
+### What Are Outliers?
 
 **Outliers** are data points that are very different from the rest of your data. They're the "weird" numbers that don't fit the pattern. Outliers can really change your statistics—like mean and standard deviation.
 
@@ -113,7 +115,7 @@ sample_woutlier = [1, 2, 6, 5, 1, 15]
 
 That 15 is an outlier! It's way higher than everything else.
 
-## Why Do Outliers Happen?
+### Why Do Outliers Happen?
 
 Outliers can happen for different reasons:
 
@@ -134,9 +136,9 @@ Outliers can happen for different reasons:
 
 **Your job as a scientist:** Figure out which reason it is!
 
-## Visualizing Outliers
+## Boxplots
 
-We can also use a **box plot** to visualize outliers automatically! It's like a detective tool for finding weird data. Here is a boxplot of our sample data with the outlier added:
+We can also use a **boxplot** to visualize outliers automatically! It's like a detective tool for finding weird data. Here is a boxplot of our sample data with the outlier added:
 
 ```{pyodide}
 import matplotlib.pyplot as plt
@@ -164,9 +166,10 @@ print("The box shows where most of the other data is.")
 - The **whiskers** (lines extending out) = Normal range  
 - The **circles** = Outliers!  
 
-## Your Turn: Create a Boxplot for the Class Data
+
 
 ### Class Nitrate Boxplot
+**Your Turn:** Create a Boxplot for the Class Nitrate Data
 
 ```{pyodide}
 import numpy as np
@@ -183,6 +186,7 @@ plt.show()
 ```
 
 ### Class Nitrite Boxplot
+**Your Turn:** Create a Boxplot for the Class Nitrite Data
 
 ```{pyodide}
 import numpy as np
