@@ -1817,14 +1817,14 @@
     "href": "1-statistics/spread-boxplots-outliers.html#what-are-outliers",
     "title": "Measures of Spread, Spotting Outliers",
     "section": "What Are Outliers?",
-    "text": "What Are Outliers?\nOutliers are data points that are very different from the rest of your data. They’re the “weird” numbers that don’t fit the pattern.\nExample: pH readings from a creek: 7.1, 7.2, 7.0, 7.1, 12.3, 7.2\nThat 12.3 is an outlier! It’s way higher than everything else."
+    "text": "What Are Outliers?\nOutliers are data points that are very different from the rest of your data. They’re the “weird” numbers that don’t fit the pattern. Outliers can really change your statistics—like mean and standard deviation.\n\nsample_data = [1, 2, 6, 5, 1]\n\nsample_woutlier = [1, 2, 6, 5, 1, 15]\n\nThat 15 is an outlier! It’s way higher than everything else."
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#why-do-outliers-happen",
     "href": "1-statistics/spread-boxplots-outliers.html#why-do-outliers-happen",
     "title": "Measures of Spread, Spotting Outliers",
     "section": "Why Do Outliers Happen?",
-    "text": "Why Do Outliers Happen?\nOutliers can happen for different reasons:\n\n1. Sensor Malfunction 🔧\n\nThe sensor glitched or needs calibration\nBattery was dying\nSensor got knocked around\n\n\n\n2. Real Pollution Event 🚨\n\nFactory dumped chemicals into the stream\nFarm fertilizer washed in after a storm\nSewage spill\n\n\n\n3. Natural Event 🌧️\n\nHeavy rain changed water chemistry\nAlgae bloom\nSeasonal variation\n\nYour job as a scientist: Figure out which reason it is!"
+    "text": "Why Do Outliers Happen?\nOutliers can happen for different reasons:\n\nSensor Malfunction 🔧\n\n\nThe sensor glitched or needs calibration\nBattery was dying\nSensor got knocked around\n\n\nReal Pollution Event 🚨\n\n\nFactory dumped chemicals into the stream\nFarm fertilizer washed in after a storm\nSewage spill\n\n\nNatural Event 🌧️\n\n\nHeavy rain changed water chemistry\nAlgae bloom\nSeasonal variation\n\nYour job as a scientist: Figure out which reason it is!"
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#why-outliers-matter-for-water-quality",
@@ -1908,14 +1908,14 @@
     "href": "1-statistics/spread-boxplots-outliers.html#key-takeaways",
     "title": "Measures of Spread, Spotting Outliers",
     "section": "Key Takeaways",
-    "text": "Key Takeaways\n\n🔍 Outliers = Data points that don’t fit the pattern\n⚠️ They could mean: pollution events, sensor errors, or data mistakes\n📊 IQR method = Math way to find outliers automatically\n📉 Box plots = Visual way to spot outliers (shown as circles)\n🤔 Always investigate before removing outliers\n✅ Keep outliers if they’re real events worth studying\n🗑️ Remove outliers if they’re equipment errors\n🌊 Real stream data will have outliers - you need to understand them!"
+    "text": "Key Takeaways\n\n🔍 Outliers = Data points that don’t fit the pattern\n⚠️ They could mean: pollution events, sensor errors, or data mistakes\n📉 Box plots = Visual way to spot outliers (shown as circles)\n🤔 Always investigate outliers\n🗑️ Remove outliers if they’re equipment errors\n🌊 Real stream data will have outliers - you need to work to understand them!"
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#the-decision-tree",
     "href": "1-statistics/spread-boxplots-outliers.html#the-decision-tree",
     "title": "Measures of Spread, Spotting Outliers",
     "section": "The Decision Tree",
-    "text": "The Decision Tree\nWhen you find an outlier, ask yourself:\n\nIs it possible? (pH of 20 = No, pH of 8.5 = Yes)\nWhat happened that day? (Check notes, weather, etc.)\nDoes it fit a pattern? (One spike vs multiple high readings)\nIs the sensor working? (Check calibration, battery)\n\nThen decide: Keep it, remove it, or investigate more!\nNext lesson: We’ll learn about scatterplots - how to see if two things (like pH and nitrate) are related!"
+    "text": "The Decision Tree\nWhen you find an outlier, investigate it:\n\nIs it possible? (nitrate concentration of 100 mg/L = unlikely)\nWhat happened that day? (Check notes, weather, etc.)\nDoes it fit a pattern? (One spike vs multiple high readings)\nIs the sensor working? (Check calibration, battery)\n\nNext lesson: We’ll learn about scatterplots - how to see if two things (like pH and nitrate) are related!"
   },
   {
     "objectID": "1-statistics/center-histograms.html",
@@ -2118,7 +2118,7 @@
     "href": "1-statistics/spread-boxplots-outliers.html#what-could-cause-high-variability",
     "title": "Measures of Spread, Spotting Outliers",
     "section": "What Could Cause High Variability?",
-    "text": "What Could Cause High Variability?\nIf a creek’s reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:\n\nPollution events - A factory dumps waste occasionally\nStorm runoff - Rain washes fertilizer from farms into the creek\nNatural cycles - Some creeks naturally vary\nSensor problems - The equipment might need calibration\nDifferent sampling times - Morning vs afternoon can be different\n\nIt might also signal that your data has one ore more outliers."
+    "text": "What Could Cause High Variability?\nIf a creek’s reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:\n\nPollution events - A factory dumps waste occasionally\nStorm runoff - Rain washes fertilizer from farms into the creek\nNatural cycles - Some creeks naturally vary\nSensor problems - The equipment might need calibration\nDifferent sampling times - Morning vs afternoon can be different\n\nIt might also signal that your data has one or more outliers."
   },
   {
     "objectID": "1-statistics/spread-boxplots-outliers.html#try-it-analyze-two-rivers",
@@ -2140,5 +2140,33 @@
     "title": "Measures of Spread, Spotting Outliers",
     "section": "Two Measures of Spread",
     "text": "Two Measures of Spread\nToday, we’ll discuss two measures of spread: the range and the standard deviation.\n\nRange\nThe range is a fairly simple calculation. It’s the biggest number minus the smallest number. Or, put differently, the maximum minus the minimum in a dataset.\n\nmax() - min()\n\nHere is an example of finding the range using our sample dataset:\n\n\n\n\n\n\nYOUR TURN: Find the range of the class nitrate and class nitrate data! Fill in the ??? with the appropriate object name and run the block.\n\n\n\n\n\n\n\n\nStandard Deviation\nThe standard deviation tells us how spread out the numbers are from the mean. Put diffently, it tells us the average distance the data in the dataset is from the mean. The formula looks a bit technical:\n\n\\(\\Large \\sqrt{\\frac{\\sum (x - \\bar{x})^2}{n}}\\)\n\nHere is an example of calculating the standard deviation using our sample dataset:\n\n\n\n\n\n\nYOUR TURN: Find the standard deviation of the class nitrate and class nitrite data! Fill in the ??? with the appropriate object name and run the block."
+  },
+  {
+    "objectID": "1-statistics/spread-boxplots-outliers.html#when-encountering-an-outlier",
+    "href": "1-statistics/spread-boxplots-outliers.html#when-encountering-an-outlier",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "When Encountering an Outlier",
+    "text": "When Encountering an Outlier\nWhen you find an outlier, investigate it:\n\nIs it possible? (nitrate concentration of 100 mg/L = unlikely)\nWhat happened that day? (Check notes, weather, etc.)\nDoes it fit a pattern? (One spike vs multiple high readings)\nIs the sensor/buoy/test strip working? (Check calibration, battery)"
+  },
+  {
+    "objectID": "1-statistics/spread-boxplots-outliers.html#visualizing-outliers",
+    "href": "1-statistics/spread-boxplots-outliers.html#visualizing-outliers",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Visualizing Outliers",
+    "text": "Visualizing Outliers\nWe can also use a box plot to visualize outliers automatically! It’s like a detective tool for finding weird data. Here is a boxplot of our sample data with the outlier added:\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nplt.figure(figsize=(10, 6))\nplt.boxplot(sample_woutlier, vert=True, patch_artist=True, \n            boxprops=dict(facecolor='lightblue'),\n            medianprops=dict(color='red', linewidth=2))\nplt.title('Boxplot: Outliers Shown as Circles', fontsize=14)\nplt.grid(True, alpha=0.3, axis='y')\nplt.ylim(0, 17)\nplt.xticks([])\n\nplt.text(1.15, 15, '← High outlier', fontsize=11, va='center')\nplt.text(1.15, np.median(sample_woutlier), f'← Median ({np.median(sample_woutlier)})', fontsize=11, va='center')\n\nprint(\"The circle shows the outlier!\")\nprint(\"The box shows where most of the other data is.\")\n\nThe circle shows the outlier!\nThe box shows where most of the other data is.\n\n\n\n\n\n\n\n\n\nReading a box plot:\n- The line in the middle = Median\n- The box = Where the middle 50% of data is\n- The whiskers (lines extending out) = Normal range\n- The circles = Outliers!"
+  },
+  {
+    "objectID": "1-statistics/spread-boxplots-outliers.html#your-turn-create-a-boxplot-for-the-class-data",
+    "href": "1-statistics/spread-boxplots-outliers.html#your-turn-create-a-boxplot-for-the-class-data",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Your Turn: Create a Boxplot for the Class Data",
+    "text": "Your Turn: Create a Boxplot for the Class Data\n\nClass Nitrate Boxplot\n\n\n\n\n\n\n\n\nClass Nitrite Boxplot\n\n\n\n\n\n\n\n\n\n\n\n\nDo either have outliers? How do you know?"
+  },
+  {
+    "objectID": "1-statistics/spread-boxplots-outliers.html#takeaways-when-encountering-an-outlier",
+    "href": "1-statistics/spread-boxplots-outliers.html#takeaways-when-encountering-an-outlier",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Takeaways When Encountering an Outlier",
+    "text": "Takeaways When Encountering an Outlier\nWhen you find an outlier, investigate it:\n\nIs it possible? (nitrate concentration of 100 mg/L = unlikely)\nWhat happened that day? (Check notes, weather, etc.)\nDoes it fit a pattern? (One spike vs multiple high readings)\nIs the sensor/buoy/test strip working? (Check calibration, battery)"
   }
 ]

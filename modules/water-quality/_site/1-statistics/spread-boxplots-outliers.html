@@ -294,28 +294,14 @@ window.Quarto = {
   </ul></li>
   <li><a href="#what-could-cause-high-variability" id="toc-what-could-cause-high-variability" class="nav-link" data-scroll-target="#what-could-cause-high-variability">What Could Cause High Variability?</a></li>
   <li><a href="#what-are-outliers" id="toc-what-are-outliers" class="nav-link" data-scroll-target="#what-are-outliers">What Are Outliers?</a></li>
-  <li><a href="#why-do-outliers-happen" id="toc-why-do-outliers-happen" class="nav-link" data-scroll-target="#why-do-outliers-happen">Why Do Outliers Happen?</a>
+  <li><a href="#why-do-outliers-happen" id="toc-why-do-outliers-happen" class="nav-link" data-scroll-target="#why-do-outliers-happen">Why Do Outliers Happen?</a></li>
+  <li><a href="#visualizing-outliers" id="toc-visualizing-outliers" class="nav-link" data-scroll-target="#visualizing-outliers">Visualizing Outliers</a></li>
+  <li><a href="#your-turn-create-a-boxplot-for-the-class-data" id="toc-your-turn-create-a-boxplot-for-the-class-data" class="nav-link" data-scroll-target="#your-turn-create-a-boxplot-for-the-class-data">Your Turn: Create a Boxplot for the Class Data</a>
   <ul class="collapse">
-  <li><a href="#sensor-malfunction" id="toc-sensor-malfunction" class="nav-link" data-scroll-target="#sensor-malfunction">1. <strong>Sensor Malfunction</strong> 🔧</a></li>
-  <li><a href="#real-pollution-event" id="toc-real-pollution-event" class="nav-link" data-scroll-target="#real-pollution-event">2. <strong>Real Pollution Event</strong> 🚨</a></li>
-  <li><a href="#natural-event" id="toc-natural-event" class="nav-link" data-scroll-target="#natural-event">3. <strong>Natural Event</strong> 🌧️</a></li>
+  <li><a href="#class-nitrate-boxplot" id="toc-class-nitrate-boxplot" class="nav-link" data-scroll-target="#class-nitrate-boxplot">Class Nitrate Boxplot</a></li>
+  <li><a href="#class-nitrite-boxplot" id="toc-class-nitrite-boxplot" class="nav-link" data-scroll-target="#class-nitrite-boxplot">Class Nitrite Boxplot</a></li>
   </ul></li>
-  <li><a href="#why-outliers-matter-for-water-quality" id="toc-why-outliers-matter-for-water-quality" class="nav-link" data-scroll-target="#why-outliers-matter-for-water-quality">Why Outliers Matter for Water Quality</a></li>
-  <li><a href="#visualizing-outliers-with-a-box-plot" id="toc-visualizing-outliers-with-a-box-plot" class="nav-link" data-scroll-target="#visualizing-outliers-with-a-box-plot">Visualizing Outliers with a Box Plot</a></li>
-  <li><a href="#try-it-detect-outliers" id="toc-try-it-detect-outliers" class="nav-link" data-scroll-target="#try-it-detect-outliers">Try It: Detect Outliers</a></li>
-  <li><a href="#what-should-you-do-with-outliers" id="toc-what-should-you-do-with-outliers" class="nav-link" data-scroll-target="#what-should-you-do-with-outliers">What Should You Do with Outliers?</a>
-  <ul class="collapse">
-  <li><a href="#option-1-keep-it" id="toc-option-1-keep-it" class="nav-link" data-scroll-target="#option-1-keep-it">Option 1: Keep It ✅</a></li>
-  <li><a href="#option-2-remove-it" id="toc-option-2-remove-it" class="nav-link" data-scroll-target="#option-2-remove-it">Option 2: Remove It 🗑️</a></li>
-  <li><a href="#option-3-investigate-it" id="toc-option-3-investigate-it" class="nav-link" data-scroll-target="#option-3-investigate-it">Option 3: Investigate It 🔍</a></li>
-  </ul></li>
-  <li><a href="#real-world-detective-work" id="toc-real-world-detective-work" class="nav-link" data-scroll-target="#real-world-detective-work">Real-World Detective Work</a></li>
-  <li><a href="#comparing-with-and-without-outliers" id="toc-comparing-with-and-without-outliers" class="nav-link" data-scroll-target="#comparing-with-and-without-outliers">Comparing With and Without Outliers</a></li>
-  <li><a href="#your-future-outliers-in-buoy-data" id="toc-your-future-outliers-in-buoy-data" class="nav-link" data-scroll-target="#your-future-outliers-in-buoy-data">Your Future: Outliers in Buoy Data</a></li>
-  <li><a href="#quick-reference-finding-outliers" id="toc-quick-reference-finding-outliers" class="nav-link" data-scroll-target="#quick-reference-finding-outliers">Quick Reference: Finding Outliers</a></li>
-  <li><a href="#try-it-multiple-outliers" id="toc-try-it-multiple-outliers" class="nav-link" data-scroll-target="#try-it-multiple-outliers">Try It: Multiple Outliers</a></li>
-  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
-  <li><a href="#the-decision-tree" id="toc-the-decision-tree" class="nav-link" data-scroll-target="#the-decision-tree">The Decision Tree</a></li>
+  <li><a href="#takeaways-when-encountering-an-outlier" id="toc-takeaways-when-encountering-an-outlier" class="nav-link" data-scroll-target="#takeaways-when-encountering-an-outlier">Takeaways When Encountering an Outlier</a></li>
   </ul>
 </nav>
     </div>
@@ -415,35 +401,40 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5w
 <li><strong>Sensor problems</strong> - The equipment might need calibration</li>
 <li><strong>Different sampling times</strong> - Morning vs afternoon can be different</li>
 </ol>
-<p>It might also signal that your data has one ore more <strong><em>outliers</em></strong>.</p>
+<p>It might also signal that your data has one or more <strong><em>outliers</em></strong>.</p>
 </section>
 <section id="what-are-outliers" class="level2">
 <h2 class="anchored" data-anchor-id="what-are-outliers">What Are Outliers?</h2>
-<p><strong>Outliers</strong> are data points that are very different from the rest of your data. They’re the “weird” numbers that don’t fit the pattern.</p>
-<p><strong>Example:</strong> pH readings from a creek: <strong>7.1, 7.2, 7.0, 7.1, 12.3, 7.2</strong></p>
-<p>That 12.3 is an outlier! It’s way higher than everything else.</p>
+<p><strong>Outliers</strong> are data points that are very different from the rest of your data. They’re the “weird” numbers that don’t fit the pattern. Outliers can really change your statistics—like mean and standard deviation.</p>
+<div id="7676653c" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>sample_data <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">6</span>, <span class="dv">5</span>, <span class="dv">1</span>]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>sample_woutlier <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">6</span>, <span class="dv">5</span>, <span class="dv">1</span>, <span class="dv">15</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>That 15 is an outlier! It’s way higher than everything else.</p>
 </section>
 <section id="why-do-outliers-happen" class="level2">
 <h2 class="anchored" data-anchor-id="why-do-outliers-happen">Why Do Outliers Happen?</h2>
 <p>Outliers can happen for different reasons:</p>
-<section id="sensor-malfunction" class="level3">
-<h3 class="anchored" data-anchor-id="sensor-malfunction">1. <strong>Sensor Malfunction</strong> 🔧</h3>
+<ol type="1">
+<li><strong>Sensor Malfunction</strong> 🔧</li>
+</ol>
 <ul>
 <li>The sensor glitched or needs calibration</li>
 <li>Battery was dying</li>
 <li>Sensor got knocked around</li>
 </ul>
-</section>
-<section id="real-pollution-event" class="level3">
-<h3 class="anchored" data-anchor-id="real-pollution-event">2. <strong>Real Pollution Event</strong> 🚨</h3>
+<ol start="2" type="1">
+<li><strong>Real Pollution Event</strong> 🚨</li>
+</ol>
 <ul>
 <li>Factory dumped chemicals into the stream</li>
 <li>Farm fertilizer washed in after a storm</li>
 <li>Sewage spill</li>
 </ul>
-</section>
-<section id="natural-event" class="level3">
-<h3 class="anchored" data-anchor-id="natural-event">3. <strong>Natural Event</strong> 🌧️</h3>
+<ol start="3" type="1">
+<li><strong>Natural Event</strong> 🌧️</li>
+</ol>
 <ul>
 <li>Heavy rain changed water chemistry</li>
 <li>Algae bloom</li>
@@ -451,267 +442,92 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5w
 </ul>
 <p><strong>Your job as a scientist:</strong> Figure out which reason it is!</p>
 </section>
-</section>
-<section id="why-outliers-matter-for-water-quality" class="level2">
-<h2 class="anchored" data-anchor-id="why-outliers-matter-for-water-quality">Why Outliers Matter for Water Quality</h2>
-<p>Outliers are REALLY important because:</p>
-<ol type="1">
-<li><strong>They might be pollution!</strong> That weird high nitrate reading could mean someone dumped something bad</li>
-<li><strong>They mess up your statistics</strong> - Remember how the mean got messed up?</li>
-<li><strong>They could mean broken equipment</strong> - Your sensor might need fixing</li>
-<li><strong>They tell a story</strong> - What happened that day?</li>
-</ol>
-</section>
-<section id="visualizing-outliers-with-a-box-plot" class="level2">
-<h2 class="anchored" data-anchor-id="visualizing-outliers-with-a-box-plot">Visualizing Outliers with a Box Plot</h2>
-<p>A <strong>box plot</strong> is a graph that shows outliers automatically! It’s like a detective tool for finding weird data.</p>
-<div id="dba4d57e" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: pH readings with some outliers</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>ph_data <span class="op">=</span> [<span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.0</span>, <span class="fl">7.3</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">9.5</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.0</span>, <span class="fl">5.0</span>, <span class="fl">7.3</span>]</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>plt.boxplot(ph_data, vert<span class="op">=</span><span class="va">True</span>, patch_artist<span class="op">=</span><span class="va">True</span>, </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>            boxprops<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">'lightblue'</span>),</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>            medianprops<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">'red'</span>, linewidth<span class="op">=</span><span class="dv">2</span>))</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'pH Level'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Box Plot: Outliers Shown as Circles'</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>, axis<span class="op">=</span><span class="st">'y'</span>)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plt.ylim(<span class="dv">4</span>, <span class="dv">10</span>)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>plt.text(<span class="fl">1.15</span>, <span class="fl">9.5</span>, <span class="st">'← High outlier'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, va<span class="op">=</span><span class="st">'center'</span>)</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>plt.text(<span class="fl">1.15</span>, <span class="fl">5.0</span>, <span class="st">'← Low outlier'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, va<span class="op">=</span><span class="st">'center'</span>)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"The circles show outliers!"</span>)</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"The box shows where most of the 'normal' data is."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="visualizing-outliers" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-outliers">Visualizing Outliers</h2>
+<p>We can also use a <strong>box plot</strong> to visualize outliers automatically! It’s like a detective tool for finding weird data. Here is a boxplot of our sample data with the outlier added:</p>
+<div id="84554c66" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>plt.boxplot(sample_woutlier, vert<span class="op">=</span><span class="va">True</span>, patch_artist<span class="op">=</span><span class="va">True</span>, </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>            boxprops<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">'lightblue'</span>),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>            medianprops<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">'red'</span>, linewidth<span class="op">=</span><span class="dv">2</span>))</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Boxplot: Outliers Shown as Circles'</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>, axis<span class="op">=</span><span class="st">'y'</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>plt.ylim(<span class="dv">0</span>, <span class="dv">17</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>plt.xticks([])</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>plt.text(<span class="fl">1.15</span>, <span class="dv">15</span>, <span class="st">'← High outlier'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, va<span class="op">=</span><span class="st">'center'</span>)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>plt.text(<span class="fl">1.15</span>, np.median(sample_woutlier), <span class="ss">f'← Median (</span><span class="sc">{</span>np<span class="sc">.</span>median(sample_woutlier)<span class="sc">}</span><span class="ss">)'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, va<span class="op">=</span><span class="st">'center'</span>)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"The circle shows the outlier!"</span>)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"The box shows where most of the other data is."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>The circle shows the outlier!
+The box shows where most of the other data is.</code></pre>
+</div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="spread-boxplots-outliers_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="spread-boxplots-outliers_files/figure-html/cell-3-output-2.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
-<div class="cell-output cell-output-stdout">
-<pre><code>The circles show outliers!
-The box shows where most of the 'normal' data is.</code></pre>
 </div>
-</div>
-<p><strong>Reading a box plot:</strong> - The <strong>line in the middle</strong> = Median - The <strong>box</strong> = Where the middle 50% of data is - The <strong>whiskers</strong> (lines extending out) = Normal range - The <strong>circles</strong> = Outliers!</p>
+<p><strong>Reading a box plot:</strong><br>
+- The <strong>line in the middle</strong> = Median<br>
+- The <strong>box</strong> = Where the middle 50% of data is<br>
+- The <strong>whiskers</strong> (lines extending out) = Normal range<br>
+- The <strong>circles</strong> = Outliers!</p>
 </section>
-<section id="try-it-detect-outliers" class="level2">
-<h2 class="anchored" data-anchor-id="try-it-detect-outliers">Try It: Detect Outliers</h2>
+<section id="your-turn-create-a-boxplot-for-the-class-data" class="level2">
+<h2 class="anchored" data-anchor-id="your-turn-create-a-boxplot-for-the-class-data">Your Turn: Create a Boxplot for the Class Data</h2>
+<section id="class-nitrate-boxplot" class="level3">
+<h3 class="anchored" data-anchor-id="class-nitrate-boxplot">Class Nitrate Boxplot</h3>
 <div>
 <div id="pyodide-6" class="exercise-cell">
 
 </div>
 <script type="pyodide-6-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5wXG5pbXBvcnQgbWF0cGxvdGxpYi5weXBsb3QgYXMgcGx0XG5cbiMgRXhhbXBsZTogWW91J3JlIGFuYWx5emluZyBuaXRyYXRlIGZyb20gYSBjcmVla1xuIyBJcyB0aGVyZSBhbiBvdXRsaWVyP1xuY3JlZWtfbml0cmF0ZSA9IFszLjEsIDMuMiwgMy4wLCAzLjMsIDE4LjUsIDMuMSwgMy4yLCAzLjBdXG5cbiMgQ2FsY3VsYXRlIElRUiBtZXRob2RcbnExID0gbnAucGVyY2VudGlsZShjcmVla19uaXRyYXRlLCAyNSlcbnEzID0gbnAucGVyY2VudGlsZShjcmVla19uaXRyYXRlLCA3NSlcbmlxciA9IHEzIC0gcTFcbmxvd2VyX2JvdW5kID0gcTEgLSAxLjUgKiBpcXJcbnVwcGVyX2JvdW5kID0gcTMgKyAxLjUgKiBpcXJcblxucHJpbnQoXCJOaXRyYXRlIHJlYWRpbmdzOlwiLCBjcmVla19uaXRyYXRlKVxucHJpbnQoZlwiXFxuT3V0bGllciBib3VuZGFyaWVzOiB7bG93ZXJfYm91bmQ6LjJmfSB0byB7dXBwZXJfYm91bmQ6LjJmfVwiKVxuXG4jIEZpbmQgb3V0bGllcnNcbm91dGxpZXJzID0gW3ggZm9yIHggaW4gY3JlZWtfbml0cmF0ZSBpZiB4IDwgbG93ZXJfYm91bmQgb3IgeCA+IHVwcGVyX2JvdW5kXVxucHJpbnQoZlwiT3V0bGllcnMgZm91bmQ6IHtvdXRsaWVyc31cIilcblxuIyBNYWtlIGEgYm94IHBsb3RcbnBsdC5maWd1cmUoZmlnc2l6ZT0oOCwgNikpXG5wbHQuYm94cGxvdChjcmVla19uaXRyYXRlLCB2ZXJ0PVRydWUsIHBhdGNoX2FydGlzdD1UcnVlLFxuICAgICAgICAgICAgYm94cHJvcHM9ZGljdChmYWNlY29sb3I9J2xpZ2h0Z3JlZW4nKSlcbnBsdC55bGFiZWwoJ05pdHJhdGUgKG1nL0wpJywgZm9udHNpemU9MTIpXG5wbHQudGl0bGUoJ0JveCBQbG90IG9mIENyZWVrIE5pdHJhdGUnLCBmb250c2l6ZT0xMylcbnBsdC5ncmlkKFRydWUsIGFscGhhPTAuMywgYXhpcz0neScpXG5wbHQuc2hvdygpXG5cbiMgVHJ5IHJlbW92aW5nIHRoZSAxOC41IGFuZCBydW4gaXQgYWdhaW4hIn0=
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5wXG5pbXBvcnQgbWF0cGxvdGxpYi5weXBsb3QgYXMgcGx0XG5cbnBsdC5maWd1cmUoZmlnc2l6ZT0oOCwgNikpXG5wbHQuYm94cGxvdChjbGFzc19uaXRyYXRlLCB2ZXJ0PVRydWUsIHBhdGNoX2FydGlzdD1UcnVlLFxuICAgICAgICAgICAgYm94cHJvcHM9ZGljdChmYWNlY29sb3I9J3BsdW0nKSlcbnBsdC55bGFiZWwoJ05pdHJhdGUgKG1nL0wpJywgZm9udHNpemU9MTIpXG5wbHQueHRpY2tzKFtdKVxucGx0LnRpdGxlKCdCb3hwbG90IG9mIENsYXNzIE5pdHJhdGUnLCBmb250c2l6ZT0xMylcbnBsdC5ncmlkKFRydWUsIGFscGhhPTAuMywgYXhpcz0neScpXG5wbHQuc2hvdygpIn0=
 </script>
 </div>
 </section>
-<section id="what-should-you-do-with-outliers" class="level2">
-<h2 class="anchored" data-anchor-id="what-should-you-do-with-outliers">What Should You Do with Outliers?</h2>
-<p>Once you find an outlier, you have some choices:</p>
-<section id="option-1-keep-it" class="level3">
-<h3 class="anchored" data-anchor-id="option-1-keep-it">Option 1: Keep It ✅</h3>
-<p><strong>When to do this:</strong> - It’s a real measurement (like a pollution event) - You want to study what caused it - It’s important for your research</p>
-<div id="ba13da54" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Keep the outlier because it's a real pollution event</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>data_with_outlier <span class="op">=</span> [<span class="fl">2.1</span>, <span class="fl">2.3</span>, <span class="fl">2.2</span>, <span class="fl">15.0</span>, <span class="fl">2.4</span>, <span class="fl">2.2</span>]</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Data with outlier:"</span>, data_with_outlier)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Mean: </span><span class="sc">{</span>np<span class="sc">.</span>mean(data_with_outlier)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">We keep it because it shows a pollution event happened!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Data with outlier: [2.1, 2.3, 2.2, 15.0, 2.4, 2.2]
-Mean: 4.37
-
-We keep it because it shows a pollution event happened!</code></pre>
-</div>
-</div>
-</section>
-<section id="option-2-remove-it" class="level3">
-<h3 class="anchored" data-anchor-id="option-2-remove-it">Option 2: Remove It 🗑️</h3>
-<p><strong>When to do this:</strong> - It’s clearly a sensor error - It’s impossible (like pH of 20) - You want to see typical conditions</p>
-<div id="98be2384" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Remove the outlier because it's a sensor error</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>data_with_outlier <span class="op">=</span> [<span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.0</span>, <span class="fl">15.0</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>]</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>data_cleaned <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> data_with_outlier <span class="cf">if</span> x <span class="op">&lt;</span> <span class="dv">10</span>]  <span class="co"># Remove anything above 10</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Original data:"</span>, data_with_outlier)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Cleaned data:"</span>, data_cleaned)</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Mean before: </span><span class="sc">{</span>np<span class="sc">.</span>mean(data_with_outlier)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Mean after: </span><span class="sc">{</span>np<span class="sc">.</span>mean(data_cleaned)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Much better! Now the mean makes sense."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Original data: [7.1, 7.2, 7.0, 15.0, 7.2, 7.1]
-Cleaned data: [7.1, 7.2, 7.0, 7.2, 7.1]
-
-Mean before: 8.43
-Mean after: 7.12
-
-Much better! Now the mean makes sense.</code></pre>
-</div>
-</div>
-</section>
-<section id="option-3-investigate-it" class="level3">
-<h3 class="anchored" data-anchor-id="option-3-investigate-it">Option 3: Investigate It 🔍</h3>
-<p><strong>Always do this first!</strong> - Check your field notes - What happened that day? - Look at weather data - Was there a storm? - Check the sensor - Is it working correctly? - Ask: Is this reading even possible?</p>
-</section>
-</section>
-<section id="real-world-detective-work" class="level2">
-<h2 class="anchored" data-anchor-id="real-world-detective-work">Real-World Detective Work</h2>
-<p>Let’s practice being water quality detectives!</p>
-<div id="06da7cc0" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Scenario: You're monitoring a stream near a farm</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Here are nitrate readings over 2 weeks</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>days <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">15</span>))</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>nitrate <span class="op">=</span> [<span class="fl">2.1</span>, <span class="fl">2.3</span>, <span class="fl">2.2</span>, <span class="fl">2.4</span>, <span class="fl">2.2</span>, <span class="fl">8.5</span>, <span class="fl">9.2</span>, <span class="fl">3.0</span>, <span class="fl">2.8</span>, <span class="fl">2.9</span>, <span class="fl">2.7</span>, <span class="fl">2.8</span>, <span class="fl">2.9</span>, <span class="fl">2.6</span>]</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot it</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>plt.plot(days, nitrate, marker<span class="op">=</span><span class="st">'o'</span>, markersize<span class="op">=</span><span class="dv">10</span>, linewidth<span class="op">=</span><span class="dv">2</span>, color<span class="op">=</span><span class="st">'brown'</span>)</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>plt.axhline(y<span class="op">=</span>np.median(nitrate), color<span class="op">=</span><span class="st">'green'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">'Median'</span>)</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>plt.axhline(y<span class="op">=</span><span class="dv">10</span>, color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, label<span class="op">=</span><span class="st">'EPA Limit'</span>)</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Highlight the spike</span></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>plt.scatter([<span class="dv">6</span>, <span class="dv">7</span>], [<span class="fl">8.5</span>, <span class="fl">9.2</span>], s<span class="op">=</span><span class="dv">300</span>, color<span class="op">=</span><span class="st">'red'</span>, marker<span class="op">=</span><span class="st">'X'</span>, zorder<span class="op">=</span><span class="dv">5</span>, label<span class="op">=</span><span class="st">'Spike!'</span>)</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Day'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Nitrate (mg/L)'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Mystery: What Happened on Days 6-7?'</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>plt.legend(fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Detective Questions:"</span>)</span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"1. Are Days 6-7 outliers? (YES - much higher than others)"</span>)</span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"2. Are they sensor errors? (Probably NOT - both days show high values)"</span>)</span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"3. What could cause this? (Possible: Heavy rain → fertilizer runoff)"</span>)</span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"4. Should we remove them? (NO - this is real data showing an event!)"</span>)</span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Conclusion: This looks like a real pollution event to investigate!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="spread-boxplots-outliers_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Detective Questions:
-1. Are Days 6-7 outliers? (YES - much higher than others)
-2. Are they sensor errors? (Probably NOT - both days show high values)
-3. What could cause this? (Possible: Heavy rain → fertilizer runoff)
-4. Should we remove them? (NO - this is real data showing an event!)
-
-Conclusion: This looks like a real pollution event to investigate!</code></pre>
-</div>
-</div>
-</section>
-<section id="comparing-with-and-without-outliers" class="level2">
-<h2 class="anchored" data-anchor-id="comparing-with-and-without-outliers">Comparing With and Without Outliers</h2>
-<div id="51033bec" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Creek pH data with one bad sensor reading</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>creek_ph <span class="op">=</span> [<span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.0</span>, <span class="fl">7.2</span>, <span class="fl">14.5</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>]</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate statistics both ways</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"WITH the outlier (14.5):"</span>)</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Mean: </span><span class="sc">{</span>np<span class="sc">.</span>mean(creek_ph)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Median: </span><span class="sc">{</span>np<span class="sc">.</span>median(creek_ph)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Standard Deviation: </span><span class="sc">{</span>np<span class="sc">.</span>std(creek_ph)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove the outlier (14.5 is impossible for creek water)</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>creek_ph_clean <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> creek_ph <span class="cf">if</span> x <span class="op">&lt;</span> <span class="dv">10</span>]</span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">WITHOUT the outlier:"</span>)</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Mean: </span><span class="sc">{</span>np<span class="sc">.</span>mean(creek_ph_clean)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Median: </span><span class="sc">{</span>np<span class="sc">.</span>median(creek_ph_clean)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Standard Deviation: </span><span class="sc">{</span>np<span class="sc">.</span>std(creek_ph_clean)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">See how much more accurate the statistics are without the bad reading?"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>WITH the outlier (14.5):
-  Mean: 8.19
-  Median: 7.20
-  Standard Deviation: 2.58
-
-WITHOUT the outlier:
-  Mean: 7.13
-  Median: 7.15
-  Standard Deviation: 0.07
-
-See how much more accurate the statistics are without the bad reading?</code></pre>
-</div>
-</div>
-</section>
-<section id="your-future-outliers-in-buoy-data" class="level2">
-<h2 class="anchored" data-anchor-id="your-future-outliers-in-buoy-data">Your Future: Outliers in Buoy Data</h2>
-<p>When you deploy sensor buoys in real streams, you’ll see outliers! Some will be:</p>
-<p><strong>Real events to study:</strong> - 🌧️ Storm runoff events - 🏭 Pollution spills - 🦠 Algae blooms - 🌊 Seasonal changes</p>
-<p><strong>Equipment issues to fix:</strong> - 🔋 Low battery - 🔧 Sensor needs calibration - 📡 Data transmission errors - 🐟 Something bumped the sensor</p>
-<p>The skills you’re learning now will help you tell the difference!</p>
-</section>
-<section id="quick-reference-finding-outliers" class="level2">
-<h2 class="anchored" data-anchor-id="quick-reference-finding-outliers">Quick Reference: Finding Outliers</h2>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># IQR Method (copy this code!)</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [your_readings_here]</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate boundaries</span></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>q1 <span class="op">=</span> np.percentile(data, <span class="dv">25</span>)</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>q3 <span class="op">=</span> np.percentile(data, <span class="dv">75</span>)</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>iqr <span class="op">=</span> q3 <span class="op">-</span> q1</span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>lower <span class="op">=</span> q1 <span class="op">-</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>upper <span class="op">=</span> q3 <span class="op">+</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Find outliers</span></span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>outliers <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> data <span class="cf">if</span> x <span class="op">&lt;</span> lower <span class="kw">or</span> x <span class="op">&gt;</span> upper]</span>
-<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Outliers:"</span>, outliers)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="try-it-multiple-outliers" class="level2">
-<h2 class="anchored" data-anchor-id="try-it-multiple-outliers">Try It: Multiple Outliers</h2>
+<section id="class-nitrite-boxplot" class="level3">
+<h3 class="anchored" data-anchor-id="class-nitrite-boxplot">Class Nitrite Boxplot</h3>
 <div>
 <div id="pyodide-7" class="exercise-cell">
 
 </div>
 <script type="pyodide-7-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5wXG5pbXBvcnQgbWF0cGxvdGxpYi5weXBsb3QgYXMgcGx0XG5cbiMgRXhhbXBsZTogcEggcmVhZGluZ3Mgd2l0aCBzZXZlcmFsIG91dGxpZXJzXG5waF9yZWFkaW5ncyA9IFs3LjEsIDcuMiwgNy4wLCA5LjUsIDcuMiwgNy4xLCA1LjUsIDcuMywgNy4yLCA3LjEsIDEyLjAsIDcuMl1cblxuIyBNYWtlIGEgYm94IHBsb3RcbnBsdC5maWd1cmUoZmlnc2l6ZT0oMTAsIDYpKVxucGx0LmJveHBsb3QocGhfcmVhZGluZ3MsIHZlcnQ9VHJ1ZSwgcGF0Y2hfYXJ0aXN0PVRydWUsXG4gICAgICAgICAgICBib3hwcm9wcz1kaWN0KGZhY2Vjb2xvcj0nbGlnaHRjb3JhbCcpKVxucGx0LnlsYWJlbCgncEgnLCBmb250c2l6ZT0xMilcbnBsdC50aXRsZSgnSG93IE1hbnkgT3V0bGllcnMgQ2FuIFlvdSBTcG90PycsIGZvbnRzaXplPTEzKVxucGx0LmdyaWQoVHJ1ZSwgYWxwaGE9MC4zLCBheGlzPSd5JylcbnBsdC5zaG93KClcblxuIyBDYWxjdWxhdGUgSVFSIG1ldGhvZFxucTEgPSBucC5wZXJjZW50aWxlKHBoX3JlYWRpbmdzLCAyNSlcbnEzID0gbnAucGVyY2VudGlsZShwaF9yZWFkaW5ncywgNzUpXG5pcXIgPSBxMyAtIHExXG5sb3dlciA9IHExIC0gMS41ICogaXFyXG51cHBlciA9IHEzICsgMS41ICogaXFyXG5cbm91dGxpZXJzID0gW3ggZm9yIHggaW4gcGhfcmVhZGluZ3MgaWYgeCA8IGxvd2VyIG9yIHggPiB1cHBlcl1cblxucHJpbnQoXCJwSCByZWFkaW5nczpcIiwgcGhfcmVhZGluZ3MpXG5wcmludChmXCJPdXRsaWVycyBkZXRlY3RlZDoge291dGxpZXJzfVwiKVxucHJpbnQoXCJcXG5XaGF0IGRvIHlvdSB0aGluayBjYXVzZWQgZWFjaCBvdXRsaWVyP1wiKSJ9
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5wXG5pbXBvcnQgbWF0cGxvdGxpYi5weXBsb3QgYXMgcGx0XG5cbnBsdC5maWd1cmUoZmlnc2l6ZT0oOCwgNikpXG5wbHQuYm94cGxvdChjbGFzc19uaXRyaXRlLCB2ZXJ0PVRydWUsIHBhdGNoX2FydGlzdD1UcnVlLFxuICAgICAgICAgICAgYm94cHJvcHM9ZGljdChmYWNlY29sb3I9J2xlbW9uY2hpZmZvbicpKVxucGx0LnlsYWJlbCgnTml0cml0ZSAobWcvTCknLCBmb250c2l6ZT0xMilcbnBsdC54dGlja3MoW10pXG5wbHQudGl0bGUoJ0JveHBsb3Qgb2YgQ2xhc3MgTml0cml0ZScsIGZvbnRzaXplPTEzKVxucGx0LmdyaWQoVHJ1ZSwgYWxwaGE9MC4zLCBheGlzPSd5JylcbnBsdC5zaG93KCkifQ==
 </script>
 </div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Do either have outliers? How do you know?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
 </section>
-<section id="key-takeaways" class="level2">
-<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
-<ul>
-<li>🔍 <strong>Outliers</strong> = Data points that don’t fit the pattern</li>
-<li>⚠️ They could mean: pollution events, sensor errors, or data mistakes</li>
-<li>📊 <strong>IQR method</strong> = Math way to find outliers automatically</li>
-<li>📉 <strong>Box plots</strong> = Visual way to spot outliers (shown as circles)</li>
-<li>🤔 Always <strong>investigate</strong> before removing outliers</li>
-<li>✅ Keep outliers if they’re real events worth studying</li>
-<li>🗑️ Remove outliers if they’re equipment errors</li>
-<li>🌊 Real stream data will have outliers - you need to understand them!</li>
-</ul>
 </section>
-<section id="the-decision-tree" class="level2">
-<h2 class="anchored" data-anchor-id="the-decision-tree">The Decision Tree</h2>
-<p>When you find an outlier, ask yourself:</p>
+<section id="takeaways-when-encountering-an-outlier" class="level2">
+<h2 class="anchored" data-anchor-id="takeaways-when-encountering-an-outlier">Takeaways When Encountering an Outlier</h2>
+<p>When you find an outlier, investigate it:</p>
 <ol type="1">
-<li><strong>Is it possible?</strong> (pH of 20 = No, pH of 8.5 = Yes)</li>
+<li><strong>Is it possible?</strong> (nitrate concentration of 100 mg/L = unlikely)</li>
 <li><strong>What happened that day?</strong> (Check notes, weather, etc.)</li>
 <li><strong>Does it fit a pattern?</strong> (One spike vs multiple high readings)</li>
-<li><strong>Is the sensor working?</strong> (Check calibration, battery)</li>
+<li><strong>Is the sensor/buoy/test strip working?</strong> (Check calibration, battery)</li>
 </ol>
-<p>Then decide: Keep it, remove it, or investigate more!</p>
-<p><strong>Next lesson:</strong> We’ll learn about scatterplots - how to see if two things (like pH and nitrate) are related!</p>
 
 
 <script type="pyodide-data">
