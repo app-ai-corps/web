@@ -3,6 +3,26 @@ title: "Using Python for Statistics"
 format: live-html
 sidebar: lesson-1
 ---
+
+```{python}
+#| echo: false
+
+import requests
+import csv
+from io import StringIO
+
+def load_class_data(csv_url):
+    response = requests.get(csv_url)
+    reader = csv.reader(StringIO(response.text))
+    next(reader)  # Skip header
+    rows = list(reader)
+    
+    class_nitrate = [int(row[3]) for row in rows]
+    class_nitrite = [int(row[4]) for row in rows]
+    
+    return class_nitrate, class_nitrite
+```
+
 As you might have guessed, Python can do much more than just the functions **len()**, **min()**, and **max()**. In fact, it can help us calculate our measures of center!
 
 You have already calculated the mean and median by hand on your lab sheet. Now, let's ask Python to do it!
@@ -68,26 +88,6 @@ One of the benefits of using Python is that is can handle much larger amount amo
 
 Only edit the CSV URL in the code below (Line 6). The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.
 
-```{python}
-#| echo: false
-#| output: false
-
-import requests
-import csv
-from io import StringIO
-
-def load_class_data(csv_url):
-    response = requests.get(csv_url)
-    reader = csv.reader(StringIO(response.text))
-    next(reader)  # Skip header
-    rows = list(reader)
-    
-    class_nitrate = [int(row[3]) for row in rows]
-    class_nitrite = [int(row[4]) for row in rows]
-    
-    return class_nitrate, class_nitrite
-```
-
 ```{pyodide}
 # Replace the url with the one provided from your teacher. 
 # Make sure to keep the quotation marks!
@@ -108,7 +108,7 @@ print("Nitrite values:", class_nitrite)
 Using the code written to calculate the mean for your group's nitrate data, modify it to calculate the class nitrate and nitrite means.
 
 ```{pyodide}
-import numpy as np
+# import numpy as np
 
 # Calculate mean nitrate and nitrite for class data (replace the ???)
 mean_class_nitrate = np.mean(???)
