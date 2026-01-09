@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-d184b5f03f113d3bdde33610d4b7dde6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ef1e1183c8756307733f0e7f451af57c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
 <link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -165,38 +165,52 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../1-statistics/introduction" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1. Introduction</span></a>
+  <a href="../1-statistics/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../1-statistics/mean-sd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Mean and SD</span></a>
+  <a href="../1-statistics/intro-water-quality" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Intro to Water Quality</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../1-statistics/median-range" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. Median and Range</span></a>
+  <a href="../1-statistics/nitrates-lab" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Nitrates Lab</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../1-statistics/intro-statistics" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Intro to Statistics</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../1-statistics/outliers" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4. Outliers</span></a>
+  <a href="../1-statistics/python-lists" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Python: Lists</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../1-statistics/scatterplots" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5. Scatterplots</span></a>
+  <a href="../1-statistics/center-histograms" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Center &amp; Histograms</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../1-statistics/spread-boxplots-outliers" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Spread, Outliers, &amp; Boxplots</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../1-statistics/exercises" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6. Exercises</span></a>
+ <span class="menu-text">8. Exercises</span></a>
   </div>
 </li>
     </ul>
@@ -418,6 +432,13 @@ window._ojs.runtime.interpretFromScriptTags();
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

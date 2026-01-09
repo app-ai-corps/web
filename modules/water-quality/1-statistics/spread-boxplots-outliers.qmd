@@ -137,7 +137,8 @@ Outliers can happen for different reasons:
 ## Visualizing Outliers
 
 We can also use a **box plot** to visualize outliers automatically! It's like a detective tool for finding weird data. Here is a boxplot of our sample data with the outlier added:
-```{python}
+
+```{pyodide}
 import matplotlib.pyplot as plt
 import numpy as np
 
