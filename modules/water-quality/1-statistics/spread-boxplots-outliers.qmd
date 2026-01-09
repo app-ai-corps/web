@@ -206,7 +206,7 @@ plt.show()
 ## Do either have outliers? How do you know?
 :::
 
-## Takeaways When Encountering an Outlier
+### Takeaways When Encountering an Outlier
 
 When you find an outlier, investigate it:
 
