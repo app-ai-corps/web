@@ -155,6 +155,7 @@ plt.xticks([])
 
 plt.text(1.15, 15, '← High outlier', fontsize=11, va='center')
 plt.text(1.15, np.median(sample_woutlier), f'← Median ({np.median(sample_woutlier)})', fontsize=11, va='center')
+plt.show()
 
 print("The circle shows the outlier!")
 print("The box shows where most of the other data is.")
