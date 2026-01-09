@@ -107,7 +107,7 @@ It might also signal that your data has one or more ***outliers***.
 
 **Outliers** are data points that are very different from the rest of your data. They're the "weird" numbers that don't fit the pattern. Outliers can really change your statistics—like mean and standard deviation.
 
-```{python}
+```{pyodide}
 sample_data = [1, 2, 6, 5, 1]
 
 sample_woutlier = [1, 2, 6, 5, 1, 15]
