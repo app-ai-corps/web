@@ -16,13 +16,14 @@ We are going to participate in a brief water quality lab to practice gathering d
 - pencils
 - 2 colors of sticky notes (1 color for nitrates and 1 color for nitrites)
 - 1 Sharpie marker
+- timing device (watch, clock, etc.)
 :::
 
 ## 🧑‍🔬 Preparing to Experiment!
 
 Assign roles to each person in your group:
 
-- **Role 1:** Data Recorder (Lap Report)  
+- **Role 1:** Data Recorder (Lab Report)  
     - *Needs:*  
         - 1 lab handout  
         - pencil  
@@ -43,7 +44,7 @@ Assign roles to each person in your group:
 1. **Lab Technician:** Take the first water sample, share the sample letter with your team. Then, take one new test strip and do the following:
     - Dip strip into sample for 2 seconds. *DO NOT* move the test strip while submerged.
     - Remove test strip from water.
-    - Hold test strip flat for 1 minute.
+    - Hold test strip flat for 1 minute. (Group should time this for 1 minute.)
     - Compare the colors on the test strip to those provided below. The pad on the end of the test strip indicates *nitrate* values (top row below) the second pad indicates *nitrite* values (bottom row below).
     ![](images/nitrate-test-strip-scale.png)  
     - If the color is between two values, estimate the concentation the best you can. Often finding the midpoint between two colors is a good estimate.
