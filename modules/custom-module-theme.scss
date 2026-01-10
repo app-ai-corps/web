@@ -90,3 +90,16 @@ h1, h2, h3, h4, h5, h6 {
   border-left: 5px solid #006C93 !important;
   background-color: #FFFFFF;
 }
+
+.quarto-float-lst figcaption {
+  font-weight: bold;
+}
+
+.quarto-float-lst figcaption {
+  background-color: #f1f9f9;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #016d94;
+  margin-bottom: 10px;
+}
