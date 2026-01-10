@@ -11,15 +11,15 @@ We are going to conduct a brief water quality lab to practice gathering data abo
 
 :::{.ltblue-container}
 **Materials Needed:**  
-- several water quality samples per group
-- several nitrate/nitrate test strips per group
-- 1 lab notesheet per person
-- 1 computer with the submission form open for data entry
-    - link to form will be provided by your teacher
-- pencils
-- 2 colors of sticky notes (1 color for nitrates and 1 color for nitrites)
-- 1 Sharpie marker
-- timing device (watch, clock, etc.)
+- several water quality samples per group  
+- several nitrate/nitrate test strips per group  
+- 1 lab notesheet per person  
+- 1 computer with the submission form open for data entry  
+    - link to form will be provided by your teacher  
+- pencils  
+- 2 colors of sticky notes (1 color for nitrates and 1 color for nitrites)  
+- 1 Sharpie marker  
+- timing device (watch, clock, etc.)  
 :::
 
 ## 🧑‍🔬 Preparing to Experiment!
