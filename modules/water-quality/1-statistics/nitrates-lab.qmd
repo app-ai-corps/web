@@ -10,7 +10,7 @@ sidebar: lesson-1
 We are going to conduct a brief water quality lab to practice gathering data about nitrates and nitrates in water samples.
 
 :::{.ltblue-container}
-### Materials Needed:
+**Materials Needed:**
 - several water quality samples per group
 - several nitrate/nitrate test strips per group
 - 1 lab notesheet per person
