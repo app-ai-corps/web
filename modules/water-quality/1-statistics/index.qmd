@@ -17,10 +17,6 @@ sidebar: lesson-1
 - Printed handout (including lab sheet)
 :::
 
-::: {.callout-tip}
-## [**Facilitator/Teacher Guide**](facilitator)
-:::
-
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
