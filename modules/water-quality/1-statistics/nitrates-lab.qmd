@@ -7,9 +7,10 @@ sidebar: lesson-1
 ---
 
 ## 🥽 Get Ready, Scientists!
-We are going to participate in a brief water quality lab to practice gathering data about nitrates and nitrates in water samples. Your group will need the following materials:
+We are going to conduct a brief water quality lab to practice gathering data about nitrates and nitrates in water samples.
 
 :::{.ltblue-container}
+### Materials Needed:
 - several water quality samples per group
 - several nitrate/nitrate test strips per group
 - 1 lab notesheet per person
