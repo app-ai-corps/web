@@ -47,6 +47,8 @@ A series of lessons using AI to explore and monitor Appalachian water resources.
 Learn mean, median, range, standard deviation, and outliers using nitrate/nitrite data.
 
 *Estimated time: 90 minutes*
+
+[**Teacher/Facilitator Guide:**](facilitator)
 :::
 
 ::: {.lesson-item}
