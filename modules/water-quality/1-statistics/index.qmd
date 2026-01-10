@@ -10,13 +10,24 @@ sidebar: lesson-1
 
 **Materials Needed:**  
 - Your computer  
-- A web browser (e.g., Chrome, Firefox, Safari)  
-- A calculator (any will do - your phone, computer calculator, or a TI-83)    
-- Printed student handout (including lab sheet)
+- A web browser (Chrome, Firefox, or Safari)  
+- A calculator   
+- Printed handout (including lab sheet)
 :::
 
 ::: {.callout-tip}
 ## [**Facilitator/Teacher Guide**](facilitator)
+:::
+
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 1:** Print Statements](@lst-printstatements)
+- [**Checkpoint 2:** Mathematical Operators](@lst-mathoperators)
+- [**Checkpoint 3:** Comparing Values](@lst-comparingvalues)
+- [**Checkpoint 4:** Print Statements with Math](@lst-printstatementsmath)
+- [**Checkpoint 5:** Your Own Print Statements](@lst-personalizedprintstatementsmath)
+
 :::
 
 ## 🔬💧 Welcome, Scientists!  
@@ -41,10 +52,10 @@ Python is a **programming language** — a way to give instructions to a compute
 ## 💻 Let's Try Python Right Now!
 
 ### Text/Strings
-Python will print text.
+Python will print text. Click the ▶️ button below to run your first Python code:
 
-:::{.ltblue-container}
-Click the ▶️ button below to run your first Python code:
+:::{#lst-printstatements}
+
 ```{pyodide}
 # This is a comment - Python ignores lines that start with #
 # Let's make Python print a message!
@@ -52,15 +63,19 @@ Click the ▶️ button below to run your first Python code:
 print("Hello, Water Scientist!")
 ```
 
-**🎉 You just ran Python code!** See how it printed "Hello, Water Scientist!" below the block? We call text printed like this a ***string***. 
+Print Statements!
+
+:::
+
+**🎉 You just ran Python code!** See how it printed "Hello, Water Scientist!" below the block? We call text like this a ***string***. 
 
 Notice that strings must be in quotation marks within the code but those marks don't appear when printed. The quotation marks just tell the computer *"Hey! I'm writing regular text. Treat it like written English instead of code.,"* and it does!
-:::
 
 ### Math
 Now let's use Python to do some math!
 
-:::{.ltblue-container}
+:::{#lst-mathoperators}
+
 
 ➕ **Addition:**
 ```{pyodide}
@@ -82,11 +97,13 @@ Now let's use Python to do some math!
 3 / 2
 ```
 
+Mathematical Operators!
 :::
 
 We can also ask Python to **compare values**:
 
-:::{.ltblue-container}
+:::{#lst-comparingvalues}
+
 This code asks "Is the sum of 2 and 3 greater than or equal to the product of 2 and 3?"
 ```{pyodide}
 2 + 3 >= 2 * 3
@@ -97,23 +114,28 @@ This code asks "Is the sum of 2 and 3 less than or equal to the product of 2 and
 2 + 3 <= 2 * 3
 ```
 
+Comparing Values!
 :::
 
 ### Text/Strings & Math
 
 You can even combine the strings and math!
 
-:::{.ltblue-container}
+:::{#lst-printstatementsmath}
 
 ```{pyodide}
 print("2 + 3 =", 2 + 3)
 ```
 
+Print Statements with Math!
 :::
 
 ## 🧑‍💻 Try It Yourself!
 
 Now YOU try! Edit the code below. **Yes! You can type in the code block.** Change the numbers, change the message, then click ▶️:
+
+:::{#lst-personalizedprintstatementsmath}
+
 ```{pyodide}
 # Change this message to your name!
 print("My name is Student")
@@ -122,8 +144,11 @@ print("My name is Student")
 print("5 + 3 =", 5 + 3)
 print("20 - 7 =", 20 - 7)
 
-# Go to the end of this line and press enter. Calculate 15 times 4.
+# Calculate 15 times 4. Print the equation and result below.
 ```
+
+Your own print statements with math!
+:::
 
 ## 🚀 Ready to Begin?
 

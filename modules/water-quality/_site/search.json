@@ -410,7 +410,7 @@
     "href": "1-statistics/index.html",
     "title": "Water Quality and Summary Statistics",
     "section": "",
-    "text": "Lesson Objective: In this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate nitrates and nitrates in water quality samples.\nMaterials Needed:\n- Your computer\n- A web browser (e.g., Chrome, Firefox, Safari)\n- A calculator (any will do - your phone, computer calculator, or a TI-83)\n- Printed student handout (including lab sheet)"
+    "text": "Lesson Objective: In this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate nitrates and nitrates in water quality samples.\nMaterials Needed:\n- Your computer\n- A web browser (Chrome, Firefox, or Safari)\n- A calculator\n- Printed handout (including lab sheet)"
   },
   {
     "objectID": "1-statistics/index.html#welcome-scientists",
@@ -445,14 +445,14 @@
     "href": "1-statistics/index.html#lets-try-python-right-now",
     "title": "Water Quality and Summary Statistics",
     "section": "💻 Let’s Try Python Right Now!",
-    "text": "💻 Let’s Try Python Right Now!\n\nText/Strings\nPython will print text.\n\nClick the ▶️ button below to run your first Python code:\n\n\n\n\n\n\n🎉 You just ran Python code! See how it printed “Hello, Water Scientist!” below the block? We call text printed like this a string.\nNotice that strings must be in quotation marks within the code but those marks don’t appear when printed. The quotation marks just tell the computer “Hey! I’m writing regular text. Treat it like written English instead of code.,” and it does!\n\n\n\nMath\nNow let’s use Python to do some math!\n\n➕ Addition:\n\n\n\n\n\n\n➖ Subtraction:\n\n\n\n\n\n\n✖️ Multiplication:\n\n\n\n\n\n\n➗ Division:\n\n\n\n\n\n\n\nWe can also ask Python to compare values:\n\nThis code asks “Is the sum of 2 and 3 greater than or equal to the product of 2 and 3?”\n\n\n\n\n\n\nThis code asks “Is the sum of 2 and 3 less than or equal to the product of 2 and 3?”\n\n\n\n\n\n\n\n\n\nText/Strings & Math\nYou can even combine the strings and math!"
+    "text": "💻 Let’s Try Python Right Now!\n\nText/Strings\nPython will print text. Click the ▶️ button below to run your first Python code:\n\n\n\nListing 1: Print Statements!\n\n\n\n\n\n\n\n\n\n\n\n🎉 You just ran Python code! See how it printed “Hello, Water Scientist!” below the block? We call text like this a string.\nNotice that strings must be in quotation marks within the code but those marks don’t appear when printed. The quotation marks just tell the computer “Hey! I’m writing regular text. Treat it like written English instead of code.,” and it does!\n\n\nMath\nNow let’s use Python to do some math!\n\n\n\nListing 2: Mathematical Operators!\n\n\n➕ Addition:\n\n\n\n\n\n\n➖ Subtraction:\n\n\n\n\n\n\n✖️ Multiplication:\n\n\n\n\n\n\n➗ Division:\n\n\n\n\n\n\n\n\n\nWe can also ask Python to compare values:\n\n\n\nListing 3: Comparing Values!\n\n\nThis code asks “Is the sum of 2 and 3 greater than or equal to the product of 2 and 3?”\n\n\n\n\n\n\nThis code asks “Is the sum of 2 and 3 less than or equal to the product of 2 and 3?”\n\n\n\n\n\n\n\n\n\n\n\nText/Strings & Math\nYou can even combine the strings and math!\n\n\n\nListing 4: Print Statements with Math!"
   },
   {
     "objectID": "1-statistics/index.html#try-it-yourself",
     "href": "1-statistics/index.html#try-it-yourself",
     "title": "Water Quality and Summary Statistics",
     "section": "🧑‍💻 Try It Yourself!",
-    "text": "🧑‍💻 Try It Yourself!\nNow YOU try! Edit the code below. Yes! You can type in the code block. Change the numbers, change the message, then click ▶️:"
+    "text": "🧑‍💻 Try It Yourself!\nNow YOU try! Edit the code below. Yes! You can type in the code block. Change the numbers, change the message, then click ▶️:\n\n\n\nListing 5: Your own print statements with math!"
   },
   {
     "objectID": "1-statistics/index.html#what-youll-need",
@@ -851,7 +851,7 @@
     "href": "1-statistics/nitrates-lab.html",
     "title": "Nitrates Lab",
     "section": "",
-    "text": "We are going to participate in a brief water quality lab to practice gathering data about nitrates and nitrates in water samples. Your group will need the following materials:\n\n\nseveral water quality samples per group\nseveral nitrate/nitrate test strips per group\n1 lab notesheet per person\n1 computer with the submission form open for data entry\n\nlink to form will be provided by your teacher\n\npencils\n2 colors of sticky notes (1 color for nitrates and 1 color for nitrites)\n1 Sharpie marker"
+    "text": "We are going to participate in a brief water quality lab to practice gathering data about nitrates and nitrates in water samples. Your group will need the following materials:\n\n\nseveral water quality samples per group\nseveral nitrate/nitrate test strips per group\n1 lab notesheet per person\n1 computer with the submission form open for data entry\n\nlink to form will be provided by your teacher\n\npencils\n2 colors of sticky notes (1 color for nitrates and 1 color for nitrites)\n1 Sharpie marker\ntiming device (watch, clock, etc.)"
   },
   {
     "objectID": "1-statistics/nitrates-lab.html#what-is-water-quality",
@@ -1194,14 +1194,14 @@
     "href": "1-statistics/nitrates-lab.html#get-ready-scientists",
     "title": "Nitrates Lab",
     "section": "",
-    "text": "We are going to participate in a brief water quality lab to practice gathering data about nitrates and nitrates in water samples. Your group will need the following materials:\n\n\nseveral water quality samples per group\nseveral nitrate/nitrate test strips per group\n1 lab notesheet per person\n1 computer with the submission form open for data entry\n\nlink to form will be provided by your teacher\n\npencils\n2 colors of sticky notes (1 color for nitrates and 1 color for nitrites)\n1 Sharpie marker"
+    "text": "We are going to participate in a brief water quality lab to practice gathering data about nitrates and nitrates in water samples. Your group will need the following materials:\n\n\nseveral water quality samples per group\nseveral nitrate/nitrate test strips per group\n1 lab notesheet per person\n1 computer with the submission form open for data entry\n\nlink to form will be provided by your teacher\n\npencils\n2 colors of sticky notes (1 color for nitrates and 1 color for nitrites)\n1 Sharpie marker\ntiming device (watch, clock, etc.)"
   },
   {
     "objectID": "1-statistics/nitrates-lab.html#preparing-to-experiment",
     "href": "1-statistics/nitrates-lab.html#preparing-to-experiment",
     "title": "Nitrates Lab",
     "section": "🧑‍🔬 Preparing to Experiment!",
-    "text": "🧑‍🔬 Preparing to Experiment!\nAssign roles to each person in your group:\n\nRole 1: Data Recorder (Lap Report)\n\nNeeds:\n\n1 lab handout\n\npencil\n\n\n\nRole 2: Data Recorder (Computer)\n\nNeeds:\n\ndevice (everyone else can put theirs away temporarily)\n\nsubmission form pulled up in browser\n\n\nRole 3: Data Recorder (Sticky Notes)\n\nNeeds:\n\nsticky notes (be clear which color is for nitrates and which is for nitrates)\nSharpie\n\n\nRole 4: Lab Technician\n\nNeeds:\n\nwater samples\ntest strips"
+    "text": "🧑‍🔬 Preparing to Experiment!\nAssign roles to each person in your group:\n\nRole 1: Data Recorder (Lab Report)\n\nNeeds:\n\n1 lab handout\n\npencil\n\n\n\nRole 2: Data Recorder (Computer)\n\nNeeds:\n\ndevice (everyone else can put theirs away temporarily)\n\nsubmission form pulled up in browser\n\n\nRole 3: Data Recorder (Sticky Notes)\n\nNeeds:\n\nsticky notes (be clear which color is for nitrates and which is for nitrates)\nSharpie\n\n\nRole 4: Lab Technician\n\nNeeds:\n\nwater samples\ntest strips"
   },
   {
     "objectID": "1-statistics/nitrates-lab.html#experiment-testing-nitrates",
@@ -1215,7 +1215,7 @@
     "href": "1-statistics/nitrates-lab.html#lets-do-it",
     "title": "Nitrates Lab",
     "section": "🚀 Let’s Do It!",
-    "text": "🚀 Let’s Do It!\n\nLab Technician: Take the first water sample, share the sample letter with your team. Then, take one new test strip and do the following:\n\nDip strip into sample for 2 seconds. DO NOT move the test strip while submerged.\nRemove test strip from water.\nHold test strip flat for 1 minute.\nCompare the colors on the test strip to those provided below. The pad on the end of the test strip indicates nitrate values (top row below) the second pad indicates nitrite values (bottom row below). \n\nIf the color is between two values, estimate the concentation the best you can. Often finding the midpoint between two colors is a good estimate.\nShare the result with your team.\n\nData Recorder (Lab Report): In the data table, record the following in one row per sample:\n\nSample letter\nNitrate value\nNitrite value\n\nData Recorder (Computer): On the data collection form, report:\n\nGroup number\nSample letter\nNitrate value\nNitrite value\n\n\nSubmit the form and click the link to submit a new form for the next water sample.\n\nData Recorder (Sticky Notes):\n\nOn a nitrate-color sticky note, write the nitrate value for the sample. Put to the side.\n\nOn a nitrite-color sticky note, write the nitrite value for the sample. Put to the side.\n\n\nREPEAT THIS PROCESS FOR ALL REMAINING SAMPLES"
+    "text": "🚀 Let’s Do It!\n\nLab Technician: Take the first water sample, share the sample letter with your team. Then, take one new test strip and do the following:\n\nDip strip into sample for 2 seconds. DO NOT move the test strip while submerged.\nRemove test strip from water.\nHold test strip flat for 1 minute. (Group should time this for 1 minute.)\nCompare the colors on the test strip to those provided below. The pad on the end of the test strip indicates nitrate values (top row below) the second pad indicates nitrite values (bottom row below). \n\nIf the color is between two values, estimate the concentation the best you can. Often finding the midpoint between two colors is a good estimate.\nShare the result with your team.\n\nData Recorder (Lab Report): In the data table, record the following in one row per sample:\n\nSample letter\nNitrate value\nNitrite value\n\nData Recorder (Computer): On the data collection form, report:\n\nGroup number\nSample letter\nNitrate value\nNitrite value\n\n\nSubmit the form and click the link to submit a new form for the next water sample.\n\nData Recorder (Sticky Notes):\n\nOn a nitrate-color sticky note, write the nitrate value for the sample. Put to the side.\n\nOn a nitrite-color sticky note, write the nitrite value for the sample. Put to the side.\n\n\nREPEAT THIS PROCESS FOR ALL REMAINING SAMPLES"
   },
   {
     "objectID": "1-statistics/nitrates-lab.html#looking-forward",
@@ -1306,14 +1306,14 @@
     "href": "1-statistics/python-lists.html",
     "title": "Python Lists",
     "section": "",
-    "text": "In Python, we store multiple numbers in something called a list.\n\n# Our sample dataset from above (the square brackets [ ] make it a list)\nsample_data = [1, 2, 6, 5, 1]\n\nprint(\"Our sample data:\", sample_data)\n\nOur sample data: [1, 2, 6, 5, 1]\n\n\nBreaking it down:\n- sample_data = the name we gave our list (you can name it anything!)\n- = means “store this in the variable sample_data”\n- [1, 2, 6, 5, 1] = the actual numbers, separated by commas\n- print() = tells Python to show us the result\n\n\n\n\n\n\n\n\n\n\n\n\n\nOnce we have a list, we can do all kinds of things with it!\n\n\nThe len() (length) function tells us how many items are in a list. We can use it to find the number of nitrate readings we took.\n\n\n\n\n\n\n\n\n\nThe min() function finds the smallest number in a list. It will tell us what the lowest nitrate reading was.\n\n\n\n\n\n\n\n\n\nThe max() function finds the biggest number in a list. It will tell us what the highest nitrate reading was.\n\n\n\n\n\n\nIn Summary:\n- len() = length (how many items)\n- min() = minimum (smallest number)\n- max() = maximum (biggest number)\nThese are called functions - they’re like tools that do specific jobs!"
+    "text": "In Python, we store multiple numbers in something called a list.\n\n\n\n\n\n\nBreaking it down:\n- sample_data = the name we gave our list (you can name it anything!)\n- = means “store this in the variable sample_data”\n- [1, 2, 6, 5, 1] = the actual numbers, separated by commas\n- print() = tells Python to show us the result\n\n\n\n\n\n\n\n\n\n\n\n\n\nOnce we have a list, we can do all kinds of things with it!\n\n\nThe len() (length) function tells us how many items are in a list. We can use it to find the number of nitrate readings we took.\n\n\n\n\n\n\n\n\n\nThe min() function finds the smallest number in a list. It will tell us what the lowest nitrate reading was.\n\n\n\n\n\n\n\n\n\nThe max() function finds the biggest number in a list. It will tell us what the highest nitrate reading was.\n\n\n\n\n\n\nIn Summary:\n- len() = length (how many items)\n- min() = minimum (smallest number)\n- max() = maximum (biggest number)\nThese are called functions - they’re like tools that do specific jobs!"
   },
   {
     "objectID": "1-statistics/python-lists.html#lets-analyze-your-data-with-python",
     "href": "1-statistics/python-lists.html#lets-analyze-your-data-with-python",
     "title": "Python Lists",
     "section": "",
-    "text": "In Python, we store multiple numbers in something called a list.\n\n# Our sample dataset from above (the square brackets [ ] make it a list)\nsample_data = [1, 2, 6, 5, 1]\n\nprint(\"Our sample data:\", sample_data)\n\nOur sample data: [1, 2, 6, 5, 1]\n\n\nBreaking it down:\n- sample_data = the name we gave our list (you can name it anything!)\n- = means “store this in the variable sample_data”\n- [1, 2, 6, 5, 1] = the actual numbers, separated by commas\n- print() = tells Python to show us the result\n\n\n\n\n\n\n\n\n\n\n\n\n\nOnce we have a list, we can do all kinds of things with it!\n\n\nThe len() (length) function tells us how many items are in a list. We can use it to find the number of nitrate readings we took.\n\n\n\n\n\n\n\n\n\nThe min() function finds the smallest number in a list. It will tell us what the lowest nitrate reading was.\n\n\n\n\n\n\n\n\n\nThe max() function finds the biggest number in a list. It will tell us what the highest nitrate reading was.\n\n\n\n\n\n\nIn Summary:\n- len() = length (how many items)\n- min() = minimum (smallest number)\n- max() = maximum (biggest number)\nThese are called functions - they’re like tools that do specific jobs!"
+    "text": "In Python, we store multiple numbers in something called a list.\n\n\n\n\n\n\nBreaking it down:\n- sample_data = the name we gave our list (you can name it anything!)\n- = means “store this in the variable sample_data”\n- [1, 2, 6, 5, 1] = the actual numbers, separated by commas\n- print() = tells Python to show us the result\n\n\n\n\n\n\n\n\n\n\n\n\n\nOnce we have a list, we can do all kinds of things with it!\n\n\nThe len() (length) function tells us how many items are in a list. We can use it to find the number of nitrate readings we took.\n\n\n\n\n\n\n\n\n\nThe min() function finds the smallest number in a list. It will tell us what the lowest nitrate reading was.\n\n\n\n\n\n\n\n\n\nThe max() function finds the biggest number in a list. It will tell us what the highest nitrate reading was.\n\n\n\n\n\n\nIn Summary:\n- len() = length (how many items)\n- min() = minimum (smallest number)\n- max() = maximum (biggest number)\nThese are called functions - they’re like tools that do specific jobs!"
   },
   {
     "objectID": "1-statistics/python-lists.html#checking-if-water-is-safe",
@@ -2048,7 +2048,7 @@
     "href": "1-statistics/center-histograms.html#calculating-statistics-with-python",
     "title": "Using Python for Statistics",
     "section": "Calculating Statistics With Python",
-    "text": "Calculating Statistics With Python\n\nMean\nPython has built-in tools to calculate the mean. We’ll use something called NumPy (Numerical Python). NumPy is one example of a library or package that you can add to Python. When you add a library to Python, you are increasing the functions availble to you. For example, we have many more options with NumPy than just len(), min(), and max().\nWe have to “import” these libraries in Python and then often give them a nickname. For example, we import NumPy as np instead of typing “numpy” all the time. An example of how this work has been written (and already run) below.\n\nimport numpy as np\n\n# Same sample dataset\nsample_data = [1, 2, 6, 5, 1]\n\n# Calculate mean the easy way!\nmean_sample = np.mean(sample_data)\n\nprint(\"mean of sample data:\", mean_sample)\n\nmean of sample data: 3.0\n\n\nBreaking it down:\n- import numpy as np = Load the NumPy library/package (we only do this once)\n- np.mean() = NumPy’s function to calculate mean"
+    "text": "Calculating Statistics With Python\n\nMean\nPython has built-in tools to calculate the mean. We’ll use something called NumPy (Numerical Python). NumPy is one example of a library or package that you can add to Python. When you add a library to Python, you are increasing the functions availble to you. For example, we have many more options with NumPy than just len(), min(), and max().\nWe have to “import” these libraries in Python and then often give them a nickname. For example, we import NumPy as np instead of typing “numpy” all the time. An example of how this work has been written (and already run) below.\n\n\n\n\n\n\nBreaking it down:\n- import numpy as np = Load the NumPy library/package (we only do this once)\n- np.mean() = NumPy’s function to calculate mean"
   },
   {
     "objectID": "1-statistics/center-histograms.html#your-turn-calculate-mean-nitrate",
@@ -2168,5 +2168,19 @@
     "title": "Measures of Spread, Spotting Outliers",
     "section": "Takeaways When Encountering an Outlier",
     "text": "Takeaways When Encountering an Outlier\nWhen you find an outlier, investigate it:\n\nIs it possible? (nitrate concentration of 100 mg/L = unlikely)\nWhat happened that day? (Check notes, weather, etc.)\nDoes it fit a pattern? (One spike vs multiple high readings)\nIs the sensor/buoy/test strip working? (Check calibration, battery)"
+  },
+  {
+    "objectID": "1-statistics/spread-boxplots-outliers.html#outliers",
+    "href": "1-statistics/spread-boxplots-outliers.html#outliers",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Outliers",
+    "text": "Outliers\n\nWhat Are Outliers?\nOutliers are data points that are very different from the rest of your data. They’re the “weird” numbers that don’t fit the pattern. Outliers can really change your statistics—like mean and standard deviation.\n\n\n\n\n\n\nThat 15 is an outlier! It’s way higher than everything else.\n\n\nWhy Do Outliers Happen?\nOutliers can happen for different reasons:\n\nSensor Malfunction 🔧\n\n\nThe sensor glitched or needs calibration\nBattery was dying\nSensor got knocked around\n\n\nReal Pollution Event 🚨\n\n\nFactory dumped chemicals into the stream\nFarm fertilizer washed in after a storm\nSewage spill\n\n\nNatural Event 🌧️\n\n\nHeavy rain changed water chemistry\nAlgae bloom\nSeasonal variation\n\nYour job as a scientist: Figure out which reason it is!"
+  },
+  {
+    "objectID": "1-statistics/spread-boxplots-outliers.html#boxplots",
+    "href": "1-statistics/spread-boxplots-outliers.html#boxplots",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Boxplots",
+    "text": "Boxplots\nWe can also use a boxplot to visualize outliers automatically! It’s like a detective tool for finding weird data. Here is a boxplot of our sample data with the outlier added:\n\n\n\n\n\n\nReading a box plot:\n- The line in the middle = Median\n- The box = Where the middle 50% of data is\n- The whiskers (lines extending out) = Normal range\n- The circles = Outliers!\n\nClass Nitrate Boxplot\nYour Turn: Create a Boxplot for the Class Nitrate Data\n\n\n\n\n\n\n\n\nClass Nitrite Boxplot\nYour Turn: Create a Boxplot for the Class Nitrite Data\n\n\n\n\n\n\n\n\n\n\n\n\nDo either have outliers? How do you know?\n\n\n\n\n\n\n\n\nTakeaways When Encountering an Outlier\nWhen you find an outlier, investigate it:\n\nIs it possible? (nitrate concentration of 100 mg/L = unlikely)\nWhat happened that day? (Check notes, weather, etc.)\nDoes it fit a pattern? (One spike vs multiple high readings)\nIs the sensor/buoy/test strip working? (Check calibration, battery)"
   }
 ]
