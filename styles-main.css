@@ -473,6 +473,14 @@ body {
   color: var(--globe);
 }
 
+.callout-tip a[href*="facilitator"] {
+  color: #006C93;
+  
+  &:hover {
+    color: #E65933;
+  }
+}
+
 .coming-soon {
   background: linear-gradient(135deg, var(--limestone) 0%, var(--summit) 100%);
   border-color: var(--rock);

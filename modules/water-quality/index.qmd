@@ -48,7 +48,10 @@ Learn mean, median, range, standard deviation, and outliers using nitrate/nitrit
 
 *Estimated time: 90 minutes*
 
-[**Teacher/Facilitator Guide:**](facilitator)
+<br>
+
+[**Teacher/Facilitator Guide**](facilitator)
+
 :::
 
 ::: {.lesson-item}
