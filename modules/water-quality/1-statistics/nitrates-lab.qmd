@@ -1,5 +1,7 @@
 ---
 title: "Nitrates Lab"
+crossref:
+  lst-title: "🎯 Checkpoint"
 format: live-html
 sidebar: lesson-1
 ---

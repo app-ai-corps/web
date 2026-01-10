@@ -1,5 +1,7 @@
 ---
 title: "Measures of Spread, Spotting Outliers"
+crossref:
+  lst-title: "🎯 Checkpoint"
 format: live-html
 sidebar: lesson-1
 ---
