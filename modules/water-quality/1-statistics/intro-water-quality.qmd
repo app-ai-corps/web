@@ -5,6 +5,12 @@ crossref:
 format: live-html
 sidebar: lesson-1
 ---
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 1:** Role of Nitrogen](#lst-nitrogensrole)
+
+:::
 
 ## What is Water Quality?
 
@@ -15,7 +21,7 @@ When scientists study water, they measure different things to see if it's safe. 
 What does H<sub>2</sub>O mean?
 :::
 
-H<sub>2</sub>O is pure water, but water is almost always mixed with other things, like minerals, salts, and other chemicals. Some of these things help water be safe to drink, while others make it unsafe. It's also important to remember that water is used for different things, so for example, the same water can be safe for livestock and crop irrigation, but unsafe for human consumption.
+H<sub>2</sub>O is pure water, but water is almost always mixed with other things, like minerals, salts, and other chemicals. Some of these things help water be safe to drink, while others make it unsafe. It's also important to remember that water is used for different purposes, so for example, the same water can be safe for livestock and crop irrigation, but unsafe for human consumption.
 
 Water quality also changes over time. Weather, changes in land use, changes in industrial activities and agriculture, for example, can all affect water. We can measure certain chemicals and water characteristics to monitor how water is changing over time.
 
@@ -61,6 +67,12 @@ While Nitrogen is a needed nutrient, in larger quantities it can become a *pollu
     allowfullscreen>
   </iframe>
 </div>
+
+:::{##lst-nitrogensrole}
+
+Summarize. What is the role of nitrogen in our water? Do we want water without nitrogen? How about water with lots of nitrogen?
+
+:::
 
 ## Monitoring Nitrogen in the Water
 
