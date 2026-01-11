@@ -55,6 +55,7 @@ Python will print text. Click the ▶️ button below to run your first Python c
 :::{#lst-printstatements}
 
 ```{pyodide}
+#| completion: false
 # This is a comment - Python ignores lines that start with #
 # Let's make Python print a message!
 
@@ -77,21 +78,25 @@ Now let's use Python to do some math!
 
 ➕ **Addition:**
 ```{pyodide}
+#| completion: false
 2 + 3
 ```
 
 ➖ **Subtraction:**
 ```{pyodide}
+#| completion: false
 3 - 2
 ```
 
 ✖️ **Multiplication:**
 ```{pyodide}
+#| completion: false
 2 * 3
 ```
 
 ➗ **Division:**
 ```{pyodide}
+#| completion: false
 3 / 2
 ```
 
@@ -104,11 +109,13 @@ We can also ask Python to **compare values**:
 
 This code asks "Is the sum of 2 and 3 greater than or equal to the product of 2 and 3?"
 ```{pyodide}
+#| completion: false
 2 + 3 >= 2 * 3
 ```
 
 This code asks "Is the sum of 2 and 3 less than or equal to the product of 2 and 3?"
 ```{pyodide}
+#| completion: false
 2 + 3 <= 2 * 3
 ```
 
@@ -122,6 +129,7 @@ You can even combine the strings and math!
 :::{#lst-printstatementsmath}
 
 ```{pyodide}
+#| completion: false
 print("2 + 3 =", 2 + 3)
 ```
 
@@ -136,6 +144,7 @@ Now YOU try! Edit the code below. **Yes! You can type in the code block.** Chang
 
 ```{pyodide}
 #| min-lines: 9
+#| completion: false
 # Change this message to your name!
 print("My name is Student")
 
