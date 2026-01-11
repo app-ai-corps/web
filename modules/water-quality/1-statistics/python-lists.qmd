@@ -7,12 +7,19 @@ sidebar: lesson-1
 ---
 
 :::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 1:** Storing Data as Lists](#lst-groupreadings)
+
+:::
+
+## Let's Analyze Your Data With Python
+
+:::{.ltorange-container}
 **A Reminder of Our Sample Dataset**
 
 1, 2, 6, 5, 1
 :::
-
-## Let's Analyze Your Data With Python
 
 ### Lists
 
@@ -29,13 +36,17 @@ print("Our sample data:", sample_data)
 ```
 
 **Breaking it down:**  
-- `sample_data` = the name we gave our list (you can name it anything!)  
+- `sample_data` = the variablename we gave our list (you can name it anything!)  
 - `=` means "store this in the variable `sample_data`"  
 - `[1, 2, 6, 5, 1]` = the actual numbers, separated by commas  
 - `print()` = tells Python to show us the result  
 
 #### Try It: Make Your Own Lists
+
+:::{#lst-groupreadings}
+
 ```{pyodide}
+#| persist: true
 # Create a list of your group's nitrate and nitrite readings!
 # Change the 10, 20, 30, 40 to your group's real values
 
@@ -46,6 +57,10 @@ print("My group's nitrate readings:", group_nitrate)
 print("My group's nitrite readings:", group_nitrite)
 
 ```
+
+Save your group nitrate and nitrite readings into lists!
+
+:::
 
 ### Basic Operations with Lists
 <hr>

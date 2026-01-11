@@ -13,7 +13,7 @@ sidebar: lesson-1
 
 :::
 
-With your group, you've just tested samples from a fictional body of water. You measured each of the four samples for nitrate concentration *and* nitrite concentration.
+With your group, you've just tested samples from fictional bodies of water. You measured each of the samples for nitrate concentration *and* nitrite concentration.
 
 Quick - is the water safe? What's the "typical" concentration? Are any readings weird?
 
@@ -40,7 +40,7 @@ Think of statistics like a calculator that helps you:
 
 ## Let's Use Statistics!
 
-:::{.ltblue-container}
+:::{.ltorange-container}
 **Sample Dataset For Examples Below**
 
 1, 2, 6, 5, 1
