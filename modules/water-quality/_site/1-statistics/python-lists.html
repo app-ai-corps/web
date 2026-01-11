@@ -259,6 +259,8 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Checkpoints on this Page:</strong></p>
 <ul>
 <li><a href="#lst-groupreadings"><strong>Checkpoint 1:</strong> Storing Data as Lists</a></li>
+<li><a href="#lst-basicfunctions"><strong>Checkpoint 2:</strong> Basic Functions with Lists</a></li>
+<li><a href="#lst-comparisons"><strong>Checkpoint 3:</strong> Making Comparisons</a></li>
 </ul>
 </div>
 <section id="lets-analyze-your-data-with-python" class="level2">
@@ -308,6 +310,12 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBD
 <h3 class="anchored" data-anchor-id="basic-operations-with-lists">Basic Operations with Lists</h3>
 <hr>
 <p>Once we have a list, we can do all kinds of things with it!</p>
+<div id="lst-basicfunctions" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-basicfunctions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;2: Explore Basic Operations with Lists!
+</figcaption>
+<div aria-describedby="lst-basicfunctions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <section id="len" class="level4">
 <h4 class="anchored" data-anchor-id="len">len()</h4>
 <p>The <strong>len()</strong> (length) function tells us how many items are in a list. We can use it to find the number of nitrate readings we took.</p>
@@ -343,6 +351,10 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoicHJpbnQoXCJMb3dlc3Qgbml0
 eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoicHJpbnQoXCJIaWdoZXN0IG5pdHJhdGU6XCIsIG1heChncm91cF9uaXRyYXRlKSwgXCJtZy9MXCIpIn0=
 </script>
 </div>
+</section>
+</div>
+</figure>
+</div>
 <p><strong>In Summary:</strong><br>
 - <code>len()</code> = length (how many items)<br>
 - <code>min()</code> = minimum (smallest number)<br>
@@ -350,17 +362,25 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoicHJpbnQoXCJIaWdoZXN0IG5p
 <p>These are called <strong>functions</strong> - they’re like tools that do specific jobs!</p>
 </section>
 </section>
-</section>
 <section id="checking-if-water-is-safe" class="level2">
 <h2 class="anchored" data-anchor-id="checking-if-water-is-safe">Checking If Water Is Safe</h2>
-<p>Let’s use Python to check if water is safe. We can tell Python the maximum EPA-allowed concentration of nitrate and have it compare the maximum nitrate reading with that cut-off.</p>
+<div id="lst-making-comparisons" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-making-comparisons-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;3: Comparing nitrate readings to EPA limits!
+</figcaption>
+<div aria-describedby="lst-making-comparisons-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p>Let’s use Python to check if water is safe. We can tell Python the maximum EPA-allowed concentration of nitrate and have it compare the maximum nitrate reading with that cut-off. Change <code>??</code> in the block below to the EPA limit for nitrate.</p>
 <div>
 <div id="pyodide-6" class="exercise-cell">
 
 </div>
 <script type="pyodide-6-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBMZXQncyBjaGVjayB1c2luZyB5b3VyIGdyb3VwJ3Mgbml0cmF0ZSByZWFkaW5nc1xubWF4X25pdHJhdGUgPSBtYXgoZ3JvdXBfbml0cmF0ZSlcblxucHJpbnQoXCJUaGUgd2F0ZXIgaGFzIGEgbWF4IG5pdHJhdGUgY29uY2VudHJhdGlvbiBvZlwiLCBtYXhfbml0cmF0ZSlcblxuIyBQeXRob24gY2FuIG1ha2UgZGVjaXNpb25zIHVzaW5nICdpZicgc3RhdGVtZW50cyFcbmlmIG1heF9uaXRyYXRlIDw9IDEwOlxuICAgIHByaW50KFwi4pyTIE5pdHJhdGUgY29uY2VudHJhdGlvbiBpcyBpbiB0aGUgc2FmZSByYW5nZSFcIilcbmVsc2U6XG4gICAgcHJpbnQoXCLinJcgTml0cmF0ZSBjb25jZW50cmF0aW9uIGlzIG91dHNpZGUgdGhlIHNhZmUgcmFuZ2UhXCIpIn0=
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBMZXQncyBjaGVjayB1c2luZyB5b3VyIGdyb3VwJ3Mgbml0cmF0ZSByZWFkaW5nc1xubWF4X25pdHJhdGUgPSBtYXgoZ3JvdXBfbml0cmF0ZSlcblxucHJpbnQoXCJUaGUgd2F0ZXIgaGFzIGEgbWF4IG5pdHJhdGUgY29uY2VudHJhdGlvbiBvZlwiLCBtYXhfbml0cmF0ZSlcblxuIyBQeXRob24gY2FuIG1ha2UgZGVjaXNpb25zIHVzaW5nICdpZicgc3RhdGVtZW50cyFcbmlmIG1heF9uaXRyYXRlIDw9ID8/OlxuICAgIHByaW50KFwi4pyTIE5pdHJhdGUgY29uY2VudHJhdGlvbiBpcyBpbiB0aGUgc2FmZSByYW5nZSFcIilcbmVsc2U6XG4gICAgcHJpbnQoXCLinJcgTml0cmF0ZSBjb25jZW50cmF0aW9uIGlzIG91dHNpZGUgdGhlIHNhZmUgcmFuZ2UhXCIpIn0=
 </script>
+</div>
+</div>
+</figure>
 </div>
 </section>
 <section id="key-python-terms-we-learned" class="level2">

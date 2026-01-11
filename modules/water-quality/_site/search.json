@@ -1306,21 +1306,21 @@
     "href": "1-statistics/python-lists.html",
     "title": "Python Lists",
     "section": "",
-    "text": "Checkpoints on this Page:\n\nCheckpoint 1: Storing Data as Lists"
+    "text": "Checkpoints on this Page:\n\nCheckpoint 1: Storing Data as Lists\nCheckpoint 2: Basic Functions with Lists\nCheckpoint 3: Making Comparisons"
   },
   {
     "objectID": "1-statistics/python-lists.html#lets-analyze-your-data-with-python",
     "href": "1-statistics/python-lists.html#lets-analyze-your-data-with-python",
     "title": "Python Lists",
     "section": "Let’s Analyze Your Data With Python",
-    "text": "Let’s Analyze Your Data With Python\n\nA Reminder of Our Sample Dataset\n1, 2, 6, 5, 1\n\n\nLists\nIn Python, we store multiple numbers in something called a list.\n\n\n\n\n\n\nBreaking it down:\n- sample_data = the variablename we gave our list (you can name it anything!)\n- = means “store this in the variable sample_data”\n- [1, 2, 6, 5, 1] = the actual numbers, separated by commas\n- print() = tells Python to show us the result\n\nTry It: Make Your Own Lists\n\n\n\n🎯 Checkpoint 1: Save your group nitrate and nitrite readings into lists!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBasic Operations with Lists\n\nOnce we have a list, we can do all kinds of things with it!\n\nlen()\nThe len() (length) function tells us how many items are in a list. We can use it to find the number of nitrate readings we took.\n\n\n\n\n\n\n\n\nmin()\nThe min() function finds the smallest number in a list. It will tell us what the lowest nitrate reading was.\n\n\n\n\n\n\n\n\nmax()\nThe max() function finds the biggest number in a list. It will tell us what the highest nitrate reading was.\n\n\n\n\n\n\nIn Summary:\n- len() = length (how many items)\n- min() = minimum (smallest number)\n- max() = maximum (biggest number)\nThese are called functions - they’re like tools that do specific jobs!"
+    "text": "Let’s Analyze Your Data With Python\n\nA Reminder of Our Sample Dataset\n1, 2, 6, 5, 1\n\n\nLists\nIn Python, we store multiple numbers in something called a list.\n\n\n\n\n\n\nBreaking it down:\n- sample_data = the variablename we gave our list (you can name it anything!)\n- = means “store this in the variable sample_data”\n- [1, 2, 6, 5, 1] = the actual numbers, separated by commas\n- print() = tells Python to show us the result\n\nTry It: Make Your Own Lists\n\n\n\n🎯 Checkpoint 1: Save your group nitrate and nitrite readings into lists!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBasic Operations with Lists\n\nOnce we have a list, we can do all kinds of things with it!\n\n\n\n🎯 Checkpoint 2: Explore Basic Operations with Lists!\n\n\n\nlen()\nThe len() (length) function tells us how many items are in a list. We can use it to find the number of nitrate readings we took.\n\n\n\n\n\n\n\n\nmin()\nThe min() function finds the smallest number in a list. It will tell us what the lowest nitrate reading was.\n\n\n\n\n\n\n\n\nmax()\nThe max() function finds the biggest number in a list. It will tell us what the highest nitrate reading was.\n\n\n\n\n\n\n\n\n\n\nIn Summary:\n- len() = length (how many items)\n- min() = minimum (smallest number)\n- max() = maximum (biggest number)\nThese are called functions - they’re like tools that do specific jobs!"
   },
   {
     "objectID": "1-statistics/python-lists.html#checking-if-water-is-safe",
     "href": "1-statistics/python-lists.html#checking-if-water-is-safe",
     "title": "Python Lists",
     "section": "Checking If Water Is Safe",
-    "text": "Checking If Water Is Safe\nLet’s use Python to check if water is safe. We can tell Python the maximum EPA-allowed concentration of nitrate and have it compare the maximum nitrate reading with that cut-off."
+    "text": "Checking If Water Is Safe\n\n\n\n🎯 Checkpoint 3: Comparing nitrate readings to EPA limits!\n\n\nLet’s use Python to check if water is safe. We can tell Python the maximum EPA-allowed concentration of nitrate and have it compare the maximum nitrate reading with that cut-off. Change ?? in the block below to the EPA limit for nitrate."
   },
   {
     "objectID": "1-statistics/python-lists.html#try-it-be-a-water-inspector",

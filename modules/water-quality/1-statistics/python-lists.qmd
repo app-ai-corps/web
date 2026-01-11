@@ -10,7 +10,8 @@ sidebar: lesson-1
 **Checkpoints on this Page:**
 
 - [**Checkpoint 1:** Storing Data as Lists](#lst-groupreadings)
-
+- [**Checkpoint 2:** Basic Functions with Lists](#lst-basicfunctions)
+- [**Checkpoint 3:** Making Comparisons](#lst-comparisons)
 :::
 
 ## Let's Analyze Your Data With Python
@@ -66,6 +67,8 @@ Save your group nitrate and nitrite readings into lists!
 <hr>
 Once we have a list, we can do all kinds of things with it!
 
+:::{#lst-basicfunctions}
+
 #### len()
 
 The **len()** (length) function tells us how many items are in a list. We can use it to find the number of nitrate readings we took.
@@ -88,6 +91,9 @@ The **max()** function finds the biggest number in a list. It will tell us what 
 print("Highest nitrate:", max(group_nitrate), "mg/L")
 ```
 
+Explore Basic Operations with Lists!
+:::
+
 **In Summary:**  
 - `len()` = length (how many items)  
 - `min()` = minimum (smallest number)  
@@ -97,7 +103,9 @@ These are called **functions** - they're like tools that do specific jobs!
 
 ## Checking If Water Is Safe
 
-Let's use Python to check if water is safe. We can tell Python the maximum EPA-allowed concentration of nitrate and have it compare the maximum nitrate reading with that cut-off.
+:::{#lst-making-comparisons}
+
+Let's use Python to check if water is safe. We can tell Python the maximum EPA-allowed concentration of nitrate and have it compare the maximum nitrate reading with that cut-off. Change `??` in the block below to the EPA limit for nitrate.
 ```{pyodide}
 # Let's check using your group's nitrate readings
 max_nitrate = max(group_nitrate)
@@ -105,11 +113,14 @@ max_nitrate = max(group_nitrate)
 print("The water has a max nitrate concentration of", max_nitrate)
 
 # Python can make decisions using 'if' statements!
-if max_nitrate <= 10:
+if max_nitrate <= ??:
     print("✓ Nitrate concentration is in the safe range!")
 else:
     print("✗ Nitrate concentration is outside the safe range!")
 ```
+
+Comparing nitrate readings to EPA limits!
+:::
 
 ## Key Python Terms We Learned
 
