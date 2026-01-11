@@ -18,6 +18,7 @@ Python has built-in tools to calculate the mean. We'll use something called **Nu
 We have to "import" these libraries in Python and then often give them a nickname. For example, we import NumPy as `np` instead of typing "numpy" all the time. An example of how this work has been written (and already run) below.
 
 ```{pyodide}
+#| edit: false
 import numpy as np
 
 # Same sample dataset
@@ -30,7 +31,7 @@ print("mean of sample data:", mean_sample)
 ```
 
 **Breaking it down:**  
-- `import numpy as np` = Load the NumPy library/package (we only do this once)  
+- `import numpy as np` = Load the NumPy library/package (we only do this once per file/page)  
 - `np.mean()` = NumPy's function to calculate mean
 
 ## Your Turn: Calculate Your Group's Mean Nitrate
@@ -41,16 +42,17 @@ The website doesn't save your nitrate readings list from the previous page, so y
 - Run the block
 
 ```{pyodide}
+#| persist: true
 # Recreate the list of your group's nitrate readings below
+
 group_nitrate = [10, 20, 30, 40]
 
-# YOUR TURN: Calculate the mean nitrate reading for your group
 mean_nitrate = np.mean(group_nitrate)
 
 print("Group nitrate readings (mg/L):", group_nitrate)
 print("Group mean nitrate:", mean_nitrate, "mg/L")
 
-# Is it safe? (Remember: safe is less than 10 mg/L)
+# Is it safe? (Remember: the EPA's limit is less than 10 mg/L)
 if mean_nitrate < 10:
     print("✓ Average nitrate is SAFE")
 else:
@@ -69,24 +71,31 @@ One of the benefits of using Python is that is can handle much larger amount amo
 Only edit the CSV URL in the code below (Line 6). The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.
 
 ```{pyodide}
+#| include: false
 import requests
 import csv
 from io import StringIO
 
-# Replace the url with the one provided from your teacher. Make sure to keep the quotation marks!
+def load_class_data(csv_url):
+    response = requests.get(csv_url)
+    reader = csv.reader(StringIO(response.text))
+    next(reader)  # Skip header
+    rows = list(reader)
+    
+    class_nitrate = [int(row[3]) for row in rows]
+    class_nitrite = [int(row[4]) for row in rows]
+    
+    return class_nitrate, class_nitrite
+```
+
+```{pyodide}
+#| persist: true
+# Replace the url with the one provided from your teacher. 
+# Make sure to keep the quotation marks!
+
 csv_url = "www.replace_this_with_your_csv_url.csv"
 
-# Get the data
-response = requests.get(csv_url)
-reader = csv.reader(StringIO(response.text))
-next(reader)  # Skip header row
-
-# Read all rows
-rows = list(reader)
-
-# Extract columns
-class_nitrate = [int(row[3]) for row in rows]  # Fourth column (index 3)
-class_nitrite = [int(row[4]) for row in rows]  # Fifth column (index 4)
+class_nitrate, class_nitrite = load_class_data(csv_url)
 
 print("Nitrate values:", class_nitrate)
 print("Nitrite values:", class_nitrite)
@@ -98,7 +107,9 @@ print("Nitrite values:", class_nitrite)
 Using the code written to calculate the mean for your group's nitrate data, modify it to calculate the class nitrate and nitrite means.
 
 ```{pyodide}
+#| persist: true
 # Calculate mean nitrate and nitrite for class data (replace the ???)
+
 mean_class_nitrate = np.mean(???)
 mean_class_nitrite = np.mean(???)
 
@@ -111,7 +122,9 @@ print("Class nitrite:", mean_class_nitrite, "mg/L")
 Similarly, calculate the median for the class nitrate and nitrite data.
 
 ```{pyodide}
+#| persist: true
 # Calculate median nitrate and nitrite for class data (replace the ???)
+
 median_class_nitrate = np.median(???)
 median_class_nitrite = np.median(???)
 
