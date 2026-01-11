@@ -6,6 +6,12 @@ format: live-html
 sidebar: lesson-1
 ---
 
+:::{.ltblue-container}
+**A Reminder of Our Sample Dataset**
+
+1, 2, 6, 5, 1
+:::
+
 ## Let's Analyze Your Data With Python
 
 ### Lists
@@ -13,6 +19,7 @@ sidebar: lesson-1
 In Python, we store multiple numbers in something called a **list**.
 
 ```{pyodide}
+#| edit: false
 # Our sample dataset from above 
 # (the square brackets [ ] make it a list)
 
