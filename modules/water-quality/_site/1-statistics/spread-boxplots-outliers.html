@@ -294,8 +294,25 @@ window.Quarto = {
 </header>
 
 
+<div class="ltblue-container">
+<p><strong>Checkpoints on this Page:</strong></p>
+<ul>
+<li><a href="#lst-getcsv"><strong>Checkpoint 1:</strong> Import Class Data</a></li>
+<li><a href="#lst-classdatarange"><strong>Checkpoint 2:</strong> Find Ranges of Class Data</a></li>
+<li><a href="#lst-classdatastddev"><strong>Checkpoint 3:</strong> Find Standard Deviations of Class Data</a></li>
+<li><a href="#lst-sampledataboxplot"><strong>Checkpoint 4:</strong> Create Boxplot for Sample Data</a></li>
+<li><a href="#lst-classnitrateboxplot"><strong>Checkpoint 5:</strong> Create Boxplot for Class Nitrate Data</a></li>
+<li><a href="#lst-classnitriteboxplot"><strong>Checkpoint 5:</strong> Create Boxplot for Class Nitrite Data</a></li>
+</ul>
+</div>
 <p>A second and final statistical measure we’ll discuss today is <strong>spread</strong>. Just as it sounds, measures of spread tell us how spread out our data are. Spread, also referred to as <strong>variability</strong>, is <em>the backbone</em> of statistics!</p>
-<p><strong>To-Do:</strong> We need to re-load the class csv data since the webpage doesn’t save things from page-to-page. Please paste the csv link again in the block below and run it.</p>
+<div id="lst-getcsv" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-getcsv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;1: Import your whole class’s nitrate and nitrite data.
+</figcaption>
+<div aria-describedby="lst-getcsv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><strong>To-Do:</strong> We need to re-load the class csv data since the webpage doesn’t save variables from page-to-page. Please paste the csv link again in the block below and run it.</p>
 <div>
 <div id="pyodide-1" class="exercise-cell">
 
@@ -311,6 +328,9 @@ eyJhdHRyIjp7ImVjaG8iOmZhbHNlLCJlZGl0IjpmYWxzZSwiZXZhbCI6dHJ1ZSwiaW5jbHVkZSI6ZmFs
 <script type="pyodide-2-contents">
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0Ijp0cnVlfSwiY29kZSI6IiMgUmVwbGFjZSB0aGUgdXJsIHdpdGggdGhlIG9uZSBwcm92aWRlZCBmcm9tIHlvdXIgdGVhY2hlci4gXG4jIE1ha2Ugc3VyZSB0byBrZWVwIHRoZSBxdW90YXRpb24gbWFya3MhXG5cbmNzdl91cmwgPSBcInd3dy5yZXBsYWNlX3RoaXNfd2l0aF95b3VyX2Nzdl91cmwuY3N2XCJcblxuY2xhc3Nfbml0cmF0ZSwgY2xhc3Nfbml0cml0ZSA9IGxvYWRfY2xhc3NfZGF0YShjc3ZfdXJsKVxuXG5wcmludChcIk5pdHJhdGUgdmFsdWVzOlwiLCBjbGFzc19uaXRyYXRlKVxucHJpbnQoXCJOaXRyaXRlIHZhbHVlczpcIiwgY2xhc3Nfbml0cml0ZSkifQ==
 </script>
+</div>
+</div>
+</figure>
 </div>
 <section id="two-measures-of-spread" class="level2">
 <h2 class="anchored" data-anchor-id="two-measures-of-spread">Two Measures of Spread</h2>
@@ -330,6 +350,12 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0
 eyJhdHRyIjp7ImVkaXQiOmZhbHNlLCJldmFsIjp0cnVlfSwiY29kZSI6InNhbXBsZV9kYXRhID0gWzEsIDIsIDYsIDUsIDFdXG5cbnNhbXBsZV9yYW5nZSA9IG1heChzYW1wbGVfZGF0YSkgLSBtaW4oc2FtcGxlX2RhdGEpXG5cbnByaW50KFwiUmFuZ2Ugb2Ygc2FtcGxlIGRhdGE6XCIsIHNhbXBsZV9yYW5nZSkifQ==
 </script>
 </div>
+<div id="lst-classdatarange" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-classdatarange-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;2: Find the range of the class nitrate and nitrite data.
+</figcaption>
+<div aria-describedby="lst-classdatarange-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><strong>YOUR TURN:</strong> Find the range of the class nitrate and class nitrate data! Fill in the <code>???</code> with the appropriate object name and run the block.</p>
 <div>
 <div id="pyodide-4" class="exercise-cell">
@@ -338,6 +364,9 @@ eyJhdHRyIjp7ImVkaXQiOmZhbHNlLCJldmFsIjp0cnVlfSwiY29kZSI6InNhbXBsZV9kYXRhID0gWzEs
 <script type="pyodide-4-contents">
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0Ijp0cnVlfSwiY29kZSI6ImNsYXNzX25pdHJhdGVfcmFuZ2UgPSBtYXgoPz8/KSAtIG1pbig/Pz8pXG5jbGFzc19uaXRyaXRlX3JhbmdlID0gbWF4KD8/PykgLSBtaW4oPz8/KVxuXG5wcmludChcIlJhbmdlIG9mIGNsYXNzIG5pdHJhdGUgZGF0YTpcIiwgY2xhc3Nfbml0cmF0ZV9yYW5nZSlcbnByaW50KFwiUmFuZ2Ugb2YgY2xhc3Mgbml0cml0ZSBkYXRhOlwiLCBjbGFzc19uaXRyaXRlX3JhbmdlKSJ9
 </script>
+</div>
+</div>
+</figure>
 </div>
 </section>
 <section id="standard-deviation" class="level3">
@@ -355,6 +384,12 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0
 eyJhdHRyIjp7ImVkaXQiOmZhbHNlLCJldmFsIjp0cnVlfSwiY29kZSI6ImltcG9ydCBudW1weSBhcyBucFxuXG5zYW1wbGVfZGF0YSA9IFsxLCAyLCA2LCA1LCAxXVxuXG5zYW1wbGVfc3RkZXYgPSBucC5zdGQoc2FtcGxlX2RhdGEpXG5cbnByaW50KFwiU3RhbmRhcmQgRGV2aWF0aW9uIG9mIHNhbXBsZSBkYXRhOlwiLCBzYW1wbGVfc3RkZXYpIn0=
 </script>
 </div>
+<div id="lst-classdatastddev" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-classdatastddev-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;3: Find the standard deviation of the class nitrate and nitrite data.
+</figcaption>
+<div aria-describedby="lst-classdatastddev-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><strong>YOUR TURN:</strong> Find the standard deviation of the class nitrate and class nitrite data! Fill in the <code>???</code> with the appropriate object name and run the block.</p>
 <div>
 <div id="pyodide-6" class="exercise-cell">
@@ -363,6 +398,9 @@ eyJhdHRyIjp7ImVkaXQiOmZhbHNlLCJldmFsIjp0cnVlfSwiY29kZSI6ImltcG9ydCBudW1weSBhcyBu
 <script type="pyodide-6-contents">
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0Ijp0cnVlfSwiY29kZSI6ImNsYXNzX25pdHJhdGVfc3RkZXYgPSBucC5zdGQoPz8/KVxuY2xhc3Nfbml0cml0ZV9zdGRldiA9IG5wLnN0ZCg/Pz8pXG5cbnByaW50KFwiU3RhbmRhcmQgRGV2aWF0aW9uIG9mIGNsYXNzIG5pdHJhdGUgZGF0YTpcIiwgY2xhc3Nfbml0cmF0ZV9zdGRldilcbnByaW50KFwiU3RhbmRhcmQgRGV2aWF0aW9uIG9mIGNsYXNzIG5pdHJpdGUgZGF0YTpcIiwgY2xhc3Nfbml0cml0ZV9zdGRldikifQ==
 </script>
+</div>
+</div>
+</figure>
 </div>
 </section>
 </section>
@@ -426,6 +464,12 @@ eyJhdHRyIjp7ImVkaXQiOmZhbHNlLCJldmFsIjp0cnVlfSwiY29kZSI6InNhbXBsZV9kYXRhID0gWzEs
 <section id="boxplots" class="level2">
 <h2 class="anchored" data-anchor-id="boxplots">Boxplots</h2>
 <p>We can also use a <strong>boxplot</strong> to visualize outliers automatically! It’s like a detective tool for finding weird data. Here is a boxplot of our sample data with the outlier added:</p>
+<div id="lst-sampledataboxplot" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-sampledataboxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;4: Create a boxplot for the sample data with the outlier added.
+</figcaption>
+<div aria-describedby="lst-sampledataboxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
 <div id="pyodide-8" class="exercise-cell">
 
@@ -434,6 +478,9 @@ eyJhdHRyIjp7ImVkaXQiOmZhbHNlLCJldmFsIjp0cnVlfSwiY29kZSI6InNhbXBsZV9kYXRhID0gWzEs
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6ImltcG9ydCBtYXRwbG90bGliLnB5cGxvdCBhcyBwbHRcblxucGx0LmZpZ3VyZShmaWdzaXplPSgxMCwgNikpXG5wbHQuYm94cGxvdChzYW1wbGVfd291dGxpZXIsIHZlcnQ9VHJ1ZSwgcGF0Y2hfYXJ0aXN0PVRydWUsIFxuICAgICAgICAgICAgYm94cHJvcHM9ZGljdChmYWNlY29sb3I9J2xpZ2h0Ymx1ZScpLFxuICAgICAgICAgICAgbWVkaWFucHJvcHM9ZGljdChjb2xvcj0ncmVkJywgbGluZXdpZHRoPTIpKVxucGx0LnRpdGxlKCdCb3hwbG90OiBPdXRsaWVycyBTaG93biBhcyBDaXJjbGVzJywgZm9udHNpemU9MTQpXG5wbHQuZ3JpZChUcnVlLCBhbHBoYT0wLjMsIGF4aXM9J3knKVxucGx0LnlsaW0oMCwgMTcpXG5wbHQueHRpY2tzKFtdKVxuXG5wbHQudGV4dCgxLjE1LCAxNSwgJ+KGkCBIaWdoIG91dGxpZXInLCBmb250c2l6ZT0xMSwgdmE9J2NlbnRlcicpXG5wbHQudGV4dCgxLjE1LCBucC5tZWRpYW4oc2FtcGxlX3dvdXRsaWVyKSwgZifihpAgTWVkaWFuICh7bnAubWVkaWFuKHNhbXBsZV93b3V0bGllcil9KScsIGZvbnRzaXplPTExLCB2YT0nY2VudGVyJylcbnBsdC5zaG93KClcblxucHJpbnQoXCJUaGUgY2lyY2xlIHNob3dzIHRoZSBvdXRsaWVyIVwiKVxucHJpbnQoXCJUaGUgYm94IHNob3dzIHdoZXJlIG1vc3Qgb2YgdGhlIG90aGVyIGRhdGEgaXMuXCIpIn0=
 </script>
 </div>
+</div>
+</figure>
+</div>
 <p><strong>Reading a box plot:</strong><br>
 - The <strong>line in the middle</strong> = Median<br>
 - The <strong>box</strong> = Where the middle 50% of data is<br>
@@ -441,6 +488,12 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6
 - The <strong>circles</strong> = Outliers!</p>
 <section id="class-nitrate-boxplot" class="level3">
 <h3 class="anchored" data-anchor-id="class-nitrate-boxplot">Class Nitrate Boxplot</h3>
+<div id="lst-classnitrateboxplot" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-classnitrateboxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;5: Create a boxplot for the class nitrate data.
+</figcaption>
+<div aria-describedby="lst-classnitrateboxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><strong>Your Turn:</strong> Create a Boxplot for the Class Nitrate Data</p>
 <div>
 <div id="pyodide-9" class="exercise-cell">
@@ -450,9 +503,18 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6InBsdC5maWd1cmUoZmlnc2l6ZT0oOCwgNikpXG5wbHQuYm94cGxvdChjbGFzc19uaXRyYXRlLCB2ZXJ0PVRydWUsIHBhdGNoX2FydGlzdD1UcnVlLFxuICAgICAgICAgICAgYm94cHJvcHM9ZGljdChmYWNlY29sb3I9J3BsdW0nKSlcbnBsdC55bGFiZWwoJ05pdHJhdGUgKG1nL0wpJywgZm9udHNpemU9MTIpXG5wbHQueHRpY2tzKFtdKVxucGx0LnRpdGxlKCdCb3hwbG90IG9mIENsYXNzIE5pdHJhdGUnLCBmb250c2l6ZT0xMylcbnBsdC5ncmlkKFRydWUsIGFscGhhPTAuMywgYXhpcz0neScpXG5wbHQuc2hvdygpIn0=
 </script>
 </div>
+</div>
+</figure>
+</div>
 </section>
 <section id="class-nitrite-boxplot" class="level3">
 <h3 class="anchored" data-anchor-id="class-nitrite-boxplot">Class Nitrite Boxplot</h3>
+<div id="lst-classnitriteboxplot" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-classnitriteboxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;6: Create a boxplot for the class nitrite data.
+</figcaption>
+<div aria-describedby="lst-classnitriteboxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><strong>Your Turn:</strong> Create a Boxplot for the Class Nitrite Data</p>
 <div>
 <div id="pyodide-10" class="exercise-cell">
@@ -461,6 +523,9 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6
 <script type="pyodide-10-contents">
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6InBsdC5maWd1cmUoZmlnc2l6ZT0oOCwgNikpXG5wbHQuYm94cGxvdChjbGFzc19uaXRyaXRlLCB2ZXJ0PVRydWUsIHBhdGNoX2FydGlzdD1UcnVlLFxuICAgICAgICAgICAgYm94cHJvcHM9ZGljdChmYWNlY29sb3I9J2xlbW9uY2hpZmZvbicpKVxucGx0LnlsYWJlbCgnTml0cml0ZSAobWcvTCknLCBmb250c2l6ZT0xMilcbnBsdC54dGlja3MoW10pXG5wbHQudGl0bGUoJ0JveHBsb3Qgb2YgQ2xhc3MgTml0cml0ZScsIGZvbnRzaXplPTEzKVxucGx0LmdyaWQoVHJ1ZSwgYWxwaGE9MC4zLCBheGlzPSd5JylcbnBsdC5zaG93KCkifQ==
 </script>
+</div>
+</div>
+</figure>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">

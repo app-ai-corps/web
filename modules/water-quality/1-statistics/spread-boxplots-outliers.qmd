@@ -6,9 +6,22 @@ format: live-html
 sidebar: lesson-1
 ---
 
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 1:** Import Class Data](#lst-getcsv)
+- [**Checkpoint 2:** Find Ranges of Class Data](#lst-classdatarange)
+- [**Checkpoint 3:** Find Standard Deviations of Class Data](#lst-classdatastddev)
+- [**Checkpoint 4:** Create Boxplot for Sample Data](#lst-sampledataboxplot)
+- [**Checkpoint 5:** Create Boxplot for Class Nitrate Data](#lst-classnitrateboxplot)
+- [**Checkpoint 5:** Create Boxplot for Class Nitrite Data](#lst-classnitriteboxplot)
+:::
+
 A second and final statistical measure we'll discuss today is **spread**. Just as it sounds, measures of spread tell us how spread out our data are. Spread, also referred to as **variability**, is *the backbone* of statistics!
 
-**To-Do:** We need to re-load the class csv data since the webpage doesn't save things from page-to-page. Please paste the csv link again in the block below and run it.
+:::{#lst-getcsv}
+
+**To-Do:** We need to re-load the class csv data since the webpage doesn't save variables from page-to-page. Please paste the csv link again in the block below and run it.
 
 ```{pyodide}
 #| include: false
@@ -42,6 +55,9 @@ print("Nitrate values:", class_nitrate)
 print("Nitrite values:", class_nitrite)
 ```
 
+Import your whole class's nitrate and nitrite data.
+:::
+
 ## Two Measures of Spread
 Today, we'll discuss two measures of spread: the **range** and the **standard deviation**.
 
@@ -62,6 +78,8 @@ sample_range = max(sample_data) - min(sample_data)
 print("Range of sample data:", sample_range)
 ```
 
+:::{#lst-classdatarange}
+
 **YOUR TURN:** Find the range of the class nitrate and class nitrate data! Fill in the `???` with the appropriate object name and run the block.
 ```{pyodide}
 #| persist: true
@@ -72,6 +90,9 @@ class_nitrite_range = max(???) - min(???)
 print("Range of class nitrate data:", class_nitrate_range)
 print("Range of class nitrite data:", class_nitrite_range)
 ```
+
+Find the range of the class nitrate and nitrite data.
+:::
 
 ### Standard Deviation
 
@@ -94,6 +115,8 @@ sample_stdev = np.std(sample_data)
 print("Standard Deviation of sample data:", sample_stdev)
 ```
 
+:::{#lst-classdatastddev}
+
 **YOUR TURN:** Find the standard deviation of the class nitrate and class nitrite data! Fill in the `???` with the appropriate object name and run the block.
 ```{pyodide}
 #| persist: true
@@ -104,6 +127,9 @@ class_nitrite_stdev = np.std(???)
 print("Standard Deviation of class nitrate data:", class_nitrate_stdev)
 print("Standard Deviation of class nitrite data:", class_nitrite_stdev)
 ```
+
+Find the standard deviation of the class nitrate and nitrite data.
+:::
 
 ## What Could Cause High Variability?
 
@@ -157,6 +183,8 @@ Outliers can happen for different reasons:
 
 We can also use a **boxplot** to visualize outliers automatically! It's like a detective tool for finding weird data. Here is a boxplot of our sample data with the outlier added:
 
+:::{#lst-sampledataboxplot}
+
 ```{pyodide}
 #| completion: false
 import matplotlib.pyplot as plt
@@ -178,6 +206,9 @@ print("The circle shows the outlier!")
 print("The box shows where most of the other data is.")
 ```
 
+Create a boxplot for the sample data with the outlier added.
+:::
+
 **Reading a box plot:**  
 - The **line in the middle** = Median  
 - The **box** = Where the middle 50% of data is  
@@ -187,6 +218,8 @@ print("The box shows where most of the other data is.")
 
 
 ### Class Nitrate Boxplot
+
+:::{#lst-classnitrateboxplot}
 **Your Turn:** Create a Boxplot for the Class Nitrate Data
 
 ```{pyodide}
@@ -201,7 +234,12 @@ plt.grid(True, alpha=0.3, axis='y')
 plt.show()
 ```
 
+Create a boxplot for the class nitrate data.
+:::
+
 ### Class Nitrite Boxplot
+
+:::{#lst-classnitriteboxplot}
 **Your Turn:** Create a Boxplot for the Class Nitrite Data
 
 ```{pyodide}
@@ -215,6 +253,9 @@ plt.title('Boxplot of Class Nitrite', fontsize=13)
 plt.grid(True, alpha=0.3, axis='y')
 plt.show()
 ```
+
+Create a boxplot for the class nitrite data.
+:::
 
 :::{.callout-important}
 ## Do either have outliers? How do you know?
