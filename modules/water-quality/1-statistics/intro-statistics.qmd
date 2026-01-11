@@ -9,7 +9,7 @@ sidebar: lesson-1
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 1:** Calculations: Mean & Median](#chk-mean_median)
+- [**Checkpoint 1:** Calculations—Mean & Median](#chk-mean_median)
 
 :::
 
