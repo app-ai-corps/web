@@ -5,6 +5,17 @@ crossref:
 format: live-html
 sidebar: lesson-1
 ---
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 1:** Calculating Group Mean Nitrate](#lst-groupmeannitrate)
+- [**Checkpoint 2:** Import Class Data](#lst-getcsv)
+- [**Checkpoint 3:** Calculate Means for Class Data](#lst-classmeannitratenitrite)
+- [**Checkpoint 4:** Calculate Medians for Class Data](#lst-classmediannitratenitrite)
+- [**Checkpoint 5:** Create Class Nitrate Histogram](#lst-classnitratehistogram)
+- [**Checkpoint 6:** Create Class Nitrite Histogram](#lst-classnitritehistogram)
+:::
+
 As you might have guessed, Python can do much more than just the functions **len()**, **min()**, and **max()**. In fact, it can help us calculate our measures of center!
 
 You have already calculated the mean and median by hand on your lab sheet. Now, let's ask Python to do it!
@@ -37,6 +48,8 @@ print("mean of sample data:", mean_sample)
 ## Your Turn: Calculate Your Group's Mean Nitrate
 The website doesn't save your nitrate readings list from the previous page, so you'll need to re-enter your data into the list below (Line 4) again.
 
+:::{#lst-groupmeannitrate}
+
 **YOUR TURN:**  
 - Recreate the list of your group's nitrate readings below  
 - Run the block
@@ -62,8 +75,13 @@ else:
 # Try changing the numbers and see what happens!
 ```
 
+Calculate and check your group's mean nitrate concentration.
+:::
+
 ## Class Data
 One of the benefits of using Python is that is can handle much larger amount amounts of data with ease. For example, let's consider the nitrate and nitrite data your whole class collected. We'll do that by importing the data collected in the Google Form. That form sends the data to a spreadsheet, or CSV (comman separated values) file.
+
+:::{#lst-getcsv}
 
 :::{.callout-important}
 ## Your teacher will provide the link to the CSV file for you to use.
@@ -103,10 +121,14 @@ print("Nitrate values:", class_nitrate)
 print("Nitrite values:", class_nitrite)
 ```
 
+Import your whole class's nitrate and nitrite data.
+:::
 
 ### Calculating the Class Nitrate and Nitrate Mean
 
 Using the code written to calculate the mean for your group's nitrate data, modify it to calculate the class nitrate and nitrite means.
+
+:::{#lst-classmeannitratenitrite}
 
 ```{pyodide}
 #| persist: true
@@ -120,9 +142,14 @@ print("Class nitrate:", mean_class_nitrate, "mg/L")
 print("Class nitrite:", mean_class_nitrite, "mg/L")
 ```
 
+Calculate the class nitrate and nitrite means.
+:::
+
 ### Calculating the Class Nitrate and Nitrite Median
 
 Similarly, calculate the median for the class nitrate and nitrite data.
+
+:::{#lst-classmediannitratenitrite}
 
 ```{pyodide}
 #| persist: true
@@ -135,6 +162,9 @@ median_class_nitrite = np.median(???)
 print("Class nitrate median:", median_class_nitrate, "mg/L")
 print("Class nitrite median:", median_class_nitrite, "mg/L")
 ```
+
+Calculate the class nitrate and nitrite medians.
+:::
 
 ## Visualizing the Data & Measures of Center
 
@@ -156,6 +186,9 @@ Place your stickies in the correct bin, putting your nitrate values on the nitra
 Python can also make histograms! Run the code blocks below to see a histogram of the class nitrate value (block #1) and the class nitrite values (block #2). Do the histograms look similar to the plots we made by hand?
 
 #### Histogram for Class Nitrate Readings
+
+:::{#lst-classnitratehistogram}
+
 ```{pyodide}
 #| completion: false
 import matplotlib.pyplot as plt
@@ -168,6 +201,9 @@ plt.title('Class Nitrate Readings')
 plt.grid(True, alpha=0.3)
 plt.show()
 ```
+
+Create class nitrate histogram.
+:::
 
 ##### Add Mean and Median
 Add the mean and median to the nitrate histogram.
@@ -191,6 +227,9 @@ plt.show()
 ```
 
 #### Histogram for Class Nitrite Readings
+
+:::{#lst-classnitritehistogram}
+
 ```{pyodide}
 #| completion: false
 plt.figure(figsize=(10, 6))
@@ -201,6 +240,9 @@ plt.title('Class Nitrite Readings')
 plt.grid(True, alpha=0.3)
 plt.show()
 ```
+
+Create class nitrite histogram.
+:::
 
 ##### Add Mean and Median
 Add the mean and median to the nitrite histogram.

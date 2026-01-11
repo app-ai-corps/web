@@ -264,6 +264,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="ltblue-container">
+<p><strong>Checkpoints on this Page:</strong></p>
+<ul>
+<li><a href="#lst-groupmeannitrate"><strong>Checkpoint 1:</strong> Calculating Group Mean Nitrate</a></li>
+<li><a href="#lst-getcsv"><strong>Checkpoint 2:</strong> Import Class Data</a></li>
+<li><a href="#lst-classmeannitratenitrite"><strong>Checkpoint 3:</strong> Calculate Means for Class Data</a></li>
+<li><a href="#lst-classmediannitratenitrite"><strong>Checkpoint 4:</strong> Calculate Medians for Class Data</a></li>
+<li><a href="#lst-classnitratehistogram"><strong>Checkpoint 5:</strong> Create Class Nitrate Histogram</a></li>
+<li><a href="#lst-classnitritehistogram"><strong>Checkpoint 6:</strong> Create Class Nitrite Histogram</a></li>
+</ul>
+</div>
 <p>As you might have guessed, Python can do much more than just the functions <strong>len()</strong>, <strong>min()</strong>, and <strong>max()</strong>. In fact, it can help us calculate our measures of center!</p>
 <p>You have already calculated the mean and median by hand on your lab sheet. Now, let’s ask Python to do it!</p>
 <section id="calculating-statistics-with-python" class="level2">
@@ -288,6 +299,12 @@ eyJhdHRyIjp7ImVkaXQiOmZhbHNlLCJldmFsIjp0cnVlfSwiY29kZSI6ImltcG9ydCBudW1weSBhcyBu
 <section id="your-turn-calculate-your-groups-mean-nitrate" class="level2">
 <h2 class="anchored" data-anchor-id="your-turn-calculate-your-groups-mean-nitrate">Your Turn: Calculate Your Group’s Mean Nitrate</h2>
 <p>The website doesn’t save your nitrate readings list from the previous page, so you’ll need to re-enter your data into the list below (Line 4) again.</p>
+<div id="lst-groupmeannitrate" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-groupmeannitrate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;1: Calculate and check your group’s mean nitrate concentration.
+</figcaption>
+<div aria-describedby="lst-groupmeannitrate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><strong>YOUR TURN:</strong><br>
 - Recreate the list of your group’s nitrate readings below<br>
 - Run the block</p>
@@ -299,10 +316,19 @@ eyJhdHRyIjp7ImVkaXQiOmZhbHNlLCJldmFsIjp0cnVlfSwiY29kZSI6ImltcG9ydCBudW1weSBhcyBu
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0Ijp0cnVlfSwiY29kZSI6IiMgUmVjcmVhdGUgdGhlIGxpc3Qgb2YgeW91ciBncm91cCdzIG5pdHJhdGUgcmVhZGluZ3MgYmVsb3dcblxuZ3JvdXBfbml0cmF0ZSA9IFsxMCwgMjAsIDMwLCA0MF1cblxubWVhbl9uaXRyYXRlID0gbnAubWVhbihncm91cF9uaXRyYXRlKVxuXG5wcmludChcIkdyb3VwIG5pdHJhdGUgcmVhZGluZ3MgKG1nL0wpOlwiLCBncm91cF9uaXRyYXRlKVxucHJpbnQoXCJHcm91cCBtZWFuIG5pdHJhdGU6XCIsIG1lYW5fbml0cmF0ZSwgXCJtZy9MXCIpXG5cbiMgSXMgaXQgc2FmZT8gKFJlbWVtYmVyOiB0aGUgRVBBJ3MgbGltaXQgaXMgbGVzcyB0aGFuIDEwIG1nL0wpXG5pZiBtZWFuX25pdHJhdGUgPCAxMDpcbiAgICBwcmludChcIuKckyBBdmVyYWdlIG5pdHJhdGUgaXMgU0FGRVwiKVxuZWxzZTpcbiAgICBwcmludChcIuKclyBBdmVyYWdlIG5pdHJhdGUgaXMgVE9PIEhJR0hcIilcblxuIyBUcnkgY2hhbmdpbmcgdGhlIG51bWJlcnMgYW5kIHNlZSB3aGF0IGhhcHBlbnMhIn0=
 </script>
 </div>
+</div>
+</figure>
+</div>
 </section>
 <section id="class-data" class="level2">
 <h2 class="anchored" data-anchor-id="class-data">Class Data</h2>
 <p>One of the benefits of using Python is that is can handle much larger amount amounts of data with ease. For example, let’s consider the nitrate and nitrite data your whole class collected. We’ll do that by importing the data collected in the Google Form. That form sends the data to a spreadsheet, or CSV (comman separated values) file.</p>
+<div id="lst-getcsv" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-getcsv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;2: Import your whole class’s nitrate and nitrite data.
+</figcaption>
+<div aria-describedby="lst-getcsv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -333,9 +359,18 @@ eyJhdHRyIjp7ImVjaG8iOmZhbHNlLCJlZGl0IjpmYWxzZSwiZXZhbCI6dHJ1ZSwiaW5jbHVkZSI6ZmFs
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0Ijp0cnVlfSwiY29kZSI6IiMgUmVwbGFjZSB0aGUgdXJsIHdpdGggdGhlIG9uZSBwcm92aWRlZCBmcm9tIHlvdXIgdGVhY2hlci4gXG4jIE1ha2Ugc3VyZSB0byBrZWVwIHRoZSBxdW90YXRpb24gbWFya3MhXG5cbmNzdl91cmwgPSBcInd3dy5yZXBsYWNlX3RoaXNfd2l0aF95b3VyX2Nzdl91cmwuY3N2XCJcblxuY2xhc3Nfbml0cmF0ZSwgY2xhc3Nfbml0cml0ZSA9IGxvYWRfY2xhc3NfZGF0YShjc3ZfdXJsKVxuXG5wcmludChcIk5pdHJhdGUgdmFsdWVzOlwiLCBjbGFzc19uaXRyYXRlKVxucHJpbnQoXCJOaXRyaXRlIHZhbHVlczpcIiwgY2xhc3Nfbml0cml0ZSkifQ==
 </script>
 </div>
+</div>
+</figure>
+</div>
 <section id="calculating-the-class-nitrate-and-nitrate-mean" class="level3">
 <h3 class="anchored" data-anchor-id="calculating-the-class-nitrate-and-nitrate-mean">Calculating the Class Nitrate and Nitrate Mean</h3>
 <p>Using the code written to calculate the mean for your group’s nitrate data, modify it to calculate the class nitrate and nitrite means.</p>
+<div id="lst-classmeannitratenitrite" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-classmeannitratenitrite-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;3: Calculate the class nitrate and nitrite means.
+</figcaption>
+<div aria-describedby="lst-classmeannitratenitrite-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
 <div id="pyodide-5" class="exercise-cell">
 
@@ -344,10 +379,19 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0Ijp0cnVlfSwiY29kZSI6IiMgQ2FsY3VsYXRlIG1lYW4gbml0cmF0ZSBhbmQgbml0cml0ZSBmb3IgY2xhc3MgZGF0YSAocmVwbGFjZSB0aGUgPz8/KVxuXG5tZWFuX2NsYXNzX25pdHJhdGUgPSBucC5tZWFuKD8/Pylcbm1lYW5fY2xhc3Nfbml0cml0ZSA9IG5wLm1lYW4oPz8/KVxuXG5wcmludChcIkNsYXNzIG5pdHJhdGU6XCIsIG1lYW5fY2xhc3Nfbml0cmF0ZSwgXCJtZy9MXCIpXG5wcmludChcIkNsYXNzIG5pdHJpdGU6XCIsIG1lYW5fY2xhc3Nfbml0cml0ZSwgXCJtZy9MXCIpIn0=
 </script>
 </div>
+</div>
+</figure>
+</div>
 </section>
 <section id="calculating-the-class-nitrate-and-nitrite-median" class="level3">
 <h3 class="anchored" data-anchor-id="calculating-the-class-nitrate-and-nitrite-median">Calculating the Class Nitrate and Nitrite Median</h3>
 <p>Similarly, calculate the median for the class nitrate and nitrite data.</p>
+<div id="lst-classmediannitratenitrite" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-classmediannitratenitrite-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;4: Calculate the class nitrate and nitrite medians.
+</figcaption>
+<div aria-describedby="lst-classmediannitratenitrite-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
 <div id="pyodide-6" class="exercise-cell">
 
@@ -355,6 +399,9 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0
 <script type="pyodide-6-contents">
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0Ijp0cnVlfSwiY29kZSI6IiMgQ2FsY3VsYXRlIG1lZGlhbiBuaXRyYXRlIGFuZCBuaXRyaXRlIGZvciBjbGFzcyBkYXRhIChyZXBsYWNlIHRoZSA/Pz8pXG5cbm1lZGlhbl9jbGFzc19uaXRyYXRlID0gbnAubWVkaWFuKD8/Pylcbm1lZGlhbl9jbGFzc19uaXRyaXRlID0gbnAubWVkaWFuKD8/PylcblxucHJpbnQoXCJDbGFzcyBuaXRyYXRlIG1lZGlhbjpcIiwgbWVkaWFuX2NsYXNzX25pdHJhdGUsIFwibWcvTFwiKVxucHJpbnQoXCJDbGFzcyBuaXRyaXRlIG1lZGlhbjpcIiwgbWVkaWFuX2NsYXNzX25pdHJpdGUsIFwibWcvTFwiKSJ9
 </script>
+</div>
+</div>
+</figure>
 </div>
 </section>
 </section>
@@ -385,6 +432,12 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0
 <p>Python can also make histograms! Run the code blocks below to see a histogram of the class nitrate value (block #1) and the class nitrite values (block #2). Do the histograms look similar to the plots we made by hand?</p>
 <section id="histogram-for-class-nitrate-readings" class="level4">
 <h4 class="anchored" data-anchor-id="histogram-for-class-nitrate-readings">Histogram for Class Nitrate Readings</h4>
+<div id="lst-classnitratehistogram" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-classnitratehistogram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;5: Create class nitrate histogram.
+</figcaption>
+<div aria-describedby="lst-classnitratehistogram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
 <div id="pyodide-7" class="exercise-cell">
 
@@ -392,6 +445,9 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0
 <script type="pyodide-7-contents">
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6ImltcG9ydCBtYXRwbG90bGliLnB5cGxvdCBhcyBwbHRcblxucGx0LmZpZ3VyZShmaWdzaXplPSgxMCwgNikpXG5wbHQuaGlzdChjbGFzc19uaXRyYXRlLCBiaW5zPTEwLCBlZGdlY29sb3I9J2JsYWNrJywgY29sb3I9J3BsdW0nKVxucGx0LnhsYWJlbCgnTml0cmF0ZSBMZXZlbCAobWcvTCknKVxucGx0LnlsYWJlbCgnRnJlcXVlbmN5JylcbnBsdC50aXRsZSgnQ2xhc3MgTml0cmF0ZSBSZWFkaW5ncycpXG5wbHQuZ3JpZChUcnVlLCBhbHBoYT0wLjMpXG5wbHQuc2hvdygpIn0=
 </script>
+</div>
+</div>
+</figure>
 </div>
 <section id="add-mean-and-median" class="level5">
 <h5 class="anchored" data-anchor-id="add-mean-and-median">Add Mean and Median</h5>
@@ -408,6 +464,12 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6
 </section>
 <section id="histogram-for-class-nitrite-readings" class="level4">
 <h4 class="anchored" data-anchor-id="histogram-for-class-nitrite-readings">Histogram for Class Nitrite Readings</h4>
+<div id="lst-classnitritehistogram" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-classnitritehistogram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;6: Create class nitrite histogram.
+</figcaption>
+<div aria-describedby="lst-classnitritehistogram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
 <div id="pyodide-9" class="exercise-cell">
 
@@ -415,6 +477,9 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6
 <script type="pyodide-9-contents">
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6InBsdC5maWd1cmUoZmlnc2l6ZT0oMTAsIDYpKVxucGx0Lmhpc3QoY2xhc3Nfbml0cml0ZSwgYmlucz0xMCwgZWRnZWNvbG9yPSdibGFjaycsIGNvbG9yPSdsZW1vbmNoaWZmb24nKVxucGx0LnhsYWJlbCgnTml0cml0ZSBMZXZlbCAobWcvTCknKVxucGx0LnlsYWJlbCgnRnJlcXVlbmN5JylcbnBsdC50aXRsZSgnQ2xhc3MgTml0cml0ZSBSZWFkaW5ncycpXG5wbHQuZ3JpZChUcnVlLCBhbHBoYT0wLjMpXG5wbHQuc2hvdygpIn0=
 </script>
+</div>
+</div>
+</figure>
 </div>
 <section id="add-mean-and-median-1" class="level5">
 <h5 class="anchored" data-anchor-id="add-mean-and-median-1">Add Mean and Median</h5>
