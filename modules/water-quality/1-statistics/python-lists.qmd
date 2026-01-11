@@ -37,7 +37,7 @@ print("Our sample data:", sample_data)
 ```
 
 **Breaking it down:**  
-- `sample_data` = the variablename we gave our list (you can name it anything!)  
+- `sample_data` = the variable name we gave our list (you can name it anything!)  
 - `=` means "store this in the variable `sample_data`"  
 - `[1, 2, 6, 5, 1]` = the actual numbers, separated by commas  
 - `print()` = tells Python to show us the result  
