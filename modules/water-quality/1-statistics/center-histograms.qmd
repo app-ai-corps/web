@@ -87,7 +87,7 @@ One of the benefits of using Python is that is can handle much larger amount amo
 ## Your teacher will provide the link to the CSV file for you to use.
 :::
 
-Only edit the CSV URL in the code below (Line 6). The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.
+Only edit the CSV URL in the code below (Line 4). The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.
 
 ```{pyodide}
 #| include: false
