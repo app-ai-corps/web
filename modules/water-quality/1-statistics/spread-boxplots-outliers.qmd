@@ -258,7 +258,7 @@ Create a boxplot for the class nitrite data.
 :::
 
 :::{.callout-important}
-## Do either have outliers? How do you know?
+## Does either have outliers? How do you know?
 :::
 
 ### Takeaways When Encountering an Outlier
