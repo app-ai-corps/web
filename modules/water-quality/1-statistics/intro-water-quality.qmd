@@ -8,9 +8,9 @@ sidebar: lesson-1
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 1:** Role of Nitrogen](#chk-nitrogensrole)
-- [**Checkpoint 2:** Nitrogen in Your Water](#chk-nitrogen_ewg)
-- [**Checkpoint 3:** Nitrogen Summary](#chk-nitrogen_summary)
+- [**Checkpoint 1:** Role of Nitrogen](#lst-nitrogensrole)
+- [**Checkpoint 2:** Nitrogen in Your Water](#lst-nitrogen_ewg)
+- [**Checkpoint 3:** Nitrogen Summary](#lst-nitrogen_summary)
 
 :::
 
@@ -72,10 +72,17 @@ While Nitrogen is a needed nutrient, in larger quantities it can become a *pollu
 
 <br>
 
-::: {#chk-nitrogensrole .checkpoint-box}
-🎯 **Checkpoint 1: Nitrogen In Our Water**
+::: {#lst-nitrogensrole .checkpoint-box}
 
 Summarize. What is the role of nitrogen in our water? Do we want nitrates in our streams? Our drinking water? How about water with lots of nitrogen?
+
+```{pyodide}
+#| include: false
+
+# Fake block to make checkpoint work
+```
+
+Nitrogen In Our Water
 :::
 
 ## Monitoring Nitrogen in the Water
@@ -96,10 +103,17 @@ The World Health Organization (WHO) also sets limits on [allowable levels of nit
 
 Local water utilities must survey and monitor the concentration of nitrogen in water to ensure that their water supply meets the EPA limits. They regularly conduct testing and report results to the appropriate regulatory agencies. You can [look up the reported nitrate concentration for water from your utility](https://www.ewg.org/tapwater/) by using your zipcode.
 
-::: {#chk-nitrogen_ewg .checkpoint-box}
-🎯 **Checkpoint 2: Nitrogen In Your Water**
+::: {#lst-nitrogen_ewg .checkpoint-box}
 
 Using [data from EWG](https://www.ewg.org/tapwater/), what is the most recently reported nitrate concentration by your water utility?
+
+```{pyodide}
+#| include: false
+
+# Fake block to make checkpoint work
+```
+
+Nitrogen In Your Water
 :::
 
 ![The most recently reported nitrate concentration for water from a selected utility.](images/example-nitrate-reading-ewg.png){width="50%"}
@@ -117,10 +131,17 @@ There are a variety of ways we, as private citizens, can monitor the concentrati
 :::
 :::
 
-::: {#chk-nitrogen_summary .checkpoint-box}
-🎯 **Checkpoint 3: Nitrogen Summary**
+::: {#lst-nitrogen_summary .checkpoint-box}
 
 Remember! What are the EPA drinking water limits for nitrate and nitrite??
+
+```{pyodide}
+#| include: false
+
+# Fake block to make checkpoint work
+```
+
+Nitrogen Summary
 :::
 
 ## What's Next?
