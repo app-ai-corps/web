@@ -54,7 +54,10 @@ website:
         - text: "7. Boxplots & Outliers"
           href: 1-statistics/boxplots-outliers
         - text: "---"
-        - text: "8. Exercises"
+        - text: "8. Exit Ticket"
+          href: 1-statistics/exit-ticket
+        - text: "---"
+        - text: "Optional Exercises"
           href: 1-statistics/exercises
 
 
