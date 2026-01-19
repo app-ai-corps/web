@@ -11,14 +11,14 @@ We are going to conduct a brief water quality lab to practice gathering data abo
 
 :::{.ltblue-container}
 **Materials Needed:**  
-- several water quality samples per group  
-- several nitrate/nitrate test strips per group  
+- at least four water quality samples per group  
+- at least four nitrate/nitrate test strips per group  
 - 1 lab notesheet per person  
 - 1 computer with the submission form open for data entry  
     - link to form will be provided by your teacher  
 - pencils  
-- 2 colors of sticky notes (1 color for nitrates and 1 color for nitrites)  
-- 1 Sharpie marker  
+- 8 sets of multicolor sticky notes (you will have 1 color sticky note for each small group)  
+- 2 Sharpie markers of different colors (1 color for nitrates and 1 color for nitrites) 
 - timing device (watch, clock, etc.)  
 :::
 
@@ -36,12 +36,18 @@ Assign roles to each person in your group:
         - submission form pulled up in browser
 - **Role 3:** Data Recorder (Sticky Notes)  
     - *Needs:*  
-        - sticky notes (be clear which color is for nitrates and which is for nitrates)
-        - Sharpie
+        - sets of sticky notes (at least eight sets, two per water sample)
+        - Sharpies
 - **Role 4:** Lab Technician  
     - *Needs:*  
         - water samples 
         - test strips
+
+:::{.callout-note}
+## Modifications for Different Team Sizes
+- If your team has ***three members***, one person should be the *Data Recorder (Lab Report)* and the *Data Recorder (Computer)*.
+- If your team has ***five members***, split the *Data Recorder (Sticky Notes)* between two people. One person should fill out the sticky notes for nitrate concentrations with the first Sharpie, and the other person should fill out the sticky notes for nitrite concentrations with the second Sharpie.
+:::
 
 ## 🚀 Let's Do It!
 1. **Lab Technician:** Take the first water sample, share the sample letter with your team. Then, take one new test strip and do the following:
@@ -67,8 +73,8 @@ Assign roles to each person in your group:
 Submit the form and click the link to submit a new form for the next water sample.   
 
 4. **Data Recorder (Sticky Notes):**  
-    - On a nitrate-color sticky note, write the nitrate value for the sample. Put to the side.  
-    - On a nitrite-color sticky note, write the nitrite value for the sample. Put to the side.  
+    - Using the nitrate-color Sharpie, write the nitrate concentration for the sample on a set of sticky notes. Put the set to the side.  
+    - Using the nitrite-color Sharpie, write the nitrite concentration for the sample on a second set of sticky notes. Put the set to the side.
 
 ***REPEAT THIS PROCESS FOR ALL REMAINING SAMPLES***
 
