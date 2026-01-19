@@ -50,9 +50,11 @@ The website doesn't save your nitrate readings list from the previous page, so y
 
 :::{#lst-groupmeannitrate}
 
-**YOUR TURN:**  
-- Recreate the list of your group's nitrate readings below  
-- Run the block
+:::{.dkorange-container}
+Replace the 10, 20, 30, and 40 placeholders with the nitrate readings from your group!
+
+Click the ▶️ Run Code button to run the block.
+:::
 
 ```{pyodide}
 #| persist: true
@@ -87,7 +89,12 @@ One of the benefits of using Python is that is can handle much larger amount amo
 ## Your teacher will provide the link to the CSV file for you to use.
 :::
 
-Only edit the CSV URL in the code below (Line 4). The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.
+:::{.dkorange-container}
+Replace the placeholder (Line 4) with CSV URL from your teacher. Be sure the keep the quotation marks! This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.
+
+Click the ▶️ Run Code button to run the block.
+:::
+
 
 ```{pyodide}
 #| include: false
@@ -113,7 +120,7 @@ def load_class_data(csv_url):
 # Replace the url with the one provided from your teacher. 
 # Make sure to keep the quotation marks!
 
-csv_url = "www.replace_this_with_your_csv_url.csv"
+csv_url = "replace_this_with_your_csv_url"
 
 class_nitrate, class_nitrite = load_class_data(csv_url)
 
@@ -129,6 +136,12 @@ Import your whole class's nitrate and nitrite data.
 Using the code written to calculate the mean for your group's nitrate data, modify it to calculate the class nitrate and nitrite means.
 
 :::{#lst-classmeannitratenitrite}
+
+:::{.dkorange-container}
+Replace the `???` placeholders (Lines 3 & 4) with the variables that hold the class nitrate and nitrite data. That is, `class_nitrate` and `class_nitrite`, respectively.
+
+Click the ▶️ Run Code button to run the block.
+:::
 
 ```{pyodide}
 #| persist: true
@@ -148,9 +161,13 @@ Calculate the class nitrate and nitrite means.
 ### Median
 #### Your Turn: Calculate the Class Nitrate and Nitrite Median
 
-Similarly, calculate the median for the class nitrate and nitrite data.
-
 :::{#lst-classmediannitratenitrite}
+
+:::{.dkorange-container}
+Similarly, replace `???` with the correct variable names to calculate the median for the class nitrate and nitrite data.
+
+Click the ▶️ Run Code button to run the block.
+:::
 
 ```{pyodide}
 #| persist: true
@@ -189,7 +206,12 @@ print("Range of sample data:", sample_range)
 
 :::{#lst-classdatarange}
 
-**YOUR TURN:** Find the range of the class nitrate and class nitrate data! Fill in the `???` with the appropriate object name and run the block.
+:::{.dkorange-container}
+Replace `???` with the correct variable names to calculate the ranges of the data.
+
+Click the ▶️ Run Code button to run the block.
+:::
+
 ```{pyodide}
 #| persist: true
 #| completion: false
@@ -218,7 +240,12 @@ print("Standard Deviation of sample data:", sample_stdev)
 
 :::{#lst-classdatastddev}
 
-**YOUR TURN:** Find the standard deviation of the class nitrate and class nitrite data! Fill in the `???` with the appropriate object name and run the block.
+:::{.dkorange-container}
+Replace `???` with the correct variable names to calculate the standard deviations of the data.
+
+Click the ▶️ Run Code button to run the block.
+:::
+
 ```{pyodide}
 #| persist: true
 #| completion: false

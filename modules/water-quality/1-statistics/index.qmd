@@ -54,6 +54,10 @@ Python will print text. Click the ▶️ button below to run your first Python c
 
 :::{#lst-printstatements}
 
+:::{.dkorange-container}
+Click the ▶️ Run Code button to run the block.
+:::
+
 ```{pyodide}
 #| completion: false
 # This is a comment - Python ignores lines that start with #
@@ -75,7 +79,9 @@ Now let's use Python to do some math!
 
 :::{#lst-mathoperators}
 
-
+:::{.dkorange-container}
+Click the ▶️ Run Code button to run the blocks.
+:::
 ➕ **Addition:**
 ```{pyodide}
 #| completion: false
@@ -107,6 +113,9 @@ We can also ask Python to **compare values**:
 
 :::{#lst-comparingvalues}
 
+:::{.dkorange-container}
+Click the ▶️ Run Code button to run the blocks.
+:::
 This code asks "Is the sum of 2 and 3 greater than or equal to the product of 2 and 3?"
 ```{pyodide}
 #| completion: false
@@ -128,6 +137,9 @@ You can even combine the strings and math!
 
 :::{#lst-printstatementsmath}
 
+:::{.dkorange-container}
+Click the ▶️ Run Code button to run the block.
+:::
 ```{pyodide}
 #| completion: false
 print("2 + 3 =", 2 + 3)
@@ -142,6 +154,15 @@ Now YOU try! Edit the code below. **Yes! You can type in the code block.** Chang
 
 :::{#lst-personalizedprintstatementsmath}
 
+:::{.dkorange-container}
+Make the following modifications to the block below:
+
+- Change "Student" to your first name.
+- Create a new line 9 to calculate 15 times 4. Use lines 5 and 6 as models.
+- Try other math problems.
+
+Click the ▶️ Run Code button to run the block.
+:::
 ```{pyodide}
 #| min-lines: 9
 #| completion: false

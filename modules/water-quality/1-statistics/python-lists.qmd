@@ -46,6 +46,11 @@ print("Our sample data:", sample_data)
 
 :::{#lst-groupreadings}
 
+:::{.dkorange-container}
+Replace the 10, 20, 30, and 40 placeholders with the nitrate and nitrite readings from your group!
+
+Click the ▶️ Run Code button to run the block.
+:::
 ```{pyodide}
 #| persist: true
 # Create a list of your group's nitrate and nitrite readings!
@@ -68,6 +73,10 @@ Save your group nitrate and nitrite readings into lists!
 Once we have a list, we can do all kinds of things with it!
 
 :::{#lst-basicfunctions}
+
+:::{.dkorange-container}
+Click the ▶️ Run Code button to run the blocks.
+:::
 
 #### len()
 
@@ -105,7 +114,13 @@ These are called **functions** - they're like tools that do specific jobs!
 
 :::{#lst-making-comparisons}
 
-Let's use Python to check if water is safe. We can tell Python the maximum EPA-allowed concentration of nitrate and have it compare the maximum nitrate reading with that cut-off. Change `??` in the block below to the EPA limit for nitrate.
+Let's use Python to check if water is safe. We can tell Python the maximum EPA-allowed concentration of nitrate and have it compare the maximum nitrate reading with that cut-off.
+
+:::{.dkorange-container}
+Replace the `??` placeholder with the EPA limit for nitrate!
+
+Click the ▶️ Run Code button to run the blocks.
+:::
 ```{pyodide}
 # Let's check using your group's nitrate readings
 max_nitrate = max(group_nitrate)

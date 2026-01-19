@@ -9,8 +9,7 @@ sidebar: lesson-1
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 1:** Calculations—Mean & Median](#chk-mean_median)
-
+- [**Checkpoint 1:** Calculations—Mean & Median](#lst-mean_median)
 :::
 
 With your group, you've just tested samples from fictional bodies of water. You measured each of the samples for nitrate concentration *and* nitrite concentration.
@@ -70,8 +69,16 @@ The median value of this sample dataset is **2**.
 
 ## Let's Analyze Your Lab Data
 
-::: {#chk-mean_median .checkpoint-box}
-🎯 **Checkpoint 1: Get your calculator ready!**
+:::{#lst-mean_median .checkpoint-box}
+
+```{pyodide}
+#| include: false
+
+# Fake block to make checkpoint work
+```
+
+Get your calculator ready!
+:::
 
 On your lab sheet, you have the nitrate and nitrite concentrations for each sample. Then, to the right, you have space to perform some statistical analyses and calculations.
 
@@ -79,7 +86,5 @@ On your lab sheet, you have the nitrate and nitrite concentrations for each samp
 - Calculate mean nitrite concentration
 - Calculate median nitrate concentration
 - Calculate median nitrite concentration
-
-:::
 
 **RECORD THESE ON YOUR LAB SHEET**

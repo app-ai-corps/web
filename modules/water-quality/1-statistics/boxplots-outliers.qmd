@@ -18,7 +18,11 @@ sidebar: lesson-1
 
 :::{#lst-getcsv}
 
-**To-Do:** We need to re-load the class csv data since the webpage doesn't save variables from page-to-page. Please paste the csv link again in the block below and run it.
+:::{.dkorange-container}
+Again, replace the placeholder (Line 4) with the CSV URL from your teacher. We need to re-load the class csv data because the webpage doesn't save variables from page-to-page.
+
+Click the ▶️ Run Code button to run the block.
+:::
 
 ```{pyodide}
 #| include: false
@@ -44,7 +48,7 @@ def load_class_data(csv_url):
 # Replace the url with the one provided from your teacher. 
 # Make sure to keep the quotation marks!
 
-csv_url = "www.replace_this_with_your_csv_url.csv"
+csv_url = "replace_this_with_your_csv_url"
 
 class_nitrate, class_nitrite = load_class_data(csv_url)
 
@@ -120,7 +124,10 @@ Whew! That was a lot of work. Wouldn't it be great if Python could do it for us?
 #### Class Nitrate Boxplot
 
 :::{#lst-classnitrateboxplot}
-**Your Turn:** Create a Boxplot for the Class Nitrate Data
+
+:::{.dkorange-container}
+Click the ▶️ Run Code button to run the block and create a boxplot for the class nitrate data.
+:::
 
 ```{pyodide}
 #| completion: false
@@ -140,7 +147,10 @@ Create a boxplot for the class nitrate data.
 #### Class Nitrite Boxplot
 
 :::{#lst-classnitriteboxplot}
-**Your Turn:** Create a Boxplot for the Class Nitrite Data
+
+:::{.dkorange-container}
+Click the ▶️ Run Code button to run the block and create a boxplot for the class nitrite data.
+:::
 
 ```{pyodide}
 #| completion: false
