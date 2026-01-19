@@ -1584,9 +1584,9 @@
   {
     "objectID": "1-statistics/boxplots-outliers.html",
     "href": "1-statistics/boxplots-outliers.html",
-    "title": "Finding Weird Data - Spotting Outliers",
+    "title": "Measures of Spread, Spotting Outliers",
     "section": "",
-    "text": "Outliers are data points that are very different from the rest of your data. They’re the “weird” numbers that don’t fit the pattern.\nExample: pH readings from a creek: 7.1, 7.2, 7.0, 7.1, 12.3, 7.2\nThat 12.3 is an outlier! It’s way higher than everything else."
+    "text": "Checkpoints on this Page:\n\nCheckpoint 1: Import Class Data\nCheckpoint 2: Find Ranges of Class Data\nCheckpoint 3: Find Standard Deviations of Class Data\nCheckpoint 4: Create Boxplot for Sample Data\nCheckpoint 5: Create Boxplot for Class Nitrate Data\nCheckpoint 5: Create Boxplot for Class Nitrite Data\nA second and final statistical measure we’ll discuss today is spread. Just as it sounds, measures of spread tell us how spread out our data are. Spread, also referred to as variability, is the backbone of statistics!"
   },
   {
     "objectID": "1-statistics/boxplots-outliers.html#what-are-outliers",
@@ -2210,5 +2210,33 @@
     "title": "Using Python for Statistics",
     "section": "Calculating Measures of Center With Python",
     "text": "Calculating Measures of Center With Python\n\nMean\nPython has built-in tools to calculate the mean. We’ll use something called NumPy (Numerical Python). NumPy is one example of a library or package that you can add to Python. When you add a library to Python, you are increasing the functions availble to you. For example, we have many more options with NumPy than just len(), min(), and max().\nWe have to “import” these libraries in Python and then often give them a nickname. For example, we import NumPy as np instead of typing “numpy” all the time. An example of how this work has been written (and already run) below.\n\n\n\n\n\n\nBreaking it down:\n- import numpy as np = Load the NumPy library/package (we only do this once per file/page)\n- np.mean() = NumPy’s function to calculate mean\n\n\nYour Turn: Calculate Your Group’s Mean Nitrate\nThe website doesn’t save your nitrate readings list from the previous page, so you’ll need to re-enter your data into the list below (Line 3) again.\n\n\n\n🎯 Checkpoint 1: Calculate and check your group’s mean nitrate concentration.\n\n\nYOUR TURN:\n- Recreate the list of your group’s nitrate readings below\n- Run the block"
+  },
+  {
+    "objectID": "1-statistics/boxplots-outliers.html#visualizing-the-data-measures-of-center",
+    "href": "1-statistics/boxplots-outliers.html#visualizing-the-data-measures-of-center",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Visualizing the Data & Measures of Center",
+    "text": "Visualizing the Data & Measures of Center\n\nBoxplots By Hand\nA key practice in statistics is to visualize the data! One of the types of plots we can use to do this is a boxplot, sometimes referred to as a box and whisker plot. A boxplot requires that we order the data (as if calculating a median) and then then divide the data into four equal groups (by number of observations), called quartiles.\n\n\n\n\n\n\nData Recorder (Sticky Notes)\n\n\n\nGrab those sticky notes from the nitrateslab! Sort them by sticky color and pass out the stickies to each group, matching the sticky color to the group’s color. This will result in each group having a full set of stickies for both class nitrate and nitrite data.\n\n\nAt your desk, you will find a large sheet of gridded Post-It paper. The top of the paper has an axis drawn for the nitrate boxplot and the bottom of the paper has an axis drawn for the nitrite boxplot.\nFirst, order your nitrate stickies from least to greatest, in a line across the table/desk. Then, do the same for your nitrite stickies. When finished, you should have two separate rows of stickies."
+  },
+  {
+    "objectID": "1-statistics/boxplots-outliers.html#outliers",
+    "href": "1-statistics/boxplots-outliers.html#outliers",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Outliers",
+    "text": "Outliers\n\nWhat Are Outliers?\nOutliers are data points that are very different from the rest of your data. They’re the “weird” numbers that don’t fit the pattern. Outliers can really change your statistics—like mean and standard deviation.\n\n\n\n\n\n\nThat 15 is an outlier! It’s way higher than everything else.\n\n\nWhy Do Outliers Happen?\nOutliers can happen for different reasons:\n\nSensor Malfunction 🔧\n\n\nThe sensor glitched or needs calibration\nBattery was dying\nSensor got knocked around\n\n\nReal Pollution Event 🚨\n\n\nFactory dumped chemicals into the stream\nFarm fertilizer washed in after a storm\nSewage spill\n\n\nNatural Event 🌧️\n\n\nHeavy rain changed water chemistry\nAlgae bloom\nSeasonal variation\n\nYour job as a scientist: Figure out which reason it is!"
+  },
+  {
+    "objectID": "1-statistics/boxplots-outliers.html#boxplots",
+    "href": "1-statistics/boxplots-outliers.html#boxplots",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Boxplots",
+    "text": "Boxplots\nWe can also use a boxplot to visualize outliers automatically! It’s like a detective tool for finding weird data. Here is a boxplot of our sample data with the outlier added:\n\n\n\n🎯 Checkpoint 2: Create a boxplot for the sample data with the outlier added.\n\n\n\n\n\n\n\n\n\n\n\nReading a box plot:\n- The line in the middle = Median\n- The box = Where the middle 50% of data is\n- The whiskers (lines extending out) = Normal range\n- The circles = Outliers!\n\nClass Nitrate Boxplot\n\n\n\n🎯 Checkpoint 3: Create a boxplot for the class nitrate data.\n\n\nYour Turn: Create a Boxplot for the Class Nitrate Data\n\n\n\n\n\n\n\n\n\n\n\nClass Nitrite Boxplot\n\n\n\n🎯 Checkpoint 4: Create a boxplot for the class nitrite data.\n\n\nYour Turn: Create a Boxplot for the Class Nitrite Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDoes either have outliers? How do you know?"
+  },
+  {
+    "objectID": "1-statistics/boxplots-outliers.html#adding-means-to-boxplots",
+    "href": "1-statistics/boxplots-outliers.html#adding-means-to-boxplots",
+    "title": "Measures of Spread, Spotting Outliers",
+    "section": "Adding Means to Boxplots",
+    "text": "Adding Means to Boxplots\nWrite the code here\n\n\n\n\n\n\nQuestion!\n\n\n\nWhat do you notice about the relationship between the mean and median for the nitrate data? Why do you think that might be?"
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Finding Weird Data - Spotting Outliers</title>
+<title>Measures of Spread, Spotting Outliers</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,41 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -74,7 +39,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-22c88ad874214f0aeee3335878c92ad2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-29750e98c7d5fdf56abd6b23d8b35724.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
 <link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -183,7 +148,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Finding Weird Data - Spotting Outliers</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Measures of Spread, Spotting Outliers</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -232,13 +197,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../1-statistics/center-spread" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6. Python: Center &amp; Spread</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../1-statistics/histograms" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6. Histograms</span></a>
+ <span class="menu-text">6. Center &amp; Spread</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -264,31 +223,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-are-outliers" id="toc-what-are-outliers" class="nav-link active" data-scroll-target="#what-are-outliers">What Are Outliers?</a></li>
-  <li><a href="#why-do-outliers-happen" id="toc-why-do-outliers-happen" class="nav-link" data-scroll-target="#why-do-outliers-happen">Why Do Outliers Happen?</a>
+  <li><a href="#visualizing-the-data-measures-of-center" id="toc-visualizing-the-data-measures-of-center" class="nav-link active" data-scroll-target="#visualizing-the-data-measures-of-center">Visualizing the Data &amp; Measures of Center</a>
   <ul class="collapse">
-  <li><a href="#sensor-malfunction" id="toc-sensor-malfunction" class="nav-link" data-scroll-target="#sensor-malfunction">1. <strong>Sensor Malfunction</strong> 🔧</a></li>
-  <li><a href="#real-pollution-event" id="toc-real-pollution-event" class="nav-link" data-scroll-target="#real-pollution-event">2. <strong>Real Pollution Event</strong> 🚨</a></li>
-  <li><a href="#natural-event" id="toc-natural-event" class="nav-link" data-scroll-target="#natural-event">3. <strong>Natural Event</strong> 🌧️</a></li>
+  <li><a href="#boxplots-by-hand" id="toc-boxplots-by-hand" class="nav-link" data-scroll-target="#boxplots-by-hand">Boxplots By Hand</a></li>
   </ul></li>
-  <li><a href="#why-outliers-matter-for-water-quality" id="toc-why-outliers-matter-for-water-quality" class="nav-link" data-scroll-target="#why-outliers-matter-for-water-quality">Why Outliers Matter for Water Quality</a></li>
-  <li><a href="#lets-spot-some-outliers" id="toc-lets-spot-some-outliers" class="nav-link" data-scroll-target="#lets-spot-some-outliers">Let’s Spot Some Outliers!</a></li>
-  <li><a href="#method-1-the-iqr-method-interquartile-range" id="toc-method-1-the-iqr-method-interquartile-range" class="nav-link" data-scroll-target="#method-1-the-iqr-method-interquartile-range">Method 1: The IQR Method (Interquartile Range)</a></li>
-  <li><a href="#visualizing-outliers-with-a-box-plot" id="toc-visualizing-outliers-with-a-box-plot" class="nav-link" data-scroll-target="#visualizing-outliers-with-a-box-plot">Visualizing Outliers with a Box Plot</a></li>
-  <li><a href="#try-it-detect-outliers" id="toc-try-it-detect-outliers" class="nav-link" data-scroll-target="#try-it-detect-outliers">Try It: Detect Outliers</a></li>
-  <li><a href="#what-should-you-do-with-outliers" id="toc-what-should-you-do-with-outliers" class="nav-link" data-scroll-target="#what-should-you-do-with-outliers">What Should You Do with Outliers?</a>
+  <li><a href="#outliers" id="toc-outliers" class="nav-link" data-scroll-target="#outliers">Outliers</a>
   <ul class="collapse">
-  <li><a href="#option-1-keep-it" id="toc-option-1-keep-it" class="nav-link" data-scroll-target="#option-1-keep-it">Option 1: Keep It ✅</a></li>
-  <li><a href="#option-2-remove-it" id="toc-option-2-remove-it" class="nav-link" data-scroll-target="#option-2-remove-it">Option 2: Remove It 🗑️</a></li>
-  <li><a href="#option-3-investigate-it" id="toc-option-3-investigate-it" class="nav-link" data-scroll-target="#option-3-investigate-it">Option 3: Investigate It 🔍</a></li>
+  <li><a href="#what-are-outliers" id="toc-what-are-outliers" class="nav-link" data-scroll-target="#what-are-outliers">What Are Outliers?</a></li>
+  <li><a href="#why-do-outliers-happen" id="toc-why-do-outliers-happen" class="nav-link" data-scroll-target="#why-do-outliers-happen">Why Do Outliers Happen?</a></li>
   </ul></li>
-  <li><a href="#real-world-detective-work" id="toc-real-world-detective-work" class="nav-link" data-scroll-target="#real-world-detective-work">Real-World Detective Work</a></li>
-  <li><a href="#comparing-with-and-without-outliers" id="toc-comparing-with-and-without-outliers" class="nav-link" data-scroll-target="#comparing-with-and-without-outliers">Comparing With and Without Outliers</a></li>
-  <li><a href="#your-future-outliers-in-buoy-data" id="toc-your-future-outliers-in-buoy-data" class="nav-link" data-scroll-target="#your-future-outliers-in-buoy-data">Your Future: Outliers in Buoy Data</a></li>
-  <li><a href="#quick-reference-finding-outliers" id="toc-quick-reference-finding-outliers" class="nav-link" data-scroll-target="#quick-reference-finding-outliers">Quick Reference: Finding Outliers</a></li>
-  <li><a href="#try-it-multiple-outliers" id="toc-try-it-multiple-outliers" class="nav-link" data-scroll-target="#try-it-multiple-outliers">Try It: Multiple Outliers</a></li>
-  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
-  <li><a href="#the-decision-tree" id="toc-the-decision-tree" class="nav-link" data-scroll-target="#the-decision-tree">The Decision Tree</a></li>
+  <li><a href="#boxplots" id="toc-boxplots" class="nav-link" data-scroll-target="#boxplots">Boxplots</a>
+  <ul class="collapse">
+  <li><a href="#class-nitrate-boxplot" id="toc-class-nitrate-boxplot" class="nav-link" data-scroll-target="#class-nitrate-boxplot">Class Nitrate Boxplot</a></li>
+  <li><a href="#class-nitrite-boxplot" id="toc-class-nitrite-boxplot" class="nav-link" data-scroll-target="#class-nitrite-boxplot">Class Nitrite Boxplot</a></li>
+  </ul></li>
+  <li><a href="#adding-means-to-boxplots" id="toc-adding-means-to-boxplots" class="nav-link" data-scroll-target="#adding-means-to-boxplots">Adding Means to Boxplots</a></li>
   </ul>
 </nav>
     </div>
@@ -297,7 +246,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Finding Weird Data - Spotting Outliers</h1>
+<h1 class="title">Measures of Spread, Spotting Outliers</h1>
 </div>
 
 
@@ -314,33 +263,104 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="what-are-outliers" class="level2">
-<h2 class="anchored" data-anchor-id="what-are-outliers">What Are Outliers?</h2>
-<p><strong>Outliers</strong> are data points that are very different from the rest of your data. They’re the “weird” numbers that don’t fit the pattern.</p>
-<p><strong>Example:</strong> pH readings from a creek: <strong>7.1, 7.2, 7.0, 7.1, 12.3, 7.2</strong></p>
-<p>That 12.3 is an outlier! It’s way higher than everything else.</p>
+<div class="ltblue-container">
+<p><strong>Checkpoints on this Page:</strong></p>
+<ul>
+<li><a href="#lst-getcsv"><strong>Checkpoint 1:</strong> Import Class Data</a></li>
+<li><a href="#lst-classdatarange"><strong>Checkpoint 2:</strong> Find Ranges of Class Data</a></li>
+<li><a href="#lst-classdatastddev"><strong>Checkpoint 3:</strong> Find Standard Deviations of Class Data</a></li>
+<li><a href="#lst-sampledataboxplot"><strong>Checkpoint 4:</strong> Create Boxplot for Sample Data</a></li>
+<li><a href="#lst-classnitrateboxplot"><strong>Checkpoint 5:</strong> Create Boxplot for Class Nitrate Data</a></li>
+<li><a href="#lst-classnitriteboxplot"><strong>Checkpoint 5:</strong> Create Boxplot for Class Nitrite Data</a></li>
+</ul>
+</div>
+<p>A second and final statistical measure we’ll discuss today is <strong>spread</strong>. Just as it sounds, measures of spread tell us how spread out our data are. Spread, also referred to as <strong>variability</strong>, is <em>the backbone</em> of statistics!</p>
+<div id="lst-getcsv" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-getcsv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;1: Import your whole class’s nitrate and nitrite data.
+</figcaption>
+<div aria-describedby="lst-getcsv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><strong>To-Do:</strong> We need to re-load the class csv data since the webpage doesn’t save variables from page-to-page. Please paste the csv link again in the block below and run it.</p>
+<div>
+<div id="pyodide-1" class="exercise-cell">
+
+</div>
+<script type="pyodide-1-contents">
+eyJhdHRyIjp7ImVjaG8iOmZhbHNlLCJlZGl0IjpmYWxzZSwiZXZhbCI6dHJ1ZSwiaW5jbHVkZSI6ZmFsc2UsIm91dHB1dCI6ZmFsc2V9LCJjb2RlIjoiaW1wb3J0IHJlcXVlc3RzXG5pbXBvcnQgY3N2XG5mcm9tIGlvIGltcG9ydCBTdHJpbmdJT1xuXG5kZWYgbG9hZF9jbGFzc19kYXRhKGNzdl91cmwpOlxuICAgIHJlc3BvbnNlID0gcmVxdWVzdHMuZ2V0KGNzdl91cmwpXG4gICAgcmVhZGVyID0gY3N2LnJlYWRlcihTdHJpbmdJTyhyZXNwb25zZS50ZXh0KSlcbiAgICBuZXh0KHJlYWRlcikgICMgU2tpcCBoZWFkZXJcbiAgICByb3dzID0gbGlzdChyZWFkZXIpXG4gICAgXG4gICAgY2xhc3Nfbml0cmF0ZSA9IFtpbnQocm93WzNdKSBmb3Igcm93IGluIHJvd3NdXG4gICAgY2xhc3Nfbml0cml0ZSA9IFtpbnQocm93WzRdKSBmb3Igcm93IGluIHJvd3NdXG4gICAgXG4gICAgcmV0dXJuIGNsYXNzX25pdHJhdGUsIGNsYXNzX25pdHJpdGUifQ==
+</script>
+</div>
+<div>
+<div id="pyodide-2" class="exercise-cell">
+
+</div>
+<script type="pyodide-2-contents">
+eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0Ijp0cnVlfSwiY29kZSI6IiMgUmVwbGFjZSB0aGUgdXJsIHdpdGggdGhlIG9uZSBwcm92aWRlZCBmcm9tIHlvdXIgdGVhY2hlci4gXG4jIE1ha2Ugc3VyZSB0byBrZWVwIHRoZSBxdW90YXRpb24gbWFya3MhXG5cbmNzdl91cmwgPSBcInd3dy5yZXBsYWNlX3RoaXNfd2l0aF95b3VyX2Nzdl91cmwuY3N2XCJcblxuY2xhc3Nfbml0cmF0ZSwgY2xhc3Nfbml0cml0ZSA9IGxvYWRfY2xhc3NfZGF0YShjc3ZfdXJsKVxuXG5wcmludChcIk5pdHJhdGUgdmFsdWVzOlwiLCBjbGFzc19uaXRyYXRlKVxucHJpbnQoXCJOaXRyaXRlIHZhbHVlczpcIiwgY2xhc3Nfbml0cml0ZSkifQ==
+</script>
+</div>
+</div>
+</figure>
+</div>
+<section id="visualizing-the-data-measures-of-center" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-the-data-measures-of-center">Visualizing the Data &amp; Measures of Center</h2>
+<section id="boxplots-by-hand" class="level3">
+<h3 class="anchored" data-anchor-id="boxplots-by-hand">Boxplots By Hand</h3>
+<p>A key practice in statistics is to visualize the data! One of the types of plots we can use to do this is a <strong>boxplot</strong>, sometimes referred to as a box and whisker plot. A boxplot requires that we order the data (as if calculating a median) and then then divide the data into four equal groups (by number of observations), called <strong>quartiles</strong>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<em>Data Recorder (Sticky Notes)</em>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Grab those sticky notes from the nitrateslab! Sort them by sticky color and pass out the stickies to each group, matching the sticky color to the group’s color. This will result in each group having a full set of stickies for both class nitrate and nitrite data.</p>
+</div>
+</div>
+<p>At your desk, you will find a large sheet of gridded Post-It paper. The top of the paper has an axis drawn for the nitrate boxplot and the bottom of the paper has an axis drawn for the nitrite boxplot.</p>
+<p>First, order your nitrate stickies from least to greatest, in a line across the table/desk. Then, do the same for your nitrite stickies. When finished, you should have two separate rows of stickies.</p>
+<p><img src="images/ordered_nitrate_nitrite_stickies.png" class="img-fluid"></p>
 </section>
-<section id="why-do-outliers-happen" class="level2">
-<h2 class="anchored" data-anchor-id="why-do-outliers-happen">Why Do Outliers Happen?</h2>
+</section>
+<section id="outliers" class="level2">
+<h2 class="anchored" data-anchor-id="outliers">Outliers</h2>
+<section id="what-are-outliers" class="level3">
+<h3 class="anchored" data-anchor-id="what-are-outliers">What Are Outliers?</h3>
+<p><strong>Outliers</strong> are data points that are very different from the rest of your data. They’re the “weird” numbers that don’t fit the pattern. Outliers can really change your statistics—like mean and standard deviation.</p>
+<div>
+<div id="pyodide-3" class="exercise-cell">
+
+</div>
+<script type="pyodide-3-contents">
+eyJhdHRyIjp7ImVkaXQiOmZhbHNlLCJldmFsIjp0cnVlfSwiY29kZSI6InNhbXBsZV9kYXRhID0gWzEsIDIsIDYsIDUsIDFdXG5cbnNhbXBsZV93b3V0bGllciA9IFsxLCAyLCA2LCA1LCAxLCAxNV0ifQ==
+</script>
+</div>
+<p>That 15 is an outlier! It’s way higher than everything else.</p>
+</section>
+<section id="why-do-outliers-happen" class="level3">
+<h3 class="anchored" data-anchor-id="why-do-outliers-happen">Why Do Outliers Happen?</h3>
 <p>Outliers can happen for different reasons:</p>
-<section id="sensor-malfunction" class="level3">
-<h3 class="anchored" data-anchor-id="sensor-malfunction">1. <strong>Sensor Malfunction</strong> 🔧</h3>
+<ol type="1">
+<li><strong>Sensor Malfunction</strong> 🔧</li>
+</ol>
 <ul>
 <li>The sensor glitched or needs calibration</li>
 <li>Battery was dying</li>
 <li>Sensor got knocked around</li>
 </ul>
-</section>
-<section id="real-pollution-event" class="level3">
-<h3 class="anchored" data-anchor-id="real-pollution-event">2. <strong>Real Pollution Event</strong> 🚨</h3>
+<ol start="2" type="1">
+<li><strong>Real Pollution Event</strong> 🚨</li>
+</ol>
 <ul>
 <li>Factory dumped chemicals into the stream</li>
 <li>Farm fertilizer washed in after a storm</li>
 <li>Sewage spill</li>
 </ul>
-</section>
-<section id="natural-event" class="level3">
-<h3 class="anchored" data-anchor-id="natural-event">3. <strong>Natural Event</strong> 🌧️</h3>
+<ol start="3" type="1">
+<li><strong>Natural Event</strong> 🌧️</li>
+</ol>
 <ul>
 <li>Heavy rain changed water chemistry</li>
 <li>Algae bloom</li>
@@ -349,369 +369,110 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Your job as a scientist:</strong> Figure out which reason it is!</p>
 </section>
 </section>
-<section id="why-outliers-matter-for-water-quality" class="level2">
-<h2 class="anchored" data-anchor-id="why-outliers-matter-for-water-quality">Why Outliers Matter for Water Quality</h2>
-<p>Outliers are REALLY important because:</p>
-<ol type="1">
-<li><strong>They might be pollution!</strong> That weird high nitrate reading could mean someone dumped something bad</li>
-<li><strong>They mess up your statistics</strong> - Remember how the mean got messed up?</li>
-<li><strong>They could mean broken equipment</strong> - Your sensor might need fixing</li>
-<li><strong>They tell a story</strong> - What happened that day?</li>
-</ol>
-</section>
-<section id="lets-spot-some-outliers" class="level2">
-<h2 class="anchored" data-anchor-id="lets-spot-some-outliers">Let’s Spot Some Outliers!</h2>
-<p>Here’s a simple way to spot outliers by looking at the data:</p>
-<div id="16d708df" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: pH readings from a stream over 10 days</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Most are normal, but Day 8 looks weird!</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>days <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>))</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>ph_readings <span class="op">=</span> [<span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.3</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">9.8</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>]</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the data</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plt.plot(days, ph_readings, marker<span class="op">=</span><span class="st">'o'</span>, markersize<span class="op">=</span><span class="dv">10</span>, linewidth<span class="op">=</span><span class="dv">2</span>, color<span class="op">=</span><span class="st">'blue'</span>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.axhline(y<span class="op">=</span>np.mean(ph_readings), color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">'Mean (affected by outlier!)'</span>)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plt.axhline(y<span class="op">=</span>np.median(ph_readings), color<span class="op">=</span><span class="st">'green'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">'Median (more reliable)'</span>)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Mark the outlier</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>plt.scatter([<span class="dv">8</span>], [<span class="fl">9.8</span>], s<span class="op">=</span><span class="dv">300</span>, color<span class="op">=</span><span class="st">'red'</span>, marker<span class="op">=</span><span class="st">'X'</span>, zorder<span class="op">=</span><span class="dv">5</span>, label<span class="op">=</span><span class="st">'Outlier!'</span>)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Day'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'pH'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Can You Spot the Outlier?'</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>plt.legend(fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>plt.ylim(<span class="dv">6</span>, <span class="dv">11</span>)</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"pH readings:"</span>, ph_readings)</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Mean: </span><span class="sc">{</span>np<span class="sc">.</span>mean(ph_readings)<span class="sc">:.2f}</span><span class="ss"> (pulled up by outlier)"</span>)</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Median: </span><span class="sc">{</span>np<span class="sc">.</span>median(ph_readings)<span class="sc">:.2f}</span><span class="ss"> (not affected)"</span>)</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Day 8 is definitely weird! Something happened that day."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
+<section id="boxplots" class="level2">
+<h2 class="anchored" data-anchor-id="boxplots">Boxplots</h2>
+<p>We can also use a <strong>boxplot</strong> to visualize outliers automatically! It’s like a detective tool for finding weird data. Here is a boxplot of our sample data with the outlier added:</p>
+<div id="lst-sampledataboxplot" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-sampledataboxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;2: Create a boxplot for the sample data with the outlier added.
+</figcaption>
+<div aria-describedby="lst-sampledataboxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
-<figure class="figure">
-<p><img src="boxplots-outliers_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>pH readings: [7.2, 7.1, 7.3, 7.2, 7.1, 7.2, 7.1, 9.8, 7.2, 7.1]
-Mean: 7.43 (pulled up by outlier)
-Median: 7.20 (not affected)
-
-Day 8 is definitely weird! Something happened that day.</code></pre>
-</div>
-</div>
-</section>
-<section id="method-1-the-iqr-method-interquartile-range" class="level2">
-<h2 class="anchored" data-anchor-id="method-1-the-iqr-method-interquartile-range">Method 1: The IQR Method (Interquartile Range)</h2>
-<p>This is a fancy way scientists detect outliers. Don’t worry, it’s easier than it sounds!</p>
-<p><strong>The idea:</strong> Most data should be in a certain range. If a number is way outside that range, it’s an outlier.</p>
-<p><strong>How it works:</strong> 1. Find Q1 (25th percentile) - 25% of data is below this 2. Find Q3 (75th percentile) - 75% of data is below this 3. Calculate IQR = Q3 - Q1 4. Anything below Q1 - 1.5×IQR is an outlier 5. Anything above Q3 + 1.5×IQR is an outlier</p>
-<p><strong>Don’t memorize this! Python will do it for you.</strong></p>
-<div id="0ae85b54" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Nitrate readings from a river</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># One reading is suspiciously high!</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>nitrate <span class="op">=</span> [<span class="fl">2.1</span>, <span class="fl">2.3</span>, <span class="fl">2.2</span>, <span class="fl">2.4</span>, <span class="fl">2.2</span>, <span class="fl">2.3</span>, <span class="fl">15.0</span>, <span class="fl">2.1</span>, <span class="fl">2.2</span>]</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate IQR</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>q1 <span class="op">=</span> np.percentile(nitrate, <span class="dv">25</span>)  <span class="co"># 25th percentile</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>q3 <span class="op">=</span> np.percentile(nitrate, <span class="dv">75</span>)  <span class="co"># 75th percentile</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>iqr <span class="op">=</span> q3 <span class="op">-</span> q1</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate outlier boundaries</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>lower_bound <span class="op">=</span> q1 <span class="op">-</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>upper_bound <span class="op">=</span> q3 <span class="op">+</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Nitrate readings (mg/L):"</span>, nitrate)</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Q1 (25th percentile): </span><span class="sc">{</span>q1<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Q3 (75th percentile): </span><span class="sc">{</span>q3<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"IQR: </span><span class="sc">{</span>iqr<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Outlier boundaries:"</span>)</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Lower bound: </span><span class="sc">{</span>lower_bound<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Upper bound: </span><span class="sc">{</span>upper_bound<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Find the outliers</span></span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>outliers <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> nitrate <span class="cf">if</span> x <span class="op">&lt;</span> lower_bound <span class="kw">or</span> x <span class="op">&gt;</span> upper_bound]</span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Outliers detected: </span><span class="sc">{</span>outliers<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Nitrate readings (mg/L): [2.1, 2.3, 2.2, 2.4, 2.2, 2.3, 15.0, 2.1, 2.2]
-
-Q1 (25th percentile): 2.20
-Q3 (75th percentile): 2.30
-IQR: 0.10
-
-Outlier boundaries:
-  Lower bound: 2.05
-  Upper bound: 2.45
-
-Outliers detected: [15.0]</code></pre>
-</div>
-</div>
-</section>
-<section id="visualizing-outliers-with-a-box-plot" class="level2">
-<h2 class="anchored" data-anchor-id="visualizing-outliers-with-a-box-plot">Visualizing Outliers with a Box Plot</h2>
-<p>A <strong>box plot</strong> is a graph that shows outliers automatically! It’s like a detective tool for finding weird data.</p>
-<div id="d3da5d9c" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: pH readings with some outliers</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>ph_data <span class="op">=</span> [<span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.0</span>, <span class="fl">7.3</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">9.5</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>, <span class="fl">7.0</span>, <span class="fl">5.0</span>, <span class="fl">7.3</span>]</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>plt.boxplot(ph_data, vert<span class="op">=</span><span class="va">True</span>, patch_artist<span class="op">=</span><span class="va">True</span>, </span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>            boxprops<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">'lightblue'</span>),</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>            medianprops<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">'red'</span>, linewidth<span class="op">=</span><span class="dv">2</span>))</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'pH Level'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Box Plot: Outliers Shown as Circles'</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>, axis<span class="op">=</span><span class="st">'y'</span>)</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>plt.ylim(<span class="dv">4</span>, <span class="dv">10</span>)</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>plt.text(<span class="fl">1.15</span>, <span class="fl">9.5</span>, <span class="st">'← High outlier'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, va<span class="op">=</span><span class="st">'center'</span>)</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>plt.text(<span class="fl">1.15</span>, <span class="fl">5.0</span>, <span class="st">'← Low outlier'</span>, fontsize<span class="op">=</span><span class="dv">11</span>, va<span class="op">=</span><span class="st">'center'</span>)</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"The circles show outliers!"</span>)</span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"The box shows where most of the 'normal' data is."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="boxplots-outliers_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>The circles show outliers!
-The box shows where most of the 'normal' data is.</code></pre>
-</div>
-</div>
-<p><strong>Reading a box plot:</strong> - The <strong>line in the middle</strong> = Median - The <strong>box</strong> = Where the middle 50% of data is - The <strong>whiskers</strong> (lines extending out) = Normal range - The <strong>circles</strong> = Outliers!</p>
-</section>
-<section id="try-it-detect-outliers" class="level2">
-<h2 class="anchored" data-anchor-id="try-it-detect-outliers">Try It: Detect Outliers</h2>
-<div>
-<div id="pyodide-1" class="exercise-cell">
+<div id="pyodide-4" class="exercise-cell">
 
 </div>
-<script type="pyodide-1-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5wXG5pbXBvcnQgbWF0cGxvdGxpYi5weXBsb3QgYXMgcGx0XG5cbiMgRXhhbXBsZTogWW91J3JlIGFuYWx5emluZyBuaXRyYXRlIGZyb20gYSBjcmVla1xuIyBJcyB0aGVyZSBhbiBvdXRsaWVyP1xuY3JlZWtfbml0cmF0ZSA9IFszLjEsIDMuMiwgMy4wLCAzLjMsIDE4LjUsIDMuMSwgMy4yLCAzLjBdXG5cbiMgQ2FsY3VsYXRlIElRUiBtZXRob2RcbnExID0gbnAucGVyY2VudGlsZShjcmVla19uaXRyYXRlLCAyNSlcbnEzID0gbnAucGVyY2VudGlsZShjcmVla19uaXRyYXRlLCA3NSlcbmlxciA9IHEzIC0gcTFcbmxvd2VyX2JvdW5kID0gcTEgLSAxLjUgKiBpcXJcbnVwcGVyX2JvdW5kID0gcTMgKyAxLjUgKiBpcXJcblxucHJpbnQoXCJOaXRyYXRlIHJlYWRpbmdzOlwiLCBjcmVla19uaXRyYXRlKVxucHJpbnQoZlwiXFxuT3V0bGllciBib3VuZGFyaWVzOiB7bG93ZXJfYm91bmQ6LjJmfSB0byB7dXBwZXJfYm91bmQ6LjJmfVwiKVxuXG4jIEZpbmQgb3V0bGllcnNcbm91dGxpZXJzID0gW3ggZm9yIHggaW4gY3JlZWtfbml0cmF0ZSBpZiB4IDwgbG93ZXJfYm91bmQgb3IgeCA+IHVwcGVyX2JvdW5kXVxucHJpbnQoZlwiT3V0bGllcnMgZm91bmQ6IHtvdXRsaWVyc31cIilcblxuIyBNYWtlIGEgYm94IHBsb3RcbnBsdC5maWd1cmUoZmlnc2l6ZT0oOCwgNikpXG5wbHQuYm94cGxvdChjcmVla19uaXRyYXRlLCB2ZXJ0PVRydWUsIHBhdGNoX2FydGlzdD1UcnVlLFxuICAgICAgICAgICAgYm94cHJvcHM9ZGljdChmYWNlY29sb3I9J2xpZ2h0Z3JlZW4nKSlcbnBsdC55bGFiZWwoJ05pdHJhdGUgKG1nL0wpJywgZm9udHNpemU9MTIpXG5wbHQudGl0bGUoJ0JveCBQbG90IG9mIENyZWVrIE5pdHJhdGUnLCBmb250c2l6ZT0xMylcbnBsdC5ncmlkKFRydWUsIGFscGhhPTAuMywgYXhpcz0neScpXG5wbHQuc2hvdygpXG5cbiMgVHJ5IHJlbW92aW5nIHRoZSAxOC41IGFuZCBydW4gaXQgYWdhaW4hIn0=
+<script type="pyodide-4-contents">
+eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6ImltcG9ydCBtYXRwbG90bGliLnB5cGxvdCBhcyBwbHRcblxucGx0LmZpZ3VyZShmaWdzaXplPSgxMCwgNikpXG5wbHQuYm94cGxvdChzYW1wbGVfd291dGxpZXIsIHZlcnQ9VHJ1ZSwgcGF0Y2hfYXJ0aXN0PVRydWUsIFxuICAgICAgICAgICAgYm94cHJvcHM9ZGljdChmYWNlY29sb3I9J2xpZ2h0Ymx1ZScpLFxuICAgICAgICAgICAgbWVkaWFucHJvcHM9ZGljdChjb2xvcj0ncmVkJywgbGluZXdpZHRoPTIpKVxucGx0LnRpdGxlKCdCb3hwbG90OiBPdXRsaWVycyBTaG93biBhcyBDaXJjbGVzJywgZm9udHNpemU9MTQpXG5wbHQuZ3JpZChUcnVlLCBhbHBoYT0wLjMsIGF4aXM9J3knKVxucGx0LnlsaW0oMCwgMTcpXG5wbHQueHRpY2tzKFtdKVxuXG5wbHQudGV4dCgxLjE1LCAxNSwgJ+KGkCBIaWdoIG91dGxpZXInLCBmb250c2l6ZT0xMSwgdmE9J2NlbnRlcicpXG5wbHQudGV4dCgxLjE1LCBucC5tZWRpYW4oc2FtcGxlX3dvdXRsaWVyKSwgZifihpAgTWVkaWFuICh7bnAubWVkaWFuKHNhbXBsZV93b3V0bGllcil9KScsIGZvbnRzaXplPTExLCB2YT0nY2VudGVyJylcbnBsdC5zaG93KClcblxucHJpbnQoXCJUaGUgY2lyY2xlIHNob3dzIHRoZSBvdXRsaWVyIVwiKVxucHJpbnQoXCJUaGUgYm94IHNob3dzIHdoZXJlIG1vc3Qgb2YgdGhlIG90aGVyIGRhdGEgaXMuXCIpIn0=
 </script>
 </div>
-</section>
-<section id="what-should-you-do-with-outliers" class="level2">
-<h2 class="anchored" data-anchor-id="what-should-you-do-with-outliers">What Should You Do with Outliers?</h2>
-<p>Once you find an outlier, you have some choices:</p>
-<section id="option-1-keep-it" class="level3">
-<h3 class="anchored" data-anchor-id="option-1-keep-it">Option 1: Keep It ✅</h3>
-<p><strong>When to do this:</strong> - It’s a real measurement (like a pollution event) - You want to study what caused it - It’s important for your research</p>
-<div id="132320ba" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Keep the outlier because it's a real pollution event</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>data_with_outlier <span class="op">=</span> [<span class="fl">2.1</span>, <span class="fl">2.3</span>, <span class="fl">2.2</span>, <span class="fl">15.0</span>, <span class="fl">2.4</span>, <span class="fl">2.2</span>]</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Data with outlier:"</span>, data_with_outlier)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Mean: </span><span class="sc">{</span>np<span class="sc">.</span>mean(data_with_outlier)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">We keep it because it shows a pollution event happened!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Data with outlier: [2.1, 2.3, 2.2, 15.0, 2.4, 2.2]
-Mean: 4.37
-
-We keep it because it shows a pollution event happened!</code></pre>
 </div>
-</div>
-</section>
-<section id="option-2-remove-it" class="level3">
-<h3 class="anchored" data-anchor-id="option-2-remove-it">Option 2: Remove It 🗑️</h3>
-<p><strong>When to do this:</strong> - It’s clearly a sensor error - It’s impossible (like pH of 20) - You want to see typical conditions</p>
-<div id="0ae0cb09" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Remove the outlier because it's a sensor error</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>data_with_outlier <span class="op">=</span> [<span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.0</span>, <span class="fl">15.0</span>, <span class="fl">7.2</span>, <span class="fl">7.1</span>]</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>data_cleaned <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> data_with_outlier <span class="cf">if</span> x <span class="op">&lt;</span> <span class="dv">10</span>]  <span class="co"># Remove anything above 10</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Original data:"</span>, data_with_outlier)</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Cleaned data:"</span>, data_cleaned)</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Mean before: </span><span class="sc">{</span>np<span class="sc">.</span>mean(data_with_outlier)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Mean after: </span><span class="sc">{</span>np<span class="sc">.</span>mean(data_cleaned)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Much better! Now the mean makes sense."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Original data: [7.1, 7.2, 7.0, 15.0, 7.2, 7.1]
-Cleaned data: [7.1, 7.2, 7.0, 7.2, 7.1]
-
-Mean before: 8.43
-Mean after: 7.12
-
-Much better! Now the mean makes sense.</code></pre>
-</div>
-</div>
-</section>
-<section id="option-3-investigate-it" class="level3">
-<h3 class="anchored" data-anchor-id="option-3-investigate-it">Option 3: Investigate It 🔍</h3>
-<p><strong>Always do this first!</strong> - Check your field notes - What happened that day? - Look at weather data - Was there a storm? - Check the sensor - Is it working correctly? - Ask: Is this reading even possible?</p>
-</section>
-</section>
-<section id="real-world-detective-work" class="level2">
-<h2 class="anchored" data-anchor-id="real-world-detective-work">Real-World Detective Work</h2>
-<p>Let’s practice being water quality detectives!</p>
-<div id="eb6690c5" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Scenario: You're monitoring a stream near a farm</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Here are nitrate readings over 2 weeks</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>days <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">15</span>))</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>nitrate <span class="op">=</span> [<span class="fl">2.1</span>, <span class="fl">2.3</span>, <span class="fl">2.2</span>, <span class="fl">2.4</span>, <span class="fl">2.2</span>, <span class="fl">8.5</span>, <span class="fl">9.2</span>, <span class="fl">3.0</span>, <span class="fl">2.8</span>, <span class="fl">2.9</span>, <span class="fl">2.7</span>, <span class="fl">2.8</span>, <span class="fl">2.9</span>, <span class="fl">2.6</span>]</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot it</span></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>plt.plot(days, nitrate, marker<span class="op">=</span><span class="st">'o'</span>, markersize<span class="op">=</span><span class="dv">10</span>, linewidth<span class="op">=</span><span class="dv">2</span>, color<span class="op">=</span><span class="st">'brown'</span>)</span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>plt.axhline(y<span class="op">=</span>np.median(nitrate), color<span class="op">=</span><span class="st">'green'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">'Median'</span>)</span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>plt.axhline(y<span class="op">=</span><span class="dv">10</span>, color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, alpha<span class="op">=</span><span class="fl">0.5</span>, label<span class="op">=</span><span class="st">'EPA Limit'</span>)</span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Highlight the spike</span></span>
-<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>plt.scatter([<span class="dv">6</span>, <span class="dv">7</span>], [<span class="fl">8.5</span>, <span class="fl">9.2</span>], s<span class="op">=</span><span class="dv">300</span>, color<span class="op">=</span><span class="st">'red'</span>, marker<span class="op">=</span><span class="st">'X'</span>, zorder<span class="op">=</span><span class="dv">5</span>, label<span class="op">=</span><span class="st">'Spike!'</span>)</span>
-<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Day'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Nitrate (mg/L)'</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Mystery: What Happened on Days 6-7?'</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>plt.legend(fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
-<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Detective Questions:"</span>)</span>
-<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"1. Are Days 6-7 outliers? (YES - much higher than others)"</span>)</span>
-<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"2. Are they sensor errors? (Probably NOT - both days show high values)"</span>)</span>
-<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"3. What could cause this? (Possible: Heavy rain → fertilizer runoff)"</span>)</span>
-<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"4. Should we remove them? (NO - this is real data showing an event!)"</span>)</span>
-<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Conclusion: This looks like a real pollution event to investigate!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="boxplots-outliers_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Detective Questions:
-1. Are Days 6-7 outliers? (YES - much higher than others)
-2. Are they sensor errors? (Probably NOT - both days show high values)
-3. What could cause this? (Possible: Heavy rain → fertilizer runoff)
-4. Should we remove them? (NO - this is real data showing an event!)
-
-Conclusion: This looks like a real pollution event to investigate!</code></pre>
-</div>
-</div>
-</section>
-<section id="comparing-with-and-without-outliers" class="level2">
-<h2 class="anchored" data-anchor-id="comparing-with-and-without-outliers">Comparing With and Without Outliers</h2>
-<div id="16e0800f" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Creek pH data with one bad sensor reading</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>creek_ph <span class="op">=</span> [<span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">7.0</span>, <span class="fl">7.2</span>, <span class="fl">14.5</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>]</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate statistics both ways</span></span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"WITH the outlier (14.5):"</span>)</span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Mean: </span><span class="sc">{</span>np<span class="sc">.</span>mean(creek_ph)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Median: </span><span class="sc">{</span>np<span class="sc">.</span>median(creek_ph)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Standard Deviation: </span><span class="sc">{</span>np<span class="sc">.</span>std(creek_ph)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove the outlier (14.5 is impossible for creek water)</span></span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>creek_ph_clean <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> creek_ph <span class="cf">if</span> x <span class="op">&lt;</span> <span class="dv">10</span>]</span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">WITHOUT the outlier:"</span>)</span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Mean: </span><span class="sc">{</span>np<span class="sc">.</span>mean(creek_ph_clean)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Median: </span><span class="sc">{</span>np<span class="sc">.</span>median(creek_ph_clean)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"  Standard Deviation: </span><span class="sc">{</span>np<span class="sc">.</span>std(creek_ph_clean)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">See how much more accurate the statistics are without the bad reading?"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>WITH the outlier (14.5):
-  Mean: 8.19
-  Median: 7.20
-  Standard Deviation: 2.58
-
-WITHOUT the outlier:
-  Mean: 7.13
-  Median: 7.15
-  Standard Deviation: 0.07
-
-See how much more accurate the statistics are without the bad reading?</code></pre>
-</div>
-</div>
-</section>
-<section id="your-future-outliers-in-buoy-data" class="level2">
-<h2 class="anchored" data-anchor-id="your-future-outliers-in-buoy-data">Your Future: Outliers in Buoy Data</h2>
-<p>When you deploy sensor buoys in real streams, you’ll see outliers! Some will be:</p>
-<p><strong>Real events to study:</strong> - 🌧️ Storm runoff events - 🏭 Pollution spills - 🦠 Algae blooms - 🌊 Seasonal changes</p>
-<p><strong>Equipment issues to fix:</strong> - 🔋 Low battery - 🔧 Sensor needs calibration - 📡 Data transmission errors - 🐟 Something bumped the sensor</p>
-<p>The skills you’re learning now will help you tell the difference!</p>
-</section>
-<section id="quick-reference-finding-outliers" class="level2">
-<h2 class="anchored" data-anchor-id="quick-reference-finding-outliers">Quick Reference: Finding Outliers</h2>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># IQR Method (copy this code!)</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [your_readings_here]</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate boundaries</span></span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>q1 <span class="op">=</span> np.percentile(data, <span class="dv">25</span>)</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>q3 <span class="op">=</span> np.percentile(data, <span class="dv">75</span>)</span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>iqr <span class="op">=</span> q3 <span class="op">-</span> q1</span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>lower <span class="op">=</span> q1 <span class="op">-</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>upper <span class="op">=</span> q3 <span class="op">+</span> <span class="fl">1.5</span> <span class="op">*</span> iqr</span>
-<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Find outliers</span></span>
-<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>outliers <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> data <span class="cf">if</span> x <span class="op">&lt;</span> lower <span class="kw">or</span> x <span class="op">&gt;</span> upper]</span>
-<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Outliers:"</span>, outliers)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="try-it-multiple-outliers" class="level2">
-<h2 class="anchored" data-anchor-id="try-it-multiple-outliers">Try It: Multiple Outliers</h2>
+<p><strong>Reading a box plot:</strong><br>
+- The <strong>line in the middle</strong> = Median<br>
+- The <strong>box</strong> = Where the middle 50% of data is<br>
+- The <strong>whiskers</strong> (lines extending out) = Normal range<br>
+- The <strong>circles</strong> = Outliers!</p>
+<section id="class-nitrate-boxplot" class="level3">
+<h3 class="anchored" data-anchor-id="class-nitrate-boxplot">Class Nitrate Boxplot</h3>
+<div id="lst-classnitrateboxplot" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-classnitrateboxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;3: Create a boxplot for the class nitrate data.
+</figcaption>
+<div aria-describedby="lst-classnitrateboxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><strong>Your Turn:</strong> Create a Boxplot for the Class Nitrate Data</p>
 <div>
-<div id="pyodide-2" class="exercise-cell">
+<div id="pyodide-5" class="exercise-cell">
 
 </div>
-<script type="pyodide-2-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IG51bXB5IGFzIG5wXG5pbXBvcnQgbWF0cGxvdGxpYi5weXBsb3QgYXMgcGx0XG5cbiMgRXhhbXBsZTogcEggcmVhZGluZ3Mgd2l0aCBzZXZlcmFsIG91dGxpZXJzXG5waF9yZWFkaW5ncyA9IFs3LjEsIDcuMiwgNy4wLCA5LjUsIDcuMiwgNy4xLCA1LjUsIDcuMywgNy4yLCA3LjEsIDEyLjAsIDcuMl1cblxuIyBNYWtlIGEgYm94IHBsb3RcbnBsdC5maWd1cmUoZmlnc2l6ZT0oMTAsIDYpKVxucGx0LmJveHBsb3QocGhfcmVhZGluZ3MsIHZlcnQ9VHJ1ZSwgcGF0Y2hfYXJ0aXN0PVRydWUsXG4gICAgICAgICAgICBib3hwcm9wcz1kaWN0KGZhY2Vjb2xvcj0nbGlnaHRjb3JhbCcpKVxucGx0LnlsYWJlbCgncEgnLCBmb250c2l6ZT0xMilcbnBsdC50aXRsZSgnSG93IE1hbnkgT3V0bGllcnMgQ2FuIFlvdSBTcG90PycsIGZvbnRzaXplPTEzKVxucGx0LmdyaWQoVHJ1ZSwgYWxwaGE9MC4zLCBheGlzPSd5JylcbnBsdC5zaG93KClcblxuIyBDYWxjdWxhdGUgSVFSIG1ldGhvZFxucTEgPSBucC5wZXJjZW50aWxlKHBoX3JlYWRpbmdzLCAyNSlcbnEzID0gbnAucGVyY2VudGlsZShwaF9yZWFkaW5ncywgNzUpXG5pcXIgPSBxMyAtIHExXG5sb3dlciA9IHExIC0gMS41ICogaXFyXG51cHBlciA9IHEzICsgMS41ICogaXFyXG5cbm91dGxpZXJzID0gW3ggZm9yIHggaW4gcGhfcmVhZGluZ3MgaWYgeCA8IGxvd2VyIG9yIHggPiB1cHBlcl1cblxucHJpbnQoXCJwSCByZWFkaW5nczpcIiwgcGhfcmVhZGluZ3MpXG5wcmludChmXCJPdXRsaWVycyBkZXRlY3RlZDoge291dGxpZXJzfVwiKVxucHJpbnQoXCJcXG5XaGF0IGRvIHlvdSB0aGluayBjYXVzZWQgZWFjaCBvdXRsaWVyP1wiKSJ9
+<script type="pyodide-5-contents">
+eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6InBsdC5maWd1cmUoZmlnc2l6ZT0oOCwgNikpXG5wbHQuYm94cGxvdChjbGFzc19uaXRyYXRlLCB2ZXJ0PVRydWUsIHBhdGNoX2FydGlzdD1UcnVlLFxuICAgICAgICAgICAgYm94cHJvcHM9ZGljdChmYWNlY29sb3I9J3BsdW0nKSlcbnBsdC55bGFiZWwoJ05pdHJhdGUgKG1nL0wpJywgZm9udHNpemU9MTIpXG5wbHQueHRpY2tzKFtdKVxucGx0LnRpdGxlKCdCb3hwbG90IG9mIENsYXNzIE5pdHJhdGUnLCBmb250c2l6ZT0xMylcbnBsdC5ncmlkKFRydWUsIGFscGhhPTAuMywgYXhpcz0neScpXG5wbHQuc2hvdygpIn0=
 </script>
 </div>
+</div>
+</figure>
+</div>
 </section>
-<section id="key-takeaways" class="level2">
-<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
-<ul>
-<li>🔍 <strong>Outliers</strong> = Data points that don’t fit the pattern</li>
-<li>⚠️ They could mean: pollution events, sensor errors, or data mistakes</li>
-<li>📊 <strong>IQR method</strong> = Math way to find outliers automatically</li>
-<li>📉 <strong>Box plots</strong> = Visual way to spot outliers (shown as circles)</li>
-<li>🤔 Always <strong>investigate</strong> before removing outliers</li>
-<li>✅ Keep outliers if they’re real events worth studying</li>
-<li>🗑️ Remove outliers if they’re equipment errors</li>
-<li>🌊 Real stream data will have outliers - you need to understand them!</li>
-</ul>
+<section id="class-nitrite-boxplot" class="level3">
+<h3 class="anchored" data-anchor-id="class-nitrite-boxplot">Class Nitrite Boxplot</h3>
+<div id="lst-classnitriteboxplot" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-classnitriteboxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint&nbsp;4: Create a boxplot for the class nitrite data.
+</figcaption>
+<div aria-describedby="lst-classnitriteboxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><strong>Your Turn:</strong> Create a Boxplot for the Class Nitrite Data</p>
+<div>
+<div id="pyodide-6" class="exercise-cell">
+
+</div>
+<script type="pyodide-6-contents">
+eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6InBsdC5maWd1cmUoZmlnc2l6ZT0oOCwgNikpXG5wbHQuYm94cGxvdChjbGFzc19uaXRyaXRlLCB2ZXJ0PVRydWUsIHBhdGNoX2FydGlzdD1UcnVlLFxuICAgICAgICAgICAgYm94cHJvcHM9ZGljdChmYWNlY29sb3I9J2xlbW9uY2hpZmZvbicpKVxucGx0LnlsYWJlbCgnTml0cml0ZSAobWcvTCknLCBmb250c2l6ZT0xMilcbnBsdC54dGlja3MoW10pXG5wbHQudGl0bGUoJ0JveHBsb3Qgb2YgQ2xhc3MgTml0cml0ZScsIGZvbnRzaXplPTEzKVxucGx0LmdyaWQoVHJ1ZSwgYWxwaGE9MC4zLCBheGlzPSd5JylcbnBsdC5zaG93KCkifQ==
+</script>
+</div>
+</div>
+</figure>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Does either have outliers? How do you know?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
 </section>
-<section id="the-decision-tree" class="level2">
-<h2 class="anchored" data-anchor-id="the-decision-tree">The Decision Tree</h2>
-<p>When you find an outlier, ask yourself:</p>
-<ol type="1">
-<li><strong>Is it possible?</strong> (pH of 20 = No, pH of 8.5 = Yes)</li>
-<li><strong>What happened that day?</strong> (Check notes, weather, etc.)</li>
-<li><strong>Does it fit a pattern?</strong> (One spike vs multiple high readings)</li>
-<li><strong>Is the sensor working?</strong> (Check calibration, battery)</li>
-</ol>
-<p>Then decide: Keep it, remove it, or investigate more!</p>
-<p><strong>Next lesson:</strong> We’ll learn about scatterplots - how to see if two things (like pH and nitrate) are related!</p>
+</section>
+<section id="adding-means-to-boxplots" class="level2">
+<h2 class="anchored" data-anchor-id="adding-means-to-boxplots">Adding Means to Boxplots</h2>
+<p>Write the code here</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Question!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What do you notice about the relationship between the mean and median for the nitrate data? Why do you think that might be?</p>
+</div>
+</div>
 
 
 <script type="pyodide-data">
 eyJvcHRpb25zIjp7ImVudiI6eyJQTE9UTFlfUkVOREVSRVIiOiJwbG90bHlfbWltZXR5cGUifSwiaW5kZXhVUkwiOiJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvcHlvZGlkZS92MC4yOC4xL2Z1bGwvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsicHlvZGlkZV9odHRwIiwibWljcm9waXAiLCJpcHl0aG9uIl19fQ==
 </script>
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJweW9kaWRlLTIiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl8yID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS0yLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMi1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzIgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzIsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTEiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl8xID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS0xLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMS1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzEgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzEsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLXByZWx1ZGUiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJweW9kaWRlT2pzID0ge1xuICBjb25zdCB7XG4gICAgUHlvZGlkZUV2YWx1YXRvcixcbiAgICBQeW9kaWRlRW52aXJvbm1lbnRNYW5hZ2VyLFxuICAgIHNldHVwUHl0aG9uLFxuICAgIHN0YXJ0UHlvZGlkZVdvcmtlcixcbiAgICBiNjREZWNvZGUsXG4gICAgY29sbGFwc2VQYXRoLFxuICB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcblxuICBjb25zdCBzdGF0dXNDb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChcImV4ZXJjaXNlLWxvYWRpbmctc3RhdHVzXCIpO1xuICBjb25zdCBpbmRpY2F0b3JDb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChcImV4ZXJjaXNlLWxvYWRpbmctaW5kaWNhdG9yXCIpO1xuICBpbmRpY2F0b3JDb250YWluZXIuY2xhc3NMaXN0LnJlbW92ZShcImQtbm9uZVwiKTtcblxuICBsZXQgc3RhdHVzVGV4dCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIilcbiAgc3RhdHVzVGV4dC5jbGFzc0xpc3QgPSBcImV4ZXJjaXNlLWxvYWRpbmctZGV0YWlsc1wiO1xuICBzdGF0dXNUZXh0ID0gc3RhdHVzQ29udGFpbmVyLmFwcGVuZENoaWxkKHN0YXR1c1RleHQpO1xuICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYEluaXRpYWxpc2VgO1xuXG4gIC8vIEhvaXN0IGluZGljYXRvciBvdXQgZnJvbSBmaW5hbCBzbGlkZSB3aGVuIHJ1bm5pbmcgdW5kZXIgcmV2ZWFsXG4gIGNvbnN0IHJldmVhbFN0YXR1cyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucmV2ZWFsIC5leGVyY2lzZS1sb2FkaW5nLWluZGljYXRvclwiKTtcbiAgaWYgKHJldmVhbFN0YXR1cykge1xuICAgIHJldmVhbFN0YXR1cy5yZW1vdmUoKTtcbiAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJldmVhbCA+IC5zbGlkZXNcIikuYXBwZW5kQ2hpbGQocmV2ZWFsU3RhdHVzKTtcbiAgfVxuXG4gIC8vIE1ha2UgYW55IHJldmVhbCBzbGlkZXMgd2l0aCBsaXZlIGNlbGxzIHNjcm9sbGFibGVcbiAgZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbChcIi5yZXZlYWwgLmV4ZXJjaXNlLWNlbGxcIikuZm9yRWFjaCgoZWwpID0+IHtcbiAgICBlbC5jbG9zZXN0KCdzZWN0aW9uLnNsaWRlJykuY2xhc3NMaXN0LmFkZChcInNjcm9sbGFibGVcIik7XG4gIH0pXG5cbiAgLy8gUHlvZGlkZSBzdXBwbGVtZW50YWwgZGF0YSBhbmQgb3B0aW9uc1xuICBjb25zdCBkYXRhQ29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLWRhdGFcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBkYXRhID0gSlNPTi5wYXJzZShiNjREZWNvZGUoZGF0YUNvbnRlbnQpKTtcblxuICAvLyBHcmFiIGxpc3Qgb2YgcmVzb3VyY2VzIHRvIGJlIGRvd25sb2FkZWRcbiAgY29uc3QgZmlsZXNDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcInZmcy1maWxlXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgZmlsZXMgPSBKU09OLnBhcnNlKGI2NERlY29kZShmaWxlc0NvbnRlbnQpKTtcblxuICBsZXQgcHlvZGlkZVByb21pc2UgPSAoYXN5bmMgKCkgPT4ge1xuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgUHlvZGlkZWA7XG4gICAgY29uc3QgcHlvZGlkZSA9IGF3YWl0IHN0YXJ0UHlvZGlkZVdvcmtlcihkYXRhLm9wdGlvbnMpO1xuXG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyBwYWNrYWdlOiBtaWNyb3BpcGA7XG4gICAgYXdhaXQgcHlvZGlkZS5sb2FkUGFja2FnZShcIm1pY3JvcGlwXCIpO1xuICAgIGNvbnN0IG1pY3JvcGlwID0gYXdhaXQgcHlvZGlkZS5weWltcG9ydChcIm1pY3JvcGlwXCIpO1xuICAgIGF3YWl0IGRhdGEucGFja2FnZXMucGtncy5tYXAoKHBrZykgPT4gKCkgPT4ge1xuICAgICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyBwYWNrYWdlOiAke3BrZ31gO1xuICAgICAgcmV0dXJuIG1pY3JvcGlwLmluc3RhbGwocGtnKTtcbiAgICB9KS5yZWR1Y2UoKGN1ciwgbmV4dCkgPT4gY3VyLnRoZW4obmV4dCksIFByb21pc2UucmVzb2x2ZSgpKTtcbiAgICBhd2FpdCBtaWNyb3BpcC5kZXN0cm95KCk7XG5cbiAgICAvLyBEb3dubG9hZCBhbmQgaW5zdGFsbCByZXNvdXJjZXNcbiAgICBhd2FpdCBmaWxlcy5tYXAoKGZpbGUpID0+IGFzeW5jICgpID0+IHtcbiAgICAgIGNvbnN0IG5hbWUgPSBmaWxlLnN1YnN0cmluZyhmaWxlLmxhc3RJbmRleE9mKCcvJykgKyAxKTtcbiAgICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcmVzb3VyY2U6ICR7bmFtZX1gO1xuICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChmaWxlKTtcbiAgICAgIGlmICghcmVzcG9uc2Uub2spIHtcbiAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBDYW4ndCBkb3dubG9hZCBcXGAke2ZpbGV9XFxgLiBFcnJvciAke3Jlc3BvbnNlLnN0YXR1c306IFwiJHtyZXNwb25zZS5zdGF0dXNUZXh0fVwiLmApO1xuICAgICAgfVxuICAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlc3BvbnNlLmFycmF5QnVmZmVyKCk7XG5cbiAgICAgIC8vIFN0b3JlIFVSTHMgaW4gdGhlIGN3ZCB3aXRob3V0IGFueSBzdWJkaXJlY3Rvcnkgc3RydWN0dXJlXG4gICAgICBpZiAoZmlsZS5pbmNsdWRlcyhcIjovL1wiKSkge1xuICAgICAgICBmaWxlID0gbmFtZTtcbiAgICAgIH1cblxuICAgICAgLy8gQ29sbGFwc2UgaGlnaGVyIGRpcmVjdG9yeSBzdHJ1Y3R1cmVcbiAgICAgIGZpbGUgPSBjb2xsYXBzZVBhdGgoZmlsZSk7XG5cbiAgICAgIC8vIENyZWF0ZSBkaXJlY3RvcnkgdHJlZSwgaWdub3JpbmcgXCJkaXJlY3RvcnkgZXhpc3RzXCIgVkZTIGVycm9yc1xuICAgICAgY29uc3QgcGFydHMgPSBmaWxlLnNwbGl0KCcvJykuc2xpY2UoMCwgLTEpO1xuICAgICAgbGV0IHBhdGggPSAnJztcbiAgICAgIHdoaWxlIChwYXJ0cy5sZW5ndGggPiAwKSB7XG4gICAgICAgIHBhdGggKz0gcGFydHMuc2hpZnQoKSArICcvJztcbiAgICAgICAgdHJ5IHtcbiAgICAgICAgICBhd2FpdCBweW9kaWRlLkZTLm1rZGlyKHBhdGgpO1xuICAgICAgICB9IGNhdGNoIChlKSB7XG4gICAgICAgICAgaWYgKGUubmFtZSAhPT0gXCJFcnJub0Vycm9yXCIpIHRocm93IGU7XG4gICAgICAgICAgaWYgKGUuZXJybm8gIT09IDIwKSB7XG4gICAgICAgICAgICBjb25zdCBlcnJvclRleHRQdHIgPSBhd2FpdCBweW9kaWRlLl9tb2R1bGUuX3N0cmVycm9yKGUuZXJybm8pO1xuICAgICAgICAgICAgY29uc3QgZXJyb3JUZXh0ID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLlVURjhUb1N0cmluZyhlcnJvclRleHRQdHIpO1xuICAgICAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBGaWxlc3lzdGVtIEVycm9yICR7ZS5lcnJub30gXCIke2Vycm9yVGV4dH1cIi5gKTtcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH1cblxuICAgICAgLy8gV3JpdGUgdGhpcyBmaWxlIHRvIHRoZSBWRlNcbiAgICAgIHRyeSB7XG4gICAgICAgIHJldHVybiBhd2FpdCBweW9kaWRlLkZTLndyaXRlRmlsZShmaWxlLCBuZXcgVWludDhBcnJheShkYXRhKSk7XG4gICAgICB9IGNhdGNoIChlKSB7XG4gICAgICAgIGlmIChlLm5hbWUgIT09IFwiRXJybm9FcnJvclwiKSB0aHJvdyBlO1xuICAgICAgICBjb25zdCBlcnJvclRleHRQdHIgPSBhd2FpdCBweW9kaWRlLl9tb2R1bGUuX3N0cmVycm9yKGUuZXJybm8pO1xuICAgICAgICBjb25zdCBlcnJvclRleHQgPSBhd2FpdCBweW9kaWRlLl9tb2R1bGUuVVRGOFRvU3RyaW5nKGVycm9yVGV4dFB0cik7XG4gICAgICAgIHRocm93IG5ldyBFcnJvcihgRmlsZXN5c3RlbSBFcnJvciAke2UuZXJybm99IFwiJHtlcnJvclRleHR9XCIuYCk7XG4gICAgICB9XG4gICAgfSkucmVkdWNlKChjdXIsIG5leHQpID0+IGN1ci50aGVuKG5leHQpLCBQcm9taXNlLnJlc29sdmUoKSk7XG5cbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYFB5b2RpZGUgZW52aXJvbm1lbnQgc2V0dXBgO1xuICAgIGF3YWl0IHNldHVwUHl0aG9uKHB5b2RpZGUpO1xuXG4gICAgc3RhdHVzVGV4dC5yZW1vdmUoKTtcbiAgICBpZiAoc3RhdHVzQ29udGFpbmVyLmNoaWxkcmVuLmxlbmd0aCA9PSAwKSB7XG4gICAgICBzdGF0dXNDb250YWluZXIucGFyZW50Tm9kZS5yZW1vdmUoKTtcbiAgICB9XG4gICAgcmV0dXJuIHB5b2RpZGU7XG4gIH0pKCkuY2F0Y2goKGVycikgPT4ge1xuICAgIHN0YXR1c1RleHQuc3R5bGUuY29sb3IgPSBcInZhcigtLWV4ZXJjaXNlLWVkaXRvci1obC1lciwgI0FEMDAwMClcIjtcbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gZXJyLm1lc3NhZ2U7XG4gICAgLy9pbmRpY2F0b3JDb250YWluZXIucXVlcnlTZWxlY3RvcihcIi5zcGlubmVyLWdyb3dcIikuY2xhc3NMaXN0LmFkZChcImQtbm9uZVwiKTtcbiAgICB0aHJvdyBlcnI7XG4gIH0pO1xuXG4gIC8vIEtlZXAgdHJhY2sgb2YgaW5pdGlhbCBPSlMgYmxvY2sgcmVuZGVyXG4gIGNvbnN0IHJlbmRlcmVkT2pzID0ge307XG5cbiAgY29uc3QgcHJvY2VzcyA9IGFzeW5jIChjb250ZXh0LCBpbnB1dHMpID0+IHtcbiAgICBjb25zdCBweW9kaWRlID0gYXdhaXQgcHlvZGlkZVByb21pc2U7XG4gICAgY29uc3QgZXZhbHVhdG9yID0gbmV3IFB5b2RpZGVFdmFsdWF0b3IocHlvZGlkZSwgY29udGV4dCk7XG4gICAgYXdhaXQgZXZhbHVhdG9yLnByb2Nlc3MoaW5wdXRzKTtcbiAgICByZXR1cm4gZXZhbHVhdG9yLmNvbnRhaW5lcjtcbiAgfVxuXG4gIHJldHVybiB7XG4gICAgcHlvZGlkZVByb21pc2UsXG4gICAgcmVuZGVyZWRPanMsXG4gICAgcHJvY2VzcyxcbiAgfTtcbn1cbiJ9XX0=
+eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJweW9kaWRlLTYiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl82ID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS02LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNi1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzYgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzYsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTUiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl81ID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS01LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNS1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzUgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzUsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTQiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl80ID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS00LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNC1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzQgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzQsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTMiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoiX3B5b2RpZGVfdmFsdWVfMyA9IHtcbiAgY29uc3QgeyBoaWdobGlnaHRQeXRob24sIGI2NERlY29kZX0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS0zLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgLy8gRGVmYXVsdCBldmFsdWF0aW9uIGNvbmZpZ3VyYXRpb25cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oe1xuICAgIGlkOiBcInB5b2RpZGUtMy1jb250ZW50c1wiLFxuICAgIGVjaG86IHRydWUsXG4gICAgb3V0cHV0OiB0cnVlXG4gIH0sIGJsb2NrLmF0dHIpO1xuXG4gIC8vIEV2YWx1YXRlIHRoZSBwcm92aWRlZCBQeXRob24gY29kZVxuICBjb25zdCByZXN1bHQgPSBweW9kaWRlT2pzLnByb2Nlc3Moe2NvZGU6IGJsb2NrLmNvZGUsIG9wdGlvbnN9LCB7fSk7XG5cbiAgLy8gRWFybHkgeWllbGQgd2hpbGUgd2Ugd2FpdCBmb3IgdGhlIGZpcnN0IGV2YWx1YXRpb24gYW5kIHJlbmRlclxuICBpZiAob3B0aW9ucy5vdXRwdXQgJiYgIShcIjNcIiBpbiBweW9kaWRlT2pzLnJlbmRlcmVkT2pzKSkge1xuICAgIGNvbnN0IGNvbnRhaW5lciA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gICAgY29uc3Qgc3Bpbm5lciA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG5cbiAgICBpZiAob3B0aW9ucy5lY2hvKSB7XG4gICAgICAvLyBTaG93IG91dHB1dCBhcyBoaWdobGlnaHRlZCBzb3VyY2VcbiAgICAgIGNvbnN0IHByZUVsZW0gPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwicHJlXCIpO1xuICAgICAgY29udGFpbmVyLmNsYXNzTmFtZSA9IFwic291cmNlQ29kZVwiO1xuICAgICAgcHJlRWxlbS5jbGFzc05hbWUgPSBcInNvdXJjZUNvZGUgcHl0aG9uXCI7XG4gICAgICBwcmVFbGVtLmFwcGVuZENoaWxkKGhpZ2hsaWdodFB5dGhvbihibG9jay5jb2RlKSk7XG4gICAgICBzcGlubmVyLmNsYXNzTmFtZSA9IFwic3Bpbm5lci1ncm93IHNwaW5uZXItZ3Jvdy1zbSBtLTIgcG9zaXRpb24tYWJzb2x1dGUgdG9wLTAgZW5kLTBcIjtcbiAgICAgIHByZUVsZW0uYXBwZW5kQ2hpbGQoc3Bpbm5lcik7XG4gICAgICBjb250YWluZXIuYXBwZW5kQ2hpbGQocHJlRWxlbSk7XG4gICAgfSBlbHNlIHtcbiAgICAgIHNwaW5uZXIuY2xhc3NOYW1lID0gXCJzcGlubmVyLWJvcmRlciBzcGlubmVyLWJvcmRlci1zbVwiO1xuICAgICAgY29udGFpbmVyLmFwcGVuZENoaWxkKHNwaW5uZXIpO1xuICAgIH1cblxuICAgIHlpZWxkIGNvbnRhaW5lcjtcbiAgfVxuXG4gIHB5b2RpZGVPanMucmVuZGVyZWRPanNbXCIzXCJdID0gdHJ1ZTtcbiAgeWllbGQgYXdhaXQgcmVzdWx0O1xufVxuIn0seyJjZWxsTmFtZSI6InB5b2RpZGUtMiIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3B5b2RpZGVfZWRpdG9yXzIgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTItY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcblxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7IGlkOiBgcHlvZGlkZS0yLWNvbnRlbnRzYCB9LCBibG9jay5hdHRyKTtcbiAgY29uc3QgZWRpdG9yID0gbmV3IFB5b2RpZGVFeGVyY2lzZUVkaXRvcihcbiAgICBweW9kaWRlT2pzLnB5b2RpZGVQcm9taXNlLFxuICAgIGJsb2NrLmNvZGUsXG4gICAgb3B0aW9uc1xuICApO1xuXG4gIHJldHVybiBlZGl0b3IuY29udGFpbmVyO1xufVxuX3B5b2RpZGVfdmFsdWVfMiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMiwge30pO1xuIn0seyJjZWxsTmFtZSI6InB5b2RpZGUtMSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJfcHlvZGlkZV92YWx1ZV8xID0ge1xuICBjb25zdCB7IGhpZ2hsaWdodFB5dGhvbiwgYjY0RGVjb2RlfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTEtY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcblxuICAvLyBEZWZhdWx0IGV2YWx1YXRpb24gY29uZmlndXJhdGlvblxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7XG4gICAgaWQ6IFwicHlvZGlkZS0xLWNvbnRlbnRzXCIsXG4gICAgZWNobzogdHJ1ZSxcbiAgICBvdXRwdXQ6IHRydWVcbiAgfSwgYmxvY2suYXR0cik7XG5cbiAgLy8gRXZhbHVhdGUgdGhlIHByb3ZpZGVkIFB5dGhvbiBjb2RlXG4gIGNvbnN0IHJlc3VsdCA9IHB5b2RpZGVPanMucHJvY2Vzcyh7Y29kZTogYmxvY2suY29kZSwgb3B0aW9uc30sIHt9KTtcblxuICAvLyBFYXJseSB5aWVsZCB3aGlsZSB3ZSB3YWl0IGZvciB0aGUgZmlyc3QgZXZhbHVhdGlvbiBhbmQgcmVuZGVyXG4gIGlmIChvcHRpb25zLm91dHB1dCAmJiAhKFwiMVwiIGluIHB5b2RpZGVPanMucmVuZGVyZWRPanMpKSB7XG4gICAgY29uc3QgY29udGFpbmVyID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcbiAgICBjb25zdCBzcGlubmVyID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcblxuICAgIGlmIChvcHRpb25zLmVjaG8pIHtcbiAgICAgIC8vIFNob3cgb3V0cHV0IGFzIGhpZ2hsaWdodGVkIHNvdXJjZVxuICAgICAgY29uc3QgcHJlRWxlbSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJwcmVcIik7XG4gICAgICBjb250YWluZXIuY2xhc3NOYW1lID0gXCJzb3VyY2VDb2RlXCI7XG4gICAgICBwcmVFbGVtLmNsYXNzTmFtZSA9IFwic291cmNlQ29kZSBweXRob25cIjtcbiAgICAgIHByZUVsZW0uYXBwZW5kQ2hpbGQoaGlnaGxpZ2h0UHl0aG9uKGJsb2NrLmNvZGUpKTtcbiAgICAgIHNwaW5uZXIuY2xhc3NOYW1lID0gXCJzcGlubmVyLWdyb3cgc3Bpbm5lci1ncm93LXNtIG0tMiBwb3NpdGlvbi1hYnNvbHV0ZSB0b3AtMCBlbmQtMFwiO1xuICAgICAgcHJlRWxlbS5hcHBlbmRDaGlsZChzcGlubmVyKTtcbiAgICAgIGNvbnRhaW5lci5hcHBlbmRDaGlsZChwcmVFbGVtKTtcbiAgICB9IGVsc2Uge1xuICAgICAgc3Bpbm5lci5jbGFzc05hbWUgPSBcInNwaW5uZXItYm9yZGVyIHNwaW5uZXItYm9yZGVyLXNtXCI7XG4gICAgICBjb250YWluZXIuYXBwZW5kQ2hpbGQoc3Bpbm5lcik7XG4gICAgfVxuXG4gICAgeWllbGQgY29udGFpbmVyO1xuICB9XG5cbiAgcHlvZGlkZU9qcy5yZW5kZXJlZE9qc1tcIjFcIl0gPSB0cnVlO1xuICB5aWVsZCBhd2FpdCByZXN1bHQ7XG59XG4ifSx7ImNlbGxOYW1lIjoicHlvZGlkZS1wcmVsdWRlIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoicHlvZGlkZU9qcyA9IHtcbiAgY29uc3Qge1xuICAgIFB5b2RpZGVFdmFsdWF0b3IsXG4gICAgUHlvZGlkZUVudmlyb25tZW50TWFuYWdlcixcbiAgICBzZXR1cFB5dGhvbixcbiAgICBzdGFydFB5b2RpZGVXb3JrZXIsXG4gICAgYjY0RGVjb2RlLFxuICAgIGNvbGxhcHNlUGF0aCxcbiAgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc3RhdHVzQ29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJleGVyY2lzZS1sb2FkaW5nLXN0YXR1c1wiKTtcbiAgY29uc3QgaW5kaWNhdG9yQ29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJleGVyY2lzZS1sb2FkaW5nLWluZGljYXRvclwiKTtcbiAgaW5kaWNhdG9yQ29udGFpbmVyLmNsYXNzTGlzdC5yZW1vdmUoXCJkLW5vbmVcIik7XG5cbiAgbGV0IHN0YXR1c1RleHQgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiZGl2XCIpXG4gIHN0YXR1c1RleHQuY2xhc3NMaXN0ID0gXCJleGVyY2lzZS1sb2FkaW5nLWRldGFpbHNcIjtcbiAgc3RhdHVzVGV4dCA9IHN0YXR1c0NvbnRhaW5lci5hcHBlbmRDaGlsZChzdGF0dXNUZXh0KTtcbiAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBJbml0aWFsaXNlYDtcblxuICAvLyBIb2lzdCBpbmRpY2F0b3Igb3V0IGZyb20gZmluYWwgc2xpZGUgd2hlbiBydW5uaW5nIHVuZGVyIHJldmVhbFxuICBjb25zdCByZXZlYWxTdGF0dXMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJldmVhbCAuZXhlcmNpc2UtbG9hZGluZy1pbmRpY2F0b3JcIik7XG4gIGlmIChyZXZlYWxTdGF0dXMpIHtcbiAgICByZXZlYWxTdGF0dXMucmVtb3ZlKCk7XG4gICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXZlYWwgPiAuc2xpZGVzXCIpLmFwcGVuZENoaWxkKHJldmVhbFN0YXR1cyk7XG4gIH1cblxuICAvLyBNYWtlIGFueSByZXZlYWwgc2xpZGVzIHdpdGggbGl2ZSBjZWxscyBzY3JvbGxhYmxlXG4gIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoXCIucmV2ZWFsIC5leGVyY2lzZS1jZWxsXCIpLmZvckVhY2goKGVsKSA9PiB7XG4gICAgZWwuY2xvc2VzdCgnc2VjdGlvbi5zbGlkZScpLmNsYXNzTGlzdC5hZGQoXCJzY3JvbGxhYmxlXCIpO1xuICB9KVxuXG4gIC8vIFB5b2RpZGUgc3VwcGxlbWVudGFsIGRhdGEgYW5kIG9wdGlvbnNcbiAgY29uc3QgZGF0YUNvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS1kYXRhXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgZGF0YSA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKGRhdGFDb250ZW50KSk7XG5cbiAgLy8gR3JhYiBsaXN0IG9mIHJlc291cmNlcyB0byBiZSBkb3dubG9hZGVkXG4gIGNvbnN0IGZpbGVzQ29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ2ZnMtZmlsZVxcXCJdYCkudGV4dENvbnRlbnQ7XG4gIGNvbnN0IGZpbGVzID0gSlNPTi5wYXJzZShiNjREZWNvZGUoZmlsZXNDb250ZW50KSk7XG5cbiAgbGV0IHB5b2RpZGVQcm9taXNlID0gKGFzeW5jICgpID0+IHtcbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIFB5b2RpZGVgO1xuICAgIGNvbnN0IHB5b2RpZGUgPSBhd2FpdCBzdGFydFB5b2RpZGVXb3JrZXIoZGF0YS5vcHRpb25zKTtcblxuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcGFja2FnZTogbWljcm9waXBgO1xuICAgIGF3YWl0IHB5b2RpZGUubG9hZFBhY2thZ2UoXCJtaWNyb3BpcFwiKTtcbiAgICBjb25zdCBtaWNyb3BpcCA9IGF3YWl0IHB5b2RpZGUucHlpbXBvcnQoXCJtaWNyb3BpcFwiKTtcbiAgICBhd2FpdCBkYXRhLnBhY2thZ2VzLnBrZ3MubWFwKChwa2cpID0+ICgpID0+IHtcbiAgICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcGFja2FnZTogJHtwa2d9YDtcbiAgICAgIHJldHVybiBtaWNyb3BpcC5pbnN0YWxsKHBrZyk7XG4gICAgfSkucmVkdWNlKChjdXIsIG5leHQpID0+IGN1ci50aGVuKG5leHQpLCBQcm9taXNlLnJlc29sdmUoKSk7XG4gICAgYXdhaXQgbWljcm9waXAuZGVzdHJveSgpO1xuXG4gICAgLy8gRG93bmxvYWQgYW5kIGluc3RhbGwgcmVzb3VyY2VzXG4gICAgYXdhaXQgZmlsZXMubWFwKChmaWxlKSA9PiBhc3luYyAoKSA9PiB7XG4gICAgICBjb25zdCBuYW1lID0gZmlsZS5zdWJzdHJpbmcoZmlsZS5sYXN0SW5kZXhPZignLycpICsgMSk7XG4gICAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIHJlc291cmNlOiAke25hbWV9YDtcbiAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZmV0Y2goZmlsZSk7XG4gICAgICBpZiAoIXJlc3BvbnNlLm9rKSB7XG4gICAgICAgIHRocm93IG5ldyBFcnJvcihgQ2FuJ3QgZG93bmxvYWQgXFxgJHtmaWxlfVxcYC4gRXJyb3IgJHtyZXNwb25zZS5zdGF0dXN9OiBcIiR7cmVzcG9uc2Uuc3RhdHVzVGV4dH1cIi5gKTtcbiAgICAgIH1cbiAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5hcnJheUJ1ZmZlcigpO1xuXG4gICAgICAvLyBTdG9yZSBVUkxzIGluIHRoZSBjd2Qgd2l0aG91dCBhbnkgc3ViZGlyZWN0b3J5IHN0cnVjdHVyZVxuICAgICAgaWYgKGZpbGUuaW5jbHVkZXMoXCI6Ly9cIikpIHtcbiAgICAgICAgZmlsZSA9IG5hbWU7XG4gICAgICB9XG5cbiAgICAgIC8vIENvbGxhcHNlIGhpZ2hlciBkaXJlY3Rvcnkgc3RydWN0dXJlXG4gICAgICBmaWxlID0gY29sbGFwc2VQYXRoKGZpbGUpO1xuXG4gICAgICAvLyBDcmVhdGUgZGlyZWN0b3J5IHRyZWUsIGlnbm9yaW5nIFwiZGlyZWN0b3J5IGV4aXN0c1wiIFZGUyBlcnJvcnNcbiAgICAgIGNvbnN0IHBhcnRzID0gZmlsZS5zcGxpdCgnLycpLnNsaWNlKDAsIC0xKTtcbiAgICAgIGxldCBwYXRoID0gJyc7XG4gICAgICB3aGlsZSAocGFydHMubGVuZ3RoID4gMCkge1xuICAgICAgICBwYXRoICs9IHBhcnRzLnNoaWZ0KCkgKyAnLyc7XG4gICAgICAgIHRyeSB7XG4gICAgICAgICAgYXdhaXQgcHlvZGlkZS5GUy5ta2RpcihwYXRoKTtcbiAgICAgICAgfSBjYXRjaCAoZSkge1xuICAgICAgICAgIGlmIChlLm5hbWUgIT09IFwiRXJybm9FcnJvclwiKSB0aHJvdyBlO1xuICAgICAgICAgIGlmIChlLmVycm5vICE9PSAyMCkge1xuICAgICAgICAgICAgY29uc3QgZXJyb3JUZXh0UHRyID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLl9zdHJlcnJvcihlLmVycm5vKTtcbiAgICAgICAgICAgIGNvbnN0IGVycm9yVGV4dCA9IGF3YWl0IHB5b2RpZGUuX21vZHVsZS5VVEY4VG9TdHJpbmcoZXJyb3JUZXh0UHRyKTtcbiAgICAgICAgICAgIHRocm93IG5ldyBFcnJvcihgRmlsZXN5c3RlbSBFcnJvciAke2UuZXJybm99IFwiJHtlcnJvclRleHR9XCIuYCk7XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9XG5cbiAgICAgIC8vIFdyaXRlIHRoaXMgZmlsZSB0byB0aGUgVkZTXG4gICAgICB0cnkge1xuICAgICAgICByZXR1cm4gYXdhaXQgcHlvZGlkZS5GUy53cml0ZUZpbGUoZmlsZSwgbmV3IFVpbnQ4QXJyYXkoZGF0YSkpO1xuICAgICAgfSBjYXRjaCAoZSkge1xuICAgICAgICBpZiAoZS5uYW1lICE9PSBcIkVycm5vRXJyb3JcIikgdGhyb3cgZTtcbiAgICAgICAgY29uc3QgZXJyb3JUZXh0UHRyID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLl9zdHJlcnJvcihlLmVycm5vKTtcbiAgICAgICAgY29uc3QgZXJyb3JUZXh0ID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLlVURjhUb1N0cmluZyhlcnJvclRleHRQdHIpO1xuICAgICAgICB0aHJvdyBuZXcgRXJyb3IoYEZpbGVzeXN0ZW0gRXJyb3IgJHtlLmVycm5vfSBcIiR7ZXJyb3JUZXh0fVwiLmApO1xuICAgICAgfVxuICAgIH0pLnJlZHVjZSgoY3VyLCBuZXh0KSA9PiBjdXIudGhlbihuZXh0KSwgUHJvbWlzZS5yZXNvbHZlKCkpO1xuXG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBQeW9kaWRlIGVudmlyb25tZW50IHNldHVwYDtcbiAgICBhd2FpdCBzZXR1cFB5dGhvbihweW9kaWRlKTtcblxuICAgIHN0YXR1c1RleHQucmVtb3ZlKCk7XG4gICAgaWYgKHN0YXR1c0NvbnRhaW5lci5jaGlsZHJlbi5sZW5ndGggPT0gMCkge1xuICAgICAgc3RhdHVzQ29udGFpbmVyLnBhcmVudE5vZGUucmVtb3ZlKCk7XG4gICAgfVxuICAgIHJldHVybiBweW9kaWRlO1xuICB9KSgpLmNhdGNoKChlcnIpID0+IHtcbiAgICBzdGF0dXNUZXh0LnN0eWxlLmNvbG9yID0gXCJ2YXIoLS1leGVyY2lzZS1lZGl0b3ItaGwtZXIsICNBRDAwMDApXCI7XG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGVyci5tZXNzYWdlO1xuICAgIC8vaW5kaWNhdG9yQ29udGFpbmVyLnF1ZXJ5U2VsZWN0b3IoXCIuc3Bpbm5lci1ncm93XCIpLmNsYXNzTGlzdC5hZGQoXCJkLW5vbmVcIik7XG4gICAgdGhyb3cgZXJyO1xuICB9KTtcblxuICAvLyBLZWVwIHRyYWNrIG9mIGluaXRpYWwgT0pTIGJsb2NrIHJlbmRlclxuICBjb25zdCByZW5kZXJlZE9qcyA9IHt9O1xuXG4gIGNvbnN0IHByb2Nlc3MgPSBhc3luYyAoY29udGV4dCwgaW5wdXRzKSA9PiB7XG4gICAgY29uc3QgcHlvZGlkZSA9IGF3YWl0IHB5b2RpZGVQcm9taXNlO1xuICAgIGNvbnN0IGV2YWx1YXRvciA9IG5ldyBQeW9kaWRlRXZhbHVhdG9yKHB5b2RpZGUsIGNvbnRleHQpO1xuICAgIGF3YWl0IGV2YWx1YXRvci5wcm9jZXNzKGlucHV0cyk7XG4gICAgcmV0dXJuIGV2YWx1YXRvci5jb250YWluZXI7XG4gIH1cblxuICByZXR1cm4ge1xuICAgIHB5b2RpZGVQcm9taXNlLFxuICAgIHJlbmRlcmVkT2pzLFxuICAgIHByb2Nlc3MsXG4gIH07XG59XG4ifV19
 </script>
 <div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
 <div id="exercise-loading-status" class="d-flex gap-2">
