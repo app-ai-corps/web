@@ -36,7 +36,7 @@ Assign roles to each person in your group:
         - submission form pulled up in browser
 - **Role 3:** Data Recorder (Sticky Notes)  
     - *Needs:*  
-        - sets of sticky notes (at least eight sets, two per water sample)
+        - sets of small sticky notes (at least eight sets, two sets per water sample)
         - Sharpies
 - **Role 4:** Lab Technician  
     - *Needs:*  
