@@ -73,6 +73,8 @@ Print Statements!
 **🎉 You just ran Python code!** See how it printed "Hello, Water Scientist!" below the block? We call text like this a ***string***. 
 
 Notice that strings must be in quotation marks within the code but those marks don't appear when printed. The quotation marks just tell the computer *"Hey! I'm writing regular text. Treat it like written English instead of code.,"* and it does!
+<br>
+<br>
 
 ### Math
 Now let's use Python to do some math!
@@ -108,7 +110,8 @@ Click the ▶️ Run Code button to run the blocks.
 
 Mathematical Operators!
 :::
-
+<br>
+<br>
 We can also ask Python to **compare values**:
 
 :::{#lst-comparingvalues}
@@ -130,6 +133,8 @@ This code asks "Is the sum of 2 and 3 less than or equal to the product of 2 and
 
 Comparing Values!
 :::
+<br>
+<br>
 
 ### Text/Strings & Math
 
@@ -147,6 +152,8 @@ print("2 + 3 =", 2 + 3)
 
 Print Statements with Math!
 :::
+<br>
+<br>
 
 ## 🧑‍💻 Try It Yourself!
 
@@ -178,6 +185,9 @@ print("20 - 7 =", 20 - 7)
 
 Your own print statements with math!
 :::
+
+<br>
+<br>
 
 ## 🚀 Ready to Begin?
 
