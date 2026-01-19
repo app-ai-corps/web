@@ -20,7 +20,7 @@ As you might have guessed, Python can do much more than just the functions **len
 
 You have already calculated the mean and median by hand on your lab sheet. Now, let's ask Python to do it!
 
-## Calculating Measures of Center With Python
+## Measures of Center With Python
 
 ### Mean
 
@@ -45,7 +45,7 @@ print("mean of sample data:", mean_sample)
 - `import numpy as np` = Load the NumPy library/package (we only do this once per file/page)  
 - `np.mean()` = NumPy's function to calculate mean
 
-### Your Turn: Calculate Your Group's Mean Nitrate
+#### Your Turn: Calculate Your Group's Mean Nitrate
 The website doesn't save your nitrate readings list from the previous page, so you'll need to re-enter your data into the list below (Line 3) again.
 
 :::{#lst-groupmeannitrate}
@@ -78,7 +78,7 @@ else:
 Calculate and check your group's mean nitrate concentration.
 :::
 
-## Class Data
+<b> Class Data </b>  
 One of the benefits of using Python is that is can handle much larger amount amounts of data with ease. For example, let's consider the nitrate and nitrite data your whole class collected. We'll do that by importing the data collected in the Google Form. That form sends the data to a spreadsheet, or CSV (comman separated values) file.
 
 :::{#lst-getcsv}
@@ -124,7 +124,7 @@ print("Nitrite values:", class_nitrite)
 Import your whole class's nitrate and nitrite data.
 :::
 
-### Calculating the Class Nitrate and Nitrate Mean
+#### Your Turn: Calculate the Class Nitrate and Nitrite Mean
 
 Using the code written to calculate the mean for your group's nitrate data, modify it to calculate the class nitrate and nitrite means.
 
@@ -145,7 +145,8 @@ print("Class nitrite:", mean_class_nitrite, "mg/L")
 Calculate the class nitrate and nitrite means.
 :::
 
-### Calculating the Class Nitrate and Nitrite Median
+### Median
+#### Your Turn: Calculate the Class Nitrate and Nitrite Median
 
 Similarly, calculate the median for the class nitrate and nitrite data.
 
@@ -166,7 +167,7 @@ print("Class nitrite median:", median_class_nitrite, "mg/L")
 Calculate the class nitrate and nitrite medians.
 :::
 
-## Two Measures of Spread
+## Measures of Spread with Python
 Today, we'll discuss two measures of spread: the **range** and the **standard deviation**.
 
 ### Range
@@ -229,7 +230,7 @@ print("Standard Deviation of class nitrite data:", class_nitrite_stdev)
 Find the standard deviation of the class nitrate and nitrite data.
 :::
 
-## What Could Cause High Variability?
+#### What Could Cause High Variability?
 
 If a creek's reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:
 
@@ -241,7 +242,7 @@ If a creek's reading has high standard deviation (lots of variability in compari
 
 It might also signal that your data has one or more ***outliers***. We'll talk more about outliers on the next page.
 
-## Quick Reference: Python Functions
+<b> Quick Reference: Python Functions </b>  
 
 | Function | What It Does | Example |
 |----------|-------------|---------|

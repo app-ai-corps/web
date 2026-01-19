@@ -1346,9 +1346,9 @@
   {
     "objectID": "1-statistics/center-spread.html",
     "href": "1-statistics/center-spread.html",
-    "title": "Finding the Average (Mean) of Water Data",
+    "title": "Using Python for Statistics",
     "section": "",
-    "text": "Range = Biggest minus smallest\nStandard Deviation = How far numbers typically are from average (we’ll explain this more later!)\n\nExample: Which is more consistent? - Stream A: pH readings of 7.0, 7.1, 7.0, 7.1 (very consistent!) - Stream B: pH readings of 6.5, 7.5, 6.8, 7.9 (all over the place!)"
+    "text": "Checkpoints on this Page:\n\nCheckpoint 1: Calculating Group Mean Nitrate\nCheckpoint 2: Import Class Data\nCheckpoint 3: Calculate Means for Class Data\nCheckpoint 4: Calculate Medians for Class Data\nCheckpoint 5: Calculate Ranges for Class Data\nCheckpoint 6: Calculate Standard Deviations for Class Data\nAs you might have guessed, Python can do much more than just the functions len(), min(), and max(). In fact, it can help us calculate our measures of center!\nYou have already calculated the mean and median by hand on your lab sheet. Now, let’s ask Python to do it!"
   },
   {
     "objectID": "1-statistics/center-spread.html#what-is-an-average",
@@ -1423,9 +1423,9 @@
   {
     "objectID": "1-statistics/center-spread.html#what-could-cause-high-variability",
     "href": "1-statistics/center-spread.html#what-could-cause-high-variability",
-    "title": "Finding the Average (Mean) of Water Data",
+    "title": "Using Python for Statistics",
     "section": "What Could Cause High Variability?",
-    "text": "What Could Cause High Variability?\nIf a creek has high standard deviation (lots of variability), it might mean:\n\nPollution events - A factory dumps waste occasionally\nStorm runoff - Rain washes fertilizer from farms into the creek\nNatural cycles - Some creeks naturally vary (but usually not this much for pH)\nSensor problems - The equipment might need calibration\nDifferent sampling times - Morning vs afternoon can be different\n\nThis is why buoys are so useful - they can measure continuously and help you see these patterns!"
+    "text": "What Could Cause High Variability?\nIf a creek’s reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:\n\nPollution events - A factory dumps waste occasionally\nStorm runoff - Rain washes fertilizer from farms into the creek\nNatural cycles - Some creeks naturally vary\nSensor problems - The equipment might need calibration\nDifferent sampling times - Morning vs afternoon can be different\n\nIt might also signal that your data has one or more outliers. We’ll talk more about outliers on the next page."
   },
   {
     "objectID": "1-statistics/center-spread.html#try-it-analyze-two-rivers",
@@ -1444,9 +1444,9 @@
   {
     "objectID": "1-statistics/center-spread.html#quick-reference-python-functions",
     "href": "1-statistics/center-spread.html#quick-reference-python-functions",
-    "title": "Finding the Average (Mean) of Water Data",
+    "title": "Using Python for Statistics",
     "section": "Quick Reference: Python Functions",
-    "text": "Quick Reference: Python Functions\n\n\n\n\n\n\n\n\nFunction\nWhat It Does\nExample\n\n\n\n\nnp.mean()\nCalculates average\nnp.mean([7.1, 7.2, 7.3]) = 7.2\n\n\nnp.std()\nCalculates standard deviation\nnp.std([7.1, 7.2, 7.3]) = 0.082\n\n\nlen()\nCounts items\nlen([1, 2, 3]) = 3\n\n\nsum()\nAdds items\nsum([1, 2, 3]) = 6"
+    "text": "Quick Reference: Python Functions\n\n\n\n\n\n\n\n\nFunction\nWhat It Does\nExample\n\n\n\n\nnp.mean()\nCalculates average\nnp.mean([7.1, 7.2, 7.3]) = 7.2\n\n\nnp.median()\nCalculates median\nnp.median([7.1, 7.2, 7.3]) = 7.2\n\n\nnp.std()\nCalculates standard deviation\nnp.std([7.1, 7.2, 7.3]) = 0.3\n\n\nlen()\nCounts items\nlen([1, 2, 3]) = 3\n\n\nmax()\nFinds maximum\nmax([1, 2, 3]) = 3\n\n\nmin()\nFinds minimum\nmin([1, 2, 3]) = 1"
   },
   {
     "objectID": "1-statistics/center-spread.html#key-takeaways",
@@ -2238,5 +2238,47 @@
     "title": "Measures of Spread, Spotting Outliers",
     "section": "Adding Means to Boxplots",
     "text": "Adding Means to Boxplots\nWrite the code here\n\n\n\n\n\n\nQuestion!\n\n\n\nWhat do you notice about the relationship between the mean and median for the nitrate data? Why do you think that might be?"
+  },
+  {
+    "objectID": "1-statistics/center-spread.html#calculating-measures-of-center-with-python",
+    "href": "1-statistics/center-spread.html#calculating-measures-of-center-with-python",
+    "title": "Using Python for Statistics",
+    "section": "Calculating Measures of Center With Python",
+    "text": "Calculating Measures of Center With Python\n\nMean\nPython has built-in tools to calculate the mean. We’ll use something called NumPy (Numerical Python). NumPy is one example of a library or package that you can add to Python. When you add a library to Python, you are increasing the functions availble to you. For example, we have many more options with NumPy than just len(), min(), and max().\nWe have to “import” these libraries in Python and then often give them a nickname. For example, we import NumPy as np instead of typing “numpy” all the time. An example of how this work has been written (and already run) below.\n\n\n\n\n\n\nBreaking it down:\n- import numpy as np = Load the NumPy library/package (we only do this once per file/page)\n- np.mean() = NumPy’s function to calculate mean\n\nYour Turn: Calculate Your Group’s Mean Nitrate\nThe website doesn’t save your nitrate readings list from the previous page, so you’ll need to re-enter your data into the list below (Line 3) again.\n\n\n\n🎯 Checkpoint 1: Calculate and check your group’s mean nitrate concentration.\n\n\nYOUR TURN:\n- Recreate the list of your group’s nitrate readings below\n- Run the block\n\n\n\n\n\n\n\n\n\n Class Data \nOne of the benefits of using Python is that is can handle much larger amount amounts of data with ease. For example, let’s consider the nitrate and nitrite data your whole class collected. We’ll do that by importing the data collected in the Google Form. That form sends the data to a spreadsheet, or CSV (comman separated values) file.\n\n\n\n🎯 Checkpoint 2: Import your whole class’s nitrate and nitrite data.\n\n\n\n\n\n\n\n\nYour teacher will provide the link to the CSV file for you to use.\n\n\n\n\n\n\nOnly edit the CSV URL in the code below (Line 4). The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYour Turn: Calculate the Class Nitrate and Nitrite Mean\nUsing the code written to calculate the mean for your group’s nitrate data, modify it to calculate the class nitrate and nitrite means.\n\n\n\n🎯 Checkpoint 3: Calculate the class nitrate and nitrite means.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMedian\n\nYour Turn: Calculate the Class Nitrate and Nitrite Median\nSimilarly, calculate the median for the class nitrate and nitrite data.\n\n\n\n🎯 Checkpoint 4: Calculate the class nitrate and nitrite medians."
+  },
+  {
+    "objectID": "1-statistics/center-spread.html#class-data",
+    "href": "1-statistics/center-spread.html#class-data",
+    "title": "Using Python for Statistics",
+    "section": "Class Data",
+    "text": "Class Data\nOne of the benefits of using Python is that is can handle much larger amount amounts of data with ease. For example, let’s consider the nitrate and nitrite data your whole class collected. We’ll do that by importing the data collected in the Google Form. That form sends the data to a spreadsheet, or CSV (comman separated values) file.\n\n\n\n🎯 Checkpoint 2: Import your whole class’s nitrate and nitrite data.\n\n\n\n\n\n\n\n\nYour teacher will provide the link to the CSV file for you to use.\n\n\n\n\n\n\nOnly edit the CSV URL in the code below (Line 4). The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalculating the Class Nitrate and Nitrate Mean\nUsing the code written to calculate the mean for your group’s nitrate data, modify it to calculate the class nitrate and nitrite means.\n\n\n\n🎯 Checkpoint 3: Calculate the class nitrate and nitrite means.\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalculating the Class Nitrate and Nitrite Median\nSimilarly, calculate the median for the class nitrate and nitrite data.\n\n\n\n🎯 Checkpoint 4: Calculate the class nitrate and nitrite medians."
+  },
+  {
+    "objectID": "1-statistics/center-spread.html#two-measures-of-spread",
+    "href": "1-statistics/center-spread.html#two-measures-of-spread",
+    "title": "Using Python for Statistics",
+    "section": "Two Measures of Spread",
+    "text": "Two Measures of Spread\nToday, we’ll discuss two measures of spread: the range and the standard deviation.\n\nRange\nThe range is a fairly simple calculation. It’s the biggest number minus the smallest number. Or, put differently, the maximum minus the minimum in a dataset.\n\nmax() - min()\n\nHere is an example of finding the range using our sample dataset:\n\n\n\n\n\n\n\n\n\n🎯 Checkpoint 5: Find the range of the class nitrate and nitrite data.\n\n\nYOUR TURN: Find the range of the class nitrate and class nitrate data! Fill in the ??? with the appropriate object name and run the block.\n\n\n\n\n\n\n\n\n\n\n\nStandard Deviation\nThe standard deviation tells us how spread out the numbers are from the mean. Put diffently, it tells us the average distance the data in the dataset is from the mean. The formula looks a bit technical:\nHere is an example of calculating the standard deviation using our sample dataset:\n\n\n\n\n\n\n\n\n\n🎯 Checkpoint 6: Find the standard deviation of the class nitrate and nitrite data.\n\n\nYOUR TURN: Find the standard deviation of the class nitrate and class nitrite data! Fill in the ??? with the appropriate object name and run the block."
+  },
+  {
+    "objectID": "1-statistics/center-spread.html#median",
+    "href": "1-statistics/center-spread.html#median",
+    "title": "Using Python for Statistics",
+    "section": "Median",
+    "text": "Median\n\nCalculating the Class Nitrate and Nitrite Median\nSimilarly, calculate the median for the class nitrate and nitrite data.\n\n\n\n🎯 Checkpoint 4: Calculate the class nitrate and nitrite medians."
+  },
+  {
+    "objectID": "1-statistics/center-spread.html#measures-of-center-with-python",
+    "href": "1-statistics/center-spread.html#measures-of-center-with-python",
+    "title": "Using Python for Statistics",
+    "section": "Measures of Center With Python",
+    "text": "Measures of Center With Python\n\nMean\nPython has built-in tools to calculate the mean. We’ll use something called NumPy (Numerical Python). NumPy is one example of a library or package that you can add to Python. When you add a library to Python, you are increasing the functions availble to you. For example, we have many more options with NumPy than just len(), min(), and max().\nWe have to “import” these libraries in Python and then often give them a nickname. For example, we import NumPy as np instead of typing “numpy” all the time. An example of how this work has been written (and already run) below.\n\n\n\n\n\n\nBreaking it down:\n- import numpy as np = Load the NumPy library/package (we only do this once per file/page)\n- np.mean() = NumPy’s function to calculate mean\n\nYour Turn: Calculate Your Group’s Mean Nitrate\nThe website doesn’t save your nitrate readings list from the previous page, so you’ll need to re-enter your data into the list below (Line 3) again.\n\n\n\n🎯 Checkpoint 1: Calculate and check your group’s mean nitrate concentration.\n\n\nYOUR TURN:\n- Recreate the list of your group’s nitrate readings below\n- Run the block\n\n\n\n\n\n\n\n\n\n Class Data \nOne of the benefits of using Python is that is can handle much larger amount amounts of data with ease. For example, let’s consider the nitrate and nitrite data your whole class collected. We’ll do that by importing the data collected in the Google Form. That form sends the data to a spreadsheet, or CSV (comman separated values) file.\n\n\n\n🎯 Checkpoint 2: Import your whole class’s nitrate and nitrite data.\n\n\n\n\n\n\n\n\nYour teacher will provide the link to the CSV file for you to use.\n\n\n\n\n\n\nOnly edit the CSV URL in the code below (Line 4). The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYour Turn: Calculate the Class Nitrate and Nitrite Mean\nUsing the code written to calculate the mean for your group’s nitrate data, modify it to calculate the class nitrate and nitrite means.\n\n\n\n🎯 Checkpoint 3: Calculate the class nitrate and nitrite means.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMedian\n\nYour Turn: Calculate the Class Nitrate and Nitrite Median\nSimilarly, calculate the median for the class nitrate and nitrite data.\n\n\n\n🎯 Checkpoint 4: Calculate the class nitrate and nitrite medians."
+  },
+  {
+    "objectID": "1-statistics/center-spread.html#measures-of-spread-with-python",
+    "href": "1-statistics/center-spread.html#measures-of-spread-with-python",
+    "title": "Using Python for Statistics",
+    "section": "Measures of Spread with Python",
+    "text": "Measures of Spread with Python\nToday, we’ll discuss two measures of spread: the range and the standard deviation.\n\nRange\nThe range is a fairly simple calculation. It’s the biggest number minus the smallest number. Or, put differently, the maximum minus the minimum in a dataset.\n\nmax() - min()\n\nHere is an example of finding the range using our sample dataset:\n\n\n\n\n\n\n\n\n\n🎯 Checkpoint 5: Find the range of the class nitrate and nitrite data.\n\n\nYOUR TURN: Find the range of the class nitrate and class nitrate data! Fill in the ??? with the appropriate object name and run the block.\n\n\n\n\n\n\n\n\n\n\n\nStandard Deviation\nThe standard deviation tells us how spread out the numbers are from the mean. Put diffently, it tells us the average distance the data in the dataset is from the mean. The formula looks a bit technical:\nHere is an example of calculating the standard deviation using our sample dataset:\n\n\n\n\n\n\n\n\n\n🎯 Checkpoint 6: Find the standard deviation of the class nitrate and nitrite data.\n\n\nYOUR TURN: Find the standard deviation of the class nitrate and class nitrite data! Fill in the ??? with the appropriate object name and run the block.\n\n\n\n\n\n\n\n\n\n\nWhat Could Cause High Variability?\nIf a creek’s reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:\n\nPollution events - A factory dumps waste occasionally\nStorm runoff - Rain washes fertilizer from farms into the creek\nNatural cycles - Some creeks naturally vary\nSensor problems - The equipment might need calibration\nDifferent sampling times - Morning vs afternoon can be different\n\nIt might also signal that your data has one or more outliers. We’ll talk more about outliers on the next page.\n Quick Reference: Python Functions \n\n\n\n\n\n\n\n\nFunction\nWhat It Does\nExample\n\n\n\n\nnp.mean()\nCalculates average\nnp.mean([7.1, 7.2, 7.3]) = 7.2\n\n\nnp.median()\nCalculates median\nnp.median([7.1, 7.2, 7.3]) = 7.2\n\n\nnp.std()\nCalculates standard deviation\nnp.std([7.1, 7.2, 7.3]) = 0.3\n\n\nlen()\nCounts items\nlen([1, 2, 3]) = 3\n\n\nmax()\nFinds maximum\nmax([1, 2, 3]) = 3\n\n\nmin()\nFinds minimum\nmin([1, 2, 3]) = 1"
   }
 ]
