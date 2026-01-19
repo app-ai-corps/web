@@ -55,25 +55,25 @@ Learn mean, median, range, standard deviation, and outliers using nitrate/nitrit
 :::
 
 ::: {.lesson-item}
-### [Lesson 2: Regression and Classification](#)
+### [Lesson 2: Classification & Color](#)
 
 Coming Soon.
 :::
 
 ::: {.lesson-item}
-### [Lesson 3: Gradient Updates](#)
+### [Lesson 3: Bivariate Regression & Color](#)
 
 Coming Soon.
 :::
 
 ::: {.lesson-item}
-### [Lesson 4: Convolutional Neural Networks](#)
+### [Lesson 4: Physical Computing, Edge AI, & Multiple Regression](#)
 
 Coming Soon.
 :::
 
 ::: {.lesson-item}
-### [Lesson 5: Graphing Sensor Data](#)
+### [Lesson 5: Analyzing Buoy Data](#)
 
 Coming Soon.
 :::
