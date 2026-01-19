@@ -12,15 +12,15 @@ sidebar: lesson-1
 - [**Checkpoint 2:** Import Class Data](#lst-getcsv)
 - [**Checkpoint 3:** Calculate Means for Class Data](#lst-classmeannitratenitrite)
 - [**Checkpoint 4:** Calculate Medians for Class Data](#lst-classmediannitratenitrite)
-- [**Checkpoint 5:** Create Class Nitrate Histogram](#lst-classnitratehistogram)
-- [**Checkpoint 6:** Create Class Nitrite Histogram](#lst-classnitritehistogram)
+- [**Checkpoint 5:** Calculate Ranges for Class Data](#lst-classdatarange)
+- [**Checkpoint 6:** Calculate Standard Deviations for Class Data](#lst-classdatastddev)
 :::
 
 As you might have guessed, Python can do much more than just the functions **len()**, **min()**, and **max()**. In fact, it can help us calculate our measures of center!
 
 You have already calculated the mean and median by hand on your lab sheet. Now, let's ask Python to do it!
 
-## Calculating Statistics With Python
+## Calculating Measures of Center With Python
 
 ### Mean
 
@@ -45,8 +45,8 @@ print("mean of sample data:", mean_sample)
 - `import numpy as np` = Load the NumPy library/package (we only do this once per file/page)  
 - `np.mean()` = NumPy's function to calculate mean
 
-## Your Turn: Calculate Your Group's Mean Nitrate
-The website doesn't save your nitrate readings list from the previous page, so you'll need to re-enter your data into the list below (Line 4) again.
+### Your Turn: Calculate Your Group's Mean Nitrate
+The website doesn't save your nitrate readings list from the previous page, so you'll need to re-enter your data into the list below (Line 3) again.
 
 :::{#lst-groupmeannitrate}
 
@@ -166,110 +166,80 @@ print("Class nitrite median:", median_class_nitrite, "mg/L")
 Calculate the class nitrate and nitrite medians.
 :::
 
-## Visualizing the Data & Measures of Center
+## Two Measures of Spread
+Today, we'll discuss two measures of spread: the **range** and the **standard deviation**.
 
-### Histograms By Hand
-A key practice in statistics is to visualize the data! One of the main types of plots we can use to do this is a **histogram**. A histogram uses bins to group the data and then plots the number of observations in each bin.
+### Range
+The **range** is a fairly simple calculation. It's the biggest number minus the smallest number. Or, put differently, the maximum minus the minimum in a dataset.
 
-:::{.callout-note}
-## *Data Recorder (Sticky Notes)*
-Grab those sticky notes from the lab!
+:::{.ltorange-container}
+**max()** - **min()**
 :::
 
-On the wall, you will find two areas prepared for your stickies. One has an axis binned for nitrates (look for a max value of 50+) and the other has an axis binned for nitrites (look for a max value of 10+). 
-
-Place your stickies in the correct bin, putting your nitrate values on the nitrate graph and the nitrite values on the nitrite graph.
-
-![](images/sticky-note-histograms.png)
-
-### Histograms with Python
-Python can also make histograms! Run the code blocks below to see a histogram of the class nitrate value (block #1) and the class nitrite values (block #2). Do the histograms look similar to the plots we made by hand?
-
-#### Histogram for Class Nitrate Readings
-
-:::{#lst-classnitratehistogram}
-
+Here is an example of finding the range using our sample dataset:
 ```{pyodide}
-#| completion: false
-import matplotlib.pyplot as plt
+#| edit: false
+sample_range = max(sample_data) - min(sample_data)
 
-plt.figure(figsize=(10, 6))
-plt.hist(class_nitrate, bins=10, edgecolor='black', color='plum')
-plt.xlabel('Nitrate Level (mg/L)')
-plt.ylabel('Frequency')
-plt.title('Class Nitrate Readings')
-plt.grid(True, alpha=0.3)
-plt.show()
+print("Range of sample data:", sample_range)
 ```
 
-Create class nitrate histogram.
+:::{#lst-classdatarange}
+
+**YOUR TURN:** Find the range of the class nitrate and class nitrate data! Fill in the `???` with the appropriate object name and run the block.
+```{pyodide}
+#| persist: true
+#| completion: false
+class_nitrate_range = max(???) - min(???)
+class_nitrite_range = max(???) - min(???)
+
+print("Range of class nitrate data:", class_nitrate_range)
+print("Range of class nitrite data:", class_nitrite_range)
+```
+
+Find the range of the class nitrate and nitrite data.
 :::
 
-##### Add Mean and Median
-Add the mean and median to the nitrate histogram.
-```{pyodide}
-#| completion: false
-plt.figure(figsize=(10, 6))
-plt.hist(class_nitrate, bins=10, edgecolor='black', color='plum')
+### Standard Deviation
 
-# Add vertical lines with labels in legend
-plt.axvline(mean_class_nitrate, color='red', linestyle='--', linewidth=2, 
-            label=f'Mean: {mean_class_nitrate:.1f}')
-plt.axvline(median_class_nitrate, color='blue', linestyle='--', linewidth=2, 
-            label=f'Median: {median_class_nitrate:.1f}')
+The standard deviation tells us how spread out the numbers are from the mean. Put diffently, it tells us the average distance the data in the dataset is from the mean. The formula looks a bit technical:
 
-plt.xlabel('Nitrate Level (mg/L)')
-plt.ylabel('Frequency')
-plt.title('Class Nitrate Readings')
-plt.legend(loc='upper right')
-plt.grid(True, alpha=0.3)
-plt.show()
-```
-
-#### Histogram for Class Nitrite Readings
-
-:::{#lst-classnitritehistogram}
+Here is an example of calculating the standard deviation using our sample dataset:
 
 ```{pyodide}
-#| completion: false
-plt.figure(figsize=(10, 6))
-plt.hist(class_nitrite, bins=10, edgecolor='black', color='lemonchiffon')
-plt.xlabel('Nitrite Level (mg/L)')
-plt.ylabel('Frequency')
-plt.title('Class Nitrite Readings')
-plt.grid(True, alpha=0.3)
-plt.show()
+#| edit: false
+sample_stdev = np.std(sample_data)
+
+print("Standard Deviation of sample data:", sample_stdev)
 ```
 
-Create class nitrite histogram.
+:::{#lst-classdatastddev}
+
+**YOUR TURN:** Find the standard deviation of the class nitrate and class nitrite data! Fill in the `???` with the appropriate object name and run the block.
+```{pyodide}
+#| persist: true
+#| completion: false
+class_nitrate_stdev = np.std(???)
+class_nitrite_stdev = np.std(???)
+
+print("Standard Deviation of class nitrate data:", class_nitrate_stdev)
+print("Standard Deviation of class nitrite data:", class_nitrite_stdev)
+```
+
+Find the standard deviation of the class nitrate and nitrite data.
 :::
 
-##### Add Mean and Median
-Add the mean and median to the nitrite histogram.
+## What Could Cause High Variability?
 
-```{pyodide}
-#| completion: false
-plt.figure(figsize=(10, 6))
-plt.hist(class_nitrite, bins=10, edgecolor='black', color='lemonchiffon')
+If a creek's reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:
 
-# Add vertical lines with labels in legend
-plt.axvline(mean_class_nitrite, color='red', linestyle='--', linewidth=2, 
-            label=f'Mean: {mean_class_nitrite:.1f}')
-plt.axvline(median_class_nitrite, color='blue', linestyle='--', linewidth=2, 
-            label=f'Median: {median_class_nitrite:.1f}')
+1. **Pollution events** - A factory dumps waste occasionally
+2. **Storm runoff** - Rain washes fertilizer from farms into the creek
+3. **Natural cycles** - Some creeks naturally vary
+4. **Sensor problems** - The equipment might need calibration
+5. **Different sampling times** - Morning vs afternoon can be different
 
-plt.xlabel('Nitrite Level (mg/L)')
-plt.ylabel('Frequency')
-plt.title('Class Nitrite Readings')
-plt.legend(loc='upper right')
-plt.grid(True, alpha=0.3)
-plt.show()
-```
-
-:::{.callout-caution}
-## Question!
-What do you notice about the relationship between the mean and median on the nitrate and nitrite histograms? Why do you think that might be?
-:::
+It might also signal that your data has one or more ***outliers***. We'll talk more about outliers on the next page.
 
 ## Quick Reference: Python Functions
 
@@ -277,6 +247,7 @@ What do you notice about the relationship between the mean and median on the nit
 |----------|-------------|---------|
 | `np.mean()` | Calculates average | `np.mean([7.1, 7.2, 7.3])` = 7.2 |
 | `np.median()` | Calculates median | `np.median([7.1, 7.2, 7.3])` = 7.2 |
+| `np.std()` | Calculates standard deviation | `np.std([7.1, 7.2, 7.3])` = 0.3 |
 | `len()` | Counts items | `len([1, 2, 3])` = 3 |
 | `max()` | Finds maximum | `max([1, 2, 3])` = 3 |
 | `min()` | Finds minimum | `min([1, 2, 3])` = 1 |

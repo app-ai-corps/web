@@ -51,29 +51,12 @@ Think of statistics like a calculator that helps you:
 The measures of center tell us about what is typical in a group of numbers. A set of numbers has different kinds of centers: a mean, a median, and a mode. Sometimes these measures will have the same value and sometimes they will be different. We calculate them in different ways.
 
 #### Mean
-The *mean* ($\bar{x}$) is often called the "average". To find the mean, we add up all of the numbers of interest and divide by how many numbers there are.
-
-:::{.columns}
-:::{.column}
-Formula:
-
-:::{.ltorange-container}
-$\LARGE \bar{x} = \frac{\sum x}{n}$
-:::
-The sum of all x (all the values), divided by how many there are (n).
-
-:::
-:::{.column}
-Computation:
+The *mean* is often called the "average". To find the mean, we add up all of the numbers of interest and divide by how many numbers there are.
 
 :::{.ltorange-container}
 $\LARGE \frac{1 + 2 + 6 + 5 + 1}{5} = 3$
 :::
 The mean value of this sample dataset is **3**.
-
-:::
-:::
-
 
 #### Median
 The *median* is a different kind of measure of center. To calculate the median, you first line up all the values in your data set, then you find the middle value by position.

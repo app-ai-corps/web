@@ -49,8 +49,8 @@ website:
           href: 1-statistics/intro-statistics
         - text: "5. Python: Lists"
           href: 1-statistics/python-lists
-        - text: "6. Center & Histograms"
-          href: 1-statistics/center-histograms
+        - text: "6. Center & Spread"
+          href: 1-statistics/center-spread
         - text: "7. Spread, Outliers, & Boxplots"
           href: 1-statistics/spread-boxplots-outliers
         - text: "---"

@@ -58,90 +58,21 @@ print("Nitrite values:", class_nitrite)
 Import your whole class's nitrate and nitrite data.
 :::
 
-## Two Measures of Spread
-Today, we'll discuss two measures of spread: the **range** and the **standard deviation**.
+## Visualizing the Data & Measures of Center
 
-### Range
-The **range** is a fairly simple calculation. It's the biggest number minus the smallest number. Or, put differently, the maximum minus the minimum in a dataset.
+### Boxplots By Hand
+A key practice in statistics is to visualize the data! One of the types of plots we can use to do this is a **boxplot**, sometimes referred to as a box and whisker plot. A boxplot requires that we order the data (as if calculating a median) and then then divide the data into four equal groups (by number of observations), called **quartiles**.
 
-:::{.ltorange-container}
-**max()** - **min()**
+:::{.callout-note}
+## *Data Recorder (Sticky Notes)*
+Grab those sticky notes from the nitrateslab! Sort them by sticky color and pass out the stickies to each group, matching the sticky color to the group's color. This will result in each group having a full set of stickies for both class nitrate and nitrite data.
 :::
 
-Here is an example of finding the range using our sample dataset:
-```{pyodide}
-#| edit: false
-sample_data = [1, 2, 6, 5, 1]
+At your desk, you will find a large sheet of gridded Post-It paper. The top of the paper has an axis drawn for the nitrate boxplot and the bottom of the paper has an axis drawn for the nitrite boxplot.
 
-sample_range = max(sample_data) - min(sample_data)
+First, order your nitrate stickies from least to greatest, in a line across the table/desk. Then, do the same for your nitrite stickies. When finished, you should have two separate rows of stickies.
 
-print("Range of sample data:", sample_range)
-```
-
-:::{#lst-classdatarange}
-
-**YOUR TURN:** Find the range of the class nitrate and class nitrate data! Fill in the `???` with the appropriate object name and run the block.
-```{pyodide}
-#| persist: true
-#| completion: false
-class_nitrate_range = max(???) - min(???)
-class_nitrite_range = max(???) - min(???)
-
-print("Range of class nitrate data:", class_nitrate_range)
-print("Range of class nitrite data:", class_nitrite_range)
-```
-
-Find the range of the class nitrate and nitrite data.
-:::
-
-### Standard Deviation
-
-The standard deviation tells us how spread out the numbers are from the mean. Put diffently, it tells us the average distance the data in the dataset is from the mean. The formula looks a bit technical:
-
-:::{.ltorange-container}
-$\Large \sqrt{\frac{\sum (x - \bar{x})^2}{n}}$
-:::
-
-Here is an example of calculating the standard deviation using our sample dataset:
-
-```{pyodide}
-#| edit: false
-import numpy as np
-
-sample_data = [1, 2, 6, 5, 1]
-
-sample_stdev = np.std(sample_data)
-
-print("Standard Deviation of sample data:", sample_stdev)
-```
-
-:::{#lst-classdatastddev}
-
-**YOUR TURN:** Find the standard deviation of the class nitrate and class nitrite data! Fill in the `???` with the appropriate object name and run the block.
-```{pyodide}
-#| persist: true
-#| completion: false
-class_nitrate_stdev = np.std(???)
-class_nitrite_stdev = np.std(???)
-
-print("Standard Deviation of class nitrate data:", class_nitrate_stdev)
-print("Standard Deviation of class nitrite data:", class_nitrite_stdev)
-```
-
-Find the standard deviation of the class nitrate and nitrite data.
-:::
-
-## What Could Cause High Variability?
-
-If a creek's reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:
-
-1. **Pollution events** - A factory dumps waste occasionally
-2. **Storm runoff** - Rain washes fertilizer from farms into the creek
-3. **Natural cycles** - Some creeks naturally vary
-4. **Sensor problems** - The equipment might need calibration
-5. **Different sampling times** - Morning vs afternoon can be different
-
-It might also signal that your data has one or more ***outliers***.
+![](images/ordered_nitrate_nitrite_stickies.png)
 
 ## Outliers
 
@@ -261,11 +192,11 @@ Create a boxplot for the class nitrite data.
 ## Does either have outliers? How do you know?
 :::
 
-### Takeaways When Encountering an Outlier
+## Adding Means to Boxplots
+Write the code here
 
-When you find an outlier, investigate it:
+:::{.callout-caution}
+## Question!
+What do you notice about the relationship between the mean and median for the nitrate data? Why do you think that might be?
+:::
 
-1. **Is it possible?** (nitrate concentration of 100 mg/L = unlikely)
-2. **What happened that day?** (Check notes, weather, etc.)
-3. **Does it fit a pattern?** (One spike vs multiple high readings)
-4. **Is the sensor/buoy/test strip working?** (Check calibration, battery)
