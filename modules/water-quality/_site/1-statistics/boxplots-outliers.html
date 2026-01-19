@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Measures of Spread, Spotting Outliers</title>
+<title>Boxplots and Outliers</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Measures of Spread, Spotting Outliers</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Boxplots and Outliers</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -223,9 +223,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#visualizing-the-data-measures-of-center" id="toc-visualizing-the-data-measures-of-center" class="nav-link active" data-scroll-target="#visualizing-the-data-measures-of-center">Visualizing the Data &amp; Measures of Center</a>
+  <li><a href="#visualizing-the-data-boxplots" id="toc-visualizing-the-data-boxplots" class="nav-link active" data-scroll-target="#visualizing-the-data-boxplots">Visualizing the Data: Boxplots!</a>
   <ul class="collapse">
-  <li><a href="#boxplots-by-hand" id="toc-boxplots-by-hand" class="nav-link" data-scroll-target="#boxplots-by-hand">Boxplots By Hand</a></li>
+  <li><a href="#activity-boxplots-by-hand" id="toc-activity-boxplots-by-hand" class="nav-link" data-scroll-target="#activity-boxplots-by-hand">Activity: Boxplots By Hand</a></li>
   </ul></li>
   <li><a href="#outliers" id="toc-outliers" class="nav-link" data-scroll-target="#outliers">Outliers</a>
   <ul class="collapse">
@@ -246,7 +246,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Measures of Spread, Spotting Outliers</h1>
+<h1 class="title">Boxplots and Outliers</h1>
 </div>
 
 
@@ -274,11 +274,11 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="#lst-classnitriteboxplot"><strong>Checkpoint 5:</strong> Create Boxplot for Class Nitrite Data</a></li>
 </ul>
 </div>
-<p>A second and final statistical measure we’ll discuss today is <strong>spread</strong>. Just as it sounds, measures of spread tell us how spread out our data are. Spread, also referred to as <strong>variability</strong>, is <em>the backbone</em> of statistics!</p>
+<hr>
 <div id="lst-getcsv" class="listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-getcsv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-🎯 Checkpoint&nbsp;1: Import your whole class’s nitrate and nitrite data.
+🎯 Checkpoint&nbsp;1: Once more, import your whole class’s nitrate and nitrite data.
 </figcaption>
 <div aria-describedby="lst-getcsv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p><strong>To-Do:</strong> We need to re-load the class csv data since the webpage doesn’t save variables from page-to-page. Please paste the csv link again in the block below and run it.</p>
@@ -301,11 +301,11 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0
 </div>
 </figure>
 </div>
-<section id="visualizing-the-data-measures-of-center" class="level2">
-<h2 class="anchored" data-anchor-id="visualizing-the-data-measures-of-center">Visualizing the Data &amp; Measures of Center</h2>
-<section id="boxplots-by-hand" class="level3">
-<h3 class="anchored" data-anchor-id="boxplots-by-hand">Boxplots By Hand</h3>
+<section id="visualizing-the-data-boxplots" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-the-data-boxplots">Visualizing the Data: Boxplots!</h2>
 <p>A key practice in statistics is to visualize the data! One of the types of plots we can use to do this is a <strong>boxplot</strong>, sometimes referred to as a box and whisker plot. A boxplot requires that we order the data (as if calculating a median) and then then divide the data into four equal groups (by number of observations), called <strong>quartiles</strong>.</p>
+<section id="activity-boxplots-by-hand" class="level3">
+<h3 class="anchored" data-anchor-id="activity-boxplots-by-hand">Activity: Boxplots By Hand</h3>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -316,12 +316,22 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Grab those sticky notes from the nitrateslab! Sort them by sticky color and pass out the stickies to each group, matching the sticky color to the group’s color. This will result in each group having a full set of stickies for both class nitrate and nitrite data.</p>
+<p>Grab those sticky notes from the nitrates lab! Sort them by sticky color and pass them out to each group, matching the sticky color to the group’s tent color. This will result in each group having a full set of stickies for both class nitrate and nitrite data.</p>
 </div>
 </div>
-<p>At your desk, you will find a large sheet of gridded Post-It paper. The top of the paper has an axis drawn for the nitrate boxplot and the bottom of the paper has an axis drawn for the nitrite boxplot.</p>
-<p>First, order your nitrate stickies from least to greatest, in a line across the table/desk. Then, do the same for your nitrite stickies. When finished, you should have two separate rows of stickies.</p>
+<ol type="1">
+<li><p>After your groups has received all of its stickies, create two stacks—one for nitrate and one for nitrite (you can distinguish them by the writing color).</p></li>
+<li><p>Next, order your nitrate stickies from least to greatest, in a line across the table/desk. Then, do the same for your nitrite stickies. When finished, you should have two separate rows of stickies.</p></li>
+</ol>
 <p><img src="images/ordered_nitrate_nitrite_stickies.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Find the median (middle number) for both the nitrates and nitrites data (that is, both rows of stickies).</li>
+</ol>
+<p><img src="images/ordered_nitrate_nitrite_stickies_medians.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li><p>At your desk, you will find a large sheet of gridded Post-It paper. The top of the paper has an axis drawn for the nitrate boxplot and the bottom of the paper has an axis drawn for the nitrite boxplot. <em>Draw the median line for the nitrate boxplot and the nitrite boxplot.</em> The median line will form the center of the boxplot.</p></li>
+<li></li>
+</ol>
 </section>
 </section>
 <section id="outliers" class="level2">

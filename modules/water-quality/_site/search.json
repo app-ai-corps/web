@@ -1346,7 +1346,7 @@
   {
     "objectID": "1-statistics/center-spread.html",
     "href": "1-statistics/center-spread.html",
-    "title": "Using Python for Statistics",
+    "title": "Measures of Center and Spread",
     "section": "",
     "text": "Checkpoints on this Page:\n\nCheckpoint 1: Calculating Group Mean Nitrate\nCheckpoint 2: Import Class Data\nCheckpoint 3: Calculate Means for Class Data\nCheckpoint 4: Calculate Medians for Class Data\nCheckpoint 5: Calculate Ranges for Class Data\nCheckpoint 6: Calculate Standard Deviations for Class Data\nAs you might have guessed, Python can do much more than just the functions len(), min(), and max(). In fact, it can help us calculate our measures of center!\nYou have already calculated the mean and median by hand on your lab sheet. Now, let’s ask Python to do it!"
   },
@@ -1584,9 +1584,9 @@
   {
     "objectID": "1-statistics/boxplots-outliers.html",
     "href": "1-statistics/boxplots-outliers.html",
-    "title": "Measures of Spread, Spotting Outliers",
+    "title": "Boxplots and Outliers",
     "section": "",
-    "text": "Checkpoints on this Page:\n\nCheckpoint 1: Import Class Data\nCheckpoint 2: Find Ranges of Class Data\nCheckpoint 3: Find Standard Deviations of Class Data\nCheckpoint 4: Create Boxplot for Sample Data\nCheckpoint 5: Create Boxplot for Class Nitrate Data\nCheckpoint 5: Create Boxplot for Class Nitrite Data\nA second and final statistical measure we’ll discuss today is spread. Just as it sounds, measures of spread tell us how spread out our data are. Spread, also referred to as variability, is the backbone of statistics!"
+    "text": "Checkpoints on this Page:\n\nCheckpoint 1: Import Class Data\nCheckpoint 2: Find Ranges of Class Data\nCheckpoint 3: Find Standard Deviations of Class Data\nCheckpoint 4: Create Boxplot for Sample Data\nCheckpoint 5: Create Boxplot for Class Nitrate Data\nCheckpoint 5: Create Boxplot for Class Nitrite Data"
   },
   {
     "objectID": "1-statistics/boxplots-outliers.html#what-are-outliers",
@@ -2214,28 +2214,28 @@
   {
     "objectID": "1-statistics/boxplots-outliers.html#visualizing-the-data-measures-of-center",
     "href": "1-statistics/boxplots-outliers.html#visualizing-the-data-measures-of-center",
-    "title": "Measures of Spread, Spotting Outliers",
+    "title": "Boxplots and Outliers",
     "section": "Visualizing the Data & Measures of Center",
     "text": "Visualizing the Data & Measures of Center\n\nBoxplots By Hand\nA key practice in statistics is to visualize the data! One of the types of plots we can use to do this is a boxplot, sometimes referred to as a box and whisker plot. A boxplot requires that we order the data (as if calculating a median) and then then divide the data into four equal groups (by number of observations), called quartiles.\n\n\n\n\n\n\nData Recorder (Sticky Notes)\n\n\n\nGrab those sticky notes from the nitrateslab! Sort them by sticky color and pass out the stickies to each group, matching the sticky color to the group’s color. This will result in each group having a full set of stickies for both class nitrate and nitrite data.\n\n\nAt your desk, you will find a large sheet of gridded Post-It paper. The top of the paper has an axis drawn for the nitrate boxplot and the bottom of the paper has an axis drawn for the nitrite boxplot.\nFirst, order your nitrate stickies from least to greatest, in a line across the table/desk. Then, do the same for your nitrite stickies. When finished, you should have two separate rows of stickies."
   },
   {
     "objectID": "1-statistics/boxplots-outliers.html#outliers",
     "href": "1-statistics/boxplots-outliers.html#outliers",
-    "title": "Measures of Spread, Spotting Outliers",
+    "title": "Boxplots and Outliers",
     "section": "Outliers",
     "text": "Outliers\n\nWhat Are Outliers?\nOutliers are data points that are very different from the rest of your data. They’re the “weird” numbers that don’t fit the pattern. Outliers can really change your statistics—like mean and standard deviation.\n\n\n\n\n\n\nThat 15 is an outlier! It’s way higher than everything else.\n\n\nWhy Do Outliers Happen?\nOutliers can happen for different reasons:\n\nSensor Malfunction 🔧\n\n\nThe sensor glitched or needs calibration\nBattery was dying\nSensor got knocked around\n\n\nReal Pollution Event 🚨\n\n\nFactory dumped chemicals into the stream\nFarm fertilizer washed in after a storm\nSewage spill\n\n\nNatural Event 🌧️\n\n\nHeavy rain changed water chemistry\nAlgae bloom\nSeasonal variation\n\nYour job as a scientist: Figure out which reason it is!"
   },
   {
     "objectID": "1-statistics/boxplots-outliers.html#boxplots",
     "href": "1-statistics/boxplots-outliers.html#boxplots",
-    "title": "Measures of Spread, Spotting Outliers",
+    "title": "Boxplots and Outliers",
     "section": "Boxplots",
     "text": "Boxplots\nWe can also use a boxplot to visualize outliers automatically! It’s like a detective tool for finding weird data. Here is a boxplot of our sample data with the outlier added:\n\n\n\n🎯 Checkpoint 2: Create a boxplot for the sample data with the outlier added.\n\n\n\n\n\n\n\n\n\n\n\nReading a box plot:\n- The line in the middle = Median\n- The box = Where the middle 50% of data is\n- The whiskers (lines extending out) = Normal range\n- The circles = Outliers!\n\nClass Nitrate Boxplot\n\n\n\n🎯 Checkpoint 3: Create a boxplot for the class nitrate data.\n\n\nYour Turn: Create a Boxplot for the Class Nitrate Data\n\n\n\n\n\n\n\n\n\n\n\nClass Nitrite Boxplot\n\n\n\n🎯 Checkpoint 4: Create a boxplot for the class nitrite data.\n\n\nYour Turn: Create a Boxplot for the Class Nitrite Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDoes either have outliers? How do you know?"
   },
   {
     "objectID": "1-statistics/boxplots-outliers.html#adding-means-to-boxplots",
     "href": "1-statistics/boxplots-outliers.html#adding-means-to-boxplots",
-    "title": "Measures of Spread, Spotting Outliers",
+    "title": "Boxplots and Outliers",
     "section": "Adding Means to Boxplots",
     "text": "Adding Means to Boxplots\nWrite the code here\n\n\n\n\n\n\nQuestion!\n\n\n\nWhat do you notice about the relationship between the mean and median for the nitrate data? Why do you think that might be?"
   },
@@ -2270,15 +2270,22 @@
   {
     "objectID": "1-statistics/center-spread.html#measures-of-center-with-python",
     "href": "1-statistics/center-spread.html#measures-of-center-with-python",
-    "title": "Using Python for Statistics",
+    "title": "Measures of Center and Spread",
     "section": "Measures of Center With Python",
     "text": "Measures of Center With Python\n\nMean\nPython has built-in tools to calculate the mean. We’ll use something called NumPy (Numerical Python). NumPy is one example of a library or package that you can add to Python. When you add a library to Python, you are increasing the functions availble to you. For example, we have many more options with NumPy than just len(), min(), and max().\nWe have to “import” these libraries in Python and then often give them a nickname. For example, we import NumPy as np instead of typing “numpy” all the time. An example of how this work has been written (and already run) below.\n\n\n\n\n\n\nBreaking it down:\n- import numpy as np = Load the NumPy library/package (we only do this once per file/page)\n- np.mean() = NumPy’s function to calculate mean\n\nYour Turn: Calculate Your Group’s Mean Nitrate\nThe website doesn’t save your nitrate readings list from the previous page, so you’ll need to re-enter your data into the list below (Line 3) again.\n\n\n\n🎯 Checkpoint 1: Calculate and check your group’s mean nitrate concentration.\n\n\nYOUR TURN:\n- Recreate the list of your group’s nitrate readings below\n- Run the block\n\n\n\n\n\n\n\n\n\n Class Data \nOne of the benefits of using Python is that is can handle much larger amount amounts of data with ease. For example, let’s consider the nitrate and nitrite data your whole class collected. We’ll do that by importing the data collected in the Google Form. That form sends the data to a spreadsheet, or CSV (comman separated values) file.\n\n\n\n🎯 Checkpoint 2: Import your whole class’s nitrate and nitrite data.\n\n\n\n\n\n\n\n\nYour teacher will provide the link to the CSV file for you to use.\n\n\n\n\n\n\nOnly edit the CSV URL in the code below (Line 4). The rest is written for you. This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYour Turn: Calculate the Class Nitrate and Nitrite Mean\nUsing the code written to calculate the mean for your group’s nitrate data, modify it to calculate the class nitrate and nitrite means.\n\n\n\n🎯 Checkpoint 3: Calculate the class nitrate and nitrite means.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMedian\n\nYour Turn: Calculate the Class Nitrate and Nitrite Median\nSimilarly, calculate the median for the class nitrate and nitrite data.\n\n\n\n🎯 Checkpoint 4: Calculate the class nitrate and nitrite medians."
   },
   {
     "objectID": "1-statistics/center-spread.html#measures-of-spread-with-python",
     "href": "1-statistics/center-spread.html#measures-of-spread-with-python",
-    "title": "Using Python for Statistics",
+    "title": "Measures of Center and Spread",
     "section": "Measures of Spread with Python",
-    "text": "Measures of Spread with Python\nToday, we’ll discuss two measures of spread: the range and the standard deviation.\n\nRange\nThe range is a fairly simple calculation. It’s the biggest number minus the smallest number. Or, put differently, the maximum minus the minimum in a dataset.\n\nmax() - min()\n\nHere is an example of finding the range using our sample dataset:\n\n\n\n\n\n\n\n\n\n🎯 Checkpoint 5: Find the range of the class nitrate and nitrite data.\n\n\nYOUR TURN: Find the range of the class nitrate and class nitrate data! Fill in the ??? with the appropriate object name and run the block.\n\n\n\n\n\n\n\n\n\n\n\nStandard Deviation\nThe standard deviation tells us how spread out the numbers are from the mean. Put diffently, it tells us the average distance the data in the dataset is from the mean. The formula looks a bit technical:\nHere is an example of calculating the standard deviation using our sample dataset:\n\n\n\n\n\n\n\n\n\n🎯 Checkpoint 6: Find the standard deviation of the class nitrate and nitrite data.\n\n\nYOUR TURN: Find the standard deviation of the class nitrate and class nitrite data! Fill in the ??? with the appropriate object name and run the block.\n\n\n\n\n\n\n\n\n\n\nWhat Could Cause High Variability?\nIf a creek’s reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:\n\nPollution events - A factory dumps waste occasionally\nStorm runoff - Rain washes fertilizer from farms into the creek\nNatural cycles - Some creeks naturally vary\nSensor problems - The equipment might need calibration\nDifferent sampling times - Morning vs afternoon can be different\n\nIt might also signal that your data has one or more outliers. We’ll talk more about outliers on the next page.\n Quick Reference: Python Functions \n\n\n\n\n\n\n\n\nFunction\nWhat It Does\nExample\n\n\n\n\nnp.mean()\nCalculates average\nnp.mean([7.1, 7.2, 7.3]) = 7.2\n\n\nnp.median()\nCalculates median\nnp.median([7.1, 7.2, 7.3]) = 7.2\n\n\nnp.std()\nCalculates standard deviation\nnp.std([7.1, 7.2, 7.3]) = 0.3\n\n\nlen()\nCounts items\nlen([1, 2, 3]) = 3\n\n\nmax()\nFinds maximum\nmax([1, 2, 3]) = 3\n\n\nmin()\nFinds minimum\nmin([1, 2, 3]) = 1"
+    "text": "Measures of Spread with Python\nA second and final statistical measure we’ll discuss today is spread. Just as it sounds, measures of spread tell us how spread out our data are. Spread, also referred to as variability, is the backbone of statistics!\nToday, we’ll discuss two measures of spread: the range and the standard deviation.\n\nRange\nThe range is a fairly simple calculation. It’s the biggest number minus the smallest number. Or, put differently, the maximum minus the minimum in a dataset.\n\nmax() - min()\n\nHere is an example of finding the range using our sample dataset:\n\n\n\n\n\n\n\n\n\n🎯 Checkpoint 5: Find the range of the class nitrate and nitrite data.\n\n\nYOUR TURN: Find the range of the class nitrate and class nitrate data! Fill in the ??? with the appropriate object name and run the block.\n\n\n\n\n\n\n\n\n\n\n\nStandard Deviation\nThe standard deviation tells us how spread out the numbers are from the mean. Put diffently, it tells us the average distance the data in the dataset is from the mean. The formula looks a bit technical:\nHere is an example of calculating the standard deviation using our sample dataset:\n\n\n\n\n\n\n\n\n\n🎯 Checkpoint 6: Find the standard deviation of the class nitrate and nitrite data.\n\n\nYOUR TURN: Find the standard deviation of the class nitrate and class nitrite data! Fill in the ??? with the appropriate object name and run the block.\n\n\n\n\n\n\n\n\n\n\nWhat Could Cause High Variability?\nIf a creek’s reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:\n\nPollution events - A factory dumps waste occasionally\nStorm runoff - Rain washes fertilizer from farms into the creek\nNatural cycles - Some creeks naturally vary\nSensor problems - The equipment might need calibration\nDifferent sampling times - Morning vs afternoon can be different\n\nIt might also signal that your data has one or more outliers. We’ll talk more about outliers on the next page.\n Quick Reference: Python Functions \n\n\n\n\n\n\n\n\nFunction\nWhat It Does\nExample\n\n\n\n\nnp.mean()\nCalculates average\nnp.mean([7.1, 7.2, 7.3]) = 7.2\n\n\nnp.median()\nCalculates median\nnp.median([7.1, 7.2, 7.3]) = 7.2\n\n\nnp.std()\nCalculates standard deviation\nnp.std([7.1, 7.2, 7.3]) = 0.3\n\n\nlen()\nCounts items\nlen([1, 2, 3]) = 3\n\n\nmax()\nFinds maximum\nmax([1, 2, 3]) = 3\n\n\nmin()\nFinds minimum\nmin([1, 2, 3]) = 1"
+  },
+  {
+    "objectID": "1-statistics/boxplots-outliers.html#visualizing-the-data-boxplots",
+    "href": "1-statistics/boxplots-outliers.html#visualizing-the-data-boxplots",
+    "title": "Boxplots and Outliers",
+    "section": "Visualizing the Data: Boxplots!",
+    "text": "Visualizing the Data: Boxplots!\nA key practice in statistics is to visualize the data! One of the types of plots we can use to do this is a boxplot, sometimes referred to as a box and whisker plot. A boxplot requires that we order the data (as if calculating a median) and then then divide the data into four equal groups (by number of observations), called quartiles.\n\nActivity: Boxplots By Hand\n\n\n\n\n\n\nData Recorder (Sticky Notes)\n\n\n\nGrab those sticky notes from the nitrates lab! Sort them by sticky color and pass them out to each group, matching the sticky color to the group’s tent color. This will result in each group having a full set of stickies for both class nitrate and nitrite data.\n\n\n\nAfter your groups has received all of its stickies, create two stacks—one for nitrate and one for nitrite (you can distinguish them by the writing color).\nNext, order your nitrate stickies from least to greatest, in a line across the table/desk. Then, do the same for your nitrite stickies. When finished, you should have two separate rows of stickies.\n\n\n\nFind the median (middle number) for both the nitrates and nitrites data (that is, both rows of stickies).\n\n\n\nAt your desk, you will find a large sheet of gridded Post-It paper. The top of the paper has an axis drawn for the nitrate boxplot and the bottom of the paper has an axis drawn for the nitrite boxplot. Draw the median line for the nitrate boxplot and the nitrite boxplot. The median line will form the center of the boxplot."
   }
 ]

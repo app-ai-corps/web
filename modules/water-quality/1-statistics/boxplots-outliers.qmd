@@ -1,5 +1,5 @@
 ---
-title: "Measures of Spread, Spotting Outliers"
+title: "Boxplots and Outliers"
 crossref:
   lst-title: "🎯 Checkpoint"
 format: live-html
@@ -16,8 +16,7 @@ sidebar: lesson-1
 - [**Checkpoint 5:** Create Boxplot for Class Nitrate Data](#lst-classnitrateboxplot)
 - [**Checkpoint 5:** Create Boxplot for Class Nitrite Data](#lst-classnitriteboxplot)
 :::
-
-A second and final statistical measure we'll discuss today is **spread**. Just as it sounds, measures of spread tell us how spread out our data are. Spread, also referred to as **variability**, is *the backbone* of statistics!
+<hr>
 
 :::{#lst-getcsv}
 
@@ -55,24 +54,32 @@ print("Nitrate values:", class_nitrate)
 print("Nitrite values:", class_nitrite)
 ```
 
-Import your whole class's nitrate and nitrite data.
+Once more, import your whole class's nitrate and nitrite data.
 :::
 
-## Visualizing the Data & Measures of Center
+## Visualizing the Data: Boxplots!
 
-### Boxplots By Hand
 A key practice in statistics is to visualize the data! One of the types of plots we can use to do this is a **boxplot**, sometimes referred to as a box and whisker plot. A boxplot requires that we order the data (as if calculating a median) and then then divide the data into four equal groups (by number of observations), called **quartiles**.
 
+### Activity: Boxplots By Hand
 :::{.callout-note}
 ## *Data Recorder (Sticky Notes)*
-Grab those sticky notes from the nitrateslab! Sort them by sticky color and pass out the stickies to each group, matching the sticky color to the group's color. This will result in each group having a full set of stickies for both class nitrate and nitrite data.
+Grab those sticky notes from the nitrates lab! Sort them by sticky color and pass them out to each group, matching the sticky color to the group's tent color. This will result in each group having a full set of stickies for both class nitrate and nitrite data.
 :::
 
-At your desk, you will find a large sheet of gridded Post-It paper. The top of the paper has an axis drawn for the nitrate boxplot and the bottom of the paper has an axis drawn for the nitrite boxplot.
+1. After your groups has received all of its stickies, create two stacks—one for nitrate and one for nitrite (you can distinguish them by the writing color). 
 
-First, order your nitrate stickies from least to greatest, in a line across the table/desk. Then, do the same for your nitrite stickies. When finished, you should have two separate rows of stickies.
+2. Next, order your nitrate stickies from least to greatest, in a line across the table/desk. Then, do the same for your nitrite stickies. When finished, you should have two separate rows of stickies.
 
 ![](images/ordered_nitrate_nitrite_stickies.png)
+
+3. Find the median (middle number) for both the nitrates and nitrites data (that is, both rows of stickies).
+
+![](images/ordered_nitrate_nitrite_stickies_medians.png)
+
+4. At your desk, you will find a large sheet of gridded Post-It paper. The top of the paper has an axis drawn for the nitrate boxplot and the bottom of the paper has an axis drawn for the nitrite boxplot. *Draw the median line for the nitrate boxplot and the nitrite boxplot.* The median line will form the center of the boxplot.
+
+4. 
 
 ## Outliers
 

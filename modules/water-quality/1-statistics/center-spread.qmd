@@ -1,5 +1,5 @@
 ---
-title: "Using Python for Statistics"
+title: "Measures of Center and Spread"
 crossref:
   lst-title: "🎯 Checkpoint"
 format: live-html
@@ -168,6 +168,8 @@ Calculate the class nitrate and nitrite medians.
 :::
 
 ## Measures of Spread with Python
+A second and final statistical measure we'll discuss today is **spread**. Just as it sounds, measures of spread tell us how spread out our data are. Spread, also referred to as **variability**, is *the backbone* of statistics!
+
 Today, we'll discuss two measures of spread: the **range** and the **standard deviation**.
 
 ### Range
