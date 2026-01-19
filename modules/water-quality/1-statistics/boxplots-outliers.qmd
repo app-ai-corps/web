@@ -10,11 +10,9 @@ sidebar: lesson-1
 **Checkpoints on this Page:**
 
 - [**Checkpoint 1:** Import Class Data](#lst-getcsv)
-- [**Checkpoint 2:** Find Ranges of Class Data](#lst-classdatarange)
-- [**Checkpoint 3:** Find Standard Deviations of Class Data](#lst-classdatastddev)
-- [**Checkpoint 4:** Create Boxplot for Sample Data](#lst-sampledataboxplot)
-- [**Checkpoint 5:** Create Boxplot for Class Nitrate Data](#lst-classnitrateboxplot)
-- [**Checkpoint 5:** Create Boxplot for Class Nitrite Data](#lst-classnitriteboxplot)
+- [**Checkpoint 2:** Create Boxplots by Hand](#lst-manualboxplots)
+- [**Checkpoint 3:** Create Boxplot for Class Nitrate Data](#lst-classnitrateboxplot)
+- [**Checkpoint 4:** Create Boxplot for Class Nitrite Data](#lst-classnitriteboxplot)
 :::
 <hr>
 
@@ -67,6 +65,25 @@ A key practice in statistics is to visualize the data! One of the types of plots
 Grab those sticky notes from the nitrates lab! Sort them by sticky color and pass them out to each group, matching the sticky color to the group's tent color. This will result in each group having a full set of stickies for both class nitrate and nitrite data.
 :::
 
+:::{#lst-manualboxplots}
+
+```{pyodide}
+#| include: false
+
+#This is fake to create a checkpoint
+```
+
+As a group, construct a boxplot for the class nitrate data and the class nitrite data by hand.
+:::
+
+:::{.gray-container}
+<b> Materials Needed: </b>  
+- 1 Post-It grid paper sheet per group  
+- 1 poster marker per group  
+- Your group's full set of stickies (including those collected from other groups) from the nitrate lab  
+
+:::
+
 1. After your groups has received all of its stickies, create two stacks—one for nitrate and one for nitrite (you can distinguish them by the writing color). 
 
 2. Next, order your nitrate stickies from least to greatest, in a line across the table/desk. Then, do the same for your nitrite stickies. When finished, you should have two separate rows of stickies.
@@ -79,83 +96,28 @@ Grab those sticky notes from the nitrates lab! Sort them by sticky color and pas
 
 4. At your desk, you will find a large sheet of gridded Post-It paper. The top of the paper has an axis drawn for the nitrate boxplot and the bottom of the paper has an axis drawn for the nitrite boxplot. *Draw the median line for the nitrate boxplot and the nitrite boxplot.* The median line will form the center of the boxplot.
 
-4. 
+![](images/boxplots_medianline.png)
 
-## Outliers
+5. Now, we need to find the first and third quartiles for both the nitrates and nitrites data. To do this, take the bottom half of the data and, similar to finding the median, find the middle number. This is the first quartile. Finding the middle number of the upper half of the data will give you the third quartile.
 
-### What Are Outliers?
+![](images/ordered_nitrate_nitrite_stickies_quartiles.png)
 
-**Outliers** are data points that are very different from the rest of your data. They're the "weird" numbers that don't fit the pattern. Outliers can really change your statistics—like mean and standard deviation.
+6. Draw the line for the first and third quartiles for both the nitrates and nitrites data.
 
-```{pyodide}
-#| edit: false
-sample_data = [1, 2, 6, 5, 1]
+![](images/boxplots_quartiles.png)
 
-sample_woutlier = [1, 2, 6, 5, 1, 15]
-```
+7. Connect the first and third quartiles to the median line with horizontal lines, thereby creating the "box" portion of the boxplot.
 
-That 15 is an outlier! It's way higher than everything else.
+![](images/boxplots_box.png)
 
-### Why Do Outliers Happen?
+8. Finally, extend a horizontal line from the first quartile to the minimum value. Draw another horizontal line from the third quartile to the maximum value. These lines form the "whiskers" of the boxplot.
 
-Outliers can happen for different reasons:
+![](images/boxplots_whiskers.png)
 
- 1. **Sensor Malfunction** 🔧
-- The sensor glitched or needs calibration
-- Battery was dying
-- Sensor got knocked around
+### Boxplots By Python
+Whew! That was a lot of work. Wouldn't it be great if Python could do it for us? Good news. It can!
 
- 2. **Real Pollution Event** 🚨
-- Factory dumped chemicals into the stream
-- Farm fertilizer washed in after a storm
-- Sewage spill
-
- 3. **Natural Event** 🌧️
-- Heavy rain changed water chemistry
-- Algae bloom
-- Seasonal variation
-
-**Your job as a scientist:** Figure out which reason it is!
-
-## Boxplots
-
-We can also use a **boxplot** to visualize outliers automatically! It's like a detective tool for finding weird data. Here is a boxplot of our sample data with the outlier added:
-
-:::{#lst-sampledataboxplot}
-
-```{pyodide}
-#| completion: false
-import matplotlib.pyplot as plt
-
-plt.figure(figsize=(10, 6))
-plt.boxplot(sample_woutlier, vert=True, patch_artist=True, 
-            boxprops=dict(facecolor='lightblue'),
-            medianprops=dict(color='red', linewidth=2))
-plt.title('Boxplot: Outliers Shown as Circles', fontsize=14)
-plt.grid(True, alpha=0.3, axis='y')
-plt.ylim(0, 17)
-plt.xticks([])
-
-plt.text(1.15, 15, '← High outlier', fontsize=11, va='center')
-plt.text(1.15, np.median(sample_woutlier), f'← Median ({np.median(sample_woutlier)})', fontsize=11, va='center')
-plt.show()
-
-print("The circle shows the outlier!")
-print("The box shows where most of the other data is.")
-```
-
-Create a boxplot for the sample data with the outlier added.
-:::
-
-**Reading a box plot:**  
-- The **line in the middle** = Median  
-- The **box** = Where the middle 50% of data is  
-- The **whiskers** (lines extending out) = Normal range  
-- The **circles** = Outliers!  
-
-
-
-### Class Nitrate Boxplot
+#### Class Nitrate Boxplot
 
 :::{#lst-classnitrateboxplot}
 **Your Turn:** Create a Boxplot for the Class Nitrate Data
@@ -175,7 +137,7 @@ plt.show()
 Create a boxplot for the class nitrate data.
 :::
 
-### Class Nitrite Boxplot
+#### Class Nitrite Boxplot
 
 :::{#lst-classnitriteboxplot}
 **Your Turn:** Create a Boxplot for the Class Nitrite Data
@@ -195,15 +157,35 @@ plt.show()
 Create a boxplot for the class nitrite data.
 :::
 
+## Outliers
+
+**Outliers** are data points that are very different from the rest of your data. They're the "weird" numbers that don't fit the pattern. Outliers can really change your statistics—like mean and standard deviation. On boxplots, outliers are represented by a circle (or sometimes a star) beyond the whiskers.
+
 :::{.callout-important}
-## Does either have outliers? How do you know?
+## Does either the nitrate or nitrite boxplot have a circle beyond the whiskers?
+
+If so, the data contains outliers! Python will automatically detect outliers and mark them with a circle.
 :::
 
-## Adding Means to Boxplots
-Write the code here
+### Why Do Outliers Happen?
 
-:::{.callout-caution}
-## Question!
-What do you notice about the relationship between the mean and median for the nitrate data? Why do you think that might be?
-:::
+Outliers can happen for different reasons:
+
+ 1. **Buoy Malfunction** 🔧
+- The buoy glitched or needs calibration
+- The buoy's solar panels are not supplying enough power
+- The buoy was moved or knocked around
+
+ 2. **Real Pollution Event** 🚨
+- Factory dumped chemicals into the stream
+- Farm fertilizer washed in after a storm
+- Sewage spill
+
+ 3. **Natural Event** 🌧️
+- Heavy rain changed water chemistry
+- Algae bloom
+- Seasonal variation
+
+**Your job as a scientist:** Figure out which reason it is!  
+
 
