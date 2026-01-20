@@ -14,7 +14,6 @@ sidebar: lesson-1
 - Your computer  
 - A web browser (Chrome, Firefox, or Safari)  
 - A calculator   
-- Printed handout (including lab sheet)
 :::
 
 :::{.ltblue-container}
