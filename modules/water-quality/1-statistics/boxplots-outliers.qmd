@@ -110,15 +110,15 @@ As a group, construct a boxplot for the class nitrate data and the class nitrite
 
 6. Draw the line for the first and third quartiles for both the nitrates and nitrites data.
 
-<!-- ![](images/boxplots_quartiles.png) -->
+![](images/boxplots_quartiles.png)
 
 7. Connect the first and third quartiles to the median line with horizontal lines, thereby creating the "box" portion of the boxplot.
 
-<!-- ![](images/boxplots_box.png) -->
+![](images/boxplots_box.png)
 
 8. Finally, extend a horizontal line from the first quartile to the minimum value. Draw another horizontal line from the third quartile to the maximum value. These lines form the "whiskers" of the boxplot.
 
-<!-- ![](images/boxplots_whiskers.png) -->
+![](images/boxplots_whiskers.png)
 
 ### Boxplots By Python
 Whew! That was a lot of work. Wouldn't it be great if Python could do it for us? Good news. It can!
