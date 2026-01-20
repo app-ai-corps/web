@@ -98,13 +98,13 @@ As a group, construct a boxplot for the class nitrate data and the class nitrite
 
 4. At your desk, you will find a large sheet of gridded Post-It paper. The paper has an axis already drawn for the nitrate boxplot. *Draw the median line for the nitrate boxplot.* The median line will form the center of the boxplot.
 
-![](images/boxplots_medianline.png)
+![](images/boxplot_nitrate_medianline.png)
 
 5. Now, we need to find the first and third quartiles for both the nitrates and nitrites data. To do this, take the bottom half of the data and, similar to finding the median, find the middle number. This is the first quartile. Finding the middle number of the upper half of the data will give you the third quartile.
 
-![](images/ordered_nitrate_nitrite_stickies_q1.png)
+![](images/ordered_nitrate_stickies_q1.png)
 
-![](images/ordered_nitrate_nitrite_stickies_q3.png)
+![](images/ordered_nitrate_stickies_q3.png)
 
 6. Draw the line for the first and third quartiles for both the nitrates and nitrites data.
 
