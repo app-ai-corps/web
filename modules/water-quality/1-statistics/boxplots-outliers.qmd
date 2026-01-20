@@ -66,7 +66,7 @@ A key practice in statistics is to visualize the data! One of the types of plots
 ### Activity: Boxplots By Hand
 :::{.callout-note}
 ## *Data Recorder (Sticky Notes)*
-Grab those sticky notes from the nitrates lab! Sort them by sticky color and pass them out to each group, matching the sticky color to the group's tent color. This will result in each group having a full set of stickies for both class nitrate and nitrite data.
+Grab those sticky notes from the nitrates lab! Sort them by sticky color and pass them out to each group, matching the sticky color to the group's tent color. This will result in each group having a full set of stickies representing the class nitrate data.
 :::
 
 :::{#lst-manualboxplots}
