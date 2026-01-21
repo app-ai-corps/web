@@ -1,0 +1,185 @@
+---
+title: "Water Quality Lab Report"
+subtitle: "Testing for Nitrates and Nitrites"
+format: 
+  pdf:
+    documentclass: article
+    geometry: margin=1in
+    fontsize: 11pt
+    linestretch: 1.5
+---
+
+\noindent
+**Name:** \underline{\hspace{6cm}} **Date:** \underline{\hspace{3cm}}
+
+**Group Number:** \underline{\hspace{1cm}} **Lab Partners:** \underline{\hspace{6cm}}
+
+\vspace{0.3cm}
+
+## Purpose
+**What is the goal of this experiment?**
+
+To practice gathering data about nitrate and nitrite concentrations in water samples using test strips to assess water quality.
+
+\vspace{0.3cm}
+
+## Hypothesis
+**What do you predict about the nitrate and nitrite levels in the water samples? Why?**
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+
+\vspace{0.3cm}
+
+## Materials
+- Water quality samples (4+ samples)
+- Nitrate/nitrite test strips (4+ strips)
+- Timing device
+- Computer for data entry
+- Sticky notes and markers
+
+\vspace{0.3cm}
+
+## Procedure
+*Steps followed to test the water samples:*
+
+\vspace{0.2cm}
+
+1. The Lab Technician took a water sample and shared the sample letter with the team.
+
+2. A new test strip was dipped into the sample for 2 seconds without moving it while submerged.
+
+3. The test strip was removed from the water and held flat for 1 minute (timed by the group).
+
+4. The colors on the test strip were compared to the reference scale to determine nitrate and nitrite concentrations. If colors fell between two values, we estimated the midpoint.
+
+5. Data recorders recorded the sample letter, nitrate value, and nitrite value in the data table, computer form, and on sticky notes. This process was repeated for all samples.
+
+\vspace{0.3cm}
+
+## Data and Results
+
+**Data Table:**
+
+| Sample Letter | Nitrate (ppm) | Nitrite (ppm) | Observations |
+|:-------------:|:-------------:|:-------------:|:-------------|
+|               |               |               |              |
+|               |               |               |              |
+|               |               |               |              |
+|               |               |               |              |
+|               |               |               |              |
+
+\vspace{0.2cm}
+
+**Notes about measurements or observations:**
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+
+\vspace{0.3cm}
+
+## Analysis and Discussion
+
+**1. Which sample had the highest nitrate level? Which had the lowest?**
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+
+\vspace{0.3cm}
+
+**2. Which sample had the highest nitrite level? Which had the lowest?**
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+
+\vspace{0.3cm}
+
+**3. Were there any patterns in your data? (For example, did samples with high nitrates also have high nitrites?)**
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+
+\vspace{0.3cm}
+
+**4. What do nitrates and nitrites tell us about water quality?**
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+
+\vspace{0.3cm}
+
+**5. Did your results support your hypothesis? Explain why or why not.**
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+
+\vspace{0.3cm}
+
+**6. What are possible sources of error in this experiment?**
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+
+\vspace{0.3cm}
+
+**7. How could you improve this experiment if you did it again?**
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+
+\vspace{0.3cm}
+
+## Conclusion
+
+**Summarize what you learned from this lab. Include:**
+
+- Your main findings
+- Whether your hypothesis was supported  
+- Why this experiment matters for understanding water quality
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule
+\vspace{0.2cm}
+\hrule

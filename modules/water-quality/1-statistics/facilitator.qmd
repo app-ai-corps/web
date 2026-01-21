@@ -51,7 +51,7 @@ plant populations from various kinds of human activity.
 ## Lesson Prep
 
 #### 1. Prepare Materials for Nitrates Lab
-The day before create water samples for nitrates lab. This will allow the nitrates to fully dissolve in the water.
+We suggest creating water samples the for nitrates lab the day before. This will allow the nitrates to fully dissolve in the water.
  
 **Materials needed:**  
   - Miracle-Gro Fertilizer Liquid  
@@ -62,7 +62,9 @@ The day before create water samples for nitrates lab. This will allow the nitrat
 
 :::{.callout-important collapse="true"}
 ## Nitrate Sample Creation Guide
-Mixing Guide - 4 Samples Per Group  
+### Mixing Guide
+*This plan is written to provide samples for 5 groups with 4 samples each.*
+
 For 5 groups × 4 samples = 20 total samples  
 Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dropper/pipette:  
 
