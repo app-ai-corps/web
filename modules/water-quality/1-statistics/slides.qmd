@@ -815,7 +815,7 @@ else:
 :::
 
 :::{.dkorange-container}
-Replace the 10, 20, 30, and 40 placeholders with the nitrate readings from your group!
+Replace the placeholder (Line 4) with CSV URL from your teacher. Be sure the keep the quotation marks! This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.
 
 Click the ▶️ Run Code button to run the block.
 :::
@@ -1095,3 +1095,116 @@ If a creek's reading has high standard deviation (lots of variability in compari
 3. **Natural cycles** - Some creeks naturally vary
 4. **Sensor problems** - The equipment might need calibration
 5. **Different sampling times** - Morning vs afternoon can be different
+:::
+
+##  💻 Boxplots & Outliers
+<hr>
+Next Page 👉  
+![](images/sidebar_boxplots_outliers.png){width="40%"}
+
+# Boxplots & Outliers
+
+## 💻 Class Data
+<hr>
+
+:::{.ltblue-container .twentyfourpt-font}
+🎯 **Checkpoint 1**: Once more, import your whole class's nitrate and nitrite data.
+:::
+
+:::{.dkorange-container}
+Once more, replace the placeholder (Line 4) with CSV URL from your teacher. Be sure the keep the quotation marks! This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.
+
+Click the ▶️ Run Code button to run the block.
+:::
+
+```python
+# Replace the url with the one provided from your teacher. 
+# Make sure to keep the quotation marks!
+
+csv_url = "replace_this_with_your_csv_url"
+
+class_nitrate, class_nitrite = load_class_data(csv_url)
+```
+```{python}
+print("Nitrate values:", class_nitrate)
+print("Nitrite values:", class_nitrite)
+```
+## Boxplots: Visualizing Data
+<hr>
+- A key practice in statistics is to visualize the data!
+- One type of plot we can use to do this is a **boxplot**.
+- To make a boxplot, we will order the data and then divide the data into four equal groups (by number of observations), called **quartiles**.
+<br>
+<br>
+<br>
+[❗️❗️**Attention**❗️❗️ *Data Recorder (Sticky Notes)*]{.thirtyfourpt-font}
+
+:::{.gray-container}
+*Data Recorders (Sticky Notes)*, sort all of your sticky notes by color. Pass them out to each group, matching the sticky's color to the group's tent color. This will result in each group having a full set of stickies representing the class nitrate data.
+:::
+
+## 🖍️ Boxplots: Activity
+<hr>
+:::{.ltblue-container .twentyfourpt-font}
+🎯 **Checkpoint 2**: As a group, construct a boxplot for the class nitrate data by hand.
+:::
+
+:::{.gray-container}
+**Materials Needed:**  
+- 1 Post-It grid paper sheet per group  
+- 1 poster marker per group  
+- Your group's full set of stickies (including those from other groups) from the nitrate lab  
+- Lab sheet handout (back)  
+:::
+
+Follow the steps on the back of your lab sheet to create a boxplot for the class nitrate data.
+
+[🚀 **LET'S GO** 🚀]{.sixtypt-font}
+
+## 💻 Class Data: Boxplots
+<hr>
+
+Whew! That was a lot of work. Wouldn't it be great if Python could do it for us? Good news. It can!
+
+:::{.ltblue-container .twentyfourpt-font}
+🎯 **Checkpoint 3**: Create a boxplot for the class nitrate data.
+:::
+
+:::{.dkorange-container}
+Click the ▶️ Run Code button to run the block and create a boxplot for the class nitrate data.
+:::
+
+```python
+plt.figure(figsize=(8, 6))
+plt.boxplot(class_nitrate, vert=True, patch_artist=True,
+            boxprops=dict(facecolor='plum'))
+plt.ylabel('Nitrate (mg/L)', fontsize=12)
+plt.xticks([])
+plt.title('Boxplot of Class Nitrate', fontsize=13)
+plt.grid(True, alpha=0.3, axis='y')
+plt.show()
+```
+
+## 💻 Class Data: Boxplots
+<hr>
+
+Whew! That was a lot of work. Wouldn't it be great if Python could do it for us? Good news. It can!
+
+:::{.ltblue-container .twentyfourpt-font}
+🎯 **Checkpoint 3**: Create a boxplot for the class nitrate data.
+:::
+
+:::{.dkorange-container}
+Click the ▶️ Run Code button to run the block and create a boxplot for the class nitrate data.
+:::
+
+```{python}
+plt.figure(figsize=(8, 6))
+plt.boxplot(class_nitrate, vert=True, patch_artist=True,
+            boxprops=dict(facecolor='plum'))
+plt.ylabel('Nitrate (mg/L)', fontsize=12)
+plt.xticks([])
+plt.title('Boxplot of Class Nitrate', fontsize=13)
+plt.grid(True, alpha=0.3, axis='y')
+plt.show()
+```

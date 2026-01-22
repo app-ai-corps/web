@@ -36,8 +36,8 @@ def load_class_data(csv_url):
     next(reader)  # Skip header
     rows = list(reader)
     
-    class_nitrate = [int(row[3]) for row in rows]
-    class_nitrite = [int(row[4]) for row in rows]
+    class_nitrate = [float(row[3]) for row in rows]
+    class_nitrite = [float(row[4]) for row in rows]
     
     return class_nitrate, class_nitrite
 ```
@@ -77,7 +77,7 @@ Grab those sticky notes from the nitrates lab! Sort them by sticky color and pas
 #This is fake to create a checkpoint
 ```
 
-As a group, construct a boxplot for the class nitrate data and the class nitrite data by hand.
+As a group, construct a boxplot for the class nitrate data by hand.
 :::
 
 :::{.gray-container}

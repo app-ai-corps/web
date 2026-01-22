@@ -2783,7 +2783,7 @@
     "href": "1-statistics/slides.html#class-data-1",
     "title": "Workshop #1",
     "section": "💻 Class Data",
-    "text": "💻 Class Data\n\n\n🎯 Checkpoint 2: Import your whole class’s nitrate and nitrite data.\n\n\nReplace the 10, 20, 30, and 40 placeholders with the nitrate readings from your group!\nClick the ▶️ Run Code button to run the block.\n\n# Replace the url with the one provided from your teacher. \n# Make sure to keep the quotation marks!\n\ncsv_url = \"replace_this_with_your_csv_url\"\n\nclass_nitrate, class_nitrite = load_class_data(csv_url)\n\nprint(\"Nitrate values:\", class_nitrate)\nprint(\"Nitrite values:\", class_nitrite)\n\nNitrate values: [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 9.0, 10.0, 10.5, 11.0, 12.0, 13.5, 15.0, 18.0, 22.5]\nNitrite values: [0.0, 0.0, 0.1, 0.1, 0.15, 0.2, 0.2, 0.25, 0.3, 0.3, 0.35, 0.4, 0.4, 0.5, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.2, 1.5, 1.8, 2.5, 3.0]"
+    "text": "💻 Class Data\n\n\n🎯 Checkpoint 2: Import your whole class’s nitrate and nitrite data.\n\n\nReplace the placeholder (Line 4) with CSV URL from your teacher. Be sure the keep the quotation marks! This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.\nClick the ▶️ Run Code button to run the block.\n\n# Replace the url with the one provided from your teacher. \n# Make sure to keep the quotation marks!\n\ncsv_url = \"replace_this_with_your_csv_url\"\n\nclass_nitrate, class_nitrite = load_class_data(csv_url)\n\nprint(\"Nitrate values:\", class_nitrate)\nprint(\"Nitrite values:\", class_nitrite)\n\nNitrate values: [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 9.0, 10.0, 10.5, 11.0, 12.0, 13.5, 15.0, 18.0, 22.5]\nNitrite values: [0.0, 0.0, 0.1, 0.1, 0.15, 0.2, 0.2, 0.25, 0.3, 0.3, 0.35, 0.4, 0.4, 0.5, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.2, 1.5, 1.8, 2.5, 3.0]"
   },
   {
     "objectID": "1-statistics/slides.html#class-data-mean",
@@ -2882,5 +2882,40 @@
     "title": "Workshop #1",
     "section": "❓ Causes of High Variability",
     "text": "❓ Causes of High Variability\n\nIf a creek’s reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:\n\nPollution events - A factory dumps waste occasionally\nStorm runoff - Rain washes fertilizer from farms into the creek\nNatural cycles - Some creeks naturally vary\nSensor problems - The equipment might need calibration\nDifferent sampling times - Morning vs afternoon can be different"
+  },
+  {
+    "objectID": "1-statistics/slides.html#boxplots-outliers",
+    "href": "1-statistics/slides.html#boxplots-outliers",
+    "title": "Workshop #1",
+    "section": "💻 Boxplots & Outliers",
+    "text": "💻 Boxplots & Outliers\n\nNext Page 👉"
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-2",
+    "href": "1-statistics/slides.html#class-data-2",
+    "title": "Workshop #1",
+    "section": "💻 Class Data",
+    "text": "💻 Class Data\n\n\n🎯 Checkpoint 1: Once more, import your whole class’s nitrate and nitrite data.\n\n\nOnce more, replace the placeholder (Line 4) with CSV URL from your teacher. Be sure the keep the quotation marks! This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.\nClick the ▶️ Run Code button to run the block.\n\n# Replace the url with the one provided from your teacher. \n# Make sure to keep the quotation marks!\n\ncsv_url = \"replace_this_with_your_csv_url\"\n\nclass_nitrate, class_nitrite = load_class_data(csv_url)\n\nprint(\"Nitrate values:\", class_nitrate)\nprint(\"Nitrite values:\", class_nitrite)\n\nNitrate values: [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 9.0, 10.0, 10.5, 11.0, 12.0, 13.5, 15.0, 18.0, 22.5]\nNitrite values: [0.0, 0.0, 0.1, 0.1, 0.15, 0.2, 0.2, 0.25, 0.3, 0.3, 0.35, 0.4, 0.4, 0.5, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.2, 1.5, 1.8, 2.5, 3.0]"
+  },
+  {
+    "objectID": "1-statistics/slides.html#boxplots-visualizing-data",
+    "href": "1-statistics/slides.html#boxplots-visualizing-data",
+    "title": "Workshop #1",
+    "section": "Boxplots: Visualizing Data",
+    "text": "Boxplots: Visualizing Data\n\n\nA key practice in statistics is to visualize the data!\nOne type of plot we can use to do this is a boxplot.\nTo make a boxplot, we will order the data and then divide the data into four equal groups (by number of observations), called quartiles.    ❗️❗️Attention❗️❗️ Data Recorder (Sticky Notes)\n\n\nData Recorders (Sticky Notes), sort all of your sticky notes by color. Pass them out to each group, matching the sticky’s color to the group’s tent color. This will result in each group having a full set of stickies representing the class nitrate data."
+  },
+  {
+    "objectID": "1-statistics/slides.html#boxplots-activity",
+    "href": "1-statistics/slides.html#boxplots-activity",
+    "title": "Workshop #1",
+    "section": "Boxplots: Activity",
+    "text": "Boxplots: Activity\n\n\n🎯 Checkpoint 2: As a group, construct a boxplot for the class nitrate data by hand.\n\n\nMaterials Needed:\n- 1 Post-It grid paper sheet per group\n- 1 poster marker per group\n- Your group’s full set of stickies (including those from other groups) from the nitrate lab\n- Lab sheet handout (back)\n\nFollow the steps on the back of your lab sheet to create a boxplot for the class nitrate data.\n🚀 LET’S GO 🚀"
+  },
+  {
+    "objectID": "1-statistics/slides.html#boxplots-activity-1",
+    "href": "1-statistics/slides.html#boxplots-activity-1",
+    "title": "Workshop #1",
+    "section": "Boxplots: Activity",
+    "text": "Boxplots: Activity\n\n\n🎯 Checkpoint 2: As a group, construct a boxplot for the class nitrate data by hand.\n\n\nMaterials Needed: - 1 Post-It grid paper sheet per group - 1 poster marker per group - Your group’s full set of stickies (including those from other groups) from the nitrate lab - Lab sheet handout (back)"
   }
 ]
