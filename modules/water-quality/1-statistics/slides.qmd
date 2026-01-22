@@ -1200,7 +1200,9 @@ Whew! That was a lot of work. Wouldn't it be great if Python could do it for us?
 Click the ▶️ Run Code button to run the block and create a boxplot for the class nitrate data.
 :::
 
-```{python}
+:::{.columns}
+:::{.column}
+```python
 import matplotlib.pyplot as plt
 
 plt.figure(figsize=(8, 6))
@@ -1212,3 +1214,133 @@ plt.title('Boxplot of Class Nitrate', fontsize=13)
 plt.grid(True, alpha=0.3, axis='y')
 plt.show()
 ```
+:::
+:::{.column}
+```{python}
+#| echo: false
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 6))
+plt.boxplot(class_nitrate, vert=True, patch_artist=True,
+            boxprops=dict(facecolor='plum'))
+plt.ylabel('Nitrate (mg/L)', fontsize=12)
+plt.xticks([])
+plt.title('Boxplot of Class Nitrate', fontsize=13)
+plt.grid(True, alpha=0.3, axis='y')
+plt.show()
+```
+:::
+:::
+
+## 💻 Class Data: Boxplots
+<hr>
+
+Now, let's create a boxplot for the class nitrite data.
+
+:::{.ltblue-container .twentyfourpt-font}
+🎯 **Checkpoint 4**: Create a boxplot for the class nitrite data.
+:::
+
+:::{.dkorange-container}
+Click the ▶️ Run Code button to run the block and create a boxplot for the class nitrite data.
+:::
+
+```python
+plt.figure(figsize=(8, 6))
+plt.boxplot(class_nitrite, vert=True, patch_artist=True,
+            boxprops=dict(facecolor='lemonchiffon'))
+plt.ylabel('Nitrite (mg/L)', fontsize=12)
+plt.xticks([])
+plt.title('Boxplot of Class Nitrite', fontsize=13)
+plt.grid(True, alpha=0.3, axis='y')
+plt.show()
+```
+
+## 💻 Class Data: Boxplots
+<hr>
+
+Now, let's create a boxplot for the class nitrite data.
+
+:::{.ltblue-container .twentyfourpt-font}
+🎯 **Checkpoint 4**: Create a boxplot for the class nitrite data.
+:::
+
+:::{.dkorange-container}
+Click the ▶️ Run Code button to run the block and create a boxplot for the class nitrite data.
+:::
+
+:::{.columns}
+:::{.column}
+```python
+plt.figure(figsize=(8, 6))
+plt.boxplot(class_nitrite, vert=True, patch_artist=True,
+            boxprops=dict(facecolor='lemonchiffon'))
+plt.ylabel('Nitrite (mg/L)', fontsize=12)
+plt.xticks([])
+plt.title('Boxplot of Class Nitrite', fontsize=13)
+plt.grid(True, alpha=0.3, axis='y')
+plt.show()
+```
+:::
+:::{.column}
+```{python}
+#| echo: false
+plt.figure(figsize=(8, 6))
+plt.boxplot(class_nitrite, vert=True, patch_artist=True,
+            boxprops=dict(facecolor='lemonchiffon'))
+plt.ylabel('Nitrite (mg/L)', fontsize=12)
+plt.xticks([])
+plt.title('Boxplot of Class Nitrite', fontsize=13)
+plt.grid(True, alpha=0.3, axis='y')
+plt.show()
+```
+:::
+:::
+
+## Outliers
+<hr>
+**Outliers** are data points that are very different from the rest of your data.
+- Can really change your statistics—like mean and standard deviation.
+- On boxplots, outliers are represented by a circle (or sometimes a star) beyond the whiskers.
+<br>
+<br>
+<br>
+🧠 **Do either the class nitrate or nitrite boxplot have outliers? How do you know?**
+
+## Why Do Outliers Happen?
+<hr>
+Outliers can happen for different reasons:
+
+1. **Buoy Malfunction** 🔧  
+2. **Real Pollution Event** 🚨  
+    - Factory dumped chemicals into the stream
+    - Farm fertilizer washed in after a storm
+    - Sewage spill
+3. **Natural Event** 🌧️  
+    - Heavy rain changed water chemistry  
+    - Algae bloom  
+    - Seasonal variation  
+
+**Your job as a scientist:** Figure out which reason it is!
+
+# 🎟️<br>Exit Ticket
+
+## 🎟️ Exit Ticket
+<hr>
+<br>
+<br>
+<br>
+<center>
+[🎉 Great job! You've learned so much!<br>Share what you've learned on the [**Exit Ticket**](exit-ticket).]{.thirtyfourpt-font}
+</center>
+
+# 🧠<br>Exercises
+
+## 🧠  Exercises
+<hr>
+<br>
+<br>
+<br>
+<center>
+[Want to practice what we've learned?<br>Try the [**Exercises**](exercises).]{.thirtyfourpt-font}
+</center>

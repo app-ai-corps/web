@@ -2908,8 +2908,8 @@
     "objectID": "1-statistics/slides.html#boxplots-activity",
     "href": "1-statistics/slides.html#boxplots-activity",
     "title": "Workshop #1",
-    "section": "Boxplots: Activity",
-    "text": "Boxplots: Activity\n\n\n🎯 Checkpoint 2: As a group, construct a boxplot for the class nitrate data by hand.\n\n\nMaterials Needed:\n- 1 Post-It grid paper sheet per group\n- 1 poster marker per group\n- Your group’s full set of stickies (including those from other groups) from the nitrate lab\n- Lab sheet handout (back)\n\nFollow the steps on the back of your lab sheet to create a boxplot for the class nitrate data.\n🚀 LET’S GO 🚀"
+    "section": "🖍️ Boxplots: Activity",
+    "text": "🖍️ Boxplots: Activity\n\n\n🎯 Checkpoint 2: As a group, construct a boxplot for the class nitrate data by hand.\n\n\nMaterials Needed:\n- 1 Post-It grid paper sheet per group\n- 1 poster marker per group\n- Your group’s full set of stickies (including those from other groups) from the nitrate lab\n- Lab sheet handout (back)\n\nFollow the steps on the back of your lab sheet to create a boxplot for the class nitrate data.\n🚀 LET’S GO 🚀"
   },
   {
     "objectID": "1-statistics/slides.html#boxplots-activity-1",
@@ -2917,5 +2917,68 @@
     "title": "Workshop #1",
     "section": "Boxplots: Activity",
     "text": "Boxplots: Activity\n\n\n🎯 Checkpoint 2: As a group, construct a boxplot for the class nitrate data by hand.\n\n\nMaterials Needed: - 1 Post-It grid paper sheet per group - 1 poster marker per group - Your group’s full set of stickies (including those from other groups) from the nitrate lab - Lab sheet handout (back)"
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-boxplots",
+    "href": "1-statistics/slides.html#class-data-boxplots",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Boxplots",
+    "text": "💻 Class Data: Boxplots\n\nWhew! That was a lot of work. Wouldn’t it be great if Python could do it for us? Good news. It can!\n\n🎯 Checkpoint 3: Create a boxplot for the class nitrate data.\n\n\nClick the ▶️ Run Code button to run the block and create a boxplot for the class nitrate data.\n\nimport matplotlib.pyplot as plt\n\nplt.figure(figsize=(8, 6))\nplt.boxplot(class_nitrate, vert=True, patch_artist=True,\n            boxprops=dict(facecolor='plum'))\nplt.ylabel('Nitrate (mg/L)', fontsize=12)\nplt.xticks([])\nplt.title('Boxplot of Class Nitrate', fontsize=13)\nplt.grid(True, alpha=0.3, axis='y')\nplt.show()"
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-boxplots-1",
+    "href": "1-statistics/slides.html#class-data-boxplots-1",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Boxplots",
+    "text": "💻 Class Data: Boxplots\n\nWhew! That was a lot of work. Wouldn’t it be great if Python could do it for us? Good news. It can!\n\n🎯 Checkpoint 3: Create a boxplot for the class nitrate data.\n\n\nClick the ▶️ Run Code button to run the block and create a boxplot for the class nitrate data.\n\n\n\nimport matplotlib.pyplot as plt\n\nplt.figure(figsize=(8, 6))\nplt.boxplot(class_nitrate, vert=True, patch_artist=True,\n            boxprops=dict(facecolor='plum'))\nplt.ylabel('Nitrate (mg/L)', fontsize=12)\nplt.xticks([])\nplt.title('Boxplot of Class Nitrate', fontsize=13)\nplt.grid(True, alpha=0.3, axis='y')\nplt.show()"
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-boxplots-2",
+    "href": "1-statistics/slides.html#class-data-boxplots-2",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Boxplots",
+    "text": "💻 Class Data: Boxplots\n\nNow, let’s create a boxplot for the class nitrite data.\n\n🎯 Checkpoint 4: Create a boxplot for the class nitrite data.\n\n\nClick the ▶️ Run Code button to run the block and create a boxplot for the class nitrite data.\n\nplt.figure(figsize=(8, 6))\nplt.boxplot(class_nitrite, vert=True, patch_artist=True,\n            boxprops=dict(facecolor='lemonchiffon'))\nplt.ylabel('Nitrite (mg/L)', fontsize=12)\nplt.xticks([])\nplt.title('Boxplot of Class Nitrite', fontsize=13)\nplt.grid(True, alpha=0.3, axis='y')\nplt.show()"
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-boxplots-3",
+    "href": "1-statistics/slides.html#class-data-boxplots-3",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Boxplots",
+    "text": "💻 Class Data: Boxplots\n\nNow, let’s create a boxplot for the class nitrite data.\n\n🎯 Checkpoint 4: Create a boxplot for the class nitrite data.\n\n\nClick the ▶️ Run Code button to run the block and create a boxplot for the class nitrite data.\n\n\n\nplt.figure(figsize=(8, 6))\nplt.boxplot(class_nitrite, vert=True, patch_artist=True,\n            boxprops=dict(facecolor='lemonchiffon'))\nplt.ylabel('Nitrite (mg/L)', fontsize=12)\nplt.xticks([])\nplt.title('Boxplot of Class Nitrite', fontsize=13)\nplt.grid(True, alpha=0.3, axis='y')\nplt.show()"
+  },
+  {
+    "objectID": "1-statistics/slides.html#outliers",
+    "href": "1-statistics/slides.html#outliers",
+    "title": "Workshop #1",
+    "section": "Outliers",
+    "text": "Outliers\n\nOutliers are data points that are very different from the rest of your data. - Can really change your statistics—like mean and standard deviation. - On boxplots, outliers are represented by a circle (or sometimes a star) beyond the whiskers.    🧠 Do either the class nitrate or nitrite boxplot have outliers? How do you know?"
+  },
+  {
+    "objectID": "1-statistics/slides.html#why-do-outliers-happen",
+    "href": "1-statistics/slides.html#why-do-outliers-happen",
+    "title": "Workshop #1",
+    "section": "Why Do Outliers Happen?",
+    "text": "Why Do Outliers Happen?\n\nOutliers can happen for different reasons:\n\nBuoy Malfunction 🔧\n\nReal Pollution Event 🚨\n\nFactory dumped chemicals into the stream\nFarm fertilizer washed in after a storm\nSewage spill\n\nNatural Event 🌧️\n\nHeavy rain changed water chemistry\n\nAlgae bloom\n\nSeasonal variation\n\n\nYour job as a scientist: Figure out which reason it is!"
+  },
+  {
+    "objectID": "1-statistics/slides.html#exit-ticket-1",
+    "href": "1-statistics/slides.html#exit-ticket-1",
+    "title": "Workshop #1",
+    "section": "🎟️ Exit Ticket",
+    "text": "🎟️ Exit Ticket\n\n  \n\n🎉 Great job! You’ve learned so much!Share what you’ve learned on the Exit Ticket."
+  },
+  {
+    "objectID": "1-statistics/slides.html#exercise-1",
+    "href": "1-statistics/slides.html#exercise-1",
+    "title": "Workshop #1",
+    "section": "🧠 Exercise",
+    "text": "🧠 Exercise\n\n[]    Want to practice what we’ve learned? Try the Exercises."
+  },
+  {
+    "objectID": "1-statistics/slides.html#exercises-1",
+    "href": "1-statistics/slides.html#exercises-1",
+    "title": "Workshop #1",
+    "section": "🧠 Exercises",
+    "text": "🧠 Exercises\n\n  \n\nWant to practice what we’ve learned?Try the Exercises."
   }
 ]
