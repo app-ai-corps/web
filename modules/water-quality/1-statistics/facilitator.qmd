@@ -51,7 +51,7 @@ plant populations from various kinds of human activity.
 
 ## Lesson Prep
 
-#### [1. Prepare Materials for Nitrates Lab]{.globe-color}
+#### 1. Prepare Materials for Nitrates Lab
 We suggest creating water samples the for nitrates lab the day before. This will allow the nitrates to fully dissolve in the water.
  
 **Materials needed:**  
@@ -84,11 +84,11 @@ Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dro
 1 sample: 30+ drops per cup (50 ppm, maxes out strip)  
 :::
 
-#### [2. Make Copies: 1 Lab Handout Per Student]{.globe-color}
+#### 2. Make Copies: 1 Lab Handout Per Student
 
-#### [3. Obtain Post-it Notes (1 Color Per Small Group) and 1 Sharpie/Group]{.globe-color}
+#### 3. Obtain Post-it Notes (1 Color Per Small Group) and 1 Sharpie/Group
 
-#### [4. Create and Share Link for Nitrates Lab Data Collection]{.globe-color}
+#### 4. Create and Share Link for Nitrates Lab Data Collection
  - Make sure you are logged into your school Google Account
  - Use [this link](https://docs.google.com/forms/d/1xfxu1m-vVqFbG0K70ndde9DHtzwFCPIeKQsYvaR5IyQ/copy) to make a copy of the Nitrate/Nitrite Lab Google Form
  - Open your copy of the Nitrate/Nitrite Lab Google Form. Publish the formDouble check the sharing settings to make sure all of your students can respond.  
@@ -100,7 +100,7 @@ Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dro
  - When you click **publish**, it will give you a link. Please be prepared to share this link with your students during the second half of class... perhaps via email or via LMS. They will need to copy/paste it to access the data. You can set this up well in advance of class.  
  - *Note: If you are facilitating this module for more than one class, you will want to repeat this process once for each class, so that each class has their own submission form and spreadsheet.*
 - This can be done well in advance, just make sure to keep the form link **(respondent link)** and spreadsheet link **(publish to web link)** for each class ready to disseminate.
-#### [5. Use paper matching the colors of the sticky notes to create group tents]{.globe-color}
+#### 5. Use paper matching the colors of the sticky notes to create group tents
 
 ## Lesson Overview & Takeaways
 
