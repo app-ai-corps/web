@@ -45,7 +45,7 @@ plant populations from various kinds of human activity.
 ## Lesson Overview Video Tour
 
 ## Slide Deck for Lesson
-[Workshop #1 Slides](https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html)
+[Workshop #1 Slides](https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html){: target="_blank" rel="nofollow noopener noreferrer"}
 
 ## Handout for Lesson
 
@@ -86,7 +86,7 @@ Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dro
 
 #### 2. Make Copies: 1 Lab Handout Per Student
 
-#### 3. Obtain Post-it Notes (2 Colors) and 1 Sharpie/Group
+#### 3. Obtain Post-it Notes (1 Color Per Small Group) and 1 Sharpie/Group
 
 #### 4. Create and Share Link for Nitrates Lab Data Collection
  - Make sure you are logged into your school Google Account
