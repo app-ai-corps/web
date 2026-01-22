@@ -45,13 +45,13 @@ plant populations from various kinds of human activity.
 ## Lesson Overview Video Tour
 
 ## Slide Deck for Lesson
-[Workshop #1 Slides](https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html){: target="_blank" rel="nofollow noopener noreferrer"}
+<a href="https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html" target="_blank" rel="nofollow noopener noreferrer">Workshop #1 Slides</a>
 
 ## Handout for Lesson
 
 ## Lesson Prep
 
-#### 1. Prepare Materials for Nitrates Lab
+#### [1. Prepare Materials for Nitrates Lab]{.globe-color}
 We suggest creating water samples the for nitrates lab the day before. This will allow the nitrates to fully dissolve in the water.
  
 **Materials needed:**  
@@ -84,11 +84,11 @@ Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dro
 1 sample: 30+ drops per cup (50 ppm, maxes out strip)  
 :::
 
-#### 2. Make Copies: 1 Lab Handout Per Student
+#### [2. Make Copies: 1 Lab Handout Per Student]{.globe-color}
 
-#### 3. Obtain Post-it Notes (1 Color Per Small Group) and 1 Sharpie/Group
+#### [3. Obtain Post-it Notes (1 Color Per Small Group) and 1 Sharpie/Group]{.globe-color}
 
-#### 4. Create and Share Link for Nitrates Lab Data Collection
+#### [4. Create and Share Link for Nitrates Lab Data Collection]{.globe-color}
  - Make sure you are logged into your school Google Account
  - Use [this link](https://docs.google.com/forms/d/1xfxu1m-vVqFbG0K70ndde9DHtzwFCPIeKQsYvaR5IyQ/copy) to make a copy of the Nitrate/Nitrite Lab Google Form
  - Open your copy of the Nitrate/Nitrite Lab Google Form. Publish the formDouble check the sharing settings to make sure all of your students can respond.  
