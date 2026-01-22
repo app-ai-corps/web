@@ -49,7 +49,7 @@ plant populations from various kinds of human activity.
 
 <!-- <a href="https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html" target="_blank" rel="nofollow noopener noreferrer">Workshop #1 Slides</a> -->
 
-## Handout for Lesson
+## Student Handout
 
 ## Lesson Prep
 
@@ -57,15 +57,16 @@ plant populations from various kinds of human activity.
 We suggest creating water samples the for nitrates lab the day before. This will allow the nitrates to fully dissolve in the water.
  
 **Materials needed:**  
-  - Miracle-Gro Fertilizer Liquid  
-  - Dropper/Pipette  
-  - Small cups for student use (to hold samples for testing)  
-  - Small sticky notes (we use the 1.875" stickies) grouped into sets of 1 red, 1 green, 1 blue, 1 yellow, etc.  
-    - Each group will be assigned a color (red, green, blue, yellow, etc.), so the number of stickies in a set will be dictated by the number of groups.  
-    - Each group will need one multi-colored sticky set per water sample.  
-  - 1 Sharpie/Poster marker per group  
-  - Nitrate/Nitrate test strips  
-  - Masking tape/ sharpies to label cups/samples  
+
+ - Miracle-Gro Fertilizer Liquid  
+- Dropper/Pipette  
+- Small cups for student use (to hold samples for testing)  
+- Small sticky notes (we use the 1.875" stickies) grouped into sets of 1 red, 1 green, 1 blue, 1 yellow, etc.  
+  - Each group will be assigned a color (red, green, blue, yellow, etc.), so the number of stickies in a set will be dictated by the number of groups.  
+  - Each group will need one multi-colored sticky set per water sample.  
+- 1 Sharpie/Poster marker per group  
+- Nitrate/Nitrate test strips  
+- Masking tape/ sharpies to label cups/samples  
 
 :::{.callout-important collapse="true"}
 ## Nitrate Sample Creation Guide
@@ -93,6 +94,7 @@ Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dro
 #### 2. Prepare Materials for Boxplot Activity
 
 **Materials needed:**  
+
   - 1 Post-It Gridded Sticky Page/Group  
     - We pre-drew the axis on the page due to time limitations  
   - 1 poster marker per group  
@@ -100,22 +102,27 @@ Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dro
 #### 3. Make Copies: 1 Lab Handout Per Student
 
 #### 4. Create and Share Link for Nitrates Lab Data Collection
- - Make sure you are logged into your school Google Account
- - Use [this link](https://docs.google.com/forms/d/1xfxu1m-vVqFbG0K70ndde9DHtzwFCPIeKQsYvaR5IyQ/copy){rel="noopener noreferrer"} to make a copy of the Nitrate/Nitrite Lab Google Form
- - Open your copy of the Nitrate/Nitrite Lab Google Form. Publish the formDouble check the sharing settings to make sure all of your students can respond.  
-![](images/check-sharing-settings-google-form.png){width="50%"}
-- While on the sharing settings, copy the respondent link and be prepared to share this link with your students, probably via email or your LMS. Close the sharing settings.
- - On the "Responses" tab, click "Link to Sheet" > "Create a New Sheet" to aggregate all of the student responses into one spreadsheet.
- - Open the spreadsheet it generates (it may automatically open) and go to "File" > "Share" > "Publish to web" and use the following options:  
-![](images/publish-to-web-options-for-google-form.png){width="50%"}
- - When you click **publish**, it will give you a link. Please be prepared to share this link with your students during the second half of class... perhaps via email or via LMS. They will need to copy/paste it to access the data. You can set this up well in advance of class.  
- - *Note: If you are facilitating this module for more than one class, you will want to repeat this process once for each class, so that each class has their own submission form and spreadsheet.*
-- This can be done well in advance, just make sure to keep the form link **(respondent link)** and spreadsheet link **(publish to web link)** for each class ready to disseminate.
 
-#### 5. Use multi-colored sheets of paper matching the colors of the sticky notes to create group tents
+  - Make sure you are logged into your school Google Account
+  - Use [this link](https://docs.google.com/forms/d/1xfxu1m-vVqFbG0K70ndde9DHtzwFCPIeKQsYvaR5IyQ/copy){rel="noopener noreferrer"} to make a copy of the Nitrate/Nitrite Lab Google Form
+  - Open your copy of the Nitrate/Nitrite Lab Google Form. Publish the formDouble check the sharing settings to make sure all of your students can respond.  
+![](images/check-sharing-settings-google-form.png){width="50%"}
+  - While on the sharing settings, copy the respondent link and be prepared to share this link with your students, probably via email or your LMS. Close the sharing settings.
+  - On the "Responses" tab, click "Link to Sheet" > "Create a New Sheet" to aggregate all of the student responses into one spreadsheet.
+  - Open the spreadsheet it generates (it may automatically open) and go to "File" > "Share" > "Publish to web" and use the following options:  
+![](images/publish-to-web-options-for-google-form.png){width="50%"}
+  - When you click **publish**, it will give you a link. Please be prepared to share this link with your students during the second half of class... perhaps via email or via LMS. They will need to copy/paste it to access the data. You can set this up well in advance of class.  
+  - *Note: If you are facilitating this module for more than one class, you will want to repeat this process once for each class, so that each class has their own submission form and spreadsheet.*
+  - This can be done well in advance, just make sure to keep the form link **(respondent link)** and spreadsheet link **(publish to web link)** for each class ready to disseminate.
+
+#### 5. Create group tents using colored paper that matches the sticky notes.
+
+#### 6. Create copy of exit ticket for end-of-lesson implementation.
 
 ## Lesson Overview & Takeaways
-By the end of the lesson, students will be able to:  
+
+By the end of the lesson, students will be able to:
+
   - Write and run a basic python script that includes:  
     - strings  
     - mathematical operators  
