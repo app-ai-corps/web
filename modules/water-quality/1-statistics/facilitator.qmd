@@ -44,7 +44,9 @@ plant populations from various kinds of human activity.
 ## Lesson Overview Video Tour
 
 ## Slide Deck for Lesson
+
 [Workshop #1 Slides](https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html){rel="noopener noreferrer"}
+
 <!-- <a href="https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html" target="_blank" rel="nofollow noopener noreferrer">Workshop #1 Slides</a> -->
 
 ## Handout for Lesson
@@ -57,7 +59,11 @@ We suggest creating water samples the for nitrates lab the day before. This will
 **Materials needed:**  
   - Miracle-Gro Fertilizer Liquid  
   - Dropper/Pipette  
-  - Small cups for student use (to hold samples for testing)  
+  - Small cups for student use (to hold samples for testing)
+  - Small sticky notes (we use the 1.875" stickies) grouped into sets of 1 red, 1 green, 1 blue, 1 yellow, etc.
+    - Each group will be assigned a color (red, green, blue, yellow, etc.), so the number of stickies in a set will be dictated by the number of groups.
+    - Each group will need one multi-colored sticky set per water sample. 
+  - 1 Sharpie/Poster marker per group
   - Nitrate/Nitrate test strips  
   - Masking tape/ sharpies to label cups/samples  
 
@@ -84,9 +90,14 @@ Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dro
 1 sample: 30+ drops per cup (50 ppm, maxes out strip)  
 :::
 
-#### 2. Make Copies: 1 Lab Handout Per Student
+#### 2. Prepare Materials for Boxplot Activity
 
-#### 3. Obtain Post-it Notes (1 Color Per Small Group) and 1 Sharpie/Group
+**Materials needed:**  
+  - 1 Post-It Gridded Sticky Page/Group
+    - We pre-drew the axis on the page due to time limitations
+  - 1 poster marker per group
+  
+#### 3. Make Copies: 1 Lab Handout Per Student
 
 #### 4. Create and Share Link for Nitrates Lab Data Collection
  - Make sure you are logged into your school Google Account
@@ -101,7 +112,7 @@ Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dro
  - *Note: If you are facilitating this module for more than one class, you will want to repeat this process once for each class, so that each class has their own submission form and spreadsheet.*
 - This can be done well in advance, just make sure to keep the form link **(respondent link)** and spreadsheet link **(publish to web link)** for each class ready to disseminate.
 
-#### 5. Use paper matching the colors of the sticky notes to create group tents
+#### 5. Use multi-colored sheets of paper matching the colors of the sticky notes to create group tents
 
 ## Lesson Overview & Takeaways
 By the end of the lesson, students will be able to:
