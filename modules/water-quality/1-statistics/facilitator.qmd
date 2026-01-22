@@ -45,9 +45,7 @@ plant populations from various kinds of human activity.
 
 ## Slide Deck for Lesson
 
-[Workshop #1 Slides](https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html){rel="noopener noreferrer"}
-
-<!-- <a href="https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html" target="_blank" rel="nofollow noopener noreferrer">Workshop #1 Slides</a> -->
+<a href="https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html" target="_blank" rel="nofollow noopener noreferrer">Workshop #1 Slides</a>
 
 ## Student Handout
 
