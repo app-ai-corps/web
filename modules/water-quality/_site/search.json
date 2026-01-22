@@ -2399,5 +2399,488 @@
     "title": "Scatterplots - Finding Relationships Between Variables",
     "section": "Practice Challenge",
     "text": "Practice Challenge\nThink about these questions:\n\nIf pH and temperature are positively correlated, does that mean pH CAUSES temperature to change?\n(No! They’re both affected by other things)\nYou see that nitrate spikes after rainfall. What might be the cause?\n(Rain washes fertilizer from farms into the creek)\nYour scatterplot shows r = 0.05. What does that mean?\n(Almost no relationship - the variables aren’t connected)\n\nNext lesson: Time to put it all together with practice exercises using real water quality scenarios!"
+  },
+  {
+    "objectID": "1-statistics/slides.html#lesson-objective",
+    "href": "1-statistics/slides.html#lesson-objective",
+    "title": "Workshop #1",
+    "section": "Lesson Objective",
+    "text": "Lesson Objective\n\nIn this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate nitrates and nitrates in water samples.  \n\nMaterials Needed:\n- 💻 Your computer\n- A web browser (Chrome, Firefox, or Safari)\n- A calculator"
+  },
+  {
+    "objectID": "1-statistics/slides.html#understanding-the-workshop-structure",
+    "href": "1-statistics/slides.html#understanding-the-workshop-structure",
+    "title": "Workshop #1",
+    "section": "Understanding the Workshop Structure",
+    "text": "Understanding the Workshop Structure\n\nIn the workshops, we will use a combination of slides, interactive modules, and handouts. Please have the module pulled up on your device and handout ready.\nModule link: https://appalachianaicorps.org/modules/water-quality/1-statistics/"
+  },
+  {
+    "objectID": "1-statistics/slides.html#workshop-structure",
+    "href": "1-statistics/slides.html#workshop-structure",
+    "title": "Workshop #1",
+    "section": "Workshop Structure",
+    "text": "Workshop Structure\n\nIn the workshops, we will use:\n- slides\n- interactive modules\n- handouts\nPlease have the module pulled up on your device and handout ready.  \n💻 Navigate to: https://appalachianaicorps.org/ &gt; Modules &gt; Water Quality Monitoring &gt; Lesson 1\n\nNote: If you see a 💻 laptop 💻 icon in the slides, that means there is a corresponding activity in the module to complete!"
+  },
+  {
+    "objectID": "1-statistics/slides.html#workshop-structure-1",
+    "href": "1-statistics/slides.html#workshop-structure-1",
+    "title": "Workshop #1",
+    "section": "Workshop Structure",
+    "text": "Workshop Structure\n\nThe interactive modules contain checkpoints. The checkpoints are linked at the top of the page and include code blocks to run and questions to answer.  \n\nCheckpoints on this Page:\n\nCheckpoint 1: Print Statements\nCheckpoint 2: Mathematical Operators\nCheckpoint 3: Comparing Values\nCheckpoint 4: Print Statements with Math\nCheckpoint 5: Your Own Print Statements"
+  },
+  {
+    "objectID": "1-statistics/slides.html#what-is-python",
+    "href": "1-statistics/slides.html#what-is-python",
+    "title": "Workshop #1",
+    "section": "What is Python? 🐍",
+    "text": "What is Python? 🐍\n\n\nPython is a programming language — a way to give instructions to a computer.\nPython can:\n\nanalyze data\ndo math\nmake graphs\n\n\nIn these workshops, we will learn Python together!"
+  },
+  {
+    "objectID": "1-statistics/slides.html#checkpoint-1-print-statements",
+    "href": "1-statistics/slides.html#checkpoint-1-print-statements",
+    "title": "Workshop #1",
+    "section": "🎯 Checkpoint 1: Print Statements",
+    "text": "🎯 Checkpoint 1: Print Statements"
+  },
+  {
+    "objectID": "1-statistics/slides.html#lets-try-python-right-now",
+    "href": "1-statistics/slides.html#lets-try-python-right-now",
+    "title": "Workshop #1",
+    "section": "💻 Let’s Try Python Right Now!",
+    "text": "💻 Let’s Try Python Right Now!\n\n\nPython will print text. In programming, we call text strings.\n\n\n\n🎯 Checkpoint 1: Print Statements\n\n\nClick the ▶️ Run Code button to run the block.\n\n# This is a comment - Python ignores lines that start with #\n# Let's make Python print a message!\n\nprint(\"Hello, Water Scientist!\")\n\n\n\nWhat happens?"
+  },
+  {
+    "objectID": "1-statistics/slides.html#workshop-structure-2",
+    "href": "1-statistics/slides.html#workshop-structure-2",
+    "title": "Workshop #1",
+    "section": "Workshop Structure",
+    "text": "Workshop Structure\n\nThe checkpoints will also be highlighted in the body of the module. When you come across one, that means there is something new to complete there!\n\n🎯 Checkpoint 1: Print Statements"
+  },
+  {
+    "objectID": "1-statistics/slides.html#lets-try-python-right-now-1",
+    "href": "1-statistics/slides.html#lets-try-python-right-now-1",
+    "title": "Workshop #1",
+    "section": "💻 Let’s Try Python Right Now!",
+    "text": "💻 Let’s Try Python Right Now!\n\n\nPython will print text. In programming, we call text strings.\n\n\n🎯 Checkpoint 1: Print Statements\n\n\nClick the ▶️ Run Code button to run the block.\n\n\n# This is a comment - Python ignores lines that start with #\n# Let's make Python print a message!\n\nprint(\"Hello, Water Scientist!\")\n\nHello, Water Scientist!\n\n\n\n🎉 You just ran Python code! See how it printed “Hello, Water Scientist!” below the block?\nNote that strings are always surrounded by quotation marks."
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-does-math",
+    "href": "1-statistics/slides.html#python-does-math",
+    "title": "Workshop #1",
+    "section": "💻 Python Does Math!",
+    "text": "💻 Python Does Math!\n\n\nPython can do math problems way faster than we can!\n\n\n🎯 Checkpoint 2: Mathematical Operators\n\n\nClick the ▶️ Run Code button to run the blocks.\n\n➕ Addition:\n2 + 3\n➖ Subtraction:\n3 - 2\n✖️ Multiplication:\n2 * 3\n➗ Division:\n3 / 2"
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-does-math-1",
+    "href": "1-statistics/slides.html#python-does-math-1",
+    "title": "Workshop #1",
+    "section": "💻 Python Does Math!",
+    "text": "💻 Python Does Math!\n\n\n🎯 Checkpoint 2: Mathematical Operators\n\n\nClick the ▶️ Run Code button to run the blocks.\n\n➕ Addition:\n\n2 + 3\n\n5\n\n\n➖ Subtraction:\n\n3 - 2\n\n1\n\n\n✖️ Multiplication:\n\n2 * 3\n\n6\n\n\n➗ Division:\n\n3 / 2\n\n1.5"
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-will-compare-values",
+    "href": "1-statistics/slides.html#python-will-compare-values",
+    "title": "Workshop #1",
+    "section": "💻 Python Will Compare Values",
+    "text": "💻 Python Will Compare Values\n\n\nRead these mathematical equations out loud. Let’s try the first together!\n\n\n🎯 Checkpoint 3: Comparing Values\n\n\nClick the ▶️ Run Code button to run the block.\n\n\n2 + 3 &gt;= 2 * 3\n\n“The sum of 2 and 3 is greater than or equal to the product of 2 and 3.”\n\n\nIs this statement TRUE or FALSE?\n\n\n\nPython can decide!\n\n2 + 3 &gt;= 2 * 3\n\nFalse"
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-will-compare-values-1",
+    "href": "1-statistics/slides.html#python-will-compare-values-1",
+    "title": "Workshop #1",
+    "section": "💻 Python Will Compare Values",
+    "text": "💻 Python Will Compare Values\n\n\nYou try the second one! \n\n2 + 3 &lt;= 2 * 3\nRead the statement and make a prediction. Is this statement TRUE or FALSE?\n\n\nPython says:\n\n2 + 3 &lt;= 2 * 3\n\nTrue"
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-will-combine-math-strings",
+    "href": "1-statistics/slides.html#python-will-combine-math-strings",
+    "title": "Workshop #1",
+    "section": "💻 Python Will Combine Math & Strings",
+    "text": "💻 Python Will Combine Math & Strings"
+  },
+  {
+    "objectID": "1-statistics/slides.html#combining-math-strings",
+    "href": "1-statistics/slides.html#combining-math-strings",
+    "title": "Workshop #1",
+    "section": "💻 Combining Math & Strings",
+    "text": "💻 Combining Math & Strings\n\n\nYou can combine strings and math!\n\n\n🎯 Checkpoint 4: Print Statements with Math\n\n\nClick the ▶️ Run Code button to run the block.\n\nprint(\"2 + 3 =\", 2 + 3)\n\n Make a prediction. What will Python print?\n\n\n\nprint(\"2 + 3 =\", 2 + 3)\n\n2 + 3 = 5"
+  },
+  {
+    "objectID": "1-statistics/slides.html#combining-math-strings-1",
+    "href": "1-statistics/slides.html#combining-math-strings-1",
+    "title": "Workshop #1",
+    "section": "💻 Combining Math & Strings",
+    "text": "💻 Combining Math & Strings\n\n\nYou can combine strings and math!\n\n\n🎯 Checkpoint 4: Print Statements with Math\n\n\nClick the ▶️ Run Code button to run the block.\n\n\nprint(\"2 + 3 =\", 2 + 3)\n\n2 + 3 = 5"
+  },
+  {
+    "objectID": "1-statistics/slides.html#your-own-print-statements",
+    "href": "1-statistics/slides.html#your-own-print-statements",
+    "title": "Workshop #1",
+    "section": "💻 Your Own Print Statements",
+    "text": "💻 Your Own Print Statements\n\n\nYour turn! Edit the code in the block.\n\n\n🎯 Checkpoint 5: Your own print statements with math!\n\n\n\nChange “Student” to your first name.\nCreate a new line 9 to calculate 15 times 4. Use lines 5 and 6 as models.\nTry other math problems.\n\nClick the ▶️ Run Code button to run the block.\n\n# Change this message to your name!\nprint(\"My name is Student\")\n\n# Try different math problems\nprint(\"5 + 3 =\", 5 + 3)\nprint(\"20 - 7 =\", 20 - 7)\n\n# Calculate 15 times 4 below. Print the equation and result."
+  },
+  {
+    "objectID": "1-statistics/slides.html#intro-to-water-quality",
+    "href": "1-statistics/slides.html#intro-to-water-quality",
+    "title": "Workshop #1",
+    "section": "💻 Intro to Water Quality",
+    "text": "💻 Intro to Water Quality\n\nNext Page 👉"
+  },
+  {
+    "objectID": "1-statistics/slides.html#what-is-water",
+    "href": "1-statistics/slides.html#what-is-water",
+    "title": "Workshop #1",
+    "section": "What is Water? 💧",
+    "text": "What is Water? 💧\n\n🙋🏼🙋🏾‍♀️🙋🏽‍♂️ Question: What do you know about water?\n\n\nH2O is pure water!\n\nBut water is almost always mixed with other things:\n\nminerals\nsalts\nother chemicals\n\n\nSome of these things help water be safe to drink, while others make it unsafe."
+  },
+  {
+    "objectID": "1-statistics/slides.html#what-is-water-1",
+    "href": "1-statistics/slides.html#what-is-water-1",
+    "title": "Workshop #1",
+    "section": "What is Water? 💧",
+    "text": "What is Water? 💧\n\n\nH_2O is pure water!\n\nBut water is almost always mixed with other things:\n\nminerals\nsalts, and\nother chemicals\n\n\nSome of these things help water be safe to drink, while others make it unsafe.\nIt’s also important to remember that water is used for different purposes, so for example, the same water can be safe for livestock and crop irrigation, but unsafe for human consumption."
+  },
+  {
+    "objectID": "1-statistics/slides.html#water-quality",
+    "href": "1-statistics/slides.html#water-quality",
+    "title": "Workshop #1",
+    "section": "Water Quality 💧",
+    "text": "Water Quality 💧"
+  },
+  {
+    "objectID": "1-statistics/slides.html#water-quality-1",
+    "href": "1-statistics/slides.html#water-quality-1",
+    "title": "Workshop #1",
+    "section": "Water Quality 💧",
+    "text": "Water Quality 💧\n\n\nIn the next several workshops, we will become water quality citizen scientists!\nThe video discussed several indicators of water quality. We’ll focus on nitrogen today. It can serve as both a nutrient and a pollutant."
+  },
+  {
+    "objectID": "1-statistics/slides.html#nitrogen-as-nutrient",
+    "href": "1-statistics/slides.html#nitrogen-as-nutrient",
+    "title": "Workshop #1",
+    "section": "🌳 Nitrogen as Nutrient",
+    "text": "🌳 Nitrogen as Nutrient\n\n\nNitrogen is naturally occurring.\n\nWhen it combines with air and water, it forms ions: nitrates (NO3) and nitrites (NO2).\nNitrogen within water is an important part of the nitrogen cycle, an important process necessary for life."
+  },
+  {
+    "objectID": "1-statistics/slides.html#nitrogen-as-nutrient-1",
+    "href": "1-statistics/slides.html#nitrogen-as-nutrient-1",
+    "title": "Workshop #1",
+    "section": "🌳 Nitrogen as Nutrient",
+    "text": "🌳 Nitrogen as Nutrient"
+  },
+  {
+    "objectID": "1-statistics/slides.html#nitrogen-as-pollutant",
+    "href": "1-statistics/slides.html#nitrogen-as-pollutant",
+    "title": "Workshop #1",
+    "section": "Nitrogen as Pollutant",
+    "text": "Nitrogen as Pollutant\n\n\nToo much nitrogen in water can be a pollutant.\n\nExcess nitrogen–in the form of nitrates and nitrites–can result from:\n\nAgricultural operations (fertilizer runoff and livestock manure)\nSewage and septic systems (human waste)\nAcid rain"
+  },
+  {
+    "objectID": "1-statistics/slides.html#nitrogen-as-pollutant-1",
+    "href": "1-statistics/slides.html#nitrogen-as-pollutant-1",
+    "title": "Workshop #1",
+    "section": "Nitrogen as Pollutant",
+    "text": "Nitrogen as Pollutant"
+  },
+  {
+    "objectID": "1-statistics/slides.html#water-quality-nitrogen",
+    "href": "1-statistics/slides.html#water-quality-nitrogen",
+    "title": "Workshop #1",
+    "section": "Water Quality: Nitrogen",
+    "text": "Water Quality: Nitrogen\n\n\n🎯 Checkpoint 1: Nitrogen in Our Water\n\n  🧠 What is the role of nitrogen in our water?\n 🧠 Do we want nitrates in our streams?\n 🧠 Our drinking water?\n 🧠 How about water with lots of nitrogen?"
+  },
+  {
+    "objectID": "1-statistics/slides.html#monitoring-nitrogen-your-local-utility",
+    "href": "1-statistics/slides.html#monitoring-nitrogen-your-local-utility",
+    "title": "Workshop #1",
+    "section": "Monitoring Nitrogen: Your Local Utility 💧",
+    "text": "Monitoring Nitrogen: Your Local Utility 💧\n\n\nThe U.S. Environmental Protection Agency (EPA) sets limits on allowable concentrations of nitrates and nitrites in drinking water.\n\n\n\n\n\n\n\nNitrate and Nitrite EPA Limits\n\n\nNitrates: 10 mg/L\nNitrites: 1 mg/L"
+  },
+  {
+    "objectID": "1-statistics/slides.html#monitoring-nitrogen-your-local-utility-1",
+    "href": "1-statistics/slides.html#monitoring-nitrogen-your-local-utility-1",
+    "title": "Workshop #1",
+    "section": "Monitoring Nitrogen: Your Local Utility 💧",
+    "text": "Monitoring Nitrogen: Your Local Utility 💧\n\nYou can look up the reported nitrate concentration for water from your utility by using your zipcode.\n\n🎯 Checkpoint 2: Nitrogen in Your Water\n\n🧠 Using data from EWG, what is the most recently reported nitrate concentration by your water utility?"
+  },
+  {
+    "objectID": "1-statistics/slides.html#monitoring-nitrogen-your-utility",
+    "href": "1-statistics/slides.html#monitoring-nitrogen-your-utility",
+    "title": "Workshop #1",
+    "section": "Monitoring Nitrogen: Your Utility 💧",
+    "text": "Monitoring Nitrogen: Your Utility 💧\n\n\nThe U.S. Environmental Protection Agency (EPA) sets limits on allowable concentrations of nitrates and nitrites in drinking water.\n\n\n\n\n\n\n\nNitrate and Nitrite EPA Limits\n\n\nNitrates: 10 mg/L\nNitrites: 1 mg/L"
+  },
+  {
+    "objectID": "1-statistics/slides.html#monitoring-nitrogen-your-utility-1",
+    "href": "1-statistics/slides.html#monitoring-nitrogen-your-utility-1",
+    "title": "Workshop #1",
+    "section": "Monitoring Nitrogen: Your Utility 💧",
+    "text": "Monitoring Nitrogen: Your Utility 💧\n\nYou can look up the reported nitrate concentration for water from your utility by using your zipcode.\n\n🎯 Checkpoint 2: Nitrogen in Your Water\n\n🧠 Using data from EWG, what is the most recently reported nitrate concentration by your water utility?"
+  },
+  {
+    "objectID": "1-statistics/slides.html#monitoring-nitrogen-you",
+    "href": "1-statistics/slides.html#monitoring-nitrogen-you",
+    "title": "Workshop #1",
+    "section": "Monitoring Nitrogen: YOU! 🔬💧",
+    "text": "Monitoring Nitrogen: YOU! 🔬💧\n\n\nWe can also monitor our own water for nitrogen!\n\n\n\n\n\n\n\n\nNote that 10 mg/L is the EPA limit for nitrate and 1 mg/L is the EPA limit for nitrite."
+  },
+  {
+    "objectID": "1-statistics/slides.html#nitrate-lab-1",
+    "href": "1-statistics/slides.html#nitrate-lab-1",
+    "title": "Workshop #1",
+    "section": "Nitrate Lab",
+    "text": "Nitrate Lab\n\nWe are going to conduct a brief water quality lab to practice gathering data about nitrates and nitrates in water samples.\n\nMaterials Needed:\n- 4+ water quality samples per group\n- 4+ nitrate/nitrate test strips per group\n- 1 lab notesheet per person\n- 1 computer with the submission form open for data entry\n- link to form (provided by your teacher)\n- pencils\n- 4+ sets of multicolor sticky notes (one set per water sample)\n- 1 Sharpie markers\n- timing device (watch, clock, etc.)"
+  },
+  {
+    "objectID": "1-statistics/slides.html#nitrate-lab-roles",
+    "href": "1-statistics/slides.html#nitrate-lab-roles",
+    "title": "Workshop #1",
+    "section": "Nitrate Lab: Roles",
+    "text": "Nitrate Lab: Roles\n\nAssign roles to each person in your group:\n\n\nRole 1: Data Recorder (Lab Report)\n\n\n1 lab handout\n\npencil\n\n\n Role 2: Data Recorder (Computer)\n\n\ncomputer (everyone else can put theirs away temporarily)\nsubmission form pulled up in browser\n\n\n\nRole 3: Data Recorder (Sticky Notes)\n\n\nsets of small sticky notes (4+ sets, one per water sample)\nSharpie\n\n\nRole 4: Lab Technician\n\n\nwater samples\ntest strips"
+  },
+  {
+    "objectID": "1-statistics/slides.html#nitrate-lab-procedure",
+    "href": "1-statistics/slides.html#nitrate-lab-procedure",
+    "title": "Workshop #1",
+    "section": "Nitrate Lab: Procedure",
+    "text": "Nitrate Lab: Procedure\n\nRead the procedure on your lab sheet. Make sure everyone in your group understands the procedure and has the materials needed for their role.   \n🚀 LET’S BEGIN 🚀\n  When finished: With the help of the Data Recorder (Lab Report), make sure everyone in your group has a copy of the data table on their own sheet."
+  },
+  {
+    "objectID": "1-statistics/slides.html#what-is-statistics",
+    "href": "1-statistics/slides.html#what-is-statistics",
+    "title": "Workshop #1",
+    "section": "What is Statistics?",
+    "text": "What is Statistics?\n\n\nHow can we make sense of the data we just collected during the nitrates lab?\n\nWe can use statistics!\n\n\nStatistics is a collection of tools that can be used to analyze data. Statistics helps us:\n\nSummarize lots of numbers into one useful number\n\nFind patterns\n\nMake decisions\n\nSpot things that don’t fit"
+  },
+  {
+    "objectID": "1-statistics/slides.html#what-is-statistics-1",
+    "href": "1-statistics/slides.html#what-is-statistics-1",
+    "title": "Workshop #1",
+    "section": "What is Statistics?",
+    "text": "What is Statistics?"
+  },
+  {
+    "objectID": "1-statistics/slides.html#nitrates-lab",
+    "href": "1-statistics/slides.html#nitrates-lab",
+    "title": "Workshop #1",
+    "section": "💻 Nitrates Lab",
+    "text": "💻 Nitrates Lab\n\nNext Page 👉"
+  },
+  {
+    "objectID": "1-statistics/slides.html#intro-to-statistics",
+    "href": "1-statistics/slides.html#intro-to-statistics",
+    "title": "Workshop #1",
+    "section": "💻 Intro to Statistics",
+    "text": "💻 Intro to Statistics\n\nNext Page 👉"
+  },
+  {
+    "objectID": "1-statistics/slides.html#measures-of-center",
+    "href": "1-statistics/slides.html#measures-of-center",
+    "title": "Workshop #1",
+    "section": "Measures of Center",
+    "text": "Measures of Center\n\nWe use measures of center to find the central value of a group of numbers. There are different types of central values. We’ll use mean and median in this lesson. \n\nSample Dataset: 1, 2, 6, 5, 1\n\nMean\nThe mean is often called the “average”. To find the mean, we add up all of the numbers of interest and divide by how many numbers there are.\n\n\\(\\Large \\frac{1 + 2 + 6 + 5 + 1}{5} = 3\\)\n\n The mean value of this sample dataset is 3."
+  },
+  {
+    "objectID": "1-statistics/slides.html#measures-of-center-1",
+    "href": "1-statistics/slides.html#measures-of-center-1",
+    "title": "Workshop #1",
+    "section": "Measures of Center",
+    "text": "Measures of Center\n\nWe use measures of center to find the central value of a group of numbers. There are different types of central values. We’ll use mean and median in this lesson. \n\nSample Dataset: 1, 2, 6, 5, 1\n\nMedian\nThe median is a different kind of measure of center. To calculate the median, you first line up all the values in your data set, then you find the middle value by position.\n\n\\(\\large 1 + 1 + 2 + 5 + 6\\)"
+  },
+  {
+    "objectID": "1-statistics/slides.html#statistics-your-turn",
+    "href": "1-statistics/slides.html#statistics-your-turn",
+    "title": "Workshop #1",
+    "section": "Statistics: Your Turn",
+    "text": "Statistics: Your Turn\n\n\nMaterials Needed:\n- Lab sheet\n- Calculator\n\n\n🎯 Checkpoint 1: Calculating Mean & Median\n\nFind the mean and median of your team’s lab data:\n- Calculate mean nitrate concentration\n- Calculate mean nitrite concentration\n- Calculate median nitrate concentration\n- Calculate median nitrite concentration\n✏️ Record your results on your lab sheet."
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-lists",
+    "href": "1-statistics/slides.html#python-lists",
+    "title": "Workshop #1",
+    "section": "💻 Python: Lists",
+    "text": "💻 Python: Lists\n\nNext Page 👉"
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-lists-2",
+    "href": "1-statistics/slides.html#python-lists-2",
+    "title": "Workshop #1",
+    "section": "🐍 Python: Lists!",
+    "text": "🐍 Python: Lists!\n\n\nSample Dataset: 1, 2, 6, 5, 1\n\nLists\nIn Python, we store multiple numbers in something called a list.\n\n# Our sample dataset from above \n# (the square brackets [ ] make it a list)\n\nsample_data = [1, 2, 6, 5, 1]\n\nprint(\"Our sample data:\", sample_data)\n\nOur sample data: [1, 2, 6, 5, 1]\n\n\n\nBreaking it down:\n- sample_data = the variable name we gave our list (you can name it anything!)\n- = means “store this in the variable sample_data”\n- [1, 2, 6, 5, 1] = the actual numbers, separated by commas"
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-make-your-own-lists",
+    "href": "1-statistics/slides.html#python-make-your-own-lists",
+    "title": "Workshop #1",
+    "section": "💻 Python: Make Your Own Lists!",
+    "text": "💻 Python: Make Your Own Lists!\n\n\n🎯 Checkpoint 1: Save your group nitrate and nitrite readings into lists!\n\n\nReplace the ??, ??, ??, and ?? placeholders with the nitrate and nitrite readings from your group!\nClick the ▶️ Run Code button to run the block.\n\n\n# Create a list of your group's nitrate and nitrite readings!\n# Change the 10, 20, 30, 40 to your group's real values\n\ngroup_nitrate = [10, 20, 30, 40]\ngroup_nitrite = [10, 20, 30, 40]\n\nprint(\"My group's nitrate readings:\", group_nitrate)\nprint(\"My group's nitrite readings:\", group_nitrite)\n\nMy group's nitrate readings: [10, 20, 30, 40]\nMy group's nitrite readings: [10, 20, 30, 40]"
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-make-your-own-lists-1",
+    "href": "1-statistics/slides.html#python-make-your-own-lists-1",
+    "title": "Workshop #1",
+    "section": "💻 Python: Make Your Own Lists!",
+    "text": "💻 Python: Make Your Own Lists!\n\n\n🎯 Checkpoint 2: Basic functions with lists.\n\nlen()\nHow many items are in a list?\n\nprint(\"Number of samples tested:\", len(group_nitrate))\n\nNumber of samples tested: 4\n\n\nmin()\nSmallest number in a list.\n\nprint(\"Lowest nitrate:\", min(group_nitrate))\n\nLowest nitrate: 10\n\n\nmax()\nBiggest number in a list.\n\nprint(\"Highest nitrate:\", max(group_nitrate))\n\nHighest nitrate: 40"
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-example-checking-if-water-is-safe",
+    "href": "1-statistics/slides.html#python-example-checking-if-water-is-safe",
+    "title": "Workshop #1",
+    "section": "💻 Python Example: Checking if Water is Safe!",
+    "text": "💻 Python Example: Checking if Water is Safe!\n\n\n🎯 Checkpoint 3: Comparing nitrate readings to EPA limits.\n\n\nReplace the ?? placeholder with the EPA limit for nitrate!\nClick the ▶️ Run Code button to run the blocks.\n\n# Let's check using your group's nitrate readings\nmax_nitrate = max(group_nitrate)\n\nprint(\"The water has a max nitrate concentration of\", max_nitrate)\n\n# Python can make decisions using 'if' statements!\nif max_nitrate &lt;= ??:\n    print(\"✓ Nitrate concentration is in the safe range!\")\nelse:\n    print(\"✗ Nitrate concentration is outside the safe range!\")"
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-example-checking-if-water-is-safe-1",
+    "href": "1-statistics/slides.html#python-example-checking-if-water-is-safe-1",
+    "title": "Workshop #1",
+    "section": "💻 Python Example: Checking if Water is Safe!",
+    "text": "💻 Python Example: Checking if Water is Safe!\n\n\n🎯 Checkpoint 3: Comparing nitrate readings to EPA limits.\n\n\nReplace the ?? placeholder with the EPA limit for nitrate!\nClick the ▶️ Run Code button to run the blocks.\n\n\n# Let's check using your group's nitrate readings\nmax_nitrate = max(group_nitrate)\n\nprint(\"The water has a max nitrate concentration of\", max_nitrate)\n\n# Python can make decisions using 'if' statements!\nif max_nitrate &lt;= 10:\n    print(\"✓ Nitrate concentration is in the safe range!\")\nelse:\n    print(\"✗ Nitrate concentration is outside the safe range!\")\n\nThe water has a max nitrate concentration of 40\n✗ Nitrate concentration is outside the safe range!"
+  },
+  {
+    "objectID": "1-statistics/slides.html#example-water-safety-check",
+    "href": "1-statistics/slides.html#example-water-safety-check",
+    "title": "Workshop #1",
+    "section": "💻 Example: Water Safety Check!",
+    "text": "💻 Example: Water Safety Check!\n\n\n🎯 Checkpoint 3: Comparing nitrate readings to EPA limits.\n\n\nReplace the ?? placeholder with the EPA limit for nitrate!\nClick the ▶️ Run Code button to run the blocks.\n\n# Let's check using your group's nitrate readings\nmax_nitrate = max(group_nitrate)\n\nprint(\"The water has a max nitrate concentration of\", max_nitrate)\n\n# Python can make decisions using 'if' statements!\nif max_nitrate &lt;= ??:\n    print(\"✓ Nitrate concentration is in the safe range!\")\nelse:\n    print(\"✗ Nitrate concentration is outside the safe range!\")"
+  },
+  {
+    "objectID": "1-statistics/slides.html#example-water-safety-check-1",
+    "href": "1-statistics/slides.html#example-water-safety-check-1",
+    "title": "Workshop #1",
+    "section": "💻 Example: Water Safety Check!",
+    "text": "💻 Example: Water Safety Check!\n\n\n🎯 Checkpoint 3: Comparing nitrate readings to EPA limits.\n\n\nReplace the ?? placeholder with the EPA limit for nitrate!\nClick the ▶️ Run Code button to run the blocks.\n\n\n# Let's check using your group's nitrate readings\nmax_nitrate = max(group_nitrate)\n\nprint(\"The water has a max nitrate concentration of\", max_nitrate)\n\n# Python can make decisions using 'if' statements!\nif max_nitrate &lt;= 10:\n    print(\"✓ Nitrate concentration is in the safe range!\")\nelse:\n    print(\"✗ Nitrate concentration is outside the safe range!\")\n\nThe water has a max nitrate concentration of 40\n✗ Nitrate concentration is outside the safe range!"
+  },
+  {
+    "objectID": "1-statistics/slides.html#center-spread",
+    "href": "1-statistics/slides.html#center-spread",
+    "title": "Workshop #1",
+    "section": "💻 Center & Spread",
+    "text": "💻 Center & Spread\n\nNext Page 👉"
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-measures-of-center",
+    "href": "1-statistics/slides.html#python-measures-of-center",
+    "title": "Workshop #1",
+    "section": "Python: Measures of Center",
+    "text": "Python: Measures of Center\n\n\nWe can also use Python to calculate measures of center.\n\nWe’ll import a library of functions called NumPy (Numerical Python) to help us.\n\n\nMean\n\nimport numpy as np\n\n# Same sample dataset\nsample_data = [1, 2, 6, 5, 1]\n\n# Calculate mean the easy way!\nmean_sample = np.mean(sample_data)\n\nprint(\"mean of sample data:\", mean_sample)\n\nmean of sample data: 3.0"
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-measures-of-center-1",
+    "href": "1-statistics/slides.html#python-measures-of-center-1",
+    "title": "Workshop #1",
+    "section": "💻 Python: Measures of Center",
+    "text": "💻 Python: Measures of Center\n\nMean: Your Turn!\n\n🎯 Checkpoint 1: Calculate the mean of your group’s nitrate readings.\n\n\nReplace the 10, 20, 30, and 40 placeholders with the nitrate readings from your group!\nClick the ▶️ Run Code button to run the block.\n\n\n# Recreate the list of your group's nitrate readings below\n\ngroup_nitrate = [10, 20, 30, 40]\n\nmean_nitrate = np.mean(group_nitrate)\n\nprint(\"Group nitrate readings (mg/L):\", group_nitrate)\nprint(\"Group mean nitrate:\", mean_nitrate, \"mg/L\")\n\n# Is it safe? (Remember: the EPA's limit is less than 10 mg/L)\nif mean_nitrate &lt; 10:\n    print(\"✓ Average nitrate is SAFE\")\nelse:\n    print(\"✗ Average nitrate is TOO HIGH\")\n\nGroup nitrate readings (mg/L): [10, 20, 30, 40]\nGroup mean nitrate: 25.0 mg/L\n✗ Average nitrate is TOO HIGH"
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data",
+    "href": "1-statistics/slides.html#class-data",
+    "title": "Workshop #1",
+    "section": "Class Data",
+    "text": "Class Data\n\n\nPython can handle large amounts of data with ease!\nWe can consider the nitrate and nitrite data your whole class collected.\nTo do that, paste the .csv link from your teacher in the code to import the Google Form data.\n\n\n\n\n\n\n\nYour teacher will provide the link to the CSV file for you to use."
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-1",
+    "href": "1-statistics/slides.html#class-data-1",
+    "title": "Workshop #1",
+    "section": "💻 Class Data",
+    "text": "💻 Class Data\n\n\n🎯 Checkpoint 2: Import your whole class’s nitrate and nitrite data.\n\n\nReplace the 10, 20, 30, and 40 placeholders with the nitrate readings from your group!\nClick the ▶️ Run Code button to run the block.\n\n# Replace the url with the one provided from your teacher. \n# Make sure to keep the quotation marks!\n\ncsv_url = \"replace_this_with_your_csv_url\"\n\nclass_nitrate, class_nitrite = load_class_data(csv_url)\n\nprint(\"Nitrate values:\", class_nitrate)\nprint(\"Nitrite values:\", class_nitrite)\n\nNitrate values: [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 9.0, 10.0, 10.5, 11.0, 12.0, 13.5, 15.0, 18.0, 22.5]\nNitrite values: [0.0, 0.0, 0.1, 0.1, 0.15, 0.2, 0.2, 0.25, 0.3, 0.3, 0.35, 0.4, 0.4, 0.5, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.2, 1.5, 1.8, 2.5, 3.0]"
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-mean",
+    "href": "1-statistics/slides.html#class-data-mean",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Mean",
+    "text": "💻 Class Data: Mean\n\n\n🎯 Checkpoint 3: Calculate the mean of the class nitrate and nitrite data.\n\n\nReplace the ??? placeholders (Lines 3 & 4) with the variables that hold the class nitrate and nitrite data. That is, class_nitrate and class_nitrite, respectively.\nClick the ▶️ Run Code button to run the block.\n\n# Calculate mean nitrate and nitrite for class data (replace the ???)\n\nmean_class_nitrate = np.mean(???)\nmean_class_nitrite = np.mean(???)\n\nprint(\"Class nitrate:\", mean_class_nitrate, \"mg/L\")\nprint(\"Class nitrite:\", mean_class_nitrite, \"mg/L\")"
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-mean-1",
+    "href": "1-statistics/slides.html#class-data-mean-1",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Mean",
+    "text": "💻 Class Data: Mean\n\n\n🎯 Checkpoint 3: Calculate the class nitrate and nitrite means.\n\n\nReplace the ??? placeholders (Lines 3 & 4) with the variables that hold the class nitrate and nitrite data. That is, class_nitrate and class_nitrite, respectively.\nClick the ▶️ Run Code button to run the block.\n\n\n# Calculate mean nitrate and nitrite for class data (replace the ???)\n\nmean_class_nitrate = np.mean(class_nitrate)\nmean_class_nitrite = np.mean(class_nitrite)\n\nprint(\"Class nitrate:\", mean_class_nitrate, \"mg/L\")\nprint(\"Class nitrite:\", mean_class_nitrite, \"mg/L\")\n\nClass nitrate: 7.58 mg/L\nClass nitrite: 0.71 mg/L\n\n\nYour answers will differ. This is example data."
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-median",
+    "href": "1-statistics/slides.html#class-data-median",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Median",
+    "text": "💻 Class Data: Median\n\n\n🎯 Checkpoint 4: Calculate the class nitrate and nitrite medians.\n\n\nSimilarly, replace ??? with the correct variable names to calculate the median for the class nitrate and nitrite data.\nClick the ▶️ Run Code button to run the block.\n\n# Calculate median nitrate and nitrite for class data (replace the ???)\n\nmedian_class_nitrate = np.median(???)\nmedian_class_nitrite = np.median(???)\n\nprint(\"Class nitrate:\", median_class_nitrate, \"mg/L\")\nprint(\"Class nitrite:\", median_class_nitrite, \"mg/L\")"
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-median-1",
+    "href": "1-statistics/slides.html#class-data-median-1",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Median",
+    "text": "💻 Class Data: Median\n\n\n🎯 Checkpoint 4: Calculate the class nitrate and nitrite medians.\n\n\nSimilarly, replace ??? with the correct variable names to calculate the median for the class nitrate and nitrite data.\nClick the ▶️ Run Code button to run the block.\n\n\n# Calculate median nitrate and nitrite for class data (replace the ???)\n\nmedian_class_nitrate = np.median(class_nitrate)\nmedian_class_nitrite = np.median(class_nitrite)\n\nprint(\"Class nitrate:\", median_class_nitrate, \"mg/L\")\nprint(\"Class nitrite:\", median_class_nitrite, \"mg/L\")\n\nClass nitrate: 6.5 mg/L\nClass nitrite: 0.4 mg/L\n\n\nYour answers will differ. This is example data."
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-measures-of-spread",
+    "href": "1-statistics/slides.html#python-measures-of-spread",
+    "title": "Workshop #1",
+    "section": "Python: Measures of Spread",
+    "text": "Python: Measures of Spread\n\n\nSpread is a second type of statistical measure.\nLike it sounds, it tells us how spread out our data are.\nSpread, also referred to as variability, is the backbone of statistics!\n\nRange\nThe range is a fairly simple calculation. It’s the maximum minus the minimum in a dataset.\n\nmax() - min()\n\n\n# Same sample dataset\nsample_data = [1, 2, 6, 5, 1]\n\nsample_range = max(sample_data) - min(sample_data)\n\nprint(\"Range of sample data:\", sample_range)\n\nRange of sample data: 5"
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-measures-of-spread-1",
+    "href": "1-statistics/slides.html#python-measures-of-spread-1",
+    "title": "Workshop #1",
+    "section": "💻 Python: Measures of Spread",
+    "text": "💻 Python: Measures of Spread\n\nRange: Your Turn!\n\n🎯 Checkpoint 5: Calculate the range of your class’s nitrate and nitrite readings.\n\n\nReplace ??? with the correct variable names to calculate the ranges of the data.\nClick the ▶️ Run Code button to run the block.\n\nclass_nitrate_range = max(???) - min(???)\nclass_nitrite_range = max(???) - min(???)\n\nprint(\"Range of class nitrate data:\", class_nitrate_range)\nprint(\"Range of class nitrite data:\", class_nitrite_range)"
+  },
+  {
+    "objectID": "1-statistics/slides.html#python-measures-of-spread-2",
+    "href": "1-statistics/slides.html#python-measures-of-spread-2",
+    "title": "Workshop #1",
+    "section": "💻 Python: Measures of Spread",
+    "text": "💻 Python: Measures of Spread\n\nRange: Your Turn!\n\n🎯 Checkpoint 5: Calculate the range of your class’s nitrate and nitrite readings.\n\n\nReplace ??? with the correct variable names to calculate the ranges of the data.\nClick the ▶️ Run Code button to run the block.\n\n\nclass_nitrate_range = max(class_nitrate) - min(class_nitrate)\nclass_nitrite_range = max(class_nitrite) - min(class_nitrite)\n\nprint(\"Range of class nitrate data:\", class_nitrate_range)\nprint(\"Range of class nitrite data:\", class_nitrite_range)\n\nRange of class nitrate data: 22.0\nRange of class nitrite data: 3.0\n\n\nYour answers will differ. This is example data."
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-range",
+    "href": "1-statistics/slides.html#class-data-range",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Range",
+    "text": "💻 Class Data: Range\n\nRange: Your Turn!\n\n🎯 Checkpoint 5: Calculate the range of your class’s nitrate and nitrite readings.\n\n\nReplace ??? with the correct variable names to calculate the ranges of the data.\nClick the ▶️ Run Code button to run the block.\n\nclass_nitrate_range = max(???) - min(???)\nclass_nitrite_range = max(???) - min(???)\n\nprint(\"Range of class nitrate data:\", class_nitrate_range)\nprint(\"Range of class nitrite data:\", class_nitrite_range)"
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-range-1",
+    "href": "1-statistics/slides.html#class-data-range-1",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Range",
+    "text": "💻 Class Data: Range\n\nRange: Your Turn!\n\n🎯 Checkpoint 5: Calculate the range of your class’s nitrate and nitrite readings.\n\n\nReplace ??? with the correct variable names to calculate the ranges of the data.\nClick the ▶️ Run Code button to run the block.\n\n\nclass_nitrate_range = max(class_nitrate) - min(class_nitrate)\nclass_nitrite_range = max(class_nitrite) - min(class_nitrite)\n\nprint(\"Range of class nitrate data:\", class_nitrate_range)\nprint(\"Range of class nitrite data:\", class_nitrite_range)\n\nRange of class nitrate data: 22.0\nRange of class nitrite data: 3.0\n\n\nYour answers will differ. This is example data."
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-standard-deviation",
+    "href": "1-statistics/slides.html#class-data-standard-deviation",
+    "title": "Workshop #1",
+    "section": "Class Data: Standard Deviation",
+    "text": "Class Data: Standard Deviation\n\nStandard Deviation\n\nThe standard deviation is another measure of spread.\nIt tell us the average distance the data in the dataset is from the mean.\n\n\n🎯 Checkpoint 6: Calculate the standard deviations of theclass nitrate and nitrite data.\n\n\n# Same sample dataset\nsample_data = [1, 2, 6, 5, 1]\n\nsample_stdev = np.std(sample_data)\n\nprint(\"Standard Deviation of sample data:\", sample_stdev)\n\nStandard Deviation of sample data: 2.0976176963403033"
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-standard-deviation-1",
+    "href": "1-statistics/slides.html#class-data-standard-deviation-1",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Standard Deviation",
+    "text": "💻 Class Data: Standard Deviation\n\nStandard Deviation: Your Turn!\n\n🎯 Checkpoint 6: Find the standard deviation of the class nitrate and nitrite data.\n\n\nReplace ??? with the correct variable names to calculate the standard deviations of the data.\nClick the ▶️ Run Code button to run the block.\n\nclass_nitrate_stdev = np.std(???)\nclass_nitrite_stdev = np.std(???)\n\nprint(\"Standard deviation of class nitrate data:\", class_nitrate_stdev)\nprint(\"Standard deviation of class nitrite data:\", class_nitrite_stdev)"
+  },
+  {
+    "objectID": "1-statistics/slides.html#class-data-standard-deviation-2",
+    "href": "1-statistics/slides.html#class-data-standard-deviation-2",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Standard Deviation",
+    "text": "💻 Class Data: Standard Deviation\n\nStandard Deviation: Your Turn!\n\n🎯 Checkpoint 6: Find the standard deviation of the class nitrate and nitrite data.\n\n\nReplace ??? with the correct variable names to calculate the standard deviations of the data.\nClick the ▶️ Run Code button to run the block.\n\n\nclass_nitrate_stdev = np.std(class_nitrate)\nclass_nitrite_stdev = np.std(class_nitrite)\n\nprint(\"Standard deviation of class nitrate data:\", class_nitrate_stdev)\nprint(\"Standard deviation of class nitrite data:\", class_nitrite_stdev)\n\nStandard deviation of class nitrate data: 5.40865972307373\nStandard deviation of class nitrite data: 0.7532595834106592\n\n\nYour answers will differ. This is example data."
+  },
+  {
+    "objectID": "1-statistics/slides.html#what-could-cause-high-variability",
+    "href": "1-statistics/slides.html#what-could-cause-high-variability",
+    "title": "Workshop #1",
+    "section": "❓ What Could Cause High Variability?",
+    "text": "❓ What Could Cause High Variability?\n\nIf a creek’s reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:\n\nPollution events - A factory dumps waste occasionally\nStorm runoff - Rain washes fertilizer from farms into the creek\nNatural cycles - Some creeks naturally vary\nSensor problems - The equipment might need calibration\nDifferent sampling times - Morning vs afternoon can be different"
+  },
+  {
+    "objectID": "1-statistics/slides.html#causes-of-high-variability",
+    "href": "1-statistics/slides.html#causes-of-high-variability",
+    "title": "Workshop #1",
+    "section": "❓ Causes of High Variability",
+    "text": "❓ Causes of High Variability\n\nIf a creek’s reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:\n\nPollution events - A factory dumps waste occasionally\nStorm runoff - Rain washes fertilizer from farms into the creek\nNatural cycles - Some creeks naturally vary\nSensor problems - The equipment might need calibration\nDifferent sampling times - Morning vs afternoon can be different"
   }
 ]
