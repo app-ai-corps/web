@@ -38,6 +38,9 @@ jobs:
           # Render the water-quality module separately with its own config
           cd modules/water-quality
           quarto render
+
+          # ALSO RENDER SLIDES EXPLICITLY (new addition)
+          find . -name "slides.qmd" -exec quarto render {} --to revealjs \;
           
           # Copy the rendered module output to the main site output
           cp -r _site/* ../../_site/modules/water-quality/
