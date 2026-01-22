@@ -20,7 +20,6 @@ format: live-html
   - Outliers  
 - Data visualization:  
   - Boxplots  
-  - Histograms  
 
 :::
 
@@ -45,7 +44,8 @@ plant populations from various kinds of human activity.
 ## Lesson Overview Video Tour
 
 ## Slide Deck for Lesson
-<a href="https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html" target="_blank" rel="nofollow noopener noreferrer">Workshop #1 Slides</a>
+[Workshop #1 Slides](https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html){rel="noopener noreferrer"}
+<!-- <a href="https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html" target="_blank" rel="nofollow noopener noreferrer">Workshop #1 Slides</a> -->
 
 ## Handout for Lesson
 
@@ -90,7 +90,7 @@ Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dro
 
 #### 4. Create and Share Link for Nitrates Lab Data Collection
  - Make sure you are logged into your school Google Account
- - Use [this link](https://docs.google.com/forms/d/1xfxu1m-vVqFbG0K70ndde9DHtzwFCPIeKQsYvaR5IyQ/copy) to make a copy of the Nitrate/Nitrite Lab Google Form
+ - Use [this link](https://docs.google.com/forms/d/1xfxu1m-vVqFbG0K70ndde9DHtzwFCPIeKQsYvaR5IyQ/copy){rel="noopener noreferrer"} to make a copy of the Nitrate/Nitrite Lab Google Form
  - Open your copy of the Nitrate/Nitrite Lab Google Form. Publish the formDouble check the sharing settings to make sure all of your students can respond.  
 ![](images/check-sharing-settings-google-form.png){width="50%"}
 - While on the sharing settings, copy the respondent link and be prepared to share this link with your students, probably via email or your LMS. Close the sharing settings.
@@ -104,6 +104,16 @@ Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dro
 #### 5. Use paper matching the colors of the sticky notes to create group tents
 
 ## Lesson Overview & Takeaways
+By the end of the lesson, students will be able to:
+  - Write and run a basic python script that includes:
+    - strings
+    - mathematical operators
+    - statistics functions
+    - print statements
+    - lists
+  - Explain, at a high level, the role of nitrogen in water quality evaluations
+  - Carry out procedures to collect and interpret data concerning nitrate and nirite concentrations from a water quality test
+  - Construct boxplots, manually and computationally, to visualize water quality data
 
 ## Reference Materials
 
