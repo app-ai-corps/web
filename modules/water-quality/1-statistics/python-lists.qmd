@@ -47,17 +47,17 @@ print("Our sample data:", sample_data)
 :::{#lst-groupreadings}
 
 :::{.dkorange-container}
-Replace the 10, 20, 30, and 40 placeholders with the nitrate and nitrite readings from your group!
+Replace the `??`, `??`, `??`, and `??` placeholders with the nitrate and nitrite readings from your group!
 
 Click the ▶️ Run Code button to run the block.
 :::
 ```{pyodide}
 #| persist: true
 # Create a list of your group's nitrate and nitrite readings!
-# Change the 10, 20, 30, 40 to your group's real values
+# Change the ??, ??, ??, ?? to your group's real values
 
-group_nitrate = [10, 20, 30, 40]
-group_nitrite = [10, 20, 30, 40]
+group_nitrate = [??, ??, ??, ??]
+group_nitrite = [??, ??, ??, ??]
 
 print("My group's nitrate readings:", group_nitrate)
 print("My group's nitrite readings:", group_nitrite)

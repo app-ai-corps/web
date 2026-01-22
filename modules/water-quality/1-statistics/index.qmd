@@ -8,7 +8,7 @@ sidebar: lesson-1
 
 ::: {.gray-container}
 
-**Lesson Objective:** In this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate nitrates and nitrates in water quality samples.
+**Lesson Objective:** In this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate nitrates and nitrates in water samples.
 
 **Materials Needed:**  
 - Your computer  
@@ -118,13 +118,13 @@ We can also ask Python to **compare values**:
 :::{.dkorange-container}
 Click the ▶️ Run Code button to run the blocks.
 :::
-This code asks "Is the sum of 2 and 3 greater than or equal to the product of 2 and 3?"
+This code states "The sum of 2 and 3 is greater than or equal to the product of 2 and 3."
 ```{pyodide}
 #| completion: false
 2 + 3 >= 2 * 3
 ```
 
-This code asks "Is the sum of 2 and 3 less than or equal to the product of 2 and 3?"
+This code states "The sum of 2 and 3 is less than or equal to the product of 2 and 3."
 ```{pyodide}
 #| completion: false
 2 + 3 <= 2 * 3

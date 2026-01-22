@@ -73,15 +73,13 @@ if mean_nitrate < 10:
     print("✓ Average nitrate is SAFE")
 else:
     print("✗ Average nitrate is TOO HIGH")
-
-# Try changing the numbers and see what happens!
 ```
 
 Calculate and check your group's mean nitrate concentration.
 :::
 
 <b> Class Data </b>  
-One of the benefits of using Python is that is can handle much larger amount amounts of data with ease. For example, let's consider the nitrate and nitrite data your whole class collected. We'll do that by importing the data collected in the Google Form. That form sends the data to a spreadsheet, or CSV (comman separated values) file.
+One of the benefits of using Python is that it can handle much larger amount amounts of data with ease. For example, let's consider the nitrate and nitrite data your whole class collected. We'll do that by importing the data collected in the Google Form. That form sends the data to a spreadsheet, or CSV (comman separated values) file.
 
 :::{#lst-getcsv}
 
@@ -108,8 +106,8 @@ def load_class_data(csv_url):
     next(reader)  # Skip header
     rows = list(reader)
     
-    class_nitrate = [int(row[3]) for row in rows]
-    class_nitrite = [int(row[4]) for row in rows]
+    class_nitrate = [float(row[3]) for row in rows]
+    class_nitrite = [float(row[4]) for row in rows]
     
     return class_nitrate, class_nitrite
 ```
@@ -133,7 +131,7 @@ Import your whole class's nitrate and nitrite data.
 
 #### Your Turn: Calculate the Class Nitrate and Nitrite Mean
 
-Using the code written to calculate the mean for your group's nitrate data, modify it to calculate the class nitrate and nitrite means.
+Use the code written to calculate the mean for your class's nitrate and nitrite data.
 
 :::{#lst-classmeannitratenitrite}
 
@@ -227,7 +225,7 @@ Find the range of the class nitrate and nitrite data.
 
 ### Standard Deviation
 
-The standard deviation tells us how spread out the numbers are from the mean. Put diffently, it tells us the average distance the data in the dataset is from the mean. The formula looks a bit technical:
+The standard deviation tells us how spread out the numbers are from the mean. Put diffently, it tells us the average distance the data in the dataset is from the mean.
 
 Here is an example of calculating the standard deviation using our sample dataset:
 
@@ -252,8 +250,8 @@ Click the ▶️ Run Code button to run the block.
 class_nitrate_stdev = np.std(???)
 class_nitrite_stdev = np.std(???)
 
-print("Standard Deviation of class nitrate data:", class_nitrate_stdev)
-print("Standard Deviation of class nitrite data:", class_nitrite_stdev)
+print("Standard deviation of class nitrate data:", class_nitrate_stdev)
+print("Standard deviation of class nitrite data:", class_nitrite_stdev)
 ```
 
 Find the standard deviation of the class nitrate and nitrite data.

@@ -1,0 +1,205 @@
+/*-- scss:defaults --*/
+
+//Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+//Fonts
+$font-family-sans-serif: 'Montserrat', sans-serif !default;
+
+//Slide Headings
+$presentation-heading-font: "Tinos", serif !default;
+$presentation-heading-color: #006C93 !default;
+$subheading-font: "Montserrat", sans-serif !default;
+$subheading-color: #006C93 !default;
+
+//Colors
+$orange: #FF8200;
+$white: #FFFFFF;
+$gray: #4B4B4B;
+$valley: #00746F;
+$torch: #E65933;
+$globe: #006C93;
+$limestone: #F0EDE3;
+$sunsphere: #FED535;
+$river: #517C96;
+$leconte: #8D2048;
+$rock: #A7A9AC;
+$summit: #B9E1E2;
+$legacy: #579584;
+$buckskin: #705550;
+$switchgrass: #ABC178;
+$regalia: #754A7E;
+$fountain: #2197A9;
+$eureka: #EBEA64;
+$energy: #EE3E80;
+
+//Font Color Classes
+.valley-color {
+  color: #00746F;
+}
+
+.globe-color {
+  color: #006C93;
+}
+
+.river-color{
+  color: #517C96;
+}
+
+.leconte-color{
+  color: #8D2048;
+}
+
+.rock-color{
+  color: #A7A9AC;
+}
+
+.summit-color{
+  color: #B9E1E2;
+}
+
+.legacy-color{
+  color: #579584;
+}
+
+.buckskin-color{
+  color: #705550;
+}
+
+.switchgrass-color{
+  color: #ABC178;
+}
+
+.regalia-color{
+  color: #754A7E;
+}
+
+.fountain-color{
+  color: #2197A9;
+}
+
+.eureak-color{
+  color: #EBEA64;
+}
+
+.energy-color{
+  color: #EE3E80;
+}
+
+// Title Slide
+#title-slide {
+  .title {
+    font-size: 2em;
+    color: $eureka;
+  }
+  .subtitle {
+    color: $white;
+  }
+  .quarto-title-author {
+    color: $summit;
+  }
+}
+
+// Base Document colors
+$link-color: $fountain;
+$link-color-hover: $valley;
+
+.center {
+  text-align: center;
+}
+
+// horizontal line
+hr { 
+  border: 3px solid $eureka;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+// norms font
+.compact-font{
+  line-height: 1em;
+  font-size: 0.6em;
+};
+
+.sixtypt-font{
+  font-size: 60px;
+}
+
+.thirtyfourpt-font{
+  font-size: 34px;
+}
+
+.twentyeightpt-font{
+  font-size: 28px;
+}
+
+.twentyfourpt-font{
+  font-size: 24px;
+}
+
+.eighteenpt-font{
+  font-size: 18px;
+}
+
+.twelvept-font{
+  font-size: 12px;
+}
+
+.tenpt-font{
+  font-size: 10px;
+}
+
+.date {
+    color: $energy;
+    font-size: 0.9em;
+}
+
+figcaption {
+  font-size: 0.1em; /* Adjust the size as needed */
+  color: #666666; /* Optional: adjust the color */
+}
+
+.gray-container {
+  width: 90%;
+  margin: 10px auto;
+  background-color: #f5f5f5;
+  padding: 15px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+.ltblue-container {
+  width: 100%;
+  margin: 10px auto;
+  background-color: #f1f9f9;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #dcdcdc;
+  border-style: solid;
+  font-size: 0.6em;
+}
+
+.ltorange-container {
+  width: 75%;
+  margin: 10px auto;
+  background-color: #F9F0E6;
+  padding: 15px 10px 5px 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #dcdcdc;
+  border-style: solid;
+  text-align: center;
+}
+
+.dkorange-container {
+  width: 100%;
+  margin: 10px auto;
+  background-color: #fdf5f2;
+  padding: 5px 10px 1px 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #e8542e;
+  border-style: solid;
+  font-weight: 600;
+  font-size: 0.6em;
+}
