@@ -1175,6 +1175,8 @@ Click the ▶️ Run Code button to run the block and create a boxplot for the c
 :::
 
 ```python
+import matplotlib.pyplot as plt
+
 plt.figure(figsize=(8, 6))
 plt.boxplot(class_nitrate, vert=True, patch_artist=True,
             boxprops=dict(facecolor='plum'))
@@ -1199,6 +1201,8 @@ Click the ▶️ Run Code button to run the block and create a boxplot for the c
 :::
 
 ```{python}
+import matplotlib.pyplot as plt
+
 plt.figure(figsize=(8, 6))
 plt.boxplot(class_nitrate, vert=True, patch_artist=True,
             boxprops=dict(facecolor='plum'))

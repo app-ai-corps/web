@@ -131,6 +131,7 @@ Click the ▶️ Run Code button to run the block and create a boxplot for the c
 
 ```{pyodide}
 #| completion: false
+
 import matplotlib.pyplot as plt
 
 plt.figure(figsize=(8, 6))
@@ -156,6 +157,7 @@ Click the ▶️ Run Code button to run the block and create a boxplot for the c
 
 ```{pyodide}
 #| completion: false
+
 plt.figure(figsize=(8, 6))
 plt.boxplot(class_nitrite, vert=True, patch_artist=True,
             boxprops=dict(facecolor='lemonchiffon'))
