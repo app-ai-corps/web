@@ -119,6 +119,10 @@ Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dro
 
 - We have drafted a three-question exit ticket that aligns with the three major content areas of this lesson (Water Quality, Python, and Statistics). We are providing the [Google Form here](https://docs.google.com/forms/d/1ElNPJxW6w3OTOAUHia8L1RF_q2yqebzvwnI18XVjj5Y/copy) if you would like to use it or modify it for your own needs.
 
+#### 7. Create copy of exercise for after-lesson practice.
+
+- We have also created a Google Colab exercise that you can use to practice the concepts covered in this lesson. It is available [here](https://colab.research.google.com/drive/1xm5qwxA6ZCm3BxuTKFL6n1ItlWgR84jM?usp=sharing).
+
 ## Lesson Overview & Takeaways
 
 By the end of the lesson, students will be able to:

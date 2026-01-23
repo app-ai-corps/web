@@ -57,8 +57,8 @@ website:
         - text: "8. Exit Ticket"
           href: https://forms.gle/k4P6FK6BpnusNMyZ9
         - text: "---"
-        - text: "Optional Exercises"
-          href: 1-statistics/exercises
+        - text: "Optional Exercise"
+          href: https://colab.research.google.com/drive/1xm5qwxA6ZCm3BxuTKFL6n1ItlWgR84jM?usp=sharing
 
 
 format:
