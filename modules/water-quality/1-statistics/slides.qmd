@@ -1177,7 +1177,7 @@ Click the ▶️ Run Code button to run the block and create a boxplot for the c
 ```python
 import matplotlib.pyplot as plt
 
-plt.figure(figsize=(8, 6))
+plt.figure(figsize=(7, 6))
 plt.boxplot(class_nitrate, vert=True, patch_artist=True,
             boxprops=dict(facecolor='plum'))
 plt.ylabel('Nitrate (mg/L)', fontsize=12)
@@ -1205,7 +1205,7 @@ Click the ▶️ Run Code button to run the block and create a boxplot for the c
 ```python
 import matplotlib.pyplot as plt
 
-plt.figure(figsize=(8, 6))
+plt.figure(figsize=(7, 6))
 plt.boxplot(class_nitrate, vert=True, patch_artist=True,
             boxprops=dict(facecolor='plum'))
 plt.ylabel('Nitrate (mg/L)', fontsize=12)
@@ -1220,7 +1220,7 @@ plt.show()
 #| echo: false
 import matplotlib.pyplot as plt
 
-plt.figure(figsize=(8, 6))
+plt.figure(figsize=(7, 6))
 plt.boxplot(class_nitrate, vert=True, patch_artist=True,
             boxprops=dict(facecolor='plum'))
 plt.ylabel('Nitrate (mg/L)', fontsize=12)
@@ -1246,7 +1246,7 @@ Click the ▶️ Run Code button to run the block and create a boxplot for the c
 :::
 
 ```python
-plt.figure(figsize=(8, 6))
+plt.figure(figsize=(7, 6))
 plt.boxplot(class_nitrite, vert=True, patch_artist=True,
             boxprops=dict(facecolor='lemonchiffon'))
 plt.ylabel('Nitrite (mg/L)', fontsize=12)
@@ -1272,7 +1272,7 @@ Click the ▶️ Run Code button to run the block and create a boxplot for the c
 :::{.columns}
 :::{.column}
 ```python
-plt.figure(figsize=(8, 6))
+plt.figure(figsize=(7, 6))
 plt.boxplot(class_nitrite, vert=True, patch_artist=True,
             boxprops=dict(facecolor='lemonchiffon'))
 plt.ylabel('Nitrite (mg/L)', fontsize=12)
@@ -1285,7 +1285,7 @@ plt.show()
 :::{.column}
 ```{python}
 #| echo: false
-plt.figure(figsize=(8, 6))
+plt.figure(figsize=(7, 6))
 plt.boxplot(class_nitrite, vert=True, patch_artist=True,
             boxprops=dict(facecolor='lemonchiffon'))
 plt.ylabel('Nitrite (mg/L)', fontsize=12)
@@ -1299,9 +1299,9 @@ plt.show()
 
 ## Outliers
 <hr>
-**Outliers** are data points that are very different from the rest of your data.
-- Can really change your statistics—like mean and standard deviation.
-- On boxplots, outliers are represented by a circle (or sometimes a star) beyond the whiskers.
+**Outliers** are data points that are very different from the rest of your data.  
+- Can really change your statistics—like mean and standard deviation.  
+- On boxplots, outliers are represented by a circle (or sometimes a star) beyond the whiskers.  
 <br>
 <br>
 <br>
@@ -1311,6 +1311,7 @@ plt.show()
 <hr>
 Outliers can happen for different reasons:
 
+:::incremental
 1. **Buoy Malfunction** 🔧  
 2. **Real Pollution Event** 🚨  
     - Factory dumped chemicals into the stream
@@ -1322,6 +1323,8 @@ Outliers can happen for different reasons:
     - Seasonal variation  
 
 **Your job as a scientist:** Figure out which reason it is!
+:::
+
 
 # 🎟️<br>Exit Ticket
 
