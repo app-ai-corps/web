@@ -1177,7 +1177,7 @@ Click the ▶️ Run Code button to run the block and create a boxplot for the c
 ```python
 import matplotlib.pyplot as plt
 
-plt.figure(figsize=(7, 6))
+plt.figure(figsize=(6, 6))
 plt.boxplot(class_nitrate, vert=True, patch_artist=True,
             boxprops=dict(facecolor='plum'))
 plt.ylabel('Nitrate (mg/L)', fontsize=12)
@@ -1205,7 +1205,7 @@ Click the ▶️ Run Code button to run the block and create a boxplot for the c
 ```python
 import matplotlib.pyplot as plt
 
-plt.figure(figsize=(7, 6))
+plt.figure(figsize=(6, 6))
 plt.boxplot(class_nitrate, vert=True, patch_artist=True,
             boxprops=dict(facecolor='plum'))
 plt.ylabel('Nitrate (mg/L)', fontsize=12)
@@ -1220,7 +1220,7 @@ plt.show()
 #| echo: false
 import matplotlib.pyplot as plt
 
-plt.figure(figsize=(7, 6))
+plt.figure(figsize=(6, 6))
 plt.boxplot(class_nitrate, vert=True, patch_artist=True,
             boxprops=dict(facecolor='plum'))
 plt.ylabel('Nitrate (mg/L)', fontsize=12)
@@ -1246,7 +1246,7 @@ Click the ▶️ Run Code button to run the block and create a boxplot for the c
 :::
 
 ```python
-plt.figure(figsize=(7, 6))
+plt.figure(figsize=(6, 6))
 plt.boxplot(class_nitrite, vert=True, patch_artist=True,
             boxprops=dict(facecolor='lemonchiffon'))
 plt.ylabel('Nitrite (mg/L)', fontsize=12)
@@ -1272,7 +1272,7 @@ Click the ▶️ Run Code button to run the block and create a boxplot for the c
 :::{.columns}
 :::{.column}
 ```python
-plt.figure(figsize=(7, 6))
+plt.figure(figsize=(6, 6))
 plt.boxplot(class_nitrite, vert=True, patch_artist=True,
             boxprops=dict(facecolor='lemonchiffon'))
 plt.ylabel('Nitrite (mg/L)', fontsize=12)
@@ -1285,7 +1285,7 @@ plt.show()
 :::{.column}
 ```{python}
 #| echo: false
-plt.figure(figsize=(7, 6))
+plt.figure(figsize=(6, 6))
 plt.boxplot(class_nitrite, vert=True, patch_artist=True,
             boxprops=dict(facecolor='lemonchiffon'))
 plt.ylabel('Nitrite (mg/L)', fontsize=12)
