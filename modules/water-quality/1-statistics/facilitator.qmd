@@ -7,8 +7,9 @@ format: live-html
 ::: {.callout-note collapse="true"}
 ## **Topics Covered:**  
 
-- Water quality and water safety in the community  
+- Water quality  
   - Nitrates  
+  - Nitrites  
 - Introduction to Python programming 
 - Summary statistics:  
   - Measures of center:  
