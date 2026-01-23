@@ -48,6 +48,7 @@ plant populations from various kinds of human activity.
 <a href="https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html" target="_blank" rel="nofollow noopener noreferrer">Workshop #1 Slides</a>
 
 ## Student Handout
+You can make a copy of the student handout for this module [here](https://docs.google.com/document/d/1Oc6QdS_XJ--WyFC83-kmh5iWaKRTFvEh3kUxyyw8ylA/copy).
 
 ## Lesson Prep
 
@@ -97,7 +98,8 @@ Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dro
     - We pre-drew the axis on the page due to time limitations  
   - 1 poster marker per group  
   
-#### 3. Make Copies: 1 Lab Handout Per Student
+#### 3. Make Copies: 1 Handout Per Student
+- You will need to make 1 copy per student of the [workshop handout](https://docs.google.com/document/d/1Oc6QdS_XJ--WyFC83-kmh5iWaKRTFvEh3kUxyyw8ylA/copy). If color-copying is not possible, make sure to have the color key for the nitrate/nitrite test strip available for each group. One possibility would be to print the test strip key for each group and laminate it for repeated use.
 
 #### 4. Create and Share Link for Nitrates Lab Data Collection
 
@@ -121,7 +123,7 @@ Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dro
 
 #### 7. Create copy of exercise for after-lesson practice.
 
-- We have also created a Google Colab exercise that you can use to practice the concepts covered in this lesson. It is available [here](https://colab.research.google.com/drive/1xm5qwxA6ZCm3BxuTKFL6n1ItlWgR84jM?usp=sharing).
+- We have also created a Google Colab exercise that you can use with students to practice the concepts covered in this lesson. It is available [here](https://colab.research.google.com/drive/1xm5qwxA6ZCm3BxuTKFL6n1ItlWgR84jM?usp=sharing).
 
 ## Lesson Overview & Takeaways
 

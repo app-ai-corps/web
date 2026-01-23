@@ -1331,7 +1331,7 @@ Outliers can happen for different reasons:
 <br>
 <br>
 <center>
-[🎉 Great job! You've learned so much!<br>Share what you've learned on the [**Exit Ticket**](exit-ticket).]{.thirtyfourpt-font}
+[🎉 Great job! You've learned so much!<br>Share what you've learned on the [**Exit Ticket**](https://forms.gle/k4P6FK6BpnusNMyZ9).]{.thirtyfourpt-font}
 </center>
 
 # 🧠<br>Exercises
@@ -1342,5 +1342,5 @@ Outliers can happen for different reasons:
 <br>
 <br>
 <center>
-[Want to practice what we've learned?<br>Try the [**Exercises**](exercises).]{.thirtyfourpt-font}
+[Want to practice what we've learned?<br>Try the [**Exercises**](https://colab.research.google.com/drive/1xm5qwxA6ZCm3BxuTKFL6n1ItlWgR84jM?usp=sharing).]{.thirtyfourpt-font}
 </center>
