@@ -50,7 +50,7 @@ Learn mean, median, range, standard deviation, and outliers using nitrate/nitrit
 
 <br>
 
-[**Teacher/Facilitator Guide**](1-statistics/facilitator){.facilitator}
+[**Slides & Facilitator Guide**](1-statistics/facilitator){.facilitator}
 
 :::
 
