@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>What Computers See — RGB demo</title>
+
+  <!-- p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin: 12px; color: #222; }
+    h1 { font-size: 18px; margin: 6px 0 10px; }
+    #controls { width: 740px; display:flex; flex-direction:column; gap:6px; margin-bottom:8px;}
+    .radio-row { display:flex; justify-content:space-between; align-items:center; width:740px; }
+    .left-label, .right-label { width:48%; }
+    .left-label { text-align:left; }
+    .right-label { text-align:right; }
+    #channelRow { display:flex; justify-content:flex-end; width:740px; }
+    #channelSelect { margin-left:8px; }
+    canvas { border: 1px solid #ddd; display:block; }
+    .hint { font-size:13px; color:#666; margin-top:8px; max-width:740px;}
+  </style>
+</head>
+<body>
+  <h1>What Computers Actually See — RGB demo</h1>
+
+  <div id="controls">
+    <div class="radio-row">
+      <label class="left-label"><input type="radio" name="view" id="viewHumans" value="humans" checked> What humans see</label>
+      <label class="right-label"><input type="radio" name="view" id="viewComputers" value="computers"> What computers see</label>
+    </div>
+
+    <div id="channelRow">
+      <label>Channel:
+        <select id="channelSelect">
+          <option value="red" selected>Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
+
+  <script>
+    let capture;
+    let CAPTURE_W = parseInt(320/3);
+    let CAPTURE_H = parseInt(240/3);
+
+    let useVideo = true;
+    let isPaused = false;
+
+    let sw = 25, sh = 25;
+    let sx = parseInt(CAPTURE_W/2 - sw/2), sy = parseInt(CAPTURE_H/2 - sh/2);
+
+    let boxSize = 25;
+    let moveSpeed = 0.2;
+    let fontSize = 10;
+
+    const BIG_X_OFFSET = 120;
+    const BIG_Y = 50;
+
+    function preload() {
+      if (useVideo) {
+        capture = createCapture(VIDEO);
+        capture.size(CAPTURE_W, CAPTURE_H);
+        capture.hide();
+      } else {
+        capture = loadImage('face.png');
+      }
+    }
+
+    function setup() {
+      createCanvas(800, 600);
+      pixelDensity(1);
+      fontSize = calculateTextSizeFor(boxSize);
+    }
+
+    function draw() {
+      background(255);
+
+      if (capture) {
+        capture.loadPixels();
+      }
+
+      // UI state
+      const viewSelected = document.querySelector('input[name="view"]:checked')?.value || 'humans';
+      const channel = document.getElementById('channelSelect')?.value || 'red';
+
+      const bigW = sw * boxSize;
+      const bigH = sh * boxSize;
+      const bigX = BIG_X_OFFSET;
+      const bigY = BIG_Y;
+
+      if (capture) {
+        image(capture, bigX, bigY, bigW, bigH);
+      } else {
+        noFill();
+        stroke(200);
+        rect(bigX, bigY, bigW, bigH);
+      }
+
+      if (viewSelected === 'computers') {
+        displayZoomedBox(capture, sx, sy, sw, sh, bigX, bigY, boxSize, channel);
+      }
+
+      if (mouseIsPressed) {
+        if (mouseX >= bigX && mouseX <= bigX + bigW && mouseY >= bigY && mouseY <= bigY + bigH) {
+          const scale = bigW / capture.width;
+          const mouseX_rel = (mouseX - bigX) / scale;
+          const mouseY_rel = (mouseY - bigY) / scale;
+
+          let xdiff = (sx + sw) - mouseX_rel;
+          let ydiff = (sy + sh) - mouseY_rel;
+          sx -= xdiff * moveSpeed;
+          sy -= ydiff * moveSpeed;
+          sx = constrain(sx, 0, capture.width - sw);
+          sy = constrain(sy, 0, capture.height - sh);
+        }
+      }
+    }
+
+    function keyPressed() {
+      if (key === 'p') {
+        if (isPaused) {
+          if (capture && capture.elt && capture.elt.play) capture.elt.play();
+          isPaused = false;
+        } else {
+          if (capture && capture.elt && capture.elt.pause) capture.elt.pause();
+          isPaused = true;
+        }
+      }
+    }
+
+
+    function displayZoomedBox(img, sx, sy, sw, sh, tx, ty, boxSize, channel) {
+      textSize(fontSize);
+      textAlign(CENTER, CENTER);
+
+      if (!img || !img.pixels) return;
+      sx = parseInt(sx); sy = parseInt(sy);
+
+      img.loadPixels();
+      for (let px = 0; px < sw; px++) {
+        for (let py = 0; py < sh; py++) {
+          let i = ((sx + px) + (sy + py) * img.width) * 4;
+          let r = img.pixels[i + 0];
+          let g = img.pixels[i + 1];
+          let b = img.pixels[i + 2];
+
+          const drawX = tx + px * boxSize;
+          const drawY = ty + py * boxSize;
+
+          let fr = 0, fg = 0, fb = 0;
+          let val = 0;
+          if (channel === 'red') {
+            fr = r; val = r;
+          } else if (channel === 'green') {
+            fg = g; val = g;
+          } else { // blue
+            fb = b; val = b;
+          }
+
+          noStroke();
+          fill(fr, fg, fb);
+          square(drawX, drawY, boxSize);
+
+          const luminance = 0.299 * fr + 0.587 * fg + 0.114 * fb;
+          const textColor = (luminance > 160) ? 0 : 255;
+          fill(textColor);
+          text(val, drawX + boxSize / 2, drawY + boxSize / 2);
+        }
+      }
+
+      noStroke();
+      fill(0);
+      textSize(12);
+      textAlign(LEFT, CENTER);
+      text(`Computers — ${channel.toUpperCase()} channel`, tx, ty - 18);
+
+      noFill();
+      stroke(0,0,0,50);
+      rect(tx - 2, ty - 2, sw * boxSize + 4, sh * boxSize + 4);
+    }
+
+    function calculateTextSizeFor(boxSize) {
+      let pt = 6;
+      textSize(pt);
+      while (textWidth("255") < boxSize - 2 && pt < 40) {
+        pt++;
+        textSize(pt);
+      }
+      return Math.max(6, pt - 1);
+    }
+  </script>
+</body>
+</html>
