@@ -111,7 +111,7 @@ Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dro
 
   - Make sure you are logged into your school Google Account
   - Use [this link](https://docs.google.com/forms/d/1xfxu1m-vVqFbG0K70ndde9DHtzwFCPIeKQsYvaR5IyQ/copy){rel="noopener noreferrer"} to make a copy of the Nitrate/Nitrite Lab Google Form
-  - Open your copy of the Nitrate/Nitrite Lab Google Form. Publish the formDouble check the sharing settings to make sure all of your students can respond.  
+  - Open your copy of the Nitrate/Nitrite Lab Google Form. Publish the form. Double check the sharing settings to make sure all of your students can respond.  
 ![](images/check-sharing-settings-google-form.png){width="50%"}
   - While on the sharing settings, copy the respondent link and be prepared to share this link with your students, probably via email or your LMS. Close the sharing settings.
   - On the "Responses" tab, click "Link to Sheet" > "Create a New Sheet" to aggregate all of the student responses into one spreadsheet.
