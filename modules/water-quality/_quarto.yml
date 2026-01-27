@@ -63,18 +63,18 @@ website:
         - text: "Optional Exercise"
           href: https://colab.research.google.com/drive/1xm5qwxA6ZCm3BxuTKFL6n1ItlWgR84jM?usp=sharing
 
-  sidebar:
-      - title: "Lesson 2: Classification" 
-        id: lesson-2
-        style: "floating"
-        collapse-level: 2
-        align: left
-        contents:
-          - <b>Lesson Contents</b>
-          - text: "1. Overview"
-            href: 2-classification/
-          - text: "2. Intro to Classification"
-            href: 2-classification/intro-classification
+sidebar:
+  - title: "Lesson 2: Classification" 
+    id: lesson-2
+    style: "floating"
+    collapse-level: 2
+    align: left
+    contents:
+      - <b>Lesson Contents</b>
+      - text: "1. Overview"
+        href: 2-classification/
+      - text: "2. Intro to Classification"
+        href: 2-classification/intro-classification
         
 format:
   html:
