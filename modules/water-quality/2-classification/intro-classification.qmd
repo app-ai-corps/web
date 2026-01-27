@@ -1,0 +1,52 @@
+---
+title: "Intro to Classification"
+crossref:
+  lst-title: "🎯 Checkpoint"
+format: live-html
+sidebar: lesson-2
+---
+
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 1:** To Sort or Not to Sort?](#lst-sort)
+- [**Checkpoint 2:** Classifying Before AI](#lst-classifiy-noAI)
+- [**Checkpoint 3:** Classifying With AI](#lst-classify-AI)
+:::
+<hr>
+
+:::{#lst-sort}
+
+:::{.dkorange-container}
+Think of a time that you have had to sort something. Let's discuss!
+
+## Intro to Classification
+Classification is all about sorting things into groups based on what they look like or how they act – something humans have done forever!
+
+### Everyday Classification (Pre-AI Era)
+Think back 100+ years: Farmers classified crops as "healthy" or "sick" by spotting yellow leaves or spots. Biologists like Carl Linnaeus created systems to group animals and plants – Kingdom, Phylum, Class, Order, Family, Genus, Species (e.g., humans are Animalia > Chordata > Mammalia > Primates).
+
+Doctors sorted sicknesses: "fever with rash = maybe measles." Librarians filed books by categories like fiction or science. No computers – just eyes, rulers, keys (like plant ID guides), and experts agreeing (or arguing!).
+
+:::{#lst-classify-noAI}
+
+:::{.dkorange-container}
+Quick Pair-Share: Name something you classify every day without technology. How do humans decide the groups?
+
+### Classification Now with AI
+Today, computers do it super fast using machine learning: Feed thousands of labeled examples (e.g., 500 spam emails marked "bad," 500 good ones "ok"), and the AI learns patterns to label new ones automatically.
+
+Binary: Two groups, like spam/not spam or cat/dog. Multiclass: Many groups, like apple/orange/banana or healthy/sick/wilted corn.
+​
+Pros: Handles millions of items quickly, spots tiny differences we miss. Cons: Needs tons of examples; can goof if data is biased (e.g., only daytime photos).
+​
+Examples: Email filters block junk; photo apps tag "beach" or "mountain"; doctors' tools flag diseases from X-rays; self-driving cars spot "pedestrian" vs. "car."
+
+:::{#lst-classify-AI}
+
+:::{.dkorange-container}
+Quick Poll: Could AI beat a farmer at spotting sick corn leaves? Thumbs up for yes, thumbs down for no. Why?
+
+**Your job as a scientist:** Practice Classifying!!! The next step will involve a classification activity. It will challenge both your ceonceptual understanding of classification, as well as introduce you to classifying with AI!
+
+Click "Classification Activity" to get classifying!
