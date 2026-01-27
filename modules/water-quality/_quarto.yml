@@ -63,7 +63,6 @@ website:
         - text: "Optional Exercise"
           href: https://colab.research.google.com/drive/1xm5qwxA6ZCm3BxuTKFL6n1ItlWgR84jM?usp=sharing
 
-  sidebar:
     - title: "Lesson 2: Classification" 
       id: lesson-2
       style: "floating"
