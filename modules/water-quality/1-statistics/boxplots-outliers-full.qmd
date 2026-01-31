@@ -1,0 +1,204 @@
+---
+title: "Boxplots and Outliers"
+crossref:
+  lst-title: "🎯 Checkpoint 7."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-1
+---
+
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 7.a:** Import Class Data](#lst-getcsv)
+- [**Checkpoint 7.b:** Create Boxplots by Hand](#lst-manualboxplots)
+- [**Checkpoint 7.c:** Create Boxplot for Class Nitrate Data](#lst-classnitrateboxplot)
+- [**Checkpoint 7.d:** Create Boxplot for Class Nitrite Data](#lst-classnitriteboxplot)
+:::
+<hr>
+
+:::{#lst-getcsv}
+
+:::{.dkorange-container}
+Again, replace the placeholder (Line 4) with the CSV URL from your teacher. We need to re-load the class csv data because the webpage doesn't save variables from page-to-page.
+
+Click the ▶️ Run Code button to run the block.
+:::
+
+```{pyodide}
+#| include: false
+import requests
+import csv
+from io import StringIO
+
+def load_class_data(csv_url):
+    response = requests.get(csv_url)
+    reader = csv.reader(StringIO(response.text))
+    next(reader)  # Skip header
+    rows = list(reader)
+    
+    class_nitrate = [float(row[3]) for row in rows]
+    class_nitrite = [float(row[4]) for row in rows]
+    
+    return class_nitrate, class_nitrite
+```
+
+```{pyodide}
+#| persist: true
+#| completion: false
+# Replace the url with the one provided from your teacher. 
+# Make sure to keep the quotation marks!
+
+csv_url = "replace_this_with_your_csv_url"
+
+class_nitrate, class_nitrite = load_class_data(csv_url)
+
+print("Nitrate values:", class_nitrate)
+print("Nitrite values:", class_nitrite)
+```
+
+Once more, import your whole class's nitrate and nitrite data.
+:::
+
+## Visualizing the Data: Boxplots!
+
+A key practice in statistics is to visualize the data! One of the types of plots we can use to do this is a **boxplot**, sometimes referred to as a box and whisker plot. A boxplot requires that we order the data (as if calculating a median) and then then divide the data into four equal groups (by number of observations), called **quartiles**.
+
+### Activity: Boxplots By Hand
+:::{.callout-note}
+## *Data Recorder (Sticky Notes)*
+Grab those sticky notes from the nitrates lab! Sort them by sticky color and pass them out to each group, matching the sticky color to the group's tent color. This will result in each group having a full set of stickies representing the class nitrate data.
+:::
+
+:::{#lst-manualboxplots}
+
+```{pyodide}
+#| include: false
+
+#This is fake to create a checkpoint
+```
+
+As a group, construct a boxplot for the class nitrate data by hand.
+:::
+
+:::{.gray-container}
+<b> Materials Needed: </b>  
+- 1 Post-It grid paper sheet per group  
+- 1 poster marker per group  
+- Your group's full set of stickies (including those collected from other groups) from the nitrate lab  
+
+:::
+
+1. After your groups has received all of its stickies, order your nitrate stickies from least to greatest, in a line across the table/desk.
+
+![](images/ordered_nitrate_stickies.png)
+
+2. Find the median (middle number) for the nitrates data.
+
+![](images/ordered_nitrate_stickies_median.png)
+
+4. At your desk, you will find a large sheet of gridded Post-It paper. The paper has an axis already drawn for the nitrate boxplot. *Draw the median line for the nitrate boxplot.* The median line will form the center of the boxplot.
+
+![](images/boxplot_nitrate_medianline.png)
+
+5. Now, we need to find the first and third quartiles for the nitrites data. To do this, take the bottom half of the data and, similar to finding the median, find the middle number. This is the first quartile. Finding the middle number of the upper half of the data will give you the third quartile.
+
+![](images/ordered_nitrate_stickies_q1.png)
+
+![](images/ordered_nitrate_stickies_q3.png)
+
+6. Draw the line for the first and third quartiles for the nitrates data.
+
+![](images/boxplot_nitrate_quartiles.png)
+
+7. Connect the first and third quartiles to the median line with horizontal lines, thereby creating the "box" portion of the boxplot.
+
+![](images/boxplot_nitrate_box.png)
+
+8. Finally, extend a horizontal line from the first quartile to the minimum value. Draw another horizontal line from the third quartile to the maximum value. These lines form the "whiskers" of the boxplot.
+
+![](images/boxplot_nitrate_whiskers.png)
+
+### Boxplots By Python
+Whew! That was a lot of work. Wouldn't it be great if Python could do it for us? Good news. It can!
+
+#### Class Nitrate Boxplot
+
+:::{#lst-classnitrateboxplot}
+
+:::{.dkorange-container}
+Click the ▶️ Run Code button to run the block and create a boxplot for the class nitrate data.
+:::
+
+```{pyodide}
+#| completion: false
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 6))
+plt.boxplot(class_nitrate, vert=True, patch_artist=True,
+            boxprops=dict(facecolor='plum'))
+plt.ylabel('Nitrate (mg/L)', fontsize=12)
+plt.xticks([])
+plt.title('Boxplot of Class Nitrate', fontsize=13)
+plt.grid(True, alpha=0.3, axis='y')
+plt.show()
+```
+
+Create a boxplot for the class nitrate data.
+:::
+
+#### Class Nitrite Boxplot
+
+:::{#lst-classnitriteboxplot}
+
+:::{.dkorange-container}
+Click the ▶️ Run Code button to run the block and create a boxplot for the class nitrite data.
+:::
+
+```{pyodide}
+#| completion: false
+plt.figure(figsize=(8, 6))
+plt.boxplot(class_nitrite, vert=True, patch_artist=True,
+            boxprops=dict(facecolor='lemonchiffon'))
+plt.ylabel('Nitrite (mg/L)', fontsize=12)
+plt.xticks([])
+plt.title('Boxplot of Class Nitrite', fontsize=13)
+plt.grid(True, alpha=0.3, axis='y')
+plt.show()
+```
+
+Create a boxplot for the class nitrite data.
+:::
+
+## Outliers
+
+**Outliers** are data points that are very different from the rest of your data. They're the "weird" numbers that don't fit the pattern. Outliers can really change your statistics—like mean and standard deviation. On boxplots, outliers are represented by a circle (or sometimes a star) beyond the whiskers.
+
+:::{.callout-important}
+## Does either the nitrate or nitrite boxplot have a circle beyond the whiskers?
+
+If so, the data contains outliers! Python will automatically detect outliers and mark them with a circle.
+:::
+
+### Why Do Outliers Happen?
+
+Outliers can happen for different reasons:
+
+ 1. **Buoy Malfunction** 🔧
+- The buoy glitched or needs calibration
+- The buoy's solar panels are not supplying enough power
+- The buoy was moved or knocked around
+
+ 2. **Real Pollution Event** 🚨
+- Factory dumped chemicals into the stream
+- Farm fertilizer washed in after a storm
+- Sewage spill
+
+ 3. **Natural Event** 🌧️
+- Heavy rain changed water chemistry
+- Algae bloom
+- Seasonal variation
+
+**Your job as a scientist:** Figure out which reason it is!  
+
+

@@ -54,10 +54,12 @@ website:
           href: 1-statistics/python-lists
         - text: "6. Center & Spread"
           href: 1-statistics/center-spread
-        - text: "7. Boxplots & Outliers"
+        - text: "7. Boxplots Activity"
+          href: 1-statistics/boxplots-activity
+        - text: "8. Boxplots & Outliers"
           href: 1-statistics/boxplots-outliers
         - text: "---"
-        - text: "8. Exit Ticket"
+        - text: "9. Exit Ticket"
           href: https://forms.gle/k4P6FK6BpnusNMyZ9
         - text: "---"
         - text: "Optional Exercise"

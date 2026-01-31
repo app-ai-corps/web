@@ -17,7 +17,31 @@ sidebar: lesson-1
 
 ## Let's Analyze Your Data With Python
 
+:::{.ltorange-container}
+**A Reminder of Our Sample Dataset**
+
+1, 2, 6, 5, 1
+:::
+
 ### Lists
+
+In Python, we store multiple numbers in something called a **list**.
+
+```{pyodide}
+#| edit: false
+# Our sample dataset from above 
+# (the square brackets [ ] make it a list)
+
+sample_data = [1, 2, 6, 5, 1]
+
+print("Our sample data:", sample_data)
+```
+
+**Breaking it down:**  
+- `sample_data` = the variable name we gave our list (you can name it anything!)  
+- `=` means "store this in the variable `sample_data`"  
+- `[1, 2, 6, 5, 1]` = the actual numbers, separated by commas  
+- `print()` = tells Python to show us the result  
 
 #### Try It: Make Your Own Lists
 
@@ -44,9 +68,6 @@ print("My group's nitrite readings:", group_nitrite)
 Save your group nitrate and nitrite readings into lists!
 
 :::
-
-<br>
-<br>
 
 ### Basic Operations with Lists
 <hr>
@@ -89,9 +110,6 @@ Explore Basic Operations with Lists!
 - `max()` = maximum (biggest number)  
 
 These are called **functions** - they're like tools that do specific jobs!
-
-<br>
-<br>
 
 ## Checking If Water Is Safe
 

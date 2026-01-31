@@ -17,9 +17,34 @@ sidebar: lesson-1
 - [**Checkpoint 6.f:** Calculate Standard Deviations for Class Data](#lst-classdatastddev)
 :::
 
+As you might have guessed, Python can do much more than just the functions **len()**, **min()**, and **max()**. In fact, it can help us calculate our measures of center!
+
+You have already calculated the mean and median by hand on your lab sheet. Now, let's ask Python to do it!
+
 ## Measures of Center With Python
 
 ### Mean
+
+Python has built-in tools to calculate the mean. We'll use something called **NumPy** (Numerical Python). NumPy is one example of a *library* or *package* that you can add to Python. When you add a library to Python, you are increasing the functions availble to you. For example, we have many more options with NumPy than just **len()**, **min()**, and **max()**.
+
+We have to "import" these libraries in Python and then often give them a nickname. For example, we import NumPy as `np` instead of typing "numpy" all the time. An example of how this work has been written (and already run) below.
+
+```{pyodide}
+#| edit: false
+import numpy as np
+
+# Same sample dataset
+sample_data = [1, 2, 6, 5, 1]
+
+# Calculate mean the easy way!
+mean_sample = np.mean(sample_data)
+
+print("mean of sample data:", mean_sample)
+```
+
+**Breaking it down:**  
+- `import numpy as np` = Load the NumPy library/package (we only do this once per file/page)  
+- `np.mean()` = NumPy's function to calculate mean
 
 #### Your Turn: Calculate Your Group's Mean Nitrate
 The website doesn't save your nitrate readings list from the previous page, so you'll need to re-enter your data into the list below (Line 3) again.
@@ -53,9 +78,6 @@ else:
 
 Calculate and check your group's mean nitrate concentration.
 :::
-
-<br>
-<br>
 
 <b> Class Data </b>  
 One of the benefits of using Python is that it can handle much larger amount amounts of data with ease. For example, let's consider the nitrate and nitrite data your whole class collected. We'll do that by importing the data collected in the Google Form. That form sends the data to a spreadsheet, or CSV (comman separated values) file.
@@ -108,9 +130,6 @@ print("Nitrite values:", class_nitrite)
 Import your whole class's nitrate and nitrite data.
 :::
 
-<br>
-<br>
-
 #### Your Turn: Calculate the Class Nitrate and Nitrite Mean
 
 Use the code written to calculate the mean for your class's nitrate and nitrite data.
@@ -137,9 +156,6 @@ print("Class nitrite:", mean_class_nitrite, "mg/L")
 
 Calculate the class nitrate and nitrite means.
 :::
-
-<br>
-<br>
 
 ### Median
 #### Your Turn: Calculate the Class Nitrate and Nitrite Median
@@ -168,6 +184,9 @@ Calculate the class nitrate and nitrite medians.
 :::
 
 ## Measures of Spread with Python
+A second and final statistical measure we'll discuss today is **spread**. Just as it sounds, measures of spread tell us how spread out our data are. Spread, also referred to as **variability**, is *the backbone* of statistics!
+
+Today, we'll discuss two measures of spread: the **range** and the **standard deviation**.
 
 ### Range
 The **range** is a fairly simple calculation. It's the biggest number minus the smallest number. Or, put differently, the maximum minus the minimum in a dataset.
@@ -175,6 +194,14 @@ The **range** is a fairly simple calculation. It's the biggest number minus the 
 :::{.ltorange-container}
 **max()** - **min()**
 :::
+
+Here is an example of finding the range using our sample dataset:
+```{pyodide}
+#| edit: false
+sample_range = max(sample_data) - min(sample_data)
+
+print("Range of sample data:", sample_range)
+```
 
 :::{#lst-classdatarange}
 
@@ -201,6 +228,15 @@ Find the range of the class nitrate and nitrite data.
 
 The standard deviation tells us how spread out the numbers are from the mean. Put diffently, it tells us the average distance the data in the dataset is from the mean.
 
+Here is an example of calculating the standard deviation using our sample dataset:
+
+```{pyodide}
+#| edit: false
+sample_stdev = np.std(sample_data)
+
+print("Standard Deviation of sample data:", sample_stdev)
+```
+
 :::{#lst-classdatastddev}
 
 :::{.dkorange-container}
@@ -221,6 +257,18 @@ print("Standard deviation of class nitrite data:", class_nitrite_stdev)
 
 Find the standard deviation of the class nitrate and nitrite data.
 :::
+
+#### What Could Cause High Variability?
+
+If a creek's reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:
+
+1. **Pollution events** - A factory dumps waste occasionally
+2. **Storm runoff** - Rain washes fertilizer from farms into the creek
+3. **Natural cycles** - Some creeks naturally vary
+4. **Sensor problems** - The equipment might need calibration
+5. **Different sampling times** - Morning vs afternoon can be different
+
+It might also signal that your data has one or more ***outliers***. We'll talk more about outliers on the next page.
 
 <b> Quick Reference: Python Functions </b>  
 

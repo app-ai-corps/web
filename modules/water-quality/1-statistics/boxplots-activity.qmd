@@ -1,0 +1,81 @@
+---
+title: "Boxplots Activity"
+crossref:
+  lst-title: "🎯 Checkpoint 8."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-1
+---
+
+
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 7.a:** Import Class Data](#lst-getcsv)
+- [**Checkpoint 7.b:** Create Boxplots by Hand](#lst-manualboxplots)
+- [**Checkpoint 7.c:** Create Boxplot for Class Nitrate Data](#lst-classnitrateboxplot)
+- [**Checkpoint 7.d:** Create Boxplot for Class Nitrite Data](#lst-classnitriteboxplot)
+:::
+<hr>
+
+## Visualizing the Data: Boxplots!
+
+A key practice in statistics is to visualize the data! One of the types of plots we can use to do this is a **boxplot**, sometimes referred to as a box and whisker plot. A boxplot requires that we order the data (as if calculating a median) and then then divide the data into four equal groups (by number of observations), called **quartiles**.
+
+### Activity: Boxplots By Hand
+:::{.callout-note}
+## *Data Recorder (Sticky Notes)*
+Grab those sticky notes from the nitrates lab! Sort them by sticky color and pass them out to each group, matching the sticky color to the group's tent color. This will result in each group having a full set of stickies representing the class nitrate data.
+:::
+
+:::{#lst-manualboxplots}
+
+```{pyodide}
+#| include: false
+
+#This is fake to create a checkpoint
+```
+
+As a group, construct a boxplot for the class nitrate data by hand.
+:::
+
+:::{.gray-container}
+<b> Materials Needed: </b>  
+- 1 Post-It grid paper sheet per group  
+- 1 poster marker per group  
+- Your group's full set of stickies (including those collected from other groups) from the nitrate lab  
+
+:::
+
+1. After your groups has received all of its stickies, order your nitrate stickies from least to greatest, in a line across the table/desk.
+
+![](images/ordered_nitrate_stickies.png)
+
+2. Find the median (middle number) for the nitrates data.
+
+![](images/ordered_nitrate_stickies_median.png)
+
+4. At your desk, you will find a large sheet of gridded Post-It paper. The paper has an axis already drawn for the nitrate boxplot. *Draw the median line for the nitrate boxplot.* The median line will form the center of the boxplot.
+
+![](images/boxplot_nitrate_medianline.png)
+
+5. Now, we need to find the first and third quartiles for the nitrites data. To do this, take the bottom half of the data and, similar to finding the median, find the middle number. This is the first quartile. Finding the middle number of the upper half of the data will give you the third quartile.
+
+![](images/ordered_nitrate_stickies_q1.png)
+
+![](images/ordered_nitrate_stickies_q3.png)
+
+6. Draw the line for the first and third quartiles for the nitrates data.
+
+![](images/boxplot_nitrate_quartiles.png)
+
+7. Connect the first and third quartiles to the median line with horizontal lines, thereby creating the "box" portion of the boxplot.
+
+![](images/boxplot_nitrate_box.png)
+
+8. Finally, extend a horizontal line from the first quartile to the minimum value. Draw another horizontal line from the third quartile to the maximum value. These lines form the "whiskers" of the boxplot.
+
+![](images/boxplot_nitrate_whiskers.png)
+
+
+
