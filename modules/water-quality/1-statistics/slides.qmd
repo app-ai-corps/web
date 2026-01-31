@@ -62,7 +62,7 @@ In the workshops, we will use:
 
 ## Workshop Structure
 <hr>
-There are multiple pages in each module:
+There are multiple pages in each module:  
 ![](images/module-page-navigation.png)
 
 ## Workshop Structure
@@ -116,7 +116,7 @@ In these workshops, we will learn Python together!
 
 :::{.fragment}
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 1**: Print Statements
+🎯 **Checkpoint 1.a**: Print Statements
 :::
 
 ::: {.dkorange-container}
@@ -141,7 +141,7 @@ print("Hello, Water Scientist!")
 - Python will print text. In programming, we call text **strings**.
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 1**: Print Statements
+🎯 **Checkpoint 1.a**: Print Statements
 :::
 
 ::: {.dkorange-container}
@@ -166,7 +166,7 @@ Note that strings are always surrounded by quotation marks.
 - Python can do math problems way faster than we can!
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 2**: Mathematical Operators
+🎯 **Checkpoint 1.b**: Mathematical Operators
 :::
 
 :::{.dkorange-container}
@@ -196,7 +196,7 @@ Click the ▶️ Run Code button to run the blocks.
 <hr>
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 2**: Mathematical Operators
+🎯 **Checkpoint 1.b**: Mathematical Operators
 :::
 
 :::{.dkorange-container}
@@ -227,7 +227,7 @@ Click the ▶️ Run Code button to run the blocks.
 - Read these mathematical equations out loud. Let's try the first together!
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 3**: Comparing Values
+🎯 **Checkpoint 1.c**: Comparing Values
 :::
 
 :::{.dkorange-container}
@@ -278,7 +278,7 @@ Python says:
 - You can combine strings and math!
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 4**: Print Statements with Math
+🎯 **Checkpoint 1.d**: Print Statements with Math
 :::
 
 :::{.dkorange-container}
@@ -305,7 +305,7 @@ print("2 + 3 =", 2 + 3)
 - Your turn! Edit the code in the block.
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 5**: Your own print statements with math!
+🎯 **Checkpoint 1.e**: Your own print statements with math!
 :::
 
 :::{.dkorange-container}
@@ -326,10 +326,10 @@ print("20 - 7 =", 20 - 7)
 
 # Calculate 15 times 4 below. Print the equation and result.
 ```
-##  💻 Intro to Water Quality
+<!-- ##  💻 Intro to Water Quality
 <hr>
 Next Page 👉  
-![](images/sidebar_intro_water_quality.png){width="40%"}
+![](images/sidebar_intro_water_quality.png){width="40%"} -->
 
 ## What is Water? 💧
 <hr>
