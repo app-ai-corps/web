@@ -13,6 +13,31 @@ sidebar: lesson-1
 - [**Checkpoint 4.a:** Calculations—Mean & Median](#lst-mean_median)
 :::
 
+With your group, you've just tested samples from fictional bodies of water. You measured each of the samples for nitrate concentration *and* nitrite concentration.
+
+Quick - is the water safe? What's the "typical" concentration? Are any readings weird?
+
+That's hard to answer just by staring at the numbers! **This is why we need statistics.**
+
+## What Is Statistics?
+
+**Statistics** = A fancy word for "using math to understand data"
+
+Think of statistics like a calculator that helps you:  
+- Summarize lots of numbers into one useful number  
+- Find patterns  
+- Make decisions  
+- Spot things that don't fit  
+
+<div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden;">
+  <iframe 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    src="https://www.youtube.com/embed/Ge9je05uYJ0?si=FQeUzUxzzdQ1E4Aj" 
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+</div>
+
 ## Let's Use Statistics!
 
 :::{.ltorange-container}
@@ -42,8 +67,6 @@ $\Large 1 + 1 + 2 + 5 + 6$
 :::
 
 The median value of this sample dataset is **2**.
-<br>
-<br>
 
 ## Let's Analyze Your Lab Data
 

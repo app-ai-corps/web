@@ -14,6 +14,8 @@ sidebar: lesson-1
 - [**Checkpoint 2.c:** Nitrogen Summary](#lst-nitrogen_summary)
 
 :::
+<br>
+<br>
 
 After watching the selected video clips, included in the slides, that explain the roles of nitrogen in our water, consider the following questions:
 
@@ -29,6 +31,9 @@ Summarize. What is the role of nitrogen in our water? Do we want nitrates in our
 
 Nitrogen In Our Water
 :::
+
+<br>
+<br>
 
 ## Monitoring Nitrogen in the Water
 
@@ -61,6 +66,9 @@ Nitrogen In Your Water
 :::
 
 ![The most recently reported nitrate concentration for water from a selected utility.](images/example-nitrate-reading-ewg.png){width="50%"}
+
+<br>
+<br>
 
 #### Monitoring Nitrogen: You and Other Citizen Scientists!
 

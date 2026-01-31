@@ -46,8 +46,11 @@ Assign roles to each person in your group:
 
 :::{.callout-note}
 ## Modifications for Three-Member Team
-- If your team has ***three members***, one person should be the *Data Recorder (Lab Report)* and the *Data Recorder (Computer)*.
+- If your team has ***three members***, one person should serve as both the *Data Recorder (Lab Report)* and the *Data Recorder (Computer)*.
 :::
+
+<br>
+<br>
 
 ## 🚀 Let's Do It!
 1. **Lab Technician:** Take the first water sample, share the sample letter with your team. Then, take one new test strip and do the following:
