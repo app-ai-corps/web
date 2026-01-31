@@ -2,6 +2,7 @@
 title: "Measures of Center and Spread"
 crossref:
   lst-title: "🎯 Checkpoint"
+  lst-labels: alpha a
 format: live-html
 sidebar: lesson-1
 ---

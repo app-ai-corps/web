@@ -2,6 +2,7 @@
 title: "Boxplots and Outliers"
 crossref:
   lst-title: "🎯 Checkpoint"
+  lst-labels: alpha a
 format: live-html
 sidebar: lesson-1
 ---
