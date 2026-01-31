@@ -7,7 +7,7 @@ format: live-html
 sidebar: lesson-1
 ---
 
-**This module is meant to used with the Lesson 1 slide deck.**
+**This module is designed to be used in conjunction with the Lesson 1 slide deck.**
 
 ::: {.gray-container}
 
