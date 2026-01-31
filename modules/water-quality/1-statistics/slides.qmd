@@ -441,7 +441,7 @@ Next Page 👉
 You can look up the reported nitrate concentration for water from your utility by using your zipcode.
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 2**: Nitrogen in Your Water
+🎯 **Checkpoint 2.b**: Nitrogen in Your Water
 :::
 
 **🧠 Using [data from EWG](https://www.ewg.org/tapwater/), what is the most recently reported nitrate concentration by your water utility?**  
@@ -460,10 +460,10 @@ You can look up the reported nitrate concentration for water from your utility b
 :::
 :::
 
-##  💻 Nitrates Lab
+<!-- ##  💻 Nitrates Lab
 <hr>
 Next Page 👉  
-![](images/sidebar_nitrates_lab.png){width="40%"}
+![](images/sidebar_nitrates_lab.png){width="40%"} -->
 
 # Nitrate Lab <br>🧑🏽‍🔬👨🏻‍🔬👩🏼‍🔬
 
@@ -536,12 +536,10 @@ Read the procedure on your lab sheet. Make sure everyone in your group understan
 <br>
 **When finished:** With the help of the *Data Recorder (Lab Report)*, make sure everyone in your group has a copy of the data table on their own sheet.
 
-##  💻 Intro to Statistics
+<!-- ##  💻 Intro to Statistics
 <hr>
 Next Page 👉  
-![](images/sidebar_intro_stats.png){width="40%"}
-
-# Statistics!
+![](images/sidebar_intro_stats.png){width="40%"} -->
 
 ## What is Statistics?
 <hr>
@@ -612,10 +610,11 @@ $\large 1 + 1 + 2 + 5 + 6$
 :::
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 1**: Calculating Mean & Median
+🎯 **Checkpoint 4.a**: Calculations—Mean & Median
 :::
 
 Find the mean and median of your team's lab data:  
+<br>
 - Calculate mean nitrate concentration  
 - Calculate mean nitrite concentration  
 - Calculate median nitrate concentration  
@@ -623,12 +622,12 @@ Find the mean and median of your team's lab data:
 
 [✏️]{.sixtypt-font} **Record your results on your lab sheet.**
 
-##  💻 Python: Lists
+<!-- ##  💻 Python: Lists
 <hr>
 Next Page 👉  
-![](images/sidebar_python_lists.png){width="40%"}
+![](images/sidebar_python_lists.png){width="40%"} -->
 
-# 🐍 Python: Lists!
+<!-- # 🐍 Python: Lists! -->
 
 ## 🐍 Python: Lists!
 <hr>
@@ -661,7 +660,7 @@ print("Our sample data:", sample_data)
 <hr>
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 1**: Save your group nitrate and nitrite readings into lists!
+🎯 **Checkpoint 5.a**: Storing data as lists!
 :::
 
 :::{.dkorange-container}
@@ -685,7 +684,7 @@ print("My group's nitrite readings:", group_nitrite)
 <hr>
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 2**: Basic functions with lists.
+🎯 **Checkpoint 5.b**: Basic functions with lists.
 :::
 
 #### len()
@@ -713,7 +712,7 @@ print("Highest nitrate:", max(group_nitrate))
 <hr>
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 3**: Comparing nitrate readings to EPA limits.
+🎯 **Checkpoint 5.c**: Making Comparisons—EPA Limits.
 :::
 
 :::{.dkorange-container}
@@ -738,7 +737,7 @@ else:
 <hr>
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 3**: Comparing nitrate readings to EPA limits.
+🎯 **Checkpoint 5.c**: Making Comparisons—EPA Limits.
 :::
 
 :::{.dkorange-container}
@@ -759,12 +758,12 @@ else:
     print("✗ Nitrate concentration is outside the safe range!")
 ```
 
-##  💻 Center & Spread
+<!-- ##  💻 Center & Spread
 <hr>
 Next Page 👉  
-![](images/sidebar_center_spread.png){width="40%"}
+![](images/sidebar_center_spread.png){width="40%"} -->
 
-# Center & Spread
+<!-- # Center & Spread -->
 
 ## Python: Measures of Center
 <hr>
@@ -790,7 +789,7 @@ print("mean of sample data:", mean_sample)
 
 #### Mean: Your Turn!
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 1**: Calculate the mean of your group's nitrate readings.
+🎯 **Checkpoint 6.a**: Calculating group mean nitrate.
 :::
 
 :::{.dkorange-container}
@@ -829,7 +828,7 @@ else:
 <hr>
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 2**: Import your whole class's nitrate and nitrite data.
+🎯 **Checkpoint 6.b**: Import class data.
 :::
 
 :::{.dkorange-container}
@@ -881,7 +880,7 @@ print("Nitrite values:", class_nitrite)
 <hr>
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 3**: Calculate the mean of the class nitrate and nitrite data.
+🎯 **Checkpoint 6.c**: Calculate means for class data.
 :::
 
 :::{.dkorange-container}
@@ -904,7 +903,7 @@ print("Class nitrite:", mean_class_nitrite, "mg/L")
 <hr>
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 3**: Calculate the class nitrate and nitrite means.
+🎯 **Checkpoint 6.c**: Calculate means for class data.
 :::
 
 :::{.dkorange-container}
@@ -926,8 +925,9 @@ print("Class nitrite:", mean_class_nitrite, "mg/L")
 
 ## 💻 Class Data: Median
 <hr>
+
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 4**: Calculate the class nitrate and nitrite medians.
+🎯 **Checkpoint 6.d**: Calculate medians for class data.
 :::
 
 :::{.dkorange-container}
@@ -948,8 +948,9 @@ print("Class nitrite:", median_class_nitrite, "mg/L")
 
 ## 💻 Class Data: Median
 <hr>
+
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 4**: Calculate the class nitrate and nitrite medians.
+🎯 **Checkpoint 6.d**: Calculate medians for class data.
 :::
 
 :::{.dkorange-container}
@@ -998,7 +999,7 @@ print("Range of sample data:", sample_range)
 #### Range: Your Turn!
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 5**: Calculate the range of your class's nitrate and nitrite readings.
+🎯 **Checkpoint 6.e**: Calculate ranges for class data.
 :::
 :::{.dkorange-container}
 Replace `???` with the correct variable names to calculate the ranges of the data.
@@ -1020,7 +1021,7 @@ print("Range of class nitrite data:", class_nitrite_range)
 #### Range: Your Turn!
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 5**: Calculate the range of your class's nitrate and nitrite readings.
+🎯 **Checkpoint 6.e**: Calculate ranges for class data.
 :::
 :::{.dkorange-container}
 Replace `???` with the correct variable names to calculate the ranges of the data.
@@ -1044,10 +1045,6 @@ print("Range of class nitrite data:", class_nitrite_range)
 - The standard deviation is another measure of spread.
 - It tell us the average distance the data in the dataset is from the mean.
 
-:::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 6**: Calculate the standard deviations of theclass nitrate and nitrite data.
-:::
-
 ```{python}
 # Same sample dataset
 sample_data = [1, 2, 6, 5, 1]
@@ -1063,7 +1060,7 @@ print("Standard Deviation of sample data:", sample_stdev)
 #### Standard Deviation: Your Turn!
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 6**: Find the standard deviation of the class nitrate and nitrite data.
+🎯 **Checkpoint 6.f**: Calculate standard deviations for class data.
 :::
 :::{.dkorange-container}
 Replace `???` with the correct variable names to calculate the standard deviations of the data.
@@ -1085,7 +1082,7 @@ print("Standard deviation of class nitrite data:", class_nitrite_stdev)
 #### Standard Deviation: Your Turn!
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 6**: Find the standard deviation of the class nitrate and nitrite data.
+🎯 **Checkpoint 6.f**: Calculate standard deviations for class data.
 :::
 :::{.dkorange-container}
 Replace `???` with the correct variable names to calculate the standard deviations of the data.
@@ -1115,38 +1112,13 @@ If a creek's reading has high standard deviation (lots of variability in compari
 5. **Different sampling times** - Morning vs afternoon can be different
 :::
 
-##  💻 Boxplots & Outliers
+<!-- ##  💻 Boxplots & Outliers
 <hr>
 Next Page 👉  
-![](images/sidebar_boxplots_outliers.png){width="40%"}
+![](images/sidebar_boxplots_outliers.png){width="40%"} -->
 
-# Boxplots & Outliers
+# Boxplots Activity
 
-## 💻 Class Data
-<hr>
-
-:::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 1**: Once more, import your whole class's nitrate and nitrite data.
-:::
-
-:::{.dkorange-container}
-Once more, replace the placeholder (Line 4) with CSV URL from your teacher. Be sure the keep the quotation marks! This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.
-
-Click the ▶️ Run Code button to run the block.
-:::
-
-```python
-# Replace the url with the one provided from your teacher. 
-# Make sure to keep the quotation marks!
-
-csv_url = "replace_this_with_your_csv_url"
-
-class_nitrate, class_nitrite = load_class_data(csv_url)
-```
-```{python}
-print("Nitrate values:", class_nitrate)
-print("Nitrite values:", class_nitrite)
-```
 ## Boxplots: Visualizing Data
 <hr>
 - A key practice in statistics is to visualize the data!
@@ -1179,13 +1151,40 @@ Follow the steps on the back of your lab sheet to create a boxplot for the class
 
 [🚀 **LET'S GO** 🚀]{.sixtypt-font}
 
-## 💻 Class Data: Boxplots
-<hr>
+# Boxplots & Outliers
 
-Whew! That was a lot of work. Wouldn't it be great if Python could do it for us? Good news. It can!
+## 💻 Class Data
+<hr>
+<hr>
+Whew! That was a lot of work. Wouldn't it be great if Python could do it for us? Good news. It can! But first, let's re-import our data on this page.  
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 3**: Create a boxplot for the class nitrate data.
+🎯 **Checkpoint 8.a**: Import Class Data.
+:::
+
+:::{.dkorange-container}
+Once more, replace the placeholder (Line 4) with CSV URL from your teacher. Be sure the keep the quotation marks! This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.
+
+Click the ▶️ Run Code button to run the block.
+:::
+
+```python
+# Replace the url with the one provided from your teacher. 
+# Make sure to keep the quotation marks!
+
+csv_url = "replace_this_with_your_csv_url"
+
+class_nitrate, class_nitrite = load_class_data(csv_url)
+```
+```{python}
+print("Nitrate values:", class_nitrate)
+print("Nitrite values:", class_nitrite)
+```
+
+## 💻 Class Data: Boxplots
+
+:::{.ltblue-container .twentyfourpt-font}
+🎯 **Checkpoint 8.b**: Create a boxplot for the class nitrate data.
 :::
 
 :::{.dkorange-container}
@@ -1208,10 +1207,8 @@ plt.show()
 ## 💻 Class Data: Boxplots
 <hr>
 
-Whew! That was a lot of work. Wouldn't it be great if Python could do it for us? Good news. It can!
-
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 3**: Create a boxplot for the class nitrate data.
+🎯 **Checkpoint 8.b**: Create a boxplot for the class nitrate data.
 :::
 
 :::{.dkorange-container}
@@ -1256,7 +1253,7 @@ plt.show()
 Now, let's create a boxplot for the class nitrite data.
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 4**: Create a boxplot for the class nitrite data.
+🎯 **Checkpoint 8.c**: Create a boxplot for the class nitrite data.
 :::
 
 :::{.dkorange-container}
@@ -1280,7 +1277,7 @@ plt.show()
 Now, let's create a boxplot for the class nitrite data.
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 4**: Create a boxplot for the class nitrite data.
+🎯 **Checkpoint 8.c**: Create a boxplot for the class nitrite data.
 :::
 
 :::{.dkorange-container}
