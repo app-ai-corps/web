@@ -11,9 +11,8 @@ sidebar: lesson-1
 **Checkpoints on this Page:**
 
 - [**Checkpoint 8.a:** Import Class Data](#lst-getcsv)
-- [**Checkpoint 8.b:** Create Boxplots by Hand](#lst-manualboxplots)
-- [**Checkpoint 8.c:** Create Boxplot for Class Nitrate Data](#lst-classnitrateboxplot)
-- [**Checkpoint 8.d:** Create Boxplot for Class Nitrite Data](#lst-classnitriteboxplot)
+- [**Checkpoint 8.b:** Create Boxplot for Class Nitrate Data](#lst-classnitrateboxplot)
+- [**Checkpoint 8.c:** Create Boxplot for Class Nitrite Data](#lst-classnitriteboxplot)
 :::
 <hr>
 
