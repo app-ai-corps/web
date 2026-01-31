@@ -69,10 +69,8 @@ There are multiple pages in each module. You navigate between them in the left-h
 
 ## Workshop Structure
 <hr>
-Each page contains **checkpoints**. The checkpoints are linked at the top of the page and include code blocks to run and questions to answer.   
-<br>
-<br>
-They are numbered by the page they are on (number) and the order they are within each page (letter).
+- Each page contains **checkpoints**. The checkpoints are linked at the top of the page and include code blocks to run and questions to answer.  
+- They are numbered by the page they are on (number) and the order they are within each page (letter).
 <br>
 <br>
 
@@ -99,10 +97,6 @@ The checkpoints will also be highlighted in the body of the module. When you com
 
 :::{.ltblue-container .twentyfourpt-font}
 🎯 **Checkpoint 2.a**: Role of Nitrogen
-:::
-
-:::{.fragment}
-What page number will this checkpoint be on?
 :::
 
 # Let's Get Started! 🔬💧
@@ -1141,8 +1135,9 @@ Next Page 👉
 
 ## 🖍️ Boxplots: Activity
 <hr>
+
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 2**: As a group, construct a boxplot for the class nitrate data by hand.
+🎯 **Checkpoint 7.a**: As a group, construct a boxplot for the class nitrate data by hand.
 :::
 
 :::{.gray-container}
@@ -1187,6 +1182,7 @@ print("Nitrite values:", class_nitrite)
 ```
 
 ## 💻 Class Data: Boxplots
+<hr>
 
 :::{.ltblue-container .twentyfourpt-font}
 🎯 **Checkpoint 8.b**: Create a boxplot for the class nitrate data.
@@ -1341,10 +1337,11 @@ Outliers can happen for different reasons:
     - Heavy rain changed water chemistry  
     - Algae bloom  
     - Seasonal variation  
-
-**Your job as a scientist:** Figure out which reason it is!
 :::
 
+:::{.fragment}
+**Your job as a scientist:** Figure out which reason it is!
+:::
 
 # 🎟️<br>Exit Ticket
 
