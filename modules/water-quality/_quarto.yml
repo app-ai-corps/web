@@ -54,6 +54,7 @@ website:
           href: 1-statistics/python-lists
         - text: "6. Center & Spread"
           href: 1-statistics/center-spread
+        - text: "---"
         - text: "7. Boxplots Activity"
           href: 1-statistics/boxplots-activity
         - text: "8. Boxplots & Outliers"

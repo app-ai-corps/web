@@ -166,6 +166,8 @@ print("Class nitrite median:", median_class_nitrite, "mg/L")
 
 Calculate the class nitrate and nitrite medians.
 :::
+<br>
+<br>
 
 ## Measures of Spread with Python
 
@@ -196,6 +198,8 @@ print("Range of class nitrite data:", class_nitrite_range)
 
 Find the range of the class nitrate and nitrite data.
 :::
+<br>
+<br>
 
 ### Standard Deviation
 
