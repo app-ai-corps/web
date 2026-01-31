@@ -15,63 +15,7 @@ sidebar: lesson-1
 
 :::
 
-## What is Water Quality?
-
-When scientists study water, they measure different things to see if it's safe. You may know from science that a water molecule is H<sub>2</sub>O.  
-
-:::{.callout-important}
-## **Question:**
-What does H<sub>2</sub>O mean?
-:::
-
-H<sub>2</sub>O is pure water, but water is almost always mixed with other things, like minerals, salts, and other chemicals. Some of these things help water be safe to drink, while others make it unsafe. It's also important to remember that water is used for different purposes, so for example, the same water can be safe for livestock and crop irrigation, but unsafe for human consumption.
-
-Water quality also changes over time. Weather, changes in land use, changes in industrial activities and agriculture, for example, can all affect water. We can measure certain chemicals and water characteristics to monitor how water is changing over time.
-
-<div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden;">
-  <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://edpuzzle.com/embed/media/695b558ffb53770c2e4fa1bd" 
-    frameborder="0" 
-    allowfullscreen>
-  </iframe>
-</div>
-
-## Today's Focus: Nitrogen
-
-The video above discusses a number of indicators of water quality. The graphic shown in the video has been recreated below.
-
-![Water Quality Indicators](images/water-quality-indicators.png){width="50%"}
-
-### Nitrogen as Nutrient
-
-Today, we'll focus on one important measurement—the concentration of nitrogen in water. When nitrogen, air, and water combine, they form ions—specifically nitrates and nitrites. Both nitrates (NO<sub>3</sub>) and nitrites (NO<sub>2</sub>) are a common and natural component of water. In this way, the presence of nitrogen (via nitrates and nitrites in the water) is considered *a nutrient*.
-
-The presence of nitrogen in water is part of the nitrogen cycle, which is the process by which nitrogen is converted to other nutrients necessary for life. 
-
-<div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden;">
-  <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://edpuzzle.com/embed/media/695c86636c7ddd288faebc26" 
-    frameborder="0" 
-    allowfullscreen>
-  </iframe>
-</div>
-
-### Nitrogen as Pollutant
-
-While Nitrogen is a needed nutrient, in larger quantities it can become a *pollutant*. This excess nitrogen—observed as nitrates— results primarily from agricultural operations (fertilizer runoff and livestock manure), sewage and septic systems (human waste), and acid rain.
-
-<div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden;">
-  <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://edpuzzle.com/embed/media/695c8e7d1b8b4b96f64b0e80" 
-    frameborder="0" 
-    allowfullscreen>
-  </iframe>
-</div>
-
-<br>
+After watching the selected video clips, included in the slides, that explain the roles of nitrogen in our water, consider the following questions:
 
 ::: {#lst-nitrogensrole .checkpoint-box}
 
@@ -98,7 +42,6 @@ Too much nitrogen in water can make both people and animals sick 🐟🐟🐟. T
 
 :::
 
-The World Health Organization (WHO) also sets limits on [allowable levels of nitrates and nitrites](https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/chemical-hazards-in-drinking-water/nitrate-nitrite) in drinking water. Their limits are similar to those from the EPA.
 
 #### Monitoring Nitrogen: Your Local Utility
 
@@ -144,7 +87,3 @@ Remember! What are the EPA drinking water limits for nitrate and nitrite??
 
 Nitrogen Summary
 :::
-
-## What's Next?
-
-🧪 Now let's practice testing nitrate and nitrite content in water samples. We'll complete a brief water quality lab on the next page.

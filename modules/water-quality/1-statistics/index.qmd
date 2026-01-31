@@ -170,14 +170,3 @@ print("20 - 7 =", 20 - 7)
 
 Your own print statements with math!
 :::
-
-<br>
-<br>
-
-## 🚀 Ready to Begin?
-
-Click "Intro to Water Quality" in the left-hand menu to start your journey as a water quality scientist!
-
-Remember: **Everyone starts as a beginner.** If something doesn't make sense, that's normal! Try it again, experiment, and ask questions.
-
-Let's go! 🚀
