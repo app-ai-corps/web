@@ -44,7 +44,7 @@ print("My group's nitrite readings:", group_nitrite)
 Save your group nitrate and nitrite readings into lists!
 
 :::
-
+<br>
 <br>
 <br>
 
@@ -89,7 +89,7 @@ Explore Basic Operations with Lists!
 - `max()` = maximum (biggest number)  
 
 These are called **functions** - they're like tools that do specific jobs!
-
+<br>
 <br>
 <br>
 
@@ -119,6 +119,9 @@ else:
 
 Comparing nitrate readings to EPA limits!
 :::
+<br>
+<br>
+<br>
 
 ## Key Python Terms We Learned
 

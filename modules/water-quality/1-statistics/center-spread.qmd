@@ -225,7 +225,9 @@ print("Standard deviation of class nitrite data:", class_nitrite_stdev)
 
 Find the standard deviation of the class nitrate and nitrite data.
 :::
-
+<br>
+<br>
+<br>
 <b> Quick Reference: Python Functions </b>  
 
 | Function | What It Does | Example |

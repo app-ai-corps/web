@@ -60,6 +60,7 @@ Print Statements!
 Notice that strings must be in quotation marks within the code but those marks don't appear when printed. The quotation marks just tell the computer *"Hey! I'm writing regular text. Treat it like written English instead of code.,"* and it does!
 <br>
 <br>
+<br>
 
 ### Math
 Now let's use Python to do some math!
@@ -95,6 +96,7 @@ Click the ▶️ Run Code button to run the blocks.
 
 Mathematical Operators!
 :::
+<br>
 <br>
 <br>
 We can also ask Python to **compare values**:
