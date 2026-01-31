@@ -1246,7 +1246,7 @@ plt.ylabel('Nitrate (mg/L)', fontsize=12)
 plt.xticks([])
 plt.title('Boxplot of Class Nitrate', fontsize=13)
 plt.grid(True, alpha=0.3, axis='y')
-plt.subplots_adjust(bottom=0.5)
+plt.subplots_adjust(bottom=0.3)
 plt.show()
 ```
 :::
@@ -1315,7 +1315,7 @@ plt.ylabel('Nitrite (mg/L)', fontsize=12)
 plt.xticks([])
 plt.title('Boxplot of Class Nitrite', fontsize=13)
 plt.grid(True, alpha=0.3, axis='y')
-plt.subplots_adjust(bottom=0.5)
+plt.subplots_adjust(bottom=0.3)
 plt.show()
 ```
 :::
