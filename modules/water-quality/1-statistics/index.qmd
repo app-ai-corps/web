@@ -1,7 +1,7 @@
 ---
 title: "Water Quality and Summary Statistics"
 crossref:
-  lst-title: "🎯 Checkpoint"
+  lst-title: "🎯 Checkpoint 1."
   lst-labels: alpha a
 format: live-html
 sidebar: lesson-1
@@ -20,11 +20,11 @@ sidebar: lesson-1
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 1:** Print Statements](#lst-printstatements)
-- [**Checkpoint 2:** Mathematical Operators](#lst-mathoperators)
-- [**Checkpoint 3:** Comparing Values](#lst-comparingvalues)
-- [**Checkpoint 4:** Print Statements with Math](#lst-printstatementsmath)
-- [**Checkpoint 5:** Your Own Print Statements](#lst-personalizedprintstatementsmath)
+- [**Checkpoint 1.a:** Print Statements](#lst-printstatements)
+- [**Checkpoint 1.b:** Mathematical Operators](#lst-mathoperators)
+- [**Checkpoint 1.c:** Comparing Values](#lst-comparingvalues)
+- [**Checkpoint 1.d:** Print Statements with Math](#lst-printstatementsmath)
+- [**Checkpoint 1.e:** Your Own Print Statements](#lst-personalizedprintstatementsmath)
 
 :::
 
