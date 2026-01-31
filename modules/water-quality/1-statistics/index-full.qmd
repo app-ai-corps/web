@@ -7,8 +7,6 @@ format: live-html
 sidebar: lesson-1
 ---
 
-**This module is meant to used with the Lesson 1 slide deck.**
-
 ::: {.gray-container}
 
 **Lesson Objective:** In this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate nitrates and nitrates in water samples.
@@ -30,7 +28,24 @@ sidebar: lesson-1
 
 :::
 
-🐍 Python is a **programming language** — a way to give instructions to a computer.
+## 🔬💧 Welcome, Scientists!  
+
+Over the next several weeks, we will work together to understand the water in our community, its importance, nutrients, and how we can protect it. 
+
+We will use aspects of computing and programming, statistics, and environmental and agricultural science to learn more about local waterways. In today's lesson, we will consider the role of nitrogen in our water, how we measure it, analyze it, and consider its role in water quality and local ecosystems.
+
+**Never used programming before? Perfect!** This module is designed for complete beginners. We'll learn everything step by step.
+
+## 🐍 What is Python?
+
+Python is a **programming language** — a way to give instructions to a computer. Think of it like writing a recipe, but for the computer!
+
+**Why Python?**  
+- Scientists use it to analyze data  
+- It can do math way faster than we can  
+- It can create beautiful graphs  
+
+**Don't worry!** You don't need to install anything. You can run Python code right here in your web browser!
 
 ## 💻 Let's Try Python Right Now!
 
