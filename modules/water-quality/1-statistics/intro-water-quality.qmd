@@ -17,7 +17,8 @@ sidebar: lesson-1
 <br>
 <br>
 
-After watching the selected video clips, included in the slides, that explain the roles of nitrogen in our water, consider the following questions:
+## Water Quality Video Clips
+After watching the selected water quality video clips included in the slides, consider the following questions:
 
 ::: {#lst-nitrogensrole .checkpoint-box}
 

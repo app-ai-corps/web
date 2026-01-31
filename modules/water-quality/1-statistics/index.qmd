@@ -32,7 +32,7 @@ sidebar: lesson-1
 
 🐍 Python is a **programming language** — a way to give instructions to a computer.
 
-## 💻 Let's Try Python Right Now!
+## 💻 Let's Try Python!
 
 ### Text/Strings
 Python will print text. Click the ▶️ button below to run your first Python code:
