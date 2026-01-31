@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Water Quality"
 crossref:
-  lst-title: "🎯 Checkpoint"
+  lst-title: "🎯 Checkpoint 2."
   lst-labels: alpha a
 format: live-html
 sidebar: lesson-1
@@ -9,9 +9,9 @@ sidebar: lesson-1
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 1:** Role of Nitrogen](#lst-nitrogensrole)
-- [**Checkpoint 2:** Nitrogen in Your Water](#lst-nitrogen_ewg)
-- [**Checkpoint 3:** Nitrogen Summary](#lst-nitrogen_summary)
+- [**Checkpoint 2.a:** Role of Nitrogen](#lst-nitrogensrole)
+- [**Checkpoint 2.b:** Nitrogen in Your Water](#lst-nitrogen_ewg)
+- [**Checkpoint 2.c:** Nitrogen Summary](#lst-nitrogen_summary)
 
 :::
 

@@ -1,7 +1,7 @@
 ---
 title: "Python Lists"
 crossref:
-  lst-title: "🎯 Checkpoint"
+  lst-title: "🎯 Checkpoint 5."
   lst-labels: alpha a
 format: live-html
 sidebar: lesson-1
@@ -10,9 +10,9 @@ sidebar: lesson-1
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 1:** Storing Data as Lists](#lst-groupreadings)
-- [**Checkpoint 2:** Basic Functions with Lists](#lst-basicfunctions)
-- [**Checkpoint 3:** Making Comparisons](#lst-comparisons)
+- [**Checkpoint 5.a:** Storing Data as Lists](#lst-groupreadings)
+- [**Checkpoint 5.b:** Basic Functions with Lists](#lst-basicfunctions)
+- [**Checkpoint 5.c:** Making Comparisons](#lst-comparisons)
 :::
 
 ## Let's Analyze Your Data With Python

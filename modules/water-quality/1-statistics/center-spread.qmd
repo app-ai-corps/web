@@ -1,7 +1,7 @@
 ---
 title: "Measures of Center and Spread"
 crossref:
-  lst-title: "🎯 Checkpoint"
+  lst-title: "🎯 Checkpoint 6."
   lst-labels: alpha a
 format: live-html
 sidebar: lesson-1
@@ -9,12 +9,12 @@ sidebar: lesson-1
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 1:** Calculating Group Mean Nitrate](#lst-groupmeannitrate)
-- [**Checkpoint 2:** Import Class Data](#lst-getcsv)
-- [**Checkpoint 3:** Calculate Means for Class Data](#lst-classmeannitratenitrite)
-- [**Checkpoint 4:** Calculate Medians for Class Data](#lst-classmediannitratenitrite)
-- [**Checkpoint 5:** Calculate Ranges for Class Data](#lst-classdatarange)
-- [**Checkpoint 6:** Calculate Standard Deviations for Class Data](#lst-classdatastddev)
+- [**Checkpoint 6.a:** Calculating Group Mean Nitrate](#lst-groupmeannitrate)
+- [**Checkpoint 6.b:** Import Class Data](#lst-getcsv)
+- [**Checkpoint 6.c:** Calculate Means for Class Data](#lst-classmeannitratenitrite)
+- [**Checkpoint 6.d:** Calculate Medians for Class Data](#lst-classmediannitratenitrite)
+- [**Checkpoint 6.e:** Calculate Ranges for Class Data](#lst-classdatarange)
+- [**Checkpoint 6.f:** Calculate Standard Deviations for Class Data](#lst-classdatastddev)
 :::
 
 As you might have guessed, Python can do much more than just the functions **len()**, **min()**, and **max()**. In fact, it can help us calculate our measures of center!

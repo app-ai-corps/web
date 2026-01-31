@@ -1,7 +1,7 @@
 ---
 title: "Boxplots and Outliers"
 crossref:
-  lst-title: "🎯 Checkpoint"
+  lst-title: "🎯 Checkpoint 7."
   lst-labels: alpha a
 format: live-html
 sidebar: lesson-1
@@ -10,10 +10,10 @@ sidebar: lesson-1
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 1:** Import Class Data](#lst-getcsv)
-- [**Checkpoint 2:** Create Boxplots by Hand](#lst-manualboxplots)
-- [**Checkpoint 3:** Create Boxplot for Class Nitrate Data](#lst-classnitrateboxplot)
-- [**Checkpoint 4:** Create Boxplot for Class Nitrite Data](#lst-classnitriteboxplot)
+- [**Checkpoint 7.a:** Import Class Data](#lst-getcsv)
+- [**Checkpoint 7.b:** Create Boxplots by Hand](#lst-manualboxplots)
+- [**Checkpoint 7.c:** Create Boxplot for Class Nitrate Data](#lst-classnitrateboxplot)
+- [**Checkpoint 7.d:** Create Boxplot for Class Nitrite Data](#lst-classnitriteboxplot)
 :::
 <hr>
 
