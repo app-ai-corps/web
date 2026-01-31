@@ -28,7 +28,7 @@ execute:
 ---
 
 
-# Think about the water you drink. Where is it from?
+# Think about the water you drink. Where is it from? What do you know about it?
 
 ## Lesson Objective
 <hr>
@@ -62,27 +62,40 @@ In the workshops, we will use:
 
 ## Workshop Structure
 <hr>
-The interactive modules contain **checkpoints**. The checkpoints are linked at the top of the page and include code blocks to run and questions to answer.
+There are multiple pages in each module:
+![](images/module-page-navigation.png)
+
+## Workshop Structure
+<hr>
+The pages contain **checkpoints**. The checkpoints are linked at the top of the page and include code blocks to run and questions to answer.
+<br>
+They are numbered by the page they are on (number) and the order they are within each page (letter).
 <br>
 <br>
 
+:::{.columns}
+:::{.column}
+![](images/module-page-navigation-pg-2.png)
+:::
+:::{.column}
 :::{.ltblue-container .twentyfourpt-font}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 1:** Print Statements](javascript:void(0))
-- [**Checkpoint 2:** Mathematical Operators](javascript:void(0))
-- [**Checkpoint 3:** Comparing Values](javascript:void(0))
-- [**Checkpoint 4:** Print Statements with Math](javascript:void(0))
-- [**Checkpoint 5:** Your Own Print Statements](javascript:void(0))
+- [**Checkpoint 2.a:** Role of Nitrogen](javascript:void(0))
+- [**Checkpoint 2.b:** Nitrogen in Your Water](javascript:void(0))
+- [**Checkpoint 2.c:** Nitrogen Summary](javascript:void(0))
 
 :::
+:::
+:::
+
 
 ## Workshop Structure
 <hr>
 The checkpoints will also be highlighted in the body of the module. When you come across one, that means there is something new to complete there!
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 1**: Print Statements
+🎯 **Checkpoint 2.a**: Role of Nitrogen
 :::
 
 # Let's Get Started! 🔬💧
