@@ -43,6 +43,8 @@ In this lesson, you will learn how to use the Python programming language to cal
 - A calculator 
 :::
 
+# Workshop Structure
+
 ## Workshop Structure
 <hr>
 In the workshops, we will use:  
@@ -336,6 +338,8 @@ print("20 - 7 =", 20 - 7)
 Next Page 👉  
 ![](images/sidebar_intro_water_quality.png){width="40%"} -->
 
+# Intro to Water Quality
+
 ## What is Water? 💧
 <hr>
 [🙋🏼🙋🏾‍♀️🙋🏽‍♂️]{.sixtypt-font} **Question:** What do you know about water?
@@ -541,6 +545,8 @@ Read the procedure on your lab sheet. Make sure everyone in your group understan
 Next Page 👉  
 ![](images/sidebar_intro_stats.png){width="40%"} -->
 
+# Intro to Statistics
+
 ## What is Statistics?
 <hr>
 - How can we make sense of the data we just collected during the nitrates lab?  
@@ -627,7 +633,7 @@ Find the mean and median of your team's lab data:
 Next Page 👉  
 ![](images/sidebar_python_lists.png){width="40%"} -->
 
-<!-- # 🐍 Python: Lists! -->
+# 🐍 Python: Lists!
 
 ## 🐍 Python: Lists!
 <hr>
@@ -763,7 +769,7 @@ else:
 Next Page 👉  
 ![](images/sidebar_center_spread.png){width="40%"} -->
 
-<!-- # Center & Spread -->
+# Center & Spread
 
 ## Python: Measures of Center
 <hr>
@@ -1154,7 +1160,6 @@ Follow the steps on the back of your lab sheet to create a boxplot for the class
 # Boxplots & Outliers
 
 ## 💻 Class Data
-<hr>
 <hr>
 Whew! That was a lot of work. Wouldn't it be great if Python could do it for us? Good news. It can! But first, let's re-import our data on this page.  
 
