@@ -1232,7 +1232,7 @@ plt.show()
 ```
 <br>
 
-**This is using example data.**
+**This uses example data.**
 :::
 :::{.column}
 ```{python}
@@ -1303,7 +1303,7 @@ plt.show()
 ```
 <br>
 
-**This is using example data.**
+**This uses example data.**
 :::
 :::{.column}
 ```{python}
