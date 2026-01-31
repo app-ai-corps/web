@@ -51,7 +51,7 @@ else:
     print("✗ Average nitrate is TOO HIGH")
 ```
 
-Calculate and check your group's mean nitrate concentration.
+Calculating Group Mean Nitrate
 :::
 
 <br>
@@ -105,7 +105,7 @@ print("Nitrate values:", class_nitrate)
 print("Nitrite values:", class_nitrite)
 ```
 
-Import your whole class's nitrate and nitrite data.
+Import class data.
 :::
 
 <br>
@@ -135,7 +135,7 @@ print("Class nitrate:", mean_class_nitrate, "mg/L")
 print("Class nitrite:", mean_class_nitrite, "mg/L")
 ```
 
-Calculate the class nitrate and nitrite means.
+Calculate means for class data.
 :::
 
 <br>
@@ -164,7 +164,7 @@ print("Class nitrate median:", median_class_nitrate, "mg/L")
 print("Class nitrite median:", median_class_nitrite, "mg/L")
 ```
 
-Calculate the class nitrate and nitrite medians.
+Calculate medians for class data.
 :::
 <br>
 <br>
@@ -223,7 +223,7 @@ print("Standard deviation of class nitrate data:", class_nitrate_stdev)
 print("Standard deviation of class nitrite data:", class_nitrite_stdev)
 ```
 
-Find the standard deviation of the class nitrate and nitrite data.
+Calculate standard deviations for class data.
 :::
 <br>
 <br>

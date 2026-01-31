@@ -56,7 +56,7 @@ print("Nitrate values:", class_nitrate)
 print("Nitrite values:", class_nitrite)
 ```
 
-Once more, import your whole class's nitrate and nitrite data.
+Once more, import your class data.
 :::
 <br>
 <br>

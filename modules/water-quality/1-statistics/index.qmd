@@ -26,7 +26,7 @@ sidebar: lesson-1
 - [**Checkpoint 1.b:** Mathematical Operators](#lst-mathoperators)
 - [**Checkpoint 1.c:** Comparing Values](#lst-comparingvalues)
 - [**Checkpoint 1.d:** Print Statements with Math](#lst-printstatementsmath)
-- [**Checkpoint 1.e:** Your Own Print Statements](#lst-personalizedprintstatementsmath)
+- [**Checkpoint 1.e:** Your Own Print Statements with Math](#lst-personalizedprintstatementsmath)
 
 :::
 

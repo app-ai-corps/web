@@ -33,7 +33,7 @@ Grab those sticky notes from the nitrates lab! Sort them by sticky color and pas
 #This is fake to create a checkpoint
 ```
 
-As a group, construct a boxplot for the class nitrate data by hand.
+With your group, construct a boxplot by hand.
 :::
 
 :::{.gray-container}

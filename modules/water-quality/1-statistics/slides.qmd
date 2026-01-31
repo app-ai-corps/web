@@ -62,12 +62,13 @@ In the workshops, we will use:
 
 ## Workshop Structure
 <hr>
-There are multiple pages in each module:  
+There are multiple pages in each module. You navigate between them in the left-hand sidebar:  
 ![](images/module-page-navigation.png)
 
 ## Workshop Structure
 <hr>
-The pages contain **checkpoints**. The checkpoints are linked at the top of the page and include code blocks to run and questions to answer.
+Each page contains **checkpoints**. The checkpoints are linked at the top of the page and include code blocks to run and questions to answer.   
+<br>
 <br>
 They are numbered by the page they are on (number) and the order they are within each page (letter).
 <br>
@@ -96,6 +97,10 @@ The checkpoints will also be highlighted in the body of the module. When you com
 
 :::{.ltblue-container .twentyfourpt-font}
 🎯 **Checkpoint 2.a**: Role of Nitrogen
+:::
+
+:::{.fragment}
+What page number will this checkpoint be on?
 :::
 
 # Let's Get Started! 🔬💧
@@ -408,7 +413,7 @@ Next Page 👉
 <hr>
 
 :::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 1**: Nitrogen in Our Water
+🎯 **Checkpoint 2.a**: Role of Nitrogen
 :::
 <br>
 <br>

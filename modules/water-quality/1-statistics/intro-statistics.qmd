@@ -48,6 +48,7 @@ The median value of this sample dataset is **2**.
 ## Let's Analyze Your Lab Data
 
 :::{#lst-mean_median .checkpoint-box}
+**Get your calculator ready!**
 
 ```{pyodide}
 #| include: false
@@ -55,7 +56,7 @@ The median value of this sample dataset is **2**.
 # Fake block to make checkpoint work
 ```
 
-Get your calculator ready!
+Calculations—Mean & Median
 :::
 
 On your lab sheet, you have the nitrate and nitrite concentrations for each sample. Then, to the right, you have space to perform some statistical analyses and calculations.

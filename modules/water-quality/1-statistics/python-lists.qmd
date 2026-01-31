@@ -12,7 +12,7 @@ sidebar: lesson-1
 
 - [**Checkpoint 5.a:** Storing Data as Lists](#lst-groupreadings)
 - [**Checkpoint 5.b:** Basic Functions with Lists](#lst-basicfunctions)
-- [**Checkpoint 5.c:** Making Comparisons](#lst-comparisons)
+- [**Checkpoint 5.c:** Making Comparisons—EPA Limits](#lst-comparisons)
 :::
 
 ## Let's Analyze Your Data With Python
@@ -41,8 +41,7 @@ print("My group's nitrite readings:", group_nitrite)
 
 ```
 
-Save your group nitrate and nitrite readings into lists!
-
+Storing Data as Lists
 :::
 <br>
 <br>
@@ -80,7 +79,7 @@ The **max()** function finds the biggest number in a list. It will tell us what 
 print("Highest nitrate:", max(group_nitrate), "mg/L")
 ```
 
-Explore Basic Operations with Lists!
+Basic Functions with Lists!
 :::
 
 **In Summary:**  
@@ -117,7 +116,7 @@ else:
     print("✗ Nitrate concentration is outside the safe range!")
 ```
 
-Comparing nitrate readings to EPA limits!
+Making Comparisons—EPA Limits
 :::
 <br>
 <br>
