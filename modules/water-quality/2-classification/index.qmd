@@ -20,7 +20,7 @@ sidebar: lesson-2
 **Checkpoints on this Page:**
 
 - [**Checkpoint 1.a:** Recalling Workshop #1](#lst-review)
-- [**Checkpoint 2.b:** Compare/Contrast Human vs. Buoy Water Quality Testing](#lst-computerizedtesting)
+- [**Checkpoint 1.b:** Compare/Contrast Human vs. Buoy Water Quality Testing](#lst-computerizedtesting)
 
 :::
 <br>
