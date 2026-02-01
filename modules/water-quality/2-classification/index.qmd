@@ -44,23 +44,23 @@ sidebar: lesson-2
     - A motorized unit that moves the test strips
     - A built-in camera system to analyze those strips on the spot
 
-## The Buoy: Test Strips
+### The Buoy: Test Strips
 
 - Smokey Buoy also uses test strips to monitor nitrate concentrations in water. The buoy's test strips are on a roll rather than small strips. We place each pad on a very long piece of material and roll it up inside the buoy to keep it dry until dispensed.
 
 ![1. We begin with commercial test strips and remove the pads. <br> 2. The pads are carefully spaced out and placed on a very long piece of material. <br> 3. The material is rolled up inside the buoy. <br> 4. The roll is carefully positioned to be fed through the motorized roller.](images/buoy_test_strip_roll.png)
 
-## The Buoy: Motor & Camera
+### The Buoy: Motor & Camera
 
 ![](images/buoy_diagram_modified.png){width="50%"}
 
-### Motor
+#### Motor
 Locate the motor near the top of the diagram. The motor drives the roller, which grips and advances the test strip roll.
 
-### Camera
+#### Camera
 When a test pad is in front of the camera, it takes a picture.
 
-## 🎥 Buoy: See It In Motion!
+### 🎥 See It In Action!
 
 ```{=html}
 <video width="80%" controls>
