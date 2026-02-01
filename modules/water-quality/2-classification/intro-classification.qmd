@@ -58,10 +58,12 @@ We can now use AI technology to identify exactly which crops in a field are ripe
 Review the figure above. In image (b), what do you think the yellow represents? The green?
 :::
 
-#### Classification of Ripeness (AI + Physical Computing)
-We can also add components of physical computing (like our buoy) to work in combination with AI to first classify and then act on the classification decision.
+#### Multiclass Classification (AI + Physical Computing)
+The classification of strawberries above is considered **binary**, meaning there are only two possible results: ripe or not ripe.
 
-For example, see the project from the University of Georgia, Athens [^2] below that classifies lemon ripeness and then sorts the fruits accordingly.
+We can also classify into **multiclass** results like apple/orange/banana or ripe/underripe/molded produce.
+
+For example, see the project from the University of Georgia, Athens [^2] below that uses multiclass classification to sort lemons.
 
 <video width="80%" controls>
   <source src="images/ag-lemons-ugaathens-clip.mp4" type="video/mp4">
@@ -70,8 +72,6 @@ For example, see the project from the University of Georgia, Athens [^2] below t
 
 ### More on Classification with AI
 As the video notes, computers can make classification decisions very quickly.
-
-The decision are also not limited to just **binary** results like yes/no or ripe/not ripe. We can also classify into **multiclass** results like apple/orange/banana or unripe/ripe/overripe produce.
 
 ​As with anything, choosing to use AI for thse sorts of tasks has its advantages and disadvantages.
 
