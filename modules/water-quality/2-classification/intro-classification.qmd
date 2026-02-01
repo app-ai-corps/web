@@ -75,12 +75,12 @@ The decision are also not limited to just **binary** results like yes/no or ripe
 
 ​As with anything, choosing to use AI for thse sorts of tasks has its advantages and disadvantages.
 
-- Pros: 
-  - Handles millions of items quickly
-  - Spots tiny differences humans miss
-- Cons: 
-  - Needs tons of examples
-  - Bad examples = bad decisions (e.g., train only on sunny photos, it fails on cloudy days).
+- Pros:  
+  - Handles millions of items quickly  
+  - Spots tiny differences humans miss  
+- Cons:  
+  - Needs tons of examples  
+  - Bad examples = bad decisions (e.g., train only on sunny photos, it fails on cloudy days).  
 ​
 
 **Your job as a scientist:** Practice Classifying!!! The next page will involve a classification activity. It will challenge both your ceonceptual understanding of classification, as well as introduce you to classifying with AI!
