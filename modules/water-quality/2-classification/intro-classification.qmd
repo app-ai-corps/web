@@ -12,7 +12,6 @@ sidebar: lesson-2
 
 - [**Checkpoint 2.a:** Banana Ripeness](#lst-whenripe)
 - [**Checkpoint 2.b:** Strawberry Classification](#lst-strawberry-ripeness-classifier)
-- [**Checkpoint 3:** Classifying With AI](#lst-classify-AI)
 :::
 <hr>
 
@@ -81,7 +80,7 @@ The decision are also not limited to just **binary** results like yes/no or ripe
   - Spots tiny differences humans miss
 - Cons: 
   - Needs tons of examples
-  - Can goof if data is biased (e.g., only daytime photos).
+  - Bad examples = bad decisions (e.g., train only on sunny photos, it fails on cloudy days).
 ​
 
 **Your job as a scientist:** Practice Classifying!!! The next page will involve a classification activity. It will challenge both your ceonceptual understanding of classification, as well as introduce you to classifying with AI!
