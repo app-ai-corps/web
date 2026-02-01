@@ -200,24 +200,31 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">6. Center &amp; Spread</span></a>
   </div>
 </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../1-statistics/boxplots-activity" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Boxplots Activity</span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../1-statistics/boxplots-outliers" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7. Boxplots &amp; Outliers</span></a>
+ <span class="menu-text">8. Boxplots &amp; Outliers</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../1-statistics/exit-ticket" class="sidebar-item-text sidebar-link">
- <span class="menu-text">8. Exit Ticket</span></a>
+  <a href="https://forms.gle/k4P6FK6BpnusNMyZ9" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Exit Ticket</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../1-statistics/exercises" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Optional Exercises</span></a>
+  <a href="https://colab.research.google.com/drive/1xm5qwxA6ZCm3BxuTKFL6n1ItlWgR84jM?usp=sharing" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Optional Exercise</span></a>
   </div>
 </li>
     </ul>
@@ -230,16 +237,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome-scientists" id="toc-welcome-scientists" class="nav-link active" data-scroll-target="#welcome-scientists">🔬💧 Welcome, Scientists!</a></li>
-  <li><a href="#what-is-python" id="toc-what-is-python" class="nav-link" data-scroll-target="#what-is-python">🐍 What is Python?</a></li>
-  <li><a href="#lets-try-python-right-now" id="toc-lets-try-python-right-now" class="nav-link" data-scroll-target="#lets-try-python-right-now">💻 Let’s Try Python Right Now!</a>
+  <li><a href="#lets-try-python" id="toc-lets-try-python" class="nav-link active" data-scroll-target="#lets-try-python">💻 Let’s Try Python!</a>
   <ul class="collapse">
   <li><a href="#textstrings" id="toc-textstrings" class="nav-link" data-scroll-target="#textstrings">Text/Strings</a></li>
   <li><a href="#math" id="toc-math" class="nav-link" data-scroll-target="#math">Math</a></li>
   <li><a href="#textstrings-math" id="toc-textstrings-math" class="nav-link" data-scroll-target="#textstrings-math">Text/Strings &amp; Math</a></li>
   </ul></li>
   <li><a href="#try-it-yourself" id="toc-try-it-yourself" class="nav-link" data-scroll-target="#try-it-yourself">🧑‍💻 Try It Yourself!</a></li>
-  <li><a href="#ready-to-begin" id="toc-ready-to-begin" class="nav-link" data-scroll-target="#ready-to-begin">🚀 Ready to Begin?</a></li>
   </ul>
 </nav>
     </div>
@@ -265,6 +269,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><strong>This module is designed to be used in conjunction with the Lesson 1 slide deck and other resources located in the facilitator’s guide.</strong></p>
 <div class="gray-container">
 <p><strong>Lesson Objective:</strong> In this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate nitrates and nitrates in water samples.</p>
 <p><strong>Materials Needed:</strong><br>
@@ -275,37 +280,23 @@ ul.task-list li input[type="checkbox"] {
 <div class="ltblue-container">
 <p><strong>Checkpoints on this Page:</strong></p>
 <ul>
-<li><a href="#lst-printstatements"><strong>Checkpoint 1:</strong> Print Statements</a></li>
-<li><a href="#lst-mathoperators"><strong>Checkpoint 2:</strong> Mathematical Operators</a></li>
-<li><a href="#lst-comparingvalues"><strong>Checkpoint 3:</strong> Comparing Values</a></li>
-<li><a href="#lst-printstatementsmath"><strong>Checkpoint 4:</strong> Print Statements with Math</a></li>
-<li><a href="#lst-personalizedprintstatementsmath"><strong>Checkpoint 5:</strong> Your Own Print Statements</a></li>
+<li><a href="#lst-printstatements"><strong>Checkpoint 1.a:</strong> Print Statements</a></li>
+<li><a href="#lst-mathoperators"><strong>Checkpoint 1.b:</strong> Mathematical Operators</a></li>
+<li><a href="#lst-comparingvalues"><strong>Checkpoint 1.c:</strong> Comparing Values</a></li>
+<li><a href="#lst-printstatementsmath"><strong>Checkpoint 1.d:</strong> Print Statements with Math</a></li>
+<li><a href="#lst-personalizedprintstatementsmath"><strong>Checkpoint 1.e:</strong> Your Own Print Statements with Math</a></li>
 </ul>
 </div>
-<section id="welcome-scientists" class="level2">
-<h2 class="anchored" data-anchor-id="welcome-scientists">🔬💧 Welcome, Scientists!</h2>
-<p>Over the next several weeks, we will work together to understand the water in our community, its importance, nutrients, and how we can protect it.</p>
-<p>We will use aspects of computing and programming, statistics, and environmental and agricultural science to learn more about local waterways. In today’s lesson, we will consider the role of nitrogen in our water, how we measure it, analyze it, and consider its role in water quality and local ecosystems.</p>
-<p><strong>Never used programming before? Perfect!</strong> This module is designed for complete beginners. We’ll learn everything step by step.</p>
-</section>
-<section id="what-is-python" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-python">🐍 What is Python?</h2>
-<p>Python is a <strong>programming language</strong> — a way to give instructions to a computer. Think of it like writing a recipe, but for the computer!</p>
-<p><strong>Why Python?</strong><br>
-- Scientists use it to analyze data<br>
-- It can do math way faster than we can<br>
-- It can create beautiful graphs</p>
-<p><strong>Don’t worry!</strong> You don’t need to install anything. You can run Python code right here in your web browser!</p>
-</section>
-<section id="lets-try-python-right-now" class="level2">
-<h2 class="anchored" data-anchor-id="lets-try-python-right-now">💻 Let’s Try Python Right Now!</h2>
+<p>🐍 Python is a <strong>programming language</strong> — a way to give instructions to a computer.</p>
+<section id="lets-try-python" class="level2">
+<h2 class="anchored" data-anchor-id="lets-try-python">💻 Let’s Try Python!</h2>
 <section id="textstrings" class="level3">
 <h3 class="anchored" data-anchor-id="textstrings">Text/Strings</h3>
 <p>Python will print text. Click the ▶️ button below to run your first Python code:</p>
 <div id="lst-printstatements" class="listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-printstatements-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-🎯 Checkpoint&nbsp;1: Print Statements!
+🎯 Checkpoint 1.&nbsp;a: Print Statements!
 </figcaption>
 <div aria-describedby="lst-printstatements-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="dkorange-container">
@@ -323,7 +314,7 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6
 </figure>
 </div>
 <p><strong>🎉 You just ran Python code!</strong> See how it printed “Hello, Water Scientist!” below the block? We call text like this a <strong><em>string</em></strong>.</p>
-<p>Notice that strings must be in quotation marks within the code but those marks don’t appear when printed. The quotation marks just tell the computer <em>“Hey! I’m writing regular text. Treat it like written English instead of code.,”</em> and it does! <br> <br></p>
+<p>Notice that strings must be in quotation marks within the code but those marks don’t appear when printed. The quotation marks just tell the computer <em>“Hey! I’m writing regular text. Treat it like written English instead of code.,”</em> and it does! <br> <br> <br></p>
 </section>
 <section id="math" class="level3">
 <h3 class="anchored" data-anchor-id="math">Math</h3>
@@ -331,7 +322,7 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6
 <div id="lst-mathoperators" class="listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-mathoperators-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-🎯 Checkpoint&nbsp;2: Mathematical Operators!
+🎯 Checkpoint 1.&nbsp;b: Mathematical Operators!
 </figcaption>
 <div aria-describedby="lst-mathoperators-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="dkorange-container">
@@ -376,11 +367,11 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6
 </div>
 </figure>
 </div>
-<p><br> <br> We can also ask Python to <strong>compare values</strong>:</p>
+<p><br> <br> <br> We can also ask Python to <strong>compare values</strong>:</p>
 <div id="lst-comparingvalues" class="listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-comparingvalues-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-🎯 Checkpoint&nbsp;3: Comparing Values!
+🎯 Checkpoint 1.&nbsp;c: Comparing Values!
 </figcaption>
 <div aria-describedby="lst-comparingvalues-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="dkorange-container">
@@ -415,7 +406,7 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6
 <div id="lst-printstatementsmath" class="listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-printstatementsmath-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-🎯 Checkpoint&nbsp;4: Print Statements with Math!
+🎯 Checkpoint 1.&nbsp;d: Print Statements with Math!
 </figcaption>
 <div aria-describedby="lst-printstatementsmath-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="dkorange-container">
@@ -441,7 +432,7 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6
 <div id="lst-personalizedprintstatementsmath" class="listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-personalizedprintstatementsmath-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-🎯 Checkpoint&nbsp;5: Your own print statements with math!
+🎯 Checkpoint 1.&nbsp;e: Your own print statements with math!
 </figcaption>
 <div aria-describedby="lst-personalizedprintstatementsmath-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="dkorange-container">
@@ -464,13 +455,6 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJtaW4tbGlu
 </div>
 </figure>
 </div>
-<p><br> <br></p>
-</section>
-<section id="ready-to-begin" class="level2">
-<h2 class="anchored" data-anchor-id="ready-to-begin">🚀 Ready to Begin?</h2>
-<p>Click “Intro to Water Quality” in the left-hand menu to start your journey as a water quality scientist!</p>
-<p>Remember: <strong>Everyone starts as a beginner.</strong> If something doesn’t make sense, that’s normal! Try it again, experiment, and ask questions.</p>
-<p>Let’s go! 🚀</p>
 
 
 <script type="pyodide-data">

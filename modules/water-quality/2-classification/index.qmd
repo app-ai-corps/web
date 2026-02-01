@@ -1,19 +1,19 @@
 ---
-title: "Water Quality and Summary Statistics"
+title: "Classification and Color"
 crossref:
-  lst-title: "🎯 Checkpoint"
+  lst-title: "🎯 Checkpoint 1."
+  lst-labels: alpha a
 format: live-html
 sidebar: lesson-2
 ---
 
 ::: {.gray-container}
 
-**Lesson Objective:** In this lesson, you will learn how to use classification and Python to help computers recognize pH strips from water samples and understand how color (RGB) can be used to monitor water quality.
+**Lesson Objective:** In this lesson, you will learn how to use classification and Python to help computers recognize water sample test strips and understand how color (RGB) can be used to monitor water quality.
 
 **Materials Needed:**  
 - Your computer  
-- A web browser (Chrome, Firefox, or Safari)  
-- Purple Image Card
+- A web browser (Chrome, Firefox, or Safari)
 :::
 
 :::{.ltblue-container}
@@ -25,61 +25,58 @@ sidebar: lesson-2
 - [**Checkpoint 4:** Get to Know the Buoy's Solar Power](#lst-solar)
 
 :::
+<br>
 
 ## 🔬💧 Welcome Back, Scientists!  
 
-** INSERT QUESTIONS FROM EXIT TICKET AND MODULE 1 QUICK REVIEW/FEEDBACK HERE **
+- Let's remember what we learned during workshop #1:
+  - The role of nitrogen in our water
+  - Using statistics to summarize data
+  - Using Python to store, summarize, and visualize data
 
-**Still stuck?** WHAT CAN THEY DO IF THEY"RE STILL STUCK?
+## Meet the Buoy!
 
-## 💻 Meet the Buoy!
+- This is Smokey Buoy![^1]
+  - This class will be deploying Smokey Buoy(s) later this semester.
+  - We will learn a bit about how it works, so you understand it before we use them.
+  <br><br>
+![](images/smokey_buoy.png)
+<br><br>
+- Under the cover, Smokey Buoy has a lot of parts!
+  - Two of these include:
+    - A motorized unit that moves the test strips
+    - A built-in camera system to analyze those strips on the spot
 
-HydroBot is an open-source floating buoy that checks nutrients and pollutants in moving freshwater like streams and rivers. It mixes robot parts, smart computer learning right on the buoy, and far-reaching wireless signals to watch specific spots and meet community needs. The system has four main parts: a motorized unit that uses paper test strips which change color in water; a built-in camera system to analyze those strips on the spot; a long-range radio to send data to online dashboards; and a solar-powered floating case to keep it running (paper citation).
+## The Buoy: Test Strips
 
-### Motorized Unit
-(info here)
+- Smokey Buoy also uses test strips to monitor nitrate concentrations in water. The buoy's test strips are on a roll rather than small strips. We place each pad on a very long piece of material and roll it up inside the buoy to keep it dry until dispensed.
 
-(picture here)
+![1. We begin with commercial test strips and remove the pads. <br> 2. The pads are carefully spaced out and placed on a very long piece of material. <br> 3. The material is rolled up inside the buoy. <br> 4. The roll is carefully positioned to be fed through the motorized roller.](images/buoy_test_strip_roll.png)
+
+## The Buoy: Motor & Camera
+
+![](images/buoy_diagram_modified.png){width="50%"}
+
+### Motor
+Locate the motor near the top of the diagram. The motor drives the roller, which grips and advances the test strip roll.
+
+### Camera
+When a test pad is in front of the camera, it takes a picture.
+
+## 🎥 Buoy: See It In Motion!
+
+```{=html}
+<video width="80%" controls>
+  <source src="buoy-video-motor-camera.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+```
 
 :::{#lst-motorunit}
 
 :::{.dkorange-container}
-Quick Think Pair Share: How does the motorized roller help the buoy test water without someone constantly checking it? Share one pro or con with your neighbor. 
+Quick Think Pair Share: Thinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?
+:::
+:::
 
-### On Board Camera System
-(info here)
-
-(Picture here)
-
-:::{#lst-camera}
-
-:::{.dkorange-container}
-Poll Question: What do you think the camera "sees" to know when a test strip is ready? Thumbs up if color, thumbs down if shape. Discuss why!
-
-### Radio Communication
-(info here)
-
-(Picture here)
-
-:::{#lst-telemetry}
-
-:::{.dkorange-container}
-Facilitator prompt: Imagine the buoy is 2 miles from the lab - how does the radio send data without WiFi? What might stop the signal?
-
-### Solar Power
-(info here)
-
-(image here)
-
-:::{#lst-solar}
-
-:::{.dkorange-container}
-Quick guess: How man days could the buoy run on solar power alone during a rainy week? Thumbs up for 1-2 days, to the side for 1-2 weeks, down for a month or more. Why do you think so?
-
-## 🚀 Ready to Dive In?
-
-Click "Intro to Classification" in the left-hand menu to continue your journey as a water quality scientist!
-
-Remember: **Everyone starts as a beginner.** If something doesn't make sense, that's normal! Try it again, experiment, and ask questions.
-
-Let's go! 🚀
+[^1]: Paper under review

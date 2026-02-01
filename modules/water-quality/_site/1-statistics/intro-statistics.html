@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-92fc4696eefb03a51d989162e9990ac7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-c885c3925676627532b743aee6efee3c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
 <link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -229,17 +229,31 @@ window.Quarto = {
  <span class="menu-text">6. Center &amp; Spread</span></a>
   </div>
 </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../1-statistics/boxplots-activity" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Boxplots Activity</span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../1-statistics/boxplots-outliers" class="sidebar-item-text sidebar-link">
- <span class="menu-text">7. Boxplots &amp; Outliers</span></a>
+ <span class="menu-text">8. Boxplots &amp; Outliers</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../1-statistics/exercises" class="sidebar-item-text sidebar-link">
- <span class="menu-text">8. Exercises</span></a>
+  <a href="https://forms.gle/k4P6FK6BpnusNMyZ9" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Exit Ticket</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://colab.research.google.com/drive/1xm5qwxA6ZCm3BxuTKFL6n1ItlWgR84jM?usp=sharing" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Optional Exercise</span></a>
   </div>
 </li>
     </ul>
@@ -252,8 +266,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-is-statistics" id="toc-what-is-statistics" class="nav-link active" data-scroll-target="#what-is-statistics">What Is Statistics?</a></li>
-  <li><a href="#lets-use-statistics" id="toc-lets-use-statistics" class="nav-link" data-scroll-target="#lets-use-statistics">Let’s Use Statistics!</a>
+  <li><a href="#lets-use-statistics" id="toc-lets-use-statistics" class="nav-link active" data-scroll-target="#lets-use-statistics">Let’s Use Statistics!</a>
   <ul class="collapse">
   <li><a href="#measures-of-center" id="toc-measures-of-center" class="nav-link" data-scroll-target="#measures-of-center">Measures of Center</a></li>
   </ul></li>
@@ -286,24 +299,9 @@ window.Quarto = {
 <div class="ltblue-container">
 <p><strong>Checkpoints on this Page:</strong></p>
 <ul>
-<li><a href="#lst-mean_median"><strong>Checkpoint 1:</strong> Calculations—Mean &amp; Median</a></li>
+<li><a href="#lst-mean_median"><strong>Checkpoint 4.a:</strong> Calculations—Mean &amp; Median</a></li>
 </ul>
 </div>
-<p>With your group, you’ve just tested samples from fictional bodies of water. You measured each of the samples for nitrate concentration <em>and</em> nitrite concentration.</p>
-<p>Quick - is the water safe? What’s the “typical” concentration? Are any readings weird?</p>
-<p>That’s hard to answer just by staring at the numbers! <strong>This is why we need statistics.</strong></p>
-<section id="what-is-statistics" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-statistics">What Is Statistics?</h2>
-<p><strong>Statistics</strong> = A fancy word for “using math to understand data”</p>
-<p>Think of statistics like a calculator that helps you:<br>
-- Summarize lots of numbers into one useful number<br>
-- Find patterns<br>
-- Make decisions<br>
-- Spot things that don’t fit</p>
-<div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden;">
-<p><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/Ge9je05uYJ0?si=FQeUzUxzzdQ1E4Aj" frameborder="0" allowfullscreen=""> </iframe></p>
-</div>
-</section>
 <section id="lets-use-statistics" class="level2">
 <h2 class="anchored" data-anchor-id="lets-use-statistics">Let’s Use Statistics!</h2>
 <div class="ltorange-container">
@@ -328,7 +326,7 @@ window.Quarto = {
 <p><span class="math inline">\(\Large 1 + 1 + 2 + 5 + 6\)</span><br>
 <img src="images/vertical-arrow-torch.png" class="img-fluid" style="width:15.0%"></p>
 </div>
-<p>The median value of this sample dataset is <strong>2</strong>.</p>
+<p>The median value of this sample dataset is <strong>2</strong>. <br> <br></p>
 </section>
 </section>
 </section>
@@ -337,9 +335,10 @@ window.Quarto = {
 <div id="lst-mean_median" class="checkpoint-box listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-mean_median-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-🎯 Checkpoint&nbsp;1: Get your calculator ready!
+🎯 Checkpoint 4.&nbsp;a: Calculations—Mean &amp; Median
 </figcaption>
 <div aria-describedby="lst-mean_median-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><strong>Get your calculator ready!</strong></p>
 <div>
 <div id="pyodide-1" class="exercise-cell">
 
