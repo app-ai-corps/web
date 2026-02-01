@@ -38,7 +38,7 @@ Review—Looking back to Workshop #1
 
 ## Meet the Buoy!
 
-- This is Smokey Buoy![^1]
+- This is Smokey Buoy!
   - This class will be deploying Smokey Buoy(s) later this semester.
   - We will learn a bit about how it works, so you understand it before we use them.
   <br><br>
@@ -57,7 +57,7 @@ Review—Looking back to Workshop #1
 
 ### The Buoy: Motor & Camera
 
-![](images/buoy_diagram_modified.png){width="50%"}
+![Modified from INSERT PAPER CITATION](images/buoy_diagram_modified.png){width="50%"}
 
 #### Motor
 Locate the motor near the top of the diagram. The motor drives the roller, which grips and advances the test strip roll.
@@ -80,5 +80,3 @@ When a test pad is in front of the camera, it takes a picture.
 
 Compare and Contrast Human vs. Buoy Water Quality Testing
 :::
-
-[^1]: Paper under review
