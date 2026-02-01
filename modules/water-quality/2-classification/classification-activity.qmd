@@ -34,4 +34,4 @@ To create your own model, we will use Google's [Teachable Machine](https://teach
 5. To the right of "Class 1", click the pencil and type "Apple" <br>
 ![](images/tm_class1.png){width="45%"}
 6. Grab your apple and get ready!! <br>
-![](images/apple.png){width="45%"}
+![](images/apple.png){width="30%"}
