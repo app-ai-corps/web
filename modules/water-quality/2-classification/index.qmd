@@ -19,7 +19,7 @@ sidebar: lesson-2
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 1.a:** Compare/Contrast Human vs. Computerized Water Quality Testing](#lst-computerizedtesting)
+- [**Checkpoint 1.a:** Compare/Contrast Human vs. Buoy Water Quality Testing](#lst-computerizedtesting)
 
 :::
 <br>
@@ -75,7 +75,7 @@ When a test pad is in front of the camera, it takes a picture.
 **Think Pair Share:** Thinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?
 :::
 
-Compare and Contrast Human vs. Computerized Water Quality Testing
+Compare and Contrast Human vs. Buoy Water Quality Testing
 :::
 
 [^1]: Paper under review
