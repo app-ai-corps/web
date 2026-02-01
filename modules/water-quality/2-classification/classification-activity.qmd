@@ -74,6 +74,6 @@ To create your own model, we will use Google's [Teachable Machine](https://teach
 6. Grab your apple and get ready!!
 :::
 ::: {.column width="40%"}
-![](images/apple.png)
+![](images/apple.png){width="35%"}
 :::
 :::
