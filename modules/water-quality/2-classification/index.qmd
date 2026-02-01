@@ -19,10 +19,7 @@ sidebar: lesson-2
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 1:** Get to Know the Buoy's Motorized Unit](#lst-motorunit)
-- [**Checkpoint 2:** Get to Know the Buoy's Camera System](#lst-camera)
-- [**Checkpoint 3:** Get to Know the Buoy's Radio Communication](#lst-telemetry)
-- [**Checkpoint 4:** Get to Know the Buoy's Solar Power](#lst-solar)
+- [**Checkpoint 1.a:** Compare/Contrast Human vs. Computerized Water Quality Testing](#lst-computerizedtesting)
 
 :::
 <br>
@@ -72,11 +69,13 @@ When a test pad is in front of the camera, it takes a picture.
 </video>
 ```
 
-:::{#lst-motorunit}
+:::{#lst-computerizedtesting}
 
 :::{.dkorange-container}
-Quick Think Pair Share: Thinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?
+**Think Pair Share:** Thinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?
 :::
+
+Compare and Contrast Human vs. Computerized Water Quality Testing
 :::
 
 [^1]: Paper under review
