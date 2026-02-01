@@ -63,7 +63,7 @@ The classification of strawberries above is considered **binary**, meaning there
 
 We can also classify into **multiclass** results like apple/orange/banana or ripe/underripe/molded produce.
 
-For example, see the project from the University of Georgia, Athens [^2] below that uses multiclass classification to sort lemons, discarding those that are underripe and molded and retaining only those that are ripe.
+For example, see the project from the University of Georgia, Athens [^2] below that uses multiclass classification to sort lemons, discarding those that are underripe or molded and retaining only those that are ripe.
 
 <video width="80%" controls>
   <source src="images/ag-lemons-ugaathens-clip.mp4" type="video/mp4">
