@@ -24,14 +24,56 @@ To create your own model, we will use Google's [Teachable Machine](https://teach
 
 ### Steps
 
+::: {.columns}
+::: {.column width="60%"}
 1. Go to [Teachable Machine](https://teachablemachine.withgoogle.com/)
-2. Click "Get Started" <br>
-![](images/tm_get_started.png){width="25%"}
-3. Choose "Image Project" <br>
-![](images/tm_image_project.png){width="35%"}
-4. Select "Standard Image Model" <br>
-![](images/tm_standard_image_model.png){width="45%"}
-5. To the right of "Class 1", click the pencil and type "Apple" <br>
-![](images/tm_class1.png){width="45%"}
-6. Grab your apple and get ready!! <br>
-![](images/apple.png){width="30%"}
+:::
+::: {.column width="40%"}
+&nbsp;
+:::
+:::
+
+::: {.columns}
+::: {.column width="60%"}
+2. Click "Get Started"
+:::
+::: {.column width="40%"}
+![](images/tm_get_started.png)
+:::
+:::
+
+::: {.columns}
+::: {.column width="60%"}
+3. Choose "Image Project"
+:::
+::: {.column width="40%"}
+![](images/tm_image_project.png)
+:::
+:::
+
+::: {.columns}
+::: {.column width="60%"}
+4. Select "Standard Image Model"
+:::
+::: {.column width="40%"}
+![](images/tm_standard_image_model.png)
+:::
+:::
+
+::: {.columns}
+::: {.column width="60%"}
+5. To the right of "Class 1", click the pencil and type "Apple"
+:::
+::: {.column width="40%"}
+![](images/tm_class1.png)
+:::
+:::
+
+::: {.columns}
+::: {.column width="60%"}
+6. Grab your apple and get ready!!
+:::
+::: {.column width="40%"}
+![](images/apple.png)
+:::
+:::
