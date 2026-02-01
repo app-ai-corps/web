@@ -73,10 +73,12 @@ website:
       align: left
       contents:
         - <b>Lesson Contents</b>
-        - text: "1. Intro to Buoy"
+        - text: "1. Intro to the Buoy"
           href: 2-classification/
         - text: "2. Intro to Classification"
           href: 2-classification/intro-classification
+        - text: "3. Classification Activity"
+          href: 2-classification/classification-activity
         
 format:
   html:

@@ -1,0 +1,9 @@
+---
+title: "Classification Activity"
+crossref:
+  lst-title: "🎯 Checkpoint 3."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-2
+---
+
