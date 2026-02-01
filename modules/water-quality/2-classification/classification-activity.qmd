@@ -20,7 +20,7 @@ You have seen different examples of classification, now it's your turn to train 
 ## Teachable Machine
 [![](images/teachable_machine_logo.png)](https://teachablemachine.withgoogle.com){target="_blank" rel="nofollow"}
 <br>
-To create your own model, we will use Google's [Teachable Machine](https://teachablemachine.withgoogle.com/). 
+To create your own model, we will use Google's [Teachable Machine](https://teachablemachine.withgoogle.com/). Teachable Machine uses 🐍 Python (yes! The same Python we used in Workshop #1) to help users build classification models. It just hides the 🐍 Python in the background.
 
 ### Steps
 
