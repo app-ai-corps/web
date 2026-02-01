@@ -16,10 +16,22 @@ You have seen different examples of classification, now it's your turn to train 
 - 1 lab sheet per person
 :::
 <br>
-<br>
 
 ## Teachable Machine
 [![](images/teachable_machine_logo.png)](https://teachablemachine.withgoogle.com){target="_blank" rel="nofollow"}
 <br>
-<br>
-To create your own model, we will use Google's [Teachable Machine](https://teachablemachine.withgoogle.com/).
+To create your own model, we will use Google's [Teachable Machine](https://teachablemachine.withgoogle.com/). 
+
+### Steps
+
+1. Go to [Teachable Machine](https://teachablemachine.withgoogle.com/)
+2. Click "Get Started" <br>
+![](images/tm_get_started.png){width="25%"}
+3. Choose "Image Project" <br>
+![](images/tm_image_project.png){width="35%"}
+4. Select "Standard Image Model" <br>
+![](images/tm_standard_image_model.png){width="45%"}
+5. To the right of "Class 1", click the pencil and type "Apple" <br>
+![](images/tm_class1.png){width="45%"}
+6. Grab your apple and get ready!! <br>
+![](images/apple.png){width="45%"}
