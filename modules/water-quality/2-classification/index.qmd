@@ -71,9 +71,7 @@ When a test pad is in front of the camera, it takes a picture.
 
 :::{#lst-computerizedtesting}
 
-:::{.dkorange-container}
 **Think Pair Share:** Thinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?
-:::
 
 Compare and Contrast Human vs. Buoy Water Quality Testing
 :::
