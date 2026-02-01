@@ -33,7 +33,7 @@ sidebar: lesson-2
   - Using statistics to summarize data
   - Using Python to store, summarize, and visualize data
 
-Review: Looking back to Workshop #1
+Review—Looking back to Workshop #1
 :::
 
 ## Meet the Buoy!
