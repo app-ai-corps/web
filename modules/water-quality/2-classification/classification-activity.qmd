@@ -7,3 +7,19 @@ format: live-html
 sidebar: lesson-2
 ---
 
+You have seen different examples of classification, now it's your turn to train your own classification model!
+
+:::{.gray-container}
+- 1 Apple and 1 Orange per pair
+- 1 Distractor (fruit, ball, etc.) per pair 
+- 1 Device per pair/group 
+- 1 lab sheet per person
+:::
+<br>
+<br>
+
+## Teachable Machine
+[![](images/teachable_machine_logo.png)](https://teachablemachine.withgoogle.com){target="_blank" rel="nofollow"}
+<br>
+<br>
+To create your own model, we will use Google's [Teachable Machine](https://teachablemachine.withgoogle.com/).

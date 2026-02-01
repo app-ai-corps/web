@@ -58,10 +58,50 @@ We can now use AI technology to identify exactly which crops in a field are ripe
 Review the figure above. In image (b), what do you think the yellow represents? The green?
 :::
 
-#### Multiclass Classification (AI + Physical Computing)
+#### Types of Classification
 The classification of strawberries above is considered **binary**, meaning there are only two possible results: ripe or not ripe.
+<br>
+<br>
 
-We can also classify into **multiclass** results like apple/orange/banana or ripe/underripe/molded produce.
+##### Binary Classification
+Two possible outcomes:
+<br>
+<br>
+<table style="width: 75%; margin: 0 auto; border-collapse: collapse;">
+  <tr>
+    <td style="width: 45%; background-color: #fde724; color: black; padding: 20px; text-align: center; font-weight: bold;">
+      Not Ripe
+    </td>
+    <td style="width: 10%;"></td>
+    <td style="width: 45%; background-color: #35b878; color: white; padding: 20px; text-align: center; font-weight: bold;">
+      Ripe
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+
+##### Multiclass Classification
+We can also classify into **multiclass** results like apple/orange/banana or ripe/underripe/molded produce. Multiclass classification has three or more possible outcomes:
+<br>
+<br>
+<table style="width: 75%; margin: 0 auto; border-collapse: collapse;">
+  <tr>
+    <td style="width: 30%; background-color: #234124; color: white; padding: 20px; text-align: center; font-weight: bold;">
+      Underripe
+    </td>
+    <td style="width: 5%;"></td>
+    <td style="width: 30%; background-color: #f6cf13; color: black; padding: 20px; text-align: center; font-weight: bold;">
+      Ripe
+    </td>
+    <td style="width: 5%;"></td>
+    <td style="width: 30%; background-color: #474331; color: white; padding: 20px; text-align: center; font-weight: bold;">
+      Molded
+    </td>
+  </tr>
+</table>
+<br>
+<br>
 
 For example, see the project from the University of Georgia, Athens [^2] below that uses multiclass classification to sort lemons, discarding those that are underripe or molded and retaining only those that are ripe.
 
@@ -79,11 +119,11 @@ As the video notes, computers can make classification decisions very quickly.
   - Handles millions of items quickly  
   - Spots tiny differences humans miss  
 - Cons:  
-  - Needs tons of examples  
+  - Needs tons of examples to train the computer
   - Bad examples = bad decisions (e.g., train only on sunny photos, it fails on cloudy days).  
 ​
 
-**Your job as a scientist:** Practice Classifying!!! The next page will involve a classification activity. It will challenge both your conceptual understanding of classification, as well as introduce you to classifying with AI!
+**Your job as a scientist:** Practice Classifying! The next page will involve a classification activity. It will challenge both your conceptual understanding of classification, as well as introduce you to classifying with AI!
 
 [^1]: Liu, T., Chopra, N., & Samtani, J. (2022). Information system for detecting strawberry fruit locations and ripeness conditions in a farm. *Biology and Life Science Forum, 16* (1), https://doi.org/10.3390/IECHo2022-12488. 
 [^2]: Drake, A. (2025, April 26). AI for agriculture: How Georgians use robots on the farm [Video]. WRDW. https://www.wrdw.com/2025/04/26/ai-agriculture-how-georgians-use-robots-farm/
