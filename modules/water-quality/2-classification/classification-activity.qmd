@@ -77,3 +77,12 @@ To create your own model, we will use Google's [Teachable Machine](https://teach
 ![](images/apple.png){width="35%"}
 :::
 :::
+
+::: {.columns}
+::: {.column width="60%"}
+7. Click "webcam" to turn on and allow the computer to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances.
+:::
+::: {.column width="40%"}
+![](images/tm_apple_webcam.png)
+:::
+:::
