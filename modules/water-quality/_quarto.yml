@@ -78,11 +78,14 @@ website:
         - text: "2. Intro to Classification"
           href: 2-classification/intro-classification
         - text: "---"
-        - text: "3. Classification Activity - Train"
+        - text: "3. Classification - Train"
           href: 2-classification/classification-activity-train
-        - text: "4. Classification Activity - Test"
+        - text: "4. Classification - Test"
           href: 2-classification/classification-activity-test
         - text: "---"
+        - text: "5. How Does It Work?"
+          href: 2-classification/inside-classification
+
 format:
   html:
     link-external-newwindow: true

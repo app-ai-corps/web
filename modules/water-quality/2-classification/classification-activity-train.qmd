@@ -133,5 +133,5 @@ To create your own model, we will use Google's [Teachable Machine](https://teach
 :::
 :::
 
-***Congratulations! You have trained your own classification model!***<br>
-On the next page, we'll test it.
+***Congratulations! You have trained your own classifier!***<br>
+On the next page, we'll test how well it works.
