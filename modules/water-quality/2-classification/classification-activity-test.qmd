@@ -21,7 +21,23 @@ While some models can be very accurate and high quality, others may struggle. No
 Get your lab sheet ready. Let's record some test results!
 :::
 
-#### Steps
+#### Steps—Part A
 1. Trade your apple and orange with another group. No group should have the same fruit you trained the model with.
 
-2. 
+2. Take your lab sheet and review the observation table. The first item to test is an apple. If the model works well, what will it predict? Record this in the second column.
+
+3. Next, hold the apple up to your camera. What does the model predict it is? Record this in the third column of your lab sheet. 
+
+4. The model also reports confidence in its prediction. Record this percent confidence in the fourth column of your sheet.
+
+5. Repeat this process for all other objects on the lab sheet.
+
+<hr>
+
+### Reflecting
+
+How did your model perform? Were any objects classified incorrectly? Were any objects classified with low confidence (< 80%)? Respond to these questions on your lab sheet.
+
+#### Steps—Part B
+
+Let's improve your model.

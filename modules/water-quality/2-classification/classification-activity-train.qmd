@@ -87,6 +87,12 @@ To create your own model, we will use Google's [Teachable Machine](https://teach
 :::
 :::
 
+:::{.callout-important}
+## PRO TIP
+
+Make sure you have a clean table and avoid messy backgrounds. Vary the lighting in your images (window, light, lamp, shadow, etc.) like might be encountered in real scenarios.
+:::
+
 ::: {.columns}
 ::: {.column width="60%"}
 8. Position your apple within the frame and click the "Hold to Record" button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images.
