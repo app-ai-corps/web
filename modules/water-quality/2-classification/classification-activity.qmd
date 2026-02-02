@@ -80,9 +80,37 @@ To create your own model, we will use Google's [Teachable Machine](https://teach
 
 ::: {.columns}
 ::: {.column width="60%"}
-7. Click "webcam" to turn on and allow the computer to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances.
+7. Click "webcam" to turn on and allow the computer to begin capturing images of the apple.
 :::
 ::: {.column width="40%"}
 ![](images/tm_apple_webcam.png)
+:::
+:::
+
+::: {.columns}
+::: {.column width="60%"}
+8. Position your apple within the frame and click the "Hold to Record" button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances.
+:::
+::: {.column width="40%"}
+![](images/tm_apple_hold_to_record.png.png)
+:::
+:::
+
+::: {.columns}
+::: {.column width="60%"}
+9. When finished, relase the "Hold to Record" button and click to "x" in the top right corner to exit the Apple class.
+:::
+::: {.column width="40%"}
+![](images/tm_apple_exit_class.png)
+:::
+:::
+
+::: {.columns}
+::: {.column width="60%"}
+10. Put your apple aside and grab your orange. Repeat the process above to train your model for Class 2.
+:::
+::: {.column width="40%"}
+![](images/tm_class2.png)
+![](images/orange.png){width="35%"}
 :::
 :::
