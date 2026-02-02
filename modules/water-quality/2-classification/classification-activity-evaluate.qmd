@@ -1,5 +1,5 @@
 ---
-title: "Classification Activity - Test"
+title: "Classification Activity - Evaluate"
 crossref:
   lst-title: "🎯 Checkpoint 4."
   lst-labels: alpha a
@@ -9,16 +9,16 @@ sidebar: lesson-2
 
 On the last page, you trained your own classifier. Now, let's see how well it works!
 
-## Test Your Classifier
+## Evaluate Your Classifier
 
-While some models can be very accurate and high quality, others may struggle. Now, let's test your model to see how it performs. To do this, you'll use the "Preview" pane on the right side of the Teachable Machine screen.
+While some models can be very accurate and high quality, others may struggle. Now, let's put your model to the test to see how it performs. To do this, you'll use the "Preview" pane on the right side of the Teachable Machine screen.
 
 ![](images/tm_preview.png){width="30%"}
 
 ### Putting it to the Test
 
 :::{.callout-note}
-Get your lab sheet ready. Let's record some test results!
+Get your lab sheet ready. Let's record some results!
 :::
 
 #### Steps—Part A

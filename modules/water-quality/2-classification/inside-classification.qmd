@@ -27,4 +27,4 @@ Under the hood of your model and most other image classification models is somet
   </iframe>
 </div>
 
-The example in the video focuses on classifying objects in grayscale photos, but CNNs can also handle color. However, computers see color differently than humans.
+The example in the video focuses on classifying objects in grayscale photos, but CNNs can also handle color. However, computers "see" color differently than humans.

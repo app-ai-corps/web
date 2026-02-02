@@ -131,4 +131,4 @@ Make sure you have a clean table and avoid messy backgrounds. Vary the lighting 
 :::
 
 ***Congratulations! You have trained your own classifier!***<br>
-On the next page, we'll test how well it works.
+On the next page, we'll evaluate how well it works.
