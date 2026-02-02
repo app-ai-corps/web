@@ -1,5 +1,5 @@
 ---
-title: "Classification Activity"
+title: "Classification Activity - Train"
 crossref:
   lst-title: "🎯 Checkpoint 3."
   lst-labels: alpha a
@@ -89,10 +89,10 @@ To create your own model, we will use Google's [Teachable Machine](https://teach
 
 ::: {.columns}
 ::: {.column width="60%"}
-8. Position your apple within the frame and click the "Hold to Record" button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances.
+8. Position your apple within the frame and click the "Hold to Record" button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images.
 :::
 ::: {.column width="40%"}
-![](images/tm_apple_hold_to_record.png.png)
+![](images/tm_apple_hold_to_record.png)
 :::
 :::
 
@@ -107,10 +107,30 @@ To create your own model, we will use Google's [Teachable Machine](https://teach
 
 ::: {.columns}
 ::: {.column width="60%"}
-10. Put your apple aside and grab your orange. Repeat the process above to train your model for Class 2.
+10. Put your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture **roughly** the same number of images for the orange as you did for the apple.
 :::
 ::: {.column width="40%"}
 ![](images/tm_class2.png)
 ![](images/orange.png){width="35%"}
 :::
 :::
+
+::: {.columns}
+::: {.column width="60%"}
+11. Click the "Add a class" button. Change "Class 3" t "No Apple or Orange" and repeat the process once more, capturing **roughly** the same number of images but without any apples or oranges.
+:::
+::: {.column width="40%"}
+![](images/tm_add_class.png)
+:::
+:::
+
+::: {.columns}
+::: {.column width="60%"}
+12. When finished capturing data for all three classes, click the "Train Model" button. The website will train your own custom classification model, based on your data!
+:::
+::: {.column width="40%"}
+![](images/tm_train_model.png)
+:::
+:::
+
+***Congratulations! You have trained your own classification model!***

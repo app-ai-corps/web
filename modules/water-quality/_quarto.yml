@@ -77,8 +77,10 @@ website:
           href: 2-classification/
         - text: "2. Intro to Classification"
           href: 2-classification/intro-classification
-        - text: "3. Classification Activity"
-          href: 2-classification/classification-activity
+        - text: "3. Classification Activity - Train"
+          href: 2-classification/classification-activity-train
+        - text: "4. Classification Activity - Test"
+          href: 2-classification/classification-activity-test
         
 format:
   html:
