@@ -16,7 +16,7 @@ sidebar: lesson-2
 
 ## How Does Your Model Work?
 
-Under the hood of your model and most other image classification models is something called a ****Convolutional Neural Net (CNN)**. As you have already done, we train CNNs to recognize pattern in images. Watch the clip below to learn more about how the CNN works.
+Under the hood of your model and most other image classification models is something called a **Convolutional Neural Net (CNN)**. As you have already done, we train CNNs to recognize pattern in images. Watch the clip below to learn more about how the CNN works. Note that the video discussed some of the mathematics behind CNNs, but don't worry if you don't understand everything. Prioritize understanding the big picture, as the video moves quickly.
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe 
@@ -26,3 +26,5 @@ Under the hood of your model and most other image classification models is somet
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
   </iframe>
 </div>
+
+The example in the video focuses on classifying objects in grayscale photos, but CNNs can also handle color. However, computers see color differently than humans.
