@@ -117,16 +117,7 @@ To create your own model, we will use Google's [Teachable Machine](https://teach
 
 ::: {.columns}
 ::: {.column width="60%"}
-11. Click the "Add a class" button. Change "Class 3" t "No Apple or Orange" and repeat the process once more, capturing **roughly** the same number of images but without any apples or oranges.
-:::
-::: {.column width="40%"}
-![](images/tm_add_class.png)
-:::
-:::
-
-::: {.columns}
-::: {.column width="60%"}
-12. When finished capturing data for all three classes, click the "Train Model" button. The website will train your own custom classification model, based on your data!
+12. When finished capturing data for both classes, click the "Train Model" button. The website will train your own custom classification model, based on your data!
 :::
 ::: {.column width="40%"}
 ![](images/tm_train_model.png)
