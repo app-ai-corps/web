@@ -50,5 +50,7 @@ Let's improve your model. If either your apple or orange class performed poorly 
 
 3. **Document any retraining on your lab sheet.** Make sure to record the kinds of photos you added and your rationale for them.
 
+<hr>
+
 ### Back to the Buoy
 Note that you can choose to export your model for later use. This model is quite similar to one used in the buoy to detect whether there is a new test pad in view of the onboard camera ready to analyze.
