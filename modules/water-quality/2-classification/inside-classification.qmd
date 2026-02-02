@@ -19,7 +19,7 @@ sidebar: lesson-2
 Under the hood of your model and most other image classification models is something called a Convolutional Neural Net (CNN). As you have seen, we train CNNs to recognize pattern in images. Watch the clip below to learn more about how the CNN works.
 
 <iframe width="800" height="450" 
-  src="https://www.youtube.com/embed/oV3ZY6tJiA0?start=315&end=540" 
+  src="https://www.youtube.com/embed/oV3ZY6tJiA0?start=351&end=540" 
   frameborder="0" 
   allowfullscreen>
 </iframe>
