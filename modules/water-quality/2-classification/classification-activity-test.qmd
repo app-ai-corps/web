@@ -13,7 +13,7 @@ On the last page, you trained your own classifier. Now, let's see how well it wo
 
 While some models can be very accurate and high quality, others may struggle. Now, let's test your model to see how it performs. To do this, you'll use the "Preview" pane on the right side of the Teachable Machine screen.
 
-![](images/tm_preview.png){width="50%"}
+![](images/tm_preview.png){width="30%"}
 
 ### Putting it to the Test
 
@@ -22,7 +22,7 @@ Get your lab sheet ready. Let's record some test results!
 :::
 
 #### Steps—Part A
-1. Trade your apple and orange with another group. No group should have the same fruit you trained the model with.
+1. Trade your apple and orange with another group. No group should have the exact same fruits you trained the model with.
 
 2. Take your lab sheet and review the observation table. The first item to test is an apple. If the model works well, what will it predict? Record this in the second column.
 
@@ -34,10 +34,21 @@ Get your lab sheet ready. Let's record some test results!
 
 <hr>
 
-### Reflecting
+### Reflecting & Retraining
 
 How did your model perform? Were any objects classified incorrectly? Were any objects classified with low confidence (< 80%)? Respond to these questions on your lab sheet.
 
+<hr>
+
 #### Steps—Part B
 
-Let's improve your model.
+Let's improve your model. If either your apple or orange class performed poorly (missed classification or low confidence), you can adjust the model.
+
+1. To do this, **add about 20 new photos to the training images for the class**. Be strategic about these images. Did it perform poorly when the bottom of the apple was in view? The stem? When the apple was in low light?
+
+2. You may need to do this for 0, 1, or both classes. After that, **train your model again**.
+
+3. **Document any retraining on your lab sheet.** Make sure to record the kinds of photos you added and your rationale for them.
+
+### Back to the Buoy
+Note that you can choose to export your model for later use. This model is quite similar to one used in the buoy to detect whether there is a new test pad in view of the onboard camera ready to analyze.

@@ -1,0 +1,15 @@
+---
+title: "Intro to Classification"
+crossref:
+  lst-title: "🎯 Checkpoint 5."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-2
+---
+
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 5.a:** Banana Ripeness](#lst-whenripe)
+- [**Checkpoint 5.b:** Strawberry Classification](#lst-strawberry-ripeness-classifier)
+:::
