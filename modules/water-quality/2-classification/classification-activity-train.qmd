@@ -134,3 +134,4 @@ To create your own model, we will use Google's [Teachable Machine](https://teach
 :::
 
 ***Congratulations! You have trained your own classification model!***
+On the next page, we'll test it.
