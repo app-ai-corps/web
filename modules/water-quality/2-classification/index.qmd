@@ -12,7 +12,7 @@ sidebar: lesson-2
 **Lesson Objective:** In this lesson, you will learn how to use classification and Python to help computers recognize water sample test strips and understand how color (RGB) can be used to monitor water quality.
 
 **Materials Needed:**  
-- Your computer  
+- A computer  with a webcam
 - A web browser (Chrome, Firefox, or Safari)
 :::
 
