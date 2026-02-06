@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>What Computers See</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin: 12px; color: #222; padding-bottom: 48px;}
+    h1 { font-size: 18px; margin: 6px 0 10px; }
+    #controls { width: 740px; display:flex; flex-direction:column; gap:6px; margin-bottom:8px;}
+    .radio-row { display:flex; justify-content:space-between; align-items:center; width:740px; }
+    .left-label, .right-label { width:48%; }
+    .left-label { text-align:left; }
+    .right-label { text-align:right; }
+    #channelRow { display:flex; justify-content:flex-end; width:740px; }
+    #channelSelect { margin-left:8px; }
+    canvas { border: 1px solid #ddd; display:block; }
+    .hint { font-size:13px; color:#666; margin-top:8px; max-width:740px;}
+    #acknowledgements {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #fff;
+      border-top: 1px solid #eee;
+      padding: 8px 12px;
+      text-align: center;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <h1>What Computers Actually See</h1>
+
+  <div id="controls">
+    <div class="radio-row">
+      <label class="left-label"><input type="radio" name="view" id="viewHumans" value="humans" checked> What humans see</label>
+      <label class="right-label"><input type="radio" name="view" id="viewComputers" value="computers"> What computers see</label>
+    </div>
+
+    <div id="channelRow">
+      <label>Channel:
+        <select id="channelSelect">
+          <option value="red" selected>Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
+
+
+<script>
+  let capture;
+  let CAPTURE_W = parseInt(320/3);
+  let CAPTURE_H = parseInt(240/3);
+
+  let useVideo = true;
+  let isPaused = false;
+
+  let sw = 25, sh = 25;
+  let sx = parseInt(CAPTURE_W/2 - sw/2), sy = parseInt(CAPTURE_H/2 - sh/2);
+
+  let boxSize = 20;
+  let fontSize = 10;
+
+  const BIG_X_OFFSET = 120;
+  const BIG_Y = 50;
+  const MIN_BOX_SIZE = 6;   
+  const MAX_BOX_SIZE = 40;  
+
+  let overlay;
+
+  function preload() {
+    if (useVideo) {
+      capture = createCapture(VIDEO);
+      capture.size(CAPTURE_W, CAPTURE_H);
+      capture.hide();
+    }
+  }
+
+  function setup() {
+    createCanvas(windowWidth, windowHeight);
+    pixelDensity(1);
+
+    overlay = createGraphics(1, 1);
+    overlay.pixelDensity(1);
+    overlay.elt.style.position = 'fixed';
+    overlay.elt.style.top = '12px';
+    overlay.elt.style.right = '12px';
+    overlay.elt.style.border = '1px solid rgba(0,0,0,0.12)';
+    overlay.elt.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
+    overlay.elt.style.zIndex = 1001;
+    overlay.elt.style.background = '#fff';
+
+    computeLayout();
+  }
+
+  function draw() {
+    background(255);
+
+    if (capture) {
+      capture.loadPixels();
+    }
+
+    const viewSelected = document.querySelector('input[name="view"]:checked')?.value || 'humans';
+    const channel = document.getElementById('channelSelect')?.value || 'red';
+
+    const bigW = sw * boxSize;
+    const bigH = sh * boxSize;
+    const bigX = BIG_X_OFFSET;
+    const bigY = BIG_Y;
+
+    if (capture) {
+      image(capture, bigX, bigY, bigW, bigH);
+    } else {
+      noFill();
+      stroke(200);
+      rect(bigX, bigY, bigW, bigH);
+    }
+
+    if (viewSelected === 'computers') {
+      displayAveragedGrid(capture, sx, sy, sw, sh, bigX, bigY, boxSize, channel);
+    }
+
+    displayAveragedGridToOverlay(capture, sx, sy, sw, sh, overlay, channel);
+  }
+
+  function computeLayout() {
+    const controlsElem = document.getElementById('controls');
+    const ackElem = document.getElementById('acknowledgements');
+
+    const controlsH = controlsElem ? controlsElem.getBoundingClientRect().height : 0;
+    const ackH = ackElem ? ackElem.getBoundingClientRect().height : 0;
+
+    const TOP_MARGIN = 8;
+    const BOTTOM_MARGIN = 8;
+    const SIDE_MARGIN = 16;
+
+    const availWidth = Math.max(200, window.innerWidth - SIDE_MARGIN * 2);
+    const availHeight = Math.max(100, window.innerHeight - controlsH - ackH - TOP_MARGIN - BOTTOM_MARGIN - 40);
+
+    const maxBoxFromHeight = Math.floor((availHeight - BIG_Y) / sh);
+    const maxBoxFromWidth = Math.floor((availWidth - BIG_X_OFFSET) / sw);
+
+    boxSize = Math.max(MIN_BOX_SIZE, Math.min(MAX_BOX_SIZE, maxBoxFromHeight, maxBoxFromWidth));
+    if (boxSize < MIN_BOX_SIZE) boxSize = MIN_BOX_SIZE;
+
+    fontSize = calculateTextSizeFor(boxSize);
+
+    const canvasW = Math.min(1100, availWidth); 
+    const canvasH = Math.max(BIG_Y + sh * boxSize + 24, Math.min(availHeight, window.innerHeight - 8));
+    resizeCanvas(canvasW, canvasH);
+
+    const overlayDesiredW = Math.max(80, Math.min(180, Math.floor(sw * boxSize * 0.4)));
+    const overlayDesiredH = Math.floor((sh / sw) * overlayDesiredW);
+    overlay.resizeCanvas(overlayDesiredW, overlayDesiredH);
+    overlay.elt.style.width = overlayDesiredW + 'px';
+    overlay.elt.style.height = overlayDesiredH + 'px';
+  }
+
+  function windowResized() {
+    computeLayout();
+  }
+
+  function keyPressed() {
+    if (key === 'p') {
+      if (isPaused) {
+        if (capture && capture.elt && capture.elt.play) capture.elt.play();
+        isPaused = false;
+      } else {
+        if (capture && capture.elt && capture.elt.pause) capture.elt.pause();
+        isPaused = true;
+      }
+    }
+  }
+
+  function displayAveragedGrid(img, sx, sy, sw, sh, tx, ty, boxSize, channel) {
+    const GRID = 5;
+    const totalBoxW = sw * boxSize;
+    const totalBoxH = sh * boxSize;
+    const cellW = totalBoxW / GRID;
+    const cellH = totalBoxH / GRID;
+
+    textSize(calculateTextSizeFor(Math.min(cellW, cellH)));
+    textAlign(CENTER, CENTER);
+
+    if (!img || !img.pixels) return;
+
+    img.loadPixels();
+    const blockWBase = sw / GRID;
+    const blockHBase = sh / GRID;
+
+    for (let gx = 0; gx < GRID; gx++) {
+      for (let gy = 0; gy < GRID; gy++) {
+        const startX = Math.floor(sx + gx * blockWBase);
+        const startY = Math.floor(sy + gy * blockHBase);
+        const w = (gx === GRID - 1) ? (sx + sw) - startX : Math.floor(blockWBase);
+        const h = (gy === GRID - 1) ? (sy + sh) - startY : Math.floor(blockHBase);
+
+        let rSum = 0, gSum = 0, bSum = 0, count = 0;
+        for (let px = 0; px < w; px++) {
+          for (let py = 0; py < h; py++) {
+            const ix = startX + px;
+            const iy = startY + py;
+            if (ix < 0 || iy < 0 || ix >= img.width || iy >= img.height) continue;
+            const i = (ix + iy * img.width) * 4;
+            rSum += img.pixels[i + 0];
+            gSum += img.pixels[i + 1];
+            bSum += img.pixels[i + 2];
+            count++;
+          }
+        }
+        const ar = count ? rSum / count : 0;
+        const ag = count ? gSum / count : 0;
+        const ab = count ? bSum / count : 0;
+
+        const drawX = tx + gx * cellW;
+        const drawY = ty + gy * cellH;
+
+        let dispR = 0, dispG = 0, dispB = 0;
+        if (channel === 'red') {
+          dispR = ar;
+        } else if (channel === 'green') {
+          dispG = ag;
+        } else {
+          dispB = ab;
+        }
+
+        noStroke();
+        fill(dispR, dispG, dispB);
+        rect(drawX, drawY, cellW, cellH);
+
+        const val = channel === 'red' ? Math.round(ar) : channel === 'green' ? Math.round(ag) : Math.round(ab);
+        const luminance = 0.299 * dispR + 0.587 * dispG + 0.114 * dispB;
+        const textColor = (luminance > 160) ? 0 : 255;
+        fill(textColor);
+        text(val, drawX + cellW / 2, drawY + cellH / 2);
+      }
+    }
+
+    noFill();
+    stroke(0,0,0,50);
+    rect(tx - 2, ty - 2, totalBoxW + 4, totalBoxH + 4);
+
+    noStroke();
+    fill(0);
+    textSize(12);
+    textAlign(LEFT, CENTER);
+  }
+
+  function displayAveragedGridToOverlay(img, sx, sy, sw, sh, gfx, channel) {
+    const GRID = 5;
+    if (!gfx) return;
+
+    gfx.clear();
+    gfx.noStroke();
+    gfx.fill(255);
+    gfx.rect(0, 0, gfx.width, gfx.height);
+
+    if (!img || !img.pixels) return;
+    img.loadPixels();
+
+    const cellW = gfx.width / GRID;
+    const cellH = gfx.height / GRID;
+    const pt = Math.max(6, Math.floor(Math.min(cellW, cellH) / 2.5));
+    gfx.textSize(pt);
+    gfx.textAlign(CENTER, CENTER);
+
+    const blockWBase = sw / GRID;
+    const blockHBase = sh / GRID;
+
+    for (let gx = 0; gx < GRID; gx++) {
+      for (let gy = 0; gy < GRID; gy++) {
+        const startX = Math.floor(sx + gx * blockWBase);
+        const startY = Math.floor(sy + gy * blockHBase);
+        const w = (gx === GRID - 1) ? (sx + sw) - startX : Math.floor(blockWBase);
+        const h = (gy === GRID - 1) ? (sy + sh) - startY : Math.floor(blockHBase);
+
+        let rSum = 0, gSum = 0, bSum = 0, count = 0;
+        for (let px = 0; px < w; px++) {
+          for (let py = 0; py < h; py++) {
+            const ix = startX + px;
+            const iy = startY + py;
+            if (ix < 0 || iy < 0 || ix >= img.width || iy >= img.height) continue;
+            const i = (ix + iy * img.width) * 4;
+            rSum += img.pixels[i + 0];
+            gSum += img.pixels[i + 1];
+            bSum += img.pixels[i + 2];
+            count++;
+          }
+        }
+        const ar = count ? rSum / count : 0;
+        const ag = count ? gSum / count : 0;
+        const ab = count ? bSum / count : 0;
+
+        const drawX = gx * cellW;
+        const drawY = gy * cellH;
+
+        let dispR = 0, dispG = 0, dispB = 0;
+        if (channel === 'red') {
+          dispR = ar;
+        } else if (channel === 'green') {
+          dispG = ag;
+        } else {
+          dispB = ab;
+        }
+
+        gfx.noStroke();
+        gfx.fill(dispR, dispG, dispB);
+        gfx.rect(drawX, drawY, cellW, cellH);
+
+        const val = channel === 'red' ? Math.round(ar) : channel === 'green' ? Math.round(ag) : Math.round(ab);
+        const luminance = 0.299 * dispR + 0.587 * dispG + 0.114 * dispB;
+        const textColor = (luminance > 160) ? 0 : 255;
+        gfx.fill(textColor);
+        gfx.text(val, drawX + cellW / 2, drawY + cellH / 2);
+      }
+    }
+
+    gfx.noStroke();
+    gfx.fill(0);
+    gfx.textSize(Math.max(8, Math.floor(gfx.width / 12)));
+    gfx.textAlign(LEFT, BOTTOM);
+    gfx.text(`${channel.toUpperCase()} (5×5)`, 6, gfx.height - 6);
+  }
+
+  function calculateTextSizeFor(boxSize) {
+    return Math.max(6, Math.floor(boxSize / 2.8));
+  }
+</script>
+
+
+</body>
+<div id="acknowledgements">
+<p>Thank you to <a href="https://craft.stanford.edu/">Stanford Craft</a> for the inspiration. </p>
+</div>
+</html>

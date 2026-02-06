@@ -1062,5 +1062,12 @@
     "title": "Classification Activity - Train",
     "section": "Teachable Machine",
     "text": "Teachable Machine\n  To create your own model, we will use Google’s Teachable Machine. Teachable Machine uses 🐍 Python (yes! The same Python we used in Workshop #1) to help users build classification models. It just hides the 🐍 Python in the background.\n\nSteps\n\n\n\nGo to Teachable Machine\n\n\n \n\n\n\n\n\nClick “Get Started”\n\n\n\n\n\n\n\n\nChoose “Image Project”\n\n\n\n\n\n\n\n\nSelect “Standard Image Model”\n\n\n\n\n\n\n\n\nTo the right of “Class 1”, click the pencil and type “Apple”\n\n\n\n\n\n\n\n\nGrab your apple and get ready!!\n\n\n\n\n\n\n\n\nClick “webcam” to turn on and allow the computer to begin capturing images of the apple.\n\n\n\n\n\n\n\n\n\n\n\nPRO TIP\n\n\n\nMake sure you have a clean table and avoid messy backgrounds. Vary the lighting in your images (window, light, lamp, shadow, etc.) like might be encountered in real scenarios.\n\n\n\n\n\nPosition your apple within the frame and click the “Hold to Record” button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images.\n\n\n\n\n\n\n\n\nWhen finished, relase the “Hold to Record” button and click to “x” in the top right corner to exit the Apple class.\n\n\n\n\n\n\n\n\nPut your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture roughly the same number of images for the orange as you did for the apple.\n\n\n \n\n\n\n\n\nWhen finished capturing data for both classes, click the “Train Model” button. The website will train your own custom classification model, based on your data!\n\n\n\n\n\nCongratulations! You have trained your own classifier! On the next page, we’ll evaluate how well it works."
+  },
+  {
+    "objectID": "2-classification/computers-color.html",
+    "href": "2-classification/computers-color.html",
+    "title": "How Do Computers See Color?",
+    "section": "",
+    "text": "Checkpoints on this Page:\n\nCheckpoint 6.a: Neural Network Layers\n\n\n\n  Slide the R, G, or B to see how it affects the color of the square!\n\n  \n    \n      \n        R:\n        \n        128\n      \n\n      \n        G:\n        \n        128\n      \n\n      \n        B:\n        \n        128"
   }
 ]
