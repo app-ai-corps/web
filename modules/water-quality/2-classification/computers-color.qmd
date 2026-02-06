@@ -1,0 +1,15 @@
+---
+title: "How Do Computers See Color?"
+crossref:
+  lst-title: "🎯 Checkpoint 6."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-2
+---
+
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 6.a:** Neural Network Layers](#lst-nnlayers)
+:::
+

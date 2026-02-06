@@ -1013,5 +1013,54 @@
     "title": "Classification Activity",
     "section": "Teachable Machine",
     "text": "Teachable Machine\n  To create your own model, we will use Google’s Teachable Machine. Teachable Machine\n\nSteps\n\nGo to Teachable Machine\nClick “Get Started”"
+  },
+  {
+    "objectID": "2-classification/classification-activity-evaluate.html",
+    "href": "2-classification/classification-activity-evaluate.html",
+    "title": "Classification Activity - Evaluate",
+    "section": "",
+    "text": "On the last page, you trained your own classifier. Now, let’s see how well it works!"
+  },
+  {
+    "objectID": "2-classification/classification-activity-evaluate.html#evaluate-your-classifier",
+    "href": "2-classification/classification-activity-evaluate.html#evaluate-your-classifier",
+    "title": "Classification Activity - Evaluate",
+    "section": "Evaluate Your Classifier",
+    "text": "Evaluate Your Classifier\nWhile some models can be very accurate and high quality, others may struggle. Now, let’s put your model to the test to see how it performs. To do this, you’ll use the “Preview” pane on the right side of the Teachable Machine screen.\n\n\nPutting it to the Test\n\n\n\n\n\n\nNote\n\n\n\nGet your lab sheet ready. Let’s record some results!\n\n\n\nSteps—Part A\n\nTrade your apple and orange with another group. No group should have the exact same fruits you trained the model with.\nTake your lab sheet and review the observation table. The first item to test is an apple. If the model works well, what will it predict? Record this in the second column.\nNext, hold the apple up to your camera. What does the model predict it is? Record this in the third column of your lab sheet.\nThe model also reports confidence in its prediction. Record this percent confidence in the fourth column of your sheet.\nRepeat this process for all other objects on the lab sheet.\n\n\n\n\n\nReflecting & Retraining\nHow did your model perform? Were any objects classified incorrectly? Were any objects classified with low confidence (&lt; 80%)? Respond to these questions on your lab sheet.\n\n\nSteps—Part B\nLet’s improve your model. If either your apple or orange class performed poorly (missed classification or low confidence), you can adjust the model.\n\nTo do this, add about 20 new photos to the training images for the class. Be strategic about these images. Did it perform poorly when the bottom of the apple was in view? The stem? When the apple was in low light?\nYou may need to do this for 0, 1, or both classes. After that, train your model again.\nDocument any retraining on your lab sheet. Make sure to record the kinds of photos you added and your rationale for them.\n\n\n\n\n\nBack to the Buoy\nNote that you can choose to export your model for later use. This model is quite similar to one used in the buoy to detect whether there is a new test pad in view of the onboard camera ready to analyze.\n\n  \n  Your browser does not support the video tag."
+  },
+  {
+    "objectID": "2-classification/inside-classification.html",
+    "href": "2-classification/inside-classification.html",
+    "title": "How Does It Work?",
+    "section": "",
+    "text": "Checkpoints on this Page:\n\nCheckpoint 5.a: Neural Network Layers"
+  },
+  {
+    "objectID": "2-classification/inside-classification.html#how-does-your-model-work",
+    "href": "2-classification/inside-classification.html#how-does-your-model-work",
+    "title": "How Does It Work?",
+    "section": "How Does Your Model Work?",
+    "text": "How Does Your Model Work?\nUnder the hood of your model and most other image classification models is something called a Convolutional Neural Net (CNN). As you have already done, we train CNNs to recognize pattern in images. Watch the clip below to learn more about how the CNN works. Note that the video discussed some of the mathematics behind CNNs, but don’t worry if you don’t understand everything. Prioritize understanding the big picture, as the video clips moves quickly. \n Clip 1 \n\n \n\n\n  Clip 2 \n\n \n\n\n\n\n\n🎯 Checkpoint 5. a: Compare and contrast the input layer, the hidden layers, and the output layer. What function do they each have in a neural net?\n\n\n\n\n\n\n\n\n\n\n\nThe example in the video focuses on classifying objects in grayscale photos, but CNNs can also handle color. However, computers “see” color differently than humans."
+  },
+  {
+    "objectID": "2-classification/inside-classification.html#understanding-how-computers-see-color",
+    "href": "2-classification/inside-classification.html#understanding-how-computers-see-color",
+    "title": "How Does It Work?",
+    "section": "Understanding How Computers See Color",
+    "text": "Understanding How Computers See Color\nComputers do not prize the beauty of a painting or the wonder of an emotionally stirring photograph. Instead, they understand these images through numbers. \n\n \n\n ** Note that the red, green, and blue values in this video are given as decimals because some math has been applied to them. The original values are whole numbers between 0 and 255, as we’ll see on the next page."
+  },
+  {
+    "objectID": "2-classification/classification-activity-train.html",
+    "href": "2-classification/classification-activity-train.html",
+    "title": "Classification Activity - Train",
+    "section": "",
+    "text": "You have seen different examples of classification, now it’s your turn to train your own classification model!"
+  },
+  {
+    "objectID": "2-classification/classification-activity-train.html#teachable-machine",
+    "href": "2-classification/classification-activity-train.html#teachable-machine",
+    "title": "Classification Activity - Train",
+    "section": "Teachable Machine",
+    "text": "Teachable Machine\n  To create your own model, we will use Google’s Teachable Machine. Teachable Machine uses 🐍 Python (yes! The same Python we used in Workshop #1) to help users build classification models. It just hides the 🐍 Python in the background.\n\nSteps\n\n\n\nGo to Teachable Machine\n\n\n \n\n\n\n\n\nClick “Get Started”\n\n\n\n\n\n\n\n\nChoose “Image Project”\n\n\n\n\n\n\n\n\nSelect “Standard Image Model”\n\n\n\n\n\n\n\n\nTo the right of “Class 1”, click the pencil and type “Apple”\n\n\n\n\n\n\n\n\nGrab your apple and get ready!!\n\n\n\n\n\n\n\n\nClick “webcam” to turn on and allow the computer to begin capturing images of the apple.\n\n\n\n\n\n\n\n\n\n\n\nPRO TIP\n\n\n\nMake sure you have a clean table and avoid messy backgrounds. Vary the lighting in your images (window, light, lamp, shadow, etc.) like might be encountered in real scenarios.\n\n\n\n\n\nPosition your apple within the frame and click the “Hold to Record” button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images.\n\n\n\n\n\n\n\n\nWhen finished, relase the “Hold to Record” button and click to “x” in the top right corner to exit the Apple class.\n\n\n\n\n\n\n\n\nPut your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture roughly the same number of images for the orange as you did for the apple.\n\n\n \n\n\n\n\n\nWhen finished capturing data for both classes, click the “Train Model” button. The website will train your own custom classification model, based on your data!\n\n\n\n\n\nCongratulations! You have trained your own classifier! On the next page, we’ll evaluate how well it works."
   }
 ]
