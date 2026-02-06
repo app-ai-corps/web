@@ -3,6 +3,7 @@ project:
   output-dir: _site
   resources:
     - "RGB-Applet-1.html"
+    - "RGB-Applet-2.html"
     - "1-statistics/facilitator-video-overview.mp4"
 
 website:
