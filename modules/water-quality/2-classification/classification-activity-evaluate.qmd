@@ -36,7 +36,11 @@ Get your lab sheet ready. Let's record some results!
 
 ### Reflecting & Retraining
 
-How did your model perform? Were any objects classified incorrectly? Were any objects classified with low confidence (< 80%)? Respond to these questions on your lab sheet.
+How did your model perform?  
+Were any objects classified incorrectly?  
+Were any objects classified with low confidence (< 80%)?  
+<br>
+Respond to these questions on your lab sheet.
 
 <hr>
 
