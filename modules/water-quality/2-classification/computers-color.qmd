@@ -10,12 +10,13 @@ sidebar: lesson-2
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 7.a:** Pixels & RGB](#lst-RGBPixels)
+- [**Checkpoint 7.a:** Using RGB Values to Create Color](#lst-CreatingColor)
+- [**Checkpoint 7.b:** Using Color to Predict Fruit](#lst-PredictingFruit)
 :::
 
-In the last activity, as with all pixels, each had a value for Red (R), Green (G), and Blue (B). The values for each can range from 0 to 255. Let's take a closer look at what these values mean.
+In the last activity, as with all pixels, each had a value for Red (R), Green (G), and Blue (B). The values for each can range from 0 to 255. Let's take a closer look at what these values mean. We'll use the tool below to explore some values.
 
-
+:::{.gray-container}
 
 ```{=html}
 <div id="rgb-widgets-card" style="max-width:720px;margin:18px auto;font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
@@ -95,3 +96,50 @@ In the last activity, as with all pixels, each had a value for Red (R), Green (G
 })();
 </script>
 ```
+
+:::
+
+### Let's Try Some RGB Values!
+
+:::{#lst-CreatingColor}
+
+```{pyodide}
+#| include: false
+
+# Fake block to make checkpoint work
+```
+
+Use the slider tool above to answer the RGB questions below.
+:::
+
+As you progress through the questions below, record your observations on the handout.
+
+1. Slide all values to zero. When R = 0, G = 0, and B = 0, what color do you see?
+
+2. Slide all values to 255. When R = 255, G = 255, and B = 255, what color do you see?
+
+3. Slide all values to 0. Change R to 255. What happens to the color?
+
+4. Slide all values to 0. Change G to 255. What happens to the color?
+
+5. Slide all values to 0. Change B to 255. What happens to the color?
+
+Now let's try some of the colors you obsevered in the last activity. Get your handout ready!
+
+6. Adjust the sliders to the RGB values you recorded for your apple. What color do you see? Is it similar to your apple?
+
+7.  Repeat this for your orange's RGB values. What color do you see? Is it similar to your orange?
+
+8. Finally, repeat this for your lime's RGB values. What color do you see? Is it similar to your lime?
+
+
+:::{#lst-PredictingFruit}
+
+```{pyodide}
+#| include: false
+
+# Fake block to make checkpoint work
+```
+
+What color does this RGB value represent? (110, 164, 212) Just like the computer, predict what fruit this could be from!
+:::

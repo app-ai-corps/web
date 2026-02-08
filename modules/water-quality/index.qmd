@@ -55,9 +55,13 @@ Learn mean, median, range, standard deviation, and outliers using nitrate/nitrit
 :::
 
 ::: {.lesson-item}
-### [Lesson 2: Classification & Color](#)
+### [Lesson 2: Classification & Color](2-classification/)
 
-Coming Soon.
+Learn about classification with neural networks and how computers process color.
+
+*Estimated time: 90 minutes*
+
+[**Slides & Facilitator Guide**](2-classification/facilitator){.facilitator}
 :::
 
 ::: {.lesson-item}

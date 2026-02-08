@@ -16,8 +16,8 @@ website:
         menu:
           - text: "L1: Statistics"
             href: 1-statistics/index
-          - text: "L2: Predictive Modeling"
-            href: 2-predictive-modeling/index
+          - text: "L2: Classification & Color"
+            href: 2-classification/index
           - text: "L3: Gradient Updates"
             href: 3-gradient-updates/index
           - text: "L4: CNNs"
@@ -90,6 +90,12 @@ website:
           href: 2-classification/color-activity
         - text: "7. Computers & Color"
           href: 2-classification/computers-color
+        - text: "---"
+        - text: "8. Exit Ticket"
+          href: #
+        - text: "---"
+        - text: "Optional Exercise"
+          href: #
         
 
 format:
