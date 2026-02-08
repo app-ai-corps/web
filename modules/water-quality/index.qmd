@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Water Quality Lessons"
 format:
   html:
     css: ../../styles-main.css
@@ -60,6 +60,8 @@ Learn mean, median, range, standard deviation, and outliers using nitrate/nitrit
 Learn about classification with neural networks and how computers process color.
 
 *Estimated time: 90 minutes*
+
+<br>
 
 [**Slides & Facilitator Guide**](2-classification/facilitator){.facilitator}
 :::
