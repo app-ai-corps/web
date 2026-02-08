@@ -41,6 +41,7 @@ Exploring pixels and RGB Values
     - This will open in a new tab. 
     - You may need to grant access to your camera for it to work.
     - Apple, Orange, Lime (from previous activity)
+    - Set of purple swatch cards
 - Handout
 - Pencil
 :::
@@ -57,5 +58,5 @@ Use the applet and follow the instructions on the handout, which are also listed
 
 5. Repeat this process for the B channel.
 
-6. Repeat this process for the orange and lime.
+6. Repeat this process for the orange, lime, and each of the purple cards.
 
