@@ -86,8 +86,8 @@ website:
         - text: "---"
         - text: "5. How Does It Work?"
           href: 2-classification/inside-classification
-        - text: "6. Computers & Color"
-          href: 2-classification/computers-color
+        - text: "6. Color Activity"
+          href: 2-classification/color-activity
 
 format:
   html:

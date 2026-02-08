@@ -51,9 +51,9 @@ Use the applet and follow the instructions on the handout, which are also listed
 
 2. Change the mode to "What Computers See". It will default to the Red channel first.
 
-3. Find a point on the apple and record the value for R.
+3. Focus on an area at the center of the apple and record the value for R.
 
-4. Use the dropdown menu to change the channel to G. Look at the same points (or as close to possible) on the apple, record the value for G.
+4. Use the dropdown menu to change the channel to G. Look at the same area (or as close to possible) on the apple, record the value for G.
 
 5. Repeat this process for the B channel.
 
