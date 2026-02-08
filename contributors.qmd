@@ -47,7 +47,7 @@ function toggleMenu() {
 </div>
 
 <div class="contributor-card">
-  <a href="https://faculty.utk.edu/Kelly.Boles/professional" class="contributor-link">
+  <a href="https://cehhs.utk.edu/tpte/people/kelly-l-boles/" class="contributor-link">
     <img src="assets/people/kellyb.png" alt="Kelly Boles" class="contributor-image">
     <span class="contributor-name">Kelly Boles</span>
   </a>
