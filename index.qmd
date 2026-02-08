@@ -13,7 +13,7 @@ format:
 </div>
 <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
 <nav class="navbar-links" id="navbarLinks">
-  [Home](/) | [Modules](modules) | [Contact](contact) | [Contributors](contributors)
+  [Home](/) | [Modules](modules) | [Contributors](contributors) | [Contact](contact)
 </nav>
 :::
 
