@@ -1,0 +1,107 @@
+---
+title: ""
+format:
+  html:
+    css: styles-main.css
+    toc: false
+    theme: none
+---
+
+::: {.custom-navbar}
+<div class="navbar-brand">
+  <a href="/"><img src="assets/logo.png" alt="AAIC Logo" class="navbar-logo"></a>
+  <h1>Appalachian A.I. Corps</h1>
+</div>
+<button class="navbar-toggle" onclick="toggleMenu()">☰</button>
+<nav class="navbar-links" id="navbarLinks">
+  [Home](/) | [Modules](modules) | [Contact](contact) | [Contributors](contributors)
+</nav>
+:::
+
+<script>
+function toggleMenu() {
+  const nav = document.getElementById('navbarLinks');
+  nav.classList.toggle('show');
+}
+</script>
+
+::: {.hero .hero-small}
+::: {.hero-content}
+
+## Meet Our Contributors
+
+
+:::
+:::
+
+---
+
+
+::: {.contributors-grid}
+
+<div class="contributor-card">
+  <a href="https://eecs.utk.edu/people/sai-swaminathan/" class="contributor-link">
+    <img src="assets/people/Sai.jpg" alt="Sai Swaminathan" class="contributor-image">
+    <span class="contributor-name">Sai Swaminathan</span>
+  </a>
+</div>
+
+<div class="contributor-card">
+  <a href="https://faculty.utk.edu/Kelly.Boles/professional" class="contributor-link">
+    <img src="assets/people/kellyb.png" alt="Kelly Boles" class="contributor-image">
+    <span class="contributor-name">Kelly Boles</span>
+  </a>
+</div>
+
+<div class="contributor-card">
+  <a href="https://cehhs.utk.edu/tpte/people/sukanya-moudgalya/" class="contributor-link">
+    <img src="assets/people/sukanya.jpg" alt="Sukanya Moudgalya" class="contributor-image">
+    <span class="contributor-name">Sukanya Moudgalya</span>
+  </a>
+</div>
+
+<div class="contributor-card">
+  <a href="https://www.linkedin.com/in/breanna-slessman-a9556a251/" class="contributor-link">
+    <img src="assets/people/Breanna_Slessman.jpeg" alt="Breanna Slessman" class="contributor-image">
+    <span class="contributor-name">Breanna Slessman</span>
+  </a>
+</div>
+
+<div class="contributor-card">
+  <a href="https://www.linkedin.com/in/rupard" class="contributor-link">
+    <img src="assets/people/ron.jpg" alt="Ron Rupard" class="contributor-image">
+    <span class="contributor-name">Ron Rupard</span>
+  </a>
+</div>
+
+
+<div class="contributor-card">
+  <a href="https://www.linkedin.com/in/jacob-foltz-92a17425a/" class="contributor-link">
+    <img src="assets/people/jacobf.jpg" alt="Jacob Foltz" class="contributor-image">
+    <span class="contributor-name">Jacob Foltz</span>
+  </a>
+</div>
+
+:::
+
+---
+
+::: {.footer}
+::: {.footer-columns}
+
+::: {.footer-left}
+![](assets/logo_white.png){.footer-logo}
+
+**Appalachian A.I. Corps**  
+Empowering Appalachia Through Artificial Intelligence
+:::
+
+::: {.footer-right}
+Department of Theory & Practice in Teacher Education  
+Min H. Kao Department of Electrical Engineering & Computer Science  
+**University of Tennessee, Knoxville**  
+Knoxville, TN
+:::
+
+:::
+:::
