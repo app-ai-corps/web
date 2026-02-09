@@ -19,8 +19,8 @@ website:
         href: modules
       - text: "Contact"
         href: contact
-      - text: "Contributors"
-        href: contributors
+      - text: "Team"
+        href: team
 
 format:
   html:
