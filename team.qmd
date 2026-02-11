@@ -64,6 +64,14 @@ function toggleMenu() {
 </div>
 
 <div class="contributor-card">
+  <a href="https://cehhs.utk.edu/people/amanda-zeller/" class="contributor-link">
+    <img src="assets/people/amanda.jpeg" alt="Amanda Zeller" class="contributor-image">
+    <span class="contributor-name">Amanda Zeller</span>
+    <span class="contributor-affiliation">UTK CEHHS Professor</span>
+  </a>
+</div>
+
+<div class="contributor-card">
   <a href="https://www.linkedin.com/in/breanna-slessman-a9556a251/" class="contributor-link">
     <img src="assets/people/Breanna_Slessman.jpeg" alt="Breanna Slessman" class="contributor-image">
     <span class="contributor-name">Breanna Slessman</span>
@@ -89,7 +97,7 @@ function toggleMenu() {
   </a>
 </div>
 
-:::
+:::                        
 
 ---
 
