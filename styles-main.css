@@ -629,6 +629,14 @@ body {
   display: block;
 }
 
+.contributor-affiliation {
+  margin-top: 1.0rem;
+  font-weight: 400;
+  color: #000;  
+  text-align: center;
+  display: block;
+}
+
 .contributor-link:hover .contributor-image {
   transform: translateY(-4px) scale(1.02);
   transition: transform 180ms ease;
