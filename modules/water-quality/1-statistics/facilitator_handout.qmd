@@ -13,36 +13,18 @@ format:
     transition: fade
     background-transition: fade
     highlight-style: tango
-    show-notes: false
     title-slide-attributes:
       data-background-gradient: "linear-gradient(135deg, #00746F, #006C93)"
       data-background-image: images/logo_white_smaller.png
       data-background-size: 30%
       data-background-position: 50% 9%
     footer: AAIC — Water Quality
-  revealjs-facilitator:
-    output-file: facilitator_notes.html
-    theme: [simple, aaic_slides_style.scss]
-    mainfont: Montserrat
-    slide-number: true
-    smaller: true
-    transition: fade
-    background-transition: fade
-    highlight-style: tango
-    show-notes: separate-page  
-    title-slide-attributes:
-      data-background-gradient: "linear-gradient(135deg, #00746F, #006C93)"
-      data-background-image: images/logo_white_smaller.png
-      data-background-size: 30%
-      data-background-position: 50% 9%
-    footer: AAIC — Water Quality
-  beamer-student:
-    output-file: student_handout.pdf
+  beamer:
     classoption: "handout"
     include-in-header:
       text: |
-        \usepackage{handoutWithNotes}
-        \pgfpagesuselayout{3 on 1 with notes}[a4paper, border shrink=5mm]  
+        \usepackage[beamer-notes=true]{handoutWithNotes}
+        \pgfpagesuselayout{3 on 1 with notes}[a4paper, border shrink=5mm]
 jupyter: python3
 execute:
   echo: true
@@ -61,7 +43,7 @@ In this lesson, you will learn how to use the Python programming language to cal
 <br>
 
 :::notes
-This lesson briefly touches on mean, median, range, and standard deviation. It assumes that students have seen these basic statistical concepts in the past and focuses on recalling them and using them in Python.
+Lesson Objective
 :::
 
 :::{.gray-container .twentyeightpt-font}
@@ -90,18 +72,10 @@ In the workshops, we will use:
 
 **Note:** If you see a 💻 laptop 💻  icon in the slides, that means there is a corresponding activity in the module to complete!
 
-:::notes
-We suggest having the link available to students in the LMS or as a tinyURL. Appalachian can be difficult to spell!
-:::
-
 ## Workshop Structure
 <hr>
 There are multiple pages in each module. You navigate between them in the left-hand sidebar:  
 ![](images/module-page-navigation.png)
-
-:::notes
-This is the left-hand sidebar and how students will access different pages in the interactive module. Just click!
-:::
 
 ## Workshop Structure
 <hr>
@@ -146,10 +120,6 @@ The checkpoints will also be highlighted in the body of the module. When you com
   - make graphs
 
 In these workshops, we will learn Python together!
-
-:::notes
-The goal of this slide is to activate prior knowledge. What do students already know about computer science/Python? Importantly, our lessons assume no formal background.
-:::
 
 ## 💻 Let’s Try Python Right Now!
 <hr>
@@ -232,11 +202,6 @@ Click the ▶️ Run Code button to run the blocks.
 ```python
 3 / 2
 ```
-
-:::notes
-This is the one that doesn't render well.
-:::
-
 
 ## 💻 Python Does Math!
 <hr>
