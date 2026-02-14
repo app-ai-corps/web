@@ -44,10 +44,12 @@ plant populations from various kinds of human activity.
 
 ## Lesson Overview Video Tour
 
+```{=html}
 <video width="80%" controls>
   <source src="facilitator-video-overview.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+```
 
 If you would like a more in-depth overview of the lesson, please consult the [slides with visible facilitator notes](https://appalachianaicorps.org/modules/water-quality/1-statistics/facilitator_notes.html).
 
