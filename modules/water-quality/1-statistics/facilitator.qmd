@@ -50,7 +50,7 @@ plant populations from various kinds of human activity.
   Your browser does not support the video tag.
 </video>
 ```
-
+<br>
 If you would like a more in-depth overview of the lesson, please consult the [slides with visible facilitator notes](https://appalachianaicorps.org/modules/water-quality/1-statistics/facilitator_notes.html){target="_blank" rel="noopener noreferrer"}.
 
 ## Slide Deck for Lesson
@@ -60,7 +60,7 @@ If you would like a more in-depth overview of the lesson, please consult the [sl
 ## Student Handout
 You can make a copy of the [student handout for this lesson](https://docs.google.com/document/d/1Oc6QdS_XJ--WyFC83-kmh5iWaKRTFvEh3kUxyyw8ylA/copy).
 
-<br><br>
+<br>
 
 If you would like to provide students a copy of the slides with spaces for note taking, we have prepared a [handout for this purpose](https://appalachianaicorps.org/modules/water-quality/1-statistics/student_handout.pdf){target="_blank" rel="noopener noreferrer"}.
 
