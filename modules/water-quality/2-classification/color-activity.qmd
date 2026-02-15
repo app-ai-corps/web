@@ -41,7 +41,6 @@ Exploring pixels and RGB Values
     - This will open in a new tab. 
     - You may need to grant access to your camera for it to work.
     - Apple, Orange, Lime (from previous activity)
-    - Set of purple swatch cards
 - Handout
 - Pencil
 :::

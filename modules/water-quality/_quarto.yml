@@ -81,8 +81,8 @@ website:
         - text: "---"
         - text: "3. Classification - Train"
           href: 2-classification/classification-activity-train
-        - text: "4. Classification - Evaluate"
-          href: 2-classification/classification-activity-evaluate
+        - text: "4. Classification - Buoy"
+          href: 2-classification/classification-activity-buoy
         - text: "---"
         - text: "5. How Does It Work?"
           href: 2-classification/inside-classification
