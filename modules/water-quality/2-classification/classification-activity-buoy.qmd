@@ -15,11 +15,13 @@ On the last page, you trained your a model to classify apples and oranges. Now, 
   Your browser does not support the video tag.
 </video>
 ```
+<br><br>
+
 ## Your Turn: Be the Buoy
 
 :::{.gray-container}
-**Materials Needed:**
-- 1 test strip
+**Materials Needed:**  
+- 1 test strip  
 :::
-
+<br><br>
 Now, let's build a model that is very similar to the one used in the buoy. We will repeat the process of training a model with Teachable Machine. This time we will have two classes: "strip present" and "strip not present".
