@@ -158,7 +158,7 @@ Get your lab sheet ready. Let's record some results!
 
 <hr>
 
-### Reflecting & Retraining
+### Reflecting
 
 How did your model perform?  
 Were any objects classified incorrectly?  
