@@ -1,0 +1,845 @@
+---
+title: "Workshop #2"
+subtitle: "Classification & Color"
+author: "Appalachian A. I. Corps @ UTK"
+crossref:
+  lst-title: "🎯 Checkpoint"
+format:
+  revealjs:
+    theme: [simple, aaic_slides_style.scss]
+    mainfont: Montserrat
+    slide-number: true
+    transition: fade
+    background-transition: fade
+    highlight-style: tango
+    title-slide-attributes:
+      data-background-gradient: "linear-gradient(135deg, #00746F, #006C93)"
+      data-background-image: images/logo_white_smaller.png
+      data-background-size: 30%
+      data-background-position: 50% 9%
+    footer: AAIC — Water Quality
+jupyter: python3
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-align: center
+---
+
+## Lesson Objective
+<hr>
+In this lesson, you will learn how to use classification and Python to help computers recognize water sample test strips and understand how color (RGB) can be used to monitor water quality.
+<br>
+<br>
+
+:::{.gray-container}
+**Materials Needed:**  
+
+- 💻 A computer with a webcam
+- A web browser (Chrome, Firefox, or Safari)
+
+:::
+
+
+
+## Workshop Structure
+<hr>
+
+::: {.activity-text}
+💻 **Navigate to:** [https://appalachianaicorps.org/](https://appalachianaicorps.org/) > Modules > Water Quality Monitoring > Lesson 2
+
+<br>
+
+**Note:** If you see a 💻 laptop 💻  icon in the slides, that means there is a corresponding activity in the module to complete!
+:::
+
+## Review
+<hr>
+
+:::{.gray-container}  
+**Last week we learned:**  
+<!-- FIX: "leaned" → "learned" -->
+
+- Role of Nitrogen in Water  
+- Using Statistics to Summarize Data  
+- Using Python to store, summarize, and visualize data  
+
+:::
+
+## Meet the Buoy!
+<hr>
+
+Later this semester, we will be deploying these Smokey Buoys!
+<!-- FIX: "deplying" → "deploying" -->
+
+:::{.gray-container}  
+**Some Important Parts:**  
+
+- Motorized unit to move test strips  
+- Camera to analyze those strips on the spot  
+:::
+
+![](images/smokey_buoy.png){fig-align="center"}
+
+## The Buoy: Test Strips
+<hr>
+
+- Smokey Buoy also uses test strips to monitor nitrate concentrations in water
+- Strips are on a roll rather than small strips
+- We place each pad on a very long piece of material and roll it up inside the buoy to keep it dry until dispensed
+
+## The Buoy: Test Strips
+<hr>
+
+![1. We begin with commercial test strips and remove the pads. <br> 2. The pads are carefully spaced out and placed on a very long piece of material. <br> 3. The material is rolled up inside the buoy. <br> 4. The roll is carefully positioned to be fed through the motorized roller.](images/buoy_test_strip_roll.png)
+
+## The Buoy: Motor & Camera
+<hr>
+
+![Modified from INSERT PAPER CITATION](images/buoy_diagram_modified.png){width="50%"}
+
+#### Motor
+Locate the motor near the top of the diagram. The motor drives the roller, which grips and advances the test strip roll.
+
+#### Camera
+When a test pad is in front of the camera, it takes a picture.
+
+## 🎥 See It In Action!
+<hr>
+
+```{=html}
+<video width="80%" controls>
+  <source src="buoy-video-motor-camera.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+```
+
+## 🗣️ Think Pair Share: 
+<hr>
+
+Thinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?
+
+
+
+## Intro to Classification
+<hr>
+
+:::{.ltblue-container .fourtyeightpt-font}
+🎯 Checkpoint 2. a: Which banana(s) would you eat?
+:::
+
+![Source: [US Department of Agriculture](https://www.ams.usda.gov/sites/default/files/media/Bananas_Visual_Aid%5B1%5D.pdf)](images/banana_ripeness_scale_usda.png)
+
+## Intro to Classification
+<hr>
+
+- People make decisions about ripeness daily: grocery shoppers & farmers alike.
+- These decisions—judging if a fruit/vegetable is ripe—are called **classification**.
+- Classification = sorting items into groups based on appearance or behavior.
+
+## Use of Classification in Agriculture
+<hr>
+
+- Computers can help us make classification decisions
+- AI can help make classification decisions, saving time and labor for farmers
+- Example: At University of Maryland, AI is used to identify ripe crops in fields
+
+![](images/ripe_strawberry_detection_umd.png)
+
+
+
+## Use of Classification in Agriculture
+
+![](images/ripe_strawberry_detection_umd.png)
+
+
+
+:::{.ltblue-container .fourtyeightpt-font}
+🎯 Checkpoint 2. b: Review the figure above. In image (b), what do you think the yellow represents? The green?
+:::
+
+## Types of Classification
+<hr>
+
+#### Classification of Strawberries
+- **Binary Classification**: Two possible outcomes (e.g., Ripe vs. Not Ripe)
+- **Multiclass Classification**: More than two possible outcomes (e.g., Underripe, Ripe, Overripe)
+
+## Binary Classification
+<hr>
+
+#### Two possible Outcomes:
+<br>
+<br>
+<table style="width: 75%; margin: 0 auto; border-collapse: collapse;">
+  <tr>
+    <td style="width: 45%; background-color: #fde724; color: black; padding: 20px; text-align: center; font-weight: bold;">
+      Not Ripe
+    </td>
+    <td style="width: 10%;"></td>
+    <td style="width: 45%; background-color: #35b878; color: white; padding: 20px; text-align: center; font-weight: bold;">
+      Ripe
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+
+## Multiclass Classification
+<hr>
+
+#### More than Two Outcomes:
+<br>
+<br>
+<table style="width: 75%; margin: 0 auto; border-collapse: collapse;">
+  <tr>
+    <td style="width: 30%; background-color: #234124; color: white; padding: 20px; text-align: center; font-weight: bold;">
+      Underripe
+    </td>
+    <td style="width: 5%;"></td>
+    <td style="width: 30%; background-color: #f6cf13; color: black; padding: 20px; text-align: center; font-weight: bold;">
+      Ripe
+    </td>
+    <td style="width: 5%;"></td>
+    <td style="width: 30%; background-color: #474331; color: white; padding: 20px; text-align: center; font-weight: bold;">
+      Molded
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+
+## Example of Multiclass Classification in Agriculture
+<hr>
+
+- **Project from University of Georgia, Athens [^2]**
+
+- **Uses multiclass classification to sort lemons**
+
+- **Discards underripe or molded lemons, retains only ripe ones**
+
+<video width="80%" controls>
+  <source src="images/ag-lemons-ugaathens-clip.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+## More on Classification with AI
+<hr>
+
+**Computers make classification decisions very quickly**
+
+**Using AI has advantages and disadvantages**
+
+## Pros of Using AI for Classification
+<hr>
+
+:::{.gray-container}
+**Pros:**  
+
+- Handles millions of items quickly
+- Spots tiny differences humans miss
+
+:::
+
+## Cons of Using AI for Classification
+<hr>
+
+:::{.gray-container}
+**Cons:**
+
+- Needs tons of examples to train the computer
+- Bad examples = bad decisions (e.g., train only on sunny photos, it fails on cloudy days).
+
+:::
+
+## Checkpoint 2. c 
+<hr>
+
+:::{.ltblue-container .fourtyeightpt-font}
+🎯 Checkpoint 2. c: If farmers use a certain company to train and decide when to pluck or harvest fruits/veggies, who gets to own that data? why?
+:::
+
+## Checkpoint 2. d 
+<hr>
+
+:::{.ltblue-container .fourtyeightpt-font}
+🎯 Checkpoint 2. d: Let's say the company becomes better at identifying ripe fruits because they used data from your farm. Now, they want to up their subscription fees for farmers to use their model. Is that fair? Do you have any suggestions or solutions?
+:::
+
+## Classification Activity - Train
+<hr>
+
+#### Now it's your turn!
+
+## Classification Activity - Train
+<hr>
+
+:::{.gray-container}
+- 1 Apple and 1 Orange per pair
+- 1 Distractor (fruit, ball, etc.) per pair 
+- 1 Device per pair/group 
+- 1 lab sheet per person
+:::
+<br>
+
+## Teachable Machine
+[![](images/teachable_machine_logo.png)](https://teachablemachine.withgoogle.com){target="_blank" rel="nofollow"}
+
+:::{.gray-container}
+- Uses Python in the background
+- Helps users build classification models
+<!-- FIX: "userss" → "users" -->
+:::
+<br>
+
+## Steps
+<hr>
+
+**1. Go to Teachable Machine at [https://teachablemachine.withgoogle.com/](https://teachablemachine.withgoogle.com/)**
+
+
+
+## Steps
+<hr>
+
+::: {.columns}
+::: {.column width="60%"}
+**2. Click "Get Started"**
+:::
+::: {.column width="40%"}
+![](images/tm_get_started.png)
+:::
+:::
+
+## Steps
+<hr>
+
+::: {.columns}
+::: {.column width="60%"}
+**3. Choose "Image Project"**
+:::
+::: {.column width="40%"}
+![](images/tm_image_project.png)
+:::
+:::
+
+## Steps
+<hr>
+
+::: {.columns}
+::: {.column width="60%"}
+**4. Select "Standard Image Model"**
+:::
+::: {.column width="40%"}
+![](images/tm_standard_image_model.png)
+:::
+:::
+
+## Steps
+<hr>
+
+::: {.columns}
+::: {.column width="60%"}
+**5. To the right of "Class 1", click the pencil and type "Apple"**
+:::
+::: {.column width="40%"}
+![](images/tm_class1.png)
+:::
+:::
+
+## Steps
+<hr>
+
+::: {.columns}
+::: {.column width="60%"}
+**6. Grab your apple and get ready!!**
+:::
+::: {.column width="40%"}
+![](images/apple.png){width="35%"}
+:::
+:::
+
+## Steps
+<hr>
+::: {.columns}
+::: {.column width="60%"}
+**7. Click "webcam" to turn on and allow the computer to begin capturing images of the apple.**
+:::
+::: {.column width="40%"}
+![](images/tm_apple_webcam.png)
+:::
+:::
+
+## Steps
+<hr>
+
+::: {.columns}
+::: {.column width="60%"}
+**8. Position your apple within the frame and click the "Hold to Record" button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images.**
+:::
+::: {.column width="40%"}
+![](images/tm_apple_hold_to_record.png)
+:::
+:::
+
+## Steps
+<hr>
+
+::: {.columns}
+::: {.column width="60%"}
+**9. When finished, release the "Hold to Record" button and click the "x" in the top right corner to exit the Apple class.**
+:::
+::: {.column width="40%"}
+![](images/tm_apple_exit_class.png)
+:::
+:::
+
+## Steps
+<hr>
+
+::: {.columns}
+::: {.column width="60%"}
+**10. Put your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture **roughly** the same number of images for the orange as you did for the apple.**
+:::
+::: {.column width="40%"}
+![](images/tm_class2.png)
+![](images/orange.png){width="35%"}
+:::
+:::
+
+## Steps
+<hr>
+
+::: {.columns}
+::: {.column width="60%"}
+**11. When finished capturing data for both classes, click the "Train Model" button. The website will train your own custom classification model, based on your data!**
+:::
+::: {.column width="40%"}
+![](images/tm_train_model.png)
+:::
+:::
+
+## Evaluate Your Classifier
+<hr>
+
+- Some models can be very accurate, while others might struggle
+- Let's put your model to the test!
+
+## Evaluate Your Classifier
+<hr>
+
+#### Use the "Preview" pane on the right side of the Teachable Machine screen
+
+![](images/tm_preview.png){width="30%"}
+
+## Putting it to the Test
+<hr>
+
+:::{.callout-note}
+Get your lab sheet ready. Let's record some results!
+:::
+
+## Steps for testing
+<hr>
+
+:::{.activity-text}
+1. Trade your apple and orange with another group. No group should have the exact same fruits you trained the model with.
+:::
+
+## Steps for testing
+<hr>                             
+
+:::{.activity-text}
+2. Take your lab sheet and review the observation table. The first item to test is an apple. If the model works well, what will it predict? Record this in the second column.
+:::
+
+## Steps for testing
+<hr>      
+
+:::{.activity-text}
+3. Next, hold the apple up to your camera. What does the model predict it is? Record this in the third column of your lab sheet. 
+:::
+
+## Steps for testing
+<hr>
+
+:::{.activity-text}
+4. The model also reports confidence in its prediction. Record this percent confidence in the fourth column of your sheet.
+:::
+
+## Steps for testing
+<hr>
+
+:::{.activity-text}
+5. Repeat this process for all other objects on the lab sheet.
+:::
+
+## Reflecting
+
+### Discuss these Questions
+:::{.activity-text}
+- How did your model perform?
+- Were any objects classified incorrectly?
+- Were any objects classified with low confidence (< 80%)?
+
+:::
+
+## Classification Activity - Buoy
+
+**How a classification model works.**
+<!-- FIX: added closing ** and period -->
+
+```{=html}
+<video width="80%" controls>
+  <source src="buoy-classification.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+```
+
+## Your Turn: Be the Buoy
+
+:::{.gray-container}
+**Materials Needed:**  
+- 1 test strip  
+:::
+<br><br>
+
+## Your Turn: Be the Buoy
+<hr>
+
+### Train Model with two classes:
+
+:::{.gray-container}
+**Classes:**  
+<!-- FIX: "Classesd" → "Classes" -->
+- strip present
+- strip not present  
+:::
+<br><br>
+
+## How Does It Work?
+
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 5.a:** Neural Network Layers](#lst-nnlayers)
+:::
+
+## How Does Your Model Work?
+
+:::{.activity-text}
+- Under the hood of a classification model is a **Convolutional Neural Net (CNN)**
+- CNNs are trained to recognize patterns in images
+:::
+<!-- BUG FIX: Missing closing ::: caused ALL slides after this point to disappear -->
+
+## How Does Your Model Work?
+
+#### Prioritize understanding big picture over math
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe 
+    src="https://www.youtube.com/embed/oV3ZY6tJiA0?start=197&end=234" 
+    frameborder="0" 
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+  </iframe>
+</div>
+<br>
+
+## How Does Your Model Work?
+
+<hr>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe 
+    src="https://www.youtube.com/embed/oV3ZY6tJiA0?start=351&end=540" 
+    frameborder="0" 
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+  </iframe>
+</div>
+<br>
+
+## Checkpoint 5. a: Neural Network Layers
+<!-- FIX: "Chcekpoint" → "Checkpoint" -->
+
+:::{#lst-nnlayers}
+```{pyodide}
+#| include: false
+# Fake block to make checkpoint work
+```
+
+Compare and contrast the input layer, the hidden layers, and the output layer. What function do they each have in a neural net?
+:::
+
+## Color Activity
+
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 6.a:** Pixels & RGB](#lst-RGBPixels)
+:::
+
+## Understanding RGB
+
+:::{.activity-text} 
+- Computers understand color through numbers, not like humans with eyes
+- When a computer displays or processes an image, that image is really a combination of millions of little squares called pixels
+:::
+
+## Understanding RGB
+
+:::{.activity-text}
+- Each pixel has a value for Red (R), Green (G), and Blue (B)
+- The color of each pixel is a combination of these three values
+:::
+
+## Pixels and RGB Values
+
+:::{#lst-RGBPixels}
+
+```{pyodide}
+#| include: false
+
+# Fake block to make checkpoint work
+```
+Exploring pixels and RGB Values
+:::
+
+## Materials Needed
+
+:::{.gray-container}
+**Materials Needed:**  
+
+- [APPLET](../RGB-Applet-1.html){target="_blank" rel="noopener"}
+    - This will open in a new tab. 
+    - You may need to grant access to your camera for it to work.
+    - Apple, Orange, Lime (from previous activity)
+- Handout
+- Pencil
+:::
+
+## Pixels and RGB Values
+
+:::{.activity-text}
+Use the applet and follow the instructions on the handout, which are also listed below.
+:::
+
+## Pixels and RGB Values
+
+:::{.activity-text}
+1. The applet starts with "What Humans See" selected. Hold the apple up to the camera. Notice it captures its likeness?
+:::
+
+## Pixels and RGB Values
+
+:::{.activity-text}
+2. Change the mode to "What Computers See". It will default to the Red channel first.
+:::
+
+## Pixels and RGB Values
+
+:::{.activity-text}
+3. Focus on an area at the center of the apple and record the value for R.
+:::
+
+## Pixels and RGB Values
+
+:::{.activity-text}
+4. Use the dropdown menu to change the channel to G. Look at the same area (or as close to possible) on the apple, record the value for G.
+:::
+
+## Pixels and RGB Values
+
+:::{.activity-text}
+5. Change the channel to B and record the value for B.
+:::
+
+## Pixels and RGB Values
+
+:::{.activity-text}
+6. Repeat this process for the orange, lime, and each of the purple cards.
+:::
+
+## How Do Computers See Color?
+
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 7.a:** Using RGB Values to Create Color](#lst-CreatingColor)
+- [**Checkpoint 7.b:** Using Color to Predict Fruit](#lst-PredictingFruit)
+:::
+
+## How Do Computers See Color?
+<hr>
+
+:::{.activity-text} 
+- We learned every pixel has a value for Red (R), Green (G), and Blue (B)
+- Each value can range from 0 to 255
+:::
+
+## Creating Color with RGB Values
+<hr>
+
+**Slide the sliders to create different colors!**
+
+:::{.gray-container}
+
+```{=html}
+<div id="rgb-widgets-card" style="max-width:720px;margin:18px auto;font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
+  <h3 style="margin:0 0 8px 0;font-size:18px">Slide the R, G, or B to see how it affects the color of the square!</h3>
+
+  <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start">
+    <div style="flex:1;min-width:260px;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <div style="width:56px;font-weight:600;text-align:right">R:</div>
+        <input id="rRange" type="range" min="0" max="255" step="1" value="128" aria-label="Red" style="flex:1">
+        <div id="rVal" style="width:56px;text-align:center;font-family:monospace;font-weight:600;background:#f1f3f5;padding:6px 8px;border-radius:6px;border:1px solid #eee">128</div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <div style="width:56px;font-weight:600;text-align:right">G:</div>
+        <input id="gRange" type="range" min="0" max="255" step="1" value="128" aria-label="Green" style="flex:1">
+        <div id="gVal" style="width:56px;text-align:center;font-family:monospace;font-weight:600;background:#f1f3f5;padding:6px 8px;border-radius:6px;border:1px solid #eee">128</div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <div style="width:56px;font-weight:600;text-align:right">B:</div>
+        <input id="bRange" type="range" min="0" max="255" step="1" value="128" aria-label="Blue" style="flex:1">
+        <div id="bVal" style="width:56px;text-align:center;font-family:monospace;font-weight:600;background:#f1f3f5;padding:6px 8px;border-radius:6px;border:1px solid #eee">128</div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:10px;align-items:center">
+      <div id="colorPreview" role="img" aria-label="Color preview" style="width:200px;height:200px;border-radius:8px;border:1px solid #dcdcdc;background:rgb(128,128,128)"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  const clamp = (v, a=0, b=255) => Math.min(Math.max(Math.round(v), a), b);
+
+  const rRange = document.getElementById('rRange');
+  const gRange = document.getElementById('gRange');
+  const bRange = document.getElementById('bRange');
+  const rVal = document.getElementById('rVal');
+  const gVal = document.getElementById('gVal');
+  const bVal = document.getElementById('bVal');
+  const colorPreview = document.getElementById('colorPreview');
+
+  const state = {
+    r: clamp(parseInt(rRange.value, 10)),
+    g: clamp(parseInt(gRange.value, 10)),
+    b: clamp(parseInt(bRange.value, 10))
+  };
+
+  window.latest_widget_values = { r: state.r, g: state.g, b: state.b };
+
+  function updateFromInputs() {
+    state.r = clamp(parseInt(rRange.value, 10));
+    state.g = clamp(parseInt(gRange.value, 10));
+    state.b = clamp(parseInt(bRange.value, 10));
+
+    rVal.textContent = state.r;
+    gVal.textContent = state.g;
+    bVal.textContent = state.b;
+
+    colorPreview.style.background = `rgb(${state.r}, ${state.g}, ${state.b})`;
+
+    window.latest_widget_values.r = state.r;
+    window.latest_widget_values.g = state.g;
+    window.latest_widget_values.b = state.b;
+  }
+
+  [rRange, gRange, bRange].forEach(el => {
+    el.addEventListener('input', updateFromInputs);
+    el.addEventListener('change', updateFromInputs);
+  });
+
+  updateFromInputs();
+
+  window.getLatestWidgetValues = () => ({...window.latest_widget_values});
+})();
+</script>
+```
+
+:::
+
+## Using RGB Values to Create Color
+<hr>
+
+:::{.activity-text}
+- Use the slider tool above to answer the RGB questions
+<!-- FIX: "sldier" → "slider" -->
+- Record your answers on the handout
+:::
+
+## Using RGB Values to Create Color
+<hr>
+
+:::{.activity-text}
+- 1. Slide all values to zero. When R = 0, G = 0, and B = 0, what color do you see?
+- 2. Slide all values to 255. When R = 255, G = 255, and B = 255, what color do you see?
+:::
+
+## Using RGB Values to Create Color
+<hr>
+
+:::{.activity-text}
+- 3. Slide all values to 0. Change R to 255. What happens to the color?
+- 4. Slide all values to 0. Change G to 255. What happens to the color?
+:::
+
+## Using RGB Values to Create Color
+<hr>
+
+:::{.activity-text}
+- 5. Slide all values to 0. Change B to 255. What happens to the color?
+:::
+
+
+## Using RGB Values to Create Color
+<hr>
+
+:::{.activity-text}
+- Now let's try some of the colors you observed in the last activity. Get your handout ready!
+<!-- FIX: "obsevered" → "observed" -->
+:::
+
+## Using RGB Values to Create Color
+<hr>
+
+:::{.activity-text}
+- 6. Adjust the sliders to the RGB values you recorded for your apple. What color do you see? Is it similar to your apple?
+:::
+
+## Using RGB Values to Create Color
+<hr>
+
+:::{.activity-text}
+- 7.  Repeat this for your orange's RGB values. What color do you see? Is it similar to your orange?
+:::
+
+## Using RGB Values to Create Color
+<hr>
+
+:::{.activity-text}
+- 8. Finally, repeat this for your lime's RGB values. What color do you see? Is it similar to your lime?
+:::
+
+## Using RGB Values to Create Color
+<hr>
+
+:::{#lst-PredictingFruit}
+
+```{pyodide}
+#| include: false
+
+# Fake block to make checkpoint work
+```
+
+What color does this RGB value represent? (110, 164, 212) Just like the computer, predict what fruit this could be from!
+:::
+
+## Exit Ticket
