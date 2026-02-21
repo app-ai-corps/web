@@ -9,15 +9,53 @@ format:
     theme: [simple, aaic_slides_style.scss]
     mainfont: Montserrat
     slide-number: true
+    smaller: false
     transition: fade
     background-transition: fade
     highlight-style: tango
+    show-notes: false
     title-slide-attributes:
       data-background-gradient: "linear-gradient(135deg, #00746F, #006C93)"
       data-background-image: images/logo_white_smaller.png
       data-background-size: 30%
       data-background-position: 50% 9%
     footer: AAIC — Water Quality
+revealjs-facilitator:
+    output-file: facilitator_notes.html
+    theme: [simple, aaic_slides_style.scss]
+    mainfont: Montserrat
+    slide-number: true
+    smaller: true
+    transition: fade
+    background-transition: fade
+    highlight-style: tango
+    show-notes: separate-page  
+    title-slide-attributes:
+      data-background-gradient: "linear-gradient(135deg, #00746F, #006C93)"
+      data-background-image: images/logo_white_smaller.png
+      data-background-size: 30%
+      data-background-position: 50% 9%
+    footer: AAIC — Water Quality
+  beamer-student:
+    output-file: student_handout.pdf
+    classoption: "handout"
+    theme: Boadilla
+    colortheme: crane
+    include-in-header:
+      text: |
+        \usepackage{handoutWithNotes}
+        \pgfpagesuselayout{3 on 1 with notes}[a4paper, border shrink=5mm]
+        \definecolor{mycolor}{RGB}{0, 108, 147}
+        \definecolor{mylight}{RGB}{185, 225, 226}
+        \setbeamercolor{frametitle}{bg=mycolor, fg=white}
+        \setbeamercolor{title}{bg=mycolor, fg=white}
+        \setbeamercolor{structure}{fg=mycolor}
+        \setbeamercolor{palette primary}{bg=mylight, fg=mycolor}
+        \setbeamercolor{palette secondary}{bg=mylight, fg=mycolor}
+        \setbeamercolor{palette tertiary}{bg=mycolor, fg=white}
+        \setbeamercolor{palette quaternary}{bg=mycolor, fg=white}
+        \setbeamertemplate{footline}{}
+        \setbeamercolor{section title}{fg=white}
 jupyter: python3
 execute:
   echo: true
