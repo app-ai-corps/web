@@ -166,6 +166,16 @@ Later this semester, we will be deploying these Smokey Buoys!
 
 ![](images/smokey_buoy.png){fig-align="center"}
 
+## 🎥 Buoy In Action!
+<hr>
+
+```{=html}
+<video width="80%" controls>
+  <source src="buoy-video-intro.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+```
+
 ## The Buoy: Test Strips
 <hr>
 
@@ -298,16 +308,6 @@ The motor drives the rollers, which grip and advance the test strip.
 When a test pad is positioned in front of the camera, it takes a picture to record the color.
 :::
 ::::
-
-## 🎥 See It In Action!
-<hr>
-
-```{=html}
-<video width="80%" controls>
-  <source src="buoy-video-motor-camera.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-```
 
 ## 🗣️ Think Pair Share: 
 <hr>
