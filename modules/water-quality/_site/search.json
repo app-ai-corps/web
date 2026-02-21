@@ -151,7 +151,7 @@
     "href": "1-statistics/facilitator.html#lesson-overview-video-tour",
     "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
     "section": "Lesson Overview Video Tour",
-    "text": "Lesson Overview Video Tour\n\n\nYour browser does not support the video tag."
+    "text": "Lesson Overview Video Tour\n\n  \n  Your browser does not support the video tag.\n\n If you would like a more in-depth overview of the lesson, please consult the slides with visible facilitator notes."
   },
   {
     "objectID": "1-statistics/facilitator.html#slide-deck-for-lesson",
@@ -165,14 +165,14 @@
     "href": "1-statistics/facilitator.html#student-handout",
     "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
     "section": "Student Handout",
-    "text": "Student Handout\nYou can make a copy of the student handout for this lesson here."
+    "text": "Student Handout\nYou can make a copy of the student handout for this lesson.\n\nIf you would like to provide students a copy of the slides with spaces for note taking, we have prepared a handout for this purpose."
   },
   {
     "objectID": "1-statistics/facilitator.html#lesson-prep",
     "href": "1-statistics/facilitator.html#lesson-prep",
     "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
     "section": "Lesson Prep",
-    "text": "Lesson Prep\n\n1. Prepare Materials for Nitrates Lab\nWe suggest creating water samples the for nitrates lab the day before. This will allow the nitrates to fully dissolve in the water.\nMaterials needed:\n\nMiracle-Gro Fertilizer Liquid\n\nDropper/Pipette\n\nSmall cups for student use (to hold samples for testing)\n\nSmall sticky notes (we use the 1.875” stickies) grouped into sets of 1 red, 1 green, 1 blue, 1 yellow, etc.\n\nEach group will be assigned a color (red, green, blue, yellow, etc.), so the number of stickies in a set will be dictated by the number of groups.\n\nEach group will need one multi-colored sticky set per water sample.\n\n\n1 Sharpie/Poster marker per group\n\nNitrate/Nitrate test strips\n\nMasking tape/ sharpies to label cups/samples\n\n\n\n\n\n\n\nNitrate Sample Creation Guide\n\n\n\n\n\nMixing Guide\nThis plan is written to provide samples for 5 groups with 4 samples each.\nFor 5 groups × 4 samples = 20 total samples\nFill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dropper/pipette:\nNormal/Low Range (8 samples) - 0-5 ppm\n4 samples: Plain water (0 drops)\n4 samples: 1-2 drops per cup\nModerate Range (6 samples) - 8-12 ppm\n6 samples: 4-6 drops per cup\nMedium-High Range (3 samples) - 15-20 ppm\n3 samples: 8-10 drops per cup\nExtreme Outliers (3 samples) - 35-50 ppm\n2 samples: 20-25 drops per cup (~35-40 ppm)\n1 sample: 30+ drops per cup (50 ppm, maxes out strip)\n\n\n\n\n\n2. Prepare Materials for Boxplot Activity\nMaterials needed:\n\n1 Post-It Gridded Sticky Page/Group\n\nWe pre-drew the axis on the page due to time limitations\n\n1 poster marker per group\n\n\n\n\n3. Make Copies: 1 Handout Per Student\n\nYou will need to make 1 copy per student of the workshop handout. If color-copying is not possible, make sure to have the color key for the nitrate/nitrite test strip available for each group. One possibility would be to print the test strip key for each group and laminate it for repeated use. Note that the keys vary depending on the brand of test strips you purchase, so you may need to modify the handout and key to match the specific test strips you are using.\n\n\n\n4. Create and Share Link for Nitrates Lab Data Collection\n\nMake sure you are logged into your school Google Account\n\nUse this link to make a copy of the Nitrate/Nitrite Lab Google Form\nOpen your copy of the Nitrate/Nitrite Lab Google Form. Publish the form. Double check the sharing settings to make sure all of your students can respond.\n\nWhile on the sharing settings, copy the respondent link and be prepared to share this link with your students, probably via email or your LMS. Close the sharing settings.\nOn the “Responses” tab, click “Link to Sheet” &gt; “Create a New Sheet” to aggregate all of the student responses into one spreadsheet.\nOpen the spreadsheet it generates (it may automatically open) and go to “File” &gt; “Share” &gt; “Publish to web” and use the following options:\n\nWhen you click publish, it will give you a link. Please be prepared to share this link with your students during the second half of class… perhaps via email or via LMS. They will need to copy/paste it to access the data. You can set this up well in advance of class.\n\nNote: If you are facilitating this module for more than one class, you will want to repeat this process once for each class, so that each class has their own submission form and spreadsheet.\nThis can be done well in advance, just make sure to keep the form link (respondent link) and spreadsheet link (publish to web link) for each class ready to disseminate.\n\n\n\n\n5. Create group tents using colored paper that matches the sticky notes.\n\n\n6. Create copy of exit ticket for end-of-lesson implementation.\n\nWe have drafted a three-question exit ticket that aligns with the three major content areas of this lesson (Water Quality, Python, and Statistics). We are providing the Google Form here if you would like to use it or modify it for your own needs.\n\n\n\n7. Create copy of the exercise for after-lesson practice.\n\nWe have also created a Google Colab exercise that you can use with students to practice the concepts covered in this lesson. It is available here."
+    "text": "Lesson Prep\n\n1. Prepare Materials for Nitrates Lab\nWe suggest creating water samples the for nitrates lab the day before. This will allow the nitrates to fully dissolve in the water.\nMaterials needed:\n\nMiracle-Gro Fertilizer Liquid\n\nDropper/Pipette\n\nSmall cups for student use (to hold samples for testing)\n\nSmall sticky notes (we use the 1.875” stickies) grouped into sets of 1 red, 1 green, 1 blue, 1 yellow, etc.\n\nEach group will be assigned a color (red, green, blue, yellow, etc.), so the number of stickies in a set will be dictated by the number of groups.\n\nEach group will need one multi-colored sticky set per water sample.\n\n\n1 Sharpie/Poster marker per group\n\nNitrate/Nitrate test strips\n\nMasking tape/ sharpies to label cups/samples\n\n\n\n\n\n\n\nNitrate Sample Creation Guide\n\n\n\n\n\nMixing Guide\nThis plan is written to provide samples for 5 groups with 4 samples each.\nFor 5 groups × 4 samples = 20 total samples\nFill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dropper/pipette:\nNormal/Low Range (8 samples) - 0-5 ppm\n4 samples: Plain water (0 drops)\n4 samples: 1-2 drops per cup\nModerate Range (6 samples) - 8-12 ppm\n6 samples: 4-6 drops per cup\nMedium-High Range (3 samples) - 15-20 ppm\n3 samples: 8-10 drops per cup\nExtreme Outliers (3 samples) - 35-50 ppm\n2 samples: 20-25 drops per cup (~35-40 ppm)\n1 sample: 30+ drops per cup (50 ppm, maxes out strip)\n\n\n\n\n\n2. Prepare Materials for Boxplot Activity\nMaterials needed:\n\n1 Post-It Gridded Sticky Page/Group\n\nWe pre-drew the axis on the page due to time limitations\n\n\n1 poster marker per group\n\n\n\n3. Make Copies: 1 Handout Per Student\n\nYou will need to make 1 copy per student of the workshop handout. If color-copying is not possible, make sure to have a reference of the color key for the nitrate/nitrite test strips available for each group. Note that the keys vary depending on the brand of test strips you purchase, so you may need to modify the handout to match the specific test strips you are using. Also, the colors are sensitive to lighting and printer setup, so if may be preferrable to have several bottles available for comparison to the orginal key on the bottle itself.\n\n\n\n4. Create and Share Link for Nitrates Lab Data Collection\n\nMake sure you are logged into your school Google Account\nUse this link to make a copy of the Nitrate/Nitrite Lab Google Form\nOpen your copy of the Nitrate/Nitrite Lab Google Form. Publish the form. Double check the sharing settings to make sure all of your students can respond.\n\nWhile on the sharing settings, copy the respondent link and be prepared to share this link with your students, probably via email or your LMS. Close the sharing settings.\nOn the “Responses” tab, click “Link to Sheet” &gt; “Create a New Sheet” to aggregate all of the student responses into one spreadsheet.\nOpen the spreadsheet it generates (it may automatically open) and go to “File” &gt; “Share” &gt; “Publish to web” and use the following options:\n\nWhen you click publish, it will give you a link. Please be prepared to share this link with your students during the second half of class… perhaps via email or via LMS. They will need to copy/paste it to access the data. You can set this up well in advance of class.\n\nNote: If you are facilitating this module for more than one class, you will want to repeat this process once for each class, so that each class has their own submission form and spreadsheet.\nThis can be done well in advance, just make sure to keep the form link (respondent link) and spreadsheet link (publish to web link) for each class ready to disseminate.\n\n\n\n5. Create group tents using colored paper that matches the sticky notes.\n\n\n6. Create copy of exit ticket for end-of-lesson implementation.\n\nWe have drafted a three-question exit ticket that aligns with the three major content areas of this lesson (Water Quality, Python, and Statistics). We are providing the Google Form here if you would like to use it or modify it for your own needs.\n\n\n\n7. Create copy of the exercise for after-lesson practice.\n\nWe have also created a Google Colab exercise that you can use with students to practice the concepts covered in this lesson. It is available here."
   },
   {
     "objectID": "1-statistics/facilitator.html#lesson-overview-takeaways",
@@ -256,7 +256,7 @@
     "href": "2-classification/index.html",
     "title": "Classification and Color",
     "section": "",
-    "text": "Lesson Objective: In this lesson, you will learn how to use classification and Python to help computers recognize water sample test strips and understand how color (RGB) can be used to monitor water quality.\nMaterials Needed:\n- A computer with a webcam - A web browser (Chrome, Firefox, or Safari)"
+    "text": "Lesson Objective: In this lesson, you will learn how to use classification and Python to help computers recognize water sample test strips and understand how color (RGB) can be used to monitor water quality.\nMaterials Needed:\n- A computer with a webcam\n- A web browser (Chrome, Firefox, or Safari)"
   },
   {
     "objectID": "2-classification/index.html#welcome-back-scientists",
@@ -291,14 +291,14 @@
     "href": "2-classification/intro-classification.html",
     "title": "Intro to Classification",
     "section": "",
-    "text": "Checkpoints on this Page:\n\nCheckpoint 2.a: Banana Ripeness\nCheckpoint 2.b: Strawberry Classification"
+    "text": "Checkpoints on this Page:\n\nCheckpoint 2.a: Banana Ripeness\nCheckpoint 2.b: Strawberry Classification\nCheckpoint 2.c: Discussion - Data Rights\nCheckpoint 2.d: Discussion - Economics of AI"
   },
   {
     "objectID": "2-classification/intro-classification.html#intro-to-classification",
     "href": "2-classification/intro-classification.html#intro-to-classification",
     "title": "Intro to Classification",
     "section": "Intro to Classification",
-    "text": "Intro to Classification\nIn a grocery store, we often think about which specific fruits are ripe and which are not. Farmers who grow these crops make similar decisions about when their fruits and vegetables are ready to pick.\nRegardless of whether it’s the farmer or the end consumer, both of these people are making specific decisions–judgements—about whether a fruit or vegetable is ripe or not.\nThis kind of decision making is called classification.\nClassification is all about sorting things into groups based on what they look like or how they act – something humans have done forever!\n\nUse of Classification in Agriculture\nHumans have been making classifaction decisions for thousands of years. Only recently have computers begun to have the ability to make classification decisions.\nOne use of artificial intelligence (AI) is to help farmers make classification decisions, work that can be time and labor intensive when done traditionally and at scale.\n\nClassification of Ripeness (Ripe / Not)\nWe can now use AI technology to identify exactly which crops in a field are ripe and ready to be picked. See the graphic below from the University of Maryland 1 to understand how this technology works.\n\n\n\n\n🎯 Checkpoint 2. b: Review the figure above. In image (b), what do you think the yellow represents? The green?\n\n\n\n\n\n\n\n\n\n\n\n\n\nTypes of Classification\nThe classification of strawberries above is considered binary, meaning there are only two possible results: ripe or not ripe.  \n\nBinary Classification\nTwo possible outcomes:  \n\n\n\nNot Ripe\n\n\n\n\nRipe\n\n\n\n \n\n\nMulticlass Classification\nWe can also classify into multiclass results like apple/orange/banana or ripe/underripe/molded produce. Multiclass classification has three or more possible outcomes:  \n\n\n\nUnderripe\n\n\n\n\nRipe\n\n\n\n\nMolded\n\n\n\n \nFor example, see the project from the University of Georgia, Athens 2 below that uses multiclass classification to sort lemons, discarding those that are underripe or molded and retaining only those that are ripe.\n\n\nYour browser does not support the video tag. \n\n\n\n\nMore on Classification with AI\nAs the video notes, computers can make classification decisions very quickly.\n​As with anything, choosing to use AI for thse sorts of tasks has its advantages and disadvantages.\n\nPros:\n\nHandles millions of items quickly\n\nSpots tiny differences humans miss\n\n\nCons:\n\nNeeds tons of examples to train the computer\nBad examples = bad decisions (e.g., train only on sunny photos, it fails on cloudy days).\n​\n\n\nYour job as a scientist: Practice Classifying! The next page will involve a classification activity. It will challenge both your conceptual understanding of classification, as well as introduce you to classifying with AI!"
+    "text": "Intro to Classification\nIn a grocery store, we often think about which specific fruits are ripe and which are not. Farmers who grow these crops make similar decisions about when their fruits and vegetables are ready to pick.\nRegardless of whether it’s the farmer or the end consumer, both of these people are making specific decisions–judgements—about whether a fruit or vegetable is ripe or not.\nThis kind of decision making is called classification.\nClassification is all about sorting things into groups based on what they look like or how they act – something humans have done forever!\n\nUse of Classification in Agriculture\nHumans have been making classifaction decisions for thousands of years. Only recently have computers begun to have the ability to make classification decisions.\nOne use of artificial intelligence (AI) is to help farmers make classification decisions, work that can be time and labor intensive when done traditionally and at scale.\n\nClassification of Ripeness (Ripe / Not)\nWe can now use AI technology to identify exactly which crops in a field are ripe and ready to be picked. See the graphic below from the University of Maryland 1 to understand how this technology works.\n\n\n\n\n🎯 Checkpoint 2. b: Review the figure above. In image (b), what do you think the yellow represents? The green?\n\n\n\n\n\n\n\n\n\n\n\n\n\nTypes of Classification\nThe classification of strawberries above is considered binary, meaning there are only two possible results: ripe or not ripe.  \n\nBinary Classification\nTwo possible outcomes:  \n\n\n\nNot Ripe\n\n\n\n\nRipe\n\n\n\n \n\n\nMulticlass Classification\nWe can also classify into multiclass results like apple/orange/banana or ripe/underripe/molded produce. Multiclass classification has three or more possible outcomes:  \n\n\n\nUnderripe\n\n\n\n\nRipe\n\n\n\n\nMolded\n\n\n\n \nFor example, see the project from the University of Georgia, Athens 2 below that uses multiclass classification to sort lemons, discarding those that are underripe or molded and retaining only those that are ripe.\n\n\nYour browser does not support the video tag. \n\n\n\n\nMore on Classification with AI\nAs the video notes, computers can make classification decisions very quickly.\n​As with anything, choosing to use AI for thse sorts of tasks has its advantages and disadvantages.\n\nPros:\n\nHandles millions of items quickly\n\nSpots tiny differences humans miss\n\n\nCons:\n\nNeeds tons of examples to train the computer\nBad examples = bad decisions (e.g., train only on sunny photos, it fails on cloudy days).\n​\n\n\n\n\n\n🎯 Checkpoint 2. c: If farmers use a certain company to train and decide when to pluck or harvest fruits/veggies, who gets to own that data? why?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n🎯 Checkpoint 2. d: Let’s say the company becomes better at identifying ripe fruits because they used data from your farm. Now, they want to up their subscription fees for farmers to use their model. Is that fair? Do you have any suggestions or solutions?"
   },
   {
     "objectID": "1-statistics/center-spread.html",
@@ -1040,7 +1040,7 @@
     "href": "2-classification/inside-classification.html#how-does-your-model-work",
     "title": "How Does It Work?",
     "section": "How Does Your Model Work?",
-    "text": "How Does Your Model Work?\nUnder the hood of your model and most other image classification models is something called a Convolutional Neural Net (CNN). As you have already done, we train CNNs to recognize pattern in images. Watch the clip below to learn more about how the CNN works. Note that the video discussed some of the mathematics behind CNNs, but don’t worry if you don’t understand everything. Prioritize understanding the big picture, as the video clips moves quickly. \n Clip 1 \n\n \n\n\n  Clip 2 \n\n \n\n\n\n\n\n🎯 Checkpoint 5. a: Compare and contrast the input layer, the hidden layers, and the output layer. What function do they each have in a neural net?\n\n\n\n\n\n\n\n\n\n\n\nThe example in the video focuses on classifying objects in grayscale photos, but CNNs can also handle color. However, computers “see” color differently than humans."
+    "text": "How Does Your Model Work?\nUnder the hood of your model and most other image classification models is something called a Convolutional Neural Net (CNN). As you have already done, we train CNNs to recognize pattern in images. Watch the clip below to learn more about how the CNN works. Note that the video discussed some of the mathematics behind CNNs, but don’t worry if you don’t understand everything. Prioritize understanding the big picture, as the video clips moves quickly. \n Clip 1 \n\n \n\n\n  Clip 2 \n\n \n\n\n\n\n\n🎯 Checkpoint 5. a: Compare and contrast the input layer, the hidden layers, and the output layer. What function do they each have in a neural net?"
   },
   {
     "objectID": "2-classification/inside-classification.html#understanding-how-computers-see-color",
@@ -1061,7 +1061,7 @@
     "href": "2-classification/classification-activity-train.html#teachable-machine",
     "title": "Classification Activity - Train",
     "section": "Teachable Machine",
-    "text": "Teachable Machine\n  To create your own model, we will use Google’s Teachable Machine. Teachable Machine uses 🐍 Python (yes! The same Python we used in Workshop #1) to help users build classification models. It just hides the 🐍 Python in the background.\n\nSteps\n\n\n\nGo to Teachable Machine\n\n\n \n\n\n\n\n\nClick “Get Started”\n\n\n\n\n\n\n\n\nChoose “Image Project”\n\n\n\n\n\n\n\n\nSelect “Standard Image Model”\n\n\n\n\n\n\n\n\nTo the right of “Class 1”, click the pencil and type “Apple”\n\n\n\n\n\n\n\n\nGrab your apple and get ready!!\n\n\n\n\n\n\n\n\nClick “webcam” to turn on and allow the computer to begin capturing images of the apple.\n\n\n\n\n\n\n\n\n\n\n\nPRO TIP\n\n\n\nMake sure you have a clean table and avoid messy backgrounds. Vary the lighting in your images (window, light, lamp, shadow, etc.) like might be encountered in real scenarios.\n\n\n\n\n\nPosition your apple within the frame and click the “Hold to Record” button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images.\n\n\n\n\n\n\n\n\nWhen finished, relase the “Hold to Record” button and click to “x” in the top right corner to exit the Apple class.\n\n\n\n\n\n\n\n\nPut your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture roughly the same number of images for the orange as you did for the apple.\n\n\n \n\n\n\n\n\nWhen finished capturing data for both classes, click the “Train Model” button. The website will train your own custom classification model, based on your data!\n\n\n\n\n\nCongratulations! You have trained your own classifier! On the next page, we’ll evaluate how well it works."
+    "text": "Teachable Machine\n  To create your own model, we will use Google’s Teachable Machine. Teachable Machine uses 🐍 Python (yes! The same Python we used in Workshop #1) to help users build classification models. It just hides the 🐍 Python in the background.\n\nSteps\n\n\n\nGo to Teachable Machine\n\n\n \n\n\n\n\n\nClick “Get Started”\n\n\n\n\n\n\n\n\nChoose “Image Project”\n\n\n\n\n\n\n\n\nSelect “Standard Image Model”\n\n\n\n\n\n\n\n\nTo the right of “Class 1”, click the pencil and type “Apple”\n\n\n\n\n\n\n\n\nGrab your apple and get ready!!\n\n\n\n\n\n\n\n\nClick “webcam” to turn on and allow the computer to begin capturing images of the apple.\n\n\n\n\n\n\n\n\n\n\n\nPRO TIP\n\n\n\nMake sure you have a clean table and avoid messy backgrounds. Vary the lighting in your images (window, light, lamp, shadow, etc.) like might be encountered in real scenarios.\n\n\n\n\n\nPosition your apple within the frame and click the “Hold to Record” button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images.\n\n\n\n\n\n\n\n\nWhen finished, relase the “Hold to Record” button and click to “x” in the top right corner to exit the Apple class.\n\n\n\n\n\n\n\n\nPut your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture roughly the same number of images for the orange as you did for the apple.\n\n\n \n\n\n\n\n\nWhen finished capturing data for both classes, click the “Train Model” button. The website will train your own custom classification model, based on your data!\n\n\n\n\n\nCongratulations! You have trained your own classifier! Now let’s see how well it works."
   },
   {
     "objectID": "2-classification/computers-color.html",
@@ -1089,7 +1089,7 @@
     "href": "2-classification/color-activity.html#understanding-rgb",
     "title": "Color Activity",
     "section": "Understanding RGB",
-    "text": "Understanding RGB\nTo understand how Smokey Buoy uses color to monitor water quality, we need to understand how computers see color. Computers aren’t like us—they don’t have eyes. Instead, computers understand color through numbers.\nWhen a computer displays or processes an image, that image is really a combination of millions of little squares called pixels, and each of these pixels has a value for Red (R), Green (G), and Blue (B). The color of each pixel is a combination of these three values.\nLet’s take a look at how this works!\n\n\nPixels and RGB Values\n\n\n\n🎯 Checkpoint 6. a: Exploring pixels and RGB Values\n\n\n\n\n\n\n\n\n\n\n\n\nMaterials Needed:\n\nAPPLET\n\nThis will open in a new tab.\nYou may need to grant access to your camera for it to work.\nApple, Orange, Lime (from previous activity)\n\nHandout\nPencil\n\n\nUse the applet and follow the instructions on the handout, which are also listed below.\n\nThe applet starts with “What Humans See” selected. Hold the apple up to the camera. Notice it captures its likeness?\nChange the mode to “What Computers See”. It will default to the Red channel first.\nFocus on an area at the center of the apple and record the value for R.\nUse the dropdown menu to change the channel to G. Look at the same area (or as close to possible) on the apple, record the value for G.\nRepeat this process for the B channel.\nRepeat this process for the orange and lime.\n\n\nIn the last activity, as with all pixels, each had a value for Red (R), Green (G), and Blue (B). The values for each can range from 0 to 255. Let’s take a closer look at what these values mean.\n\n  Slide the R, G, or B to see how it affects the color of the square!\n\n  \n    \n      \n        R:\n        \n        128\n      \n\n      \n        G:\n        \n        128\n      \n\n      \n        B:\n        \n        128"
+    "text": "Understanding RGB\nTo understand how Smokey Buoy uses color to monitor water quality, we need to understand how computers see color. Computers aren’t like us—they don’t have eyes. Instead, computers understand color through numbers.\nWhen a computer displays or processes an image, that image is really a combination of millions of little squares called pixels, and each of these pixels has a value for Red (R), Green (G), and Blue (B). The color of each pixel is a combination of these three values.\nLet’s take a look at how this works!\n\n\nPixels and RGB Values\n\n\n\n🎯 Checkpoint 6. a: Exploring pixels and RGB Values\n\n\n\n\n\n\n\n\n\n\n\n\nMaterials Needed:\n\nAPPLET\n\nThis will open in a new tab.\nYou may need to grant access to your camera for it to work.\nApple, Orange, Lime (from previous activity)\n\nHandout\nPencil\n\n\nUse the applet and follow the instructions on the handout, which are also listed below.\n\nThe applet starts with “What Humans See” selected. Hold the apple up to the camera. Notice it captures its likeness?\nChange the mode to “What Computers See”. It will default to the Red channel first.\nFocus on an area at the center of the apple and record the value for R.\nUse the dropdown menu to change the channel to G. Look at the same area (or as close to possible) on the apple, record the value for G.\nRepeat this process for the B channel.\nRepeat this process for the orange, lime, and each of the purple cards."
   },
   {
     "objectID": "1-statistics/facilitator_notes.html#lesson-objective",
@@ -1538,5 +1538,1195 @@
     "title": "Workshop #1",
     "section": "🧠 Exercises",
     "text": "🧠 Exercises\n\n  \n\nWant to practice what we’ve learned?Try the Exercises."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#lesson-objective",
+    "href": "1-statistics/facilitator_handout.html#lesson-objective",
+    "title": "Workshop #1",
+    "section": "Lesson Objective",
+    "text": "Lesson Objective\n\nIn this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate nitrates and nitrates in water samples.  \n\nLesson Objective\n\n\nMaterials Needed:\n- 💻 Your computer\n- A web browser (Chrome, Firefox, or Safari)\n- A calculator"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#workshop-structure-1",
+    "href": "1-statistics/facilitator_handout.html#workshop-structure-1",
+    "title": "Workshop #1",
+    "section": "Workshop Structure",
+    "text": "Workshop Structure\n\nIn the workshops, we will use:\n- slides\n- interactive modules\n- handouts\nPlease have the module pulled up on your device and handout ready.  \n💻 Navigate to: https://appalachianaicorps.org/ &gt; Modules &gt; Water Quality Monitoring &gt; Lesson 1\n\nNote: If you see a 💻 laptop 💻 icon in the slides, that means there is a corresponding activity in the module to complete!"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#workshop-structure-2",
+    "href": "1-statistics/facilitator_handout.html#workshop-structure-2",
+    "title": "Workshop #1",
+    "section": "Workshop Structure",
+    "text": "Workshop Structure\n\nThere are multiple pages in each module. You navigate between them in the left-hand sidebar:"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#workshop-structure-3",
+    "href": "1-statistics/facilitator_handout.html#workshop-structure-3",
+    "title": "Workshop #1",
+    "section": "Workshop Structure",
+    "text": "Workshop Structure\n\n\nEach page contains checkpoints. The checkpoints are linked at the top of the page and include code blocks to run and questions to answer.\n\nThey are numbered by the page they are on (number) and the order they are within each page (letter).  \n\n\n\n\n\n\nCheckpoints on this Page:\n\nCheckpoint 2.a: Role of Nitrogen\nCheckpoint 2.b: Nitrogen in Your Water\nCheckpoint 2.c: Nitrogen Summary"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#workshop-structure-4",
+    "href": "1-statistics/facilitator_handout.html#workshop-structure-4",
+    "title": "Workshop #1",
+    "section": "Workshop Structure",
+    "text": "Workshop Structure\n\nThe checkpoints will also be highlighted in the body of the module. When you come across one, that means there is something new to complete there!\n\n🎯 Checkpoint 2.a: Role of Nitrogen"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#what-is-python",
+    "href": "1-statistics/facilitator_handout.html#what-is-python",
+    "title": "Workshop #1",
+    "section": "What is Python? 🐍",
+    "text": "What is Python? 🐍\n\n\nPython is a programming language — a way to give instructions to a computer.\nPython can:\n\nanalyze data\ndo math\nmake graphs\n\n\nIn these workshops, we will learn Python together!"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#lets-try-python-right-now",
+    "href": "1-statistics/facilitator_handout.html#lets-try-python-right-now",
+    "title": "Workshop #1",
+    "section": "💻 Let’s Try Python Right Now!",
+    "text": "💻 Let’s Try Python Right Now!\n\n\nPython will print text. In programming, we call text strings.\n\n\n\n🎯 Checkpoint 1.a: Print Statements\n\n\nClick the ▶️ Run Code button to run the block.\n\n# This is a comment - Python ignores lines that start with #\n# Let's make Python print a message!\n\nprint(\"Hello, Water Scientist!\")\n\n\n\nWhat happens?"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#lets-try-python-right-now-1",
+    "href": "1-statistics/facilitator_handout.html#lets-try-python-right-now-1",
+    "title": "Workshop #1",
+    "section": "💻 Let’s Try Python Right Now!",
+    "text": "💻 Let’s Try Python Right Now!\n\n\nPython will print text. In programming, we call text strings.\n\n\n🎯 Checkpoint 1.a: Print Statements\n\n\nClick the ▶️ Run Code button to run the block.\n\n\n# This is a comment - Python ignores lines that start with #\n# Let's make Python print a message!\n\nprint(\"Hello, Water Scientist!\")\n\nHello, Water Scientist!\n\n\n\n🎉 You just ran Python code! See how it printed “Hello, Water Scientist!” below the block?\nNote that strings are always surrounded by quotation marks."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#python-does-math",
+    "href": "1-statistics/facilitator_handout.html#python-does-math",
+    "title": "Workshop #1",
+    "section": "💻 Python Does Math!",
+    "text": "💻 Python Does Math!\n\n\nPython can do math problems way faster than we can!\n\n\n🎯 Checkpoint 1.b: Mathematical Operators\n\n\nClick the ▶️ Run Code button to run the blocks.\n\n➕ Addition:\n2 + 3\n➖ Subtraction:\n3 - 2\n✖️ Multiplication:\n2 * 3\n➗ Division:\n3 / 2"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#python-does-math-1",
+    "href": "1-statistics/facilitator_handout.html#python-does-math-1",
+    "title": "Workshop #1",
+    "section": "💻 Python Does Math!",
+    "text": "💻 Python Does Math!\n\n\n🎯 Checkpoint 1.b: Mathematical Operators\n\n\nClick the ▶️ Run Code button to run the blocks.\n\n➕ Addition:\n\n2 + 3\n\n5\n\n\n➖ Subtraction:\n\n3 - 2\n\n1\n\n\n✖️ Multiplication:\n\n2 * 3\n\n6\n\n\n➗ Division:\n\n3 / 2\n\n1.5"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#python-will-compare-values",
+    "href": "1-statistics/facilitator_handout.html#python-will-compare-values",
+    "title": "Workshop #1",
+    "section": "💻 Python Will Compare Values",
+    "text": "💻 Python Will Compare Values\n\n\nRead these mathematical equations out loud. Let’s try the first together!\n\n\n🎯 Checkpoint 1.c: Comparing Values\n\n\nClick the ▶️ Run Code button to run the block.\n\n\n2 + 3 &gt;= 2 * 3\n\n“The sum of 2 and 3 is greater than or equal to the product of 2 and 3.”\n\n\nIs this statement TRUE or FALSE?\n\n\n\nPython can decide!\n\n2 + 3 &gt;= 2 * 3\n\nFalse"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#python-will-compare-values-1",
+    "href": "1-statistics/facilitator_handout.html#python-will-compare-values-1",
+    "title": "Workshop #1",
+    "section": "💻 Python Will Compare Values",
+    "text": "💻 Python Will Compare Values\n\n\nYou try the second one! \n\n2 + 3 &lt;= 2 * 3\nRead the statement and make a prediction. Is this statement TRUE or FALSE?\n\n\nPython says:\n\n2 + 3 &lt;= 2 * 3\n\nTrue"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#combining-math-strings",
+    "href": "1-statistics/facilitator_handout.html#combining-math-strings",
+    "title": "Workshop #1",
+    "section": "💻 Combining Math & Strings",
+    "text": "💻 Combining Math & Strings\n\n\nYou can combine strings and math!\n\n\n🎯 Checkpoint 1.d: Print Statements with Math\n\n\nClick the ▶️ Run Code button to run the block.\n\nprint(\"2 + 3 =\", 2 + 3)\n\n Make a prediction. What will Python print?\n\n\n\nprint(\"2 + 3 =\", 2 + 3)\n\n2 + 3 = 5"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#your-own-print-statements",
+    "href": "1-statistics/facilitator_handout.html#your-own-print-statements",
+    "title": "Workshop #1",
+    "section": "💻 Your Own Print Statements",
+    "text": "💻 Your Own Print Statements\n\n\nYour turn! Edit the code in the block.\n\n\n🎯 Checkpoint 1.e: Your own print statements with math!\n\n\n\nChange “Student” to your first name.\nCreate a new line 9 to calculate 15 times 4. Use lines 5 and 6 as models.\nTry other math problems.\n\nClick the ▶️ Run Code button to run the block.\n\n# Change this message to your name!\nprint(\"My name is Student\")\n\n# Try different math problems\nprint(\"5 + 3 =\", 5 + 3)\nprint(\"20 - 7 =\", 20 - 7)\n\n# Calculate 15 times 4 below. Print the equation and result."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#what-is-water",
+    "href": "1-statistics/facilitator_handout.html#what-is-water",
+    "title": "Workshop #1",
+    "section": "What is Water? 💧",
+    "text": "What is Water? 💧\n\n🙋🏼🙋🏾‍♀️🙋🏽‍♂️ Question: What do you know about water?\n\n\nH2O is pure water!\n\nBut water is almost always mixed with other things:\n\nminerals\nsalts\nother chemicals\n\n\nSome of these things help water be safe to drink, while others make it unsafe."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#water-quality",
+    "href": "1-statistics/facilitator_handout.html#water-quality",
+    "title": "Workshop #1",
+    "section": "Water Quality 💧",
+    "text": "Water Quality 💧"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#water-quality-1",
+    "href": "1-statistics/facilitator_handout.html#water-quality-1",
+    "title": "Workshop #1",
+    "section": "Water Quality 💧",
+    "text": "Water Quality 💧\n\n\nIn the next several workshops, we will become water quality citizen scientists!\nThe video discussed several indicators of water quality. We’ll focus on nitrogen today. It can serve as both a nutrient and a pollutant."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#nitrogen-as-nutrient",
+    "href": "1-statistics/facilitator_handout.html#nitrogen-as-nutrient",
+    "title": "Workshop #1",
+    "section": "🌳 Nitrogen as Nutrient",
+    "text": "🌳 Nitrogen as Nutrient\n\n\nNitrogen is naturally occurring.\n\nWhen it combines with air and water, it forms ions: nitrates (NO3) and nitrites (NO2).\nNitrogen within water is an important part of the nitrogen cycle, an important process necessary for life."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#nitrogen-as-nutrient-1",
+    "href": "1-statistics/facilitator_handout.html#nitrogen-as-nutrient-1",
+    "title": "Workshop #1",
+    "section": "🌳 Nitrogen as Nutrient",
+    "text": "🌳 Nitrogen as Nutrient"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#nitrogen-as-pollutant",
+    "href": "1-statistics/facilitator_handout.html#nitrogen-as-pollutant",
+    "title": "Workshop #1",
+    "section": "Nitrogen as Pollutant",
+    "text": "Nitrogen as Pollutant\n\n\nToo much nitrogen in water can be a pollutant.\n\nExcess nitrogen–in the form of nitrates and nitrites–can result from:\n\nAgricultural operations (fertilizer runoff and livestock manure)\nSewage and septic systems (human waste)\nAcid rain"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#nitrogen-as-pollutant-1",
+    "href": "1-statistics/facilitator_handout.html#nitrogen-as-pollutant-1",
+    "title": "Workshop #1",
+    "section": "Nitrogen as Pollutant",
+    "text": "Nitrogen as Pollutant"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#water-quality-nitrogen",
+    "href": "1-statistics/facilitator_handout.html#water-quality-nitrogen",
+    "title": "Workshop #1",
+    "section": "Water Quality: Nitrogen",
+    "text": "Water Quality: Nitrogen\n\n\n🎯 Checkpoint 2.a: Role of Nitrogen\n\n  🧠 What is the role of nitrogen in our water?\n 🧠 Do we want nitrates in our streams?\n 🧠 Our drinking water?\n 🧠 How about water with lots of nitrogen?"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#monitoring-nitrogen-your-utility",
+    "href": "1-statistics/facilitator_handout.html#monitoring-nitrogen-your-utility",
+    "title": "Workshop #1",
+    "section": "Monitoring Nitrogen: Your Utility 💧",
+    "text": "Monitoring Nitrogen: Your Utility 💧\n\n\nThe U.S. Environmental Protection Agency (EPA) sets limits on allowable concentrations of nitrates and nitrites in drinking water.\n\n\n\n\n\n\n\nNitrate and Nitrite EPA Limits\n\n\nNitrates: 10 mg/L\nNitrites: 1 mg/L"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#monitoring-nitrogen-your-utility-1",
+    "href": "1-statistics/facilitator_handout.html#monitoring-nitrogen-your-utility-1",
+    "title": "Workshop #1",
+    "section": "Monitoring Nitrogen: Your Utility 💧",
+    "text": "Monitoring Nitrogen: Your Utility 💧\n\nYou can look up the reported nitrate concentration for water from your utility by using your zipcode.\n\n🎯 Checkpoint 2.b: Nitrogen in Your Water\n\n🧠 Using data from EWG, what is the most recently reported nitrate concentration by your water utility?"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#monitoring-nitrogen-you",
+    "href": "1-statistics/facilitator_handout.html#monitoring-nitrogen-you",
+    "title": "Workshop #1",
+    "section": "Monitoring Nitrogen: YOU! 🔬💧",
+    "text": "Monitoring Nitrogen: YOU! 🔬💧\n\n\nWe can also monitor our own water for nitrogen!\n\n\n\n\n\n\n\n\nNote that 10 mg/L is the EPA limit for nitrate and 1 mg/L is the EPA limit for nitrite."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#nitrate-lab-1",
+    "href": "1-statistics/facilitator_handout.html#nitrate-lab-1",
+    "title": "Workshop #1",
+    "section": "Nitrate Lab",
+    "text": "Nitrate Lab\n\nWe are going to conduct a brief water quality lab to practice gathering data about nitrates and nitrates in water samples.\n\nMaterials Needed:\n- 4+ water quality samples per group\n- 4+ nitrate/nitrate test strips per group\n- 1 lab notesheet per person\n- 1 computer with the submission form open for data entry\n- link to form (provided by your teacher)\n- pencils\n- 4+ sets of multicolor sticky notes (one set per water sample)\n- 1 Sharpie markers\n- timing device (watch, clock, etc.)"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#nitrate-lab-roles",
+    "href": "1-statistics/facilitator_handout.html#nitrate-lab-roles",
+    "title": "Workshop #1",
+    "section": "Nitrate Lab: Roles",
+    "text": "Nitrate Lab: Roles\n\nAssign roles to each person in your group:\n\n\nRole 1: Data Recorder (Lab Report)\n\n\n1 lab handout\n\npencil\n\n\n Role 2: Data Recorder (Computer)\n\n\ncomputer (everyone else can put theirs away temporarily)\nsubmission form pulled up in browser\n\n\n\nRole 3: Data Recorder (Sticky Notes)\n\n\nsets of small sticky notes (4+ sets, one per water sample)\nSharpie\n\n\nRole 4: Lab Technician\n\n\nwater samples\ntest strips"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#nitrate-lab-procedure",
+    "href": "1-statistics/facilitator_handout.html#nitrate-lab-procedure",
+    "title": "Workshop #1",
+    "section": "Nitrate Lab: Procedure",
+    "text": "Nitrate Lab: Procedure\n\nRead the procedure on your lab sheet. Make sure everyone in your group understands the procedure and has the materials needed for their role.   \n🚀 LET’S BEGIN 🚀\n  When finished: With the help of the Data Recorder (Lab Report), make sure everyone in your group has a copy of the data table on their own sheet."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#what-is-statistics",
+    "href": "1-statistics/facilitator_handout.html#what-is-statistics",
+    "title": "Workshop #1",
+    "section": "What is Statistics?",
+    "text": "What is Statistics?\n\n\nHow can we make sense of the data we just collected during the nitrates lab?\n\nWe can use statistics!\n\n\nStatistics is a collection of tools that can be used to analyze data. Statistics helps us:\n\nSummarize lots of numbers into one useful number\n\nFind patterns\n\nMake decisions\n\nSpot things that don’t fit"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#what-is-statistics-1",
+    "href": "1-statistics/facilitator_handout.html#what-is-statistics-1",
+    "title": "Workshop #1",
+    "section": "What is Statistics?",
+    "text": "What is Statistics?"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#measures-of-center",
+    "href": "1-statistics/facilitator_handout.html#measures-of-center",
+    "title": "Workshop #1",
+    "section": "Measures of Center",
+    "text": "Measures of Center\n\nWe use measures of center to find the central value of a group of numbers. There are different types of central values. We’ll use mean and median in this lesson. \n\nSample Dataset: 1, 2, 6, 5, 1\n\nMean\nThe mean is often called the “average”. To find the mean, we add up all of the numbers of interest and divide by how many numbers there are.\n\n\\(\\Large \\frac{1 + 2 + 6 + 5 + 1}{5} = 3\\)\n\n The mean value of this sample dataset is 3."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#measures-of-center-1",
+    "href": "1-statistics/facilitator_handout.html#measures-of-center-1",
+    "title": "Workshop #1",
+    "section": "Measures of Center",
+    "text": "Measures of Center\n\nWe use measures of center to find the central value of a group of numbers. There are different types of central values. We’ll use mean and median in this lesson. \n\nSample Dataset: 1, 2, 6, 5, 1\n\nMedian\nThe median is a different kind of measure of center. To calculate the median, you first line up all the values in your data set, then you find the middle value by position.\n\n\\(\\large 1 + 1 + 2 + 5 + 6\\)"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#statistics-your-turn",
+    "href": "1-statistics/facilitator_handout.html#statistics-your-turn",
+    "title": "Workshop #1",
+    "section": "Statistics: Your Turn",
+    "text": "Statistics: Your Turn\n\n\nMaterials Needed:\n- Lab sheet\n- Calculator\n\n\n🎯 Checkpoint 4.a: Calculations—Mean & Median\n\nFind the mean and median of your team’s lab data:\n - Calculate mean nitrate concentration\n- Calculate mean nitrite concentration\n- Calculate median nitrate concentration\n- Calculate median nitrite concentration\n✏️ Record your results on your lab sheet."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#python-lists-1",
+    "href": "1-statistics/facilitator_handout.html#python-lists-1",
+    "title": "Workshop #1",
+    "section": "🐍 Python: Lists!",
+    "text": "🐍 Python: Lists!\n\n\nSample Dataset: 1, 2, 6, 5, 1\n\nLists\nIn Python, we store multiple numbers in something called a list.\n\n# Our sample dataset from above \n# (the square brackets [ ] make it a list)\n\nsample_data = [1, 2, 6, 5, 1]\n\nprint(\"Our sample data:\", sample_data)\n\nOur sample data: [1, 2, 6, 5, 1]\n\n\n\nBreaking it down:\n- sample_data = the variable name we gave our list (you can name it anything!)\n- = means “store this in the variable sample_data”\n- [1, 2, 6, 5, 1] = the actual numbers, separated by commas"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#python-make-your-own-lists",
+    "href": "1-statistics/facilitator_handout.html#python-make-your-own-lists",
+    "title": "Workshop #1",
+    "section": "💻 Python: Make Your Own Lists!",
+    "text": "💻 Python: Make Your Own Lists!\n\n\n🎯 Checkpoint 5.a: Storing data as lists!\n\n\nReplace the ??, ??, ??, and ?? placeholders with the nitrate and nitrite readings from your group!\nClick the ▶️ Run Code button to run the block.\n\n\n# Create a list of your group's nitrate and nitrite readings!\n# Change the 10, 20, 30, 40 to your group's real values\n\ngroup_nitrate = [10, 20, 30, 40]\ngroup_nitrite = [10, 20, 30, 40]\n\nprint(\"My group's nitrate readings:\", group_nitrate)\nprint(\"My group's nitrite readings:\", group_nitrite)\n\nMy group's nitrate readings: [10, 20, 30, 40]\nMy group's nitrite readings: [10, 20, 30, 40]"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#python-make-your-own-lists-1",
+    "href": "1-statistics/facilitator_handout.html#python-make-your-own-lists-1",
+    "title": "Workshop #1",
+    "section": "💻 Python: Make Your Own Lists!",
+    "text": "💻 Python: Make Your Own Lists!\n\n\n🎯 Checkpoint 5.b: Basic functions with lists.\n\nlen()\nHow many items are in a list?\n\nprint(\"Number of samples tested:\", len(group_nitrate))\n\nNumber of samples tested: 4\n\n\nmin()\nSmallest number in a list.\n\nprint(\"Lowest nitrate:\", min(group_nitrate))\n\nLowest nitrate: 10\n\n\nmax()\nBiggest number in a list.\n\nprint(\"Highest nitrate:\", max(group_nitrate))\n\nHighest nitrate: 40"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#example-water-safety-check",
+    "href": "1-statistics/facilitator_handout.html#example-water-safety-check",
+    "title": "Workshop #1",
+    "section": "💻 Example: Water Safety Check!",
+    "text": "💻 Example: Water Safety Check!\n\n\n🎯 Checkpoint 5.c: Making Comparisons—EPA Limits.\n\n\nReplace the ?? placeholder with the EPA limit for nitrate!\nClick the ▶️ Run Code button to run the blocks.\n\n# Let's check using your group's nitrate readings\nmax_nitrate = max(group_nitrate)\n\nprint(\"The water has a max nitrate concentration of\", max_nitrate)\n\n# Python can make decisions using 'if' statements!\nif max_nitrate &lt;= ??:\n    print(\"✓ Nitrate concentration is in the safe range!\")\nelse:\n    print(\"✗ Nitrate concentration is outside the safe range!\")"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#example-water-safety-check-1",
+    "href": "1-statistics/facilitator_handout.html#example-water-safety-check-1",
+    "title": "Workshop #1",
+    "section": "💻 Example: Water Safety Check!",
+    "text": "💻 Example: Water Safety Check!\n\n\n🎯 Checkpoint 5.c: Making Comparisons—EPA Limits.\n\n\nReplace the ?? placeholder with the EPA limit for nitrate!\nClick the ▶️ Run Code button to run the blocks.\n\n\n# Let's check using your group's nitrate readings\nmax_nitrate = max(group_nitrate)\n\nprint(\"The water has a max nitrate concentration of\", max_nitrate)\n\n# Python can make decisions using 'if' statements!\nif max_nitrate &lt;= 10:\n    print(\"✓ Nitrate concentration is in the safe range!\")\nelse:\n    print(\"✗ Nitrate concentration is outside the safe range!\")\n\nThe water has a max nitrate concentration of 40\n✗ Nitrate concentration is outside the safe range!"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#python-measures-of-center",
+    "href": "1-statistics/facilitator_handout.html#python-measures-of-center",
+    "title": "Workshop #1",
+    "section": "Python: Measures of Center",
+    "text": "Python: Measures of Center\n\n\nWe can also use Python to calculate measures of center.\n\nWe’ll import a library of functions called NumPy (Numerical Python) to help us.\n\n\nMean\n\nimport numpy as np\n\n# Same sample dataset\nsample_data = [1, 2, 6, 5, 1]\n\n# Calculate mean the easy way!\nmean_sample = np.mean(sample_data)\n\nprint(\"mean of sample data:\", mean_sample)\n\nmean of sample data: 3.0"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#python-measures-of-center-1",
+    "href": "1-statistics/facilitator_handout.html#python-measures-of-center-1",
+    "title": "Workshop #1",
+    "section": "💻 Python: Measures of Center",
+    "text": "💻 Python: Measures of Center\n\nMean: Your Turn!\n\n🎯 Checkpoint 6.a: Calculating group mean nitrate.\n\n\nReplace the 10, 20, 30, and 40 placeholders with the nitrate readings from your group!\nClick the ▶️ Run Code button to run the block.\n\n\n# Recreate the list of your group's nitrate readings below\n\ngroup_nitrate = [10, 20, 30, 40]\n\nmean_nitrate = np.mean(group_nitrate)\n\nprint(\"Group nitrate readings (mg/L):\", group_nitrate)\nprint(\"Group mean nitrate:\", mean_nitrate, \"mg/L\")\n\n# Is it safe? (Remember: the EPA's limit is less than 10 mg/L)\nif mean_nitrate &lt; 10:\n    print(\"✓ Average nitrate is SAFE\")\nelse:\n    print(\"✗ Average nitrate is TOO HIGH\")\n\nGroup nitrate readings (mg/L): [10, 20, 30, 40]\nGroup mean nitrate: 25.0 mg/L\n✗ Average nitrate is TOO HIGH"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data",
+    "href": "1-statistics/facilitator_handout.html#class-data",
+    "title": "Workshop #1",
+    "section": "Class Data",
+    "text": "Class Data\n\n\nPython can handle large amounts of data with ease!\nWe can consider the nitrate and nitrite data your whole class collected.\nTo do that, paste the .csv link from your teacher in the code to import the Google Form data.\n\n\n\n\n\n\n\nYour teacher will provide the link to the CSV file for you to use."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-1",
+    "href": "1-statistics/facilitator_handout.html#class-data-1",
+    "title": "Workshop #1",
+    "section": "💻 Class Data",
+    "text": "💻 Class Data\n\n\n🎯 Checkpoint 6.b: Import class data.\n\n\nReplace the placeholder (Line 4) with CSV URL from your teacher. Be sure the keep the quotation marks! This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.\nClick the ▶️ Run Code button to run the block.\n\n# Replace the url with the one provided from your teacher. \n# Make sure to keep the quotation marks!\n\ncsv_url = \"replace_this_with_your_csv_url\"\n\nclass_nitrate, class_nitrite = load_class_data(csv_url)\n\nprint(\"Nitrate values:\", class_nitrate)\nprint(\"Nitrite values:\", class_nitrite)\n\nNitrate values: [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 9.0, 10.0, 10.5, 11.0, 12.0, 13.5, 15.0, 18.0, 22.5]\nNitrite values: [0.0, 0.0, 0.1, 0.1, 0.15, 0.2, 0.2, 0.25, 0.3, 0.3, 0.35, 0.4, 0.4, 0.5, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.2, 1.5, 1.8, 2.5, 3.0]"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-mean",
+    "href": "1-statistics/facilitator_handout.html#class-data-mean",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Mean",
+    "text": "💻 Class Data: Mean\n\n\n🎯 Checkpoint 6.c: Calculate means for class data.\n\n\nReplace the ??? placeholders (Lines 3 & 4) with the variables that hold the class nitrate and nitrite data. That is, class_nitrate and class_nitrite, respectively.\nClick the ▶️ Run Code button to run the block.\n\n# Calculate mean nitrate and nitrite for class data (replace the ???)\n\nmean_class_nitrate = np.mean(???)\nmean_class_nitrite = np.mean(???)\n\nprint(\"Class nitrate:\", mean_class_nitrate, \"mg/L\")\nprint(\"Class nitrite:\", mean_class_nitrite, \"mg/L\")"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-mean-1",
+    "href": "1-statistics/facilitator_handout.html#class-data-mean-1",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Mean",
+    "text": "💻 Class Data: Mean\n\n\n🎯 Checkpoint 6.c: Calculate means for class data.\n\n\nReplace the ??? placeholders (Lines 3 & 4) with the variables that hold the class nitrate and nitrite data. That is, class_nitrate and class_nitrite, respectively.\nClick the ▶️ Run Code button to run the block.\n\n\n# Calculate mean nitrate and nitrite for class data (replace the ???)\n\nmean_class_nitrate = np.mean(class_nitrate)\nmean_class_nitrite = np.mean(class_nitrite)\n\nprint(\"Class nitrate:\", mean_class_nitrate, \"mg/L\")\nprint(\"Class nitrite:\", mean_class_nitrite, \"mg/L\")\n\nClass nitrate: 7.58 mg/L\nClass nitrite: 0.71 mg/L\n\n\nYour answers will differ. This is example data."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-median",
+    "href": "1-statistics/facilitator_handout.html#class-data-median",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Median",
+    "text": "💻 Class Data: Median\n\n\n🎯 Checkpoint 6.d: Calculate medians for class data.\n\n\nSimilarly, replace ??? with the correct variable names to calculate the median for the class nitrate and nitrite data.\nClick the ▶️ Run Code button to run the block.\n\n# Calculate median nitrate and nitrite for class data (replace the ???)\n\nmedian_class_nitrate = np.median(???)\nmedian_class_nitrite = np.median(???)\n\nprint(\"Class nitrate:\", median_class_nitrate, \"mg/L\")\nprint(\"Class nitrite:\", median_class_nitrite, \"mg/L\")"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-median-1",
+    "href": "1-statistics/facilitator_handout.html#class-data-median-1",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Median",
+    "text": "💻 Class Data: Median\n\n\n🎯 Checkpoint 6.d: Calculate medians for class data.\n\n\nSimilarly, replace ??? with the correct variable names to calculate the median for the class nitrate and nitrite data.\nClick the ▶️ Run Code button to run the block.\n\n\n# Calculate median nitrate and nitrite for class data (replace the ???)\n\nmedian_class_nitrate = np.median(class_nitrate)\nmedian_class_nitrite = np.median(class_nitrite)\n\nprint(\"Class nitrate:\", median_class_nitrate, \"mg/L\")\nprint(\"Class nitrite:\", median_class_nitrite, \"mg/L\")\n\nClass nitrate: 6.5 mg/L\nClass nitrite: 0.4 mg/L\n\n\nYour answers will differ. This is example data."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#python-measures-of-spread",
+    "href": "1-statistics/facilitator_handout.html#python-measures-of-spread",
+    "title": "Workshop #1",
+    "section": "Python: Measures of Spread",
+    "text": "Python: Measures of Spread\n\n\nSpread is a second type of statistical measure.\nLike it sounds, it tells us how spread out our data are.\nSpread, also referred to as variability, is the backbone of statistics!\n\nRange\nThe range is a fairly simple calculation. It’s the maximum minus the minimum in a dataset.\n\nmax() - min()\n\n\n# Same sample dataset\nsample_data = [1, 2, 6, 5, 1]\n\nsample_range = max(sample_data) - min(sample_data)\n\nprint(\"Range of sample data:\", sample_range)\n\nRange of sample data: 5"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-range",
+    "href": "1-statistics/facilitator_handout.html#class-data-range",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Range",
+    "text": "💻 Class Data: Range\n\nRange: Your Turn!\n\n🎯 Checkpoint 6.e: Calculate ranges for class data.\n\n\nReplace ??? with the correct variable names to calculate the ranges of the data.\nClick the ▶️ Run Code button to run the block.\n\nclass_nitrate_range = max(???) - min(???)\nclass_nitrite_range = max(???) - min(???)\n\nprint(\"Range of class nitrate data:\", class_nitrate_range)\nprint(\"Range of class nitrite data:\", class_nitrite_range)"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-range-1",
+    "href": "1-statistics/facilitator_handout.html#class-data-range-1",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Range",
+    "text": "💻 Class Data: Range\n\nRange: Your Turn!\n\n🎯 Checkpoint 6.e: Calculate ranges for class data.\n\n\nReplace ??? with the correct variable names to calculate the ranges of the data.\nClick the ▶️ Run Code button to run the block.\n\n\nclass_nitrate_range = max(class_nitrate) - min(class_nitrate)\nclass_nitrite_range = max(class_nitrite) - min(class_nitrite)\n\nprint(\"Range of class nitrate data:\", class_nitrate_range)\nprint(\"Range of class nitrite data:\", class_nitrite_range)\n\nRange of class nitrate data: 22.0\nRange of class nitrite data: 3.0\n\n\nYour answers will differ. This is example data."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-standard-deviation",
+    "href": "1-statistics/facilitator_handout.html#class-data-standard-deviation",
+    "title": "Workshop #1",
+    "section": "Class Data: Standard Deviation",
+    "text": "Class Data: Standard Deviation\n\nStandard Deviation\n\nThe standard deviation is another measure of spread.\nIt tell us the average distance the data in the dataset is from the mean.\n\n\n# Same sample dataset\nsample_data = [1, 2, 6, 5, 1]\n\nsample_stdev = np.std(sample_data)\n\nprint(\"Standard Deviation of sample data:\", sample_stdev)\n\nStandard Deviation of sample data: 2.0976176963403033"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-standard-deviation-1",
+    "href": "1-statistics/facilitator_handout.html#class-data-standard-deviation-1",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Standard Deviation",
+    "text": "💻 Class Data: Standard Deviation\n\nStandard Deviation: Your Turn!\n\n🎯 Checkpoint 6.f: Calculate standard deviations for class data.\n\n\nReplace ??? with the correct variable names to calculate the standard deviations of the data.\nClick the ▶️ Run Code button to run the block.\n\nclass_nitrate_stdev = np.std(???)\nclass_nitrite_stdev = np.std(???)\n\nprint(\"Standard deviation of class nitrate data:\", class_nitrate_stdev)\nprint(\"Standard deviation of class nitrite data:\", class_nitrite_stdev)"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-standard-deviation-2",
+    "href": "1-statistics/facilitator_handout.html#class-data-standard-deviation-2",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Standard Deviation",
+    "text": "💻 Class Data: Standard Deviation\n\nStandard Deviation: Your Turn!\n\n🎯 Checkpoint 6.f: Calculate standard deviations for class data.\n\n\nReplace ??? with the correct variable names to calculate the standard deviations of the data.\nClick the ▶️ Run Code button to run the block.\n\n\nclass_nitrate_stdev = np.std(class_nitrate)\nclass_nitrite_stdev = np.std(class_nitrite)\n\nprint(\"Standard deviation of class nitrate data:\", class_nitrate_stdev)\nprint(\"Standard deviation of class nitrite data:\", class_nitrite_stdev)\n\nStandard deviation of class nitrate data: 5.40865972307373\nStandard deviation of class nitrite data: 0.7532595834106592\n\n\nYour answers will differ. This is example data."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#causes-of-high-variability",
+    "href": "1-statistics/facilitator_handout.html#causes-of-high-variability",
+    "title": "Workshop #1",
+    "section": "❓ Causes of High Variability",
+    "text": "❓ Causes of High Variability\n\nIf a creek’s reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:\n\nPollution events - A factory dumps waste occasionally\nStorm runoff - Rain washes fertilizer from farms into the creek\nNatural cycles - Some creeks naturally vary\nSensor problems - The equipment might need calibration\nDifferent sampling times - Morning vs afternoon can be different"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#boxplots-visualizing-data",
+    "href": "1-statistics/facilitator_handout.html#boxplots-visualizing-data",
+    "title": "Workshop #1",
+    "section": "Boxplots: Visualizing Data",
+    "text": "Boxplots: Visualizing Data\n\n\nA key practice in statistics is to visualize the data!\nOne type of plot we can use to do this is a boxplot.\nTo make a boxplot, we will order the data and then divide the data into four equal groups (by number of observations), called quartiles.    ❗️❗️Attention❗️❗️ Data Recorder (Sticky Notes)\n\n\nData Recorders (Sticky Notes), sort all of your sticky notes by color. Pass them out to each group, matching the sticky’s color to the group’s tent color. This will result in each group having a full set of stickies representing the class nitrate data."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#boxplots-activity-1",
+    "href": "1-statistics/facilitator_handout.html#boxplots-activity-1",
+    "title": "Workshop #1",
+    "section": "🖍️ Boxplots: Activity",
+    "text": "🖍️ Boxplots: Activity\n\n\n🎯 Checkpoint 7.a: As a group, construct a boxplot for the class nitrate data by hand.\n\n\nMaterials Needed:\n- 1 Post-It grid paper sheet per group\n- 1 poster marker per group\n- Your group’s full set of stickies (including those from other groups) from the nitrate lab\n- Lab sheet handout (back)\n\nFollow the steps on the back of your lab sheet to create a boxplot for the class nitrate data.\n🚀 LET’S GO 🚀"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-2",
+    "href": "1-statistics/facilitator_handout.html#class-data-2",
+    "title": "Workshop #1",
+    "section": "💻 Class Data",
+    "text": "💻 Class Data\n\nWhew! That was a lot of work. Wouldn’t it be great if Python could do it for us? Good news. It can! But first, let’s re-import our data on this page.\n\n🎯 Checkpoint 8.a: Import Class Data.\n\n\nOnce more, replace the placeholder (Line 4) with CSV URL from your teacher. Be sure the keep the quotation marks! This will pull the class nitrate and nitrite data from the CSV file so you can use it later down the page.\nClick the ▶️ Run Code button to run the block.\n\n# Replace the url with the one provided from your teacher. \n# Make sure to keep the quotation marks!\n\ncsv_url = \"replace_this_with_your_csv_url\"\n\nclass_nitrate, class_nitrite = load_class_data(csv_url)\n\nprint(\"Nitrate values:\", class_nitrate)\nprint(\"Nitrite values:\", class_nitrite)\n\nNitrate values: [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 9.0, 10.0, 10.5, 11.0, 12.0, 13.5, 15.0, 18.0, 22.5]\nNitrite values: [0.0, 0.0, 0.1, 0.1, 0.15, 0.2, 0.2, 0.25, 0.3, 0.3, 0.35, 0.4, 0.4, 0.5, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.2, 1.5, 1.8, 2.5, 3.0]"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-boxplots",
+    "href": "1-statistics/facilitator_handout.html#class-data-boxplots",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Boxplots",
+    "text": "💻 Class Data: Boxplots\n\n\n🎯 Checkpoint 8.b: Create a boxplot for the class nitrate data.\n\n\nClick the ▶️ Run Code button to run the block and create a boxplot for the class nitrate data.\n\nimport matplotlib.pyplot as plt\n\nplt.figure(figsize=(6, 6))\nplt.boxplot(class_nitrate, vert=True, patch_artist=True,\n            boxprops=dict(facecolor='plum'))\nplt.ylabel('Nitrate (mg/L)', fontsize=12)\nplt.xticks([])\nplt.title('Boxplot of Class Nitrate', fontsize=13)\nplt.grid(True, alpha=0.3, axis='y')\nplt.show()"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-boxplots-1",
+    "href": "1-statistics/facilitator_handout.html#class-data-boxplots-1",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Boxplots",
+    "text": "💻 Class Data: Boxplots\n\n\n🎯 Checkpoint 8.b: Create a boxplot for the class nitrate data.\n\n\nClick the ▶️ Run Code button to run the block and create a boxplot for the class nitrate data.\n\n\n\nimport matplotlib.pyplot as plt\n\nplt.figure(figsize=(6, 6))\nplt.boxplot(class_nitrate, vert=True, patch_artist=True,\n            boxprops=dict(facecolor='plum'))\nplt.ylabel('Nitrate (mg/L)', fontsize=12)\nplt.xticks([])\nplt.title('Boxplot of Class Nitrate', fontsize=13)\nplt.grid(True, alpha=0.3, axis='y')\nplt.show()\n\nThis uses example data."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-boxplots-2",
+    "href": "1-statistics/facilitator_handout.html#class-data-boxplots-2",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Boxplots",
+    "text": "💻 Class Data: Boxplots\n\nNow, let’s create a boxplot for the class nitrite data.\n\n🎯 Checkpoint 8.c: Create a boxplot for the class nitrite data.\n\n\nClick the ▶️ Run Code button to run the block and create a boxplot for the class nitrite data.\n\nplt.figure(figsize=(6, 6))\nplt.boxplot(class_nitrite, vert=True, patch_artist=True,\n            boxprops=dict(facecolor='lemonchiffon'))\nplt.ylabel('Nitrite (mg/L)', fontsize=12)\nplt.xticks([])\nplt.title('Boxplot of Class Nitrite', fontsize=13)\nplt.grid(True, alpha=0.3, axis='y')\nplt.show()"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#class-data-boxplots-3",
+    "href": "1-statistics/facilitator_handout.html#class-data-boxplots-3",
+    "title": "Workshop #1",
+    "section": "💻 Class Data: Boxplots",
+    "text": "💻 Class Data: Boxplots\n\nNow, let’s create a boxplot for the class nitrite data.\n\n🎯 Checkpoint 8.c: Create a boxplot for the class nitrite data.\n\n\nClick the ▶️ Run Code button to run the block and create a boxplot for the class nitrite data.\n\n\n\nplt.figure(figsize=(6, 6))\nplt.boxplot(class_nitrite, vert=True, patch_artist=True,\n            boxprops=dict(facecolor='lemonchiffon'))\nplt.ylabel('Nitrite (mg/L)', fontsize=12)\nplt.xticks([])\nplt.title('Boxplot of Class Nitrite', fontsize=13)\nplt.grid(True, alpha=0.3, axis='y')\nplt.show()\n\nThis uses example data."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#outliers",
+    "href": "1-statistics/facilitator_handout.html#outliers",
+    "title": "Workshop #1",
+    "section": "Outliers",
+    "text": "Outliers\n\nOutliers are data points that are very different from the rest of your data.\n- Can really change your statistics—like mean and standard deviation.\n- On boxplots, outliers are represented by a circle (or sometimes a star) beyond the whiskers.\n   🧠 Do either the class nitrate or nitrite boxplot have outliers? How do you know?"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#why-do-outliers-happen",
+    "href": "1-statistics/facilitator_handout.html#why-do-outliers-happen",
+    "title": "Workshop #1",
+    "section": "Why Do Outliers Happen?",
+    "text": "Why Do Outliers Happen?\n\nOutliers can happen for different reasons:\n\nBuoy Malfunction 🔧\n\nReal Pollution Event 🚨\n\nFactory dumped chemicals into the stream\nFarm fertilizer washed in after a storm\nSewage spill\n\nNatural Event 🌧️\n\nHeavy rain changed water chemistry\n\nAlgae bloom\n\nSeasonal variation\n\n\n\n\nYour job as a scientist: Figure out which reason it is!"
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#exit-ticket-1",
+    "href": "1-statistics/facilitator_handout.html#exit-ticket-1",
+    "title": "Workshop #1",
+    "section": "🎟️ Exit Ticket",
+    "text": "🎟️ Exit Ticket\n\n  \n\n🎉 Great job! You’ve learned so much!Share what you’ve learned on the Exit Ticket."
+  },
+  {
+    "objectID": "1-statistics/facilitator_handout.html#exercises-1",
+    "href": "1-statistics/facilitator_handout.html#exercises-1",
+    "title": "Workshop #1",
+    "section": "🧠 Exercises",
+    "text": "🧠 Exercises\n\n  \n\nWant to practice what we’ve learned?Try the Exercises."
+  },
+  {
+    "objectID": "3-regression/keep.html",
+    "href": "3-regression/keep.html",
+    "title": "RGB and NN",
+    "section": "",
+    "text": "The example in the video focuses on classifying objects in grayscale photos, but CNNs can also handle color. However, computers “see” color differently than humans."
+  },
+  {
+    "objectID": "3-regression/keep.html#understanding-how-computers-see-color",
+    "href": "3-regression/keep.html#understanding-how-computers-see-color",
+    "title": "RGB and NN",
+    "section": "Understanding How Computers See Color",
+    "text": "Understanding How Computers See Color\nComputers do not prize the beauty of a painting or the wonder of an emotionally stirring photograph. Instead, they understand these images through numbers. \n\n \n\n ** Note that the red, green, and blue values in this video are given as decimals because some math has been applied to them. The original values are whole numbers between 0 and 255, as we’ll see on the next page."
+  },
+  {
+    "objectID": "2-classification/slides.html#lesson-objective",
+    "href": "2-classification/slides.html#lesson-objective",
+    "title": "Workshop #2",
+    "section": "Lesson Objective",
+    "text": "Lesson Objective\n\nIn this lesson, you will learn about and apply ideas around image classification, neural nets, color, as well as how they can be used to monitor water quality.  \n\nMaterials Needed:\n\n💻 A computer with a webcam\nA web browser (Chrome, Firefox, or Safari)"
+  },
+  {
+    "objectID": "2-classification/slides.html#workshop-structure",
+    "href": "2-classification/slides.html#workshop-structure",
+    "title": "Workshop #2",
+    "section": "Workshop Structure",
+    "text": "Workshop Structure\n\n\n💻 Navigate to:\n\nhttps://tinyurl.com/aaic-wq-2"
+  },
+  {
+    "objectID": "2-classification/slides.html#review",
+    "href": "2-classification/slides.html#review",
+    "title": "Workshop #2",
+    "section": "Review",
+    "text": "Review\n\n\nLast workshop we learned:\n\nForms of Nitrogen in Water\n\nNitrate\n\nNitrite\n\n\nEPA Limits?"
+  },
+  {
+    "objectID": "2-classification/slides.html#meet-the-buoy",
+    "href": "2-classification/slides.html#meet-the-buoy",
+    "title": "Workshop #2",
+    "section": "Meet the Buoy!",
+    "text": "Meet the Buoy!\n\nLater this semester, we will be deploying these Smokey Buoys!"
+  },
+  {
+    "objectID": "2-classification/slides.html#the-buoy-test-strips",
+    "href": "2-classification/slides.html#the-buoy-test-strips",
+    "title": "Workshop #2",
+    "section": "The Buoy: Test Strips",
+    "text": "The Buoy: Test Strips\n\n\n\nSmokey Buoy also uses test strips to monitor nitrate concentrations in water\n\nLike we did in the first workshop!\nThe buoy’s strips are just made a bit differently…"
+  },
+  {
+    "objectID": "2-classification/slides.html#the-buoy-test-strips-1",
+    "href": "2-classification/slides.html#the-buoy-test-strips-1",
+    "title": "Workshop #2",
+    "section": "The Buoy: Test Strips",
+    "text": "The Buoy: Test Strips\n\n\nStart with the same test strips"
+  },
+  {
+    "objectID": "2-classification/slides.html#the-buoy-motor-camera",
+    "href": "2-classification/slides.html#the-buoy-motor-camera",
+    "title": "Workshop #2",
+    "section": "The Buoy: Motor & Camera",
+    "text": "The Buoy: Motor & Camera\n\n\nModified from INSERT PAPER CITATIONMotor\nLocate the motor near the top of the diagram. The motor drives the roller, which grips and advances the test strip roll.\nCamera\nWhen a test pad is in front of the camera, it takes a picture."
+  },
+  {
+    "objectID": "2-classification/slides.html#see-it-in-action",
+    "href": "2-classification/slides.html#see-it-in-action",
+    "title": "Workshop #2",
+    "section": "🎥 See It In Action!",
+    "text": "🎥 See It In Action!\n\n\n  \n  Your browser does not support the video tag."
+  },
+  {
+    "objectID": "2-classification/slides.html#think-pair-share",
+    "href": "2-classification/slides.html#think-pair-share",
+    "title": "Workshop #2",
+    "section": "🗣️ Think Pair Share:",
+    "text": "🗣️ Think Pair Share:\n\n\nThinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?"
+  },
+  {
+    "objectID": "2-classification/slides.html#intro-to-classification",
+    "href": "2-classification/slides.html#intro-to-classification",
+    "title": "Workshop #2",
+    "section": "Intro to Classification",
+    "text": "Intro to Classification\n\n\n🎯 Checkpoint 2. a: Which banana(s) would you eat?\n\n\nSource: US Department of Agriculture"
+  },
+  {
+    "objectID": "2-classification/slides.html#intro-to-classification-1",
+    "href": "2-classification/slides.html#intro-to-classification-1",
+    "title": "Workshop #2",
+    "section": "Intro to Classification",
+    "text": "Intro to Classification\n\n\n\nPeople make decisions about ripeness daily: grocery shoppers & farmers alike.\nThese decisions—judging if a fruit/vegetable is ripe—are called classification.\nClassification = sorting items into groups based on appearance or behavior."
+  },
+  {
+    "objectID": "2-classification/slides.html#use-of-classification-in-agriculture",
+    "href": "2-classification/slides.html#use-of-classification-in-agriculture",
+    "title": "Workshop #2",
+    "section": "Use of Classification in Agriculture",
+    "text": "Use of Classification in Agriculture\n\n\nComputers can help us make classification decisions\nAI can help make classification decisions, saving time and labor for farmers\nExample: At University of Maryland, AI is used to identify ripe crops in fields"
+  },
+  {
+    "objectID": "2-classification/slides.html#use-of-classification-in-agriculture-1",
+    "href": "2-classification/slides.html#use-of-classification-in-agriculture-1",
+    "title": "Workshop #2",
+    "section": "Use of Classification in Agriculture",
+    "text": "Use of Classification in Agriculture\n\n\n🎯 Checkpoint 2. b: Review the figure above. In image (b), what do you think the yellow represents? The green?"
+  },
+  {
+    "objectID": "2-classification/slides.html#types-of-classification",
+    "href": "2-classification/slides.html#types-of-classification",
+    "title": "Workshop #2",
+    "section": "Types of Classification",
+    "text": "Types of Classification\n\n\nClassification of Strawberries\n\nBinary Classification: Two possible outcomes (e.g., Ripe vs. Not Ripe)\nMulticlass Classification: More than two possible outcomes (e.g., Underripe, Ripe, Overripe)"
+  },
+  {
+    "objectID": "2-classification/slides.html#binary-classification",
+    "href": "2-classification/slides.html#binary-classification",
+    "title": "Workshop #2",
+    "section": "Binary Classification",
+    "text": "Binary Classification\n\nTwo possible Outcomes:\n \n\n\n\nNot Ripe\n\n\n\n\nRipe"
+  },
+  {
+    "objectID": "2-classification/slides.html#multiclass-classification",
+    "href": "2-classification/slides.html#multiclass-classification",
+    "title": "Workshop #2",
+    "section": "Multiclass Classification",
+    "text": "Multiclass Classification\n\nMore than Two Outcomes:\n \n\n\n\nUnderripe\n\n\n\n\nRipe\n\n\n\n\nMolded"
+  },
+  {
+    "objectID": "2-classification/slides.html#example-of-multiclass-classification-in-agriculture",
+    "href": "2-classification/slides.html#example-of-multiclass-classification-in-agriculture",
+    "title": "Workshop #2",
+    "section": "Example of Multiclass Classification in Agriculture",
+    "text": "Example of Multiclass Classification in Agriculture\n\n\nProject from University of Georgia, Athens [^2]\nUses multiclass classification to sort lemons\nDiscards underripe or molded lemons, retains only ripe ones\n\n\n\nYour browser does not support the video tag."
+  },
+  {
+    "objectID": "2-classification/slides.html#more-on-classification-with-ai",
+    "href": "2-classification/slides.html#more-on-classification-with-ai",
+    "title": "Workshop #2",
+    "section": "More on Classification with AI",
+    "text": "More on Classification with AI\n\n\n\nComputers make classification decisions very quickly\nUsing AI has advantages and disadvantages"
+  },
+  {
+    "objectID": "2-classification/slides.html#pros-of-using-ai-for-classification",
+    "href": "2-classification/slides.html#pros-of-using-ai-for-classification",
+    "title": "Workshop #2",
+    "section": "Pros of Using AI for Classification",
+    "text": "Pros of Using AI for Classification\n\n\nPros:\n\nHandles millions of items quickly\nSpots tiny differences humans miss"
+  },
+  {
+    "objectID": "2-classification/slides.html#cons-of-using-ai-for-classification",
+    "href": "2-classification/slides.html#cons-of-using-ai-for-classification",
+    "title": "Workshop #2",
+    "section": "Cons of Using AI for Classification",
+    "text": "Cons of Using AI for Classification\n\n\nCons:\n\nNeeds tons of examples to train the computer\nBad examples = bad decisions (e.g., train only on sunny photos, it fails on cloudy days)."
+  },
+  {
+    "objectID": "2-classification/slides.html#checkpoint-2.-c",
+    "href": "2-classification/slides.html#checkpoint-2.-c",
+    "title": "Workshop #2",
+    "section": "Checkpoint 2. c",
+    "text": "Checkpoint 2. c\n\n\n🎯 Checkpoint 2. c: If farmers use a certain company to train and decide when to pluck or harvest fruits/veggies, who gets to own that data? why?"
+  },
+  {
+    "objectID": "2-classification/slides.html#checkpoint-2.-d",
+    "href": "2-classification/slides.html#checkpoint-2.-d",
+    "title": "Workshop #2",
+    "section": "Checkpoint 2. d",
+    "text": "Checkpoint 2. d\n\n\n🎯 Checkpoint 2. d: Let’s say the company becomes better at identifying ripe fruits because they used data from your farm. Now, they want to up their subscription fees for farmers to use their model. Is that fair? Do you have any suggestions or solutions?"
+  },
+  {
+    "objectID": "2-classification/slides.html#classification-activityfourtyeightpt-font---train",
+    "href": "2-classification/slides.html#classification-activityfourtyeightpt-font---train",
+    "title": "Workshop #2",
+    "section": "Classification Activityfourtyeightpt-font - Train",
+    "text": "Classification Activityfourtyeightpt-font - Train\n\n\nNow it’s your turn!"
+  },
+  {
+    "objectID": "2-classification/slides.html#classification-activity---train",
+    "href": "2-classification/slides.html#classification-activity---train",
+    "title": "Workshop #2",
+    "section": "Classification Activity - Train",
+    "text": "Classification Activity - Train\n\n\n\n1 Apple and 1 Orange per pair\n1 Distractor (fruit, ball, etc.) per pair\n1 Device per pair/group\n1 lab sheet per person"
+  },
+  {
+    "objectID": "2-classification/slides.html#teachable-machine",
+    "href": "2-classification/slides.html#teachable-machine",
+    "title": "Workshop #2",
+    "section": "Teachable Machine",
+    "text": "Teachable Machine\n\n\n\nUses Python in the background\nHelps users build classification models"
+  },
+  {
+    "objectID": "2-classification/slides.html#steps",
+    "href": "2-classification/slides.html#steps",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n1. Go to Teachable Machine at https://teachablemachine.withgoogle.com/"
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-1",
+    "href": "2-classification/slides.html#steps-1",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n2. Click “Get Started”"
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-2",
+    "href": "2-classification/slides.html#steps-2",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n3. Choose “Image Project”"
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-3",
+    "href": "2-classification/slides.html#steps-3",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n4. Select “Standard Image Model”"
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-4",
+    "href": "2-classification/slides.html#steps-4",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n5. To the right of “Class 1”, click the pencil and type “Apple”"
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-5",
+    "href": "2-classification/slides.html#steps-5",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n6. Grab your apple and get ready!!"
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-6",
+    "href": "2-classification/slides.html#steps-6",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n7. Click “webcam” to turn on and allow the computer to begin capturing images of the apple."
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-7",
+    "href": "2-classification/slides.html#steps-7",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n8. Position your apple within the frame and click the “Hold to Record” button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images."
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-8",
+    "href": "2-classification/slides.html#steps-8",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n9. When finished, release the “Hold to Record” button and click the “x” in the top right corner to exit the Apple class."
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-9",
+    "href": "2-classification/slides.html#steps-9",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n\nPut your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture roughly the same number of images for the orange as you did for the apple."
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-10",
+    "href": "2-classification/slides.html#steps-10",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n11. When finished capturing data for both classes, click the “Train Model” button. The website will train your own custom classification model, based on your data!"
+  },
+  {
+    "objectID": "2-classification/slides.html#evaluate-your-classifier",
+    "href": "2-classification/slides.html#evaluate-your-classifier",
+    "title": "Workshop #2",
+    "section": "Evaluate Your Classifier",
+    "text": "Evaluate Your Classifier\n\n\n\nSome models can be very accurate, while others might struggle\nLet’s put your model to the test!"
+  },
+  {
+    "objectID": "2-classification/slides.html#evaluate-your-classifier-1",
+    "href": "2-classification/slides.html#evaluate-your-classifier-1",
+    "title": "Workshop #2",
+    "section": "Evaluate Your Classifier",
+    "text": "Evaluate Your Classifier\n\nUse the “Preview” pane on the right side of the Teachable Machine screen"
+  },
+  {
+    "objectID": "2-classification/slides.html#putting-it-to-the-test",
+    "href": "2-classification/slides.html#putting-it-to-the-test",
+    "title": "Workshop #2",
+    "section": "Putting it to the Test",
+    "text": "Putting it to the Test\n\n\n\n\n\n\n\n\nNote\n\n\nGet your lab sheet ready. Let’s record some results!"
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-for-testing",
+    "href": "2-classification/slides.html#steps-for-testing",
+    "title": "Workshop #2",
+    "section": "Steps for testing",
+    "text": "Steps for testing\n\n\n\nTrade your apple and orange with another group. No group should have the exact same fruits you trained the model with."
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-for-testing-1",
+    "href": "2-classification/slides.html#steps-for-testing-1",
+    "title": "Workshop #2",
+    "section": "Steps for testing",
+    "text": "Steps for testing\n\n\n\nTake your lab sheet and review the observation table. The first item to test is an apple. If the model works well, what will it predict? Record this in the second column."
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-for-testing-2",
+    "href": "2-classification/slides.html#steps-for-testing-2",
+    "title": "Workshop #2",
+    "section": "Steps for testing",
+    "text": "Steps for testing\n\n\n\nNext, hold the apple up to your camera. What does the model predict it is? Record this in the third column of your lab sheet."
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-for-testing-3",
+    "href": "2-classification/slides.html#steps-for-testing-3",
+    "title": "Workshop #2",
+    "section": "Steps for testing",
+    "text": "Steps for testing\n\n\n\nThe model also reports confidence in its prediction. Record this percent confidence in the fourth column of your sheet."
+  },
+  {
+    "objectID": "2-classification/slides.html#steps-for-testing-4",
+    "href": "2-classification/slides.html#steps-for-testing-4",
+    "title": "Workshop #2",
+    "section": "Steps for testing",
+    "text": "Steps for testing\n\n\n\nRepeat this process for all other objects on the lab sheet."
+  },
+  {
+    "objectID": "2-classification/slides.html#reflecting",
+    "href": "2-classification/slides.html#reflecting",
+    "title": "Workshop #2",
+    "section": "Reflecting",
+    "text": "Reflecting\nDiscuss these Questions\n\n\nHow did your model perform?\nWere any objects classified incorrectly?\nWere any objects classified with low confidence (&lt; 80%)?"
+  },
+  {
+    "objectID": "2-classification/slides.html#classification-activity---buoy",
+    "href": "2-classification/slides.html#classification-activity---buoy",
+    "title": "Workshop #2",
+    "section": "Classification Activity - Buoy",
+    "text": "Classification Activity - Buoy\nHow a classification model works.\n\n  \n  Your browser does not support the video tag."
+  },
+  {
+    "objectID": "2-classification/slides.html#your-turn-be-the-buoy",
+    "href": "2-classification/slides.html#your-turn-be-the-buoy",
+    "title": "Workshop #2",
+    "section": "Your Turn: Be the Buoy",
+    "text": "Your Turn: Be the Buoy\n\nMaterials Needed:\n- 1 test strip"
+  },
+  {
+    "objectID": "2-classification/slides.html#your-turn-be-the-buoy-1",
+    "href": "2-classification/slides.html#your-turn-be-the-buoy-1",
+    "title": "Workshop #2",
+    "section": "Your Turn: Be the Buoy",
+    "text": "Your Turn: Be the Buoy\n\nTrain Model with two classes:\n\nClasses:\n- strip present - strip not present"
+  },
+  {
+    "objectID": "2-classification/slides.html#how-does-it-work",
+    "href": "2-classification/slides.html#how-does-it-work",
+    "title": "Workshop #2",
+    "section": "How Does It Work?",
+    "text": "How Does It Work?\n\nCheckpoints on this Page:\n\nCheckpoint 5.a: Neural Network Layers"
+  },
+  {
+    "objectID": "2-classification/slides.html#how-does-your-model-work",
+    "href": "2-classification/slides.html#how-does-your-model-work",
+    "title": "Workshop #2",
+    "section": "How Does Your Model Work?",
+    "text": "How Does Your Model Work?\n\n\nUnder the hood of a classification model is a Convolutional Neural Net (CNN)\nCNNs are trained to recognize patterns in images"
+  },
+  {
+    "objectID": "2-classification/slides.html#how-does-your-model-work-1",
+    "href": "2-classification/slides.html#how-does-your-model-work-1",
+    "title": "Workshop #2",
+    "section": "How Does Your Model Work?",
+    "text": "How Does Your Model Work?\nPrioritize understanding big picture over math"
+  },
+  {
+    "objectID": "2-classification/slides.html#how-does-your-model-work-2",
+    "href": "2-classification/slides.html#how-does-your-model-work-2",
+    "title": "Workshop #2",
+    "section": "How Does Your Model Work?",
+    "text": "How Does Your Model Work?"
+  },
+  {
+    "objectID": "2-classification/slides.html#checkpoint-5.-a-neural-network-layers",
+    "href": "2-classification/slides.html#checkpoint-5.-a-neural-network-layers",
+    "title": "Workshop #2",
+    "section": "Checkpoint 5. a: Neural Network Layers",
+    "text": "Checkpoint 5. a: Neural Network Layers\n\nCompare and contrast the input layer, the hidden layers, and the output layer. What function do they each have in a neural net?"
+  },
+  {
+    "objectID": "2-classification/slides.html#color-activity",
+    "href": "2-classification/slides.html#color-activity",
+    "title": "Workshop #2",
+    "section": "Color Activity",
+    "text": "Color Activity\n\nCheckpoints on this Page:\n\nCheckpoint 6.a: Pixels & RGB"
+  },
+  {
+    "objectID": "2-classification/slides.html#understanding-rgb",
+    "href": "2-classification/slides.html#understanding-rgb",
+    "title": "Workshop #2",
+    "section": "Understanding RGB",
+    "text": "Understanding RGB\n\n\nComputers understand color through numbers, not like humans with eyes\nWhen a computer displays or processes an image, that image is really a combination of millions of little squares called pixels"
+  },
+  {
+    "objectID": "2-classification/slides.html#understanding-rgb-1",
+    "href": "2-classification/slides.html#understanding-rgb-1",
+    "title": "Workshop #2",
+    "section": "Understanding RGB",
+    "text": "Understanding RGB\n\n\nEach pixel has a value for Red (R), Green (G), and Blue (B)\nThe color of each pixel is a combination of these three values"
+  },
+  {
+    "objectID": "2-classification/slides.html#pixels-and-rgb-values",
+    "href": "2-classification/slides.html#pixels-and-rgb-values",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\n🎯 Checkpoint 6. a: Exploring pixels and RGB Values"
+  },
+  {
+    "objectID": "2-classification/slides.html#materials-needed",
+    "href": "2-classification/slides.html#materials-needed",
+    "title": "Workshop #2",
+    "section": "Materials Needed",
+    "text": "Materials Needed\n\nMaterials Needed:\n\nAPPLET\n\nThis will open in a new tab.\nYou may need to grant access to your camera for it to work.\nApple, Orange, Lime (from previous activity)\n\nHandout\nPencil"
+  },
+  {
+    "objectID": "2-classification/slides.html#pixels-and-rgb-values-1",
+    "href": "2-classification/slides.html#pixels-and-rgb-values-1",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\nUse the applet and follow the instructions on the handout, which are also listed below."
+  },
+  {
+    "objectID": "2-classification/slides.html#pixels-and-rgb-values-2",
+    "href": "2-classification/slides.html#pixels-and-rgb-values-2",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\n\nThe applet starts with “What Humans See” selected. Hold the apple up to the camera. Notice it captures its likeness?"
+  },
+  {
+    "objectID": "2-classification/slides.html#pixels-and-rgb-values-3",
+    "href": "2-classification/slides.html#pixels-and-rgb-values-3",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\n\nChange the mode to “What Computers See”. It will default to the Red channel first."
+  },
+  {
+    "objectID": "2-classification/slides.html#pixels-and-rgb-values-4",
+    "href": "2-classification/slides.html#pixels-and-rgb-values-4",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\n\nFocus on an area at the center of the apple and record the value for R."
+  },
+  {
+    "objectID": "2-classification/slides.html#pixels-and-rgb-values-5",
+    "href": "2-classification/slides.html#pixels-and-rgb-values-5",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\n\nUse the dropdown menu to change the channel to G. Look at the same area (or as close to possible) on the apple, record the value for G."
+  },
+  {
+    "objectID": "2-classification/slides.html#pixels-and-rgb-values-6",
+    "href": "2-classification/slides.html#pixels-and-rgb-values-6",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\n\nChange the channel to B and record the value for B."
+  },
+  {
+    "objectID": "2-classification/slides.html#pixels-and-rgb-values-7",
+    "href": "2-classification/slides.html#pixels-and-rgb-values-7",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\n\nRepeat this process for the orange, lime, and each of the purple cards."
+  },
+  {
+    "objectID": "2-classification/slides.html#how-do-computers-see-color",
+    "href": "2-classification/slides.html#how-do-computers-see-color",
+    "title": "Workshop #2",
+    "section": "How Do Computers See Color?",
+    "text": "How Do Computers See Color?\n\nCheckpoints on this Page:\n\nCheckpoint 7.a: Using RGB Values to Create Color\nCheckpoint 7.b: Using Color to Predict Fruit"
+  },
+  {
+    "objectID": "2-classification/slides.html#how-do-computers-see-color-1",
+    "href": "2-classification/slides.html#how-do-computers-see-color-1",
+    "title": "Workshop #2",
+    "section": "How Do Computers See Color?",
+    "text": "How Do Computers See Color?\n\n\n\nWe learned every pixel has a value for Red (R), Green (G), and Blue (B)\nEach value can range from 0 to 255"
+  },
+  {
+    "objectID": "2-classification/slides.html#creating-color-with-rgb-values",
+    "href": "2-classification/slides.html#creating-color-with-rgb-values",
+    "title": "Workshop #2",
+    "section": "Creating Color with RGB Values",
+    "text": "Creating Color with RGB Values\n\nSlide the sliders to create different colors!\n\n\n  Slide the R, G, or B to see how it affects the color of the square!\n\n  \n    \n      \n        R:\n        \n        128\n      \n\n      \n        G:\n        \n        128\n      \n\n      \n        B:\n        \n        128"
+  },
+  {
+    "objectID": "2-classification/slides.html#using-rgb-values-to-create-color",
+    "href": "2-classification/slides.html#using-rgb-values-to-create-color",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\nUse the slider tool above to answer the RGB questions\nRecord your answers on the handout"
+  },
+  {
+    "objectID": "2-classification/slides.html#using-rgb-values-to-create-color-1",
+    "href": "2-classification/slides.html#using-rgb-values-to-create-color-1",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\n\nSlide all values to zero. When R = 0, G = 0, and B = 0, what color do you see?\n\n\nSlide all values to 255. When R = 255, G = 255, and B = 255, what color do you see?"
+  },
+  {
+    "objectID": "2-classification/slides.html#using-rgb-values-to-create-color-2",
+    "href": "2-classification/slides.html#using-rgb-values-to-create-color-2",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\n\nSlide all values to 0. Change R to 255. What happens to the color?\n\n\nSlide all values to 0. Change G to 255. What happens to the color?"
+  },
+  {
+    "objectID": "2-classification/slides.html#using-rgb-values-to-create-color-3",
+    "href": "2-classification/slides.html#using-rgb-values-to-create-color-3",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\n\nSlide all values to 0. Change B to 255. What happens to the color?"
+  },
+  {
+    "objectID": "2-classification/slides.html#using-rgb-values-to-create-color-4",
+    "href": "2-classification/slides.html#using-rgb-values-to-create-color-4",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\nNow let’s try some of the colors you observed in the last activity. Get your handout ready!"
+  },
+  {
+    "objectID": "2-classification/slides.html#using-rgb-values-to-create-color-5",
+    "href": "2-classification/slides.html#using-rgb-values-to-create-color-5",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\n\nAdjust the sliders to the RGB values you recorded for your apple. What color do you see? Is it similar to your apple?"
+  },
+  {
+    "objectID": "2-classification/slides.html#using-rgb-values-to-create-color-6",
+    "href": "2-classification/slides.html#using-rgb-values-to-create-color-6",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\n\nRepeat this for your orange’s RGB values. What color do you see? Is it similar to your orange?"
+  },
+  {
+    "objectID": "2-classification/slides.html#using-rgb-values-to-create-color-7",
+    "href": "2-classification/slides.html#using-rgb-values-to-create-color-7",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\n\nFinally, repeat this for your lime’s RGB values. What color do you see? Is it similar to your lime?"
+  },
+  {
+    "objectID": "2-classification/slides.html#using-rgb-values-to-create-color-8",
+    "href": "2-classification/slides.html#using-rgb-values-to-create-color-8",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n🎯 Checkpoint 7. b: What color does this RGB value represent? (110, 164, 212) Just like the computer, predict what fruit this could be from!"
+  },
+  {
+    "objectID": "2-classification/slides.html#exit-ticket",
+    "href": "2-classification/slides.html#exit-ticket",
+    "title": "Workshop #2",
+    "section": "Exit Ticket",
+    "text": "Exit Ticket"
+  },
+  {
+    "objectID": "2-classification/classification-activity-train.html#evaluate-your-classifier",
+    "href": "2-classification/classification-activity-train.html#evaluate-your-classifier",
+    "title": "Classification Activity - Train",
+    "section": "Evaluate Your Classifier",
+    "text": "Evaluate Your Classifier\nWhile some models can be very accurate and high quality, others may struggle. Now, let’s put your model to the test to see how it performs. To do this, you’ll use the “Preview” pane on the right side of the Teachable Machine screen.\n\n\nPutting it to the Test\n\n\n\n\n\n\nNote\n\n\n\nGet your lab sheet ready. Let’s record some results!\n\n\n\nSteps—Part A\n\nTrade your apple and orange with another group. No group should have the exact same fruits you trained the model with.\nTake your lab sheet and review the observation table. The first item to test is an apple. If the model works well, what will it predict? Record this in the second column.\nNext, hold the apple up to your camera. What does the model predict it is? Record this in the third column of your lab sheet.\nThe model also reports confidence in its prediction. Record this percent confidence in the fourth column of your sheet.\nRepeat this process for all other objects on the lab sheet.\n\n\n\n\n\nReflecting\nHow did your model perform?\nWere any objects classified incorrectly?\nWere any objects classified with low confidence (&lt; 80%)?\n Discuss these questions (and your model) with your group."
+  },
+  {
+    "objectID": "2-classification/classification-activity-buoy.html",
+    "href": "2-classification/classification-activity-buoy.html",
+    "title": "Classification Activity - Buoy",
+    "section": "",
+    "text": "On the last page, you trained your a model to classify apples and oranges. Now, let’s first see a video of how the classifier in the buoy works."
+  },
+  {
+    "objectID": "2-classification/classification-activity-buoy.html#your-turn-be-the-buoy",
+    "href": "2-classification/classification-activity-buoy.html#your-turn-be-the-buoy",
+    "title": "Classification Activity - Buoy",
+    "section": "Your Turn: Be the Buoy",
+    "text": "Your Turn: Be the Buoy\n\nMaterials Needed:\n- 1 test strip\n\n Now, let’s build a model that is very similar to the one used in the buoy. We will repeat the process of training a model with Teachable Machine. This time we will have two classes: “strip present” and “strip not present”."
+  },
+  {
+    "objectID": "2-classification/facilitator.html",
+    "href": "2-classification/facilitator.html",
+    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "section": "",
+    "text": "Topics Covered:\n\n\n\n\n\n\nWater quality\n\nNitrates\n\nNitrites\n\n\nIntroduction to Python programming\nSummary statistics:\n\nMeasures of center:\n\nMean\n\nMedian\n\n\nMeasures of spread:\n\nStandard deviation\n\nRange\n\n\nOutliers\n\n\nData visualization:\n\nBoxplots\n\n\n\n\n\n\n\n\n\n\n\nTN Standards Addressed:\n\n\n\n\n\n\nBIO1.LS2.1/ECO.LS2.13/EVSC.LS2.3: Use mathematical and/or computational representations to support explanations of factors that affect the carrying capacity of ecosystems at different scales.\n\nSCRE.ETS2.3: Identify the most appropriate scientific instruments and/or computer programs for different experiments and research, and learn to use, care for, and maintain them, gather data, and analyze results.\n\nPSCI.PS1.7: Develop, or use, a model to predict or explain a phenomenon by using appropriate indicators.\n\nSCRE.ETS3: Applications of Science: Select and use appropriate data tables, graphs, and diagrams to represent data. Use mathematics and computational thinking to look for patterns in data.\nSCRE.ETS3: Applications of Science: Select and use appropriate statistical procedures (descriptive statistics, t-tests, regression and correlation, chi-square, etc.) to analyze data.\n\nA1.S.ID.A.1: Use measures of center to solve real-world and mathematical problems.\n\nA1.S.ID.A.3: Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points.\n\nAGSCIENCE 3.3: Biodiversity: Evaluate the impact of habitat fragmentation, destruction, and other environmental pressures, such as invasive species, overharvesting, pollution, and climate change on local and global biodiversity (genetic, species, and ecosystems.) Distinguish between types of pollution (point and nonpoint sources) and their sources to predict the effects on environmental conditions (e.g., water, soil, and air), animal populations, and plant populations from various kinds of human activity."
+  },
+  {
+    "objectID": "2-classification/facilitator.html#lesson-topics-and-standards",
+    "href": "2-classification/facilitator.html#lesson-topics-and-standards",
+    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "section": "",
+    "text": "Topics Covered:\n\n\n\n\n\n\nWater quality\n\nNitrates\n\nNitrites\n\n\nIntroduction to Python programming\nSummary statistics:\n\nMeasures of center:\n\nMean\n\nMedian\n\n\nMeasures of spread:\n\nStandard deviation\n\nRange\n\n\nOutliers\n\n\nData visualization:\n\nBoxplots\n\n\n\n\n\n\n\n\n\n\n\nTN Standards Addressed:\n\n\n\n\n\n\nBIO1.LS2.1/ECO.LS2.13/EVSC.LS2.3: Use mathematical and/or computational representations to support explanations of factors that affect the carrying capacity of ecosystems at different scales.\n\nSCRE.ETS2.3: Identify the most appropriate scientific instruments and/or computer programs for different experiments and research, and learn to use, care for, and maintain them, gather data, and analyze results.\n\nPSCI.PS1.7: Develop, or use, a model to predict or explain a phenomenon by using appropriate indicators.\n\nSCRE.ETS3: Applications of Science: Select and use appropriate data tables, graphs, and diagrams to represent data. Use mathematics and computational thinking to look for patterns in data.\nSCRE.ETS3: Applications of Science: Select and use appropriate statistical procedures (descriptive statistics, t-tests, regression and correlation, chi-square, etc.) to analyze data.\n\nA1.S.ID.A.1: Use measures of center to solve real-world and mathematical problems.\n\nA1.S.ID.A.3: Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points.\n\nAGSCIENCE 3.3: Biodiversity: Evaluate the impact of habitat fragmentation, destruction, and other environmental pressures, such as invasive species, overharvesting, pollution, and climate change on local and global biodiversity (genetic, species, and ecosystems.) Distinguish between types of pollution (point and nonpoint sources) and their sources to predict the effects on environmental conditions (e.g., water, soil, and air), animal populations, and plant populations from various kinds of human activity."
+  },
+  {
+    "objectID": "2-classification/facilitator.html#lesson-overview-video-tour",
+    "href": "2-classification/facilitator.html#lesson-overview-video-tour",
+    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "section": "Lesson Overview Video Tour",
+    "text": "Lesson Overview Video Tour\n\n  \n  Your browser does not support the video tag.\n\n If you would like a more in-depth overview of the lesson, please consult the slides with visible facilitator notes."
+  },
+  {
+    "objectID": "2-classification/facilitator.html#slide-deck-for-lesson",
+    "href": "2-classification/facilitator.html#slide-deck-for-lesson",
+    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "section": "Slide Deck for Lesson",
+    "text": "Slide Deck for Lesson\nWorkshop #1 Slides"
+  },
+  {
+    "objectID": "2-classification/facilitator.html#student-handout",
+    "href": "2-classification/facilitator.html#student-handout",
+    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "section": "Student Handout",
+    "text": "Student Handout\nYou can make a copy of the student handout for this lesson.\n\nIf you would like to provide students a copy of the slides with spaces for note taking, we have prepared a handout for this purpose."
+  },
+  {
+    "objectID": "2-classification/facilitator.html#lesson-prep",
+    "href": "2-classification/facilitator.html#lesson-prep",
+    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "section": "Lesson Prep",
+    "text": "Lesson Prep\n\n1. Prepare Materials for Nitrates Lab\nWe suggest creating water samples the for nitrates lab the day before. This will allow the nitrates to fully dissolve in the water.\nMaterials needed:\n\nMiracle-Gro Fertilizer Liquid\n\nDropper/Pipette\n\nSmall cups for student use (to hold samples for testing)\n\nSmall sticky notes (we use the 1.875” stickies) grouped into sets of 1 red, 1 green, 1 blue, 1 yellow, etc.\n\nEach group will be assigned a color (red, green, blue, yellow, etc.), so the number of stickies in a set will be dictated by the number of groups.\n\nEach group will need one multi-colored sticky set per water sample.\n\n\n1 Sharpie/Poster marker per group\n\nNitrate/Nitrate test strips\n\nMasking tape/ sharpies to label cups/samples\n\n\n\n\n\n\n\nNitrate Sample Creation Guide\n\n\n\n\n\nMixing Guide\nThis plan is written to provide samples for 5 groups with 4 samples each.\nFor 5 groups × 4 samples = 20 total samples\nFill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dropper/pipette:\nNormal/Low Range (8 samples) - 0-5 ppm\n4 samples: Plain water (0 drops)\n4 samples: 1-2 drops per cup\nModerate Range (6 samples) - 8-12 ppm\n6 samples: 4-6 drops per cup\nMedium-High Range (3 samples) - 15-20 ppm\n3 samples: 8-10 drops per cup\nExtreme Outliers (3 samples) - 35-50 ppm\n2 samples: 20-25 drops per cup (~35-40 ppm)\n1 sample: 30+ drops per cup (50 ppm, maxes out strip)\n\n\n\n\n\n2. Prepare Materials for Boxplot Activity\nMaterials needed:\n\n1 Post-It Gridded Sticky Page/Group\n\nWe pre-drew the axis on the page due to time limitations\n\n\n1 poster marker per group\n\n\n\n3. Make Copies: 1 Handout Per Student\n\nYou will need to make 1 copy per student of the workshop handout. If color-copying is not possible, make sure to have a reference of the color key for the nitrate/nitrite test strips available for each group. Note that the keys vary depending on the brand of test strips you purchase, so you may need to modify the handout to match the specific test strips you are using. Also, the colors are sensitive to lighting and printer setup, so if may be preferrable to have several bottles available for comparison to the orginal key on the bottle itself.\n\n\n\n4. Create and Share Link for Nitrates Lab Data Collection\n\nMake sure you are logged into your school Google Account\nUse this link to make a copy of the Nitrate/Nitrite Lab Google Form\nOpen your copy of the Nitrate/Nitrite Lab Google Form. Publish the form. Double check the sharing settings to make sure all of your students can respond.\n\nWhile on the sharing settings, copy the respondent link and be prepared to share this link with your students, probably via email or your LMS. Close the sharing settings.\nOn the “Responses” tab, click “Link to Sheet” &gt; “Create a New Sheet” to aggregate all of the student responses into one spreadsheet.\nOpen the spreadsheet it generates (it may automatically open) and go to “File” &gt; “Share” &gt; “Publish to web” and use the following options:\n\nWhen you click publish, it will give you a link. Please be prepared to share this link with your students during the second half of class… perhaps via email or via LMS. They will need to copy/paste it to access the data. You can set this up well in advance of class.\n\nNote: If you are facilitating this module for more than one class, you will want to repeat this process once for each class, so that each class has their own submission form and spreadsheet.\nThis can be done well in advance, just make sure to keep the form link (respondent link) and spreadsheet link (publish to web link) for each class ready to disseminate.\n\n\n\n5. Create group tents using colored paper that matches the sticky notes.\n\n\n6. Create copy of exit ticket for end-of-lesson implementation.\n\nWe have drafted a three-question exit ticket that aligns with the three major content areas of this lesson (Water Quality, Python, and Statistics). We are providing the Google Form here if you would like to use it or modify it for your own needs.\n\n\n\n7. Create copy of the exercise for after-lesson practice.\n\nWe have also created a Google Colab exercise that you can use with students to practice the concepts covered in this lesson. It is available here."
+  },
+  {
+    "objectID": "2-classification/facilitator.html#lesson-overview-takeaways",
+    "href": "2-classification/facilitator.html#lesson-overview-takeaways",
+    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "section": "Lesson Overview & Takeaways",
+    "text": "Lesson Overview & Takeaways\nBy the end of the lesson, students will be able to:\n\nWrite and run a basic python script that includes:\n\nstrings\n\nmathematical operators\n\nstatistics functions\n\nprint statements\n\nlists\n\n\nExplain, at a high level, the role of nitrogen in water quality evaluations\n\nCarry out procedures to collect and interpret data concerning nitrate and nirite concentrations from a water quality test\n\nConstruct boxplots, manually and computationally, to visualize water quality data"
+  },
+  {
+    "objectID": "2-classification/facilitator.html#reference-materials",
+    "href": "2-classification/facilitator.html#reference-materials",
+    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "section": "Reference Materials",
+    "text": "Reference Materials\nWhole-Class Video Links:\n- Water Quality\n- Nitrogen Cycle\n- Nitrogen as Polutant\n- What is Statistics?\n- Mean, Median & Mode"
+  },
+  {
+    "objectID": "2-classification/slides.html#review-1",
+    "href": "2-classification/slides.html#review-1",
+    "title": "Workshop #2",
+    "section": "Review",
+    "text": "Review\n\n\nLast workshop we learned:\n\nRoles of Nitrogen in Water:\n\nNutrient\n\nPollutant\n\n🐄 Waste runoff\n\n🌧️ Acid rain\n\n🌼 Fertilizer"
+  },
+  {
+    "objectID": "2-classification/slides.html#review-2",
+    "href": "2-classification/slides.html#review-2",
+    "title": "Workshop #2",
+    "section": "Review",
+    "text": "Review\n\n\nLast workshop we learned:\n\nUsing Python to store, summarize, and visualize data\n\nStore data in a list\n\nUseful functions:\n\nlen()\n\nmin()\n\nmax()"
+  },
+  {
+    "objectID": "2-classification/slides.html#review-3",
+    "href": "2-classification/slides.html#review-3",
+    "title": "Workshop #2",
+    "section": "Review",
+    "text": "Review\n\n\nLast workshop we learned:\n\nUsing Statistics to Summarize Data\n\nMeasures of Center\n\nMean\nMedian\n\nMeasures of Spread\n\nRange"
+  },
+  {
+    "objectID": "2-classification/slides.html#meet-the-buoy-1",
+    "href": "2-classification/slides.html#meet-the-buoy-1",
+    "title": "Workshop #2",
+    "section": "Meet the Buoy!",
+    "text": "Meet the Buoy!\n\nLater this semester, we will be deploying these Smokey Buoys!"
+  },
+  {
+    "objectID": "2-classification/slides.html#the-buoy-test-strips-2",
+    "href": "2-classification/slides.html#the-buoy-test-strips-2",
+    "title": "Workshop #2",
+    "section": "The Buoy: Test Strips",
+    "text": "The Buoy: Test Strips\n\n\nRemove the pads and adhere onto a long strip of material"
+  },
+  {
+    "objectID": "2-classification/slides.html#the-buoy-test-strips-3",
+    "href": "2-classification/slides.html#the-buoy-test-strips-3",
+    "title": "Workshop #2",
+    "section": "The Buoy: Test Strips",
+    "text": "The Buoy: Test Strips\n\n\nRoll up strip inside canister"
+  },
+  {
+    "objectID": "2-classification/slides.html#the-buoy-test-strips-4",
+    "href": "2-classification/slides.html#the-buoy-test-strips-4",
+    "title": "Workshop #2",
+    "section": "The Buoy: Test Strips",
+    "text": "The Buoy: Test Strips\n\n\nStrip dispenses out of the canister to be fed through the roller"
+  },
+  {
+    "objectID": "2-classification/slides.html#the-buoy-other-parts",
+    "href": "2-classification/slides.html#the-buoy-other-parts",
+    "title": "Workshop #2",
+    "section": "The Buoy: Other Parts!",
+    "text": "The Buoy: Other Parts!"
+  },
+  {
+    "objectID": "2-classification/slides.html#the-buoy-container-for-test-strip-roll",
+    "href": "2-classification/slides.html#the-buoy-container-for-test-strip-roll",
+    "title": "Workshop #2",
+    "section": "The Buoy: Container for Test Strip Roll",
+    "text": "The Buoy: Container for Test Strip Roll\n\n\n\n\n\nContainer for Test Strip Roll\nThe canister stores the rolled-up test strip and feeds it out as the motor and rollers advances it."
+  },
+  {
+    "objectID": "2-classification/slides.html#the-buoy-water-contact",
+    "href": "2-classification/slides.html#the-buoy-water-contact",
+    "title": "Workshop #2",
+    "section": "The Buoy: Water Contact",
+    "text": "The Buoy: Water Contact\n\n\n\n\n\nWater Contact\nThere is an opening in a chamber of the canister, allowing the strip to contact the water."
+  },
+  {
+    "objectID": "2-classification/slides.html#the-buoy-test-strip",
+    "href": "2-classification/slides.html#the-buoy-test-strip",
+    "title": "Workshop #2",
+    "section": "The Buoy: Test Strip",
+    "text": "The Buoy: Test Strip\n\n\n\n\n\nTest Strip\nThe test strip feeds up from the canister and through the rollers."
+  },
+  {
+    "objectID": "2-classification/slides.html#the-buoy-test-strip-pad",
+    "href": "2-classification/slides.html#the-buoy-test-strip-pad",
+    "title": "Workshop #2",
+    "section": "The Buoy: Test Strip Pad",
+    "text": "The Buoy: Test Strip Pad\n\n\n\n\n\nTest Strip Pad\nThe reactive pad on the strip changes color when exposed to nitrates in water."
+  },
+  {
+    "objectID": "2-classification/slides.html#the-buoy-rollers",
+    "href": "2-classification/slides.html#the-buoy-rollers",
+    "title": "Workshop #2",
+    "section": "The Buoy: Rollers",
+    "text": "The Buoy: Rollers\n\n\n\n\n\nRollers\nThe rollers grip the test strip and advance it one pad at a time."
+  },
+  {
+    "objectID": "2-classification/slides.html#the-buoy-motor",
+    "href": "2-classification/slides.html#the-buoy-motor",
+    "title": "Workshop #2",
+    "section": "The Buoy: Motor",
+    "text": "The Buoy: Motor\n\n\n\n\n\nMotor\nThe motor drives the rollers, which grip and advance the test strip."
+  },
+  {
+    "objectID": "2-classification/slides.html#the-buoy-camera",
+    "href": "2-classification/slides.html#the-buoy-camera",
+    "title": "Workshop #2",
+    "section": "The Buoy: Camera",
+    "text": "The Buoy: Camera\n\n\n\n\n\nCamera\nWhen a test pad is positioned in front of the camera, it takes a picture to record the color."
   }
 ]

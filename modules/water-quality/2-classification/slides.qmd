@@ -66,7 +66,7 @@ execute:
 
 ## Lesson Objective
 <hr>
-In this lesson, you will learn how to use classification and Python to help computers recognize water sample test strips and understand how color (RGB) can be used to monitor water quality.
+In this lesson, you will learn about and apply ideas around image classification, neural nets, color, as well as how they can be used to monitor water quality.
 <br>
 <br>
 
@@ -84,10 +84,9 @@ In this lesson, you will learn how to use classification and Python to help comp
 <hr>
 
 ::: {.activity-text}
-💻 **Navigate to:** [https://tinyurl.com/aaic-wq-2](https://tinyurl.com/aaic-wq-2)
-<br>
+💻 **Navigate to:**<br><br><center> [**https://tinyurl.com/aaic-wq-2**](https://tinyurl.com/aaic-wq-2)
+</center><br>
 
-**Note:** If you see a 💻 laptop 💻  icon in the slides, that means there is a corresponding activity in the module to complete!
 :::
 
 ## Review
@@ -96,52 +95,209 @@ In this lesson, you will learn how to use classification and Python to help comp
 :::{.gray-container .fourtyeightpt-font}  
 **Last workshop we learned:**  
 
-- Role of Nitrogen in Water  
-- Using Statistics to Summarize Data  
+:::{.incremental}
+
+- Forms of Nitrogen in Water  
+  - Nitrate  
+  - Nitrite  
+- EPA Limits?   
+:::
+:::
+
+## Review
+<hr>
+
+:::{.gray-container .fourtyeightpt-font .line-height}
+**Last workshop we learned:**
+
+:::{.incremental}
+
+- Roles of Nitrogen in Water:  
+  - Nutrient  
+  - Pollutant  
+    - 🐄 Waste runoff  
+    - 🌧️ Acid rain  
+    - 🌼 Fertilizer  
+:::
+:::
+
+## Review
+<hr>
+
+:::{.gray-container .fourtyeightpt-font .line-height}  
+**Last workshop we learned:**  
+
+:::{.incremental}
+
 - Using Python to store, summarize, and visualize data  
+  - Store data in a list  
+  - Useful functions:  
+    - `len()`  
+    - `min()`  
+    - `max()`  
 
 :::
+:::
+
+## Review
+<hr>
+
+:::{.gray-container .fourtyeightpt-font .line-height}  
+**Last workshop we learned:**  
+
+:::{.incremental}
+
+- Using Statistics to Summarize Data  
+  - Measures of Center
+    - Mean
+    - Median
+  - Measures of Spread
+    - Range
+
+:::
+:::
+
+# Meet the Buoy!
 
 ## Meet the Buoy!
 <hr>
 
 Later this semester, we will be deploying these Smokey Buoys!
 
-:::{.gray-container}  
-**Some Important Parts:**  
-
-- Motorized unit to move test strips  
-- Camera to analyze those strips on the spot  
-:::
-
 ![](images/smokey_buoy.png){fig-align="center"}
 
 ## The Buoy: Test Strips
 <hr>
 
-:::{.fourtyeightpt-font}
+:::{.fourtyeightpt-font .incremental}
 - Smokey Buoy also uses test strips to monitor nitrate concentrations in water
-- Strips are on a roll rather than small strips
-- We place each pad on a very long piece of material and roll it up inside the buoy to keep it dry until dispensed
+  - Like we did in the first workshop!
+  - The buoy's strips are just made a bit differently...
 :::
 
 ## The Buoy: Test Strips
 <hr>
 
-:::{.fourtyeightpt-font}
-![1. We begin with commercial test strips and remove the pads. <br> 2. The pads are carefully spaced out and placed on a very long piece of material. <br> 3. The material is rolled up inside the buoy. <br> 4. The roll is carefully positioned to be fed through the motorized roller.](images/buoy_test_strip_roll.png)
-:::
+![](images/test_strip_roll_assembly_1.png)
 
-## The Buoy: Motor & Camera
+**Start with the same test strips**
+
+## The Buoy: Test Strips
 <hr>
 
-![Modified from INSERT PAPER CITATION](images/buoy_diagram_modified.png){width="50%"}
+![](images/test_strip_roll_assembly_2.png)
 
+**Remove the pads and adhere onto a long strip of material**
+
+## The Buoy: Test Strips
+<hr>
+
+![](images/test_strip_roll_assembly_3.png)
+
+**Roll up strip inside canister**
+
+## The Buoy: Test Strips
+<hr>
+
+![](images/test_strip_roll_assembly_4.png)
+
+**Strip dispenses out of the canister to be fed through the roller**
+
+## The Buoy: Other Parts!
+<hr>
+
+![](images/buoy_diagram_modified.png){fig-align="center"}
+
+## The Buoy: Container for Test Strip Roll
+<hr>
+
+:::: {.columns}
+::: {.column width="55%"}
+![](images/buoy_diagram_modified.png)
+:::
+::: {.column width="45%"}
+#### Container for Test Strip Roll
+The canister stores the rolled-up test strip and feeds it out as the motor and rollers advances it.
+:::
+::::
+
+## The Buoy: Water Contact
+<hr>
+
+:::: {.columns}
+::: {.column width="55%"}
+![](images/buoy_diagram_modified.png)
+:::
+::: {.column width="45%"}
+#### Water Contact
+There is an opening in a chamber of the canister, allowing the strip to contact the water.
+:::
+::::
+
+## The Buoy: Test Strip
+<hr>
+
+:::: {.columns}
+::: {.column width="55%"}
+![](images/buoy_diagram_modified.png)
+:::
+::: {.column width="45%"}
+#### Test Strip
+The test strip feeds up from the canister and through the rollers.
+:::
+::::
+
+## The Buoy: Test Strip Pad
+<hr>
+
+:::: {.columns}
+::: {.column width="55%"}
+![](images/buoy_diagram_modified.png)
+:::
+::: {.column width="45%"}
+#### Test Strip Pad
+The reactive pad on the strip changes color when exposed to nitrates in water.
+:::
+::::
+
+## The Buoy: Rollers
+<hr>
+
+:::: {.columns}
+::: {.column width="55%"}
+![](images/buoy_diagram_modified.png)
+:::
+::: {.column width="45%"}
+#### Rollers
+The rollers grip the test strip and advance it one pad at a time.
+:::
+::::
+
+## The Buoy: Motor
+<hr>
+
+:::: {.columns}
+::: {.column width="55%"}
+![](images/buoy_diagram_modified.png)
+:::
+::: {.column width="45%"}
 #### Motor
-Locate the motor near the top of the diagram. The motor drives the roller, which grips and advances the test strip roll.
+The motor drives the rollers, which grip and advance the test strip.
+:::
+::::
 
+## The Buoy: Camera
+<hr>
+
+:::: {.columns}
+::: {.column width="55%"}
+![](images/buoy_diagram_modified.png)
+:::
+::: {.column width="45%"}
 #### Camera
-When a test pad is in front of the camera, it takes a picture.
+When a test pad is positioned in front of the camera, it takes a picture to record the color.
+:::
+::::
 
 ## 🎥 See It In Action!
 <hr>

@@ -102,8 +102,8 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">L1: Statistics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../2-predictive-modeling/index">
- <span class="dropdown-text">L2: Predictive Modeling</span></a>
+    <a class="dropdown-item" href="../2-classification/index">
+ <span class="dropdown-text">L2: Classification &amp; Color</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../3-gradient-updates/index">
@@ -184,8 +184,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../2-classification/classification-activity-evaluate" class="sidebar-item-text sidebar-link">
- <span class="menu-text">4. Classification - Evaluate</span></a>
+  <a href="../2-classification/classification-activity-buoy" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Classification - Buoy</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
@@ -195,6 +195,29 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">5. How Does It Work?</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../2-classification/color-activity" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Color Activity</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../2-classification/computers-color" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Computers &amp; Color</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://forms.gle/23LAwb5GcBWAhd1K8" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Exit Ticket</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+ <span class="menu-text">Optional Exercise</span>
+  </li>
     </ul>
     </div>
 </nav>
@@ -208,6 +231,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#teachable-machine" id="toc-teachable-machine" class="nav-link active" data-scroll-target="#teachable-machine">Teachable Machine</a>
   <ul class="collapse">
   <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a></li>
+  </ul></li>
+  <li><a href="#evaluate-your-classifier" id="toc-evaluate-your-classifier" class="nav-link" data-scroll-target="#evaluate-your-classifier">Evaluate Your Classifier</a>
+  <ul class="collapse">
+  <li><a href="#putting-it-to-the-test" id="toc-putting-it-to-the-test" class="nav-link" data-scroll-target="#putting-it-to-the-test">Putting it to the Test</a></li>
+  <li><a href="#reflecting" id="toc-reflecting" class="nav-link" data-scroll-target="#reflecting">Reflecting</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -361,7 +389,46 @@ PRO TIP
 <p><img src="images/tm_train_model.png" class="img-fluid"></p>
 </div>
 </div>
-<p><strong><em>Congratulations! You have trained your own classifier!</em></strong><br> On the next page, we’ll evaluate how well it works.</p>
+<p><strong><em>Congratulations! You have trained your own classifier!</em></strong><br> Now let’s see how well it works.</p>
+</section>
+</section>
+<section id="evaluate-your-classifier" class="level2">
+<h2 class="anchored" data-anchor-id="evaluate-your-classifier">Evaluate Your Classifier</h2>
+<p>While some models can be very accurate and high quality, others may struggle. Now, let’s put your model to the test to see how it performs. To do this, you’ll use the “Preview” pane on the right side of the Teachable Machine screen.</p>
+<p><img src="images/tm_preview.png" class="img-fluid" style="width:30.0%"></p>
+<section id="putting-it-to-the-test" class="level3">
+<h3 class="anchored" data-anchor-id="putting-it-to-the-test">Putting it to the Test</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Get your lab sheet ready. Let’s record some results!</p>
+</div>
+</div>
+<section id="stepspart-a" class="level4">
+<h4 class="anchored" data-anchor-id="stepspart-a">Steps—Part A</h4>
+<ol type="1">
+<li><p>Trade your apple and orange with another group. No group should have the exact same fruits you trained the model with.</p></li>
+<li><p>Take your lab sheet and review the observation table. The first item to test is an apple. If the model works well, what will it predict? Record this in the second column.</p></li>
+<li><p>Next, hold the apple up to your camera. What does the model predict it is? Record this in the third column of your lab sheet.</p></li>
+<li><p>The model also reports confidence in its prediction. Record this percent confidence in the fourth column of your sheet.</p></li>
+<li><p>Repeat this process for all other objects on the lab sheet.</p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="reflecting" class="level3">
+<h3 class="anchored" data-anchor-id="reflecting">Reflecting</h3>
+<p>How did your model perform?<br>
+Were any objects classified incorrectly?<br>
+Were any objects classified with low confidence (&lt; 80%)?<br>
+<br> Discuss these questions (and your model) with your group.</p>
 
 
 <script type="ojs-module-contents">
