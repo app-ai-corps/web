@@ -368,7 +368,8 @@ Thinking back to the nitrates activity from last week...
 <hr>
 
 :::{.fourtyeightpt-font}
-#### Classification of Strawberries
+**Classification of Strawberries**
+
 - **Binary Classification**: Two possible outcomes (e.g., Ripe vs. Not Ripe)
 - **Multiclass Classification**: More than two possible outcomes (e.g., Underripe, Ripe, Overripe)
 :::
