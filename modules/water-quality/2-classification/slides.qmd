@@ -128,7 +128,7 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ## Intro to Classification
 <hr>
 
-:::{.ltblue-container .fourtyeightpt-font}
+:::{.ltblue-container .thirtyfourpt-font}
 🎯 Checkpoint 2. a: Which banana(s) would you eat?
 :::
 
@@ -160,7 +160,7 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 
 
 
-:::{.ltblue-container .fourtyeightpt-font}
+:::{.ltblue-container .thirtyfourpt-font}
 🎯 Checkpoint 2. b: Review the figure above. In image (b), what do you think the yellow represents? The green?
 :::
 
@@ -265,18 +265,18 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ## Checkpoint 2. c 
 <hr>
 
-:::{.ltblue-container .fourtyeightpt-font}
+:::{.ltblue-container .thirtyfourpt-font}
 🎯 Checkpoint 2. c: If farmers use a certain company to train and decide when to pluck or harvest fruits/veggies, who gets to own that data? why?
 :::
 
 ## Checkpoint 2. d 
 <hr>
 
-:::{.ltblue-container .fourtyeightpt-font}
+:::{.ltblue-container .thirtyfourpt-font}
 🎯 Checkpoint 2. d: Let's say the company becomes better at identifying ripe fruits because they used data from your farm. Now, they want to up their subscription fees for farmers to use their model. Is that fair? Do you have any suggestions or solutions?
 :::
 
-## Classification Activity - Train
+## Classification Activityfourtyeightpt-font - Train
 <hr>
 
 :::{.activity-text}
@@ -398,7 +398,7 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ## Steps
 <hr>
 
-:::{.fourtyeightpt-font}
+:::{.thirtyfourpt-font}
 ::: {.columns}
 ::: {.column width="60%"}
 **8. Position your apple within the frame and click the "Hold to Record" button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images.**
@@ -471,7 +471,7 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ## Putting it to the Test
 <hr>
 
-:::{.callout-note}
+:::{.callout-note .thirtyfourpt-font}
 Get your lab sheet ready. Let's record some results!
 :::
 
@@ -553,7 +553,7 @@ Get your lab sheet ready. Let's record some results!
 
 ## How Does It Work?
 
-:::{.ltblue-container}
+:::{.ltblue-container .thirtyfourpt-font}
 **Checkpoints on this Page:**
 
 - [**Checkpoint 5.a:** Neural Network Layers](#lst-nnlayers)
@@ -595,18 +595,14 @@ Get your lab sheet ready. Let's record some results!
 
 ## Checkpoint 5. a: Neural Network Layers
 
-:::{#lst-nnlayers}
-```{pyodide}
-#| include: false
-# Fake block to make checkpoint work
-```
+:::{.ltblue-container .thirtyfourpt-font}
 
 Compare and contrast the input layer, the hidden layers, and the output layer. What function do they each have in a neural net?
 :::
 
 ## Color Activity
 
-:::{.ltblue-container}
+:::{.ltblue-container .thirtyfourpt-font}
 **Checkpoints on this Page:**
 
 - [**Checkpoint 6.a:** Pixels & RGB](#lst-RGBPixels)
@@ -628,14 +624,8 @@ Compare and contrast the input layer, the hidden layers, and the output layer. W
 
 ## Pixels and RGB Values
 
-:::{#lst-RGBPixels}
-
-```{pyodide}
-#| include: false
-
-# Fake block to make checkpoint work
-```
-Exploring pixels and RGB Values
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 Checkpoint 6. a: Exploring pixels and RGB Values
 :::
 
 ## Materials Needed
@@ -695,7 +685,7 @@ Use the applet and follow the instructions on the handout, which are also listed
 
 ## How Do Computers See Color?
 
-:::{.ltblue-container}
+:::{.ltblue-container .thirtyfourpt-font}
 **Checkpoints on this Page:**
 
 - [**Checkpoint 7.a:** Using RGB Values to Create Color](#lst-CreatingColor)
@@ -862,15 +852,9 @@ Use the applet and follow the instructions on the handout, which are also listed
 ## Using RGB Values to Create Color
 <hr>
 
-:::{#lst-PredictingFruit}
+:::{.ltblue-container .thirtyfourpt-font}
 
-```{pyodide}
-#| include: false
-
-# Fake block to make checkpoint work
-```
-
-What color does this RGB value represent? (110, 164, 212) Just like the computer, predict what fruit this could be from!
+🎯 Checkpoint 7. b: What color does this RGB value represent? (110, 164, 212) Just like the computer, predict what fruit this could be from!
 :::
 
 ## Exit Ticket
