@@ -56,9 +56,8 @@ In this lesson, you will learn how to use classification and Python to help comp
 ## Review
 <hr>
 
-:::{.gray-container}  
+:::{.gray-container .fourtyeightpt-font}  
 **Last week we learned:**  
-<!-- FIX: "leaned" → "learned" -->
 
 - Role of Nitrogen in Water  
 - Using Statistics to Summarize Data  
@@ -70,7 +69,6 @@ In this lesson, you will learn how to use classification and Python to help comp
 <hr>
 
 Later this semester, we will be deploying these Smokey Buoys!
-<!-- FIX: "deplying" → "deploying" -->
 
 :::{.gray-container}  
 **Some Important Parts:**  
@@ -84,14 +82,18 @@ Later this semester, we will be deploying these Smokey Buoys!
 ## The Buoy: Test Strips
 <hr>
 
+:::{.fourtyeightpt-font}
 - Smokey Buoy also uses test strips to monitor nitrate concentrations in water
 - Strips are on a roll rather than small strips
 - We place each pad on a very long piece of material and roll it up inside the buoy to keep it dry until dispensed
+:::
 
 ## The Buoy: Test Strips
 <hr>
 
+:::{.fourtyeightpt-font}
 ![1. We begin with commercial test strips and remove the pads. <br> 2. The pads are carefully spaced out and placed on a very long piece of material. <br> 3. The material is rolled up inside the buoy. <br> 4. The roll is carefully positioned to be fed through the motorized roller.](images/buoy_test_strip_roll.png)
+:::
 
 ## The Buoy: Motor & Camera
 <hr>
@@ -117,7 +119,9 @@ When a test pad is in front of the camera, it takes a picture.
 ## 🗣️ Think Pair Share: 
 <hr>
 
+:::{.fourtyeightpt-font}
 Thinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?
+:::
 
 
 
@@ -133,9 +137,11 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ## Intro to Classification
 <hr>
 
+:::{.fourtyeightpt-font}
 - People make decisions about ripeness daily: grocery shoppers & farmers alike.
 - These decisions—judging if a fruit/vegetable is ripe—are called **classification**.
 - Classification = sorting items into groups based on appearance or behavior.
+:::
 
 ## Use of Classification in Agriculture
 <hr>
@@ -161,9 +167,11 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ## Types of Classification
 <hr>
 
+:::{.fourtyeightpt-font}
 #### Classification of Strawberries
 - **Binary Classification**: Two possible outcomes (e.g., Ripe vs. Not Ripe)
 - **Multiclass Classification**: More than two possible outcomes (e.g., Underripe, Ripe, Overripe)
+:::
 
 ## Binary Classification
 <hr>
@@ -226,14 +234,16 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ## More on Classification with AI
 <hr>
 
-**Computers make classification decisions very quickly**
+:::{.activity-text}
+- **Computers make classification decisions very quickly**
 
-**Using AI has advantages and disadvantages**
+- **Using AI has advantages and disadvantages**
+:::
 
 ## Pros of Using AI for Classification
 <hr>
 
-:::{.gray-container}
+:::{.gray-container .fourtyeightpt-font}
 **Pros:**  
 
 - Handles millions of items quickly
@@ -244,7 +254,7 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ## Cons of Using AI for Classification
 <hr>
 
-:::{.gray-container}
+:::{.gray-container .fourtyeightpt-font}
 **Cons:**
 
 - Needs tons of examples to train the computer
@@ -269,12 +279,14 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ## Classification Activity - Train
 <hr>
 
-#### Now it's your turn!
+:::{.activity-text}
+**Now it's your turn!**
+:::
 
 ## Classification Activity - Train
 <hr>
 
-:::{.gray-container}
+:::{.gray-container .fourtyeightpt-font}
 - 1 Apple and 1 Orange per pair
 - 1 Distractor (fruit, ball, etc.) per pair 
 - 1 Device per pair/group 
@@ -285,23 +297,24 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ## Teachable Machine
 [![](images/teachable_machine_logo.png)](https://teachablemachine.withgoogle.com){target="_blank" rel="nofollow"}
 
-:::{.gray-container}
+:::{.gray-container .fourtyeightpt-font}
 - Uses Python in the background
 - Helps users build classification models
-<!-- FIX: "userss" → "users" -->
 :::
 <br>
 
 ## Steps
 <hr>
 
+:::{.fourtyeightpt-font}
 **1. Go to Teachable Machine at [https://teachablemachine.withgoogle.com/](https://teachablemachine.withgoogle.com/)**
-
+:::
 
 
 ## Steps
 <hr>
 
+:::{.fourtyeightpt-font}
 ::: {.columns}
 ::: {.column width="60%"}
 **2. Click "Get Started"**
@@ -310,10 +323,12 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ![](images/tm_get_started.png)
 :::
 :::
+:::
 
 ## Steps
 <hr>
 
+:::{.fourtyeightpt-font}
 ::: {.columns}
 ::: {.column width="60%"}
 **3. Choose "Image Project"**
@@ -322,10 +337,12 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ![](images/tm_image_project.png)
 :::
 :::
+:::
 
 ## Steps
 <hr>
 
+:::{.fourtyeightpt-font}
 ::: {.columns}
 ::: {.column width="60%"}
 **4. Select "Standard Image Model"**
@@ -334,10 +351,12 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ![](images/tm_standard_image_model.png)
 :::
 :::
+:::
 
 ## Steps
 <hr>
 
+:::{.fourtyeightpt-font}
 ::: {.columns}
 ::: {.column width="60%"}
 **5. To the right of "Class 1", click the pencil and type "Apple"**
@@ -346,10 +365,12 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ![](images/tm_class1.png)
 :::
 :::
+:::
 
 ## Steps
 <hr>
 
+:::{.fourtyeightpt-font}
 ::: {.columns}
 ::: {.column width="60%"}
 **6. Grab your apple and get ready!!**
@@ -358,9 +379,12 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ![](images/apple.png){width="35%"}
 :::
 :::
+:::
 
 ## Steps
 <hr>
+
+:::{.fourtyeightpt-font}
 ::: {.columns}
 ::: {.column width="60%"}
 **7. Click "webcam" to turn on and allow the computer to begin capturing images of the apple.**
@@ -369,10 +393,12 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ![](images/tm_apple_webcam.png)
 :::
 :::
+:::
 
 ## Steps
 <hr>
 
+:::{.fourtyeightpt-font}
 ::: {.columns}
 ::: {.column width="60%"}
 **8. Position your apple within the frame and click the "Hold to Record" button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images.**
@@ -381,10 +407,12 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ![](images/tm_apple_hold_to_record.png)
 :::
 :::
+:::
 
 ## Steps
 <hr>
 
+:::{.fourtyeightpt-font}
 ::: {.columns}
 ::: {.column width="60%"}
 **9. When finished, release the "Hold to Record" button and click the "x" in the top right corner to exit the Apple class.**
@@ -393,23 +421,27 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ![](images/tm_apple_exit_class.png)
 :::
 :::
+:::
 
 ## Steps
 <hr>
 
+:::{.fourtyeightpt-font}
 ::: {.columns}
 ::: {.column width="60%"}
-**10. Put your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture **roughly** the same number of images for the orange as you did for the apple.**
+10. Put your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture **roughly** the same number of images for the orange as you did for the apple.
 :::
 ::: {.column width="40%"}
 ![](images/tm_class2.png)
 ![](images/orange.png){width="35%"}
 :::
 :::
+:::
 
 ## Steps
 <hr>
 
+:::{.fourtyeightpt-font}
 ::: {.columns}
 ::: {.column width="60%"}
 **11. When finished capturing data for both classes, click the "Train Model" button. The website will train your own custom classification model, based on your data!**
@@ -418,15 +450,19 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ![](images/tm_train_model.png)
 :::
 :::
+:::
 
 ## Evaluate Your Classifier
 <hr>
 
+:::{.activity-text}
 - Some models can be very accurate, while others might struggle
 - Let's put your model to the test!
+:::
 
 ## Evaluate Your Classifier
 <hr>
+
 
 #### Use the "Preview" pane on the right side of the Teachable Machine screen
 
@@ -487,7 +523,6 @@ Get your lab sheet ready. Let's record some results!
 ## Classification Activity - Buoy
 
 **How a classification model works.**
-<!-- FIX: added closing ** and period -->
 
 ```{=html}
 <video width="80%" controls>
@@ -498,7 +533,7 @@ Get your lab sheet ready. Let's record some results!
 
 ## Your Turn: Be the Buoy
 
-:::{.gray-container}
+:::{.gray-container .fourtyeightpt-font}
 **Materials Needed:**  
 - 1 test strip  
 :::
@@ -509,9 +544,8 @@ Get your lab sheet ready. Let's record some results!
 
 ### Train Model with two classes:
 
-:::{.gray-container}
+:::{.gray-container .fourtyeightpt-font}
 **Classes:**  
-<!-- FIX: "Classesd" → "Classes" -->
 - strip present
 - strip not present  
 :::
@@ -531,7 +565,6 @@ Get your lab sheet ready. Let's record some results!
 - Under the hood of a classification model is a **Convolutional Neural Net (CNN)**
 - CNNs are trained to recognize patterns in images
 :::
-<!-- BUG FIX: Missing closing ::: caused ALL slides after this point to disappear -->
 
 ## How Does Your Model Work?
 
@@ -561,7 +594,6 @@ Get your lab sheet ready. Let's record some results!
 <br>
 
 ## Checkpoint 5. a: Neural Network Layers
-<!-- FIX: "Chcekpoint" → "Checkpoint" -->
 
 :::{#lst-nnlayers}
 ```{pyodide}
@@ -608,7 +640,7 @@ Exploring pixels and RGB Values
 
 ## Materials Needed
 
-:::{.gray-container}
+:::{.gray-container .thirtyfourpt-font}
 **Materials Needed:**  
 
 - [APPLET](../RGB-Applet-1.html){target="_blank" rel="noopener"}
@@ -771,7 +803,6 @@ Use the applet and follow the instructions on the handout, which are also listed
 
 :::{.activity-text}
 - Use the slider tool above to answer the RGB questions
-<!-- FIX: "sldier" → "slider" -->
 - Record your answers on the handout
 :::
 
