@@ -20,7 +20,7 @@ format:
       data-background-size: 30%
       data-background-position: 50% 9%
     footer: AAIC — Water Quality
-revealjs-facilitator:
+  revealjs-facilitator:
     output-file: facilitator_notes.html
     theme: [simple, aaic_slides_style.scss]
     mainfont: Montserrat
