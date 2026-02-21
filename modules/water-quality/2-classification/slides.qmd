@@ -170,10 +170,12 @@ Later this semester, we will be deploying these Smokey Buoys!
 <hr>
 
 ```{=html}
+<center>
 <video width="80%" controls>
-  <source src="buoy-video-intro.mp4" type="video/mp4">
+  <source src="images/buoy-video-intro.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+</center>
 ```
 
 ## The Buoy: Test Strips
@@ -223,7 +225,7 @@ Later this semester, we will be deploying these Smokey Buoys!
 
 :::: {.columns}
 ::: {.column width="55%"}
-![](images/buoy_diagram_modified.png)
+![](images/buoy_diagram_modified_container.png)
 :::
 ::: {.column width="45%"}
 #### Container for Test Strip Roll
@@ -236,7 +238,7 @@ The canister stores the rolled-up test strip and feeds it out as the motor and r
 
 :::: {.columns}
 ::: {.column width="55%"}
-![](images/buoy_diagram_modified.png)
+![](images/buoy_diagram_modified_watercontact.png)
 :::
 ::: {.column width="45%"}
 #### Water Contact
@@ -249,7 +251,7 @@ There is an opening in a chamber of the canister, allowing the strip to contact 
 
 :::: {.columns}
 ::: {.column width="55%"}
-![](images/buoy_diagram_modified.png)
+![](images/buoy_diagram_modified_teststrip.png)
 :::
 ::: {.column width="45%"}
 #### Test Strip
@@ -262,7 +264,7 @@ The test strip feeds up from the canister and through the rollers.
 
 :::: {.columns}
 ::: {.column width="55%"}
-![](images/buoy_diagram_modified.png)
+![](images/buoy_diagram_modified_teststrippad.png)
 :::
 ::: {.column width="45%"}
 #### Test Strip Pad
@@ -275,7 +277,7 @@ The reactive pad on the strip changes color when exposed to nitrates in water.
 
 :::: {.columns}
 ::: {.column width="55%"}
-![](images/buoy_diagram_modified.png)
+![](images/buoy_diagram_modified_rollers.png)
 :::
 ::: {.column width="45%"}
 #### Rollers
@@ -288,7 +290,7 @@ The rollers grip the test strip and advance it one pad at a time.
 
 :::: {.columns}
 ::: {.column width="55%"}
-![](images/buoy_diagram_modified.png)
+![](images/buoy_diagram_modified_motor.png)
 :::
 ::: {.column width="45%"}
 #### Motor
@@ -301,7 +303,7 @@ The motor drives the rollers, which grip and advance the test strip.
 
 :::: {.columns}
 ::: {.column width="55%"}
-![](images/buoy_diagram_modified.png)
+![](images/buoy_diagram_modified_camera.png)
 :::
 ::: {.column width="45%"}
 #### Camera
@@ -309,14 +311,18 @@ When a test pad is positioned in front of the camera, it takes a picture to reco
 :::
 ::::
 
-## 🗣️ Think Pair Share: 
+## 🗣️ Discuss: In Your Group 
 <hr>
 
 :::{.fourtyeightpt-font}
-Thinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?
+Thinking back to the nitrates activity from last week...  
+<br>
+  - What are the **benefits** to using a computerized buoy to conduct water quality tests?  
+  <br>
+  - What are the **drawbacks**?  
 :::
 
-
+# Intro to Classification
 
 ## Intro to Classification
 <hr>
@@ -330,7 +336,7 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 ## Intro to Classification
 <hr>
 
-:::{.fourtyeightpt-font}
+:::{.fourtyeightpt-font .incremental}
 - People make decisions about ripeness daily: grocery shoppers & farmers alike.
 - These decisions—judging if a fruit/vegetable is ripe—are called **classification**.
 - Classification = sorting items into groups based on appearance or behavior.
@@ -348,6 +354,7 @@ Thinking back to the nitrates activity from last week, What are the benefits to 
 
 
 ## Use of Classification in Agriculture
+<hr>
 
 ![](images/ripe_strawberry_detection_umd.png)
 
