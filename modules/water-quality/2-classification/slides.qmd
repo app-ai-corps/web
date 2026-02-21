@@ -84,8 +84,7 @@ In this lesson, you will learn how to use classification and Python to help comp
 <hr>
 
 ::: {.activity-text}
-💻 **Navigate to:** [https://appalachianaicorps.org/](https://appalachianaicorps.org/) > Modules > Water Quality Monitoring > Lesson 2
-
+💻 **Navigate to:** [https://tinyurl.com/aaic-wq-2](https://tinyurl.com/aaic-wq-2)
 <br>
 
 **Note:** If you see a 💻 laptop 💻  icon in the slides, that means there is a corresponding activity in the module to complete!
@@ -95,7 +94,7 @@ In this lesson, you will learn how to use classification and Python to help comp
 <hr>
 
 :::{.gray-container .fourtyeightpt-font}  
-**Last week we learned:**  
+**Last workshop we learned:**  
 
 - Role of Nitrogen in Water  
 - Using Statistics to Summarize Data  
