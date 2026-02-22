@@ -84,7 +84,7 @@ In this lesson, you will learn about and apply ideas around image classification
 <hr>
 
 ::: {.activity-text}
-💻 **Navigate to:**<br><br><center> [**https://tinyurl.com/aaic-wq-2**](https://tinyurl.com/aaic-wq-2)
+💻 **Navigate to:**<br><br><center> [**https://tinyurl.com/aaic-wq-2**](https://tinyurl.com/aaic-wq-2){target="_blank"}
 </center><br>
 
 :::
@@ -345,34 +345,21 @@ Thinking back to the nitrates activity from last week...
 ## Use of Classification in Agriculture
 <hr>
 
-- Computers can help us make classification decisions
-- AI can help make classification decisions, saving time and labor for farmers
+- AI can help make classification decisions, saving time and labor for farmers  
 - Example: At University of Maryland, AI is used to identify ripe crops in fields
 
-![](images/ripe_strawberry_detection_umd.png)
+![](images/ripe_strawberry_detection_umd_strawberriesonly.png){fig-align="center"}
 
 
 
 ## Use of Classification in Agriculture
 <hr>
 
-![](images/ripe_strawberry_detection_umd.png)
-
-
-
 :::{.ltblue-container .thirtyfourpt-font}
-🎯 Checkpoint 2. b: Review the figure above. In image (b), what do you think the yellow represents? The green?
+🎯 Checkpoint 2. b: Review the figure below. In image (b), what do you think the yellow represents? The green?
 :::
 
-## Types of Classification
-<hr>
-
-:::{.fourtyeightpt-font}
-**Classification of Strawberries**
-
-- **Binary Classification**: Two possible outcomes (e.g., Ripe vs. Not Ripe)
-- **Multiclass Classification**: More than two possible outcomes (e.g., Underripe, Ripe, Overripe)
-:::
+![](images/ripe_strawberry_detection_umd.png)
 
 ## Binary Classification
 <hr>
@@ -393,6 +380,17 @@ Thinking back to the nitrates activity from last week...
 </table>
 <br>
 <br>
+
+## Types of Classification
+<hr>
+
+:::{.fourtyeightpt-font}
+**Classification of Strawberries**
+
+- **Binary Classification**: Two possible outcomes (e.g., Ripe vs. Not Ripe)
+- **Multiclass Classification**: More than two possible outcomes (e.g., Underripe, Ripe, Overripe)
+:::
+
 
 ## Multiclass Classification
 <hr>
@@ -418,36 +416,33 @@ Thinking back to the nitrates activity from last week...
 <br>
 <br>
 
-## Example of Multiclass Classification in Agriculture
+## Multiclass Classification Example [^1]
 <hr>
-
-- **Project from University of Georgia, Athens [^2]**
-
-- **Uses multiclass classification to sort lemons**
-
-- **Discards underripe or molded lemons, retains only ripe ones**
-
+```{=html}
+<center>
 <video width="80%" controls>
   <source src="images/ag-lemons-ugaathens-clip.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+</center>
+```
 
-## More on Classification with AI
-<hr>
+[^1]: Project from University of Georgia, Athens
 
-:::{.activity-text}
-- **Computers make classification decisions very quickly**
 
-- **Using AI has advantages and disadvantages**
-:::
 
 ## Pros of Using AI for Classification
 <hr>
+
+:::{.activity-text}
+- Using AI has **advantages** and disadvantages
+:::
 
 :::{.gray-container .fourtyeightpt-font}
 **Pros:**  
 
 - Handles millions of items quickly
+- Makes classification decisions quickly
 - Spots tiny differences humans miss
 
 :::
@@ -463,39 +458,36 @@ Thinking back to the nitrates activity from last week...
 
 :::
 
-## Checkpoint 2. c 
+## 🗣️ Discuss: In Your Group 
 <hr>
 
 :::{.ltblue-container .thirtyfourpt-font}
-🎯 Checkpoint 2. c: If farmers use a certain company to train and decide when to pluck or harvest fruits/veggies, who gets to own that data? why?
+🎯 **Checkpoint 2. c:** <br><br>If farmers use a certain company to train and decide when to pluck or harvest fruits/veggies, who gets to own that data?<br><br>
+Why?
 :::
 
-## Checkpoint 2. d 
+## 🗣️ Discuss: In Your Group 
 <hr>
 
 :::{.ltblue-container .thirtyfourpt-font}
-🎯 Checkpoint 2. d: Let's say the company becomes better at identifying ripe fruits because they used data from your farm. Now, they want to up their subscription fees for farmers to use their model. Is that fair? Do you have any suggestions or solutions?
+🎯 **Checkpoint 2. d:** <br><br>Let's say the company becomes better at identifying ripe fruits because they used data from your farm. Now, they want to up their subscription fees for farmers (including you) to use their model. <br><br>Is that fair? <br><br>Do you have any suggestions or solutions?
 :::
 
-## Classification Activityfourtyeightpt-font - Train
-<hr>
-
-:::{.activity-text}
-**Now it's your turn!**
-:::
+# 💻 Classification: Your Turn!
 
 ## Classification Activity - Train
 <hr>
 
 :::{.gray-container .fourtyeightpt-font}
-- 1 Apple and 1 Orange per pair
-- 1 Distractor (fruit, ball, etc.) per pair 
-- 1 Device per pair/group 
-- 1 lab sheet per person
+- Fruit Assortment
+  - 🍎 Apple, 🍊 Orange, 🍋‍🟩 Lime
+- 💻 Device
+- Lab sheet
 :::
 <br>
 
-## Teachable Machine
+## 💻 Teachable Machine
+<hr>
 [![](images/teachable_machine_logo.png)](https://teachablemachine.withgoogle.com){target="_blank" rel="nofollow"}
 
 :::{.gray-container .fourtyeightpt-font}
@@ -504,154 +496,19 @@ Thinking back to the nitrates activity from last week...
 :::
 <br>
 
-## Steps
+## 🚀 Let's Go
 <hr>
 
 :::{.fourtyeightpt-font}
-**1. Go to Teachable Machine at [https://teachablemachine.withgoogle.com/](https://teachablemachine.withgoogle.com/)**
-:::
+**💻 Go to Teachable Machine at:**
+<br><br>
 
+[tinyurl.com/google-tm](https://tinyurl.com/google-tm){target="_blank"}
+:::
+<br><br>
+*** We'll walk through this together!
 
-## Steps
-<hr>
-
-:::{.fourtyeightpt-font}
-::: {.columns}
-::: {.column width="60%"}
-**2. Click "Get Started"**
-:::
-::: {.column width="40%"}
-![](images/tm_get_started.png)
-:::
-:::
-:::
-
-## Steps
-<hr>
-
-:::{.fourtyeightpt-font}
-::: {.columns}
-::: {.column width="60%"}
-**3. Choose "Image Project"**
-:::
-::: {.column width="40%"}
-![](images/tm_image_project.png)
-:::
-:::
-:::
-
-## Steps
-<hr>
-
-:::{.fourtyeightpt-font}
-::: {.columns}
-::: {.column width="60%"}
-**4. Select "Standard Image Model"**
-:::
-::: {.column width="40%"}
-![](images/tm_standard_image_model.png)
-:::
-:::
-:::
-
-## Steps
-<hr>
-
-:::{.fourtyeightpt-font}
-::: {.columns}
-::: {.column width="60%"}
-**5. To the right of "Class 1", click the pencil and type "Apple"**
-:::
-::: {.column width="40%"}
-![](images/tm_class1.png)
-:::
-:::
-:::
-
-## Steps
-<hr>
-
-:::{.fourtyeightpt-font}
-::: {.columns}
-::: {.column width="60%"}
-**6. Grab your apple and get ready!!**
-:::
-::: {.column width="40%"}
-![](images/apple.png){width="35%"}
-:::
-:::
-:::
-
-## Steps
-<hr>
-
-:::{.fourtyeightpt-font}
-::: {.columns}
-::: {.column width="60%"}
-**7. Click "webcam" to turn on and allow the computer to begin capturing images of the apple.**
-:::
-::: {.column width="40%"}
-![](images/tm_apple_webcam.png)
-:::
-:::
-:::
-
-## Steps
-<hr>
-
-:::{.thirtyfourpt-font}
-::: {.columns}
-::: {.column width="60%"}
-**8. Position your apple within the frame and click the "Hold to Record" button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images.**
-:::
-::: {.column width="40%"}
-![](images/tm_apple_hold_to_record.png)
-:::
-:::
-:::
-
-## Steps
-<hr>
-
-:::{.fourtyeightpt-font}
-::: {.columns}
-::: {.column width="60%"}
-**9. When finished, release the "Hold to Record" button and click the "x" in the top right corner to exit the Apple class.**
-:::
-::: {.column width="40%"}
-![](images/tm_apple_exit_class.png)
-:::
-:::
-:::
-
-## Steps
-<hr>
-
-:::{.fourtyeightpt-font}
-::: {.columns}
-::: {.column width="60%"}
-10. Put your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture **roughly** the same number of images for the orange as you did for the apple.
-:::
-::: {.column width="40%"}
-![](images/tm_class2.png)
-![](images/orange.png){width="35%"}
-:::
-:::
-:::
-
-## Steps
-<hr>
-
-:::{.fourtyeightpt-font}
-::: {.columns}
-::: {.column width="60%"}
-**11. When finished capturing data for both classes, click the "Train Model" button. The website will train your own custom classification model, based on your data!**
-:::
-::: {.column width="40%"}
-![](images/tm_train_model.png)
-:::
-:::
-:::
+# Evaluate Your Model!
 
 ## Evaluate Your Classifier
 <hr>
@@ -732,7 +589,7 @@ Get your lab sheet ready. Let's record some results!
 </video>
 ```
 
-## Your Turn: Be the Buoy
+<!-- ## Your Turn: Be the Buoy
 
 :::{.gray-container .fourtyeightpt-font}
 **Materials Needed:**  
@@ -750,7 +607,7 @@ Get your lab sheet ready. Let's record some results!
 - strip present
 - strip not present  
 :::
-<br><br>
+<br><br> -->
 
 ## How Does It Work?
 

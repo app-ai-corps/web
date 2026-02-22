@@ -2083,14 +2083,14 @@
     "href": "2-classification/slides.html#use-of-classification-in-agriculture",
     "title": "Workshop #2",
     "section": "Use of Classification in Agriculture",
-    "text": "Use of Classification in Agriculture\n\n\nComputers can help us make classification decisions\nAI can help make classification decisions, saving time and labor for farmers\nExample: At University of Maryland, AI is used to identify ripe crops in fields"
+    "text": "Use of Classification in Agriculture\n\n\nAI can help make classification decisions, saving time and labor for farmers\n\nExample: At University of Maryland, AI is used to identify ripe crops in fields"
   },
   {
     "objectID": "2-classification/slides.html#use-of-classification-in-agriculture-1",
     "href": "2-classification/slides.html#use-of-classification-in-agriculture-1",
     "title": "Workshop #2",
     "section": "Use of Classification in Agriculture",
-    "text": "Use of Classification in Agriculture\n\n\n\n🎯 Checkpoint 2. b: Review the figure above. In image (b), what do you think the yellow represents? The green?"
+    "text": "Use of Classification in Agriculture\n\n\n🎯 Checkpoint 2. b: Review the figure below. In image (b), what do you think the yellow represents? The green?"
   },
   {
     "objectID": "2-classification/slides.html#types-of-classification",
@@ -2125,14 +2125,14 @@
     "href": "2-classification/slides.html#more-on-classification-with-ai",
     "title": "Workshop #2",
     "section": "More on Classification with AI",
-    "text": "More on Classification with AI\n\n\n\nComputers make classification decisions very quickly\nUsing AI has advantages and disadvantages"
+    "text": "More on Classification with AI\n\n\n\nUsing AI has advantages and disadvantages"
   },
   {
     "objectID": "2-classification/slides.html#pros-of-using-ai-for-classification",
     "href": "2-classification/slides.html#pros-of-using-ai-for-classification",
     "title": "Workshop #2",
     "section": "Pros of Using AI for Classification",
-    "text": "Pros of Using AI for Classification\n\n\nPros:\n\nHandles millions of items quickly\nSpots tiny differences humans miss"
+    "text": "Pros of Using AI for Classification\n\n\n\nUsing AI has advantages and disadvantages\n\n\n\nPros:\n\nHandles millions of items quickly\nMakes classification decisions quickly\nSpots tiny differences humans miss"
   },
   {
     "objectID": "2-classification/slides.html#cons-of-using-ai-for-classification",
@@ -2167,84 +2167,84 @@
     "href": "2-classification/slides.html#classification-activity---train",
     "title": "Workshop #2",
     "section": "Classification Activity - Train",
-    "text": "Classification Activity - Train\n\n\n\n1 Apple and 1 Orange per pair\n1 Distractor (fruit, ball, etc.) per pair\n1 Device per pair/group\n1 lab sheet per person"
+    "text": "Classification Activity - Train\n\n\n\nFruit Assortment\n\n🍎 Apple, 🍊 Orange, 🍋‍🟩 Lime\n\n💻 Device\nLab sheet"
   },
   {
     "objectID": "2-classification/slides.html#teachable-machine",
     "href": "2-classification/slides.html#teachable-machine",
     "title": "Workshop #2",
-    "section": "Teachable Machine",
-    "text": "Teachable Machine\n\n\n\nUses Python in the background\nHelps users build classification models"
+    "section": "💻 Teachable Machine",
+    "text": "💻 Teachable Machine\n\n\n\n\nUses Python in the background\nHelps users build classification models"
   },
   {
     "objectID": "2-classification/slides.html#steps",
     "href": "2-classification/slides.html#steps",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n1. Go to Teachable Machine at https://teachablemachine.withgoogle.com/"
+    "text": "Steps\n\n\n\n\n2. Click “Get Started”"
   },
   {
     "objectID": "2-classification/slides.html#steps-1",
     "href": "2-classification/slides.html#steps-1",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n2. Click “Get Started”"
+    "text": "Steps\n\n\n\n\n3. Choose “Image Project”"
   },
   {
     "objectID": "2-classification/slides.html#steps-2",
     "href": "2-classification/slides.html#steps-2",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n3. Choose “Image Project”"
+    "text": "Steps\n\n\n\n\n4. Select “Standard Image Model”"
   },
   {
     "objectID": "2-classification/slides.html#steps-3",
     "href": "2-classification/slides.html#steps-3",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n4. Select “Standard Image Model”"
+    "text": "Steps\n\n\n\n\n5. To the right of “Class 1”, click the pencil and type “Apple”"
   },
   {
     "objectID": "2-classification/slides.html#steps-4",
     "href": "2-classification/slides.html#steps-4",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n5. To the right of “Class 1”, click the pencil and type “Apple”"
+    "text": "Steps\n\n\n\n\n6. Grab your apple and get ready!!"
   },
   {
     "objectID": "2-classification/slides.html#steps-5",
     "href": "2-classification/slides.html#steps-5",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n6. Grab your apple and get ready!!"
+    "text": "Steps\n\n\n\n\n7. Click “webcam” to turn on and allow the computer to begin capturing images of the apple."
   },
   {
     "objectID": "2-classification/slides.html#steps-6",
     "href": "2-classification/slides.html#steps-6",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n7. Click “webcam” to turn on and allow the computer to begin capturing images of the apple."
+    "text": "Steps\n\n\n\n\n8. Position your apple within the frame and click the “Hold to Record” button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images."
   },
   {
     "objectID": "2-classification/slides.html#steps-7",
     "href": "2-classification/slides.html#steps-7",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n8. Position your apple within the frame and click the “Hold to Record” button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images."
+    "text": "Steps\n\n\n\n\n9. When finished, release the “Hold to Record” button and click the “x” in the top right corner to exit the Apple class."
   },
   {
     "objectID": "2-classification/slides.html#steps-8",
     "href": "2-classification/slides.html#steps-8",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n9. When finished, release the “Hold to Record” button and click the “x” in the top right corner to exit the Apple class."
+    "text": "Steps\n\n\n\n\n\nPut your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture roughly the same number of images for the orange as you did for the apple."
   },
   {
     "objectID": "2-classification/slides.html#steps-9",
     "href": "2-classification/slides.html#steps-9",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n\nPut your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture roughly the same number of images for the orange as you did for the apple."
+    "text": "Steps\n\n\n\n\n11. When finished capturing data for both classes, click the “Train Model” button. The website will train your own custom classification model, based on your data!"
   },
   {
     "objectID": "2-classification/slides.html#steps-10",
@@ -2749,5 +2749,40 @@
     "title": "Workshop #2",
     "section": "Intro to Classification",
     "text": "Intro to Classification\n\n\n\nPeople make decisions about ripeness daily: grocery shoppers & farmers alike.\nThese decisions—judging if a fruit/vegetable is ripe—are called classification.\nClassification = sorting items into groups based on appearance or behavior."
+  },
+  {
+    "objectID": "2-classification/slides.html#multiclass-classification-example",
+    "href": "2-classification/slides.html#multiclass-classification-example",
+    "title": "Workshop #2",
+    "section": "Multiclass Classification Example",
+    "text": "Multiclass Classification Example\n\n\nProject from University of Georgia, Athens [^2]\n\n\n\nYour browser does not support the video tag. \n\nProject from University of Georgia, Athens"
+  },
+  {
+    "objectID": "2-classification/slides.html#multiclass-classification-example-1",
+    "href": "2-classification/slides.html#multiclass-classification-example-1",
+    "title": "Workshop #2",
+    "section": "Multiclass Classification Example 1",
+    "text": "Multiclass Classification Example 1\n\n\n\n  \n  Your browser does not support the video tag.\n\n\nProject from University of Georgia, Athens"
+  },
+  {
+    "objectID": "2-classification/slides.html#discuss-in-your-group-1",
+    "href": "2-classification/slides.html#discuss-in-your-group-1",
+    "title": "Workshop #2",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\n🎯 Checkpoint 2. c: If farmers use a certain company to train and decide when to pluck or harvest fruits/veggies, who gets to own that data? Why?"
+  },
+  {
+    "objectID": "2-classification/slides.html#discuss-in-your-group-2",
+    "href": "2-classification/slides.html#discuss-in-your-group-2",
+    "title": "Workshop #2",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\n🎯 Checkpoint 2. d: Let’s say the company becomes better at identifying ripe fruits because they used data from your farm. Now, they want to up their subscription fees for farmers (including you) to use their model. Is that fair? Do you have any suggestions or solutions?"
+  },
+  {
+    "objectID": "2-classification/slides.html#lets-go",
+    "href": "2-classification/slides.html#lets-go",
+    "title": "Workshop #2",
+    "section": "🚀 Let’s Go",
+    "text": "🚀 Let’s Go\n\n\n💻 Go to Teachable Machine at: \ntinyurl.com/google-tm\n\n *** We’ll walk through this together!"
   }
 ]
