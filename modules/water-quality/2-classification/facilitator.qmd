@@ -7,20 +7,15 @@ format: live-html
 ::: {.callout-note collapse="true"}
 ## **Topics Covered:**  
 
-- Water quality  
-  - Nitrates  
-  - Nitrites  
-- Introduction to Python programming 
-- Summary statistics:  
-  - Measures of center:  
-    - Mean  
-    - Median  
-  - Measures of spread:  
-    - Standard deviation  
-    - Range  
-  - Outliers  
-- Data visualization:  
-  - Boxplots  
+- Introducion to physical computing  
+  - water quality buoy  
+  - components 
+- AI: classifying images
+  - training & evaluating models
+  - convolutional neural nets
+- Computers & Color  
+  - images as pixels
+  - color as R, G, B 
 
 :::
 
@@ -51,18 +46,18 @@ plant populations from various kinds of human activity.
 </video>
 ```
 <br>
-If you would like a more in-depth overview of the lesson, please consult the [slides with visible facilitator notes](https://appalachianaicorps.org/modules/water-quality/1-statistics/facilitator_notes.html){target="_blank" rel="noopener noreferrer"}.
+If you would like a more in-depth overview of the lesson, please consult the [slides with visible facilitator notes](https://appalachianaicorps.org/modules/water-quality/2-classification/facilitator_notes.html){target="_blank" rel="noopener noreferrer"}.
 
 ## Slide Deck for Lesson
 
-<a href="https://appalachianaicorps.org/modules/water-quality/1-statistics/slides.html" target="_blank" rel="nofollow noopener noreferrer">Workshop #1 Slides</a>
+<a href="https://appalachianaicorps.org/modules/water-quality/2-classification/slides.html" target="_blank" rel="nofollow noopener noreferrer">Workshop #1 Slides</a>
 
 ## Student Handout
 You can make a copy of the [student handout for this lesson](https://docs.google.com/document/d/1Oc6QdS_XJ--WyFC83-kmh5iWaKRTFvEh3kUxyyw8ylA/copy).
 
 <br>
 
-If you would like to provide students a copy of the slides with spaces for note taking, we have prepared a [handout for this purpose](https://appalachianaicorps.org/modules/water-quality/1-statistics/student_handout.pdf){target="_blank" rel="noopener noreferrer"}.
+If you would like to provide students a copy of the slides with spaces for note taking, we have prepared a [handout for this purpose](https://appalachianaicorps.org/modules/water-quality/2-classification/student_handout.pdf){target="_blank" rel="noopener noreferrer"}.
 
 ## Lesson Prep
 
