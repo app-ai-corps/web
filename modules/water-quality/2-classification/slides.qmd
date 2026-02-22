@@ -553,7 +553,7 @@ Why?
 ```{=html}
 <center>
 <video width="80%" controls>
-  <source src="buoy-classification.mp4" type="video/mp4">
+  <source src="images/buoy-classification.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 </center>
@@ -848,7 +848,7 @@ Share what you've learned on the [**Exit Ticket**](https://forms.gle/23LAwb5GcBW
 :::{.thirtyfourpt-font style="text-align: center;"}
 Want to practice what we've learned?
 
-Try the **Exercises**
+Try the **Exercises**.
 
-(Ask Your Teacher For the Link).
+(Ask Your Teacher For the Link.)
 :::
