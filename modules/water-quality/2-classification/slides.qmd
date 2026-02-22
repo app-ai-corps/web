@@ -548,7 +548,6 @@ Why?
 
 ## Classification in Smokey Buoy
 <hr>
-**How does the buoy use classification?**
 
 ```{=html}
 <center>
@@ -831,7 +830,7 @@ Just like the computer, predict what fruit this could be from!
 <br>
 <br>
 
-:::{.thirtyfourpt-font style="text-align: center;"}
+:::{.thirtyfourpt-font .activity-text style="text-align: center;"}
 🎉 Great job! You've learned so much!
 
 Share what you've learned on the [**Exit Ticket**](https://forms.gle/23LAwb5GcBWAhd1K8).
@@ -845,7 +844,7 @@ Share what you've learned on the [**Exit Ticket**](https://forms.gle/23LAwb5GcBW
 <br>
 <br>
 
-:::{.thirtyfourpt-font style="text-align: center;"}
+:::{.thirtyfourpt-font .activity-text style="text-align: center;"}
 Want to practice what we've learned?
 
 Try the **Exercises**.
