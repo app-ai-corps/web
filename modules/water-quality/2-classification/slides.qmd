@@ -480,7 +480,7 @@ Why?
 
 :::{.gray-container .fourtyeightpt-font}
 - Fruit Assortment
-  - 🍎 🍏 Apple, 🍊 Orange, 🍋‍🟩 Lime, 🔴 Ball
+  - 🍎 🍏 Apples, 🍊 Orange, 🔴 Ball
 - 💻 Device
 - Lab sheet
 :::

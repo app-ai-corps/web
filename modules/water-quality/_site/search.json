@@ -2167,7 +2167,7 @@
     "href": "2-classification/slides.html#classification-activity---train",
     "title": "Workshop #2",
     "section": "Classification Activity - Train",
-    "text": "Classification Activity - Train\n\n\n\nFruit Assortment\n\n🍎 🍏 Apple, 🍊 Orange, 🍋‍🟩 Lime, 🔴 Ball\n\n💻 Device\nLab sheet"
+    "text": "Classification Activity - Train\n\n\n\nFruit Assortment\n\n🍎 🍏 Apples, 🍊 Orange, 🔴 Ball\n\n💻 Device\nLab sheet"
   },
   {
     "objectID": "2-classification/slides.html#teachable-machine",
@@ -2811,7 +2811,7 @@
     "href": "2-classification/slides.html#discuss-how-does-your-model-work",
     "title": "Workshop #2",
     "section": "🗣️ Discuss: How Does Your Model Work?",
-    "text": "🗣️ Discuss: How Does Your Model Work?\n\n\n🎯 Checkpoint 5. a  Contrast how each layer type works in a neural net:\n- the input layer\n- the hidden layers, and\n- the output layer\n\n\nWith your group, think about the jobs of the input layer, hidden layers, and output layer in a CNN that works to classify cows. 🐮  📝 Record your thinking on the handout."
+    "text": "🗣️ Discuss: How Does Your Model Work?\n\n\n🎯 Checkpoint 5. a  Contrast how each layer type works in a neural net:\n- the input layer\n- the hidden layers, and\n- the output layer"
   },
   {
     "objectID": "2-classification/facilitator_notes.html#lesson-objective",
