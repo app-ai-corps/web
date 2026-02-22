@@ -480,7 +480,7 @@ Why?
 
 :::{.gray-container .fourtyeightpt-font}
 - Fruit Assortment
-  - 🍎 Apple, 🍊 Orange, 🍋‍🟩 Lime
+  - 🍎 🍏 Apple, 🍊 Orange, 🍋‍🟩 Lime, 🔴 Ball
 - 💻 Device
 - Lab sheet
 :::
@@ -521,56 +521,24 @@ Why?
 ## Evaluate Your Classifier
 <hr>
 
+:::: {.columns}
+::: {.column width="50%"}
+**Use the "Preview" pane on the right side of the Teachable Machine screen**
 
-#### Use the "Preview" pane on the right side of the Teachable Machine screen
+![](images/tm_preview.png){width="60%"}
+:::
+::: {.column width="50%" .fragment}
+**📝 Now test your model!**
 
-![](images/tm_preview.png){width="30%"}
+- Hold up each of your objects on your handout to the camera
+- Record the results
+- Does your model correctly classify each object?
+- With what confidence?
+:::
+::::
 
-## Putting it to the Test
+## 🗣️ Discuss: In Your Group 
 <hr>
-
-:::{.callout-note .thirtyfourpt-font}
-Get your lab sheet ready. Let's record some results!
-:::
-
-## Steps for testing
-<hr>
-
-:::{.activity-text}
-1. Trade your apple and orange with another group. No group should have the exact same fruits you trained the model with.
-:::
-
-## Steps for testing
-<hr>                             
-
-:::{.activity-text}
-2. Take your lab sheet and review the observation table. The first item to test is an apple. If the model works well, what will it predict? Record this in the second column.
-:::
-
-## Steps for testing
-<hr>      
-
-:::{.activity-text}
-3. Next, hold the apple up to your camera. What does the model predict it is? Record this in the third column of your lab sheet. 
-:::
-
-## Steps for testing
-<hr>
-
-:::{.activity-text}
-4. The model also reports confidence in its prediction. Record this percent confidence in the fourth column of your sheet.
-:::
-
-## Steps for testing
-<hr>
-
-:::{.activity-text}
-5. Repeat this process for all other objects on the lab sheet.
-:::
-
-## Reflecting
-
-### Discuss these Questions
 :::{.activity-text}
 - How did your model perform?
 - Were any objects classified incorrectly?
@@ -578,46 +546,22 @@ Get your lab sheet ready. Let's record some results!
 
 :::
 
-## Classification Activity - Buoy
-
-**How a classification model works.**
+## Classification in Smokey Buoy
+<hr>
+**How does the buoy use classification?**
 
 ```{=html}
+<center>
 <video width="80%" controls>
   <source src="buoy-classification.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+</center>
 ```
-
-<!-- ## Your Turn: Be the Buoy
-
-:::{.gray-container .fourtyeightpt-font}
-**Materials Needed:**  
-- 1 test strip  
-:::
-<br><br>
-
-## Your Turn: Be the Buoy
-<hr>
-
-### Train Model with two classes:
-
-:::{.gray-container .fourtyeightpt-font}
-**Classes:**  
-- strip present
-- strip not present  
-:::
-<br><br> -->
-
-## How Does It Work?
-
-:::{.ltblue-container .thirtyfourpt-font}
-**Checkpoints on this Page:**
-
-- [**Checkpoint 5.a:** Neural Network Layers](#lst-nnlayers)
-:::
+# Neural Networks
 
 ## How Does Your Model Work?
+<hr>
 
 :::{.activity-text}
 - Under the hood of a classification model is a **Convolutional Neural Net (CNN)**
@@ -625,9 +569,11 @@ Get your lab sheet ready. Let's record some results!
 :::
 
 ## How Does Your Model Work?
+<hr>
+Prioritize understanding big picture over math
 
-#### Prioritize understanding big picture over math
-
+```{=html}
+<center>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe 
     src="https://www.youtube.com/embed/oV3ZY6tJiA0?start=197&end=234" 
@@ -636,11 +582,14 @@ Get your lab sheet ready. Let's record some results!
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
   </iframe>
 </div>
-<br>
+</center>
+```
 
 ## How Does Your Model Work?
-
 <hr>
+
+```{=html}
+<center>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe 
     src="https://www.youtube.com/embed/oV3ZY6tJiA0?start=351&end=540" 
@@ -649,108 +598,103 @@ Get your lab sheet ready. Let's record some results!
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
   </iframe>
 </div>
-<br>
+</center>
+```
 
-## Checkpoint 5. a: Neural Network Layers
-
-:::{.ltblue-container .thirtyfourpt-font}
-
-Compare and contrast the input layer, the hidden layers, and the output layer. What function do they each have in a neural net?
-:::
-
-## Color Activity
+## 🗣️ Discuss: How Does Your Model Work?
+<hr>
 
 :::{.ltblue-container .thirtyfourpt-font}
-**Checkpoints on this Page:**
+🎯 **Checkpoint 5. a**
+<br><br>
+Contrast how each layer type works in a neural net:  
+  - the input layer  
+  - the hidden layers, and  
+  - the output layer  
 
-- [**Checkpoint 6.a:** Pixels & RGB](#lst-RGBPixels)
 :::
 
-## Understanding RGB
-
-:::{.activity-text} 
-- Computers understand color through numbers, not like humans with eyes
-- When a computer displays or processes an image, that image is really a combination of millions of little squares called pixels
+:::{.fragment}
+With your group, think about the jobs of the input layer, hidden layers, and output layer in a CNN that works to classify cows.
+<br><br>
+📝 Record your thinking on the handout.
 :::
 
-## Understanding RGB
+# Computers & Color
 
+## Understanding RGB
+<hr>
+
+:::: {.columns}
+::: {.column width="55%"}
 :::{.activity-text}
-- Each pixel has a value for Red (R), Green (G), and Blue (B)
-- The color of each pixel is a combination of these three values
+An image is a combination of millions of little squares called **pixels**
 :::
+:::
+::: {.column width="45%"}
+![](images/pixels-1.jpeg)
+:::
+::::
 
-## Pixels and RGB Values
+## Understanding RGB
+<hr>
+
+:::: {.columns}
+::: {.column width="55%"}
+:::{.activity-text}
+Each pixel has a **color**
+:::
+:::
+::: {.column width="45%"}
+![](images/pixels-2.png)
+:::
+::::
+
+## Understanding RGB
+<hr>
+
+:::: {.columns}
+::: {.column width="55%"}
+:::{.activity-text}
+Each color is a combination of three values:
+
+- [**R**]{style="color: #ff0000;"}ed = 252
+- [**G**]{style="color: #00ff00;"}reen = 148
+- [**B**]{style="color: #0000ff;"}lue = 43
+:::
+:::
+::: {.column width="45%"}
+![](images/pixels-3.png)
+:::
+::::
+
+# Computers & Color Activity (Pt. 1)
+
+## Color --> RGB Values
+<hr>
 
 :::{.ltblue-container .thirtyfourpt-font}
-🎯 Checkpoint 6. a: Exploring pixels and RGB Values
+🎯 **Checkpoint 6. a:** Exploring color and RGB Values
 :::
-
-## Materials Needed
 
 :::{.gray-container .thirtyfourpt-font}
 **Materials Needed:**  
 
-- [APPLET](../RGB-Applet-1.html){target="_blank" rel="noopener"}
-    - This will open in a new tab. 
-    - You may need to grant access to your camera for it to work.
-    - Apple, Orange, Lime (from previous activity)
-- Handout
-- Pencil
+- 💻 [APPLET](../RGB-Applet-1.html){target="_blank" rel="noopener"}
+- 🍎🍊🍋‍🟩 Fruit from previous activity
+- 📝 Handout
 :::
 
-## Pixels and RGB Values
+## Color --> RGB Values
+<hr>
 
 :::{.activity-text}
-Use the applet and follow the instructions on the handout, which are also listed below.
+- Use the applet and follow the instructions on the handout.  
+<br>
+- We will do the first together!
 :::
 
-## Pixels and RGB Values
-
-:::{.activity-text}
-1. The applet starts with "What Humans See" selected. Hold the apple up to the camera. Notice it captures its likeness?
-:::
-
-## Pixels and RGB Values
-
-:::{.activity-text}
-2. Change the mode to "What Computers See". It will default to the Red channel first.
-:::
-
-## Pixels and RGB Values
-
-:::{.activity-text}
-3. Focus on an area at the center of the apple and record the value for R.
-:::
-
-## Pixels and RGB Values
-
-:::{.activity-text}
-4. Use the dropdown menu to change the channel to G. Look at the same area (or as close to possible) on the apple, record the value for G.
-:::
-
-## Pixels and RGB Values
-
-:::{.activity-text}
-5. Change the channel to B and record the value for B.
-:::
-
-## Pixels and RGB Values
-
-:::{.activity-text}
-6. Repeat this process for the orange, lime, and each of the purple cards.
-:::
-
-## How Do Computers See Color?
-
-:::{.ltblue-container .thirtyfourpt-font}
-**Checkpoints on this Page:**
-
-- [**Checkpoint 7.a:** Using RGB Values to Create Color](#lst-CreatingColor)
-- [**Checkpoint 7.b:** Using Color to Predict Fruit](#lst-PredictingFruit)
-:::
-
-## How Do Computers See Color?
+## Colors --> RGB Values
 <hr>
 
 :::{.activity-text} 
@@ -758,10 +702,30 @@ Use the applet and follow the instructions on the handout, which are also listed
 - Each value can range from 0 to 255
 :::
 
-## Creating Color with RGB Values
+# Computers & Color Activity (Pt. 2)
+
+## RGB Values --> Color
 <hr>
 
-**Slide the sliders to create different colors!**
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 **Checkpoint 7. a:** Using RGB Values to Create Color
+:::
+
+:::{.gray-container .thirtyfourpt-font}
+**Materials Needed:**  
+
+- 💻 Slider Tool on Pg. 7
+- 📝 Handout
+:::
+
+## Using RGB Values to Create Color
+<hr>
+
+:::{.activity-text .line-height .incremental}
+- Use the slider tool below to convert the RGB values to colors
+- Record your answers on the handout
+- We'll do one together!
+:::
 
 :::{.gray-container}
 
@@ -849,70 +813,34 @@ Use the applet and follow the instructions on the handout, which are also listed
 ## Using RGB Values to Create Color
 <hr>
 
-:::{.activity-text}
-- Use the slider tool above to answer the RGB questions
-- Record your answers on the handout
-:::
-
-## Using RGB Values to Create Color
-<hr>
-
-:::{.activity-text}
-- 1. Slide all values to zero. When R = 0, G = 0, and B = 0, what color do you see?
-- 2. Slide all values to 255. When R = 255, G = 255, and B = 255, what color do you see?
-:::
-
-## Using RGB Values to Create Color
-<hr>
-
-:::{.activity-text}
-- 3. Slide all values to 0. Change R to 255. What happens to the color?
-- 4. Slide all values to 0. Change G to 255. What happens to the color?
-:::
-
-## Using RGB Values to Create Color
-<hr>
-
-:::{.activity-text}
-- 5. Slide all values to 0. Change B to 255. What happens to the color?
-:::
-
-
-## Using RGB Values to Create Color
-<hr>
-
-:::{.activity-text}
-- Now let's try some of the colors you observed in the last activity. Get your handout ready!
-<!-- FIX: "obsevered" → "observed" -->
-:::
-
-## Using RGB Values to Create Color
-<hr>
-
-:::{.activity-text}
-- 6. Adjust the sliders to the RGB values you recorded for your apple. What color do you see? Is it similar to your apple?
-:::
-
-## Using RGB Values to Create Color
-<hr>
-
-:::{.activity-text}
-- 7.  Repeat this for your orange's RGB values. What color do you see? Is it similar to your orange?
-:::
-
-## Using RGB Values to Create Color
-<hr>
-
-:::{.activity-text}
-- 8. Finally, repeat this for your lime's RGB values. What color do you see? Is it similar to your lime?
-:::
-
-## Using RGB Values to Create Color
-<hr>
-
 :::{.ltblue-container .thirtyfourpt-font}
 
-🎯 Checkpoint 7. b: What color does this RGB value represent? (110, 164, 212) Just like the computer, predict what fruit this could be from!
+🎯 **Checkpoint 7. b:** Use the slider tool!  
+<br>
+What color does this RGB value represent? (110, 164, 212)  
+<br>
+Just like the computer, predict what fruit this could be from!
 :::
 
-## Exit Ticket
+
+# 🎟️<br>Exit Ticket
+
+## 🎟️ Exit Ticket
+<hr>
+<br>
+<br>
+<br>
+<center>
+[🎉 Great job! You've learned so much!<br>Share what you've learned on the [**Exit Ticket**](https://forms.gle/23LAwb5GcBWAhd1K8).]{.thirtyfourpt-font}
+</center>
+
+# 🧠<br>Exercises
+
+## 🧠  Exercises
+<hr>
+<br>
+<br>
+<br>
+<center>
+[Want to practice what we've learned?<br>Try the **Exercises**(Ask Your Teacher For the Link).]{.thirtyfourpt-font}
+</center>

@@ -2027,7 +2027,7 @@
     "href": "2-classification/slides.html#meet-the-buoy",
     "title": "Workshop #2",
     "section": "Meet the Buoy!",
-    "text": "Meet the Buoy!\n\nLater this semester, we will be deploying these Smokey Buoys!"
+    "text": "Meet the Buoy!\n\nLater this semester, we will be deploying these Smokey Buoys!\n\nSome Important Parts:\n\nMotorized unit to move test strips\n\nCamera to analyze those strips on the spot"
   },
   {
     "objectID": "2-classification/slides.html#the-buoy-test-strips",
@@ -2125,7 +2125,7 @@
     "href": "2-classification/slides.html#more-on-classification-with-ai",
     "title": "Workshop #2",
     "section": "More on Classification with AI",
-    "text": "More on Classification with AI\n\n\n\nUsing AI has advantages and disadvantages"
+    "text": "More on Classification with AI\n\n\n\nComputers make classification decisions very quickly\nUsing AI has advantages and disadvantages"
   },
   {
     "objectID": "2-classification/slides.html#pros-of-using-ai-for-classification",
@@ -2167,7 +2167,7 @@
     "href": "2-classification/slides.html#classification-activity---train",
     "title": "Workshop #2",
     "section": "Classification Activity - Train",
-    "text": "Classification Activity - Train\n\n\n\nFruit Assortment\n\n🍎 Apple, 🍊 Orange, 🍋‍🟩 Lime\n\n💻 Device\nLab sheet"
+    "text": "Classification Activity - Train\n\n\n\nFruit Assortment\n\n🍎 🍏 Apple, 🍊 Orange, 🍋‍🟩 Lime, 🔴 Ball\n\n💻 Device\nLab sheet"
   },
   {
     "objectID": "2-classification/slides.html#teachable-machine",
@@ -2181,70 +2181,70 @@
     "href": "2-classification/slides.html#steps",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n2. Click “Get Started”"
+    "text": "Steps\n\n\n1. Go to Teachable Machine at https://teachablemachine.withgoogle.com/"
   },
   {
     "objectID": "2-classification/slides.html#steps-1",
     "href": "2-classification/slides.html#steps-1",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n3. Choose “Image Project”"
+    "text": "Steps\n\n\n\n\n2. Click “Get Started”"
   },
   {
     "objectID": "2-classification/slides.html#steps-2",
     "href": "2-classification/slides.html#steps-2",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n4. Select “Standard Image Model”"
+    "text": "Steps\n\n\n\n\n3. Choose “Image Project”"
   },
   {
     "objectID": "2-classification/slides.html#steps-3",
     "href": "2-classification/slides.html#steps-3",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n5. To the right of “Class 1”, click the pencil and type “Apple”"
+    "text": "Steps\n\n\n\n\n4. Select “Standard Image Model”"
   },
   {
     "objectID": "2-classification/slides.html#steps-4",
     "href": "2-classification/slides.html#steps-4",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n6. Grab your apple and get ready!!"
+    "text": "Steps\n\n\n\n\n5. To the right of “Class 1”, click the pencil and type “Apple”"
   },
   {
     "objectID": "2-classification/slides.html#steps-5",
     "href": "2-classification/slides.html#steps-5",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n7. Click “webcam” to turn on and allow the computer to begin capturing images of the apple."
+    "text": "Steps\n\n\n\n\n6. Grab your apple and get ready!!"
   },
   {
     "objectID": "2-classification/slides.html#steps-6",
     "href": "2-classification/slides.html#steps-6",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n8. Position your apple within the frame and click the “Hold to Record” button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images."
+    "text": "Steps\n\n\n\n\n7. Click “webcam” to turn on and allow the computer to begin capturing images of the apple."
   },
   {
     "objectID": "2-classification/slides.html#steps-7",
     "href": "2-classification/slides.html#steps-7",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n9. When finished, release the “Hold to Record” button and click the “x” in the top right corner to exit the Apple class."
+    "text": "Steps\n\n\n\n\n8. Position your apple within the frame and click the “Hold to Record” button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images."
   },
   {
     "objectID": "2-classification/slides.html#steps-8",
     "href": "2-classification/slides.html#steps-8",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n\nPut your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture roughly the same number of images for the orange as you did for the apple."
+    "text": "Steps\n\n\n\n\n9. When finished, release the “Hold to Record” button and click the “x” in the top right corner to exit the Apple class."
   },
   {
     "objectID": "2-classification/slides.html#steps-9",
     "href": "2-classification/slides.html#steps-9",
     "title": "Workshop #2",
     "section": "Steps",
-    "text": "Steps\n\n\n\n\n11. When finished capturing data for both classes, click the “Train Model” button. The website will train your own custom classification model, based on your data!"
+    "text": "Steps\n\n\n\n\n\nPut your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture roughly the same number of images for the orange as you did for the apple."
   },
   {
     "objectID": "2-classification/slides.html#steps-10",
@@ -2265,7 +2265,7 @@
     "href": "2-classification/slides.html#evaluate-your-classifier-1",
     "title": "Workshop #2",
     "section": "Evaluate Your Classifier",
-    "text": "Evaluate Your Classifier\n\nUse the “Preview” pane on the right side of the Teachable Machine screen"
+    "text": "Evaluate Your Classifier\n\n\n\nUse the “Preview” pane on the right side of the Teachable Machine screen\n\n\n📝 Now test your model!\n\nHold up each of your objects on your handout to the camera\nRecord the results\nDoes your model correctly classify each object?\nWith what confidence?"
   },
   {
     "objectID": "2-classification/slides.html#putting-it-to-the-test",
@@ -2349,14 +2349,14 @@
     "href": "2-classification/slides.html#how-does-your-model-work",
     "title": "Workshop #2",
     "section": "How Does Your Model Work?",
-    "text": "How Does Your Model Work?\n\n\nUnder the hood of a classification model is a Convolutional Neural Net (CNN)\nCNNs are trained to recognize patterns in images"
+    "text": "How Does Your Model Work?\n\n\n\nUnder the hood of a classification model is a Convolutional Neural Net (CNN)\nCNNs are trained to recognize patterns in images"
   },
   {
     "objectID": "2-classification/slides.html#how-does-your-model-work-1",
     "href": "2-classification/slides.html#how-does-your-model-work-1",
     "title": "Workshop #2",
     "section": "How Does Your Model Work?",
-    "text": "How Does Your Model Work?\nPrioritize understanding big picture over math"
+    "text": "How Does Your Model Work?\n\nPrioritize understanding big picture over math"
   },
   {
     "objectID": "2-classification/slides.html#how-does-your-model-work-2",
@@ -2384,21 +2384,21 @@
     "href": "2-classification/slides.html#understanding-rgb",
     "title": "Workshop #2",
     "section": "Understanding RGB",
-    "text": "Understanding RGB\n\n\nComputers understand color through numbers, not like humans with eyes\nWhen a computer displays or processes an image, that image is really a combination of millions of little squares called pixels"
+    "text": "Understanding RGB\n\n\n\n\nAn image is a combination of millions of little squares called pixels"
   },
   {
     "objectID": "2-classification/slides.html#understanding-rgb-1",
     "href": "2-classification/slides.html#understanding-rgb-1",
     "title": "Workshop #2",
     "section": "Understanding RGB",
-    "text": "Understanding RGB\n\n\nEach pixel has a value for Red (R), Green (G), and Blue (B)\nThe color of each pixel is a combination of these three values"
+    "text": "Understanding RGB\n\n\n\n\nEach pixel has a color"
   },
   {
     "objectID": "2-classification/slides.html#pixels-and-rgb-values",
     "href": "2-classification/slides.html#pixels-and-rgb-values",
     "title": "Workshop #2",
     "section": "Pixels and RGB Values",
-    "text": "Pixels and RGB Values\n\n🎯 Checkpoint 6. a: Exploring pixels and RGB Values"
+    "text": "Pixels and RGB Values\n\n\nUse the applet and follow the instructions on the handout.\nWe will do the first together!"
   },
   {
     "objectID": "2-classification/slides.html#materials-needed",
@@ -2461,7 +2461,7 @@
     "href": "2-classification/slides.html#how-do-computers-see-color",
     "title": "Workshop #2",
     "section": "How Do Computers See Color?",
-    "text": "How Do Computers See Color?\n\nCheckpoints on this Page:\n\nCheckpoint 7.a: Using RGB Values to Create Color\nCheckpoint 7.b: Using Color to Predict Fruit"
+    "text": "How Do Computers See Color?\n\n\nCheckpoints on this Page:\n\nCheckpoint 7.a: Using RGB Values to Create Color\nCheckpoint 7.b: Using Color to Predict Fruit"
   },
   {
     "objectID": "2-classification/slides.html#how-do-computers-see-color-1",
@@ -2482,14 +2482,14 @@
     "href": "2-classification/slides.html#using-rgb-values-to-create-color",
     "title": "Workshop #2",
     "section": "Using RGB Values to Create Color",
-    "text": "Using RGB Values to Create Color\n\n\n\nUse the slider tool above to answer the RGB questions\nRecord your answers on the handout"
+    "text": "Using RGB Values to Create Color\n\n\n\nUse the slider tool below to convert the RGB values to colors\nRecord your answers on the handout\nWe’ll do one together!\n\n\n\n\n  Slide the R, G, or B to see how it affects the color of the square!\n\n  \n    \n      \n        R:\n        \n        128\n      \n\n      \n        G:\n        \n        128\n      \n\n      \n        B:\n        \n        128"
   },
   {
     "objectID": "2-classification/slides.html#using-rgb-values-to-create-color-1",
     "href": "2-classification/slides.html#using-rgb-values-to-create-color-1",
     "title": "Workshop #2",
     "section": "Using RGB Values to Create Color",
-    "text": "Using RGB Values to Create Color\n\n\n\n\nSlide all values to zero. When R = 0, G = 0, and B = 0, what color do you see?\n\n\nSlide all values to 255. When R = 255, G = 255, and B = 255, what color do you see?"
+    "text": "Using RGB Values to Create Color\n\n\n🎯 Checkpoint 7. b: Use the slider tool!\n What color does this RGB value represent? (110, 164, 212)\n Just like the computer, predict what fruit this could be from!"
   },
   {
     "objectID": "2-classification/slides.html#using-rgb-values-to-create-color-2",
@@ -2784,5 +2784,852 @@
     "title": "Workshop #2",
     "section": "🚀 Let’s Go",
     "text": "🚀 Let’s Go\n\n\n💻 Go to Teachable Machine at: \ntinyurl.com/google-tm\n\n *** We’ll walk through this together!"
+  },
+  {
+    "objectID": "2-classification/slides.html#discuss-in-your-group-3",
+    "href": "2-classification/slides.html#discuss-in-your-group-3",
+    "title": "Workshop #2",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\n\nHow did your model perform?\nWere any objects classified incorrectly?\nWere any objects classified with low confidence (&lt; 80%)?"
+  },
+  {
+    "objectID": "2-classification/slides.html#classification-in-smokey-buoy",
+    "href": "2-classification/slides.html#classification-in-smokey-buoy",
+    "title": "Workshop #2",
+    "section": "Classification in Smokey Buoy",
+    "text": "Classification in Smokey Buoy\n\nHow does the buoy use classification?\n\n\n  \n  Your browser does not support the video tag."
+  },
+  {
+    "objectID": "2-classification/slides.html#how-does-your-model-work-3",
+    "href": "2-classification/slides.html#how-does-your-model-work-3",
+    "title": "Workshop #2",
+    "section": "How Does Your Model Work?",
+    "text": "How Does Your Model Work?\n\n\nCheckpoints on this Page:\n\nCheckpoint 5.a: Neural Network Layers\n\n\n\nCompare and contrast the input layer, the hidden layers, and the output layer. What function do they each have in a neural net?"
+  },
+  {
+    "objectID": "2-classification/slides.html#discuss-how-does-your-model-work",
+    "href": "2-classification/slides.html#discuss-how-does-your-model-work",
+    "title": "Workshop #2",
+    "section": "🗣️ Discuss: How Does Your Model Work?",
+    "text": "🗣️ Discuss: How Does Your Model Work?\n\n\n🎯 Checkpoint 5. a  Contrast how each layer type works in a neural net:\n- the input layer\n- the hidden layers, and\n- the output layer\n\n\nWith your group, think about the jobs of the input layer, hidden layers, and output layer in a CNN that works to classify cows.  📝 Record your thinking on the handout."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#lesson-objective",
+    "href": "2-classification/facilitator_notes.html#lesson-objective",
+    "title": "Workshop #2",
+    "section": "Lesson Objective",
+    "text": "Lesson Objective\n\nIn this lesson, you will learn about and apply ideas around image classification, neural nets, color, as well as how they can be used to monitor water quality.  \n\nMaterials Needed:\n\n💻 A computer with a webcam\nA web browser (Chrome, Firefox, or Safari)"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#workshop-structure",
+    "href": "2-classification/facilitator_notes.html#workshop-structure",
+    "title": "Workshop #2",
+    "section": "Workshop Structure",
+    "text": "Workshop Structure\n\n\n💻 Navigate to: https://tinyurl.com/aaic-wq-2"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#review",
+    "href": "2-classification/facilitator_notes.html#review",
+    "title": "Workshop #2",
+    "section": "Review",
+    "text": "Review\n\n\nLast workshop we learned:\n\nRole of Nitrogen in Water\n\nNitrogen\n\n\nUsing Statistics to Summarize Data\n\nUsing Python to store, summarize, and visualize data"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#review-1",
+    "href": "2-classification/facilitator_notes.html#review-1",
+    "title": "Workshop #2",
+    "section": "Review",
+    "text": "Review\n\n\nLast workshop we learned:\n\nRoles of Nitrogen in Water:\n\nNutrient\n\nPollutant\n\n🐄 Waste runoff\n\n🌧️ Acid rain\n\n🌼 Fertilizer"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#review-2",
+    "href": "2-classification/facilitator_notes.html#review-2",
+    "title": "Workshop #2",
+    "section": "Review",
+    "text": "Review\n\n\nLast workshop we learned:\n\nUsing Python to store, summarize, and visualize data\n\nStore data in a list\n\nUseful functions:\n\nlen()\n\nmin()\n\nmax()"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#review-3",
+    "href": "2-classification/facilitator_notes.html#review-3",
+    "title": "Workshop #2",
+    "section": "Review",
+    "text": "Review\n\n\nLast workshop we learned:\n\nUsing Statistics to Summarize Data\n\nMeasures of Center\n\nMean\nMedian\n\nMeasures of Spread\n\nRange"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#meet-the-buoy-1",
+    "href": "2-classification/facilitator_notes.html#meet-the-buoy-1",
+    "title": "Workshop #2",
+    "section": "Meet the Buoy!",
+    "text": "Meet the Buoy!\n\nLater this semester, we will be deploying these Smokey Buoys!"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#buoy-in-action",
+    "href": "2-classification/facilitator_notes.html#buoy-in-action",
+    "title": "Workshop #2",
+    "section": "🎥 Buoy In Action!",
+    "text": "🎥 Buoy In Action!\n\n\n\n  \n  Your browser does not support the video tag."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#the-buoy-test-strips",
+    "href": "2-classification/facilitator_notes.html#the-buoy-test-strips",
+    "title": "Workshop #2",
+    "section": "The Buoy: Test Strips",
+    "text": "The Buoy: Test Strips\n\n\n\nSmokey Buoy also uses test strips to monitor nitrate concentrations in water\nStrips are on a roll rather than small strips\nWe place each pad on a very long piece of material and roll it up inside the buoy to keep it dry until dispensed"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#the-buoy-test-strips-1",
+    "href": "2-classification/facilitator_notes.html#the-buoy-test-strips-1",
+    "title": "Workshop #2",
+    "section": "The Buoy: Test Strips",
+    "text": "The Buoy: Test Strips\n\n\n\n\n\n1. We begin with commercial test strips and remove the pads.  2. The pads are carefully spaced out and placed on a very long piece of material.  3. The material is rolled up inside the buoy.  4. The roll is carefully positioned to be fed through the motorized roller."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#the-buoy-test-strips-2",
+    "href": "2-classification/facilitator_notes.html#the-buoy-test-strips-2",
+    "title": "Workshop #2",
+    "section": "The Buoy: Test Strips",
+    "text": "The Buoy: Test Strips\n\n\nRemove the pads and adhere onto a long strip of material"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#the-buoy-test-strips-3",
+    "href": "2-classification/facilitator_notes.html#the-buoy-test-strips-3",
+    "title": "Workshop #2",
+    "section": "The Buoy: Test Strips",
+    "text": "The Buoy: Test Strips\n\n\nRoll up strip inside canister"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#the-buoy-test-strips-4",
+    "href": "2-classification/facilitator_notes.html#the-buoy-test-strips-4",
+    "title": "Workshop #2",
+    "section": "The Buoy: Test Strips",
+    "text": "The Buoy: Test Strips\n\n\nStrip dispenses out of the canister to be fed through the roller"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#the-buoy-other-parts",
+    "href": "2-classification/facilitator_notes.html#the-buoy-other-parts",
+    "title": "Workshop #2",
+    "section": "The Buoy: Other Parts!",
+    "text": "The Buoy: Other Parts!"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#the-buoy-container-for-test-strip-roll",
+    "href": "2-classification/facilitator_notes.html#the-buoy-container-for-test-strip-roll",
+    "title": "Workshop #2",
+    "section": "The Buoy: Container for Test Strip Roll",
+    "text": "The Buoy: Container for Test Strip Roll\n\n\n\n\n\nContainer for Test Strip Roll\nThe canister stores the rolled-up test strip and feeds it out as the motor and rollers advances it."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#the-buoy-water-contact",
+    "href": "2-classification/facilitator_notes.html#the-buoy-water-contact",
+    "title": "Workshop #2",
+    "section": "The Buoy: Water Contact",
+    "text": "The Buoy: Water Contact\n\n\n\n\n\nWater Contact\nThere is an opening in a chamber of the canister, allowing the strip to contact the water."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#the-buoy-test-strip",
+    "href": "2-classification/facilitator_notes.html#the-buoy-test-strip",
+    "title": "Workshop #2",
+    "section": "The Buoy: Test Strip",
+    "text": "The Buoy: Test Strip\n\n\n\n\n\nTest Strip\nThe test strip feeds up from the canister and through the rollers."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#the-buoy-test-strip-pad",
+    "href": "2-classification/facilitator_notes.html#the-buoy-test-strip-pad",
+    "title": "Workshop #2",
+    "section": "The Buoy: Test Strip Pad",
+    "text": "The Buoy: Test Strip Pad\n\n\n\n\n\nTest Strip Pad\nThe reactive pad on the strip changes color when exposed to nitrates in water."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#the-buoy-rollers",
+    "href": "2-classification/facilitator_notes.html#the-buoy-rollers",
+    "title": "Workshop #2",
+    "section": "The Buoy: Rollers",
+    "text": "The Buoy: Rollers\n\n\n\n\n\nRollers\nThe rollers grip the test strip and advance it one pad at a time."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#the-buoy-motor",
+    "href": "2-classification/facilitator_notes.html#the-buoy-motor",
+    "title": "Workshop #2",
+    "section": "The Buoy: Motor",
+    "text": "The Buoy: Motor\n\n\n\n\n\nMotor\nThe motor drives the rollers, which grip and advance the test strip."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#the-buoy-camera",
+    "href": "2-classification/facilitator_notes.html#the-buoy-camera",
+    "title": "Workshop #2",
+    "section": "The Buoy: Camera",
+    "text": "The Buoy: Camera\n\n\n\n\n\nCamera\nWhen a test pad is positioned in front of the camera, it takes a picture to record the color."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#discuss-in-your-group",
+    "href": "2-classification/facilitator_notes.html#discuss-in-your-group",
+    "title": "Workshop #2",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\nThinking back to the nitrates activity from last week…\n - What are the benefits to using a computerized buoy to conduct water quality tests?\n - What are the drawbacks?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#intro-to-classification-1",
+    "href": "2-classification/facilitator_notes.html#intro-to-classification-1",
+    "title": "Workshop #2",
+    "section": "Intro to Classification",
+    "text": "Intro to Classification\n\n\n\nPeople make decisions about ripeness daily: grocery shoppers & farmers alike.\nThese decisions—judging if a fruit/vegetable is ripe—are called classification.\nClassification = sorting items into groups based on appearance or behavior."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#intro-to-classification-2",
+    "href": "2-classification/facilitator_notes.html#intro-to-classification-2",
+    "title": "Workshop #2",
+    "section": "Intro to Classification",
+    "text": "Intro to Classification\n\n\n\nPeople make decisions about ripeness daily: grocery shoppers & farmers alike.\nThese decisions—judging if a fruit/vegetable is ripe—are called classification.\nClassification = sorting items into groups based on appearance or behavior."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#use-of-classification-in-agriculture",
+    "href": "2-classification/facilitator_notes.html#use-of-classification-in-agriculture",
+    "title": "Workshop #2",
+    "section": "Use of Classification in Agriculture",
+    "text": "Use of Classification in Agriculture\n\n\nComputers can help us make classification decisions\nAI can help make classification decisions, saving time and labor for farmers\nExample: At University of Maryland, AI is used to identify ripe crops in fields"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#use-of-classification-in-agriculture-1",
+    "href": "2-classification/facilitator_notes.html#use-of-classification-in-agriculture-1",
+    "title": "Workshop #2",
+    "section": "Use of Classification in Agriculture",
+    "text": "Use of Classification in Agriculture\n\n\n🎯 Checkpoint 2. b: Review the figure above. In image (b), what do you think the yellow represents? The green?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#binary-classification",
+    "href": "2-classification/facilitator_notes.html#binary-classification",
+    "title": "Workshop #2",
+    "section": "Binary Classification",
+    "text": "Binary Classification\n\nTwo possible Outcomes:\n \n\n\n\nNot Ripe\n\n\n\n\nRipe"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#types-of-classification",
+    "href": "2-classification/facilitator_notes.html#types-of-classification",
+    "title": "Workshop #2",
+    "section": "Types of Classification",
+    "text": "Types of Classification\n\n\nClassification of Strawberries\n\nBinary Classification: Two possible outcomes (e.g., Ripe vs. Not Ripe)\nMulticlass Classification: More than two possible outcomes (e.g., Underripe, Ripe, Overripe)"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#multiclass-classification",
+    "href": "2-classification/facilitator_notes.html#multiclass-classification",
+    "title": "Workshop #2",
+    "section": "Multiclass Classification",
+    "text": "Multiclass Classification\n\nMore than Two Outcomes:\n \n\n\n\nUnderripe\n\n\n\n\nRipe\n\n\n\n\nMolded"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#multiclass-classification-example-1",
+    "href": "2-classification/facilitator_notes.html#multiclass-classification-example-1",
+    "title": "Workshop #2",
+    "section": "Multiclass Classification Example 1",
+    "text": "Multiclass Classification Example 1\n\n\n\n  \n  Your browser does not support the video tag.\n\n\nProject from University of Georgia, Athens"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#pros-of-using-ai-for-classification",
+    "href": "2-classification/facilitator_notes.html#pros-of-using-ai-for-classification",
+    "title": "Workshop #2",
+    "section": "Pros of Using AI for Classification",
+    "text": "Pros of Using AI for Classification\n\n\nPros:\n\nHandles millions of items quickly\nSpots tiny differences humans miss"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#cons-of-using-ai-for-classification",
+    "href": "2-classification/facilitator_notes.html#cons-of-using-ai-for-classification",
+    "title": "Workshop #2",
+    "section": "Cons of Using AI for Classification",
+    "text": "Cons of Using AI for Classification\n\n\nCons:\n\nNeeds tons of examples to train the computer\nBad examples = bad decisions (e.g., train only on sunny photos, it fails on cloudy days)."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#discuss-in-your-group-1",
+    "href": "2-classification/facilitator_notes.html#discuss-in-your-group-1",
+    "title": "Workshop #2",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\n🎯 Checkpoint 2. c: If farmers use a certain company to train and decide when to pluck or harvest fruits/veggies, who gets to own that data? Why?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#discuss-in-your-group-2",
+    "href": "2-classification/facilitator_notes.html#discuss-in-your-group-2",
+    "title": "Workshop #2",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\n🎯 Checkpoint 2. d: Let’s say the company becomes better at identifying ripe fruits because they used data from your farm. Now, they want to up their subscription fees for farmers (including you) to use their model. Is that fair? Do you have any suggestions or solutions?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#classification-activity---train",
+    "href": "2-classification/facilitator_notes.html#classification-activity---train",
+    "title": "Workshop #2",
+    "section": "Classification Activity - Train",
+    "text": "Classification Activity - Train\n\n\n\n1 Apple and 1 Orange per pair\n1 Distractor (fruit, ball, etc.) per pair\n1 Device per pair/group\n1 lab sheet per person"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#teachable-machine",
+    "href": "2-classification/facilitator_notes.html#teachable-machine",
+    "title": "Workshop #2",
+    "section": "Teachable Machine",
+    "text": "Teachable Machine\n\n\n\nUses Python in the background\nHelps users build classification models"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#lets-go",
+    "href": "2-classification/facilitator_notes.html#lets-go",
+    "title": "Workshop #2",
+    "section": "🚀 Let’s Go",
+    "text": "🚀 Let’s Go\n\n\n💻 Go to Teachable Machine at: \ntinyurl.com/google-tm\n\n *** We’ll walk through this together!"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#evaluate-your-classifier",
+    "href": "2-classification/facilitator_notes.html#evaluate-your-classifier",
+    "title": "Workshop #2",
+    "section": "Evaluate Your Classifier",
+    "text": "Evaluate Your Classifier\n\n\n\nSome models can be very accurate, while others might struggle\nLet’s put your model to the test!"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#evaluate-your-classifier-1",
+    "href": "2-classification/facilitator_notes.html#evaluate-your-classifier-1",
+    "title": "Workshop #2",
+    "section": "Evaluate Your Classifier",
+    "text": "Evaluate Your Classifier\n\nUse the “Preview” pane on the right side of the Teachable Machine screen"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#discuss-in-your-group-3",
+    "href": "2-classification/facilitator_notes.html#discuss-in-your-group-3",
+    "title": "Workshop #2",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\n\nHow did your model perform?\nWere any objects classified incorrectly?\nWere any objects classified with low confidence (&lt; 80%)?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#classification-in-smokey-buoy",
+    "href": "2-classification/facilitator_notes.html#classification-in-smokey-buoy",
+    "title": "Workshop #2",
+    "section": "Classification in Smokey Buoy",
+    "text": "Classification in Smokey Buoy\n\nHow does the buoy use classification?\n\n\n  \n  Your browser does not support the video tag."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#how-does-your-model-work",
+    "href": "2-classification/facilitator_notes.html#how-does-your-model-work",
+    "title": "Workshop #2",
+    "section": "How Does Your Model Work?",
+    "text": "How Does Your Model Work?\n\n\nUnder the hood of a classification model is a Convolutional Neural Net (CNN)\nCNNs are trained to recognize patterns in images"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#how-does-your-model-work-1",
+    "href": "2-classification/facilitator_notes.html#how-does-your-model-work-1",
+    "title": "Workshop #2",
+    "section": "How Does Your Model Work?",
+    "text": "How Does Your Model Work?\nPrioritize understanding big picture over math"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#how-does-your-model-work-2",
+    "href": "2-classification/facilitator_notes.html#how-does-your-model-work-2",
+    "title": "Workshop #2",
+    "section": "How Does Your Model Work?",
+    "text": "How Does Your Model Work?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#discuss-how-does-your-model-work",
+    "href": "2-classification/facilitator_notes.html#discuss-how-does-your-model-work",
+    "title": "Workshop #2",
+    "section": "🗣️ Discuss: How Does Your Model Work?",
+    "text": "🗣️ Discuss: How Does Your Model Work?\n\n\n🎯 Checkpoint 5. a  Contrast:\n- the input layer\n- the hidden layers, and\n- the output layer\n What do they each do in a neural net?\n\nWith your group, think about the jobs of the input layer, hidden layers, and output layer in a CNN that works to classify cows.\n📝 Record your thinking on the handout."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#color-activity",
+    "href": "2-classification/facilitator_notes.html#color-activity",
+    "title": "Workshop #2",
+    "section": "Color Activity",
+    "text": "Color Activity\n\nCheckpoints on this Page:\n\nCheckpoint 6.a: Pixels & RGB"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#understanding-rgb",
+    "href": "2-classification/facilitator_notes.html#understanding-rgb",
+    "title": "Workshop #2",
+    "section": "Understanding RGB",
+    "text": "Understanding RGB\n\n\nComputers understand color through numbers, not like humans with eyes\nWhen a computer displays or processes an image, that image is really a combination of millions of little squares called pixels"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#understanding-rgb-1",
+    "href": "2-classification/facilitator_notes.html#understanding-rgb-1",
+    "title": "Workshop #2",
+    "section": "Understanding RGB",
+    "text": "Understanding RGB\n\n\nEach pixel has a value for Red (R), Green (G), and Blue (B)\nThe color of each pixel is a combination of these three values"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#pixels-and-rgb-values",
+    "href": "2-classification/facilitator_notes.html#pixels-and-rgb-values",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\n🎯 Checkpoint 6. a: Exploring pixels and RGB Values"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#materials-needed",
+    "href": "2-classification/facilitator_notes.html#materials-needed",
+    "title": "Workshop #2",
+    "section": "Materials Needed",
+    "text": "Materials Needed\n\nMaterials Needed:\n\nAPPLET\n\nThis will open in a new tab.\nYou may need to grant access to your camera for it to work.\nApple, Orange, Lime (from previous activity)\n\nHandout\nPencil"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#pixels-and-rgb-values-1",
+    "href": "2-classification/facilitator_notes.html#pixels-and-rgb-values-1",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\nUse the applet and follow the instructions on the handout, which are also listed below."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#pixels-and-rgb-values-2",
+    "href": "2-classification/facilitator_notes.html#pixels-and-rgb-values-2",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\n\nThe applet starts with “What Humans See” selected. Hold the apple up to the camera. Notice it captures its likeness?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#pixels-and-rgb-values-3",
+    "href": "2-classification/facilitator_notes.html#pixels-and-rgb-values-3",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\n\nChange the mode to “What Computers See”. It will default to the Red channel first."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#pixels-and-rgb-values-4",
+    "href": "2-classification/facilitator_notes.html#pixels-and-rgb-values-4",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\n\nFocus on an area at the center of the apple and record the value for R."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#pixels-and-rgb-values-5",
+    "href": "2-classification/facilitator_notes.html#pixels-and-rgb-values-5",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\n\nUse the dropdown menu to change the channel to G. Look at the same area (or as close to possible) on the apple, record the value for G."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#pixels-and-rgb-values-6",
+    "href": "2-classification/facilitator_notes.html#pixels-and-rgb-values-6",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\n\nChange the channel to B and record the value for B."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#pixels-and-rgb-values-7",
+    "href": "2-classification/facilitator_notes.html#pixels-and-rgb-values-7",
+    "title": "Workshop #2",
+    "section": "Pixels and RGB Values",
+    "text": "Pixels and RGB Values\n\n\nRepeat this process for the orange, lime, and each of the purple cards."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#how-do-computers-see-color",
+    "href": "2-classification/facilitator_notes.html#how-do-computers-see-color",
+    "title": "Workshop #2",
+    "section": "How Do Computers See Color?",
+    "text": "How Do Computers See Color?\n\nCheckpoints on this Page:\n\nCheckpoint 7.a: Using RGB Values to Create Color\nCheckpoint 7.b: Using Color to Predict Fruit"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#how-do-computers-see-color-1",
+    "href": "2-classification/facilitator_notes.html#how-do-computers-see-color-1",
+    "title": "Workshop #2",
+    "section": "How Do Computers See Color?",
+    "text": "How Do Computers See Color?\n\n\n\nWe learned every pixel has a value for Red (R), Green (G), and Blue (B)\nEach value can range from 0 to 255"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#creating-color-with-rgb-values",
+    "href": "2-classification/facilitator_notes.html#creating-color-with-rgb-values",
+    "title": "Workshop #2",
+    "section": "Creating Color with RGB Values",
+    "text": "Creating Color with RGB Values\n\nSlide the sliders to create different colors!\n\n\n  Slide the R, G, or B to see how it affects the color of the square!\n\n  \n    \n      \n        R:\n        \n        128\n      \n\n      \n        G:\n        \n        128\n      \n\n      \n        B:\n        \n        128"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color",
+    "href": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\nUse the slider tool above to answer the RGB questions\nRecord your answers on the handout"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-1",
+    "href": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-1",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\n\nSlide all values to zero. When R = 0, G = 0, and B = 0, what color do you see?\n\n\nSlide all values to 255. When R = 255, G = 255, and B = 255, what color do you see?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-2",
+    "href": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-2",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\n\nSlide all values to 0. Change R to 255. What happens to the color?\n\n\nSlide all values to 0. Change G to 255. What happens to the color?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-3",
+    "href": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-3",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\n\nSlide all values to 0. Change B to 255. What happens to the color?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-4",
+    "href": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-4",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\nNow let’s try some of the colors you observed in the last activity. Get your handout ready!"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-5",
+    "href": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-5",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\n\nAdjust the sliders to the RGB values you recorded for your apple. What color do you see? Is it similar to your apple?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-6",
+    "href": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-6",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\n\nRepeat this for your orange’s RGB values. What color do you see? Is it similar to your orange?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-7",
+    "href": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-7",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\n\nFinally, repeat this for your lime’s RGB values. What color do you see? Is it similar to your lime?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-8",
+    "href": "2-classification/facilitator_notes.html#using-rgb-values-to-create-color-8",
+    "title": "Workshop #2",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n🎯 Checkpoint 7. b: What color does this RGB value represent? (110, 164, 212) Just like the computer, predict what fruit this could be from!"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#exit-ticket",
+    "href": "2-classification/facilitator_notes.html#exit-ticket",
+    "title": "Workshop #2",
+    "section": "Exit Ticket",
+    "text": "Exit Ticket"
+  },
+  {
+    "objectID": "2-classification/slides.html#understanding-rgb-2",
+    "href": "2-classification/slides.html#understanding-rgb-2",
+    "title": "Workshop #2",
+    "section": "Understanding RGB",
+    "text": "Understanding RGB\n\n\n\n\nEach color is a combination of three values:\n\nRed = 252\nGreen = 148\nBlue = 43"
+  },
+  {
+    "objectID": "2-classification/slides.html#color-and-rgb-values",
+    "href": "2-classification/slides.html#color-and-rgb-values",
+    "title": "Workshop #2",
+    "section": "Color and RGB Values",
+    "text": "Color and RGB Values\n\n\n🎯 Checkpoint 6. a: Exploring color and RGB Values\n\n\nMaterials Needed:\n\n💻 APPLET\n🍎🍊🍋‍🟩 Fruit from previous activity\n📝 Handout"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#meet-the-buoy",
+    "href": "2-classification/facilitator_notes.html#meet-the-buoy",
+    "title": "Workshop #2",
+    "section": "Meet the Buoy!",
+    "text": "Meet the Buoy!\n\nLater this semester, we will be deploying these Smokey Buoys!\n\nSome Important Parts:\n\nMotorized unit to move test strips\n\nCamera to analyze those strips on the spot"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#the-buoy-motor-camera",
+    "href": "2-classification/facilitator_notes.html#the-buoy-motor-camera",
+    "title": "Workshop #2",
+    "section": "The Buoy: Motor & Camera",
+    "text": "The Buoy: Motor & Camera\n\n\nModified from INSERT PAPER CITATIONMotor\nLocate the motor near the top of the diagram. The motor drives the roller, which grips and advances the test strip roll.\nCamera\nWhen a test pad is in front of the camera, it takes a picture."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#see-it-in-action",
+    "href": "2-classification/facilitator_notes.html#see-it-in-action",
+    "title": "Workshop #2",
+    "section": "🎥 See It In Action!",
+    "text": "🎥 See It In Action!\n\n\n  \n  Your browser does not support the video tag."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#think-pair-share",
+    "href": "2-classification/facilitator_notes.html#think-pair-share",
+    "title": "Workshop #2",
+    "section": "🗣️ Think Pair Share:",
+    "text": "🗣️ Think Pair Share:\n\n\nThinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#intro-to-classification",
+    "href": "2-classification/facilitator_notes.html#intro-to-classification",
+    "title": "Workshop #2",
+    "section": "Intro to Classification",
+    "text": "Intro to Classification\n\n\n🎯 Checkpoint 2. a: Which banana(s) would you eat?\n\n\nSource: US Department of Agriculture"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#example-of-multiclass-classification-in-agriculture",
+    "href": "2-classification/facilitator_notes.html#example-of-multiclass-classification-in-agriculture",
+    "title": "Workshop #2",
+    "section": "Example of Multiclass Classification in Agriculture",
+    "text": "Example of Multiclass Classification in Agriculture\n\n\nProject from University of Georgia, Athens [^2]\nUses multiclass classification to sort lemons\nDiscards underripe or molded lemons, retains only ripe ones\n\n\n\nYour browser does not support the video tag."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#more-on-classification-with-ai",
+    "href": "2-classification/facilitator_notes.html#more-on-classification-with-ai",
+    "title": "Workshop #2",
+    "section": "More on Classification with AI",
+    "text": "More on Classification with AI\n\n\n\nComputers make classification decisions very quickly\nUsing AI has advantages and disadvantages"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#checkpoint-2.-c",
+    "href": "2-classification/facilitator_notes.html#checkpoint-2.-c",
+    "title": "Workshop #2",
+    "section": "Checkpoint 2. c",
+    "text": "Checkpoint 2. c\n\n\n🎯 Checkpoint 2. c: If farmers use a certain company to train and decide when to pluck or harvest fruits/veggies, who gets to own that data? why?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#checkpoint-2.-d",
+    "href": "2-classification/facilitator_notes.html#checkpoint-2.-d",
+    "title": "Workshop #2",
+    "section": "Checkpoint 2. d",
+    "text": "Checkpoint 2. d\n\n\n🎯 Checkpoint 2. d: Let’s say the company becomes better at identifying ripe fruits because they used data from your farm. Now, they want to up their subscription fees for farmers to use their model. Is that fair? Do you have any suggestions or solutions?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#classification-activityfourtyeightpt-font---train",
+    "href": "2-classification/facilitator_notes.html#classification-activityfourtyeightpt-font---train",
+    "title": "Workshop #2",
+    "section": "Classification Activityfourtyeightpt-font - Train",
+    "text": "Classification Activityfourtyeightpt-font - Train\n\n\nNow it’s your turn!"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps",
+    "href": "2-classification/facilitator_notes.html#steps",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n1. Go to Teachable Machine at https://teachablemachine.withgoogle.com/"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-1",
+    "href": "2-classification/facilitator_notes.html#steps-1",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n2. Click “Get Started”"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-2",
+    "href": "2-classification/facilitator_notes.html#steps-2",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n3. Choose “Image Project”"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-3",
+    "href": "2-classification/facilitator_notes.html#steps-3",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n4. Select “Standard Image Model”"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-4",
+    "href": "2-classification/facilitator_notes.html#steps-4",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n5. To the right of “Class 1”, click the pencil and type “Apple”"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-5",
+    "href": "2-classification/facilitator_notes.html#steps-5",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n6. Grab your apple and get ready!!"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-6",
+    "href": "2-classification/facilitator_notes.html#steps-6",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n7. Click “webcam” to turn on and allow the computer to begin capturing images of the apple."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-7",
+    "href": "2-classification/facilitator_notes.html#steps-7",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n8. Position your apple within the frame and click the “Hold to Record” button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-8",
+    "href": "2-classification/facilitator_notes.html#steps-8",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n9. When finished, release the “Hold to Record” button and click the “x” in the top right corner to exit the Apple class."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-9",
+    "href": "2-classification/facilitator_notes.html#steps-9",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n\nPut your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture roughly the same number of images for the orange as you did for the apple."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-10",
+    "href": "2-classification/facilitator_notes.html#steps-10",
+    "title": "Workshop #2",
+    "section": "Steps",
+    "text": "Steps\n\n\n\n\n11. When finished capturing data for both classes, click the “Train Model” button. The website will train your own custom classification model, based on your data!"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#putting-it-to-the-test",
+    "href": "2-classification/facilitator_notes.html#putting-it-to-the-test",
+    "title": "Workshop #2",
+    "section": "Putting it to the Test",
+    "text": "Putting it to the Test\n\n\n\n\n\n\n\n\nNote\n\n\nGet your lab sheet ready. Let’s record some results!"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-for-testing",
+    "href": "2-classification/facilitator_notes.html#steps-for-testing",
+    "title": "Workshop #2",
+    "section": "Steps for testing",
+    "text": "Steps for testing\n\n\n\nTrade your apple and orange with another group. No group should have the exact same fruits you trained the model with."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-for-testing-1",
+    "href": "2-classification/facilitator_notes.html#steps-for-testing-1",
+    "title": "Workshop #2",
+    "section": "Steps for testing",
+    "text": "Steps for testing\n\n\n\nTake your lab sheet and review the observation table. The first item to test is an apple. If the model works well, what will it predict? Record this in the second column."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-for-testing-2",
+    "href": "2-classification/facilitator_notes.html#steps-for-testing-2",
+    "title": "Workshop #2",
+    "section": "Steps for testing",
+    "text": "Steps for testing\n\n\n\nNext, hold the apple up to your camera. What does the model predict it is? Record this in the third column of your lab sheet."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-for-testing-3",
+    "href": "2-classification/facilitator_notes.html#steps-for-testing-3",
+    "title": "Workshop #2",
+    "section": "Steps for testing",
+    "text": "Steps for testing\n\n\n\nThe model also reports confidence in its prediction. Record this percent confidence in the fourth column of your sheet."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#steps-for-testing-4",
+    "href": "2-classification/facilitator_notes.html#steps-for-testing-4",
+    "title": "Workshop #2",
+    "section": "Steps for testing",
+    "text": "Steps for testing\n\n\n\nRepeat this process for all other objects on the lab sheet."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#reflecting",
+    "href": "2-classification/facilitator_notes.html#reflecting",
+    "title": "Workshop #2",
+    "section": "Reflecting",
+    "text": "Reflecting\nDiscuss these Questions\n\n\nHow did your model perform?\nWere any objects classified incorrectly?\nWere any objects classified with low confidence (&lt; 80%)?"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#classification-activity---buoy",
+    "href": "2-classification/facilitator_notes.html#classification-activity---buoy",
+    "title": "Workshop #2",
+    "section": "Classification Activity - Buoy",
+    "text": "Classification Activity - Buoy\nHow a classification model works.\n\n  \n  Your browser does not support the video tag."
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#your-turn-be-the-buoy",
+    "href": "2-classification/facilitator_notes.html#your-turn-be-the-buoy",
+    "title": "Workshop #2",
+    "section": "Your Turn: Be the Buoy",
+    "text": "Your Turn: Be the Buoy\n\nMaterials Needed:\n- 1 test strip"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#your-turn-be-the-buoy-1",
+    "href": "2-classification/facilitator_notes.html#your-turn-be-the-buoy-1",
+    "title": "Workshop #2",
+    "section": "Your Turn: Be the Buoy",
+    "text": "Your Turn: Be the Buoy\n\nTrain Model with two classes:\n\nClasses:\n- strip present - strip not present"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#how-does-it-work",
+    "href": "2-classification/facilitator_notes.html#how-does-it-work",
+    "title": "Workshop #2",
+    "section": "How Does It Work?",
+    "text": "How Does It Work?\n\nCheckpoints on this Page:\n\nCheckpoint 5.a: Neural Network Layers"
+  },
+  {
+    "objectID": "2-classification/facilitator_notes.html#checkpoint-5.-a-neural-network-layers",
+    "href": "2-classification/facilitator_notes.html#checkpoint-5.-a-neural-network-layers",
+    "title": "Workshop #2",
+    "section": "Checkpoint 5. a: Neural Network Layers",
+    "text": "Checkpoint 5. a: Neural Network Layers\n\nCompare and contrast the input layer, the hidden layers, and the output layer. What function do they each have in a neural net?"
+  },
+  {
+    "objectID": "2-classification/slides.html#color-and-rgb-values-1",
+    "href": "2-classification/slides.html#color-and-rgb-values-1",
+    "title": "Workshop #2",
+    "section": "Color and RGB Values",
+    "text": "Color and RGB Values\n\n\n\nUse the applet and follow the instructions on the handout.\n\nWe will do the first together!"
+  },
+  {
+    "objectID": "2-classification/slides.html#colors-and-rgb-values",
+    "href": "2-classification/slides.html#colors-and-rgb-values",
+    "title": "Workshop #2",
+    "section": "Colors and RGB Values",
+    "text": "Colors and RGB Values\n\n\n\nWe learned every pixel has a value for Red (R), Green (G), and Blue (B)\nEach value can range from 0 to 255"
+  },
+  {
+    "objectID": "2-classification/slides.html#color-to-rgb-values",
+    "href": "2-classification/slides.html#color-to-rgb-values",
+    "title": "Workshop #2",
+    "section": "Color to RGB Values",
+    "text": "Color to RGB Values\n\n\n🎯 Checkpoint 6. a: Exploring color and RGB Values\n\n\nMaterials Needed:\n\n💻 APPLET\n🍎🍊🍋‍🟩 Fruit from previous activity\n📝 Handout"
+  },
+  {
+    "objectID": "2-classification/slides.html#color-to-rgb-values-1",
+    "href": "2-classification/slides.html#color-to-rgb-values-1",
+    "title": "Workshop #2",
+    "section": "Color to RGB Values",
+    "text": "Color to RGB Values\n\n\n\nUse the applet and follow the instructions on the handout.\n\nWe will do the first together!"
+  },
+  {
+    "objectID": "2-classification/slides.html#colors-to-rgb-values",
+    "href": "2-classification/slides.html#colors-to-rgb-values",
+    "title": "Workshop #2",
+    "section": "Colors to RGB Values",
+    "text": "Colors to RGB Values\n\n\n\nWe learned every pixel has a value for Red (R), Green (G), and Blue (B)\nEach value can range from 0 to 255"
+  },
+  {
+    "objectID": "2-classification/slides.html#rgb-values-to-color",
+    "href": "2-classification/slides.html#rgb-values-to-color",
+    "title": "Workshop #2",
+    "section": "RGB Values to Color",
+    "text": "RGB Values to Color\n\nSlide the sliders to create different colors!\n\n\n  Slide the R, G, or B to see how it affects the color of the square!\n\n  \n    \n      \n        R:\n        \n        128\n      \n\n      \n        G:\n        \n        128\n      \n\n      \n        B:\n        \n        128"
+  },
+  {
+    "objectID": "2-classification/slides.html#color-rgb-values",
+    "href": "2-classification/slides.html#color-rgb-values",
+    "title": "Workshop #2",
+    "section": "Color –> RGB Values",
+    "text": "Color –&gt; RGB Values\n\n\n🎯 Checkpoint 6. a: Exploring color and RGB Values\n\n\nMaterials Needed:\n\n💻 APPLET\n🍎🍊🍋‍🟩 Fruit from previous activity\n📝 Handout"
+  },
+  {
+    "objectID": "2-classification/slides.html#color-rgb-values-1",
+    "href": "2-classification/slides.html#color-rgb-values-1",
+    "title": "Workshop #2",
+    "section": "Color –> RGB Values",
+    "text": "Color –&gt; RGB Values\n\n\n\nUse the applet and follow the instructions on the handout.\n\nWe will do the first together!"
+  },
+  {
+    "objectID": "2-classification/slides.html#colors-rgb-values",
+    "href": "2-classification/slides.html#colors-rgb-values",
+    "title": "Workshop #2",
+    "section": "Colors –> RGB Values",
+    "text": "Colors –&gt; RGB Values\n\n\n\nWe learned every pixel has a value for Red (R), Green (G), and Blue (B)\nEach value can range from 0 to 255"
+  },
+  {
+    "objectID": "2-classification/slides.html#rgb-values-color",
+    "href": "2-classification/slides.html#rgb-values-color",
+    "title": "Workshop #2",
+    "section": "RGB Values –> Color",
+    "text": "RGB Values –&gt; Color\n\n\n🎯 Checkpoint 7. a: Using RGB Values to Create Color\n\n\nMaterials Needed:\n\n💻 Slider Tool on Pg. 7\n📝 Handout"
+  },
+  {
+    "objectID": "2-classification/slides.html#exit-ticket-1",
+    "href": "2-classification/slides.html#exit-ticket-1",
+    "title": "Workshop #2",
+    "section": "🎟️ Exit Ticket",
+    "text": "🎟️ Exit Ticket\n\n  \n\n🎉 Great job! You’ve learned so much!Share what you’ve learned on the Exit Ticket."
+  },
+  {
+    "objectID": "2-classification/slides.html#exercises-1",
+    "href": "2-classification/slides.html#exercises-1",
+    "title": "Workshop #2",
+    "section": "🧠 Exercises",
+    "text": "🧠 Exercises\n\n  \n\nWant to practice what we’ve learned?Try the Exercises(Ask Your Teacher For the Link)."
   }
 ]
