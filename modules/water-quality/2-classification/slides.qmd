@@ -615,7 +615,7 @@ Contrast how each layer type works in a neural net:
 :::
 
 :::{.fragment}
-With your group, think about the jobs of the input layer, hidden layers, and output layer in a CNN that works to classify cows.
+With your group, think about the jobs of the input layer, hidden layers, and output layer in a CNN that works to classify cows. 🐮
 <br><br>
 📝 Record your thinking on the handout.
 :::
