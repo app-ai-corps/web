@@ -7,9 +7,11 @@ format: live-html
 sidebar: lesson-2
 ---
 
+**This module is designed to be used in conjunction with the Lesson 2 slide deck and other resources located in the facilitator's guide.**
+
 ::: {.gray-container}
 
-**Lesson Objective:** In this lesson, you will learn how to use classification and Python to help computers recognize water sample test strips and understand how color (RGB) can be used to monitor water quality.
+**Lesson Objective:** In this lesson, you will learn about and apply ideas around image classification, neural nets, color, as well as how they can be used to monitor water quality..
 
 **Materials Needed:**  
 - A computer  with a webcam  
@@ -29,9 +31,10 @@ sidebar: lesson-2
 
 :::{#lst-review}
 - Let's remember what we learned during workshop #1:
-  - The role of nitrogen in our water
-  - Using statistics to summarize data
+  - Forms of nitrogen in water
+  - Roles of nitrogen in water
   - Using Python to store, summarize, and visualize data
+  - Using statistics to summarize data
 
 Review—Looking back to Workshop #1
 :::
@@ -42,7 +45,7 @@ Review—Looking back to Workshop #1
   - This class will be deploying Smokey Buoy(s) later this semester.
   - We will learn a bit about how it works, so you understand it before we use them.
   <br><br>
-![](images/smokey_buoy.png)
+![](images/buoy-video-intro.mp4)
 <br><br>
 - Under the cover, Smokey Buoy has a lot of parts!
   - Two of these include:

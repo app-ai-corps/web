@@ -256,21 +256,21 @@
     "href": "2-classification/index.html",
     "title": "Classification and Color",
     "section": "",
-    "text": "Lesson Objective: In this lesson, you will learn how to use classification and Python to help computers recognize water sample test strips and understand how color (RGB) can be used to monitor water quality.\nMaterials Needed:\n- A computer with a webcam\n- A web browser (Chrome, Firefox, or Safari)"
+    "text": "This module is designed to be used in conjunction with the Lesson 2 slide deck and other resources located in the facilitator’s guide."
   },
   {
     "objectID": "2-classification/index.html#welcome-back-scientists",
     "href": "2-classification/index.html#welcome-back-scientists",
     "title": "Classification and Color",
     "section": "🔬💧 Welcome Back, Scientists!",
-    "text": "🔬💧 Welcome Back, Scientists!\n\n\n\n🎯 Checkpoint 1. a: Review—Looking back to Workshop #1\n\n\n\nLet’s remember what we learned during workshop #1:\n\nThe role of nitrogen in our water\nUsing statistics to summarize data\nUsing Python to store, summarize, and visualize data"
+    "text": "🔬💧 Welcome Back, Scientists!\n\n\n\n🎯 Checkpoint 1. a: Review—Looking back to Workshop #1\n\n\n\nLet’s remember what we learned during workshop #1:\n\nForms of nitrogen in water\nRoles of nitrogen in water\nUsing Python to store, summarize, and visualize data\nUsing statistics to summarize data"
   },
   {
     "objectID": "2-classification/index.html#meet-the-buoy",
     "href": "2-classification/index.html#meet-the-buoy",
     "title": "Classification and Color",
     "section": "Meet the Buoy!",
-    "text": "Meet the Buoy!\n\nThis is Smokey Buoy!\n\nThis class will be deploying Smokey Buoy(s) later this semester.\nWe will learn a bit about how it works, so you understand it before we use them.   \n\nUnder the cover, Smokey Buoy has a lot of parts!\n\nTwo of these include:\n\nA motorized unit that moves the test strips\nA built-in camera system to analyze those strips on the spot\n\n\n\n\nThe Buoy: Test Strips\n\nSmokey Buoy also uses test strips to monitor nitrate concentrations in water. The buoy’s test strips are on a roll rather than small strips. We place each pad on a very long piece of material and roll it up inside the buoy to keep it dry until dispensed.\n\n\n\n\n1. We begin with commercial test strips and remove the pads.  2. The pads are carefully spaced out and placed on a very long piece of material.  3. The material is rolled up inside the buoy.  4. The roll is carefully positioned to be fed through the motorized roller.\n\n\n\n\nThe Buoy: Motor & Camera\n\n\n\nModified from INSERT PAPER CITATION\n\n\n\nMotor\nLocate the motor near the top of the diagram. The motor drives the roller, which grips and advances the test strip roll.\n\n\nCamera\nWhen a test pad is in front of the camera, it takes a picture.\n\n\n\n🎥 See It In Action!\n\n  \n  Your browser does not support the video tag.\n\n\n\n\n🎯 Checkpoint 1. b: Compare and Contrast Human vs. Buoy Water Quality Testing\n\n\n🗣️ Think Pair Share: Thinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?"
+    "text": "Meet the Buoy!\n\nThis is Smokey Buoy!\n\nThis class will be deploying Smokey Buoy(s) later this semester.\nWe will learn a bit about how it works, so you understand it before we use them.  Video \n\nUnder the cover, Smokey Buoy has a lot of parts!\n\nTwo of these include:\n\nA motorized unit that moves the test strips\nA built-in camera system to analyze those strips on the spot\n\n\n\n\nThe Buoy: Test Strips\n\nSmokey Buoy also uses test strips to monitor nitrate concentrations in water. The buoy’s test strips are on a roll rather than small strips. We place each pad on a very long piece of material and roll it up inside the buoy to keep it dry until dispensed.\n\n\n\n\n1. We begin with commercial test strips and remove the pads.  2. The pads are carefully spaced out and placed on a very long piece of material.  3. The material is rolled up inside the buoy.  4. The roll is carefully positioned to be fed through the motorized roller.\n\n\n\n\nThe Buoy: Motor & Camera\n\n\n\nModified from INSERT PAPER CITATION\n\n\n\nMotor\nLocate the motor near the top of the diagram. The motor drives the roller, which grips and advances the test strip roll.\n\n\nCamera\nWhen a test pad is in front of the camera, it takes a picture.\n\n\n\n🎥 See It In Action!\n\n  \n  Your browser does not support the video tag.\n\n\n\n\n🎯 Checkpoint 1. b: Compare and Contrast Human vs. Buoy Water Quality Testing\n\n\n🗣️ Think Pair Share: Thinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?"
   },
   {
     "objectID": "2-classification/index.html#smokey-buoys-motorized-unit",
@@ -3595,7 +3595,7 @@
     "href": "2-classification/slides.html#color-rgb-values",
     "title": "Workshop #2",
     "section": "Color –> RGB Values",
-    "text": "Color –&gt; RGB Values\n\n\n🎯 Checkpoint 6. a: Exploring color and RGB Values\n\n\nMaterials Needed:\n\n💻 APPLET\n🍎🍊🍋‍🟩 Fruit from previous activity\n📝 Handout"
+    "text": "Color –&gt; RGB Values\n\n\n🎯 Checkpoint 6. a: Exploring color and RGB Values\n\n\nMaterials Needed:\n\n💻 APPLET\n🍎🍊🍏 Fruit from previous activity\n📝 Handout"
   },
   {
     "objectID": "2-classification/slides.html#color-rgb-values-1",

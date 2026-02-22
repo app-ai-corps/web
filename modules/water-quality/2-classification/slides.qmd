@@ -661,7 +661,7 @@ Each color is a combination of three values:
 :::
 ::::
 
-# Computers & Color Activity (Pt. 1)
+# 🎨 Computers & Color Activity (Pt. 1)
 
 ## Color --> RGB Values
 <hr>
@@ -674,7 +674,7 @@ Each color is a combination of three values:
 **Materials Needed:**  
 
 - 💻 [APPLET](../RGB-Applet-1.html){target="_blank" rel="noopener"}
-- 🍎🍊🍋‍🟩 Fruit from previous activity
+- 🍎🍊🍏 Fruit from previous activity
 - 📝 Handout
 :::
 
@@ -695,7 +695,7 @@ Each color is a combination of three values:
 - Each value can range from 0 to 255
 :::
 
-# Computers & Color Activity (Pt. 2)
+# 🎨 Computers & Color Activity (Pt. 2)
 
 ## RGB Values --> Color
 <hr>
