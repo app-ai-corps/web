@@ -72,6 +72,24 @@ function toggleMenu() {
 </div>
 
 <div class="contributor-card">
+  <a href="https://eecs.utk.edu/people/michela-taufer/" class="contributor-link">
+    <img src="assets/people/michela-taufer-1.jpg" alt="Michela Taufer" class="contributor-image">
+    <span class="contributor-name">Michela Taufer</span>
+    <span class="contributor-affiliation">UTK EECS Professor</span>
+  </a>
+</div>
+
+<div class="contributor-card">
+  <a href="https://cee.utk.edu/people/john-s-schwartz/" class="contributor-link">
+    <img src="assets/people/John_Schwartz.jpg" alt="John S. Schwartz" class="contributor-image">
+    <span class="contributor-name">John S. Schwartz</span>
+    <span class="contributor-affiliation">UTK CEE Professor</span>
+  </a>
+</div>
+
+
+
+<div class="contributor-card">
   <a href="https://www.linkedin.com/in/breanna-slessman-a9556a251/" class="contributor-link">
     <img src="assets/people/Breanna_Slessman.jpeg" alt="Breanna Slessman" class="contributor-image">
     <span class="contributor-name">Breanna Slessman</span>
