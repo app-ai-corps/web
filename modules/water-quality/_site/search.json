@@ -2811,7 +2811,7 @@
     "href": "2-classification/slides.html#discuss-how-does-your-model-work",
     "title": "Workshop #2",
     "section": "🗣️ Discuss: How Does Your Model Work?",
-    "text": "🗣️ Discuss: How Does Your Model Work?\n\n\n🎯 Checkpoint 5. a  Contrast how each layer type works in a neural net:\n- the input layer\n- the hidden layers, and\n- the output layer\n\n\nWith your group, think about the jobs of the input layer, hidden layers, and output layer in a CNN that works to classify cows.  📝 Record your thinking on the handout."
+    "text": "🗣️ Discuss: How Does Your Model Work?\n\n\n🎯 Checkpoint 5. a  Contrast how each layer type works in a neural net:\n- the input layer\n- the hidden layers, and\n- the output layer\n\n\nWith your group, think about the jobs of the input layer, hidden layers, and output layer in a CNN that works to classify cows. 🐮  📝 Record your thinking on the handout."
   },
   {
     "objectID": "2-classification/facilitator_notes.html#lesson-objective",
@@ -3623,13 +3623,13 @@
     "href": "2-classification/slides.html#exit-ticket-1",
     "title": "Workshop #2",
     "section": "🎟️ Exit Ticket",
-    "text": "🎟️ Exit Ticket\n\n  \n\n🎉 Great job! You’ve learned so much!Share what you’ve learned on the Exit Ticket."
+    "text": "🎟️ Exit Ticket\n\n  \n\n🎉 Great job! You’ve learned so much!\nShare what you’ve learned on the Exit Ticket."
   },
   {
     "objectID": "2-classification/slides.html#exercises-1",
     "href": "2-classification/slides.html#exercises-1",
     "title": "Workshop #2",
     "section": "🧠 Exercises",
-    "text": "🧠 Exercises\n\n  \n\nWant to practice what we’ve learned?Try the Exercises(Ask Your Teacher For the Link)."
+    "text": "🧠 Exercises\n\n  \n\nWant to practice what we’ve learned?\nTry the Exercises\n(Ask Your Teacher For the Link)."
   }
 ]

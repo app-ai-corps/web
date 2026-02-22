@@ -830,9 +830,12 @@ Just like the computer, predict what fruit this could be from!
 <br>
 <br>
 <br>
-<center>
-[🎉 Great job! You've learned so much!<br>Share what you've learned on the [**Exit Ticket**](https://forms.gle/23LAwb5GcBWAhd1K8).]{.thirtyfourpt-font}
-</center>
+
+:::{.thirtyfourpt-font style="text-align: center;"}
+🎉 Great job! You've learned so much!
+
+Share what you've learned on the [**Exit Ticket**](https://forms.gle/23LAwb5GcBWAhd1K8).
+:::
 
 # 🧠<br>Exercises
 
@@ -841,6 +844,11 @@ Just like the computer, predict what fruit this could be from!
 <br>
 <br>
 <br>
-<center>
-[Want to practice what we've learned?<br>Try the **Exercises**<br>(Ask Your Teacher For the Link).]{.thirtyfourpt-font}
-</center>
+
+:::{.thirtyfourpt-font style="text-align: center;"}
+Want to practice what we've learned?
+
+Try the **Exercises**
+
+(Ask Your Teacher For the Link).
+:::
