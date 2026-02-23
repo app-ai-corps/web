@@ -281,7 +281,7 @@ The reactive pad on the strip changes color when exposed to nitrates in water.
 :::
 ::: {.column width="45%"}
 #### Rollers
-The rollers grip the test strip and advance it one pad at a time.
+The rollers grip the test strip and advance it.
 :::
 ::::
 
@@ -307,7 +307,7 @@ The motor drives the rollers, which grip and advance the test strip.
 :::
 ::: {.column width="45%"}
 #### Camera
-When a test pad is positioned in front of the camera, it takes a picture to record the color.
+The camera acts like the "eyes" of the buoy. It watches for a pad to come into frame and, when it does, also takes a photo.
 :::
 ::::
 
