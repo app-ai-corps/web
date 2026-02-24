@@ -7,6 +7,13 @@ format: live-html
 sidebar: lesson-2
 ---
 
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 3.a:** Model Performance](#lst-model-performance)
+:::
+<hr>
+
 You have seen different examples of classification, now it's your turn to train your own classification model!
 
 :::{.gray-container}
@@ -145,7 +152,7 @@ While some models can be very accurate and high quality, others may struggle. No
 Get your lab sheet ready. Let's record some results!
 :::
 
-#### Steps—Part A
+#### Steps
 1. Trade your apple and orange with another group. No group should have the exact same fruits you trained the model with.
 
 2. Take your lab sheet and review the observation table. The first item to test is an apple. If the model works well, what will it predict? Record this in the second column.
@@ -160,8 +167,17 @@ Get your lab sheet ready. Let's record some results!
 
 ### Reflecting
 
+:::{#lst-model-performance}
+
+```{pyodide}
+#| include: false
+
+# Fake block to make checkpoint work
+```
+
 How did your model perform?  
 Were any objects classified incorrectly?  
-Were any objects classified with low confidence (< 80%)?  
-<br>
+Were any objects classified with low confidence (< 80%)?
+
 Discuss these questions (and your model) with your group.
+:::

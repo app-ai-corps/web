@@ -32,7 +32,7 @@ Which banana(s) would you eat?
 
 <br><br><br>
 
-#### Classification of Ripeness (Ripe / Not)
+## Classification of Ripeness (Ripe / Not)
 We can now use AI technology to identify exactly which crops in a field are ripe and ready to be picked. See the graphic below from the University of Maryland [^1] to understand how this technology works.
 
 ![](images/ripe_strawberry_detection_umd.png)
@@ -50,6 +50,7 @@ Review the figure above. In image (b), what do you think the yellow represents? 
 
 <br><br><br>
 
+## Data Ownership
 :::{#lst-strawberry-discussion1}
 
 ```{pyodide}
