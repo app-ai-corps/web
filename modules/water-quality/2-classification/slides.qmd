@@ -346,11 +346,11 @@ Thinking back to the nitrates activity from last week...
 <hr>
 
 - AI can help make classification decisions, saving time and labor for farmers  
-- Example: At University of Maryland, AI is used to identify ripe crops in fields
+- Example: At University of Maryland, AI is used to identify ripe crops in fields [^1]
 
 ![](images/ripe_strawberry_detection_umd_strawberriesonly.png){fig-align="center"}
 
-
+[^1]:Liu, T., Chopra, N., & Samtani, J. (2022). Information system for detecting strawberry fruit locations and ripeness conditions in a farm. Biology and Life Science Forum, 16 (1), https://doi.org/10.3390/IECHo2022-12488.
 
 ## Use of Classification in Agriculture
 <hr>
@@ -416,7 +416,7 @@ Thinking back to the nitrates activity from last week...
 <br>
 <br>
 
-## Multiclass Classification Example [^1]
+## Multiclass Classification Example [^2]
 <hr>
 ```{=html}
 <center>
@@ -427,7 +427,7 @@ Thinking back to the nitrates activity from last week...
 </center>
 ```
 
-[^1]: Project from University of Georgia, Athens
+[^2]: Drake, A. (2025, April 26). AI for agriculture: How Georgians use robots on the farm [Video]. WRDW. https://www.wrdw.com/2025/04/26/ai-agriculture-how-georgians-use-robots-farm/
 
 
 
