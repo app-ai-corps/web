@@ -107,10 +107,14 @@ We can also classify into **multiclass** results like apple/orange/banana or rip
 
 For example, see the project from the University of Georgia, Athens [^2] below that uses multiclass classification to sort lemons, discarding those that are underripe or molded and retaining only those that are ripe.
 
+```{=html}
+<center>
 <video width="80%" controls>
   <source src="images/ag-lemons-ugaathens-clip.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+</center>
+```
 
 ### More on Classification with AI
 As the video notes, computers can make classification decisions very quickly.
