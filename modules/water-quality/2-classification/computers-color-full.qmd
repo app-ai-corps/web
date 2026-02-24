@@ -1,0 +1,145 @@
+---
+title: "How Do Computers See Color?"
+crossref:
+  lst-title: "🎯 Checkpoint 7."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-2
+---
+
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 7.a:** Using RGB Values to Create Color](#lst-CreatingColor)
+- [**Checkpoint 7.b:** Using Color to Predict Fruit](#lst-PredictingFruit)
+:::
+
+In the last activity, as with all pixels, each had a value for Red (R), Green (G), and Blue (B). The values for each can range from 0 to 255. Let's take a closer look at what these values mean. We'll use the tool below to explore some values.
+
+:::{.gray-container}
+
+```{=html}
+<div id="rgb-widgets-card" style="max-width:720px;margin:18px auto;font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
+  <h3 style="margin:0 0 8px 0;font-size:18px">Slide the R, G, or B to see how it affects the color of the square!</h3>
+
+  <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start">
+    <div style="flex:1;min-width:260px;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <div style="width:56px;font-weight:600;text-align:right">R:</div>
+        <input id="rRange" type="range" min="0" max="255" step="1" value="128" aria-label="Red" style="flex:1">
+        <div id="rVal" style="width:56px;text-align:center;font-family:monospace;font-weight:600;background:#f1f3f5;padding:6px 8px;border-radius:6px;border:1px solid #eee">128</div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <div style="width:56px;font-weight:600;text-align:right">G:</div>
+        <input id="gRange" type="range" min="0" max="255" step="1" value="128" aria-label="Green" style="flex:1">
+        <div id="gVal" style="width:56px;text-align:center;font-family:monospace;font-weight:600;background:#f1f3f5;padding:6px 8px;border-radius:6px;border:1px solid #eee">128</div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <div style="width:56px;font-weight:600;text-align:right">B:</div>
+        <input id="bRange" type="range" min="0" max="255" step="1" value="128" aria-label="Blue" style="flex:1">
+        <div id="bVal" style="width:56px;text-align:center;font-family:monospace;font-weight:600;background:#f1f3f5;padding:6px 8px;border-radius:6px;border:1px solid #eee">128</div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:10px;align-items:center">
+      <div id="colorPreview" role="img" aria-label="Color preview" style="width:200px;height:200px;border-radius:8px;border:1px solid #dcdcdc;background:rgb(128,128,128)"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  const clamp = (v, a=0, b=255) => Math.min(Math.max(Math.round(v), a), b);
+
+  const rRange = document.getElementById('rRange');
+  const gRange = document.getElementById('gRange');
+  const bRange = document.getElementById('bRange');
+  const rVal = document.getElementById('rVal');
+  const gVal = document.getElementById('gVal');
+  const bVal = document.getElementById('bVal');
+  const colorPreview = document.getElementById('colorPreview');
+
+  const state = {
+    r: clamp(parseInt(rRange.value, 10)),
+    g: clamp(parseInt(gRange.value, 10)),
+    b: clamp(parseInt(bRange.value, 10))
+  };
+
+  window.latest_widget_values = { r: state.r, g: state.g, b: state.b };
+
+  function updateFromInputs() {
+    state.r = clamp(parseInt(rRange.value, 10));
+    state.g = clamp(parseInt(gRange.value, 10));
+    state.b = clamp(parseInt(bRange.value, 10));
+
+    rVal.textContent = state.r;
+    gVal.textContent = state.g;
+    bVal.textContent = state.b;
+
+    colorPreview.style.background = `rgb(${state.r}, ${state.g}, ${state.b})`;
+
+    window.latest_widget_values.r = state.r;
+    window.latest_widget_values.g = state.g;
+    window.latest_widget_values.b = state.b;
+  }
+
+  [rRange, gRange, bRange].forEach(el => {
+    el.addEventListener('input', updateFromInputs);
+    el.addEventListener('change', updateFromInputs);
+  });
+
+  updateFromInputs();
+
+  window.getLatestWidgetValues = () => ({...window.latest_widget_values});
+})();
+</script>
+```
+
+:::
+
+### Let's Try Some RGB Values!
+
+:::{#lst-CreatingColor}
+
+```{pyodide}
+#| include: false
+
+# Fake block to make checkpoint work
+```
+
+Use the slider tool above to answer the RGB questions below.
+:::
+
+As you progress through the questions below, record your observations on the handout.
+
+1. Slide all values to zero. When R = 0, G = 0, and B = 0, what color do you see?
+
+2. Slide all values to 255. When R = 255, G = 255, and B = 255, what color do you see?
+
+3. Slide all values to 0. Change R to 255. What happens to the color?
+
+4. Slide all values to 0. Change G to 255. What happens to the color?
+
+5. Slide all values to 0. Change B to 255. What happens to the color?
+
+Now let's try some of the colors you obsevered in the last activity. Get your handout ready!
+
+6. Adjust the sliders to the RGB values you recorded for your apple. What color do you see? Is it similar to your apple?
+
+7.  Repeat this for your orange's RGB values. What color do you see? Is it similar to your orange?
+
+8. Finally, repeat this for your lime's RGB values. What color do you see? Is it similar to your lime?
+
+
+:::{#lst-PredictingFruit}
+
+```{pyodide}
+#| include: false
+
+# Fake block to make checkpoint work
+```
+
+What color does this RGB value represent? (110, 164, 212) Just like the computer, predict what fruit this could be from!
+:::

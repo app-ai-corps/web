@@ -42,42 +42,8 @@ Review—Looking back to Workshop #1
 ## Meet the Buoy!
 
 - This is Smokey Buoy!
-  - This class will be deploying Smokey Buoy(s) later this semester.
-  - We will learn a bit about how it works, so you understand it before we use them.
-  <br><br>
-![](images/buoy-video-intro.mp4)
-<br><br>
-- Under the cover, Smokey Buoy has a lot of parts!
-  - Two of these include:
-    - A motorized unit that moves the test strips
-    - A built-in camera system to analyze those strips on the spot
 
-### The Buoy: Test Strips
-
-- Smokey Buoy also uses test strips to monitor nitrate concentrations in water. The buoy's test strips are on a roll rather than small strips. We place each pad on a very long piece of material and roll it up inside the buoy to keep it dry until dispensed.
-
-![1. We begin with commercial test strips and remove the pads. <br> 2. The pads are carefully spaced out and placed on a very long piece of material. <br> 3. The material is rolled up inside the buoy. <br> 4. The roll is carefully positioned to be fed through the motorized roller.](images/buoy_test_strip_roll.png)
-
-### The Buoy: Motor & Camera
-
-![Modified from INSERT PAPER CITATION](images/buoy_diagram_modified.png){width="50%"}
-
-#### Motor
-Locate the motor near the top of the diagram. The motor drives the roller, which grips and advances the test strip roll.
-
-#### Camera
-When a test pad is in front of the camera, it takes a picture.
-
-### 🎥 See It In Action!
-
-```{=html}
-<center>
-<video width="80%" controls>
-  <source src="images/buoy-classification.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-</center>
-```
+![](images/buoy_diagram_modified.png){width="50%"}
 
 :::{#lst-computerizedtesting}
 
