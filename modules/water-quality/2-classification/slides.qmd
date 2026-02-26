@@ -348,7 +348,7 @@ Thinking back to the nitrates activity from last week...
 - AI can help make classification decisions, saving time and labor for farmers  
 - Example: At University of Maryland, AI is used to identify ripe crops in fields [^1]
 
-![](images/ripe_strawberry_detection_umd_strawberriesonly.png){fig-align="center"}
+![](images/ripe_strawberry_detection_umd_strawberriesonly.png){fig-align="center" height="450"}
 
 [^1]: Liu, T., Chopra, N., & Samtani, J. (2022). Information system for detecting strawberry fruit locations and ripeness conditions in a farm. Biology and Life Science Forum, 16 (1), https://doi.org/10.3390/IECHo2022-12488.
 
@@ -556,7 +556,7 @@ Why?
   Your browser does not support the video tag.
 </video> -->
 
-<iframe src="https://drive.google.com/file/d/1OIjSpeVHHgxG2_YDswYqrS_4BC2tCaVy/preview" width="80%"></iframe>
+<iframe src="https://drive.google.com/file/d/1OIjSpeVHHgxG2_YDswYqrS_4BC2tCaVy/preview" width="80%" height="80%"></iframe>
 </center>
 ```
 # Neural Networks
@@ -613,6 +613,7 @@ Contrast how each layer type works in a neural net:
   - the hidden layers, and  
   - the output layer  
 
+What might each layer do if your model is trying to classify whether or not an image is a cow? 🐮
 :::
 
 # Computers & Color
