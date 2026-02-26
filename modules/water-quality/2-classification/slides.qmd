@@ -350,7 +350,7 @@ Thinking back to the nitrates activity from last week...
 
 ![](images/ripe_strawberry_detection_umd_strawberriesonly.png){fig-align="center"}
 
-[^1]:Liu, T., Chopra, N., & Samtani, J. (2022). Information system for detecting strawberry fruit locations and ripeness conditions in a farm. Biology and Life Science Forum, 16 (1), https://doi.org/10.3390/IECHo2022-12488.
+[^1]: Liu, T., Chopra, N., & Samtani, J. (2022). Information system for detecting strawberry fruit locations and ripeness conditions in a farm. Biology and Life Science Forum, 16 (1), https://doi.org/10.3390/IECHo2022-12488.
 
 ## Use of Classification in Agriculture
 <hr>
