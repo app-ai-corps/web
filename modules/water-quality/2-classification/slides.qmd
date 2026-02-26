@@ -347,7 +347,8 @@ Thinking back to the nitrates activity from last week...
 
 - AI can help make classification decisions, saving time and labor for farmers  
 - Example: At University of Maryland, AI is used to identify ripe crops in fields
-![Source: Liu, T., Chopra, N., & Samtani, J. (2022). Information system for detecting strawberry fruit locations and ripeness conditions in a farm. Biology and Life Science Forum, 16 (1), https://doi.org/10.3390/IECHo2022-12488](images/ripe_strawberry_detection_umd_strawberriesonly.png){fig-align="center" height="250"}
+
+![Source: Liu, T., Chopra, N., & Samtani, J. (2022). Information system for detecting strawberry fruit locations and ripeness conditions in a farm. Biology and Life Science Forum, 16 (1), https://doi.org/10.3390/IECHo2022-12488](images/ripe_strawberry_detection_umd_strawberriesonly.png){fig-align="center" height="450"}
 
 ## Use of Classification in Agriculture
 <hr>
@@ -413,7 +414,7 @@ Thinking back to the nitrates activity from last week...
 <br>
 <br>
 
-## Multiclass Classification Example [^2]
+## Multiclass Classification Example [^1]
 <hr>
 ```{=html}
 <center>
@@ -424,7 +425,7 @@ Thinking back to the nitrates activity from last week...
 </center>
 ```
 
-[^2]: Drake, A. (2025, April 26). AI for agriculture: How Georgians use robots on the farm [Video]. WRDW. https://www.wrdw.com/2025/04/26/ai-agriculture-how-georgians-use-robots-farm/
+[^1]: Drake, A. (2025, April 26). AI for agriculture: How Georgians use robots on the farm [Video]. WRDW. https://www.wrdw.com/2025/04/26/ai-agriculture-how-georgians-use-robots-farm/
 
 
 
@@ -548,11 +549,6 @@ Why?
 
 ```{=html}
 <center>
-<!-- <video width="80%" controls>
-  <source src="images/buoy-classification.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video> -->
-
 <iframe src="https://drive.google.com/file/d/1OIjSpeVHHgxG2_YDswYqrS_4BC2tCaVy/preview" width="80%" height="500"></iframe>
 </center>
 ```
