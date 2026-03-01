@@ -1,0 +1,54 @@
+---
+title: "Regression"
+crossref:
+  lst-title: "🎯 Checkpoint 1."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-3
+---
+
+**This module is designed to be used in conjunction with the Lesson 3 slide deck and other resources located in the facilitator's guide.**
+
+::: {.gray-container}
+
+**Lesson Objective:** In this lesson, you will learn how to use scatterplots and regression lines in Python to predict nitrate levels from RGB color values on test strips.
+
+**Materials Needed:**  
+- A computer  with a webcam  
+- A web browser (Chrome, Firefox, or Safari)
+:::
+
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 1.a:** Recalling Workshop #2](#lst-review)
+
+:::
+<br>
+
+## 🔬💧 Welcome Back, Scientists!  
+
+:::{#lst-review}
+- Let's remember what we learned during workshop #2:
+  - AI: Classification
+  - Agricultural Uses of Classification
+  - Data Ownership
+  - Computers & Color
+
+Review—Looking back to Workshop #2
+:::
+
+## Remember Me, Smokey Buoy!?
+We met Smokey Buoy last workshop and learned a bit about how it works.
+
+![](images/smokey_buoy.png)
+
+Let's recall Smokey's components and how they work together:    
+![](images/buoy_diagram_modified_camera.png)
+
+### 🎥 Smokey's Camera
+- Specifically, Smokey Buoy's camera has two jobs:  
+  - Watch for a test pad 
+    - We talked about this last workshop! 
+  - When pad is present, take a picture
+    - We'll discuss what happens with the picture today!

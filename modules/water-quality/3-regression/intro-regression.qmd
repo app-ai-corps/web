@@ -1,0 +1,9 @@
+---
+title: "Intro to Regression"
+crossref:
+  lst-title: "🎯 Checkpoint 2."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-3
+---
+

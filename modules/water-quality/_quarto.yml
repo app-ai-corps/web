@@ -96,6 +96,26 @@ website:
         - text: "---"
         - text: "Optional Exercise"
           href: #
+
+    - title: "Lesson 3: Regression" 
+      id: lesson-3
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+        - <b>Lesson Contents</b>
+        - text: "0. Computers & Color"
+          href: 2-classification/computers-color
+        - text: "1. Overview"
+          href: 3-classification/
+        - text: "2. Intro to Regression"
+          href: 3-classification/intro-regression
+        - text: "---"
+        - text: "8. Exit Ticket"
+          href: #
+        - text: "---"
+        - text: "Optional Exercise"
+          href: #      
         
 
 format:
