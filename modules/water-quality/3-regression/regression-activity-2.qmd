@@ -1,0 +1,12 @@
+---
+title: "Regression Activity - Pt. 2: Regression Modeling"
+crossref:
+  lst-title: "🎯 Checkpoint 5."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-3
+---
+
+## Regression Modeling
+
+

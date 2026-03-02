@@ -112,8 +112,11 @@ website:
           href: 3-regression/direct-variation
         - text: "3. Linear Regression"
           href: 3-regression/intro-regression
-        - text: "4. RGB & Scatterplots - Pt. I"
-          href: 3-regression/rgb-scatterplots-1
+        - text: "---"
+        - text: "4. Regression Activity - Pt. I"
+          href: 3-regression/regression-actiivity-1
+        - text: "4. Regression Activity - Pt. II"
+          href: 3-regression/regression-actiivity-2
         - text: "---"
         - text: "8. Exit Ticket"
           href: #

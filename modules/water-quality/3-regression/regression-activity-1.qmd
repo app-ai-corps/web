@@ -1,0 +1,45 @@
+---
+title: "Regression Activity - Pt. I: RGB and Scatterplots"
+crossref:
+  lst-title: "🎯 Checkpoint 4."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-3
+---
+
+## RGB and Scatterplots
+
+During this activity, we'll learn a bit more about linear regression and how the buoy can use regression to predict nitrate values.
+
+:::{.gray-container}
+**Materials Needed:**
+- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html)
+- Deck of Purple "Nitrate Test Pad" Cards
+- Pencil
+- Handout
+- Dot Stickers
+- Large Graph Paper
+- Poster Markers
+:::
+<br>
+
+## RGB Activity (Part 1)
+### Instructions
+1. Open the [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html) in a new tab.
+2. Find card #1 in your deck and hold it in front of your webcam.
+3. Using the middle square in the frame, record the RGB values for the card.
+4. Repeat this process for all other cards in your deck.
+
+<hr>
+
+## Scatterplots (Part 2)
+### Instructions
+
+:::{.ltorange-container}
+Now you'll work in groups. Each group will be assigned either to **red**, **green**, or **blue**.
+:::
+
+1. Using the round stickies and graph paper, create a scatterplot.
+2. Place the color values (either red, green or blue) on the x-axis and the nitrate concentrations on the y-axis.
+
+
