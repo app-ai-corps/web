@@ -102,12 +102,16 @@ website:
       align: left
       contents:
         - <b>Lesson Contents</b>
+        - text: "---"
         - text: "0. Computers & Color"
           href: 2-classification/computers-color
+        - text: "---"
         - text: "1. Overview"
           href: 3-regression/
-        - text: "2. Intro to Regression"
-          href: 3-regression/intro-regression
+        - text: "2. Direct Variation"
+          href: 3-regression/direct-variation
+        - text: "3. Linear Regression"
+          href: 3-regression/linear-regression
         - text: "---"
         - text: "8. Exit Ticket"
           href: #

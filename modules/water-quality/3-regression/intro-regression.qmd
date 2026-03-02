@@ -1,51 +1,41 @@
 ---
 title: "Intro to Regression"
 crossref:
-  lst-title: "🎯 Checkpoint 2."
+  lst-title: "🎯 Checkpoint 3."
   lst-labels: alpha a
 format: live-html
 sidebar: lesson-3
 ---
 
-## Introduction to Regression
+## The Case for Regression
+- Bob's cubes saved us money, but now the heights of our towers are all over the place.
+- We need to predict the heights of our towers.
 
-- Last workshop, we learned about **classification**.  
-- In this workshop, we will learn about **regression**.  
-- Regression is all about **predicting** something from something else.
+:::{.columns}
 
+:::{.column}
 
-### A Scenario
-- We want to build a tower
-- We have 1" inch cubes to use  
-![](images/green-cube.png){width=35%}
+![This is only true with the original, perfectly 1" cubes](images/cube-plot-11-noregline.png){width=50%}
 
-### Let's Predict!
-** NOTE: This needs to be a series of slides when moved to slides.qmd...**
-- Let's predict the height of our tower, given the number of cubes we use.
+:::
 
-<table style="width:100%; border:none;">
-  <tr>
-    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; width:20%; border:none;">1</td>
-    <td style="border:none;"><img src="images/cube-plot-1.png" style="width:75%;"></td>
-  </tr>
-  <tr>
-    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">2</td>
-    <td style="border:none;"><img src="images/cube-plot-2.png" style="width:75%;"></td>
-  </tr>
-  <tr>
-    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">3</td>
-    <td style="border:none;"><img src="images/cube-plot-3.png" style="width:75%;"></td>
-  </tr>
-  <tr>
-    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">4</td>
-    <td style="border:none;"><img src="images/cube-plot-4.png" style="width:75%;"></td>
-  </tr>
-  <tr>
-    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">5</td>
-    <td style="border:none;"><img src="images/cube-plot-5.png" style="width:75%;"></td>
-  </tr>
-  <tr>
-    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">10</td>
-    <td style="border:none;"><img src="images/cube-plot-10.png" style="width:75%;"></td>
-  </tr>
-</table>
+:::{.column}
+
+![This is the reality with the Uncle Bob's cubes](images/cube-plot-unclebob.png){width=50%}
+
+:::
+
+:::
+
+### Question: How do we fit our line to the data?
+
+:::{.columns}
+
+:::{.column}
+![Very clear way to draw our predictive line.](images/cube-plot-11.png)
+:::
+
+:::{.column}
+![Need to use **regression**, a mathematical way to draw the best predictive line we can.](images/cube-plot-unclebob-regline.png)
+:::
+:::

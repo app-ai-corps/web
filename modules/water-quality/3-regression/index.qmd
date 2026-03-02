@@ -31,6 +31,7 @@ sidebar: lesson-3
 :::{#lst-review}
 - Let's remember what we learned during workshop #2:
   - AI: Classification
+    - Model Accuracy
   - Agricultural Uses of Classification
   - Data Ownership
   - Computers & Color
@@ -43,12 +44,24 @@ We met Smokey Buoy last workshop and learned a bit about how it works.
 
 ![](images/smokey_buoy.png)
 
-Let's recall Smokey's components and how they work together:    
-![](images/buoy_diagram_modified_camera.png)
+### Smokey Buoy: Components
 
-### 🎥 Smokey's Camera
-- Specifically, Smokey Buoy's camera has two jobs:  
-  - Watch for a test pad 
-    - We talked about this last workshop! 
+Let's recall Smokey's components and how they work together:    
+![](images/buoy_diagram_modified_fullylabeled.png){width=60%}
+
+### Smokey Buoy: 🎥 Camera
+:::: {.columns}
+
+::: {.column width="50%"}
+- Specifically, Smokey Buoy's camera has two jobs:
+  - Watch for a test pad
+    - We talked about this last workshop!
   - When pad is present, take a picture
     - We'll discuss what happens with the picture today!
+:::
+
+::: {.column width="50%"}
+![](images/buoy_diagram_modified_camera.png){width=75%}
+:::
+
+::::

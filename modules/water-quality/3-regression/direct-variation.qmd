@@ -1,0 +1,92 @@
+---
+title: "Direct Variation"
+crossref:
+  lst-title: "🎯 Checkpoint 2."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-3
+---
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 2.a:** Making a Prediction](#lst-prediction)
+
+:::
+<br>
+
+## Introduction to Regression
+
+- Last workshop, we learned about **classification**.  
+- In this workshop, we will learn about **regression**.  
+- Regression is all about **predicting** something from something else.
+
+
+### Scenario 1: Cube Towers
+- We want to build a tower
+- We have 1" inch cubes to use  
+![](images/green-cube.png){width=35%}
+
+#### Let's Predict!
+**NOTE: This needs to be a series of slides when moved to slides.qmd...**  
+- Let's predict the height of our tower, given the number of cubes we use.  
+
+<table style="width:100%; border:none;">
+  <tr>
+    <th style="text-align:center; border:none;"># of <img src="images/green-cube.png" style="width:40px; vertical-align:middle;"></th>
+    <th style="text-align:center; border:none;">height (inches)</th>
+    <th style="text-align:center; border:none;">plot</th>
+  </tr>
+  <tr>
+    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; width:20%; border:none;">1</td>
+    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; width:20%; border:none;">1</td>
+    <td style="border:none;"><img src="images/cube-plot-1.png" style="width:75%;"></td>
+  </tr>
+  <tr>
+    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">2</td>
+    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">2</td>
+    <td style="border:none;"><img src="images/cube-plot-2.png" style="width:75%;"></td>
+  </tr>
+  <tr>
+    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">3</td>
+    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">3</td>
+    <td style="border:none;"><img src="images/cube-plot-3.png" style="width:75%;"></td>
+  </tr>
+  <tr>
+    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">4</td>
+    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">4</td>
+    <td style="border:none;"><img src="images/cube-plot-4.png" style="width:75%;"></td>
+  </tr>
+  <tr>
+    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">5</td>
+    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">5</td>
+    <td style="border:none;"><img src="images/cube-plot-5.png" style="width:75%;"></td>
+  </tr>
+  <tr>
+    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">10</td>
+    <td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">10</td>
+    <td style="border:none;"><img src="images/cube-plot-10.png" style="width:75%;"></td>
+  </tr>
+</table>
+
+:::{#lst-review}
+
+How tall will our tower be if we use 100 cubes? How do you know?
+
+Predicting tower height.
+:::
+
+<hr>
+
+### Scenario 2: Cheap Uncle Bob
+- We want to build a much taller tower, but we ran out of 1" cubes.
+- Uncle Bob has a plan. He volunteers to make us more cubes for cheaper than we can buy them.
+- Bob makes us a lot of cubes:
+
+![](images/green-cubes-multsizing.png){width=35%}
+Oh no! Uncle Bob's cubes are of all of slightly different heights!
+
+:::{#lst-prediction-unclebob}
+How will our new cubes from Uncle Bob affect our tower height predictions?
+
+Predicting tower height using Uncle Bob's cubes.
+:::

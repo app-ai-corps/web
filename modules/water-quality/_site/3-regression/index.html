@@ -106,20 +106,16 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">L2: Classification &amp; Color</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../3-gradient-updates/index">
- <span class="dropdown-text">L3: Gradient Updates</span></a>
+    <a class="dropdown-item" href="../3-regression/index">
+ <span class="dropdown-text">L3: Regression</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../4-cnn/index">
- <span class="dropdown-text">L4: CNNs</span></a>
+    <a class="dropdown-item" href="../4-physical-computing/index">
+ <span class="dropdown-text">L4: Physical Computing</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../5-sensor-data/index">
  <span class="dropdown-text">L5: Sensor Data</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../6-gis/index">
- <span class="dropdown-text">L6: GIS Mapping</span></a>
   </li>  
     </ul>
   </li>
@@ -163,21 +159,23 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
  <span class="menu-text"><b>Lesson Contents</b></span>
   </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../2-classification/computers-color" class="sidebar-item-text sidebar-link">
  <span class="menu-text">0. Computers &amp; Color</span></a>
   </div>
 </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../3-classification/" class="sidebar-item-text sidebar-link">
+  <a href="../3-regression/" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">1. Overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../3-classification/intro-regression" class="sidebar-item-text sidebar-link">
+  <a href="../3-regression/intro-regression" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2. Intro to Regression</span></a>
   </div>
 </li>
@@ -202,7 +200,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#welcome-back-scientists" id="toc-welcome-back-scientists" class="nav-link active" data-scroll-target="#welcome-back-scientists">🔬💧 Welcome Back, Scientists!</a></li>
   <li><a href="#remember-me-smokey-buoy" id="toc-remember-me-smokey-buoy" class="nav-link" data-scroll-target="#remember-me-smokey-buoy">Remember Me, Smokey Buoy!?</a>
   <ul class="collapse">
-  <li><a href="#smokeys-camera" id="toc-smokeys-camera" class="nav-link" data-scroll-target="#smokeys-camera">🎥 Smokey’s Camera</a></li>
+  <li><a href="#smokey-buoy-components" id="toc-smokey-buoy-components" class="nav-link" data-scroll-target="#smokey-buoy-components">Smokey Buoy: Components</a></li>
+  <li><a href="#smokey-buoy-camera" id="toc-smokey-buoy-camera" class="nav-link" data-scroll-target="#smokey-buoy-camera">Smokey Buoy: 🎥 Camera</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -254,7 +253,10 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Let’s remember what we learned during workshop #2:
 <ul>
-<li>AI: Classification</li>
+<li>AI: Classification
+<ul>
+<li>Model Accuracy</li>
+</ul></li>
 <li>Agricultural Uses of Classification</li>
 <li>Data Ownership</li>
 <li>Computers &amp; Color</li>
@@ -268,10 +270,15 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="remember-me-smokey-buoy">Remember Me, Smokey Buoy!?</h2>
 <p>We met Smokey Buoy last workshop and learned a bit about how it works.</p>
 <p><img src="images/smokey_buoy.png" class="img-fluid"></p>
+<section id="smokey-buoy-components" class="level3">
+<h3 class="anchored" data-anchor-id="smokey-buoy-components">Smokey Buoy: Components</h3>
 <p>Let’s recall Smokey’s components and how they work together:<br>
-<img src="images/buoy_diagram_modified_camera.png" class="img-fluid"></p>
-<section id="smokeys-camera" class="level3">
-<h3 class="anchored" data-anchor-id="smokeys-camera">🎥 Smokey’s Camera</h3>
+<img src="images/buoy_diagram_modified_fullylabeled.png.png" class="img-fluid" style="width:75.0%"></p>
+</section>
+<section id="smokey-buoy-camera" class="level3">
+<h3 class="anchored" data-anchor-id="smokey-buoy-camera">Smokey Buoy: 🎥 Camera</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>Specifically, Smokey Buoy’s camera has two jobs:
 <ul>
@@ -285,6 +292,10 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul></li>
 </ul>
+</div><div class="column" style="width:50%;">
+<p><img src="images/buoy_diagram_modified_camera.png" class="img-fluid" style="width:75.0%"></p>
+</div>
+</div>
 
 
 <script type="ojs-module-contents">

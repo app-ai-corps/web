@@ -3637,14 +3637,14 @@
     "href": "3-regression/intro-regression.html",
     "title": "Intro to Regression",
     "section": "",
-    "text": "Last workshop, we learned about classification.\n\nIn this workshop, we will learn about regression.\n\nRegression is all about predicting something from something else.\n\n\n\n\nWe want to build a tower\nWe have 1” inch cubes to use\n\n\n\n\n\n** NOTE: This needs to be a series of slides when moved to slides.qmd…** - Let’s predict the height of our tower, given the number of cubes we use.\n\n\n\n1\n\n\n\n\n\n\n\n2\n\n\n\n\n\n\n\n3\n\n\n\n\n\n\n\n4\n\n\n\n\n\n\n\n5\n\n\n\n\n\n\n\n10"
+    "text": "Bob’s cubes saved us money, but now the heights of our towers are all over the place.\nWe need to predict the heights of our towers.\n\n\n\n\n\n\nThis is only true with the original, perfectly 1” cubes\n\n\n\n\n\n\nThis is the reality with the Uncle Bob’s cubes\n\n\n\n\n\n\n\n\n\n\n\nVery clear way to draw our predictive line.\n\n\n\n\n\n\nNeed to use regression, a mathematical way to draw the best predictive line we can."
   },
   {
     "objectID": "3-regression/intro-regression.html#introduction-to-regression",
     "href": "3-regression/intro-regression.html#introduction-to-regression",
-    "title": "Intro to Regression",
-    "section": "",
-    "text": "Last workshop, we learned about classification.\n\nIn this workshop, we will learn about regression.\n\nRegression is all about predicting something from something else.\n\n\n\n\nWe want to build a tower\nWe have 1” inch cubes to use\n\n\n\n\n\n** NOTE: This needs to be a series of slides when moved to slides.qmd…** - Let’s predict the height of our tower, given the number of cubes we use.\n\n\n\n1\n\n\n\n\n\n\n\n2\n\n\n\n\n\n\n\n3\n\n\n\n\n\n\n\n4\n\n\n\n\n\n\n\n5\n\n\n\n\n\n\n\n10"
+    "title": "Direct Variation",
+    "section": "Introduction to Regression",
+    "text": "Introduction to Regression\n\nLast workshop, we learned about classification.\n\nIn this workshop, we will learn about regression.\n\nRegression is all about predicting something from something else.\n\n\nScenario 1: Cube Towers\n\nWe want to build a tower\nWe have 1” inch cubes to use\n\n\n\nLet’s Predict!\nNOTE: This needs to be a series of slides when moved to slides.qmd…\n- Let’s predict the height of our tower, given the number of cubes we use.\n\n\n\n# of \n\n\nheight (inches)\n\n\nplot\n\n\n\n\n1\n\n\n1\n\n\n\n\n\n\n\n2\n\n\n2\n\n\n\n\n\n\n\n3\n\n\n3\n\n\n\n\n\n\n\n4\n\n\n4\n\n\n\n\n\n\n\n5\n\n\n5\n\n\n\n\n\n\n\n10\n\n\n10\n\n\n\n\n\n\n\n\n\n🎯 Checkpoint 2. a: Predicting tower height.\n\n\nHow tall will our tower be if we use 100 cubes? How do you know?\n\n\n\n\n\n\n\nScenario 2: Cheap Uncle Bob\n\nWe want to build a much taller tower, but we ran out of 1” cubes.\nUncle Bob has a plan. He volunteers to make us more cubes for cheaper than we can buy them.\nBob makes us a lot of cubes:\n\n Oh no! Uncle Bob’s cubes are of all of slightly different heights!\n\n\n\n🎯 Checkpoint 2. b: Predicting tower height using Uncle Bob’s cubes.\n\n\nHow will our new cubes from Uncle Bob affect our tower height predictions?"
   },
   {
     "objectID": "2-classification/index-full.html",
@@ -3770,13 +3770,34 @@
     "href": "3-regression/index.html#welcome-back-scientists",
     "title": "Regression",
     "section": "🔬💧 Welcome Back, Scientists!",
-    "text": "🔬💧 Welcome Back, Scientists!\n\n\n\n🎯 Checkpoint 1. a: Review—Looking back to Workshop #2\n\n\n\nLet’s remember what we learned during workshop #2:\n\nAI: Classification\nAgricultural Uses of Classification\nData Ownership\nComputers & Color"
+    "text": "🔬💧 Welcome Back, Scientists!\n\n\n\n🎯 Checkpoint 1. a: Review—Looking back to Workshop #2\n\n\n\nLet’s remember what we learned during workshop #2:\n\nAI: Classification\n\nModel Accuracy\n\nAgricultural Uses of Classification\nData Ownership\nComputers & Color"
   },
   {
     "objectID": "3-regression/index.html#remember-me-smokey-buoy",
     "href": "3-regression/index.html#remember-me-smokey-buoy",
     "title": "Regression",
     "section": "Remember Me, Smokey Buoy!?",
-    "text": "Remember Me, Smokey Buoy!?\nWe met Smokey Buoy last workshop and learned a bit about how it works.\n\nLet’s recall Smokey’s components and how they work together:\n\n\n🎥 Smokey’s Camera\n\nSpecifically, Smokey Buoy’s camera has two jobs:\n\nWatch for a test pad\n\nWe talked about this last workshop!\n\nWhen pad is present, take a picture\n\nWe’ll discuss what happens with the picture today!"
+    "text": "Remember Me, Smokey Buoy!?\nWe met Smokey Buoy last workshop and learned a bit about how it works.\n\n\nSmokey Buoy: Components\nLet’s recall Smokey’s components and how they work together:\n\n\n\nSmokey Buoy: 🎥 Camera\n\n\n\nSpecifically, Smokey Buoy’s camera has two jobs:\n\nWatch for a test pad\n\nWe talked about this last workshop!\n\nWhen pad is present, take a picture\n\nWe’ll discuss what happens with the picture today!"
+  },
+  {
+    "objectID": "3-regression/direct-variation.html",
+    "href": "3-regression/direct-variation.html",
+    "title": "Direct Variation",
+    "section": "",
+    "text": "Checkpoints on this Page:\n\nCheckpoint 2.a: Making a Prediction"
+  },
+  {
+    "objectID": "3-regression/direct-variation.html#introduction-to-regression",
+    "href": "3-regression/direct-variation.html#introduction-to-regression",
+    "title": "Direct Variation",
+    "section": "Introduction to Regression",
+    "text": "Introduction to Regression\n\nLast workshop, we learned about classification.\n\nIn this workshop, we will learn about regression.\n\nRegression is all about predicting something from something else.\n\n\nScenario 1: Cube Towers\n\nWe want to build a tower\nWe have 1” inch cubes to use\n\n\n\nLet’s Predict!\nNOTE: This needs to be a series of slides when moved to slides.qmd…\n- Let’s predict the height of our tower, given the number of cubes we use.\n\n\n\n# of \n\n\nheight (inches)\n\n\nplot\n\n\n\n\n1\n\n\n1\n\n\n\n\n\n\n\n2\n\n\n2\n\n\n\n\n\n\n\n3\n\n\n3\n\n\n\n\n\n\n\n4\n\n\n4\n\n\n\n\n\n\n\n5\n\n\n5\n\n\n\n\n\n\n\n10\n\n\n10\n\n\n\n\n\n\n\n\n\n🎯 Checkpoint 2. a: Predicting tower height.\n\n\nHow tall will our tower be if we use 100 cubes? How do you know?\n\n\n\n\n\n\n\nScenario 2: Cheap Uncle Bob\n\nWe want to build a much taller tower, but we ran out of 1” cubes.\nUncle Bob has a plan. He volunteers to make us more cubes for cheaper than we can buy them.\nBob makes us a lot of cubes:\n\n Oh no! Uncle Bob’s cubes are of all of slightly different heights!\n\n\n\n🎯 Checkpoint 2. b: Predicting tower height using Uncle Bob’s cubes.\n\n\nHow will our new cubes from Uncle Bob affect our tower height predictions?"
+  },
+  {
+    "objectID": "3-regression/intro-regression.html#the-case-for-regression",
+    "href": "3-regression/intro-regression.html#the-case-for-regression",
+    "title": "Intro to Regression",
+    "section": "",
+    "text": "Bob’s cubes saved us money, but now the heights of our towers are all over the place.\nWe need to predict the heights of our towers.\n\n\n\n\n\n\nThis is only true with the original, perfectly 1” cubes\n\n\n\n\n\n\nThis is the reality with the Uncle Bob’s cubes\n\n\n\n\n\n\n\n\n\n\n\nVery clear way to draw our predictive line.\n\n\n\n\n\n\nNeed to use regression, a mathematical way to draw the best predictive line we can."
   }
 ]

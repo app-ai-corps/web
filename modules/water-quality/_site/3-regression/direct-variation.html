@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Intro to Regression</title>
+<title>Direct Variation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -144,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Intro to Regression</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Direct Variation</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -175,14 +175,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../3-regression/direct-variation" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Direct Variation</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../3-regression/linear-regression" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. Linear Regression</span></a>
+  <a href="../3-regression/intro-regression" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Intro to Regression</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
@@ -203,9 +197,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-case-for-regression" id="toc-the-case-for-regression" class="nav-link active" data-scroll-target="#the-case-for-regression">The Case for Regression</a>
+  <li><a href="#introduction-to-regression" id="toc-introduction-to-regression" class="nav-link active" data-scroll-target="#introduction-to-regression">Introduction to Regression</a>
   <ul class="collapse">
-  <li><a href="#question-how-do-we-fit-our-line-to-the-data" id="toc-question-how-do-we-fit-our-line-to-the-data" class="nav-link" data-scroll-target="#question-how-do-we-fit-our-line-to-the-data">Question: How do we fit our line to the data?</a></li>
+  <li><a href="#scenario-1-cube-towers" id="toc-scenario-1-cube-towers" class="nav-link" data-scroll-target="#scenario-1-cube-towers">Scenario 1: Cube Towers</a></li>
+  <li><a href="#scenario-2-cheap-uncle-bob" id="toc-scenario-2-cheap-uncle-bob" class="nav-link" data-scroll-target="#scenario-2-cheap-uncle-bob">Scenario 2: Cheap Uncle Bob</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -215,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Intro to Regression</h1>
+<h1 class="title">Direct Variation</h1>
 </div>
 
 
@@ -232,47 +227,142 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="the-case-for-regression" class="level2">
-<h2 class="anchored" data-anchor-id="the-case-for-regression">The Case for Regression</h2>
+<div class="ltblue-container">
+<p><strong>Checkpoints on this Page:</strong></p>
 <ul>
-<li>Bob’s cubes saved us money, but now the heights of our towers are all over the place.</li>
-<li>We need to predict the heights of our towers.</li>
+<li><a href="#lst-prediction"><strong>Checkpoint 2.a:</strong> Making a Prediction</a></li>
 </ul>
-<div class="columns">
-<div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/cube-plot-11-noregline.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption>This is only true with the original, perfectly 1” cubes</figcaption>
+</div>
+<p><br></p>
+<section id="introduction-to-regression" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-regression">Introduction to Regression</h2>
+<ul>
+<li>Last workshop, we learned about <strong>classification</strong>.<br>
+</li>
+<li>In this workshop, we will learn about <strong>regression</strong>.<br>
+</li>
+<li>Regression is all about <strong>predicting</strong> something from something else.</li>
+</ul>
+<section id="scenario-1-cube-towers" class="level3">
+<h3 class="anchored" data-anchor-id="scenario-1-cube-towers">Scenario 1: Cube Towers</h3>
+<ul>
+<li>We want to build a tower</li>
+<li>We have 1” inch cubes to use<br>
+<img src="images/green-cube.png" class="img-fluid" style="width:35.0%"></li>
+</ul>
+<section id="lets-predict" class="level4">
+<h4 class="anchored" data-anchor-id="lets-predict">Let’s Predict!</h4>
+<p><strong>NOTE: This needs to be a series of slides when moved to slides.qmd…</strong><br>
+- Let’s predict the height of our tower, given the number of cubes we use.</p>
+<table style="width:100%; border:none;">
+<tbody><tr>
+<th style="text-align:center; border:none;">
+# of <img src="images/green-cube.png" style="width:40px; vertical-align:middle;">
+</th>
+<th style="text-align:center; border:none;">
+height (inches)
+</th>
+<th style="text-align:center; border:none;">
+plot
+</th>
+</tr>
+<tr>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; width:20%; border:none;">
+1
+</td>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; width:20%; border:none;">
+1
+</td>
+<td style="border:none;">
+<img src="images/cube-plot-1.png" style="width:75%;">
+</td>
+</tr>
+<tr>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+2
+</td>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+2
+</td>
+<td style="border:none;">
+<img src="images/cube-plot-2.png" style="width:75%;">
+</td>
+</tr>
+<tr>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+3
+</td>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+3
+</td>
+<td style="border:none;">
+<img src="images/cube-plot-3.png" style="width:75%;">
+</td>
+</tr>
+<tr>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+4
+</td>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+4
+</td>
+<td style="border:none;">
+<img src="images/cube-plot-4.png" style="width:75%;">
+</td>
+</tr>
+<tr>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+5
+</td>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+5
+</td>
+<td style="border:none;">
+<img src="images/cube-plot-5.png" style="width:75%;">
+</td>
+</tr>
+<tr>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+10
+</td>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+10
+</td>
+<td style="border:none;">
+<img src="images/cube-plot-10.png" style="width:75%;">
+</td>
+</tr>
+</tbody></table>
+<div id="lst-review" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-review-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint 2.&nbsp;a: Predicting tower height.
+</figcaption>
+<div aria-describedby="lst-review-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p>How tall will our tower be if we use 100 cubes? How do you know?</p>
+</div>
 </figure>
 </div>
-</div><div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/cube-plot-unclebob.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption>This is the reality with the Uncle Bob’s cubes</figcaption>
+<hr>
+</section>
+</section>
+<section id="scenario-2-cheap-uncle-bob" class="level3">
+<h3 class="anchored" data-anchor-id="scenario-2-cheap-uncle-bob">Scenario 2: Cheap Uncle Bob</h3>
+<ul>
+<li>We want to build a much taller tower, but we ran out of 1” cubes.</li>
+<li>Uncle Bob has a plan. He volunteers to make us more cubes for cheaper than we can buy them.</li>
+<li>Bob makes us a lot of cubes:</li>
+</ul>
+<p><img src="images/green-cubes-multsizing.png" class="img-fluid" style="width:35.0%"> Oh no! Uncle Bob’s cubes are of all of slightly different heights!</p>
+<div id="lst-prediction-unclebob" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-prediction-unclebob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint 2.&nbsp;b: Predicting tower height using Uncle Bob’s cubes.
+</figcaption>
+<div aria-describedby="lst-prediction-unclebob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p>How will our new cubes from Uncle Bob affect our tower height predictions?</p>
+</div>
 </figure>
-</div>
-</div>
-</div>
-<section id="question-how-do-we-fit-our-line-to-the-data" class="level3">
-<h3 class="anchored" data-anchor-id="question-how-do-we-fit-our-line-to-the-data">Question: How do we fit our line to the data?</h3>
-<div class="columns">
-<div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/cube-plot-11.png" class="img-fluid figure-img"></p>
-<figcaption>Very clear way to draw our predictive line.</figcaption>
-</figure>
-</div>
-</div><div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/cube-plot-unclebob-regline.png" class="img-fluid figure-img"></p>
-<figcaption>Need to use <strong>regression</strong>, a mathematical way to draw the best predictive line we can.</figcaption>
-</figure>
-</div>
-</div>
 </div>
 
 
