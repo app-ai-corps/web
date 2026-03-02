@@ -30,7 +30,6 @@ During this activity, we'll learn a bit more about linear regression and how the
 3. Using the middle square in the frame, record the RGB values for the card.  
 4. Repeat this process for all other cards in your deck.  
 
-<hr>
 
 ## Scatterplots (Part 2)
 ### Instructions

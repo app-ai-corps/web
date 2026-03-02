@@ -12,7 +12,7 @@ sidebar: lesson-3
 <br>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe 
-    src="https://www.youtube.com/embed/e18KM681cmgstart=8&end=74" 
+    src="https://www.youtube.com/embed/e18KM681cmg?start=8&end=74" 
     frameborder="0" 
     allowfullscreen
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
