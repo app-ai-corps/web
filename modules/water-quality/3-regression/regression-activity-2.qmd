@@ -20,4 +20,23 @@ sidebar: lesson-3
 </div>
 <br>
 
-There are a few ways to create a line of best fit, but we will use Python to run a linear regression for us!
+There are a few ways to create a line of best fit, but we will use Python to run a linear regression for us! It will generate our line of best fit.
+
+```{pyodide}
+
+```
+
+### Drawing Your Line of Best Fit
+:::{.gray-container}
+**Materials Needed:**  
+- Poster Markers
+- Scatterplot   
+:::
+
+### Making Predictions
+:::{.gray-container}
+**Materials Needed:**  
+- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html)  
+- Three Additional "Nitrate Test Pad" Cards  
+- Pencil   
+:::

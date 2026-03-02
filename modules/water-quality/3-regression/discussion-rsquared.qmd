@@ -1,0 +1,8 @@
+---
+title: "Discussion & R^2"
+crossref:
+  lst-title: "🎯 Checkpoint 6."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-3
+---
