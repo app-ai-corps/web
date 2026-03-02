@@ -21,8 +21,8 @@ jobs:
         run: quarto install tinytex
 
       - name: Fix tlmgr repository
-        run: tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/tlnet-final
-    
+        run: ~/bin/tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/tlnet-final
+      
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
