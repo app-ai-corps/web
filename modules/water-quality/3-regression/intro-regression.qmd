@@ -39,3 +39,8 @@ sidebar: lesson-3
 ![Need to use **regression**, a mathematical way to draw the best predictive line we can.](images/cube-plot-unclebob-regline.png)
 :::
 :::
+
+## Smokey Buoy: Regression
+
+- The buoy also uses regression to predict nitrate levels.
+- Let's learn a bit more about this!

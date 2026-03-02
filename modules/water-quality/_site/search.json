@@ -3799,5 +3799,12 @@
     "title": "Intro to Regression",
     "section": "",
     "text": "Bob’s cubes saved us money, but now the heights of our towers are all over the place.\nWe need to predict the heights of our towers.\n\n\n\n\n\n\nThis is only true with the original, perfectly 1” cubes\n\n\n\n\n\n\nThis is the reality with the Uncle Bob’s cubes\n\n\n\n\n\n\n\n\n\n\n\nVery clear way to draw our predictive line.\n\n\n\n\n\n\nNeed to use regression, a mathematical way to draw the best predictive line we can."
+  },
+  {
+    "objectID": "3-regression/intro-regression.html#smokey-buoy-regression",
+    "href": "3-regression/intro-regression.html#smokey-buoy-regression",
+    "title": "Intro to Regression",
+    "section": "Smokey Buoy: Regression",
+    "text": "Smokey Buoy: Regression\n\nThe buoy also uses regression to predict nitrate levels.\nLet’s learn a bit more about this!"
   }
 ]
