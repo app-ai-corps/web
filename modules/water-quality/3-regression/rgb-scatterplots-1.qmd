@@ -7,3 +7,6 @@ format: live-html
 sidebar: lesson-3
 ---
 
+## RGB and Scatterplots - Pt. I
+
+During this activity, we'll learn a bit more about linear regression and how the buoy can use regression to predict nitrate values.
