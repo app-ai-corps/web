@@ -111,7 +111,7 @@ website:
         - text: "2. Direct Variation"
           href: 3-regression/direct-variation
         - text: "3. Linear Regression"
-          href: 3-regression/linear-regression
+          href: 3-regression/intro-regression
         - text: "---"
         - text: "8. Exit Ticket"
           href: #
