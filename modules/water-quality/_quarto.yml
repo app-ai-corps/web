@@ -18,14 +18,12 @@ website:
             href: 1-statistics/index
           - text: "L2: Classification & Color"
             href: 2-classification/index
-          - text: "L3: Gradient Updates"
-            href: 3-gradient-updates/index
-          - text: "L4: CNNs"
-            href: 4-cnn/index
+          - text: "L3: Regression"
+            href: 3-regression/index
+          - text: "L4: Physical Computing"
+            href: 4-physical-computing/index
           - text: "L5: Sensor Data"
             href: 5-sensor-data/index
-          - text: "L6: GIS Mapping"
-            href: 6-gis/index
     right:
       - text: "AAIC Home"
         href: ../../
@@ -107,9 +105,9 @@ website:
         - text: "0. Computers & Color"
           href: 2-classification/computers-color
         - text: "1. Overview"
-          href: 3-classification/
+          href: 3-regression/
         - text: "2. Intro to Regression"
-          href: 3-classification/intro-regression
+          href: 3-regression/intro-regression
         - text: "---"
         - text: "8. Exit Ticket"
           href: #
