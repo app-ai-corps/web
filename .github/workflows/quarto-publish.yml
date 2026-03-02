@@ -21,6 +21,7 @@ jobs:
         run: quarto install tinytex
 
       - name: Fix tlmgr repository
+        # CTAN moved to 2026 repos; pin to 2025 archive to avoid version mismatch
         run: /home/runner/.TinyTeX/bin/x86_64-linux/tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/tlnet-final
 
       - name: Set up Python
