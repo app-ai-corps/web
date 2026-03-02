@@ -12,34 +12,45 @@ sidebar: lesson-3
 During this activity, we'll learn a bit more about linear regression and how the buoy can use regression to predict nitrate values.
 
 :::{.gray-container}
-**Materials Needed:**
-- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html)
-- Deck of Purple "Nitrate Test Pad" Cards
-- Pencil
-- Handout
-- Dot Stickers
-- Large Graph Paper
-- Poster Markers
+**Materials Needed:**  
+- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html)  
+- Deck of Purple "Nitrate Test Pad" Cards  
+- Pencil  
+- Handout  
+- Dot Stickers  
+- Large Graph Paper  
+- Poster Markers  
 :::
 <br>
 
 ## RGB Activity (Part 1)
 ### Instructions
-1. Open the [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html) in a new tab.
-2. Find card #1 in your deck and hold it in front of your webcam.
-3. Using the middle square in the frame, record the RGB values for the card.
-4. Repeat this process for all other cards in your deck.
+1. Open the [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html) in a new tab.  
+2. Find card #1 in your deck and hold it in front of your webcam.  
+3. Using the middle square in the frame, record the RGB values for the card.  
+4. Repeat this process for all other cards in your deck.  
 
 <hr>
 
 ## Scatterplots (Part 2)
 ### Instructions
 
+<br>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe 
+    src="https://www.youtube.com/embed/b_Au4Ngm9pE?start=8&end=86" 
+    frameborder="0" 
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+  </iframe>
+</div>
+<br>
+
 :::{.ltorange-container}
-Now you'll work in groups. Each group will be assigned either to **red**, **green**, or **blue**.
+This portion of the activity will be completed with your group.<br>Each group will be assigned either to **red**, **green**, or **blue**.
 :::
 
-1. Using the round stickies and graph paper, create a scatterplot.
-2. Place the color values (either red, green or blue) on the x-axis and the nitrate concentrations on the y-axis.
+1. Using the round stickies and graph paper, create a scatterplot.  
+2. Place the color values (either red, green or blue, depending on your group assignment) on the x-axis and the nitrate concentrations on the y-axis.  
 
 
