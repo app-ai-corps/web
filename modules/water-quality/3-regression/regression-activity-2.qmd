@@ -9,4 +9,15 @@ sidebar: lesson-3
 
 ## Regression Modeling
 
+<br>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe 
+    src="https://www.youtube.com/embed/e18KM681cmgstart=8&end=74" 
+    frameborder="0" 
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+  </iframe>
+</div>
+<br>
 
+There are a few ways to create a line of best fit, but we will use Python to run a linear regression for us!
