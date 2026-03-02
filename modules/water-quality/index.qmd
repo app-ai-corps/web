@@ -67,9 +67,15 @@ Learn about neural networks, classification, and how computers process color.
 :::
 
 ::: {.lesson-item}
-### [Lesson 3: Bivariate Regression & Color](#)
+### [Lesson 3: Bivariate Regression & Color](3-regression)
 
-Coming Soon.
+Learn about scatterplot, regression lines, and predicting nitrate concentrations.
+
+*Estimated time: 90 minutes*
+
+<br>
+
+[**Slides & Facilitator Guide**](3-regression/facilitator){.facilitator}
 :::
 
 ::: {.lesson-item}

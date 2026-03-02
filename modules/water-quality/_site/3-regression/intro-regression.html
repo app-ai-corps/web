@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index</title>
+<title>Intro to Regression</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,121 +20,325 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/tabby.min.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-html-29c5cb07d3aa4ec9316f6656a8fc1744.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c885c3925676627532b743aee6efee3c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../../styles-main.css">
 </head>
 
-<body>
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
-
-
-
-
-<div class="custom-navbar">
-<div class="navbar-brand">
-<a href="../../"><img src="../../assets/logo.png" alt="AAIC Logo" class="navbar-logo"></a>
-<h1>
-Appalachian A.I. Corps
-</h1>
-</div>
-<button class="navbar-toggle" onclick="toggleMenu()">
-☰
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../aaic_letters.png" alt="Appalachian A.I. Corps logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
 </button>
-<nav class="navbar-links" id="navbarLinks">
-<a href="../../">Home</a> | <a href="../../modules">Modules</a> | <a href="../../team">Team</a> | <a href="../../contact">Contact</a>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-water-quality-lessons" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Water Quality Lessons</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-water-quality-lessons">    
+        <li>
+    <a class="dropdown-item" href="../1-statistics/index">
+ <span class="dropdown-text">L1: Statistics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-classification/index">
+ <span class="dropdown-text">L2: Classification &amp; Color</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../3-gradient-updates/index">
+ <span class="dropdown-text">L3: Gradient Updates</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../4-cnn/index">
+ <span class="dropdown-text">L4: CNNs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../5-sensor-data/index">
+ <span class="dropdown-text">L5: Sensor Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../6-gis/index">
+ <span class="dropdown-text">L6: GIS Mapping</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../"> 
+<span class="menu-text">AAIC Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../modules"> 
+<span class="menu-text">AAIC Modules</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../contact"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Intro to Regression</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+ <span class="menu-text"><b>Lesson Contents</b></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../2-classification/computers-color" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">0. Computers &amp; Color</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../3-classification/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../3-classification/intro-regression" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Intro to Regression</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+ <span class="menu-text">8. Exit Ticket</span>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+ <span class="menu-text">Optional Exercise</span>
+  </li>
+    </ul>
+    </div>
 </nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-regression" id="toc-introduction-to-regression" class="nav-link active" data-scroll-target="#introduction-to-regression">Introduction to Regression</a>
+  <ul class="collapse">
+  <li><a href="#a-scenario" id="toc-a-scenario" class="nav-link" data-scroll-target="#a-scenario">A Scenario</a></li>
+  <li><a href="#lets-predict" id="toc-lets-predict" class="nav-link" data-scroll-target="#lets-predict">Let’s Predict!</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Intro to Regression</h1>
 </div>
-<script>
-function toggleMenu() {
-  const nav = document.getElementById('navbarLinks');
-  nav.classList.toggle('show');
-}
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction-to-regression" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-regression">Introduction to Regression</h2>
+<ul>
+<li>Last workshop, we learned about <strong>classification</strong>.<br>
+</li>
+<li>In this workshop, we will learn about <strong>regression</strong>.<br>
+</li>
+<li>Regression is all about <strong>predicting</strong> something from something else.</li>
+</ul>
+<section id="a-scenario" class="level3">
+<h3 class="anchored" data-anchor-id="a-scenario">A Scenario</h3>
+<ul>
+<li>We want to build a tower</li>
+<li>We have 1” inch cubes to use<br>
+<img src="images/green-cube.png" class="img-fluid" style="width:35.0%"></li>
+</ul>
+</section>
+<section id="lets-predict" class="level3">
+<h3 class="anchored" data-anchor-id="lets-predict">Let’s Predict!</h3>
+<p>** NOTE: This needs to be a series of slides when moved to slides.qmd…** - Let’s predict the height of our tower, given the number of cubes we use.</p>
+<table style="width:100%; border:none;">
+<tbody><tr>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; width:20%; border:none;">
+1
+</td>
+<td style="border:none;">
+<img src="images/cube-plot-1.png" style="width:75%;">
+</td>
+</tr>
+<tr>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+2
+</td>
+<td style="border:none;">
+<img src="images/cube-plot-2.png" style="width:75%;">
+</td>
+</tr>
+<tr>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+3
+</td>
+<td style="border:none;">
+<img src="images/cube-plot-3.png" style="width:75%;">
+</td>
+</tr>
+<tr>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+4
+</td>
+<td style="border:none;">
+<img src="images/cube-plot-4.png" style="width:75%;">
+</td>
+</tr>
+<tr>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+5
+</td>
+<td style="border:none;">
+<img src="images/cube-plot-5.png" style="width:75%;">
+</td>
+</tr>
+<tr>
+<td style="font-size:5em; font-weight:bold; text-align:center; vertical-align:middle; border:none;">
+10
+</td>
+<td style="border:none;">
+<img src="images/cube-plot-10.png" style="width:75%;">
+</td>
+</tr>
+</tbody></table>
+
+
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
 </script>
-<div class="hero hero-xsmall hero-orange">
-<section id="water-quality-monitoring" class="hero-content">
-<h2>Water Quality Monitoring</h2>
-<div class="modules-intro">
-<p>A series of lessons using AI to explore and monitor Appalachian water resources.<br>
-<em>Designed for 9th-12th grade students.</em></p>
-</div>
-</section>
-</div>
-<div class="lesson-outline-section">
-<div class="lesson-outline">
-<section id="lesson-1-statistics-fundamentals" class="lesson-item">
-<h3><a href="1-statistics/">Lesson 1: Statistics Fundamentals</a></h3>
-<p>Learn mean, median, range, standard deviation, and outliers using nitrate/nitrite data.</p>
-<p><em>Estimated time: 90 minutes</em></p>
-<p><br></p>
-<p><a href="1-statistics/facilitator" class="facilitator"><strong>Slides &amp; Facilitator Guide</strong></a></p>
-</section>
-<section id="lesson-2-classification-color" class="lesson-item">
-<h3><a href="2-classification/">Lesson 2: Classification &amp; Color</a></h3>
-<p>Learn about neural networks, classification, and how computers process color.</p>
-<p><em>Estimated time: 90 minutes</em></p>
-<p><br></p>
-<p><a href="2-classification/facilitator" class="facilitator"><strong>Slides &amp; Facilitator Guide</strong></a></p>
-</section>
-<section id="lesson-3-bivariate-regression-color" class="lesson-item">
-<h3><a href="3-regression">Lesson 3: Bivariate Regression &amp; Color</a></h3>
-<p>Learn about scatterplot, regression lines, and predicting nitrate concentrations.</p>
-<p><em>Estimated time: 90 minutes</em></p>
-<p><br></p>
-<p><a href="3-regression/facilitator" class="facilitator"><strong>Slides &amp; Facilitator Guide</strong></a></p>
-</section>
-<section id="lesson-4-physical-computing-edge-ai-multiple-regression" class="lesson-item">
-<h3><a href="#">Lesson 4: Physical Computing, Edge AI, &amp; Multiple Regression</a></h3>
-<p>Coming Soon.</p>
-</section>
-<section id="lesson-5-analyzing-buoy-data" class="lesson-item">
-<h3><a href="#">Lesson 5: Analyzing Buoy Data</a></h3>
-<p>Coming Soon.</p>
-</section>
-<section id="lesson-6-mapping-data-with-gis" class="lesson-item">
-<h3><a href="#">Lesson 6: Mapping Data with GIS</a></h3>
-<p>Coming Soon.</p>
-</section>
-</div>
-</div>
-<div class="footer">
-<div class="footer-columns">
-<div class="footer-left">
-<p><img src="../../assets/logo_white.png" class="footer-logo img-fluid" alt="AAIC logo"></p>
-<p><strong>Appalachian A.I. Corps</strong><br>
-Empowering Appalachia Through Artificial Intelligence</p>
-</div>
-<div class="footer-right">
-<p>Department of Theory &amp; Practice in Teacher Education<br>
-Min H. Kao Department of Electrical Engineering &amp; Computer Science<br>
-<strong>University of Tennessee, Knoxville</strong><br>
-Knoxville, TN</p>
-</div>
-</div>
-</div>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
 
+</div>
+<div class="spinner-grow spinner-grow-sm">
 
+</div>
+</div>
+<script type="vfs-file">
+W10=
+</script>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../3-regression";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-    tabsets.forEach(function(tabset) {
-      const tabby = new Tabby('#' + tabset.id);
-    });
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -232,7 +436,7 @@ Knoxville, TN</p>
         },
         interactive: true,
         interactiveBorder: 10,
-        theme: 'light-border',
+        theme: 'quarto',
         placement: 'bottom-start',
       };
       if (contentFn) {
@@ -532,6 +736,7 @@ Knoxville, TN</p>
     }
   });
   </script>
+</div> <!-- /content -->
 
 
 

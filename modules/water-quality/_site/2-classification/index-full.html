@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>How Do Computers See Color?</title>
+<title>Classification and Color</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">How Do Computers See Color?</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Classification and Color</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -225,7 +225,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lets-try-some-rgb-values" id="toc-lets-try-some-rgb-values" class="nav-link active" data-scroll-target="#lets-try-some-rgb-values">Let’s Try Some RGB Values!</a></li>
+  <li><a href="#welcome-back-scientists" id="toc-welcome-back-scientists" class="nav-link active" data-scroll-target="#welcome-back-scientists">🔬💧 Welcome Back, Scientists!</a></li>
+  <li><a href="#meet-the-buoy" id="toc-meet-the-buoy" class="nav-link" data-scroll-target="#meet-the-buoy">Meet the Buoy!</a>
+  <ul class="collapse">
+  <li><a href="#the-buoy-test-strips" id="toc-the-buoy-test-strips" class="nav-link" data-scroll-target="#the-buoy-test-strips">The Buoy: Test Strips</a></li>
+  <li><a href="#the-buoy-motor-camera" id="toc-the-buoy-motor-camera" class="nav-link" data-scroll-target="#the-buoy-motor-camera">The Buoy: Motor &amp; Camera</a></li>
+  <li><a href="#see-it-in-action" id="toc-see-it-in-action" class="nav-link" data-scroll-target="#see-it-in-action">🎥 See It In Action!</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -234,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">How Do Computers See Color?</h1>
+<h1 class="title">Classification and Color</h1>
 </div>
 
 
@@ -251,149 +257,110 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><strong>This module is designed to be used in conjunction with the Lesson 2 slide deck and other resources located in the facilitator’s guide.</strong></p>
+<div class="gray-container">
+<p><strong>Lesson Objective:</strong> In this lesson, you will learn about and apply ideas around image classification, neural nets, color, as well as how they can be used to monitor water quality..</p>
+<p><strong>Materials Needed:</strong><br>
+- A computer with a webcam<br>
+- A web browser (Chrome, Firefox, or Safari)</p>
+</div>
 <div class="ltblue-container">
 <p><strong>Checkpoints on this Page:</strong></p>
 <ul>
-<li><a href="#lst-CreatingColor"><strong>Checkpoint 7.a:</strong> Using RGB Values to Create Color</a></li>
-<li><a href="#lst-PredictingFruit"><strong>Checkpoint 7.b:</strong> Using Color to Predict Fruit</a></li>
+<li><a href="#lst-review"><strong>Checkpoint 1.a:</strong> Recalling Workshop #1</a></li>
+<li><a href="#lst-computerizedtesting"><strong>Checkpoint 1.b:</strong> Compare/Contrast Human vs.&nbsp;Buoy Water Quality Testing</a></li>
 </ul>
 </div>
-<p>In the last activity, as with all pixels, each had a value for Red (R), Green (G), and Blue (B). The values for each can range from 0 to 255. Let’s take a closer look at what these values mean. We’ll use the tool below to explore some values.</p>
-<div class="gray-container">
-<div id="rgb-widgets-card" style="max-width:720px;margin:18px auto;font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
-  <h3 style="margin:0 0 8px 0;font-size:18px" class="anchored">Slide the R, G, or B to see how it affects the color of the square!</h3>
-
-  <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start">
-    <div style="flex:1;min-width:260px;">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
-        <div style="width:56px;font-weight:600;text-align:right">R:</div>
-        <input id="rRange" type="range" min="0" max="255" step="1" value="128" aria-label="Red" style="flex:1">
-        <div id="rVal" style="width:56px;text-align:center;font-family:monospace;font-weight:600;background:#f1f3f5;padding:6px 8px;border-radius:6px;border:1px solid #eee">128</div>
-      </div>
-
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
-        <div style="width:56px;font-weight:600;text-align:right">G:</div>
-        <input id="gRange" type="range" min="0" max="255" step="1" value="128" aria-label="Green" style="flex:1">
-        <div id="gVal" style="width:56px;text-align:center;font-family:monospace;font-weight:600;background:#f1f3f5;padding:6px 8px;border-radius:6px;border:1px solid #eee">128</div>
-      </div>
-
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
-        <div style="width:56px;font-weight:600;text-align:right">B:</div>
-        <input id="bRange" type="range" min="0" max="255" step="1" value="128" aria-label="Blue" style="flex:1">
-        <div id="bVal" style="width:56px;text-align:center;font-family:monospace;font-weight:600;background:#f1f3f5;padding:6px 8px;border-radius:6px;border:1px solid #eee">128</div>
-      </div>
-    </div>
-
-    <div style="display:flex;flex-direction:column;gap:10px;align-items:center">
-      <div id="colorPreview" role="img" aria-label="Color preview" style="width:200px;height:200px;border-radius:8px;border:1px solid #dcdcdc;background:rgb(128,128,128)"></div>
-    </div>
-  </div>
-</div>
-
-<script>
-(function () {
-  const clamp = (v, a=0, b=255) => Math.min(Math.max(Math.round(v), a), b);
-
-  const rRange = document.getElementById('rRange');
-  const gRange = document.getElementById('gRange');
-  const bRange = document.getElementById('bRange');
-  const rVal = document.getElementById('rVal');
-  const gVal = document.getElementById('gVal');
-  const bVal = document.getElementById('bVal');
-  const colorPreview = document.getElementById('colorPreview');
-
-  const state = {
-    r: clamp(parseInt(rRange.value, 10)),
-    g: clamp(parseInt(gRange.value, 10)),
-    b: clamp(parseInt(bRange.value, 10))
-  };
-
-  window.latest_widget_values = { r: state.r, g: state.g, b: state.b };
-
-  function updateFromInputs() {
-    state.r = clamp(parseInt(rRange.value, 10));
-    state.g = clamp(parseInt(gRange.value, 10));
-    state.b = clamp(parseInt(bRange.value, 10));
-
-    rVal.textContent = state.r;
-    gVal.textContent = state.g;
-    bVal.textContent = state.b;
-
-    colorPreview.style.background = `rgb(${state.r}, ${state.g}, ${state.b})`;
-
-    window.latest_widget_values.r = state.r;
-    window.latest_widget_values.g = state.g;
-    window.latest_widget_values.b = state.b;
-  }
-
-  [rRange, gRange, bRange].forEach(el => {
-    el.addEventListener('input', updateFromInputs);
-    el.addEventListener('change', updateFromInputs);
-  });
-
-  updateFromInputs();
-
-  window.getLatestWidgetValues = () => ({...window.latest_widget_values});
-})();
-</script>
-</div>
-<section id="lets-try-some-rgb-values" class="level3">
-<h3 class="anchored" data-anchor-id="lets-try-some-rgb-values">Let’s Try Some RGB Values!</h3>
-<div id="lst-CreatingColor" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<p><br></p>
+<section id="welcome-back-scientists" class="level2">
+<h2 class="anchored" data-anchor-id="welcome-back-scientists">🔬💧 Welcome Back, Scientists!</h2>
+<div id="lst-review" class="listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-CreatingColor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-🎯 Checkpoint 7.&nbsp;a: Use the slider tool above to answer the RGB questions below.
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-review-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint 1.&nbsp;a: Review—Looking back to Workshop #1
 </figcaption>
-<div aria-describedby="lst-CreatingColor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-<div id="pyodide-1" class="exercise-cell">
-
-</div>
-<script type="pyodide-1-contents">
-eyJhdHRyIjp7ImVjaG8iOmZhbHNlLCJlZGl0IjpmYWxzZSwiZXZhbCI6dHJ1ZSwiaW5jbHVkZSI6ZmFsc2UsIm91dHB1dCI6ZmFsc2V9LCJjb2RlIjoiXG4jIEZha2UgYmxvY2sgdG8gbWFrZSBjaGVja3BvaW50IHdvcmsifQ==
-</script>
-</div>
+<div aria-describedby="lst-review-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<ul>
+<li>Let’s remember what we learned during workshop #1:
+<ul>
+<li>Forms of nitrogen in water</li>
+<li>Roles of nitrogen in water</li>
+<li>Using Python to store, summarize, and visualize data</li>
+<li>Using statistics to summarize data</li>
+</ul></li>
+</ul>
 </div>
 </figure>
 </div>
-<p>As you progress through the questions below, record your observations on the handout.</p>
-<ol type="1">
-<li><p>Slide all values to zero. When R = 0, G = 0, and B = 0, what color do you see?</p></li>
-<li><p>Slide all values to 255. When R = 255, G = 255, and B = 255, what color do you see?</p></li>
-<li><p>Slide all values to 0. Change R to 255. What happens to the color?</p></li>
-<li><p>Slide all values to 0. Change G to 255. What happens to the color?</p></li>
-<li><p>Slide all values to 0. Change B to 255. What happens to the color?</p></li>
-</ol>
-<p>Now let’s try some of the colors you obsevered in the last activity. Get your handout ready!</p>
-<ol start="6" type="1">
-<li><p>Adjust the sliders to the RGB values you recorded for your apple. What color do you see? Is it similar to your apple?</p></li>
-<li><p>Repeat this for your orange’s RGB values. What color do you see? Is it similar to your orange?</p></li>
-<li><p>Finally, repeat this for your lime’s RGB values. What color do you see? Is it similar to your lime?</p></li>
-</ol>
-<div id="lst-PredictingFruit" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+</section>
+<section id="meet-the-buoy" class="level2">
+<h2 class="anchored" data-anchor-id="meet-the-buoy">Meet the Buoy!</h2>
+<ul>
+<li>This is Smokey Buoy!
+<ul>
+<li>This class will be deploying Smokey Buoy(s) later this semester.</li>
+<li>We will learn a bit about how it works, so you understand it before we use them. <br><br> <video src="images/buoy-video-intro.mp4" class="img-fluid" controls=""><a href="images/buoy-video-intro.mp4">Video</a></video> <br><br></li>
+</ul></li>
+<li>Under the cover, Smokey Buoy has a lot of parts!
+<ul>
+<li>Two of these include:
+<ul>
+<li>A motorized unit that moves the test strips</li>
+<li>A built-in camera system to analyze those strips on the spot</li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="the-buoy-test-strips" class="level3">
+<h3 class="anchored" data-anchor-id="the-buoy-test-strips">The Buoy: Test Strips</h3>
+<ul>
+<li>Smokey Buoy also uses test strips to monitor nitrate concentrations in water. The buoy’s test strips are on a roll rather than small strips. We place each pad on a very long piece of material and roll it up inside the buoy to keep it dry until dispensed.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/buoy_test_strip_roll.png" class="img-fluid figure-img"></p>
+<figcaption>1. We begin with commercial test strips and remove the pads. <br> 2. The pads are carefully spaced out and placed on a very long piece of material. <br> 3. The material is rolled up inside the buoy. <br> 4. The roll is carefully positioned to be fed through the motorized roller.</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-buoy-motor-camera" class="level3">
+<h3 class="anchored" data-anchor-id="the-buoy-motor-camera">The Buoy: Motor &amp; Camera</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/buoy_diagram_modified.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Modified from INSERT PAPER CITATION</figcaption>
+</figure>
+</div>
+<section id="motor" class="level4">
+<h4 class="anchored" data-anchor-id="motor">Motor</h4>
+<p>Locate the motor near the top of the diagram. The motor drives the roller, which grips and advances the test strip roll.</p>
+</section>
+<section id="camera" class="level4">
+<h4 class="anchored" data-anchor-id="camera">Camera</h4>
+<p>When a test pad is in front of the camera, it takes a picture.</p>
+</section>
+</section>
+<section id="see-it-in-action" class="level3">
+<h3 class="anchored" data-anchor-id="see-it-in-action">🎥 See It In Action!</h3>
+<center>
+<video width="80%" controls="">
+  <source src="images/buoy-classification.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</center>
+<div id="lst-computerizedtesting" class="listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-PredictingFruit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-🎯 Checkpoint 7.&nbsp;b: What color does this RGB value represent? (110, 164, 212) Just like the computer, predict what fruit this could be from!
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-computerizedtesting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint 1.&nbsp;b: Compare and Contrast Human vs.&nbsp;Buoy Water Quality Testing
 </figcaption>
-<div aria-describedby="lst-PredictingFruit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-<div id="pyodide-2" class="exercise-cell">
-
-</div>
-<script type="pyodide-2-contents">
-eyJhdHRyIjp7ImVjaG8iOmZhbHNlLCJlZGl0IjpmYWxzZSwiZXZhbCI6dHJ1ZSwiaW5jbHVkZSI6ZmFsc2UsIm91dHB1dCI6ZmFsc2V9LCJjb2RlIjoiXG4jIEZha2UgYmxvY2sgdG8gbWFrZSBjaGVja3BvaW50IHdvcmsifQ==
-</script>
-</div>
+<div aria-describedby="lst-computerizedtesting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p>🗣️ <strong>Think Pair Share:</strong> Thinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?</p>
 </div>
 </figure>
 </div>
 
 
-<script type="pyodide-data">
-eyJvcHRpb25zIjp7ImVudiI6eyJQTE9UTFlfUkVOREVSRVIiOiJwbG90bHlfbWltZXR5cGUifSwiaW5kZXhVUkwiOiJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvcHlvZGlkZS92MC4yOC4xL2Z1bGwvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsicHlvZGlkZV9odHRwIiwibWljcm9waXAiLCJpcHl0aG9uIl19fQ==
-</script>
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJweW9kaWRlLTIiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoiX3B5b2RpZGVfdmFsdWVfMiA9IHtcbiAgY29uc3QgeyBoaWdobGlnaHRQeXRob24sIGI2NERlY29kZX0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS0yLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgLy8gRGVmYXVsdCBldmFsdWF0aW9uIGNvbmZpZ3VyYXRpb25cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oe1xuICAgIGlkOiBcInB5b2RpZGUtMi1jb250ZW50c1wiLFxuICAgIGVjaG86IHRydWUsXG4gICAgb3V0cHV0OiB0cnVlXG4gIH0sIGJsb2NrLmF0dHIpO1xuXG4gIC8vIEV2YWx1YXRlIHRoZSBwcm92aWRlZCBQeXRob24gY29kZVxuICBjb25zdCByZXN1bHQgPSBweW9kaWRlT2pzLnByb2Nlc3Moe2NvZGU6IGJsb2NrLmNvZGUsIG9wdGlvbnN9LCB7fSk7XG5cbiAgLy8gRWFybHkgeWllbGQgd2hpbGUgd2Ugd2FpdCBmb3IgdGhlIGZpcnN0IGV2YWx1YXRpb24gYW5kIHJlbmRlclxuICBpZiAob3B0aW9ucy5vdXRwdXQgJiYgIShcIjJcIiBpbiBweW9kaWRlT2pzLnJlbmRlcmVkT2pzKSkge1xuICAgIGNvbnN0IGNvbnRhaW5lciA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gICAgY29uc3Qgc3Bpbm5lciA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG5cbiAgICBpZiAob3B0aW9ucy5lY2hvKSB7XG4gICAgICAvLyBTaG93IG91dHB1dCBhcyBoaWdobGlnaHRlZCBzb3VyY2VcbiAgICAgIGNvbnN0IHByZUVsZW0gPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwicHJlXCIpO1xuICAgICAgY29udGFpbmVyLmNsYXNzTmFtZSA9IFwic291cmNlQ29kZVwiO1xuICAgICAgcHJlRWxlbS5jbGFzc05hbWUgPSBcInNvdXJjZUNvZGUgcHl0aG9uXCI7XG4gICAgICBwcmVFbGVtLmFwcGVuZENoaWxkKGhpZ2hsaWdodFB5dGhvbihibG9jay5jb2RlKSk7XG4gICAgICBzcGlubmVyLmNsYXNzTmFtZSA9IFwic3Bpbm5lci1ncm93IHNwaW5uZXItZ3Jvdy1zbSBtLTIgcG9zaXRpb24tYWJzb2x1dGUgdG9wLTAgZW5kLTBcIjtcbiAgICAgIHByZUVsZW0uYXBwZW5kQ2hpbGQoc3Bpbm5lcik7XG4gICAgICBjb250YWluZXIuYXBwZW5kQ2hpbGQocHJlRWxlbSk7XG4gICAgfSBlbHNlIHtcbiAgICAgIHNwaW5uZXIuY2xhc3NOYW1lID0gXCJzcGlubmVyLWJvcmRlciBzcGlubmVyLWJvcmRlci1zbVwiO1xuICAgICAgY29udGFpbmVyLmFwcGVuZENoaWxkKHNwaW5uZXIpO1xuICAgIH1cblxuICAgIHlpZWxkIGNvbnRhaW5lcjtcbiAgfVxuXG4gIHB5b2RpZGVPanMucmVuZGVyZWRPanNbXCIyXCJdID0gdHJ1ZTtcbiAgeWllbGQgYXdhaXQgcmVzdWx0O1xufVxuIn0seyJjZWxsTmFtZSI6InB5b2RpZGUtMSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJfcHlvZGlkZV92YWx1ZV8xID0ge1xuICBjb25zdCB7IGhpZ2hsaWdodFB5dGhvbiwgYjY0RGVjb2RlfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTEtY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcblxuICAvLyBEZWZhdWx0IGV2YWx1YXRpb24gY29uZmlndXJhdGlvblxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7XG4gICAgaWQ6IFwicHlvZGlkZS0xLWNvbnRlbnRzXCIsXG4gICAgZWNobzogdHJ1ZSxcbiAgICBvdXRwdXQ6IHRydWVcbiAgfSwgYmxvY2suYXR0cik7XG5cbiAgLy8gRXZhbHVhdGUgdGhlIHByb3ZpZGVkIFB5dGhvbiBjb2RlXG4gIGNvbnN0IHJlc3VsdCA9IHB5b2RpZGVPanMucHJvY2Vzcyh7Y29kZTogYmxvY2suY29kZSwgb3B0aW9uc30sIHt9KTtcblxuICAvLyBFYXJseSB5aWVsZCB3aGlsZSB3ZSB3YWl0IGZvciB0aGUgZmlyc3QgZXZhbHVhdGlvbiBhbmQgcmVuZGVyXG4gIGlmIChvcHRpb25zLm91dHB1dCAmJiAhKFwiMVwiIGluIHB5b2RpZGVPanMucmVuZGVyZWRPanMpKSB7XG4gICAgY29uc3QgY29udGFpbmVyID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcbiAgICBjb25zdCBzcGlubmVyID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcblxuICAgIGlmIChvcHRpb25zLmVjaG8pIHtcbiAgICAgIC8vIFNob3cgb3V0cHV0IGFzIGhpZ2hsaWdodGVkIHNvdXJjZVxuICAgICAgY29uc3QgcHJlRWxlbSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJwcmVcIik7XG4gICAgICBjb250YWluZXIuY2xhc3NOYW1lID0gXCJzb3VyY2VDb2RlXCI7XG4gICAgICBwcmVFbGVtLmNsYXNzTmFtZSA9IFwic291cmNlQ29kZSBweXRob25cIjtcbiAgICAgIHByZUVsZW0uYXBwZW5kQ2hpbGQoaGlnaGxpZ2h0UHl0aG9uKGJsb2NrLmNvZGUpKTtcbiAgICAgIHNwaW5uZXIuY2xhc3NOYW1lID0gXCJzcGlubmVyLWdyb3cgc3Bpbm5lci1ncm93LXNtIG0tMiBwb3NpdGlvbi1hYnNvbHV0ZSB0b3AtMCBlbmQtMFwiO1xuICAgICAgcHJlRWxlbS5hcHBlbmRDaGlsZChzcGlubmVyKTtcbiAgICAgIGNvbnRhaW5lci5hcHBlbmRDaGlsZChwcmVFbGVtKTtcbiAgICB9IGVsc2Uge1xuICAgICAgc3Bpbm5lci5jbGFzc05hbWUgPSBcInNwaW5uZXItYm9yZGVyIHNwaW5uZXItYm9yZGVyLXNtXCI7XG4gICAgICBjb250YWluZXIuYXBwZW5kQ2hpbGQoc3Bpbm5lcik7XG4gICAgfVxuXG4gICAgeWllbGQgY29udGFpbmVyO1xuICB9XG5cbiAgcHlvZGlkZU9qcy5yZW5kZXJlZE9qc1tcIjFcIl0gPSB0cnVlO1xuICB5aWVsZCBhd2FpdCByZXN1bHQ7XG59XG4ifSx7ImNlbGxOYW1lIjoicHlvZGlkZS1wcmVsdWRlIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoicHlvZGlkZU9qcyA9IHtcbiAgY29uc3Qge1xuICAgIFB5b2RpZGVFdmFsdWF0b3IsXG4gICAgUHlvZGlkZUVudmlyb25tZW50TWFuYWdlcixcbiAgICBzZXR1cFB5dGhvbixcbiAgICBzdGFydFB5b2RpZGVXb3JrZXIsXG4gICAgYjY0RGVjb2RlLFxuICAgIGNvbGxhcHNlUGF0aCxcbiAgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc3RhdHVzQ29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJleGVyY2lzZS1sb2FkaW5nLXN0YXR1c1wiKTtcbiAgY29uc3QgaW5kaWNhdG9yQ29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJleGVyY2lzZS1sb2FkaW5nLWluZGljYXRvclwiKTtcbiAgaW5kaWNhdG9yQ29udGFpbmVyLmNsYXNzTGlzdC5yZW1vdmUoXCJkLW5vbmVcIik7XG5cbiAgbGV0IHN0YXR1c1RleHQgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiZGl2XCIpXG4gIHN0YXR1c1RleHQuY2xhc3NMaXN0ID0gXCJleGVyY2lzZS1sb2FkaW5nLWRldGFpbHNcIjtcbiAgc3RhdHVzVGV4dCA9IHN0YXR1c0NvbnRhaW5lci5hcHBlbmRDaGlsZChzdGF0dXNUZXh0KTtcbiAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBJbml0aWFsaXNlYDtcblxuICAvLyBIb2lzdCBpbmRpY2F0b3Igb3V0IGZyb20gZmluYWwgc2xpZGUgd2hlbiBydW5uaW5nIHVuZGVyIHJldmVhbFxuICBjb25zdCByZXZlYWxTdGF0dXMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJldmVhbCAuZXhlcmNpc2UtbG9hZGluZy1pbmRpY2F0b3JcIik7XG4gIGlmIChyZXZlYWxTdGF0dXMpIHtcbiAgICByZXZlYWxTdGF0dXMucmVtb3ZlKCk7XG4gICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXZlYWwgPiAuc2xpZGVzXCIpLmFwcGVuZENoaWxkKHJldmVhbFN0YXR1cyk7XG4gIH1cblxuICAvLyBNYWtlIGFueSByZXZlYWwgc2xpZGVzIHdpdGggbGl2ZSBjZWxscyBzY3JvbGxhYmxlXG4gIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoXCIucmV2ZWFsIC5leGVyY2lzZS1jZWxsXCIpLmZvckVhY2goKGVsKSA9PiB7XG4gICAgZWwuY2xvc2VzdCgnc2VjdGlvbi5zbGlkZScpLmNsYXNzTGlzdC5hZGQoXCJzY3JvbGxhYmxlXCIpO1xuICB9KVxuXG4gIC8vIFB5b2RpZGUgc3VwcGxlbWVudGFsIGRhdGEgYW5kIG9wdGlvbnNcbiAgY29uc3QgZGF0YUNvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS1kYXRhXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgZGF0YSA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKGRhdGFDb250ZW50KSk7XG5cbiAgLy8gR3JhYiBsaXN0IG9mIHJlc291cmNlcyB0byBiZSBkb3dubG9hZGVkXG4gIGNvbnN0IGZpbGVzQ29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ2ZnMtZmlsZVxcXCJdYCkudGV4dENvbnRlbnQ7XG4gIGNvbnN0IGZpbGVzID0gSlNPTi5wYXJzZShiNjREZWNvZGUoZmlsZXNDb250ZW50KSk7XG5cbiAgbGV0IHB5b2RpZGVQcm9taXNlID0gKGFzeW5jICgpID0+IHtcbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIFB5b2RpZGVgO1xuICAgIGNvbnN0IHB5b2RpZGUgPSBhd2FpdCBzdGFydFB5b2RpZGVXb3JrZXIoZGF0YS5vcHRpb25zKTtcblxuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcGFja2FnZTogbWljcm9waXBgO1xuICAgIGF3YWl0IHB5b2RpZGUubG9hZFBhY2thZ2UoXCJtaWNyb3BpcFwiKTtcbiAgICBjb25zdCBtaWNyb3BpcCA9IGF3YWl0IHB5b2RpZGUucHlpbXBvcnQoXCJtaWNyb3BpcFwiKTtcbiAgICBhd2FpdCBkYXRhLnBhY2thZ2VzLnBrZ3MubWFwKChwa2cpID0+ICgpID0+IHtcbiAgICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcGFja2FnZTogJHtwa2d9YDtcbiAgICAgIHJldHVybiBtaWNyb3BpcC5pbnN0YWxsKHBrZyk7XG4gICAgfSkucmVkdWNlKChjdXIsIG5leHQpID0+IGN1ci50aGVuKG5leHQpLCBQcm9taXNlLnJlc29sdmUoKSk7XG4gICAgYXdhaXQgbWljcm9waXAuZGVzdHJveSgpO1xuXG4gICAgLy8gRG93bmxvYWQgYW5kIGluc3RhbGwgcmVzb3VyY2VzXG4gICAgYXdhaXQgZmlsZXMubWFwKChmaWxlKSA9PiBhc3luYyAoKSA9PiB7XG4gICAgICBjb25zdCBuYW1lID0gZmlsZS5zdWJzdHJpbmcoZmlsZS5sYXN0SW5kZXhPZignLycpICsgMSk7XG4gICAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIHJlc291cmNlOiAke25hbWV9YDtcbiAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZmV0Y2goZmlsZSk7XG4gICAgICBpZiAoIXJlc3BvbnNlLm9rKSB7XG4gICAgICAgIHRocm93IG5ldyBFcnJvcihgQ2FuJ3QgZG93bmxvYWQgXFxgJHtmaWxlfVxcYC4gRXJyb3IgJHtyZXNwb25zZS5zdGF0dXN9OiBcIiR7cmVzcG9uc2Uuc3RhdHVzVGV4dH1cIi5gKTtcbiAgICAgIH1cbiAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5hcnJheUJ1ZmZlcigpO1xuXG4gICAgICAvLyBTdG9yZSBVUkxzIGluIHRoZSBjd2Qgd2l0aG91dCBhbnkgc3ViZGlyZWN0b3J5IHN0cnVjdHVyZVxuICAgICAgaWYgKGZpbGUuaW5jbHVkZXMoXCI6Ly9cIikpIHtcbiAgICAgICAgZmlsZSA9IG5hbWU7XG4gICAgICB9XG5cbiAgICAgIC8vIENvbGxhcHNlIGhpZ2hlciBkaXJlY3Rvcnkgc3RydWN0dXJlXG4gICAgICBmaWxlID0gY29sbGFwc2VQYXRoKGZpbGUpO1xuXG4gICAgICAvLyBDcmVhdGUgZGlyZWN0b3J5IHRyZWUsIGlnbm9yaW5nIFwiZGlyZWN0b3J5IGV4aXN0c1wiIFZGUyBlcnJvcnNcbiAgICAgIGNvbnN0IHBhcnRzID0gZmlsZS5zcGxpdCgnLycpLnNsaWNlKDAsIC0xKTtcbiAgICAgIGxldCBwYXRoID0gJyc7XG4gICAgICB3aGlsZSAocGFydHMubGVuZ3RoID4gMCkge1xuICAgICAgICBwYXRoICs9IHBhcnRzLnNoaWZ0KCkgKyAnLyc7XG4gICAgICAgIHRyeSB7XG4gICAgICAgICAgYXdhaXQgcHlvZGlkZS5GUy5ta2RpcihwYXRoKTtcbiAgICAgICAgfSBjYXRjaCAoZSkge1xuICAgICAgICAgIGlmIChlLm5hbWUgIT09IFwiRXJybm9FcnJvclwiKSB0aHJvdyBlO1xuICAgICAgICAgIGlmIChlLmVycm5vICE9PSAyMCkge1xuICAgICAgICAgICAgY29uc3QgZXJyb3JUZXh0UHRyID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLl9zdHJlcnJvcihlLmVycm5vKTtcbiAgICAgICAgICAgIGNvbnN0IGVycm9yVGV4dCA9IGF3YWl0IHB5b2RpZGUuX21vZHVsZS5VVEY4VG9TdHJpbmcoZXJyb3JUZXh0UHRyKTtcbiAgICAgICAgICAgIHRocm93IG5ldyBFcnJvcihgRmlsZXN5c3RlbSBFcnJvciAke2UuZXJybm99IFwiJHtlcnJvclRleHR9XCIuYCk7XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9XG5cbiAgICAgIC8vIFdyaXRlIHRoaXMgZmlsZSB0byB0aGUgVkZTXG4gICAgICB0cnkge1xuICAgICAgICByZXR1cm4gYXdhaXQgcHlvZGlkZS5GUy53cml0ZUZpbGUoZmlsZSwgbmV3IFVpbnQ4QXJyYXkoZGF0YSkpO1xuICAgICAgfSBjYXRjaCAoZSkge1xuICAgICAgICBpZiAoZS5uYW1lICE9PSBcIkVycm5vRXJyb3JcIikgdGhyb3cgZTtcbiAgICAgICAgY29uc3QgZXJyb3JUZXh0UHRyID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLl9zdHJlcnJvcihlLmVycm5vKTtcbiAgICAgICAgY29uc3QgZXJyb3JUZXh0ID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLlVURjhUb1N0cmluZyhlcnJvclRleHRQdHIpO1xuICAgICAgICB0aHJvdyBuZXcgRXJyb3IoYEZpbGVzeXN0ZW0gRXJyb3IgJHtlLmVycm5vfSBcIiR7ZXJyb3JUZXh0fVwiLmApO1xuICAgICAgfVxuICAgIH0pLnJlZHVjZSgoY3VyLCBuZXh0KSA9PiBjdXIudGhlbihuZXh0KSwgUHJvbWlzZS5yZXNvbHZlKCkpO1xuXG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBQeW9kaWRlIGVudmlyb25tZW50IHNldHVwYDtcbiAgICBhd2FpdCBzZXR1cFB5dGhvbihweW9kaWRlKTtcblxuICAgIHN0YXR1c1RleHQucmVtb3ZlKCk7XG4gICAgaWYgKHN0YXR1c0NvbnRhaW5lci5jaGlsZHJlbi5sZW5ndGggPT0gMCkge1xuICAgICAgc3RhdHVzQ29udGFpbmVyLnBhcmVudE5vZGUucmVtb3ZlKCk7XG4gICAgfVxuICAgIHJldHVybiBweW9kaWRlO1xuICB9KSgpLmNhdGNoKChlcnIpID0+IHtcbiAgICBzdGF0dXNUZXh0LnN0eWxlLmNvbG9yID0gXCJ2YXIoLS1leGVyY2lzZS1lZGl0b3ItaGwtZXIsICNBRDAwMDApXCI7XG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGVyci5tZXNzYWdlO1xuICAgIC8vaW5kaWNhdG9yQ29udGFpbmVyLnF1ZXJ5U2VsZWN0b3IoXCIuc3Bpbm5lci1ncm93XCIpLmNsYXNzTGlzdC5hZGQoXCJkLW5vbmVcIik7XG4gICAgdGhyb3cgZXJyO1xuICB9KTtcblxuICAvLyBLZWVwIHRyYWNrIG9mIGluaXRpYWwgT0pTIGJsb2NrIHJlbmRlclxuICBjb25zdCByZW5kZXJlZE9qcyA9IHt9O1xuXG4gIGNvbnN0IHByb2Nlc3MgPSBhc3luYyAoY29udGV4dCwgaW5wdXRzKSA9PiB7XG4gICAgY29uc3QgcHlvZGlkZSA9IGF3YWl0IHB5b2RpZGVQcm9taXNlO1xuICAgIGNvbnN0IGV2YWx1YXRvciA9IG5ldyBQeW9kaWRlRXZhbHVhdG9yKHB5b2RpZGUsIGNvbnRleHQpO1xuICAgIGF3YWl0IGV2YWx1YXRvci5wcm9jZXNzKGlucHV0cyk7XG4gICAgcmV0dXJuIGV2YWx1YXRvci5jb250YWluZXI7XG4gIH1cblxuICByZXR1cm4ge1xuICAgIHB5b2RpZGVQcm9taXNlLFxuICAgIHJlbmRlcmVkT2pzLFxuICAgIHByb2Nlc3MsXG4gIH07XG59XG4ifV19
+eyJjb250ZW50cyI6W119
 </script>
 <div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
 <div id="exercise-loading-status" class="d-flex gap-2">
@@ -406,6 +373,7 @@ eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJweW9kaWRlLTIiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2RO
 <script type="vfs-file">
 W10=
 </script>
+</section>
 </section>
 
 </main> <!-- /main -->

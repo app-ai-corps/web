@@ -270,7 +270,7 @@
     "href": "2-classification/index.html#meet-the-buoy",
     "title": "Classification and Color",
     "section": "Meet the Buoy!",
-    "text": "Meet the Buoy!\n\nThis is Smokey Buoy!\n\nThis class will be deploying Smokey Buoy(s) later this semester.\nWe will learn a bit about how it works, so you understand it before we use them.  Video \n\nUnder the cover, Smokey Buoy has a lot of parts!\n\nTwo of these include:\n\nA motorized unit that moves the test strips\nA built-in camera system to analyze those strips on the spot\n\n\n\n\nThe Buoy: Test Strips\n\nSmokey Buoy also uses test strips to monitor nitrate concentrations in water. The buoy’s test strips are on a roll rather than small strips. We place each pad on a very long piece of material and roll it up inside the buoy to keep it dry until dispensed.\n\n\n\n\n1. We begin with commercial test strips and remove the pads.  2. The pads are carefully spaced out and placed on a very long piece of material.  3. The material is rolled up inside the buoy.  4. The roll is carefully positioned to be fed through the motorized roller.\n\n\n\n\nThe Buoy: Motor & Camera\n\n\n\nModified from INSERT PAPER CITATION\n\n\n\nMotor\nLocate the motor near the top of the diagram. The motor drives the roller, which grips and advances the test strip roll.\n\n\nCamera\nWhen a test pad is in front of the camera, it takes a picture.\n\n\n\n🎥 See It In Action!\n\n  \n  Your browser does not support the video tag.\n\n\n\n\n🎯 Checkpoint 1. b: Compare and Contrast Human vs. Buoy Water Quality Testing\n\n\n🗣️ Think Pair Share: Thinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?"
+    "text": "Meet the Buoy!\n\nThis is Smokey Buoy!\n\n\n\n\n\n🎯 Checkpoint 1. b: Compare and Contrast Human vs. Buoy Water Quality Testing\n\n\n🗣️ Think Pair Share: Thinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?"
   },
   {
     "objectID": "2-classification/index.html#smokey-buoys-motorized-unit",
@@ -3631,5 +3631,152 @@
     "title": "Workshop #2",
     "section": "🧠 Exercises",
     "text": "🧠 Exercises\n\n  \n\nWant to practice what we’ve learned?\nTry the Exercises.\n(Ask Your Teacher For the Link.)"
+  },
+  {
+    "objectID": "3-regression/intro-regression.html",
+    "href": "3-regression/intro-regression.html",
+    "title": "Intro to Regression",
+    "section": "",
+    "text": "Last workshop, we learned about classification.\n\nIn this workshop, we will learn about regression.\n\nRegression is all about predicting something from something else.\n\n\n\n\nWe want to build a tower\nWe have 1” inch cubes to use\n\n\n\n\n\n** NOTE: This needs to be a series of slides when moved to slides.qmd…** - Let’s predict the height of our tower, given the number of cubes we use.\n\n\n\n1\n\n\n\n\n\n\n\n2\n\n\n\n\n\n\n\n3\n\n\n\n\n\n\n\n4\n\n\n\n\n\n\n\n5\n\n\n\n\n\n\n\n10"
+  },
+  {
+    "objectID": "3-regression/intro-regression.html#introduction-to-regression",
+    "href": "3-regression/intro-regression.html#introduction-to-regression",
+    "title": "Intro to Regression",
+    "section": "",
+    "text": "Last workshop, we learned about classification.\n\nIn this workshop, we will learn about regression.\n\nRegression is all about predicting something from something else.\n\n\n\n\nWe want to build a tower\nWe have 1” inch cubes to use\n\n\n\n\n\n** NOTE: This needs to be a series of slides when moved to slides.qmd…** - Let’s predict the height of our tower, given the number of cubes we use.\n\n\n\n1\n\n\n\n\n\n\n\n2\n\n\n\n\n\n\n\n3\n\n\n\n\n\n\n\n4\n\n\n\n\n\n\n\n5\n\n\n\n\n\n\n\n10"
+  },
+  {
+    "objectID": "2-classification/index-full.html",
+    "href": "2-classification/index-full.html",
+    "title": "Classification and Color",
+    "section": "",
+    "text": "This module is designed to be used in conjunction with the Lesson 2 slide deck and other resources located in the facilitator’s guide."
+  },
+  {
+    "objectID": "2-classification/index-full.html#welcome-back-scientists",
+    "href": "2-classification/index-full.html#welcome-back-scientists",
+    "title": "Classification and Color",
+    "section": "🔬💧 Welcome Back, Scientists!",
+    "text": "🔬💧 Welcome Back, Scientists!\n\n\n\n🎯 Checkpoint 1. a: Review—Looking back to Workshop #1\n\n\n\nLet’s remember what we learned during workshop #1:\n\nForms of nitrogen in water\nRoles of nitrogen in water\nUsing Python to store, summarize, and visualize data\nUsing statistics to summarize data"
+  },
+  {
+    "objectID": "2-classification/index-full.html#meet-the-buoy",
+    "href": "2-classification/index-full.html#meet-the-buoy",
+    "title": "Classification and Color",
+    "section": "Meet the Buoy!",
+    "text": "Meet the Buoy!\n\nThis is Smokey Buoy!\n\nThis class will be deploying Smokey Buoy(s) later this semester.\nWe will learn a bit about how it works, so you understand it before we use them.  Video \n\nUnder the cover, Smokey Buoy has a lot of parts!\n\nTwo of these include:\n\nA motorized unit that moves the test strips\nA built-in camera system to analyze those strips on the spot\n\n\n\n\nThe Buoy: Test Strips\n\nSmokey Buoy also uses test strips to monitor nitrate concentrations in water. The buoy’s test strips are on a roll rather than small strips. We place each pad on a very long piece of material and roll it up inside the buoy to keep it dry until dispensed.\n\n\n\n\n1. We begin with commercial test strips and remove the pads.  2. The pads are carefully spaced out and placed on a very long piece of material.  3. The material is rolled up inside the buoy.  4. The roll is carefully positioned to be fed through the motorized roller.\n\n\n\n\nThe Buoy: Motor & Camera\n\n\n\nModified from INSERT PAPER CITATION\n\n\n\nMotor\nLocate the motor near the top of the diagram. The motor drives the roller, which grips and advances the test strip roll.\n\n\nCamera\nWhen a test pad is in front of the camera, it takes a picture.\n\n\n\n🎥 See It In Action!\n\n\n  \n  Your browser does not support the video tag.\n\n\n\n\n\n🎯 Checkpoint 1. b: Compare and Contrast Human vs. Buoy Water Quality Testing\n\n\n🗣️ Think Pair Share: Thinking back to the nitrates activity from last week, What are the benefits to using a computerized buoy to conduct water quality tests? Drawbacks?"
+  },
+  {
+    "objectID": "2-classification/intro-classification-full.html",
+    "href": "2-classification/intro-classification-full.html",
+    "title": "Intro to Classification",
+    "section": "",
+    "text": "Checkpoints on this Page:\n\nCheckpoint 2.a: Banana Ripeness\nCheckpoint 2.b: Strawberry Classification\nCheckpoint 2.c: Discussion - Data Rights\nCheckpoint 2.d: Discussion - Economics of AI"
+  },
+  {
+    "objectID": "2-classification/intro-classification-full.html#intro-to-classification",
+    "href": "2-classification/intro-classification-full.html#intro-to-classification",
+    "title": "Intro to Classification",
+    "section": "Intro to Classification",
+    "text": "Intro to Classification\nIn a grocery store, we often think about which specific fruits are ripe and which are not. Farmers who grow these crops make similar decisions about when their fruits and vegetables are ready to pick.\nRegardless of whether it’s the farmer or the end consumer, both of these people are making specific decisions–judgements—about whether a fruit or vegetable is ripe or not.\nThis kind of decision making is called classification.\nClassification is all about sorting things into groups based on what they look like or how they act – something humans have done forever!\n\nUse of Classification in Agriculture\nHumans have been making classifaction decisions for thousands of years. Only recently have computers begun to have the ability to make classification decisions.\nOne use of artificial intelligence (AI) is to help farmers make classification decisions, work that can be time and labor intensive when done traditionally and at scale.\n\nClassification of Ripeness (Ripe / Not)\nWe can now use AI technology to identify exactly which crops in a field are ripe and ready to be picked. See the graphic below from the University of Maryland 1 to understand how this technology works.\n\n\n\n\n🎯 Checkpoint 2. b: Review the figure above. In image (b), what do you think the yellow represents? The green?\n\n\n\n\n\n\n\n\n\n\n\n\n\nTypes of Classification\nThe classification of strawberries above is considered binary, meaning there are only two possible results: ripe or not ripe.  \n\nBinary Classification\nTwo possible outcomes:  \n\n\n\nNot Ripe\n\n\n\n\nRipe\n\n\n\n \n\n\nMulticlass Classification\nWe can also classify into multiclass results like apple/orange/banana or ripe/underripe/molded produce. Multiclass classification has three or more possible outcomes:  \n\n\n\nUnderripe\n\n\n\n\nRipe\n\n\n\n\nMolded\n\n\n\n \nFor example, see the project from the University of Georgia, Athens 2 below that uses multiclass classification to sort lemons, discarding those that are underripe or molded and retaining only those that are ripe.\n\n\n  \n  Your browser does not support the video tag.\n\n\n\n\n\n\nMore on Classification with AI\nAs the video notes, computers can make classification decisions very quickly.\n​As with anything, choosing to use AI for thse sorts of tasks has its advantages and disadvantages.\n\nPros:\n\nHandles millions of items quickly\n\nSpots tiny differences humans miss\n\n\nCons:\n\nNeeds tons of examples to train the computer\nBad examples = bad decisions (e.g., train only on sunny photos, it fails on cloudy days).\n​\n\n\n\n\n\n🎯 Checkpoint 2. c: If farmers use a certain company to train and decide when to pluck or harvest fruits/veggies, who gets to own that data? why?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n🎯 Checkpoint 2. d: Let’s say the company becomes better at identifying ripe fruits because they used data from your farm. Now, they want to up their subscription fees for farmers to use their model. Is that fair? Do you have any suggestions or solutions?"
+  },
+  {
+    "objectID": "2-classification/intro-classification-full.html#footnotes",
+    "href": "2-classification/intro-classification-full.html#footnotes",
+    "title": "Intro to Classification",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nLiu, T., Chopra, N., & Samtani, J. (2022). Information system for detecting strawberry fruit locations and ripeness conditions in a farm. Biology and Life Science Forum, 16 (1), https://doi.org/10.3390/IECHo2022-12488.↩︎\nDrake, A. (2025, April 26). AI for agriculture: How Georgians use robots on the farm [Video]. WRDW. https://www.wrdw.com/2025/04/26/ai-agriculture-how-georgians-use-robots-farm/↩︎"
+  },
+  {
+    "objectID": "2-classification/computers-color-full.html",
+    "href": "2-classification/computers-color-full.html",
+    "title": "How Do Computers See Color?",
+    "section": "",
+    "text": "Checkpoints on this Page:\n\nCheckpoint 7.a: Using RGB Values to Create Color\nCheckpoint 7.b: Using Color to Predict Fruit\n\n\nIn the last activity, as with all pixels, each had a value for Red (R), Green (G), and Blue (B). The values for each can range from 0 to 255. Let’s take a closer look at what these values mean. We’ll use the tool below to explore some values.\n\n\n  Slide the R, G, or B to see how it affects the color of the square!\n\n  \n    \n      \n        R:\n        \n        128\n      \n\n      \n        G:\n        \n        128\n      \n\n      \n        B:\n        \n        128\n      \n    \n\n    \n      \n    \n  \n\n\n\n\n\nLet’s Try Some RGB Values!\n\n\n\n🎯 Checkpoint 7. a: Use the slider tool above to answer the RGB questions below.\n\n\n\n\n\n\n\n\n\n\n\nAs you progress through the questions below, record your observations on the handout.\n\nSlide all values to zero. When R = 0, G = 0, and B = 0, what color do you see?\nSlide all values to 255. When R = 255, G = 255, and B = 255, what color do you see?\nSlide all values to 0. Change R to 255. What happens to the color?\nSlide all values to 0. Change G to 255. What happens to the color?\nSlide all values to 0. Change B to 255. What happens to the color?\n\nNow let’s try some of the colors you obsevered in the last activity. Get your handout ready!\n\nAdjust the sliders to the RGB values you recorded for your apple. What color do you see? Is it similar to your apple?\nRepeat this for your orange’s RGB values. What color do you see? Is it similar to your orange?\nFinally, repeat this for your lime’s RGB values. What color do you see? Is it similar to your lime?\n\n\n\n\n🎯 Checkpoint 7. b: What color does this RGB value represent? (110, 164, 212) Just like the computer, predict what fruit this could be from!"
+  },
+  {
+    "objectID": "2-classification/classification-activity-train-full.html",
+    "href": "2-classification/classification-activity-train-full.html",
+    "title": "Classification Activity - Train",
+    "section": "",
+    "text": "You have seen different examples of classification, now it’s your turn to train your own classification model!"
+  },
+  {
+    "objectID": "2-classification/classification-activity-train-full.html#teachable-machine",
+    "href": "2-classification/classification-activity-train-full.html#teachable-machine",
+    "title": "Classification Activity - Train",
+    "section": "Teachable Machine",
+    "text": "Teachable Machine\n  To create your own model, we will use Google’s Teachable Machine. Teachable Machine uses 🐍 Python (yes! The same Python we used in Workshop #1) to help users build classification models. It just hides the 🐍 Python in the background.\n\nSteps\n\n\n\nGo to Teachable Machine\n\n\n \n\n\n\n\n\nClick “Get Started”\n\n\n\n\n\n\n\n\nChoose “Image Project”\n\n\n\n\n\n\n\n\nSelect “Standard Image Model”\n\n\n\n\n\n\n\n\nTo the right of “Class 1”, click the pencil and type “Apple”\n\n\n\n\n\n\n\n\nGrab your apple and get ready!!\n\n\n\n\n\n\n\n\nClick “webcam” to turn on and allow the computer to begin capturing images of the apple.\n\n\n\n\n\n\n\n\n\n\n\nPRO TIP\n\n\n\nMake sure you have a clean table and avoid messy backgrounds. Vary the lighting in your images (window, light, lamp, shadow, etc.) like might be encountered in real scenarios.\n\n\n\n\n\nPosition your apple within the frame and click the “Hold to Record” button to begin capturing images of the apple. You will want to move the apple around so it captures different angles and distances. Capture 100-200 images.\n\n\n\n\n\n\n\n\nWhen finished, relase the “Hold to Record” button and click to “x” in the top right corner to exit the Apple class.\n\n\n\n\n\n\n\n\nPut your apple aside and grab your orange. Repeat the process above to train your model for Class 2. Try to capture roughly the same number of images for the orange as you did for the apple.\n\n\n \n\n\n\n\n\nWhen finished capturing data for both classes, click the “Train Model” button. The website will train your own custom classification model, based on your data!\n\n\n\n\n\nCongratulations! You have trained your own classifier! Now let’s see how well it works."
+  },
+  {
+    "objectID": "2-classification/classification-activity-train-full.html#evaluate-your-classifier",
+    "href": "2-classification/classification-activity-train-full.html#evaluate-your-classifier",
+    "title": "Classification Activity - Train",
+    "section": "Evaluate Your Classifier",
+    "text": "Evaluate Your Classifier\nWhile some models can be very accurate and high quality, others may struggle. Now, let’s put your model to the test to see how it performs. To do this, you’ll use the “Preview” pane on the right side of the Teachable Machine screen.\n\n\nPutting it to the Test\n\n\n\n\n\n\nNote\n\n\n\nGet your lab sheet ready. Let’s record some results!\n\n\n\nSteps—Part A\n\nTrade your apple and orange with another group. No group should have the exact same fruits you trained the model with.\nTake your lab sheet and review the observation table. The first item to test is an apple. If the model works well, what will it predict? Record this in the second column.\nNext, hold the apple up to your camera. What does the model predict it is? Record this in the third column of your lab sheet.\nThe model also reports confidence in its prediction. Record this percent confidence in the fourth column of your sheet.\nRepeat this process for all other objects on the lab sheet.\n\n\n\n\n\nReflecting\nHow did your model perform?\nWere any objects classified incorrectly?\nWere any objects classified with low confidence (&lt; 80%)?\n Discuss these questions (and your model) with your group."
+  },
+  {
+    "objectID": "2-classification/color-activity-full.html",
+    "href": "2-classification/color-activity-full.html",
+    "title": "Color Activity",
+    "section": "",
+    "text": "Checkpoints on this Page:\n\nCheckpoint 6.a: Pixels & RGB"
+  },
+  {
+    "objectID": "2-classification/color-activity-full.html#understanding-rgb",
+    "href": "2-classification/color-activity-full.html#understanding-rgb",
+    "title": "Color Activity",
+    "section": "Understanding RGB",
+    "text": "Understanding RGB\nTo understand how Smokey Buoy uses color to monitor water quality, we need to understand how computers see color. Computers aren’t like us—they don’t have eyes. Instead, computers understand color through numbers.\nWhen a computer displays or processes an image, that image is really a combination of millions of little squares called pixels, and each of these pixels has a value for Red (R), Green (G), and Blue (B). The color of each pixel is a combination of these three values.\nLet’s take a look at how this works!\n\n\nPixels and RGB Values\n\n\n\n🎯 Checkpoint 6. a: Exploring pixels and RGB Values\n\n\n\n\n\n\n\n\n\n\n\n\nMaterials Needed:\n\nAPPLET\n\nThis will open in a new tab.\nYou may need to grant access to your camera for it to work.\nApple, Orange, Lime (from previous activity)\n\nHandout\nPencil\n\n\nUse the applet and follow the instructions on the handout, which are also listed below.\n\nThe applet starts with “What Humans See” selected. Hold the apple up to the camera. Notice it captures its likeness?\nChange the mode to “What Computers See”. It will default to the Red channel first.\nFocus on an area at the center of the apple and record the value for R.\nUse the dropdown menu to change the channel to G. Look at the same area (or as close to possible) on the apple, record the value for G.\nRepeat this process for the B channel.\nRepeat this process for the orange, lime, and each of the purple cards."
+  },
+  {
+    "objectID": "2-classification/inside-classification-full.html",
+    "href": "2-classification/inside-classification-full.html",
+    "title": "How Does It Work?",
+    "section": "",
+    "text": "Checkpoints on this Page:\n\nCheckpoint 5.a: Neural Network Layers"
+  },
+  {
+    "objectID": "2-classification/inside-classification-full.html#how-does-your-model-work",
+    "href": "2-classification/inside-classification-full.html#how-does-your-model-work",
+    "title": "How Does It Work?",
+    "section": "How Does Your Model Work?",
+    "text": "How Does Your Model Work?\nUnder the hood of your model and most other image classification models is something called a Convolutional Neural Net (CNN). As you have already done, we train CNNs to recognize pattern in images. Watch the clip below to learn more about how the CNN works. Note that the video discussed some of the mathematics behind CNNs, but don’t worry if you don’t understand everything. Prioritize understanding the big picture, as the video clips moves quickly. \n Clip 1 \n\n \n\n\n  Clip 2 \n\n \n\n\n\n\n\n🎯 Checkpoint 5. a: Compare and contrast the input layer, the hidden layers, and the output layer. What function do they each have in a neural net?"
+  },
+  {
+    "objectID": "2-classification/classification-activity-buoy-full.html",
+    "href": "2-classification/classification-activity-buoy-full.html",
+    "title": "Classification Activity - Buoy",
+    "section": "",
+    "text": "On the last page, you trained your a model to classify apples and oranges. Now, let’s first see a video of how the classifier in the buoy works."
+  },
+  {
+    "objectID": "2-classification/classification-activity-buoy-full.html#your-turn-be-the-buoy",
+    "href": "2-classification/classification-activity-buoy-full.html#your-turn-be-the-buoy",
+    "title": "Classification Activity - Buoy",
+    "section": "Your Turn: Be the Buoy",
+    "text": "Your Turn: Be the Buoy\n\nMaterials Needed:\n- 1 test strip\n\n Now, let’s build a model that is very similar to the one used in the buoy. We will repeat the process of training a model with Teachable Machine. This time we will have two classes: “strip present” and “strip not present”."
+  },
+  {
+    "objectID": "3-regression/index.html",
+    "href": "3-regression/index.html",
+    "title": "Regression",
+    "section": "",
+    "text": "This module is designed to be used in conjunction with the Lesson 3 slide deck and other resources located in the facilitator’s guide."
+  },
+  {
+    "objectID": "3-regression/index.html#welcome-back-scientists",
+    "href": "3-regression/index.html#welcome-back-scientists",
+    "title": "Regression",
+    "section": "🔬💧 Welcome Back, Scientists!",
+    "text": "🔬💧 Welcome Back, Scientists!\n\n\n\n🎯 Checkpoint 1. a: Review—Looking back to Workshop #2\n\n\n\nLet’s remember what we learned during workshop #2:\n\nAI: Classification\nAgricultural Uses of Classification\nData Ownership\nComputers & Color"
+  },
+  {
+    "objectID": "3-regression/index.html#remember-me-smokey-buoy",
+    "href": "3-regression/index.html#remember-me-smokey-buoy",
+    "title": "Regression",
+    "section": "Remember Me, Smokey Buoy!?",
+    "text": "Remember Me, Smokey Buoy!?\nWe met Smokey Buoy last workshop and learned a bit about how it works.\n\nLet’s recall Smokey’s components and how they work together:\n\n\n🎥 Smokey’s Camera\n\nSpecifically, Smokey Buoy’s camera has two jobs:\n\nWatch for a test pad\n\nWe talked about this last workshop!\n\nWhen pad is present, take a picture\n\nWe’ll discuss what happens with the picture today!"
   }
 ]
