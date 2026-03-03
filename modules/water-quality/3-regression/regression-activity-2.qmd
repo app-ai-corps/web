@@ -34,6 +34,7 @@ Click the ▶️ Run Code button to run the block and store your data.
 #| include: false
 import numpy as np
 import pandas as pd
+from plotnine import ggplot, aes, geom_point, geom_line, labs, theme_minimal, annotate
 
 # Code that will convert lists to arrays. Helps hide the arrays from the students.
 def process_data(color_data, nitrate_ppm):
@@ -63,6 +64,8 @@ color_data = [_, _, _, _, _, _, _, _]
 
 nitrate_ppm = [_, _, _, _, _, _, _, _]
 
+print(color_data)
+print(nitrate_ppm)
 # Do not change the code below ------------------------------------
 color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
 df = process_df(color_data, nitrate_ppm)
