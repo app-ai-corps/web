@@ -32,6 +32,7 @@ Click the ▶️ Run Code button to run the block and store your data.
 
 ```{pyodide}
 #| include: false
+#| setup: true
 
 import numpy as np
 import pandas as pd
