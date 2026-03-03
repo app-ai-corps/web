@@ -40,6 +40,7 @@ def process_data(color_data, nitrate_ppm):
     return color_data, nitrate_ppm
 ```
 
+
 ```{pyodide}
 #| exercise: ex_1
 #| persist: true
@@ -50,6 +51,20 @@ nitrate_ppm = [__, __, __, __, __, __, __, __]
 
 # Do not change the code below
 color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
+```
+
+:::{.dkorange-container}
+Replace the `__` placeholders with the x variable in the first blank and the y variable in the second.
+
+Click the ▶️ Run Code button to run the block and generate the equation for the line of best fit.
+:::
+
+```{pyodide}
+#| exercise: ex_2
+#| persist: true
+#| completion: false
+
+slope, intercept = np.polyfit(________, ________, 1)
 ```
 
 ### Drawing Your Line of Best Fit
