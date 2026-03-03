@@ -12,6 +12,15 @@ sidebar: lesson-3
 <br>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe 
+    title="Scatterplot Video"
+    src="https://www.youtube.com/embed/e18KM681cmg?start=8" 
+    frameborder="0" 
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+  </iframe>
+</div>
+<br>
+  <iframe 
     src="https://www.youtube.com/embed/e18KM681cmg?start=8&end=74" 
     frameborder="0" 
     allowfullscreen
@@ -32,6 +41,7 @@ Click the ▶️ Run Code button to run the block and store your data.
 
 ```{pyodide}
 #| include: false
+#| persist: true
 
 import numpy as np
 import pandas as pd
@@ -60,7 +70,7 @@ color_data = [_, _, _, _, _, _, _, _]
 
 nitrate_ppm = [_, _, _, _, _, _, _, _]
 
-# Do not change the code below
+# Do not change the code below ------------------------------------
 color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
 df = process_df(color_data, nitrate_ppm)
 ```
@@ -75,7 +85,7 @@ df = process_df(color_data, nitrate_ppm)
 :::{.dkorange-container}
 Replace the `_` placeholders with the x variable in the first blank and the y variable in the second.
 
-Click the ▶️ Run Code button to create a scatterplot that should match your group's.
+Click the ▶️ Run Code button to create a scatterplot that should match your group's paper plot.
 :::
 
 ```{pyodide}
@@ -91,7 +101,7 @@ plot = (
         y="Nitrate (ppm)"
     )+
     theme_minimal()
-
+)
 print(plot)
 ```
 
@@ -103,6 +113,7 @@ Click the ▶️ Run Code button to run the block and generate the equation for 
 
 ```{pyodide}
 #| include: false
+#| persist: true
 
 def linear_regression(x, y):
     slope, intercept = np.polyfit(x, y, 1)
