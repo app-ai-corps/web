@@ -6,6 +6,19 @@ crossref:
 format: live-html
 sidebar: lesson-3
 ---
+# Meaning RGB
+
+In workshop #2, we learned how computers "see" color - through RBG values! But the buoy does more. Did you notice that there were lots of little pixels on the screen in the applet we used last time? Which one is best? The buoy takes all of the pixels for each test pad and finds their mean, yielding a mean Red, mean Green, and mean Blue value.
+
+:::{.columns}
+:::{.column}
+![](images/Red_Pixels.png)
+:::
+::: {.column}
+![](images/Red_Meaned_Pixels.png)
+:::
+:::
+
 
 ## RGB and Scatterplots
 
@@ -16,6 +29,7 @@ During this activity, we'll learn a bit more about linear regression and how the
 - [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html)  
 - Deck of Purple "Nitrate Test Pad" Cards  
 - Pencil  
+- Highlighter (optional but helpful)  
 - Handout  
 - Dot Stickers  
 - Large Graph Paper  
