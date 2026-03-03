@@ -22,10 +22,11 @@ jobs:
 
       - name: Install handoutWithNotes
         run: |
-          mkdir -p $(kpsewhich -var-value TEXMFHOME)/tex/latex/handoutwithnotes
+          TEXMFHOME=$(/home/runner/.TinyTeX/bin/x86_64-linux/kpsewhich -var-value TEXMFHOME)
+          mkdir -p "$TEXMFHOME/tex/latex/handoutwithnotes"
           curl -L "https://raw.githubusercontent.com/noamsgl/latex-msc-thesis-slides/main/handoutWithNotes.sty" \
-            -o $(kpsewhich -var-value TEXMFHOME)/tex/latex/handoutwithnotes/handoutWithNotes.sty
-          mktexlsr
+            -o "$TEXMFHOME/tex/latex/handoutwithnotes/handoutWithNotes.sty"
+          /home/runner/.TinyTeX/bin/x86_64-linux/mktexlsr
 
       - name: Fix tlmgr repository
         # CTAN moved to 2026 repos; pin to 2025 archive to avoid version mismatch
