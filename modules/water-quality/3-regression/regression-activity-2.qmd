@@ -54,26 +54,66 @@ nitrate_ppm = [__, __, __, __, __, __, __, __]
 color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
 ```
 
+### Drawing Your Line of Best Fit
+:::{.gray-container}
+**Materials Needed:**  
+- Poster Markers  
+- Scatterplot   
+:::
+
+```{python}
+#| echo: false
+
+# Creates dataframe for plotnine
+df = pd.DataFrame({
+    "color_data": color_data,
+    "nitrate_ppm": nitrate_ppm
+})
+```
+
 :::{.dkorange-container}
 Replace the `__` placeholders with the x variable in the first blank and the y variable in the second.
 
-Click the ▶️ Run Code button to run the block and generate the equation for the line of best fit.
+Click the ▶️ Run Code button to create a scatterplot that should match your group's.
 :::
 
 ```{pyodide}
 #| exercise: ex_2
 #| persist: true
 #| completion: false
+plot = (
+    ggplot(df, aes(x="_____", y="_____"))
+    + geom_point(size=3, color="black")
+    + labs(
+        title="Nitrate vs. Color",
+        x="Color",
+        y="Nitrate (ppm)"
+    )+
+    theme_minimal()
+
+print(plot)
+```
+
+:::{.dkorange-container}
+Replace the `__` placeholders with the x variable in the first blank and the y variable in the second.
+
+Click the ▶️ Run Code button to run the block and generate the equation for the line of best fit.
+:::
+
+```{python}
+def linear_regression(x, y):
+    slope, intercept = np.polyfit(x, y, 1)
+    return slope, intercept
+```
+
+```{pyodide}
+#| exercise: ex_3
+#| persist: true
+#| completion: false
 
 slope, intercept = np.polyfit(________, ________, 1)
 ```
 
-### Drawing Your Line of Best Fit
-:::{.gray-container}
-**Materials Needed:**  
-- Poster Markers
-- Scatterplot   
-:::
 
 ### Making Predictions
 :::{.gray-container}
