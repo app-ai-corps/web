@@ -45,7 +45,7 @@ During this activity, we'll learn a bit more about linear regression and how the
 4. Repeat this process for all other numbered cards in your deck.  
 
 
-## Scatterplots (Part 2)
+## Scatterplots Activity (Part 2)
 ### Instructions
 
 <br>
