@@ -31,7 +31,8 @@ Click the ▶️ Run Code button to run the block and store your data.
 :::
 
 ```{pyodide}
-#| include: false
+#| setup: false
+
 import numpy as np
 import pandas as pd
 from plotnine import ggplot, aes, geom_point, geom_line, labs, theme_minimal, annotate
