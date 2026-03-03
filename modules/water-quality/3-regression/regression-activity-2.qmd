@@ -59,6 +59,11 @@ def process_df(color_data, nitrate_ppm):
         "nitrate_ppm": nitrate_ppm
     })
     return df
+
+# Runs a linear regression (looks better than NumPy function)
+def linear_regression(x, y):
+    slope, intercept = np.polyfit(x, y, 1)
+    return slope, intercept
 ```
 
 
@@ -110,15 +115,6 @@ Replace the `__` placeholders with the x variable in the first blank and the y v
 
 Click the ▶️ Run Code button to run the block and generate the equation for the line of best fit.
 :::
-
-```{pyodide}
-#| include: false
-#| persist: true
-
-def linear_regression(x, y):
-    slope, intercept = np.polyfit(x, y, 1)
-    return slope, intercept
-```
 
 ```{pyodide}
 #| exercise: ex_3
