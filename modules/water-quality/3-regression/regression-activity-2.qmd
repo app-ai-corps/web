@@ -12,7 +12,6 @@ sidebar: lesson-3
 <br>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe 
-    title="Scatterplot Video"
     src="https://www.youtube.com/embed/e18KM681cmg?start=8" 
     frameborder="0" 
     allowfullscreen
