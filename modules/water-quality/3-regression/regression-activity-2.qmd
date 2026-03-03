@@ -63,6 +63,7 @@ color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
 
 ```{python}
 #| echo: false
+import pandas as pd
 
 # Creates dataframe for plotnine
 df = pd.DataFrame({
