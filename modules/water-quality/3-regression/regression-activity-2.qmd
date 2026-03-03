@@ -30,8 +30,8 @@ Replace the `_` placeholder with the color values and nitrate concentrations fro
 Click the ▶️ Run Code button to run the block and store your data.
 :::
 
-```{python}
-#| echo: false
+```{pyodide}
+#| include: false
 
 import numpy as np
 import pandas as pd
@@ -101,7 +101,9 @@ Replace the `__` placeholders with the x variable in the first blank and the y v
 Click the ▶️ Run Code button to run the block and generate the equation for the line of best fit.
 :::
 
-```{python}
+```{pyodide}
+#| include: false
+
 def linear_regression(x, y):
     slope, intercept = np.polyfit(x, y, 1)
     return slope, intercept
