@@ -23,7 +23,7 @@ sidebar: lesson-3
 There are a few ways to create a line of best fit, but we will use Python to run a linear regression for us! It will generate our line of best fit.
 
 :::{.dkorange-container}
-Replace the `__` placeholder with the color values and nitrate concentrations from the RBG activity and scatterplot!
+Replace the `_` placeholder with the color values and nitrate concentrations from the RBG activity and scatterplot!
 
 **IMPORTANT:** The color values and nitrate concentrations must be in the exact same order.
 
@@ -43,7 +43,6 @@ def process_data(color_data, nitrate_ppm):
     return color_data, nitrate_ppm
 
 # Creates dataframe for plotnine
-
 def process_df(color_data, nitrate_ppm):
     df = pd.DataFrame({
         "color_data": color_data,
@@ -57,9 +56,9 @@ def process_df(color_data, nitrate_ppm):
 #| exercise: ex_1
 #| persist: true
 #| completion: false
-color_data = [__, __, __, __, __, __, __, __]
+color_data = [_, _, _, _, _, _, _, _]
 
-nitrate_ppm = [__, __, __, __, __, __, __, __]
+nitrate_ppm = [_, _, _, _, _, _, _, _]
 
 # Do not change the code below
 color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
@@ -74,7 +73,7 @@ df = process_df(color_data, nitrate_ppm)
 :::
 
 :::{.dkorange-container}
-Replace the `__` placeholders with the x variable in the first blank and the y variable in the second.
+Replace the `_` placeholders with the x variable in the first blank and the y variable in the second.
 
 Click the ▶️ Run Code button to create a scatterplot that should match your group's.
 :::
@@ -84,7 +83,7 @@ Click the ▶️ Run Code button to create a scatterplot that should match your 
 #| persist: true
 #| completion: false
 plot = (
-    ggplot(df, aes(x="_____", y="_____"))
+    ggplot(df, aes(x="_", y="_"))
     + geom_point(size=3, color="black")
     + labs(
         title="Nitrate vs. Color",
@@ -113,7 +112,7 @@ def linear_regression(x, y):
 #| persist: true
 #| completion: false
 
-slope, intercept = np.polyfit(________, ________, 1)
+slope, intercept = linear_regression(_, _)
 ```
 
 
