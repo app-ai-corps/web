@@ -32,8 +32,6 @@ Click the ▶️ Run Code button to run the block and store your data.
 
 ```{pyodide}
 #| include: false
-#| setup: true
-
 import numpy as np
 import pandas as pd
 
@@ -115,6 +113,30 @@ Click the ▶️ Run Code button to run the block and generate the equation for 
 slope, intercept = linear_regression(_, _)
 ```
 
+```{pyodide}
+plot = (
+    ggplot(df, aes(x="color_data", y="nitrate_ppm"))
+    + geom_point(size=3, color="black")
+    + geom_line(aes(y="nitrate_pred"), color="tomato", size=1)
+    + labs(
+        title="Nitrate vs. Color",
+        x="Color",
+        y="Nitrate (ppm)"
+    )
+    + annotate(
+        "text",
+        x=min(color_data),
+        y=max(nitrate_ppm),
+        label=f"y = {slope:.2f}x + {intercept:.2f}\nR² = {r_squared:.4f}",
+        ha="left",
+        size=10,
+        color="gray"
+    )
+    + theme_minimal()
+)
+
+print(plot)
+```
 
 ### Making Predictions
 :::{.gray-container}
