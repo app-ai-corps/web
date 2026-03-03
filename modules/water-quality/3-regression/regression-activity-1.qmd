@@ -15,7 +15,7 @@ In workshop #2, we learned how computers "see" color - through RBG values! But t
 ![](images/Red_Pixels.png)
 :::
 ::: {.column}
-![](images/Red_Meaned_Pixels.png)
+![](images/Red_Meaned_Pixels.png){width="95%"}
 :::
 :::
 
