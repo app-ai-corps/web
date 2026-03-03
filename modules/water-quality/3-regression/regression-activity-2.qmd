@@ -22,8 +22,27 @@ sidebar: lesson-3
 
 There are a few ways to create a line of best fit, but we will use Python to run a linear regression for us! It will generate our line of best fit.
 
-```{pyodide}
+:::{.dkorange-container}
+Replace the `__` placeholder with the color values and nitrate concentrations from the RBG activity and scatterplot!
 
+**IMPORTANT:** The color values and nitrate concentrations must be in the exact same order.
+
+Click the ▶️ Run Code button to run the block.
+:::
+
+```{pyodide}
+#| exercise: ex_1
+#| code-fold: true
+
+color_data = [__, __, __, __, __, __, __, __]
+
+nitrate_ppm = [__, __, __, __, __, __, __, __]
+
+# --- everything below is hidden by default but still editable ---
+
+# Convert to NumPy arrays
+color_data = np.array(color_data)
+nitrate_ppm = np.array(nitrate_ppm)
 ```
 
 ### Drawing Your Line of Best Fit
