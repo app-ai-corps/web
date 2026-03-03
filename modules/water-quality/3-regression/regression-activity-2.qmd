@@ -33,6 +33,7 @@ Click the ▶️ Run Code button to run the block and store your data.
 ```{python}
 #| echo: false
 # Code that will convert lists to arrays. Helps hide the arrays from the students.
+import numpy as np
 
 def process_data(color_data, nitrate_ppm):
     color_data = np.array(color_data)
