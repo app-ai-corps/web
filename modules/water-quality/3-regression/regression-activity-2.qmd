@@ -32,13 +32,24 @@ Click the ▶️ Run Code button to run the block and store your data.
 
 ```{python}
 #| echo: false
-# Code that will convert lists to arrays. Helps hide the arrays from the students.
-import numpy as np
 
+import numpy as np
+import pandas as pd
+
+# Code that will convert lists to arrays. Helps hide the arrays from the students.
 def process_data(color_data, nitrate_ppm):
     color_data = np.array(color_data)
     nitrate_ppm = np.array(nitrate_ppm)
     return color_data, nitrate_ppm
+
+# Creates dataframe for plotnine
+
+def process_df(color_data, nitrate_ppm):
+    df = pd.DataFrame({
+        "color_data": color_data,
+        "nitrate_ppm": nitrate_ppm
+    })
+    return df
 ```
 
 
@@ -52,6 +63,7 @@ nitrate_ppm = [__, __, __, __, __, __, __, __]
 
 # Do not change the code below
 color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
+df = process_df(color_data, nitrate_ppm)
 ```
 
 ### Drawing Your Line of Best Fit
@@ -60,17 +72,6 @@ color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
 - Poster Markers  
 - Scatterplot   
 :::
-
-```{python}
-#| echo: false
-import pandas as pd
-
-# Creates dataframe for plotnine
-df = pd.DataFrame({
-    "color_data": color_data,
-    "nitrate_ppm": nitrate_ppm
-})
-```
 
 :::{.dkorange-container}
 Replace the `__` placeholders with the x variable in the first blank and the y variable in the second.
