@@ -101,10 +101,10 @@ with warnings.catch_warnings():
 
 :::{.gray-container}
 **Materials Needed:**
-- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html)
-- Three Additional "Nitrate Test Pad" Cards
-- Handout
-- Pencil
+- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html). 
+- Three Additional "Nitrate Test Pad" Cards  
+- Handout  
+- Pencil  
 :::
 
 1. Use the applet linked above to find either the R, G, or B value (depending on your group's assignment) for the new cards.
@@ -140,8 +140,10 @@ r_squared = 1 - (ss_res / ss_tot)
 print(f"R² = {r_squared * 100:.1f}%")
 ```
 :::{.gray-container}
-**Materials Needed:**
-- Poster Marker
+**Materials Needed:**. 
+- Poster Marker. 
 :::
 
 **Write your group's R squared model on the poster at the front of the room.** Compare your group's R squared value with the values of the other groups. What do you notice?
+
+**How might we improve our model and, therefore, prediction?**
