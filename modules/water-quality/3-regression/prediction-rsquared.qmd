@@ -10,7 +10,7 @@ sidebar: lesson-3
 ### Making Predictions
 
 :::{.dkorange-container}
-Re-enter your color values and nitrate concentrations from the previous activity. Remember that it doesn't remember them from page to page.
+Re-enter your color values and nitrate concentrations from the previous activity. Remember that it doesn't remember them from page to page, so this is repetitive.
 
 **IMPORTANT:** The values must be in the exact same order as before.
 
@@ -36,7 +36,7 @@ print(f"Slope: {slope:.4f}, Intercept: {intercept:.4f}")
 Now that we have our regression model, we can use it to **predict** nitrate concentrations for new color values — even ones we didn't measure!
 
 :::{.dkorange-container}
-Click the ▶️ Run Code button to generate the interactive plot. Then type any color value into the box to see where that point falls on the regression line.
+Click the ▶️ Run Code button to generate an interactive scatterplot with regression line. Then type any color value (`x`) into the box to see where that point falls (in terms of nitrate_ppm) on the regression line.
 :::
 
 ```{pyodide}
