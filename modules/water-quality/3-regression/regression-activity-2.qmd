@@ -130,5 +130,8 @@ plt.show()
 :::{.gray-container}
 **Materials Needed:**  
 - Poster Markers  
-- Scatterplot   
+- Scatterplot 
+- Yardstick  
 :::
+
+Using the exact positioning the line of best fit python generated, copy that line onto your group's scatterplot. When finished, bring your group's plot to the front of the class.
