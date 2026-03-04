@@ -101,7 +101,7 @@ with warnings.catch_warnings():
 
 :::{.gray-container}
 **Materials Needed:**
-- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html). 
+- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html)   
 - Three Additional "Nitrate Test Pad" Cards  
 - Handout  
 - Pencil  
@@ -126,7 +126,7 @@ That's where **R²** (pronounced "R-squared") comes in. R² tells us how well ou
 | Around **70–90%** | A reasonably strong fit |
 
 :::{.dkorange-container}
-Click the ▶️ Run Code button to calculate your R² value.
+Click the ▶️ Run Code button to calculate your model's R² value.
 :::
 
 ```{pyodide}
@@ -140,8 +140,8 @@ r_squared = 1 - (ss_res / ss_tot)
 print(f"R² = {r_squared * 100:.1f}%")
 ```
 :::{.gray-container}
-**Materials Needed:**. 
-- Poster Marker. 
+**Materials Needed:**  
+- Poster Marker  
 :::
 
 **Write your group's R squared model on the poster at the front of the room.** Compare your group's R squared value with the values of the other groups. What do you notice?
