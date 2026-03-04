@@ -111,7 +111,7 @@ print(plot)
 ```
 
 :::{.dkorange-container}
-Replace the `__` placeholders with the x variable in the first blank and the y variable in the second.
+Replace the `__` placeholders with the x variable in the first blank and the y variable in the second blank.
 
 Click the ▶️ Run Code button to run the block and generate the equation for the line of best fit.
 :::
