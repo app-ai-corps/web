@@ -88,6 +88,7 @@ Click the ▶️ Run Code button to run the block and generate the equation for 
 #| persist: true
 #| completion: false
 slope, intercept = np.polyfit(_, _, 1)
+
 print("slope (m):",slope)
 print("intercept (b):",intercept)
 ```
@@ -97,7 +98,7 @@ print("intercept (b):",intercept)
 Remember ***y = mx + b***?  
 We can just substitute!
 
-:::{.ltorange-container}
+:::{.dkorange-container}
 Click the ▶️ Run Code button to see the slope-intercept equation of your regression line.
 :::
 
@@ -107,7 +108,7 @@ Click the ▶️ Run Code button to see the slope-intercept equation of your reg
 
 ### Plotting the Regression Line
 
-:::{.ltorange-container}
+:::{.dkorange-container}
 Click the ▶️ Run Code button to plot the scatterplot with the regression line included.
 :::
 
