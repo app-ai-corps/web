@@ -9,8 +9,129 @@ sidebar: lesson-3
 
 ### Making Predictions
 :::{.gray-container}
-**Materials Needed:**  
-- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html)  
-- Three Additional "Nitrate Test Pad" Cards  
-- Pencil   
+**Materials Needed:**
+- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html)
+- Three Additional "Nitrate Test Pad" Cards
+- Pencil
 :::
+
+:::{.dkorange-container}
+Re-enter your color values and nitrate concentrations from the previous activity.
+
+**IMPORTANT:** The values must be in the exact same order as before.
+
+Click the ▶️ Run Code button to re-load your data.
+:::
+
+```{pyodide}
+#| persist: true
+#| completion: false
+import numpy as np
+
+color_data = [_, _, _, _, _, _, _, _]
+
+nitrate_ppm = [_, _, _, _, _, _, _, _]
+
+# Do not change the code below ------------------------------------
+color_data = np.array(color_data)
+nitrate_ppm = np.array(nitrate_ppm)
+slope, intercept = np.polyfit(color_data, nitrate_ppm, 1)
+print(f"Slope: {slope:.4f}, Intercept: {intercept:.4f}")
+```
+
+Now that we have our regression model, we can use it to **predict** nitrate concentrations for new color values — even ones we didn't measure!
+
+:::{.dkorange-container}
+Click the ▶️ Run Code button to create an interactive plot. Then **drag the slider** to move along the regression line and read off the predicted nitrate for any color value.
+:::
+
+```{pyodide}
+import micropip
+await micropip.install("plotly")
+import plotly.graph_objects as go
+from IPython.display import display, HTML
+import numpy as np
+
+x_min = float(min(color_data))
+x_max = float(max(color_data))
+x_line = np.linspace(x_min, x_max, 200)
+y_line = slope * x_line + intercept
+
+n_steps = 60
+x_steps = np.linspace(x_min, x_max, n_steps)
+y_steps = slope * x_steps + intercept
+
+frames = [
+    go.Frame(
+        data=[go.Scatter(
+            x=[float(xs)], y=[float(ys)],
+            mode='markers+text',
+            marker=dict(color='dodgerblue', size=14, line=dict(color='white', width=2)),
+            text=[f'({xs:.1f}, {ys:.2f} ppm)'],
+            textposition='top right',
+            textfont=dict(size=13, color='navy')
+        )],
+        traces=[2],
+        name=str(i)
+    )
+    for i, (xs, ys) in enumerate(zip(x_steps, y_steps))
+]
+
+x0, y0 = float(x_steps[0]), float(y_steps[0])
+
+fig = go.Figure(
+    data=[
+        go.Scatter(
+            x=list(color_data), y=list(nitrate_ppm),
+            mode='markers', name='Your Data',
+            marker=dict(color='black', size=9)
+        ),
+        go.Scatter(
+            x=list(x_line), y=list(y_line),
+            mode='lines', name='Regression Line',
+            line=dict(color='tomato', width=2.5),
+            hoverinfo='skip'
+        ),
+        go.Scatter(
+            x=[x0], y=[y0],
+            mode='markers+text', name='Prediction',
+            marker=dict(color='dodgerblue', size=14, line=dict(color='white', width=2)),
+            text=[f'({x0:.1f}, {y0:.2f} ppm)'],
+            textposition='top right',
+            textfont=dict(size=13, color='navy')
+        )
+    ],
+    frames=frames,
+    layout=go.Layout(
+        title='Drag the slider to predict nitrate from any color value!',
+        xaxis_title='Color Value',
+        yaxis_title='Nitrate (ppm)',
+        hovermode='closest',
+        height=500,
+        sliders=[{
+            'active': 0,
+            'steps': [
+                {
+                    'args': [[str(i)], {'frame': {'duration': 0, 'redraw': True}, 'mode': 'immediate'}],
+                    'label': f'{xs:.0f}',
+                    'method': 'animate'
+                }
+                for i, xs in enumerate(x_steps)
+            ],
+            'x': 0.05,
+            'y': 0,
+            'len': 0.9,
+            'currentvalue': {
+                'prefix': 'Color value: ',
+                'visible': True,
+                'xanchor': 'center',
+                'font': {'size': 15, 'color': 'navy'}
+            },
+            'transition': {'duration': 0},
+            'pad': {'t': 50}
+        }]
+    )
+)
+
+display(HTML(fig.to_html(include_plotlyjs='cdn', full_html=False)))
+```
