@@ -111,9 +111,9 @@ nitrate_pred = slope * color_data + intercept
 plt.figure(figsize=(6, 5))
 plt.scatter(color_data, nitrate_ppm, s=60, color="black")
 plt.plot(color_data, nitrate_pred, color="black", linewidth=1)
-plt.title("Nitrate vs. Color")
+plt.title("Nitrate Concentration vs. Color")
 plt.xlabel("Color")
-plt.ylabel("Nitrate (ppm)")
+plt.ylabel("Nitrate Concentration (ppm)")
 plt.text(
     min(color_data),
     max(nitrate_ppm),
