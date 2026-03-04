@@ -30,32 +30,7 @@ Replace the `_` placeholder with the color values and nitrate concentrations fro
 Click the ▶️ Run Code button to run the block and store your data.
 :::
 
-<!-- ```{pyodide}
-#| include: false
-import numpy as np
-import pandas as pd
-from plotnine import ggplot, aes, geom_point, geom_line, labs, theme_minimal, annotate
-
-# Code that will convert lists to arrays.
-def process_data(color_data, nitrate_ppm):
-    color_data = np.array(color_data)
-    nitrate_ppm = np.array(nitrate_ppm)
-    return color_data, nitrate_ppm
-
-# Creates dataframe for plotnine
-def process_df(color_data, nitrate_ppm):
-    df = pd.DataFrame({
-        "color_data": color_data,
-        "nitrate_ppm": nitrate_ppm
-    })
-    return df
-
-# Runs a linear regression (looks better than NumPy function)
-def linear_regression(x, y):
-    slope, intercept = np.polyfit(x, y, 1)
-    return slope, intercept
-``` -->
-
+### Storing Your Data
 
 ```{pyodide}
 #| persist: true
@@ -79,12 +54,7 @@ df = pd.DataFrame({
     })
 ```
 
-### Drawing Your Line of Best Fit
-:::{.gray-container}
-**Materials Needed:**  
-- Poster Markers  
-- Scatterplot   
-:::
+### Recreating Your Team's Scatterplot
 
 :::{.dkorange-container}
 Replace the `_` placeholders with the x variable in the first blank and the y variable in the second.
@@ -106,6 +76,8 @@ plt.tight_layout()
 plt.show()
 ```
 
+### Running the Linear Regression
+
 :::{.dkorange-container}
 Replace the `__` placeholders with the x variable in the first blank and the y variable in the second blank.
 
@@ -115,9 +87,16 @@ Click the ▶️ Run Code button to run the block and generate the equation for 
 ```{pyodide}
 #| persist: true
 #| completion: false
-
 slope, intercept = np.polyfit(_, _, 1)
+print("slope (m):",slope)
+print("intercept (b):",intercept)
 ```
+
+**NOTE:** The linear regression produces the equation for the line of best fit. After we know the equation, we can graph it.
+
+Remember ***y = mx + b***?
+
+### Plotting the Regression Line
 
 ```{pyodide}
 import matplotlib.pyplot as plt
@@ -126,14 +105,14 @@ nitrate_pred = slope * color_data + intercept
 
 plt.figure(figsize=(6, 5))
 plt.scatter(color_data, nitrate_ppm, s=60, color="black")
-plt.plot(color_data, nitrate_pred, color="tomato", linewidth=1)
+plt.plot(color_data, nitrate_pred, color="black", linewidth=1)
 plt.title("Nitrate vs. Color")
 plt.xlabel("Color")
 plt.ylabel("Nitrate (ppm)")
 plt.text(
     min(color_data),
     max(nitrate_ppm),
-    f"y = {slope:.2f}x + {intercept:.2f}\nR² = {r_squared:.4f}",
+    f"y = {slope:.2f}x + {intercept:.2f}\n",
     ha="left",
     fontsize=10,
     color="gray"
@@ -141,11 +120,10 @@ plt.text(
 plt.tight_layout()
 plt.show()
 ```
+## Activity - Draw your line of best fit on your group's scatterplot
 
-### Making Predictions
 :::{.gray-container}
 **Materials Needed:**  
-- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html)  
-- Three Additional "Nitrate Test Pad" Cards  
-- Pencil   
+- Poster Markers  
+- Scatterplot   
 :::

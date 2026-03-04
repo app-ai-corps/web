@@ -6,3 +6,11 @@ crossref:
 format: live-html
 sidebar: lesson-3
 ---
+
+### Making Predictions
+:::{.gray-container}
+**Materials Needed:**  
+- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html)  
+- Three Additional "Nitrate Test Pad" Cards  
+- Pencil   
+:::
