@@ -130,7 +130,7 @@ plt.show()
 :::{.gray-container}
 **Materials Needed:**  
 - Poster Markers  
-- Scatterplot 
+- Scatterplot  
 - Yardstick  
 :::
 

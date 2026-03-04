@@ -42,96 +42,99 @@ print(f"Slope: {slope:.4f}, Intercept: {intercept:.4f}")
 Now that we have our regression model, we can use it to **predict** nitrate concentrations for new color values — even ones we didn't measure!
 
 :::{.dkorange-container}
-Click the ▶️ Run Code button to create an interactive plot. Then **drag the slider** to move along the regression line and read off the predicted nitrate for any color value.
+Click the ▶️ Run Code button to generate the interactive plot. Then type any color value into the box to see where that point falls on the regression line.
 :::
 
 ```{pyodide}
-import micropip
-await micropip.install("plotly")
-import plotly.graph_objects as go
+import numpy as np
 from IPython.display import display, HTML
+import json
+
+x_arr = np.linspace(float(min(color_data)), float(max(color_data)), 200)
+y_arr = (slope * x_arr + intercept).tolist()
+x_arr = x_arr.tolist()
+x0 = float(min(color_data))
+y0 = float(slope * x0 + intercept)
+
+srcdoc = f"""<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<style>
+body {{ font-family: sans-serif; margin: 10px; }}
+.row {{ display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }}
+#lbl {{ font-size: 15px; color: navy; font-weight: bold; }}
+</style>
+</head>
+<body>
+<div class="row">
+  <b>Color value:</b>
+  <input type="number" id="inp" value="{x0:.0f}" step="1"
+         style="font-size:15px;width:90px;padding:5px 8px;border:2px solid #ccc;border-radius:4px;"
+         oninput="upd()">
+  <span id="lbl"></span>
+</div>
+<div id="plt"></div>
+<script>
+var m={slope}, b={intercept};
+var t1={{x:{json.dumps(color_data.tolist())},y:{json.dumps(nitrate_ppm.tolist())},mode:"markers",name:"Your Data",marker:{{color:"black",size:9}}}};
+var t2={{x:{json.dumps(x_arr)},y:{json.dumps(y_arr)},mode:"lines",name:"Regression Line",line:{{color:"tomato",width:2.5}},hoverinfo:"skip"}};
+var t3={{x:[{x0}],y:[{y0:.4f}],mode:"markers+text",name:"Prediction",marker:{{color:"dodgerblue",size:14,line:{{color:"white",width:2}}}},text:["({x0:.1f}, {y0:.2f} ppm)"],textposition:"top right",textfont:{{size:13,color:"navy"}}}};
+Plotly.newPlot("plt",[t1,t2,t3],{{title:"Type a color value to see the predicted nitrate!",xaxis:{{title:"Color Value"}},yaxis:{{title:"Nitrate (ppm)"}},height:430,hovermode:"closest"}});
+function upd(){{
+  var x=parseFloat(document.getElementById("inp").value);
+  if(isNaN(x))return;
+  var y=m*x+b;
+  document.getElementById("lbl").textContent="Ordered pair: ("+x.toFixed(1)+", "+y.toFixed(2)+" ppm)";
+  Plotly.restyle("plt",{{x:[[x]],y:[[y]],text:[["("+x.toFixed(1)+", "+y.toFixed(2)+" ppm)"]]}}, [2]);
+}}
+upd();
+</script>
+</body>
+</html>"""
+
+display(HTML(
+    '<iframe srcdoc="{}" width="100%" height="510" '
+    'frameborder="0" style="border:none;"></iframe>'.format(
+        srcdoc.replace('"', '&quot;')
+    )
+))
+```
+
+---
+
+### How Good Is Our Model? R²
+
+Our regression line doesn't pass through every data point perfectly — and that's okay! But how do we know if our model is *good enough* to trust?
+
+That's where **R²** (pronounced "R-squared") comes in. R² tells us how well our regression line fits the data. It's a number between 0 and 1:
+
+| R² value | What it means |
+|----------|---------------|
+| Close to **100%** | The line fits the data very well — predictions will be accurate |
+| Close to **0%** | The line barely fits — predictions won't be reliable |
+| Around **70–90%** | A reasonably strong fit |
+
+:::{.dkorange-container}
+Click the ▶️ Run Code button to calculate your R² value.
+:::
+
+```{pyodide}
 import numpy as np
 
-x_min = float(min(color_data))
-x_max = float(max(color_data))
-x_line = np.linspace(x_min, x_max, 200)
-y_line = slope * x_line + intercept
+nitrate_pred = slope * color_data + intercept
+ss_res = np.sum((nitrate_ppm - nitrate_pred) ** 2)
+ss_tot = np.sum((nitrate_ppm - np.mean(nitrate_ppm)) ** 2)
+r_squared = 1 - (ss_res / ss_tot)
 
-n_steps = 60
-x_steps = np.linspace(x_min, x_max, n_steps)
-y_steps = slope * x_steps + intercept
+print(f"R² = {r_squared * 100:.1f}%")
 
-frames = [
-    go.Frame(
-        data=[go.Scatter(
-            x=[float(xs)], y=[float(ys)],
-            mode='markers+text',
-            marker=dict(color='dodgerblue', size=14, line=dict(color='white', width=2)),
-            text=[f'({xs:.1f}, {ys:.2f} ppm)'],
-            textposition='top right',
-            textfont=dict(size=13, color='navy')
-        )],
-        traces=[2],
-        name=str(i)
-    )
-    for i, (xs, ys) in enumerate(zip(x_steps, y_steps))
-]
-
-x0, y0 = float(x_steps[0]), float(y_steps[0])
-
-fig = go.Figure(
-    data=[
-        go.Scatter(
-            x=list(color_data), y=list(nitrate_ppm),
-            mode='markers', name='Your Data',
-            marker=dict(color='black', size=9)
-        ),
-        go.Scatter(
-            x=list(x_line), y=list(y_line),
-            mode='lines', name='Regression Line',
-            line=dict(color='tomato', width=2.5),
-            hoverinfo='skip'
-        ),
-        go.Scatter(
-            x=[x0], y=[y0],
-            mode='markers+text', name='Prediction',
-            marker=dict(color='dodgerblue', size=14, line=dict(color='white', width=2)),
-            text=[f'({x0:.1f}, {y0:.2f} ppm)'],
-            textposition='top right',
-            textfont=dict(size=13, color='navy')
-        )
-    ],
-    frames=frames,
-    layout=go.Layout(
-        title='Drag the slider to predict nitrate from any color value!',
-        xaxis_title='Color Value',
-        yaxis_title='Nitrate (ppm)',
-        hovermode='closest',
-        height=500,
-        sliders=[{
-            'active': 0,
-            'steps': [
-                {
-                    'args': [[str(i)], {'frame': {'duration': 0, 'redraw': True}, 'mode': 'immediate'}],
-                    'label': f'{xs:.0f}',
-                    'method': 'animate'
-                }
-                for i, xs in enumerate(x_steps)
-            ],
-            'x': 0.05,
-            'y': 0,
-            'len': 0.9,
-            'currentvalue': {
-                'prefix': 'Color value: ',
-                'visible': True,
-                'xanchor': 'center',
-                'font': {'size': 15, 'color': 'navy'}
-            },
-            'transition': {'duration': 0},
-            'pad': {'t': 50}
-        }]
-    )
-)
-
-display(HTML(fig.to_html(include_plotlyjs='cdn', full_html=False)))
+if r_squared >= 0.9:
+    print("Strong fit! Your model explains the data very well.")
+elif r_squared >= 0.7:
+    print("Decent fit. Your model captures the general trend.")
+else:
+    print("Weak fit. There may be a lot of variation in your data.")
 ```
+
+**What does this mean for your data?** Think about it this way: an R² of 85% means that 85% of the variation in nitrate concentration can be explained by the color value. The remaining 15% comes from other sources — measurement error, natural variation, or factors our model doesn't account for.
