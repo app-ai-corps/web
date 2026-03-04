@@ -95,6 +95,8 @@ Click the ▶️ Run Code button to create a scatterplot that should match your 
 ```{pyodide}
 #| persist: true
 #| completion: false
+import micropip
+await micropip.install("plotnine")
 from plotnine import ggplot, aes, geom_point, geom_line, labs, theme_minimal, annotate
 
 plot = (
