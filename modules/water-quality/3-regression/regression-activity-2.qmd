@@ -115,7 +115,7 @@ Click the ▶️ Run Code button to run the block and generate the equation for 
 #| persist: true
 #| completion: false
 
-slope, intercept = linear_regression(_, _)
+slope, intercept = np.polyfit(_, _, 1)
 ```
 
 ```{pyodide}
