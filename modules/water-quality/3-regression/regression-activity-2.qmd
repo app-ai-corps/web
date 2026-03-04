@@ -94,7 +94,12 @@ print("intercept (b):",intercept)
 
 **NOTE:** The linear regression produces the equation for the line of best fit. After we know the equation, we can graph it.
 
-Remember ***y = mx + b***?
+Remember ***y = mx + b***?  
+We can just substitute!
+
+```{pyodide}
+"y = {slope:.2f}x + {intercept:.2f}"
+```
 
 ### Plotting the Regression Line
 
