@@ -60,6 +60,9 @@ def linear_regression(x, y):
 ```{pyodide}
 #| persist: true
 #| completion: false
+import numpy as np
+import pandas as pd
+
 color_data = [_, _, _, _, _, _, _, _]
 
 nitrate_ppm = [_, _, _, _, _, _, _, _]
@@ -92,6 +95,8 @@ Click the ▶️ Run Code button to create a scatterplot that should match your 
 ```{pyodide}
 #| persist: true
 #| completion: false
+from plotnine import ggplot, aes, geom_point, geom_line, labs, theme_minimal, annotate
+
 plot = (
     ggplot(df, aes(x="_", y="_"))
     + geom_point(size=3, color="black")
