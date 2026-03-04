@@ -8,15 +8,9 @@ sidebar: lesson-3
 ---
 
 ### Making Predictions
-:::{.gray-container}
-**Materials Needed:**
-- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html)
-- Three Additional "Nitrate Test Pad" Cards
-- Pencil
-:::
 
 :::{.dkorange-container}
-Re-enter your color values and nitrate concentrations from the previous activity.
+Re-enter your color values and nitrate concentrations from the previous activity. Remember that it doesn't remember them from page to page.
 
 **IMPORTANT:** The values must be in the exact same order as before.
 
@@ -49,6 +43,7 @@ Click the ▶️ Run Code button to generate the interactive plot. Then type any
 import numpy as np
 from IPython.display import display, HTML
 import json
+import warnings
 
 x_arr = np.linspace(float(min(color_data)), float(max(color_data)), 200)
 y_arr = (slope * x_arr + intercept).tolist()
@@ -93,21 +88,36 @@ upd();
 </body>
 </html>"""
 
-display(HTML(
-    '<iframe srcdoc="{}" width="100%" height="510" '
-    'frameborder="0" style="border:none;"></iframe>'.format(
-        srcdoc.replace('"', '&quot;')
-    )
-))
+with warnings.catch_warnings():
+    warnings.simplefilter("ignore", UserWarning)
+    display(HTML(
+        '<iframe srcdoc="{}" width="100%" height="510" '
+        'frameborder="0" style="border:none;"></iframe>'.format(
+            srcdoc.replace('"', '&quot;')
+        )
+    ))
 ```
+### Predict The Nitrate Concentrations for New Test Pads
 
----
+:::{.gray-container}
+**Materials Needed:**
+- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html)
+- Three Additional "Nitrate Test Pad" Cards
+- Handout
+- Pencil
+:::
+
+1. Use the applet linked above to find either the R, G, or B value (depending on your group's assignment) for the new cards.
+2. Then, use the graphing tool above to predict the nitrate concentration (ppm) the strip pad is reporting.
+3. Record these predictions on your handout.
+
+<hr>
 
 ### How Good Is Our Model? R²
 
 Our regression line doesn't pass through every data point perfectly — and that's okay! But how do we know if our model is *good enough* to trust?
 
-That's where **R²** (pronounced "R-squared") comes in. R² tells us how well our regression line fits the data. It's a number between 0 and 1:
+That's where **R²** (pronounced "R-squared") comes in. R² tells us how well our regression line fits the data. It's reported between 0% and 100%, like a report card or grade:
 
 | R² value | What it means |
 |----------|---------------|
@@ -128,13 +138,10 @@ ss_tot = np.sum((nitrate_ppm - np.mean(nitrate_ppm)) ** 2)
 r_squared = 1 - (ss_res / ss_tot)
 
 print(f"R² = {r_squared * 100:.1f}%")
-
-if r_squared >= 0.9:
-    print("Strong fit! Your model explains the data very well.")
-elif r_squared >= 0.7:
-    print("Decent fit. Your model captures the general trend.")
-else:
-    print("Weak fit. There may be a lot of variation in your data.")
 ```
+:::{.gray-container}
+**Materials Needed:**
+- Poster Marker
+:::
 
-**What does this mean for your data?** Think about it this way: an R² of 85% means that 85% of the variation in nitrate concentration can be explained by the color value. The remaining 15% comes from other sources — measurement error, natural variation, or factors our model doesn't account for.
+**Write your group's R squared model on the poster at the front of the room.** Compare your group's R squared value with the values of the other groups. What do you notice?
