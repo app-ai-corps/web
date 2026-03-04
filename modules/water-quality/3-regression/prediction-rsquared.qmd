@@ -1,5 +1,5 @@
 ---
-title: "Discussion & R^2"
+title: "Prediction & R^2"
 crossref:
   lst-title: "🎯 Checkpoint 6."
   lst-labels: alpha a
