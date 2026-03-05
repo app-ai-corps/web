@@ -75,7 +75,7 @@ df = process_df(color_data, nitrate_ppm)
 ### Recreating Your Team's Scatterplot
 
 :::{.dkorange-container}
-Replace the `??` placeholders with the x variable in the first blank and the y variable in the second.
+Replace the `??` placeholders with the x variable (`color_data`) in the first blank and the y variable (`nitrate_ppm`) in the second.
 
 Click the ▶️ Run Code button to create a scatterplot that should match your group's paper plot.
 :::
