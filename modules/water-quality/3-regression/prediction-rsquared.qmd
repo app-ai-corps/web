@@ -18,19 +18,29 @@ Click the ▶️ Run Code button to re-load your data.
 :::
 
 ```{pyodide}
-#| persist: true
-#| completion: false
 import numpy as np
 
-color_data = [_, _, _, _, _, _, _, _]
+def process_data(color_data, nitrate_ppm):
+    color_data = np.array(color_data)
+    nitrate_ppm = np.array(nitrate_ppm)
+    return color_data, nitrate_ppm
 
+def linear_regression(x, y):
+    slope, intercept = np.polyfit(x, y, 1)
+    return slope, intercept
+```
+
+
+```{pyodide}
+#| persist: true
+#| completion: false
+color_data = [_, _, _, _, _, _, _, _]
 nitrate_ppm = [_, _, _, _, _, _, _, _]
 
 # Do not change the code below ------------------------------------
-color_data = np.array(color_data)
-nitrate_ppm = np.array(nitrate_ppm)
-slope, intercept = np.polyfit(color_data, nitrate_ppm, 1)
-print(f"Slope: {slope:.4f}, Intercept: {intercept:.4f}")
+color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
+slope, intercept = linear_regression(color_data, nitrate_ppm)
+print(f"Slope: {slope:.2f}, Intercept: {intercept:.2f}")
 ```
 
 Now that we have our regression model, we can use it to **predict** nitrate concentrations for new color values — even ones we didn't measure!
@@ -130,8 +140,6 @@ Click the ▶️ Run Code button to calculate your model's R² value.
 :::
 
 ```{pyodide}
-import numpy as np
-
 nitrate_pred = slope * color_data + intercept
 ss_res = np.sum((nitrate_ppm - nitrate_pred) ** 2)
 ss_tot = np.sum((nitrate_ppm - np.mean(nitrate_ppm)) ** 2)
