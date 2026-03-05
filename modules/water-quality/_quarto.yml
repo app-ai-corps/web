@@ -117,7 +117,7 @@ website:
           href: 3-regression/regression-activity-1
         - text: "5. Regression Activity - Pt. II"
           href: 3-regression/regression-activity-2
-        - text: "6. Prediction & R Squared"
+        - text: "6. Prediction & R²"
           href: 3-regression/prediction-rsquared
         - text: "---"
         - text: "7. Exit Ticket"
