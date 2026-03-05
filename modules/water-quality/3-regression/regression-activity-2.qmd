@@ -9,6 +9,7 @@ sidebar: lesson-3
 
 ## Regression Modeling
 
+```{=html}
 <br>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe 
@@ -19,6 +20,7 @@ sidebar: lesson-3
   </iframe>
 </div>
 <br>
+```
 
 There are a few ways to create a line of best fit, but we will use Python to run a linear regression for us! It will generate our line of best fit.
 
@@ -33,10 +35,32 @@ Click the ▶️ Run Code button to run the block and store your data.
 ### Storing Your Data
 
 ```{pyodide}
-#| persist: true
-#| completion: false
+#| include: false
 import numpy as np
 import pandas as pd
+
+def process_data(color_data, nitrate_ppm):
+    color_data = np.array(color_data)
+    nitrate_ppm = np.array(nitrate_ppm)
+    return color_data, nitrate_ppm
+
+def process_df(color_data, nitrate_ppm):
+    df = pd.DataFrame({
+        "color_data": color_data,
+        "nitrate_ppm": nitrate_ppm
+    })
+    return df
+
+def linear_regression(x, y):
+    slope, intercept = np.polyfit(x, y, 1)
+    return slope, intercept
+```
+
+
+```{pyodide}
+#| persist: true
+#| completion: false
+
 
 color_data = [_, _, _, _, _, _, _, _]
 
