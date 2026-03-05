@@ -12,7 +12,7 @@ sidebar: lesson-3
 :::{.dkorange-container}
 Re-enter your color values and nitrate concentrations from the previous activity. Remember that it doesn't remember them from page to page, so this is repetitive.
 
-**IMPORTANT:** The values must be in the exact same order as before.
+**NOTE:** You should be able to go back to the previous page and copy/paste the two lists here.
 
 Click the ▶️ Run Code button to re-load your data.
 :::
