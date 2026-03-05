@@ -119,7 +119,7 @@ Click the ▶️ Run Code button to see the slope-intercept equation of your reg
 :::
 
 ```{pyodide}
-"y = {slope:.2f}x + {intercept:.2f}"
+print(f"y = {slope:.2f}x + {intercept:.2f}")
 ```
 
 ### Plotting the Regression Line
