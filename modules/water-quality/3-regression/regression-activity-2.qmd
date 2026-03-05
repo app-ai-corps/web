@@ -60,8 +60,6 @@ def linear_regression(x, y):
 ```{pyodide}
 #| persist: true
 #| completion: false
-
-
 color_data = [_, _, _, _, _, _, _, _]
 
 nitrate_ppm = [_, _, _, _, _, _, _, _]
@@ -70,12 +68,8 @@ print(color_data)
 print(nitrate_ppm)
 
 # Do not change the code below ------------------------------------
-color_data = np.array(color_data)
-nitrate_ppm = np.array(nitrate_ppm)
-df = pd.DataFrame({
-        "color_data": color_data,
-        "nitrate_ppm": nitrate_ppm
-    })
+color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
+df = process_df(color_data, nitrate_ppm)
 ```
 
 ### Recreating Your Team's Scatterplot
