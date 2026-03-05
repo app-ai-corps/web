@@ -25,7 +25,7 @@ sidebar: lesson-3
 There are a few ways to create a line of best fit, but we will use Python to run a linear regression for us! It will generate our line of best fit.
 
 :::{.dkorange-container}
-Replace the `_` placeholder with the color values and nitrate concentrations from the RBG activity and scatterplot!
+Replace the `??` placeholder with the color values and nitrate concentrations from the RBG activity and scatterplot!
 
 **IMPORTANT:** The color values and nitrate concentrations must be in the exact same order.
 
@@ -61,8 +61,8 @@ def linear_regression(x, y):
 ```{pyodide}
 #| persist: true
 #| completion: false
-color_data = [_, _, _, _, _, _, _, _]
-nitrate_ppm = [_, _, _, _, _, _, _, _]
+color_data = [??, ??, ??, ??, ??, ??, ??, ??]
+nitrate_ppm = [??, ??, ??, ??, ??, ??, ??, ??]
 
 print(color_data)
 print(nitrate_ppm)
@@ -75,7 +75,7 @@ df = process_df(color_data, nitrate_ppm)
 ### Recreating Your Team's Scatterplot
 
 :::{.dkorange-container}
-Replace the `_` placeholders with the x variable in the first blank and the y variable in the second.
+Replace the `??` placeholders with the x variable in the first blank and the y variable in the second.
 
 Click the ▶️ Run Code button to create a scatterplot that should match your group's paper plot.
 :::
@@ -84,7 +84,7 @@ Click the ▶️ Run Code button to create a scatterplot that should match your 
 #| persist: true
 #| completion: false
 plt.figure(figsize=(6, 5))
-plt.scatter(df["_"], df["_"], s=60, color="black")
+plt.scatter(df["??"], df["??"], s=60, color="black")
 plt.title("Nitrate vs. Color")
 plt.xlabel("Color")
 plt.ylabel("Nitrate (ppm)")
@@ -95,7 +95,7 @@ plt.show()
 ### Running the Linear Regression
 
 :::{.dkorange-container}
-Replace the `__` placeholders with the x variable (`color_data`) in the first blank and the y variable (`nitrate_ppm`) in the second blank.
+Replace the `??` placeholders with the x variable (`color_data`) in the first blank and the y variable (`nitrate_ppm`) in the second blank.
 
 Click the ▶️ Run Code button to run the block and generate the equation for the line of best fit.
 :::
@@ -103,7 +103,7 @@ Click the ▶️ Run Code button to run the block and generate the equation for 
 ```{pyodide}
 #| persist: true
 #| completion: false
-slope, intercept = linear_regression(_,_)
+slope, intercept = linear_regression(??,??)
 
 print("slope (m):",slope)
 print("intercept (b):",intercept)
