@@ -18,6 +18,7 @@ Click the ▶️ Run Code button to re-load your data.
 :::
 
 ```{pyodide}
+#| include: false
 import numpy as np
 
 def process_data(color_data, nitrate_ppm):
@@ -34,8 +35,8 @@ def linear_regression(x, y):
 ```{pyodide}
 #| persist: true
 #| completion: false
-color_data = [_, _, _, _, _, _, _, _]
-nitrate_ppm = [_, _, _, _, _, _, _, _]
+color_data = [??, ??, ??, ??, ??, ??, ??, ??]
+nitrate_ppm = [??, ??, ??, ??, ??, ??, ??, ??]
 
 # Do not change the code below ------------------------------------
 color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
