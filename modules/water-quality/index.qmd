@@ -90,12 +90,6 @@ Coming Soon.
 Coming Soon.
 :::
 
-::: {.lesson-item}
-### [Lesson 6: Mapping Data with GIS](#)
-
-Coming Soon.
-:::
-
 :::
 :::
 
