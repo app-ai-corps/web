@@ -1,0 +1,791 @@
+---
+title: "Workshop #3"
+subtitle: "Regression & Prediction"
+author: "Appalachian A. I. Corps @ UTK"
+crossref:
+  lst-title: "🎯 Checkpoint"
+format:
+  revealjs:
+    theme: [simple, aaic_slides_style.scss]
+    mainfont: Montserrat
+    slide-number: true
+    smaller: false
+    transition: fade
+    background-transition: fade
+    highlight-style: tango
+    show-notes: false
+    title-slide-attributes:
+      data-background-gradient: "linear-gradient(135deg, #00746F, #006C93)"
+      data-background-image: images/logo_white_smaller.png
+      data-background-size: 30%
+      data-background-position: 50% 9%
+    footer: AAIC — Water Quality
+  revealjs-facilitator:
+    output-file: facilitator_notes.html
+    theme: [simple, aaic_slides_style.scss]
+    mainfont: Montserrat
+    slide-number: true
+    smaller: true
+    transition: fade
+    background-transition: fade
+    highlight-style: tango
+    show-notes: separate-page
+    title-slide-attributes:
+      data-background-gradient: "linear-gradient(135deg, #00746F, #006C93)"
+      data-background-image: images/logo_white_smaller.png
+      data-background-size: 30%
+      data-background-position: 50% 9%
+    footer: AAIC — Water Quality
+  beamer-student:
+    output-file: student_handout.pdf
+    classoption: "handout"
+    theme: Boadilla
+    colortheme: crane
+    include-in-header:
+      text: |
+        \usepackage{handoutWithNotes}
+        \pgfpagesuselayout{3 on 1 with notes}[a4paper, border shrink=5mm]
+        \definecolor{mycolor}{RGB}{0, 108, 147}
+        \definecolor{mylight}{RGB}{185, 225, 226}
+        \setbeamercolor{frametitle}{bg=mycolor, fg=white}
+        \setbeamercolor{title}{bg=mycolor, fg=white}
+        \setbeamercolor{structure}{fg=mycolor}
+        \setbeamercolor{palette primary}{bg=mylight, fg=mycolor}
+        \setbeamercolor{palette secondary}{bg=mylight, fg=mycolor}
+        \setbeamercolor{palette tertiary}{bg=mycolor, fg=white}
+        \setbeamercolor{palette quaternary}{bg=mycolor, fg=white}
+        \setbeamertemplate{footline}{}
+        \setbeamercolor{section title}{fg=white}
+jupyter: python3
+execute:
+  echo: true
+  warning: false
+  message: false
+  fig-align: center
+---
+
+# 🎨 Quick Catch Up: Computers & Color Activity
+
+## RGB Values --> Color
+<hr>
+
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 **Checkpoint 7. a:** Using RGB Values to Create Color
+:::
+
+:::{.gray-container .thirtyfourpt-font}
+**Materials Needed:**  
+
+- 💻 Slider Tool on Pg. 7
+- 📝 Handout
+:::
+
+## Using RGB Values to Create Color
+<hr>
+
+:::{.activity-text .line-height .incremental}
+- Use the slider tool below to convert the RGB values to colors
+- Record your answers on the handout
+- We'll do one together!
+:::
+
+:::{.gray-container}
+
+```{=html}
+<div id="rgb-widgets-card" style="max-width:720px;margin:18px auto;font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
+  <h3 style="margin:0 0 8px 0;font-size:18px">Slide the R, G, or B to see how it affects the color of the square!</h3>
+
+  <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start">
+    <div style="flex:1;min-width:260px;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <div style="width:56px;font-weight:600;text-align:right">R:</div>
+        <input id="rRange" type="range" min="0" max="255" step="1" value="128" aria-label="Red" style="flex:1">
+        <div id="rVal" style="width:56px;text-align:center;font-family:monospace;font-weight:600;background:#f1f3f5;padding:6px 8px;border-radius:6px;border:1px solid #eee">128</div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <div style="width:56px;font-weight:600;text-align:right">G:</div>
+        <input id="gRange" type="range" min="0" max="255" step="1" value="128" aria-label="Green" style="flex:1">
+        <div id="gVal" style="width:56px;text-align:center;font-family:monospace;font-weight:600;background:#f1f3f5;padding:6px 8px;border-radius:6px;border:1px solid #eee">128</div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <div style="width:56px;font-weight:600;text-align:right">B:</div>
+        <input id="bRange" type="range" min="0" max="255" step="1" value="128" aria-label="Blue" style="flex:1">
+        <div id="bVal" style="width:56px;text-align:center;font-family:monospace;font-weight:600;background:#f1f3f5;padding:6px 8px;border-radius:6px;border:1px solid #eee">128</div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:10px;align-items:center">
+      <div id="colorPreview" role="img" aria-label="Color preview" style="width:200px;height:200px;border-radius:8px;border:1px solid #dcdcdc;background:rgb(128,128,128)"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  const clamp = (v, a=0, b=255) => Math.min(Math.max(Math.round(v), a), b);
+
+  const rRange = document.getElementById('rRange');
+  const gRange = document.getElementById('gRange');
+  const bRange = document.getElementById('bRange');
+  const rVal = document.getElementById('rVal');
+  const gVal = document.getElementById('gVal');
+  const bVal = document.getElementById('bVal');
+  const colorPreview = document.getElementById('colorPreview');
+
+  const state = {
+    r: clamp(parseInt(rRange.value, 10)),
+    g: clamp(parseInt(gRange.value, 10)),
+    b: clamp(parseInt(bRange.value, 10))
+  };
+
+  window.latest_widget_values = { r: state.r, g: state.g, b: state.b };
+
+  function updateFromInputs() {
+    state.r = clamp(parseInt(rRange.value, 10));
+    state.g = clamp(parseInt(gRange.value, 10));
+    state.b = clamp(parseInt(bRange.value, 10));
+
+    rVal.textContent = state.r;
+    gVal.textContent = state.g;
+    bVal.textContent = state.b;
+
+    colorPreview.style.background = `rgb(${state.r}, ${state.g}, ${state.b})`;
+
+    window.latest_widget_values.r = state.r;
+    window.latest_widget_values.g = state.g;
+    window.latest_widget_values.b = state.b;
+  }
+
+  [rRange, gRange, bRange].forEach(el => {
+    el.addEventListener('input', updateFromInputs);
+    el.addEventListener('change', updateFromInputs);
+  });
+
+  updateFromInputs();
+
+  window.getLatestWidgetValues = () => ({...window.latest_widget_values});
+})();
+</script>
+```
+
+:::
+
+## Using RGB Values to Create Color
+<hr>
+
+:::{.ltblue-container .thirtyfourpt-font}
+
+🎯 **Checkpoint 7. b:** Use the slider tool!  
+<br>
+What color does this RGB value represent? (110, 164, 212)  
+<br>
+Just like the computer, predict what fruit this could be from!
+:::
+
+# Now, something new!
+
+## Lesson Objective
+<hr>
+In this lesson, you will learn how to use scatterplots and regression lines in Python to predict nitrate levels from RGB color values on test strips.
+<br>
+<br>
+
+:::{.gray-container}
+**Materials Needed:**
+
+- 💻 A computer with a webcam
+- A web browser (Chrome, Firefox, or Safari)
+
+:::
+
+## Workshop Structure
+<hr>
+
+::: {.activity-text}
+💻 **Navigate to:**<br><br><center> [**https://tinyurl.com/aaic-wq-3**](https://tinyurl.com/aaic-wq-3){target="_blank"}
+</center><br>
+
+:::
+
+## Review
+<hr>
+
+:::{.gray-container .fourtyeightpt-font}
+**Last workshop we learned:**
+
+:::{.incremental}
+
+- AI: Classification
+  - Model Accuracy
+- Agricultural Uses of Classification
+- Data Ownership
+- Computers & Color
+
+:::
+:::
+
+# Meet the Buoy (Again)!
+
+## Remember Me, Smokey Buoy!?
+<hr>
+
+We met Smokey Buoy last workshop and learned a bit about how it works.
+
+![](images/smokey_buoy.png){fig-align="center"}
+
+## Smokey Buoy: Components
+<hr>
+
+Let's recall Smokey's components and how they work together
+
+![](images/buoy_diagram_modified_fullylabeled.png){fig-align="center" width="60%"}
+
+## Smokey Buoy: 🎥 Camera
+<hr>
+
+:::: {.columns}
+::: {.column width="50%"}
+Smokey Buoy's camera has two jobs:
+
+:::{.incremental}
+- **Watch for a test pad**
+  - We talked about this last workshop!
+- **When pad is present, take a picture**
+  - We'll discuss what happens with the picture today!
+:::
+:::
+::: {.column width="50%"}
+![](images/buoy_diagram_modified_camera.png){width=75%}
+:::
+::::
+
+# Introduction to Regression
+
+## Introduction to Regression
+<hr>
+
+:::{.fourtyeightpt-font .incremental}
+- Last workshop, we learned about **classification**.
+- In this workshop, we will learn about **regression**.
+- Regression is all about **predicting** something from something else.
+:::
+
+## Scenario 1: Cube Towers
+<hr>
+
+:::{.activity-text}
+- We want to build a tower
+- We have 1" inch cubes to use
+:::
+
+![](images/green-cube.png){fig-align="center" width="35%"}
+
+## Let's Predict! — 1 Cube
+<hr>
+
+:::: {.columns}
+::: {.column width="40%"}
+| # of Cubes | Height (inches) |
+|:---:|:---:|
+| 1 | 1 |
+:::
+::: {.column width="60%"}
+![](images/cube-plot-1.png){fig-align="center"}
+:::
+::::
+
+## Let's Predict! — 2 Cubes
+<hr>
+
+:::: {.columns}
+::: {.column width="40%"}
+| # of Cubes | Height (inches) |
+|:---:|:---:|
+| 1 | 1 |
+| 2 | 2 |
+:::
+::: {.column width="60%"}
+![](images/cube-plot-2.png){fig-align="center"}
+:::
+::::
+
+## Let's Predict! — 3 Cubes
+<hr>
+
+:::: {.columns}
+::: {.column width="40%"}
+| # of Cubes | Height (inches) |
+|:---:|:---:|
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+:::
+::: {.column width="60%"}
+![](images/cube-plot-3.png){fig-align="center"}
+:::
+::::
+
+## Let's Predict! — 4 Cubes
+<hr>
+
+:::: {.columns}
+::: {.column width="40%"}
+| # of Cubes | Height (inches) |
+|:---:|:---:|
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+:::
+::: {.column width="60%"}
+![](images/cube-plot-4.png){fig-align="center"}
+:::
+::::
+
+## Let's Predict! — 5 Cubes
+<hr>
+
+:::: {.columns}
+::: {.column width="40%"}
+| # of Cubes | Height (inches) |
+|:---:|:---:|
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+| 5 | 5 |
+:::
+::: {.column width="60%"}
+![](images/cube-plot-5.png){fig-align="center"}
+:::
+::::
+
+## Let's Predict! — 10 Cubes
+<hr>
+
+:::: {.columns}
+::: {.column width="40%"}
+| # of Cubes | Height (inches) |
+|:---:|:---:|
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+| 5 | 5 |
+| 10 | 10 |
+:::
+::: {.column width="60%"}
+![](images/cube-plot-10.png){fig-align="center"}
+:::
+::::
+
+## 🗣️ Discuss: In Your Group
+<hr>
+
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 **Checkpoint 2. a:**
+<br><br>
+How tall will our tower be if we use **100 cubes**? How do you know?
+:::
+
+## Scenario 2: Cheap Uncle Bob
+<hr>
+
+:::{.fourtyeightpt-font .incremental}
+- We want to build a much taller tower, but we ran out of 1" cubes.
+- Uncle Bob volunteers to make us more cubes — cheaper!
+:::
+
+## Scenario 2: Cheap Uncle Bob
+<hr>
+
+Oh no! Uncle Bob's cubes are all slightly different heights!
+
+![](images/green-cubes-multsizing.png){fig-align="center" width="35%"}
+
+## 🗣️ Discuss: In Your Group
+<hr>
+
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 **Checkpoint 2. b:**
+<br><br>
+How will Uncle Bob's new cubes affect our tower height predictions?
+:::
+
+# The Case for Regression
+
+## The Case for Regression
+<hr>
+
+:::{.activity-text}
+Bob's cubes saved us money, but now tower heights are all over the place. We need a better way to predict.
+:::
+
+:::: {.columns}
+::: {.column}
+![True with perfectly 1" cubes](images/cube-plot-11-noregline.png){width=50%}
+:::
+::: {.column}
+![Reality with Uncle Bob's cubes](images/cube-plot-unclebob.png){width=50%}
+:::
+::::
+
+## How Do We Fit Our Line?
+<hr>
+
+:::: {.columns}
+::: {.column}
+![Very clear line with perfect cubes](images/cube-plot-11.png)
+:::
+::: {.column}
+![Need **regression** — the mathematical best-fit line](images/cube-plot-unclebob-regline.png)
+:::
+::::
+
+## Smokey Buoy: Regression
+<hr>
+
+:::{.fourtyeightpt-font .incremental}
+- The buoy also uses **regression** to predict nitrate levels.
+- Let's learn a bit more about this!
+:::
+
+# 🔬 Regression Activity — Pt. I:<br>RGB and Scatterplots
+
+## Meaning RGB
+<hr>
+
+:::{.activity-text}
+In Workshop #2, we learned how computers "see" color through RGB values. The buoy takes **all the pixels** for each test pad and finds their **mean**.
+:::
+
+:::: {.columns style="display:flex; align-items:center; justify-content:center;"}
+::: {.column width="25%" style="display:flex; justify-content:center;"}
+![](images/Red_Pixels.png){style="height:300px; width:auto; object-fit:contain;"}
+:::
+::: {.column width="25%" style="display:flex; justify-content:center;"}
+![](images/Red_Meaned_Pixels.png){style="height:300px; width:auto; object-fit:contain;"}
+:::
+::::
+
+## RGB Activity (Part 1)
+<hr>
+
+:::{.gray-container .fourtyeightpt-font}
+**Materials Needed:**
+
+- 💻 [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html){target="_blank"}
+- Deck of Purple "Nitrate Test Pad" Cards
+- Pencil / Highlighter (optional)
+- Handout / Dot Stickers
+- Large Graph Paper / Poster Markers
+:::
+
+## RGB Activity (Part 1) — Instructions
+<hr>
+
+:::{.fourtyeightpt-font}
+1. Open the [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html){target="_blank"} in a new tab.
+2. Find card #1 in your deck and hold it in front of your webcam.
+3. Using the middle square in the frame, record the RGB values on your handout.
+4. Repeat for all other numbered cards in your deck.
+:::
+
+## Scatterplots Activity (Part 2)
+<hr>
+
+```{=html}
+<center>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe 
+    src="https://www.youtube.com/embed/b_Au4Ngm9pE?start=8&end=86" 
+    frameborder="0" 
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+  </iframe>
+</div>
+</center>
+```
+
+## Scatterplots Activity (Part 2) — Instructions
+<hr>
+
+:::{.ltorange-container .fourtyeightpt-font}
+This portion will be completed with your group.
+Each group is assigned either **red**, **green**, or **blue**.
+:::
+<br>
+
+## Scatterplots Activity (Part 2) — Instructions
+<hr>
+
+:::{.fourtyeightpt-font}
+1. Using the round stickies and graph paper, create a scatterplot.
+2. Place color values (R, G, or B — per your group) on the **x-axis**.
+3. Place nitrate concentrations on the **y-axis**.
+:::
+
+# 💻 Regression Activity — Pt. 2:<br>Regression Modeling
+
+## Regression Modeling
+<hr>
+
+```{=html}
+<center>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe 
+    src="https://www.youtube.com/embed/e18KM681cmg?start=8&end=74" 
+    frameborder="0" 
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+  </iframe>
+</div>
+</center>
+```
+
+## Storing Your Data
+<hr>
+
+:::{.dkorange-container .thirtyfourpt-font}
+Replace the `??` placeholders with your color values and nitrate concentrations.
+
+**IMPORTANT:** Values must be in the **exact same order**.
+
+Click ▶️ **Run Code** to store your data.
+:::
+
+```{pyodide}
+#| persist: true
+#| completion: false
+color_data = [??, ??, ??, ??, ??, ??, ??, ??]
+nitrate_ppm = [??, ??, ??, ??, ??, ??, ??, ??]
+
+print(color_data)
+print(nitrate_ppm)
+
+# Do not change the code below ------------------------------------
+color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
+df = process_df(color_data, nitrate_ppm)
+```
+
+## Recreating Your Team's Scatterplot
+<hr>
+
+:::{.dkorange-container .thirtyfourpt-font}
+Replace the `??` placeholders:
+
+- First blank → x variable: `color_data`
+- Second blank → y variable: `nitrate_ppm`
+
+Click ▶️ **Run Code** to create a scatterplot matching your group's paper plot.
+:::
+
+```{pyodide}
+#| persist: true
+#| completion: false
+plt.figure(figsize=(6, 5))
+plt.scatter(df["??"], df["??"], s=60, color="black")
+plt.title("Nitrate vs. Color")
+plt.xlabel("Color")
+plt.ylabel("Nitrate (ppm)")
+plt.tight_layout()
+plt.show()
+```
+
+## Running the Linear Regression
+<hr>
+
+:::{.dkorange-container .thirtyfourpt-font}
+Replace the `??` placeholders:
+
+- First blank → `color_data`
+- Second blank → `nitrate_ppm`
+
+Click ▶️ **Run Code** to generate the line of best fit equation.
+:::
+
+```{pyodide}
+#| persist: true
+#| completion: false
+slope, intercept = linear_regression(??,??)
+
+print("slope (m):", slope)
+print("intercept (b):", intercept)
+```
+
+## From Regression to Equation
+<hr>
+
+:::{.activity-text}
+The linear regression produces the equation for the **line of best fit**.
+:::
+
+:::{.fourtyeightpt-font}
+Remember ***y = mx + b***? We can just substitute!
+:::
+
+:::{.dkorange-container .thirtyfourpt-font}
+Click ▶️ **Run Code** to see the slope-intercept equation.
+:::
+
+```{pyodide}
+print(f"y = {slope:.2f}x + {intercept:.2f}")
+```
+
+## Plotting the Regression Line
+<hr>
+
+:::{.dkorange-container .thirtyfourpt-font}
+Click ▶️ **Run Code** to plot the scatterplot with the regression line.
+:::
+
+```{pyodide}
+nitrate_pred = slope * color_data + intercept
+
+plt.figure(figsize=(6, 5))
+plt.scatter(color_data, nitrate_ppm, s=60, color="black")
+plt.plot(color_data, nitrate_pred, color="black", linewidth=1)
+plt.title("Nitrate Concentration vs. Color")
+plt.xlabel("Color")
+plt.ylabel("Nitrate Concentration (ppm)")
+plt.text(
+    min(color_data), max(nitrate_ppm),
+    f"y = {slope:.2f}x + {intercept:.2f}\n",
+    ha="left", fontsize=10, color="gray"
+)
+plt.tight_layout()
+plt.show()
+```
+
+## Activity — Draw Your Line of Best Fit
+<hr>
+
+:::{.gray-container .fourtyeightpt-font}
+**Materials Needed:**
+
+- Poster Markers
+- Scatterplot
+- Yardstick
+:::
+
+## Activity — Draw Your Line of Best Fit
+<hr>
+
+:::{.activity-text}
+Using the exact positioning Python generated, **copy the regression line onto your group's scatterplot**. When finished, bring your group's plot to the front of the class.
+:::
+
+# 🔮 Prediction & R²
+
+## Making Predictions — Reload Your Data
+<hr>
+
+:::{.dkorange-container .thirtyfourpt-font}
+Re-enter your color values and nitrate concentrations.
+
+**NOTE:** You can copy/paste the two lists from the previous activity.
+
+Click ▶️ **Run Code** to re-load your data.
+:::
+
+```{pyodide}
+#| persist: true
+#| completion: false
+color_data = [??, ??, ??, ??, ??, ??, ??, ??]
+nitrate_ppm = [??, ??, ??, ??, ??, ??, ??, ??]
+
+# Do not change the code below ------------------------------------
+color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
+slope, intercept = linear_regression(color_data, nitrate_ppm)
+print(f"Slope: {slope:.2f}, Intercept: {intercept:.2f}")
+```
+
+## Using the Model to Predict
+<hr>
+
+:::{.activity-text}
+Now that we have our regression model, we can **predict** nitrate concentrations for new color values — even ones we didn't measure!
+:::
+
+:::{.dkorange-container .thirtyfourpt-font}
+Click ▶️ **Run Code**, then type any color value into the box to see the predicted nitrate concentration.
+:::
+
+```{pyodide}
+show_prediction_plot(color_data, nitrate_ppm, slope, intercept)
+```
+
+## Predict Nitrate Concentrations for New Test Pads
+<hr>
+
+:::{.gray-container .fourtyeightpt-font}
+**Materials Needed:**
+
+- 💻 [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html){target="_blank"}
+- Three Additional "Nitrate Test Pad" Cards
+- Handout / Pencil
+:::
+
+## Predict Nitrate Concentrations for New Test Pads
+<hr>
+
+:::{.fourtyeightpt-font}
+1. Use the applet to find the R, G, or B value for the new cards (per your group).
+2. Use the graphing tool to **predict the nitrate concentration (ppm)**.
+3. Record these predictions on your handout.
+:::
+
+## How Good Is Our Model? R²
+<hr>
+
+:::{.activity-text}
+**R²** (R-squared) tells us how well our regression line fits the data — like a report card:
+:::
+
+| R² value | What it means |
+|----------|---------------|
+| Close to **100%** | Line fits very well — predictions will be accurate |
+| Around **70–90%** | A reasonably strong fit |
+| Close to **0%** | Line barely fits — predictions won't be reliable |
+
+## Calculate Your R² Value
+<hr>
+
+:::{.dkorange-container .thirtyfourpt-font}
+Click ▶️ **Run Code** to calculate your model's R² value.
+:::
+
+```{pyodide}
+r_squared = calculate_rsquared(color_data, nitrate_ppm, slope, intercept)
+
+print(f"R² = {r_squared * 100:.1f}%")
+```
+
+## 🗣️ Discuss: In Your Group
+<hr>
+
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 **Checkpoint 6. a:**
+<br><br>
+Write your group's R² value on the poster at the front of the room.
+
+Compare with the other groups — what do you notice?
+<br><br>
+**How might we improve our model and, therefore, our predictions?**
+:::
+
+# 🎟️<br>Exit Ticket
+
+## 🎟️ Exit Ticket
+<hr>
+<br>
+<br>
+<br>
+
+:::{.thirtyfourpt-font .activity-text style="text-align: center;"}
+🎉 Great job! You've learned so much!
+
+Share what you've learned on the [**Exit Ticket**](https://forms.gle/23LAwb5GcBWAhd1K8).
+:::
