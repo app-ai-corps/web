@@ -115,6 +115,8 @@ Remember ***y = mx + b***?
 We can just substitute!
 
 :::{.dkorange-container}
+No code edits needed!
+
 Click the ▶️ Run Code button to see the slope-intercept equation of your regression line.
 :::
 
@@ -125,6 +127,8 @@ print(f"y = {slope:.2f}x + {intercept:.2f}")
 ### Plotting the Regression Line
 
 :::{.dkorange-container}
+No code edits needed!
+
 Click the ▶️ Run Code button to plot the scatterplot with the regression line included.
 :::
 

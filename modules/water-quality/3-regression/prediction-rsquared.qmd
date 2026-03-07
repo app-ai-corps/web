@@ -109,7 +109,9 @@ print(f"Slope: {slope:.2f}, Intercept: {intercept:.2f}")
 Now that we have our regression model, we can use it to **predict** nitrate concentrations for new color values — even ones we didn't measure!
 
 :::{.dkorange-container}
-Click the ▶️ Run Code button to generate an interactive scatterplot with regression line. Then type any color value (`x`) into the box to see where that point falls (in terms of nitrate_ppm) on the regression line.
+No code edits needed!
+
+Click the ▶️ Run Code button to generate an interactive scatterplot with regression line. Then type any color value (`x`) into the box to see where that point falls (in terms of nitrate_ppm) on your group's regression line.
 :::
 
 ```{pyodide}
@@ -119,7 +121,7 @@ show_prediction_plot(color_data, nitrate_ppm, slope, intercept)
 
 :::{.gray-container}
 **Materials Needed:**  
-- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html)   
+- [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html){target="_blank"}   
 - Three Additional "Nitrate Test Pad" Cards  
 - Handout  
 - Pencil  
@@ -144,6 +146,8 @@ That's where **R²** (pronounced "R-squared") comes in. R² tells us how well ou
 | Around **70–90%** | A reasonably strong fit |
 
 :::{.dkorange-container}
+No code edits needed!
+
 Click the ▶️ Run Code button to calculate your model's R² value.
 :::
 
