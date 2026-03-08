@@ -42,6 +42,20 @@ $fountain: #2197A9;
 $eureka: #EBEA64;
 $energy: #EE3E80;
 
+.reveal pre.sourceCode code {
+  font-size: 1.5rem !important;
+  line-height: 1.3;
+}
+
+.reveal pre.sourceCode code span {
+  font-size: inherit !important;
+}
+
+.reveal .cell-output pre {
+  font-size: 1.5rem !important;
+  line-height: 1.4;
+}
+
 //Font Color Classes
 .valley-color {
   color: #00746F;

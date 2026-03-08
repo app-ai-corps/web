@@ -548,7 +548,7 @@ Each group is assigned either **red**, **green**, or **blue**.
 ## Storing Your Data
 <hr>
 
-:::{.dkorange-container .thirtyfourpt-font}
+:::{.dkorange-container .twentyeightpt-font}
 Replace the `??` placeholders with your color values and nitrate concentrations.
 
 **IMPORTANT:** Values must be in the **exact same order**.
@@ -556,16 +556,50 @@ Replace the `??` placeholders with your color values and nitrate concentrations.
 Click ▶️ **Run Code** to store your data.
 :::
 
-```{pyodide}
-#| persist: true
-#| completion: false
-color_data = [??, ??, ??, ??, ??, ??, ??, ??]
-nitrate_ppm = [??, ??, ??, ??, ??, ??, ??, ??]
+
+```{python}
+#| include: false
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def process_data(color_data, nitrate_ppm):
+    color_data = np.array(color_data)
+    nitrate_ppm = np.array(nitrate_ppm)
+    return color_data, nitrate_ppm
+
+def process_df(color_data, nitrate_ppm):
+    df = pd.DataFrame({
+        "color_data": color_data,
+        "nitrate_ppm": nitrate_ppm
+    })
+    return df
+
+def linear_regression(x, y):
+    slope, intercept = np.polyfit(x, y, 1)
+    return slope, intercept
+
+def show_prediction_plot(color_data, nitrate_ppm, slope, intercept):
+    x_arr = np.linspace(float(min(color_data)), float(max(color_data)), 200)
+    y_arr = (slope * x_arr + intercept).tolist()
+    x_arr = x_arr.tolist()
+    x0 = float(min(color_data))
+    y0 = float(slope * x0 + intercept)
+
+def calculate_rsquared(x, y, slope, intercept):
+    y_pred = slope * x + intercept
+    ss_res = np.sum((y - y_pred) ** 2)
+    ss_tot = np.sum((y - np.mean(y)) ** 2)
+    return 1 - (ss_res / ss_tot)
+```
+
+```{python}
+color_data = [188, 179, 176, 176, 172, 167, 166, 162]
+nitrate_ppm = [0, 1, 2, 3, 4, 5, 6, 7]
 
 print(color_data)
 print(nitrate_ppm)
 
-# Do not change the code below ------------------------------------
 color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
 df = process_df(color_data, nitrate_ppm)
 ```
@@ -582,11 +616,9 @@ Replace the `??` placeholders:
 Click ▶️ **Run Code** to create a scatterplot matching your group's paper plot.
 :::
 
-```{pyodide}
-#| persist: true
-#| completion: false
+```python
 plt.figure(figsize=(6, 5))
-plt.scatter(df["??"], df["??"], s=60, color="black")
+plt.scatter(df["color_data"], df["nitrate_ppm"], s=60, color="black")
 plt.title("Nitrate vs. Color")
 plt.xlabel("Color")
 plt.ylabel("Nitrate (ppm)")
@@ -606,10 +638,8 @@ Replace the `??` placeholders:
 Click ▶️ **Run Code** to generate the line of best fit equation.
 :::
 
-```{pyodide}
-#| persist: true
-#| completion: false
-slope, intercept = linear_regression(??,??)
+```{python}
+slope, intercept = linear_regression(color_data, nitrate_ppm)
 
 print("slope (m):", slope)
 print("intercept (b):", intercept)
@@ -630,18 +660,18 @@ Remember ***y = mx + b***? We can just substitute!
 Click ▶️ **Run Code** to see the slope-intercept equation.
 :::
 
-```{pyodide}
+```{python}
 print(f"y = {slope:.2f}x + {intercept:.2f}")
 ```
 
 ## Plotting the Regression Line
 <hr>
 
-:::{.dkorange-container .thirtyfourpt-font}
+:::{.dkorange-container .twentyeightpt-font}
 Click ▶️ **Run Code** to plot the scatterplot with the regression line.
 :::
 
-```{pyodide}
+```python
 nitrate_pred = slope * color_data + intercept
 
 plt.figure(figsize=(6, 5))
@@ -690,11 +720,9 @@ Re-enter your color values and nitrate concentrations.
 Click ▶️ **Run Code** to re-load your data.
 :::
 
-```{pyodide}
-#| persist: true
-#| completion: false
-color_data = [??, ??, ??, ??, ??, ??, ??, ??]
-nitrate_ppm = [??, ??, ??, ??, ??, ??, ??, ??]
+```{python}
+color_data = [188, 179, 176, 176, 172, 167, 166, 162]
+nitrate_ppm = [0, 1, 2, 3, 4, 5, 6, 7]
 
 # Do not change the code below ------------------------------------
 color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
@@ -713,7 +741,7 @@ Now that we have our regression model, we can **predict** nitrate concentrations
 Click ▶️ **Run Code**, then type any color value into the box to see the predicted nitrate concentration.
 :::
 
-```{pyodide}
+```{python}
 show_prediction_plot(color_data, nitrate_ppm, slope, intercept)
 ```
 
@@ -757,7 +785,7 @@ show_prediction_plot(color_data, nitrate_ppm, slope, intercept)
 Click ▶️ **Run Code** to calculate your model's R² value.
 :::
 
-```{pyodide}
+```{python}
 r_squared = calculate_rsquared(color_data, nitrate_ppm, slope, intercept)
 
 print(f"R² = {r_squared * 100:.1f}%")
