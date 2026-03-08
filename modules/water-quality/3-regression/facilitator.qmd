@@ -58,20 +58,23 @@ If you would like to provide students a copy of the slides with spaces for note 
 
 ## Lesson Prep
 
-#### 1. Ensure Student Access to Webcam
+#### 1. Purchase/Prepare Materials for Lesson
+This lesson makes use of the large/sticky 3M Post-It Grid paper, the red/green/yellow/blue circular yard sale stickers available at most office supply stores, black poster markers, and yardsticks. Optionally, depending on the grade level of your students, it may be advantageous to consider pre-labeling the graph paper with x and y axes (to save time).
+
+#### 2. Ensure Student Access to Webcam
 This lesson is reliant on the student use of their device's webcam. Please double check that the webcam on their device is enabled and works with the [AAIC Applet](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html) used in this lesson.
 
-#### 2. Print and Cut Purple Test Pad Card Deck
+#### 3. Print and Cut Purple Test Pad Card Deck
 For this lesson, we recommend one deck of purple nitrate test strip cards per student group. It is important that these cards be printed in color and of high quality. While the colors are approximations of the exact colors that result from the nitrate test strips used in lesson #1, the key is that they capture the mathematical differences in usefulness of the red, green, and blue channels in meaningfully predicting nitrate concentrations in water samples. This behavior mirrors the reality of the ML model driving the buoy's predictions.
 
-#### 3. Make Copies of the Student Handout
+#### 4. Make Copies of the Student Handout
 Each student will need one copy of the student handout. You can make a copy of the handout by clicking the link above.
 
-#### 4. Create copy of exit ticket for end-of-lesson implementation.
+#### 5. Create copy of exit ticket for end-of-lesson implementation.
 
 We have drafted an exit ticket that aligns with this lesson. We are providing the [Google Form here](https://docs.google.com/forms/d/11oDoRR2eR3Yl_q_MNksztxhcLlcB_YSD8EyivygLnOs/copy) if you would like to use it or modify it for your own needs.
 
-#### 5. Create copy of the exercise for after-lesson practice.
+#### 6. Create copy of the exercise for after-lesson practice.
 
 We have also created an exercise that you can use with students to practice the concepts covered in this lesson. It is available [here](#).
 

@@ -63,6 +63,45 @@ execute:
   message: false
   fig-align: center
 ---
+## Lesson Objective
+<hr>
+In this lesson, you will learn how to use scatterplots and regression lines in Python to predict nitrate levels from RGB color values on test strips.
+<br>
+<br>
+
+:::{.gray-container}
+**Materials Needed:**
+
+- 💻 A computer with a webcam
+- A web browser (Chrome, Firefox, or Safari)
+
+:::
+
+## Workshop Structure
+<hr>
+
+::: {.activity-text}
+💻 **Navigate to:**<br><br><center> [**https://tinyurl.com/aaic-wq-3**](https://tinyurl.com/aaic-wq-3){target="_blank"}
+</center><br>
+
+:::
+
+## Review
+<hr>
+
+:::{.gray-container .fourtyeightpt-font}
+**Last workshop we learned:**
+
+:::{.incremental}
+
+- AI: Classification
+  - Model Accuracy
+- Agricultural Uses of Classification
+- Data Ownership
+- Computers & Color
+
+:::
+:::
 
 # 🎨 Quick Catch Up: Computers & Color Activity
 
@@ -76,15 +115,15 @@ execute:
 :::{.gray-container .thirtyfourpt-font}
 **Materials Needed:**  
 
-- 💻 Slider Tool on Pg. 7
-- 📝 Handout
+- 💻 Slider Tool on Pg. 0
+- 📝 Handout from last workshop
 :::
 
 ## Using RGB Values to Create Color
 <hr>
 
 :::{.activity-text .line-height .incremental}
-- Use the slider tool below to convert the RGB values to colors
+- Use the slider tool below to convert the RGB values (from last workshop) to colors
 - Record your answers on the handout
 - We'll do one together!
 :::
@@ -185,48 +224,6 @@ Just like the computer, predict what fruit this could be from!
 :::
 
 # Now, something new!
-
-## Lesson Objective
-<hr>
-In this lesson, you will learn how to use scatterplots and regression lines in Python to predict nitrate levels from RGB color values on test strips.
-<br>
-<br>
-
-:::{.gray-container}
-**Materials Needed:**
-
-- 💻 A computer with a webcam
-- A web browser (Chrome, Firefox, or Safari)
-
-:::
-
-## Workshop Structure
-<hr>
-
-::: {.activity-text}
-💻 **Navigate to:**<br><br><center> [**https://tinyurl.com/aaic-wq-3**](https://tinyurl.com/aaic-wq-3){target="_blank"}
-</center><br>
-
-:::
-
-## Review
-<hr>
-
-:::{.gray-container .fourtyeightpt-font}
-**Last workshop we learned:**
-
-:::{.incremental}
-
-- AI: Classification
-  - Model Accuracy
-- Agricultural Uses of Classification
-- Data Ownership
-- Computers & Color
-
-:::
-:::
-
-# Meet the Buoy (Again)!
 
 ## Remember Me, Smokey Buoy!?
 <hr>
