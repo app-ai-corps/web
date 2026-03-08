@@ -220,10 +220,10 @@ In this lesson, you will learn how to use scatterplots and regression lines in P
 <br>
 What color does this RGB value represent? (110, 164, 212)  
 <br>
-Just like the computer, predict what fruit this could be from!
+Just like the computer last workshop, try to classify/make a prediction about what fruit this could be!
 :::
 
-# Now, something new!
+# Workshop #3
 
 ## Remember Me, Smokey Buoy!?
 <hr>
@@ -249,8 +249,10 @@ Smokey Buoy's camera has two jobs:
 :::{.incremental}
 - **Watch for a test pad**
   - We talked about this last workshop!
+  - *Recall:* What is the process called?
 - **When pad is present, take a picture**
   - We'll discuss what happens with the picture today!
+  - *A new process!*
 :::
 :::
 ::: {.column width="50%"}
@@ -266,7 +268,7 @@ Smokey Buoy's camera has two jobs:
 :::{.fourtyeightpt-font .incremental}
 - Last workshop, we learned about **classification**.
 - In this workshop, we will learn about **regression**.
-- Regression is all about **predicting** something from something else.
+- Regression is all about **predicting** something (a number!) from something else.
 :::
 
 ## Scenario 1: Cube Towers
