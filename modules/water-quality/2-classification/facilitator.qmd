@@ -1,5 +1,5 @@
 ---
-title: "Facilitator's Guide:<br>Water Quality and Summary Statistics"
+title: "Facilitator's Guide:<br>Classification and Color"
 format: live-html
 ---
 ## Lesson Topics and Standards
