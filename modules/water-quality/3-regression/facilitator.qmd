@@ -92,5 +92,5 @@ By the end of the lesson, students will be able to:
 ## Reference Materials
 
 Whole-Class Video Links:  
-- [Scatter Graphs: What they are and how to plot them](https://youtu.be/b_Au4Ngm9pE?si=gQKsuZ9e9T4USxAC){rel="noopener noreferrer"}
+- [Scatter Graphs: What they are and how to plot them](https://youtu.be/b_Au4Ngm9pE?si=gQKsuZ9e9T4USxAC){rel="noopener noreferrer"}  
 - [Scatter Graphs: Line of best fit](https://youtu.be/e18KM681cmg?si=3iQfTYdxxuQRalA4){rel="noopener noreferrer"}
