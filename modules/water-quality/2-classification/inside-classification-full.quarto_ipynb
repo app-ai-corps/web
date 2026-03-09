@@ -1,0 +1,73 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"How Does It Work?\"\n",
+        "crossref:\n",
+        "  lst-title: \"🎯 Checkpoint 5.\"\n",
+        "  lst-labels: alpha a\n",
+        "format: live-html\n",
+        "sidebar: lesson-2\n",
+        "---\n",
+        "\n",
+        ":::{.ltblue-container}\n",
+        "**Checkpoints on this Page:**\n",
+        "\n",
+        "- [**Checkpoint 5.a:** Neural Network Layers](#lst-nnlayers)\n",
+        ":::\n",
+        "\n",
+        "## How Does Your Model Work?\n",
+        "\n",
+        "Under the hood of your model and most other image classification models is something called a **Convolutional Neural Net (CNN)**. As you have already done, we train CNNs to recognize pattern in images. Watch the clip below to learn more about how the CNN works. Note that the video discussed some of the mathematics behind CNNs, but don't worry if you don't understand everything. Prioritize understanding the big picture, as the video clips moves quickly.\n",
+        "<br>\n",
+        "\n",
+        "<b> Clip 1 </b>\n",
+        "<div style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;\">\n",
+        "  <iframe \n",
+        "    src=\"https://www.youtube.com/embed/oV3ZY6tJiA0?start=197&end=234\" \n",
+        "    frameborder=\"0\" \n",
+        "    allowfullscreen\n",
+        "    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;\">\n",
+        "  </iframe>\n",
+        "</div>\n",
+        "<br>\n",
+        "\n",
+        "<br>\n",
+        "<b> Clip 2 </b>\n",
+        "<div style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;\">\n",
+        "  <iframe \n",
+        "    src=\"https://www.youtube.com/embed/oV3ZY6tJiA0?start=351&end=540\" \n",
+        "    frameborder=\"0\" \n",
+        "    allowfullscreen\n",
+        "    style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;\">\n",
+        "  </iframe>\n",
+        "</div>\n",
+        "<br>\n",
+        "\n",
+        ":::{#lst-nnlayers}\n",
+        "\n",
+        "```{pyodide}\n",
+        "#| include: false\n",
+        "\n",
+        "# Fake block to make checkpoint work\n",
+        "```\n",
+        "Compare and contrast the input layer, the hidden layers, and the output layer. What function do they each have in a neural net?\n",
+        ":::"
+      ],
+      "id": "0b70b2e2"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Library/Frameworks/Python.framework/Versions/3.13/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

@@ -2571,58 +2571,58 @@
   {
     "objectID": "2-classification/facilitator.html",
     "href": "2-classification/facilitator.html",
-    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "title": "Facilitator’s Guide:Classification and Color",
     "section": "",
-    "text": "Topics Covered:\n\n\n\n\n\n\nIntroducion to physical computing\n\nwater quality buoy\n\ncomponents\n\nAI: classifying images\n\ntraining & evaluating models\nconvolutional neural nets\n\nComputers & Color\n\nimages as pixels\ncolor as R, G, B\n\n\n\n\n\n\n\n\n\n\n\nTN Standards Addressed:\n\n\n\n\n\n\nBIO1.LS2.1/ECO.LS2.13/EVSC.LS2.3: Use mathematical and/or computational representations to support explanations of factors that affect the carrying capacity of ecosystems at different scales.\n\nSCRE.ETS2.3: Identify the most appropriate scientific instruments and/or computer programs for different experiments and research, and learn to use, care for, and maintain them, gather data, and analyze results.\n\nPSCI.PS1.7: Develop, or use, a model to predict or explain a phenomenon by using appropriate indicators.\n\nSCRE.ETS3: Applications of Science: Select and use appropriate data tables, graphs, and diagrams to represent data. Use mathematics and computational thinking to look for patterns in data.\nSCRE.ETS3: Applications of Science: Select and use appropriate statistical procedures (descriptive statistics, t-tests, regression and correlation, chi-square, etc.) to analyze data.\n\nA1.S.ID.A.1: Use measures of center to solve real-world and mathematical problems.\n\nA1.S.ID.A.3: Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points.\n\nAGSCIENCE 3.3: Biodiversity: Evaluate the impact of habitat fragmentation, destruction, and other environmental pressures, such as invasive species, overharvesting, pollution, and climate change on local and global biodiversity (genetic, species, and ecosystems.) Distinguish between types of pollution (point and nonpoint sources) and their sources to predict the effects on environmental conditions (e.g., water, soil, and air), animal populations, and plant populations from various kinds of human activity."
+    "text": "Topics Covered:\n\n\n\n\n\n\nAI: Classification\n\nbinary vs. multiclass classification\ntraining & evaluating a model\nconvolutional neural nets (CNNs)\n\nThe Water Quality Buoy\n\ncomponents & how it works\nclassification within the buoy\n\nComputers & Color\n\nimages as pixels\ncolor as R, G, B values\n\nEthics of AI in Agriculture\n\ndata ownership\nfairness\n\n\n\n\n\n\n\n\n\n\n\nTN Standards Addressed:\n\n\n\n\n\n\nBIO1.LS2.1/ECO.LS2.13/EVSC.LS2.3: Use mathematical and/or computational representations to support explanations of factors that affect the carrying capacity of ecosystems at different scales.\n\nSCRE.ETS2.3: Identify the most appropriate scientific instruments and/or computer programs for different experiments and research, and learn to use, care for, and maintain them, gather data, and analyze results.\n\nPSCI.PS1.7: Develop, or use, a model to predict or explain a phenomenon by using appropriate indicators.\n\nSCRE.ETS3: Applications of Science: Use data to develop a model. Evaluate the effectiveness of the model by making and testing predictions.\nAGSCIENCE 2.1: Overview: Articulate important historical and current events impacting the agricultural industry and agricultural youth development. Include landmark laws, theories, and practices such as, but not limited to, the Morrill Act, the Smith-Lever Act, the Smith-Hughes Act, and influential figures such as John Deere, Henry Groseclose, Booker T. Washington, and important government agencies in the promotion of knowledge and technology of agricultural science, biotechnology, and key technological developments.\nAGSCIENCE 3.2: Models: Develop models for the flow of energy and matter (inorganic forms and overall biomass) in various ecosystems impacting agricultural and environmental systems. Using these models, calculate rates of productivity by analyzing the major components of a food chain. Employ mathematical models to explain growth patterns and rates, both densitydependent and density-independent factors, observed in ecosystems energy and nutrients flow."
   },
   {
     "objectID": "2-classification/facilitator.html#lesson-topics-and-standards",
     "href": "2-classification/facilitator.html#lesson-topics-and-standards",
-    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "title": "Facilitator’s Guide:Classification and Color",
     "section": "",
-    "text": "Topics Covered:\n\n\n\n\n\n\nIntroducion to physical computing\n\nwater quality buoy\n\ncomponents\n\nAI: classifying images\n\ntraining & evaluating models\nconvolutional neural nets\n\nComputers & Color\n\nimages as pixels\ncolor as R, G, B\n\n\n\n\n\n\n\n\n\n\n\nTN Standards Addressed:\n\n\n\n\n\n\nBIO1.LS2.1/ECO.LS2.13/EVSC.LS2.3: Use mathematical and/or computational representations to support explanations of factors that affect the carrying capacity of ecosystems at different scales.\n\nSCRE.ETS2.3: Identify the most appropriate scientific instruments and/or computer programs for different experiments and research, and learn to use, care for, and maintain them, gather data, and analyze results.\n\nPSCI.PS1.7: Develop, or use, a model to predict or explain a phenomenon by using appropriate indicators.\n\nSCRE.ETS3: Applications of Science: Select and use appropriate data tables, graphs, and diagrams to represent data. Use mathematics and computational thinking to look for patterns in data.\nSCRE.ETS3: Applications of Science: Select and use appropriate statistical procedures (descriptive statistics, t-tests, regression and correlation, chi-square, etc.) to analyze data.\n\nA1.S.ID.A.1: Use measures of center to solve real-world and mathematical problems.\n\nA1.S.ID.A.3: Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points.\n\nAGSCIENCE 3.3: Biodiversity: Evaluate the impact of habitat fragmentation, destruction, and other environmental pressures, such as invasive species, overharvesting, pollution, and climate change on local and global biodiversity (genetic, species, and ecosystems.) Distinguish between types of pollution (point and nonpoint sources) and their sources to predict the effects on environmental conditions (e.g., water, soil, and air), animal populations, and plant populations from various kinds of human activity."
+    "text": "Topics Covered:\n\n\n\n\n\n\nAI: Classification\n\nbinary vs. multiclass classification\ntraining & evaluating a model\nconvolutional neural nets (CNNs)\n\nThe Water Quality Buoy\n\ncomponents & how it works\nclassification within the buoy\n\nComputers & Color\n\nimages as pixels\ncolor as R, G, B values\n\nEthics of AI in Agriculture\n\ndata ownership\nfairness\n\n\n\n\n\n\n\n\n\n\n\nTN Standards Addressed:\n\n\n\n\n\n\nBIO1.LS2.1/ECO.LS2.13/EVSC.LS2.3: Use mathematical and/or computational representations to support explanations of factors that affect the carrying capacity of ecosystems at different scales.\n\nSCRE.ETS2.3: Identify the most appropriate scientific instruments and/or computer programs for different experiments and research, and learn to use, care for, and maintain them, gather data, and analyze results.\n\nPSCI.PS1.7: Develop, or use, a model to predict or explain a phenomenon by using appropriate indicators.\n\nSCRE.ETS3: Applications of Science: Use data to develop a model. Evaluate the effectiveness of the model by making and testing predictions.\nAGSCIENCE 2.1: Overview: Articulate important historical and current events impacting the agricultural industry and agricultural youth development. Include landmark laws, theories, and practices such as, but not limited to, the Morrill Act, the Smith-Lever Act, the Smith-Hughes Act, and influential figures such as John Deere, Henry Groseclose, Booker T. Washington, and important government agencies in the promotion of knowledge and technology of agricultural science, biotechnology, and key technological developments.\nAGSCIENCE 3.2: Models: Develop models for the flow of energy and matter (inorganic forms and overall biomass) in various ecosystems impacting agricultural and environmental systems. Using these models, calculate rates of productivity by analyzing the major components of a food chain. Employ mathematical models to explain growth patterns and rates, both densitydependent and density-independent factors, observed in ecosystems energy and nutrients flow."
   },
   {
     "objectID": "2-classification/facilitator.html#lesson-overview-video-tour",
     "href": "2-classification/facilitator.html#lesson-overview-video-tour",
-    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "title": "Facilitator’s Guide:Classification and Color",
     "section": "Lesson Overview Video Tour",
     "text": "Lesson Overview Video Tour\n\n  \n  Your browser does not support the video tag.\n\n If you would like a more in-depth overview of the lesson, please consult the slides with visible facilitator notes."
   },
   {
     "objectID": "2-classification/facilitator.html#slide-deck-for-lesson",
     "href": "2-classification/facilitator.html#slide-deck-for-lesson",
-    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "title": "Facilitator’s Guide:Classification and Color",
     "section": "Slide Deck for Lesson",
-    "text": "Slide Deck for Lesson\nWorkshop #1 Slides"
+    "text": "Slide Deck for Lesson\nWorkshop #2 Slides"
   },
   {
     "objectID": "2-classification/facilitator.html#student-handout",
     "href": "2-classification/facilitator.html#student-handout",
-    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "title": "Facilitator’s Guide:Classification and Color",
     "section": "Student Handout",
     "text": "Student Handout\nYou can make a copy of the student handout for this lesson.\n\nIf you would like to provide students a copy of the slides with spaces for note taking, we have prepared a handout for this purpose."
   },
   {
     "objectID": "2-classification/facilitator.html#lesson-prep",
     "href": "2-classification/facilitator.html#lesson-prep",
-    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "title": "Facilitator’s Guide:Classification and Color",
     "section": "Lesson Prep",
-    "text": "Lesson Prep\n\n1. Prepare Materials for Nitrates Lab\nWe suggest creating water samples the for nitrates lab the day before. This will allow the nitrates to fully dissolve in the water.\nMaterials needed:\n\nMiracle-Gro Fertilizer Liquid\n\nDropper/Pipette\n\nSmall cups for student use (to hold samples for testing)\n\nSmall sticky notes (we use the 1.875” stickies) grouped into sets of 1 red, 1 green, 1 blue, 1 yellow, etc.\n\nEach group will be assigned a color (red, green, blue, yellow, etc.), so the number of stickies in a set will be dictated by the number of groups.\n\nEach group will need one multi-colored sticky set per water sample.\n\n\n1 Sharpie/Poster marker per group\n\nNitrate/Nitrate test strips\n\nMasking tape/ sharpies to label cups/samples\n\n\n\n\n\n\n\nNitrate Sample Creation Guide\n\n\n\n\n\nMixing Guide\nThis plan is written to provide samples for 5 groups with 4 samples each.\nFor 5 groups × 4 samples = 20 total samples\nFill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dropper/pipette:\nNormal/Low Range (8 samples) - 0-5 ppm\n4 samples: Plain water (0 drops)\n4 samples: 1-2 drops per cup\nModerate Range (6 samples) - 8-12 ppm\n6 samples: 4-6 drops per cup\nMedium-High Range (3 samples) - 15-20 ppm\n3 samples: 8-10 drops per cup\nExtreme Outliers (3 samples) - 35-50 ppm\n2 samples: 20-25 drops per cup (~35-40 ppm)\n1 sample: 30+ drops per cup (50 ppm, maxes out strip)\n\n\n\n\n\n2. Prepare Materials for Boxplot Activity\nMaterials needed:\n\n1 Post-It Gridded Sticky Page/Group\n\nWe pre-drew the axis on the page due to time limitations\n\n\n1 poster marker per group\n\n\n\n3. Make Copies: 1 Handout Per Student\n\nYou will need to make 1 copy per student of the workshop handout. If color-copying is not possible, make sure to have a reference of the color key for the nitrate/nitrite test strips available for each group. Note that the keys vary depending on the brand of test strips you purchase, so you may need to modify the handout to match the specific test strips you are using. Also, the colors are sensitive to lighting and printer setup, so if may be preferrable to have several bottles available for comparison to the orginal key on the bottle itself.\n\n\n\n4. Create and Share Link for Nitrates Lab Data Collection\n\nMake sure you are logged into your school Google Account\nUse this link to make a copy of the Nitrate/Nitrite Lab Google Form\nOpen your copy of the Nitrate/Nitrite Lab Google Form. Publish the form. Double check the sharing settings to make sure all of your students can respond.\n\nWhile on the sharing settings, copy the respondent link and be prepared to share this link with your students, probably via email or your LMS. Close the sharing settings.\nOn the “Responses” tab, click “Link to Sheet” &gt; “Create a New Sheet” to aggregate all of the student responses into one spreadsheet.\nOpen the spreadsheet it generates (it may automatically open) and go to “File” &gt; “Share” &gt; “Publish to web” and use the following options:\n\nWhen you click publish, it will give you a link. Please be prepared to share this link with your students during the second half of class… perhaps via email or via LMS. They will need to copy/paste it to access the data. You can set this up well in advance of class.\n\nNote: If you are facilitating this module for more than one class, you will want to repeat this process once for each class, so that each class has their own submission form and spreadsheet.\nThis can be done well in advance, just make sure to keep the form link (respondent link) and spreadsheet link (publish to web link) for each class ready to disseminate.\n\n\n\n5. Create group tents using colored paper that matches the sticky notes.\n\n\n6. Create copy of exit ticket for end-of-lesson implementation.\n\nWe have drafted a three-question exit ticket that aligns with the three major content areas of this lesson (Water Quality, Python, and Statistics). We are providing the Google Form here if you would like to use it or modify it for your own needs.\n\n\n\n7. Create copy of the exercise for after-lesson practice.\n\nWe have also created a Google Colab exercise that you can use with students to practice the concepts covered in this lesson. It is available here."
+    "text": "Lesson Prep\n\n1. Ensure Student Access to Webcam\nThis lesson is reliant on the student use of their device’s webcam. Please double check that the webcam on their device is enabled and works with both Teachable Machine and the AAIC Applet used in this lesson.\n\n\n2. Purchase Fruit and Distractor\nFor this lesson, we recommend one red apple per child, and at least one Granny Smith and mandarin orange per small group. If you want to lengthen this lesson, you could vary the types of red apples purchased and have discussion about the importance of training classification models for different varieities of apples and fruits. We also purchased an orange rubber ball, similarly sized to the mandarin oranges.\n\n\n3. Make Copies of the Student Handout\nEach student will need one copy of the student handout. You can make a copy of the handout by clicking the link above.\n\n\n4. Create copy of exit ticket for end-of-lesson implementation.\nWe have drafted an exit ticket that aligns with tthis lesson. We are providing the Google Form here if you would like to use it or modify it for your own needs.\n\n\n5. Create copy of the exercise for after-lesson practice.\nWe have also created an exercise that you can use with students to practice the concepts covered in this lesson. It is available here."
   },
   {
     "objectID": "2-classification/facilitator.html#lesson-overview-takeaways",
     "href": "2-classification/facilitator.html#lesson-overview-takeaways",
-    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "title": "Facilitator’s Guide:Classification and Color",
     "section": "Lesson Overview & Takeaways",
-    "text": "Lesson Overview & Takeaways\nBy the end of the lesson, students will be able to:\n\nWrite and run a basic python script that includes:\n\nstrings\n\nmathematical operators\n\nstatistics functions\n\nprint statements\n\nlists\n\n\nExplain, at a high level, the role of nitrogen in water quality evaluations\n\nCarry out procedures to collect and interpret data concerning nitrate and nirite concentrations from a water quality test\n\nConstruct boxplots, manually and computationally, to visualize water quality data"
+    "text": "Lesson Overview & Takeaways\nBy the end of the lesson, students will be able to:\n\nDescribe the components of the Smokey Buoy and explain how it uses classification to monitor water quality\nDistinguish between binary and multiclass classification and provide examples of each\nTrain and evaluate an image classification model using Teachable Machine\nExplain, at a high level, how a Convolutional Neural Net (CNN) works\nExplain how computers represent images as pixels and colors as R, G, B values\nDiscuss ethical considerations around data ownership and fairness in AI-assisted agriculture"
   },
   {
     "objectID": "2-classification/facilitator.html#reference-materials",
     "href": "2-classification/facilitator.html#reference-materials",
-    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "title": "Facilitator’s Guide:Classification and Color",
     "section": "Reference Materials",
-    "text": "Reference Materials\nWhole-Class Video Links:\n- Water Quality\n- Nitrogen Cycle\n- Nitrogen as Polutant\n- What is Statistics?\n- Mean, Median & Mode"
+    "text": "Reference Materials\nWhole-Class Video Links:\n- PBS Convolutional Neural Networks"
   },
   {
     "objectID": "2-classification/slides.html#review-1",
@@ -3806,5 +3806,1076 @@
     "title": "Intro to Regression",
     "section": "Smokey Buoy: Regression",
     "text": "Smokey Buoy: Regression\n\nThe buoy also uses regression to predict nitrate levels.\nLet’s learn a bit more about this!"
+  },
+  {
+    "objectID": "3-regression/slides.html#lesson-objective",
+    "href": "3-regression/slides.html#lesson-objective",
+    "title": "Workshop #3",
+    "section": "Lesson Objective",
+    "text": "Lesson Objective\n\nIn this lesson, you will learn how to use scatterplots and regression lines in Python to predict nitrate levels from RGB color values on test strips.  \n\nMaterials Needed:\n\n💻 A computer with a webcam\nA web browser (Chrome, Firefox, or Safari)"
+  },
+  {
+    "objectID": "3-regression/slides.html#workshop-structure",
+    "href": "3-regression/slides.html#workshop-structure",
+    "title": "Workshop #3",
+    "section": "Workshop Structure",
+    "text": "Workshop Structure\n\n\n💻 Navigate to:\n\nhttps://tinyurl.com/aaic-wq-3"
+  },
+  {
+    "objectID": "3-regression/slides.html#review",
+    "href": "3-regression/slides.html#review",
+    "title": "Workshop #3",
+    "section": "Review",
+    "text": "Review\n\n\nLast workshop we learned:\n\nAI: Classification\n\nModel Accuracy\n\nAgricultural Uses of Classification\nData Ownership\nComputers & Color"
+  },
+  {
+    "objectID": "3-regression/slides.html#rgb-values-color",
+    "href": "3-regression/slides.html#rgb-values-color",
+    "title": "Workshop #3",
+    "section": "RGB Values –> Color",
+    "text": "RGB Values –&gt; Color\n\n\n🎯 Checkpoint 7. a: Using RGB Values to Create Color\n\n\nMaterials Needed:\n\n💻 Slider Tool on Pg. 0\n📝 Handout from last workshop"
+  },
+  {
+    "objectID": "3-regression/slides.html#using-rgb-values-to-create-color",
+    "href": "3-regression/slides.html#using-rgb-values-to-create-color",
+    "title": "Workshop #3",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\nUse the slider tool below to convert the RGB values (from last workshop) to colors\nRecord your answers on the handout\nWe’ll do one together!\n\n\n\n\n  Slide the R, G, or B to see how it affects the color of the square!\n\n  \n    \n      \n        R:\n        \n        128\n      \n\n      \n        G:\n        \n        128\n      \n\n      \n        B:\n        \n        128"
+  },
+  {
+    "objectID": "3-regression/slides.html#using-rgb-values-to-create-color-1",
+    "href": "3-regression/slides.html#using-rgb-values-to-create-color-1",
+    "title": "Workshop #3",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n🎯 Checkpoint 7. b: Use the slider tool!\n What color does this RGB value represent? (110, 164, 212)\n Just like the computer last workshop, try to classify/make a prediction about what fruit this could be!"
+  },
+  {
+    "objectID": "3-regression/slides.html#remember-me-smokey-buoy",
+    "href": "3-regression/slides.html#remember-me-smokey-buoy",
+    "title": "Workshop #3",
+    "section": "Remember Me, Smokey Buoy!?",
+    "text": "Remember Me, Smokey Buoy!?\n\nWe met Smokey Buoy last workshop and learned a bit about how it works."
+  },
+  {
+    "objectID": "3-regression/slides.html#smokey-buoy-components",
+    "href": "3-regression/slides.html#smokey-buoy-components",
+    "title": "Workshop #3",
+    "section": "Smokey Buoy: Components",
+    "text": "Smokey Buoy: Components\n\nLet’s recall Smokey’s components and how they work together"
+  },
+  {
+    "objectID": "3-regression/slides.html#smokey-buoy-camera",
+    "href": "3-regression/slides.html#smokey-buoy-camera",
+    "title": "Workshop #3",
+    "section": "Smokey Buoy: 🎥 Camera",
+    "text": "Smokey Buoy: 🎥 Camera\n\n\n\nSmokey Buoy’s camera has two jobs:\n\nWatch for a test pad\n\nWe talked about this last workshop!\nRecall: What is the process called?\n\nWhen pad is present, take a picture\n\nWe’ll discuss what happens with the picture today!\nA new process!"
+  },
+  {
+    "objectID": "3-regression/slides.html#introduction-to-regression-1",
+    "href": "3-regression/slides.html#introduction-to-regression-1",
+    "title": "Workshop #3",
+    "section": "Introduction to Regression",
+    "text": "Introduction to Regression\n\n\n\nLast workshop, we learned about classification.\nIn this workshop, we will learn about regression.\nRegression is all about predicting something (a number!) from something else (other numbers)."
+  },
+  {
+    "objectID": "3-regression/slides.html#scenario-1-cube-towers",
+    "href": "3-regression/slides.html#scenario-1-cube-towers",
+    "title": "Workshop #3",
+    "section": "Scenario 1: Cube Towers",
+    "text": "Scenario 1: Cube Towers\n\n\n\nWe want to build a tower\nWe have 1” inch cubes to use"
+  },
+  {
+    "objectID": "3-regression/slides.html#lets-predict-1-cube",
+    "href": "3-regression/slides.html#lets-predict-1-cube",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 1 Cube",
+    "text": "Let’s Predict! — 1 Cube\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1"
+  },
+  {
+    "objectID": "3-regression/slides.html#lets-predict-2-cubes",
+    "href": "3-regression/slides.html#lets-predict-2-cubes",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 2 Cubes",
+    "text": "Let’s Predict! — 2 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2"
+  },
+  {
+    "objectID": "3-regression/slides.html#lets-predict-3-cubes",
+    "href": "3-regression/slides.html#lets-predict-3-cubes",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 3 Cubes",
+    "text": "Let’s Predict! — 3 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3"
+  },
+  {
+    "objectID": "3-regression/slides.html#lets-predict-4-cubes",
+    "href": "3-regression/slides.html#lets-predict-4-cubes",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 4 Cubes",
+    "text": "Let’s Predict! — 4 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3\n3\n\n\n4"
+  },
+  {
+    "objectID": "3-regression/slides.html#lets-predict-5-cubes",
+    "href": "3-regression/slides.html#lets-predict-5-cubes",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 5 Cubes",
+    "text": "Let’s Predict! — 5 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3\n3\n\n\n4\n4\n\n\n5"
+  },
+  {
+    "objectID": "3-regression/slides.html#lets-predict-10-cubes",
+    "href": "3-regression/slides.html#lets-predict-10-cubes",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 10 Cubes",
+    "text": "Let’s Predict! — 10 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3\n3\n\n\n4\n4\n\n\n5\n5\n\n\n10"
+  },
+  {
+    "objectID": "3-regression/slides.html#discuss-in-your-group",
+    "href": "3-regression/slides.html#discuss-in-your-group",
+    "title": "Workshop #3",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\n🎯 Checkpoint 2. a:  Q1: How tall will our tower be if we use 100 cubes?\n Q2: Your friend argues that the tower will be 99 inches tall. What would you tell him? Why?"
+  },
+  {
+    "objectID": "3-regression/slides.html#scenario-2-cheap-uncle-bob",
+    "href": "3-regression/slides.html#scenario-2-cheap-uncle-bob",
+    "title": "Workshop #3",
+    "section": "Scenario 2: Cheap Uncle Bob",
+    "text": "Scenario 2: Cheap Uncle Bob\n\n\n\nWe want to build a much taller tower than our current 10” one, but we ran out of 1” cubes.\n🎉 Uncle Bob volunteers to make us more cubes — cheaper!"
+  },
+  {
+    "objectID": "3-regression/slides.html#scenario-2-cheap-uncle-bob-1",
+    "href": "3-regression/slides.html#scenario-2-cheap-uncle-bob-1",
+    "title": "Workshop #3",
+    "section": "Scenario 2: Cheap Uncle Bob",
+    "text": "Scenario 2: Cheap Uncle Bob\n\nOh no! Uncle Bob’s cubes are all slightly different heights!"
+  },
+  {
+    "objectID": "3-regression/slides.html#discuss-in-your-group-1",
+    "href": "3-regression/slides.html#discuss-in-your-group-1",
+    "title": "Workshop #3",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\n🎯 Checkpoint 2. b:  How will Uncle Bob’s new cubes affect our tower height predictions?"
+  },
+  {
+    "objectID": "3-regression/slides.html#the-case-for-regression-1",
+    "href": "3-regression/slides.html#the-case-for-regression-1",
+    "title": "Workshop #3",
+    "section": "The Case for Regression",
+    "text": "The Case for Regression\n\n\n\n\n\n\nTrue with perfectly 1” cubes"
+  },
+  {
+    "objectID": "3-regression/slides.html#how-do-we-fit-our-line",
+    "href": "3-regression/slides.html#how-do-we-fit-our-line",
+    "title": "Workshop #3",
+    "section": "How Do We Fit Our Line?",
+    "text": "How Do We Fit Our Line?\n\n\n\n\n\n\nVery clear line with perfect cubes\n\n\n\n\n\n\nNeed regression — the mathematical best-fit line"
+  },
+  {
+    "objectID": "3-regression/slides.html#smokey-buoy-regression",
+    "href": "3-regression/slides.html#smokey-buoy-regression",
+    "title": "Workshop #3",
+    "section": "Smokey Buoy: Regression",
+    "text": "Smokey Buoy: Regression\n\n\n\nThe buoy also uses regression to predict nitrate levels.\nLet’s learn a bit more about this!"
+  },
+  {
+    "objectID": "3-regression/slides.html#meaning-rgb",
+    "href": "3-regression/slides.html#meaning-rgb",
+    "title": "Workshop #3",
+    "section": "Meaning RGB",
+    "text": "Meaning RGB\n\n\nIn Workshop #2, we learned how computers “see” color through RGB values. The buoy takes all the pixels for each test pad and finds their mean."
+  },
+  {
+    "objectID": "3-regression/slides.html#rgb-activity-part-1",
+    "href": "3-regression/slides.html#rgb-activity-part-1",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Part 1)",
+    "text": "RGB Activity (Part 1)\n\n\nMaterials Needed:\n\n💻 RGB Applet V2\nDeck of Purple “Nitrate Test Pad” Cards\nPencil / Highlighter (optional)\nHandout / Dot Stickers\nLarge Graph Paper / Poster Markers"
+  },
+  {
+    "objectID": "3-regression/slides.html#rgb-activity-part-1-instructions",
+    "href": "3-regression/slides.html#rgb-activity-part-1-instructions",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Part 1) — Instructions",
+    "text": "RGB Activity (Part 1) — Instructions\n\n\n\nHB: Open the RGB Applet V2 in a new tab.\nHB: Find card #1 in your deck and hold it in front of your webcam.\nDRs: Using the middle square in the frame, record the RGB values on your handout.\nRepeat for all other cards in deck."
+  },
+  {
+    "objectID": "3-regression/slides.html#scatterplots-activity-part-2",
+    "href": "3-regression/slides.html#scatterplots-activity-part-2",
+    "title": "Workshop #3",
+    "section": "Scatterplots Activity (Part 2)",
+    "text": "Scatterplots Activity (Part 2)"
+  },
+  {
+    "objectID": "3-regression/slides.html#scatterplots-activity-part-2-instructions",
+    "href": "3-regression/slides.html#scatterplots-activity-part-2-instructions",
+    "title": "Workshop #3",
+    "section": "Scatterplots Activity (Part 2) — Instructions",
+    "text": "Scatterplots Activity (Part 2) — Instructions\n\n\n\nUsing the round stickies and graph paper, create a scatterplot.\nPlace color values (R, G, or B — per your group) on the x-axis.\nPlace nitrate concentrations on the y-axis."
+  },
+  {
+    "objectID": "3-regression/slides.html#scatterplots-activity-part-2-instructions-1",
+    "href": "3-regression/slides.html#scatterplots-activity-part-2-instructions-1",
+    "title": "Workshop #3",
+    "section": "Scatterplots Activity (Part 2) — Instructions",
+    "text": "Scatterplots Activity (Part 2) — Instructions\n\n\n\nUsing the round stickies and graph paper, create a scatterplot.\nPlace color values (R, G, or B — per your group) on the x-axis.\nPlace nitrate concentrations on the y-axis."
+  },
+  {
+    "objectID": "3-regression/slides.html#regression-modeling",
+    "href": "3-regression/slides.html#regression-modeling",
+    "title": "Workshop #3",
+    "section": "Regression Modeling",
+    "text": "Regression Modeling"
+  },
+  {
+    "objectID": "3-regression/slides.html#storing-your-data",
+    "href": "3-regression/slides.html#storing-your-data",
+    "title": "Workshop #3",
+    "section": "Storing Your Data",
+    "text": "Storing Your Data\n\n\nReplace the ?? placeholders with your color values and nitrate concentrations.\nIMPORTANT: Values must be in the exact same order.\nClick ▶️ Run Code to store your data.\n\n\ncolor_data = [188, 179, 176, 176, 172, 167, 166, 162]\nnitrate_ppm = [0, 1, 2, 3, 4, 5, 6, 7]\n\nprint(color_data)\nprint(nitrate_ppm)\n\ncolor_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\ndf = process_df(color_data, nitrate_ppm)\n\n[188, 179, 176, 176, 172, 167, 166, 162]\n[0, 1, 2, 3, 4, 5, 6, 7]"
+  },
+  {
+    "objectID": "3-regression/slides.html#recreating-your-teams-scatterplot",
+    "href": "3-regression/slides.html#recreating-your-teams-scatterplot",
+    "title": "Workshop #3",
+    "section": "Recreating Your Team’s Scatterplot",
+    "text": "Recreating Your Team’s Scatterplot\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to create a scatterplot matching your group’s paper plot.\n\nplt.figure(figsize=(6, 5))\nplt.scatter(df[\"color_data\"], df[\"nitrate_ppm\"], s=60, color=\"black\")\nplt.title(\"Nitrate vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate (ppm)\")\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "3-regression/slides.html#running-the-linear-regression",
+    "href": "3-regression/slides.html#running-the-linear-regression",
+    "title": "Workshop #3",
+    "section": "Running the Linear Regression",
+    "text": "Running the Linear Regression\n\n\nReplace the ?? placeholders:\n\nFirst blank → color_data\nSecond blank → nitrate_ppm\n\nClick ▶️ Run Code to generate the line of best fit equation.\n\n\nslope, intercept = linear_regression(color_data, nitrate_ppm)\n\nprint(\"slope (m):\", slope)\nprint(\"intercept (b):\", intercept)\n\nslope (m): -0.28630278063851533\nintercept (b): 53.10195674562279"
+  },
+  {
+    "objectID": "3-regression/slides.html#from-regression-to-equation",
+    "href": "3-regression/slides.html#from-regression-to-equation",
+    "title": "Workshop #3",
+    "section": "From Regression to Equation",
+    "text": "From Regression to Equation\n\n\nThe linear regression produces the equation for the line of best fit.\n\n\nRemember y = mx + b? We can just substitute!\n\n\nClick ▶️ Run Code to see the slope-intercept equation.\n\n\nprint(f\"y = {slope:.2f}x + {intercept:.2f}\")\n\ny = -0.29x + 53.10"
+  },
+  {
+    "objectID": "3-regression/slides.html#plotting-the-regression-line",
+    "href": "3-regression/slides.html#plotting-the-regression-line",
+    "title": "Workshop #3",
+    "section": "Plotting the Regression Line",
+    "text": "Plotting the Regression Line\n\n\nClick ▶️ Run Code to plot the scatterplot with the regression line.\n\nnitrate_pred = slope * color_data + intercept\n\nplt.figure(figsize=(6, 5))\nplt.scatter(color_data, nitrate_ppm, s=60, color=\"black\")\nplt.plot(color_data, nitrate_pred, color=\"black\", linewidth=1)\nplt.title(\"Nitrate Concentration vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate Concentration (ppm)\")\nplt.text(\n    min(color_data), max(nitrate_ppm),\n    f\"y = {slope:.2f}x + {intercept:.2f}\\n\",\n    ha=\"left\", fontsize=10, color=\"gray\"\n)\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "3-regression/slides.html#activity-draw-your-line-of-best-fit",
+    "href": "3-regression/slides.html#activity-draw-your-line-of-best-fit",
+    "title": "Workshop #3",
+    "section": "Activity — Draw Your Line of Best Fit",
+    "text": "Activity — Draw Your Line of Best Fit\n\n\nMaterials Needed:\n\nPoster Markers\nScatterplot\nYardstick"
+  },
+  {
+    "objectID": "3-regression/slides.html#activity-draw-your-line-of-best-fit-1",
+    "href": "3-regression/slides.html#activity-draw-your-line-of-best-fit-1",
+    "title": "Workshop #3",
+    "section": "Activity — Draw Your Line of Best Fit",
+    "text": "Activity — Draw Your Line of Best Fit\n\n\nUsing the exact positioning Python generated, copy the regression line onto your group’s scatterplot. When finished, bring your group’s plot to the front of the class."
+  },
+  {
+    "objectID": "3-regression/slides.html#making-predictions-reload-your-data",
+    "href": "3-regression/slides.html#making-predictions-reload-your-data",
+    "title": "Workshop #3",
+    "section": "Making Predictions — Reload Your Data",
+    "text": "Making Predictions — Reload Your Data\n\n\nRe-enter your color values and nitrate concentrations.\nNOTE: You can copy/paste the two lists from the previous activity.\nClick ▶️ Run Code to re-load your data.\n\n\ncolor_data = [188, 179, 176, 176, 172, 167, 166, 162]\nnitrate_ppm = [0, 1, 2, 3, 4, 5, 6, 7]\n\n# Do not change the code below ------------------------------------\ncolor_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\nslope, intercept = linear_regression(color_data, nitrate_ppm)\nprint(f\"Slope: {slope:.2f}, Intercept: {intercept:.2f}\")\n\nSlope: -0.29, Intercept: 53.10"
+  },
+  {
+    "objectID": "3-regression/slides.html#using-the-model-to-predict",
+    "href": "3-regression/slides.html#using-the-model-to-predict",
+    "title": "Workshop #3",
+    "section": "Using the Model to Predict",
+    "text": "Using the Model to Predict\n\n\nNow that we have our regression model, we can predict nitrate concentrations for new color values — even ones we didn’t measure!\n\n\nClick ▶️ Run Code, then type any color value into the box to see the predicted nitrate concentration.\n\n\nshow_prediction_plot(color_data, nitrate_ppm, slope, intercept)"
+  },
+  {
+    "objectID": "3-regression/slides.html#predict-nitrate-concentrations-for-new-test-pads",
+    "href": "3-regression/slides.html#predict-nitrate-concentrations-for-new-test-pads",
+    "title": "Workshop #3",
+    "section": "Predict Nitrate Concentrations for New Test Pads",
+    "text": "Predict Nitrate Concentrations for New Test Pads\n\n\nMaterials Needed:\n\n💻 RGB Applet V2\nThree Additional “Nitrate Test Pad” Cards\nHandout / Pencil"
+  },
+  {
+    "objectID": "3-regression/slides.html#predict-nitrate-concentrations-for-new-test-pads-1",
+    "href": "3-regression/slides.html#predict-nitrate-concentrations-for-new-test-pads-1",
+    "title": "Workshop #3",
+    "section": "Predict Nitrate Concentrations for New Test Pads",
+    "text": "Predict Nitrate Concentrations for New Test Pads\n\n\n\nUse the applet to find the R, G, or B value for the new cards (per your group).\nUse the graphing tool to predict the nitrate concentration (ppm).\nRecord these predictions on your handout."
+  },
+  {
+    "objectID": "3-regression/slides.html#how-good-is-our-model-r²",
+    "href": "3-regression/slides.html#how-good-is-our-model-r²",
+    "title": "Workshop #3",
+    "section": "How Good Is Our Model? R²",
+    "text": "How Good Is Our Model? R²\n\n\nR² (R-squared) tells us how well our regression line fits the data — like a report card:\n\n\n\n\n\n\n\n\nR² value\nWhat it means\n\n\n\n\nClose to 100%\nLine fits very well — predictions will be accurate\n\n\nAround 70–90%\nA reasonably strong fit\n\n\nClose to 0%\nLine barely fits — predictions won’t be reliable"
+  },
+  {
+    "objectID": "3-regression/slides.html#calculate-your-r²-value",
+    "href": "3-regression/slides.html#calculate-your-r²-value",
+    "title": "Workshop #3",
+    "section": "Calculate Your R² Value",
+    "text": "Calculate Your R² Value\n\n\nClick ▶️ Run Code to calculate your model’s R² value.\n\n\nr_squared = calculate_rsquared(color_data, nitrate_ppm, slope, intercept)\n\nprint(f\"R² = {r_squared * 100:.1f}%\")\n\nR² = 94.8%"
+  },
+  {
+    "objectID": "3-regression/slides.html#discuss-in-your-group-2",
+    "href": "3-regression/slides.html#discuss-in-your-group-2",
+    "title": "Workshop #3",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\n🎯 Checkpoint 6. a:  Write your group’s R² value on the poster at the front of the room.\nCompare with the other groups — what do you notice?  How might we improve our model and, therefore, our predictions?"
+  },
+  {
+    "objectID": "3-regression/slides.html#exit-ticket-1",
+    "href": "3-regression/slides.html#exit-ticket-1",
+    "title": "Workshop #3",
+    "section": "🎟️ Exit Ticket",
+    "text": "🎟️ Exit Ticket\n\n  \n\n🎉 Great job! You’ve learned so much!\nShare what you’ve learned on the Exit Ticket."
+  },
+  {
+    "objectID": "3-regression/regression-activity-2.html",
+    "href": "3-regression/regression-activity-2.html",
+    "title": "Regression Activity - Pt. 2: Regression Modeling",
+    "section": "",
+    "text": "There are a few ways to create a line of best fit, but we will use Python to run a linear regression for us! It will generate our line of best fit.\n\nReplace the ?? placeholder with the color values and nitrate concentrations from the RBG activity and scatterplot!\nIMPORTANT: The color values and nitrate concentrations must be in the exact same order.\nClick the ▶️ Run Code button to run the block and store your data.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReplace the ?? placeholders with the x variable (color_data) in the first blank and the y variable (nitrate_ppm) in the second.\nClick the ▶️ Run Code button to create a scatterplot that should match your group’s paper plot.\n\n\n\n\n\n\n\n\n\n\n\nReplace the ?? placeholders with the x variable (color_data) in the first blank and the y variable (nitrate_ppm) in the second blank.\nClick the ▶️ Run Code button to run the block and generate the equation for the line of best fit.\n\n\n\n\n\n\n\nNOTE: The linear regression produces the equation for the line of best fit. After we know the equation, we can graph it.\nRemember y = mx + b?\nWe can just substitute!\n\nNo code edits needed!\nClick the ▶️ Run Code button to see the slope-intercept equation of your regression line.\n\n\n\n\n\n\n\n\n\n\n\nNo code edits needed!\nClick the ▶️ Run Code button to plot the scatterplot with the regression line included."
+  },
+  {
+    "objectID": "3-regression/regression-activity-2.html#regression-modeling",
+    "href": "3-regression/regression-activity-2.html#regression-modeling",
+    "title": "Regression Activity - Pt. 2: Regression Modeling",
+    "section": "",
+    "text": "There are a few ways to create a line of best fit, but we will use Python to run a linear regression for us! It will generate our line of best fit.\n\nReplace the ?? placeholder with the color values and nitrate concentrations from the RBG activity and scatterplot!\nIMPORTANT: The color values and nitrate concentrations must be in the exact same order.\nClick the ▶️ Run Code button to run the block and store your data.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReplace the ?? placeholders with the x variable (color_data) in the first blank and the y variable (nitrate_ppm) in the second.\nClick the ▶️ Run Code button to create a scatterplot that should match your group’s paper plot.\n\n\n\n\n\n\n\n\n\n\n\nReplace the ?? placeholders with the x variable (color_data) in the first blank and the y variable (nitrate_ppm) in the second blank.\nClick the ▶️ Run Code button to run the block and generate the equation for the line of best fit.\n\n\n\n\n\n\n\nNOTE: The linear regression produces the equation for the line of best fit. After we know the equation, we can graph it.\nRemember y = mx + b?\nWe can just substitute!\n\nNo code edits needed!\nClick the ▶️ Run Code button to see the slope-intercept equation of your regression line.\n\n\n\n\n\n\n\n\n\n\n\nNo code edits needed!\nClick the ▶️ Run Code button to plot the scatterplot with the regression line included."
+  },
+  {
+    "objectID": "3-regression/regression-activity-2.html#activity---draw-your-line-of-best-fit-on-your-groups-scatterplot",
+    "href": "3-regression/regression-activity-2.html#activity---draw-your-line-of-best-fit-on-your-groups-scatterplot",
+    "title": "Regression Activity - Pt. 2: Regression Modeling",
+    "section": "Activity - Draw your line of best fit on your group’s scatterplot",
+    "text": "Activity - Draw your line of best fit on your group’s scatterplot\n\nMaterials Needed:\n- Poster Markers\n- Scatterplot\n- Yardstick\n\nUsing the exact positioning the line of best fit python generated, copy that line onto your group’s scatterplot. When finished, bring your group’s plot to the front of the class."
+  },
+  {
+    "objectID": "3-regression/prediction-rsquared.html",
+    "href": "3-regression/prediction-rsquared.html",
+    "title": "Prediction & R²",
+    "section": "",
+    "text": "Making Predictions\n\nRe-enter your color values and nitrate concentrations from the previous activity. Remember that it doesn’t remember them from page to page, so this is repetitive.\nNOTE: You should be able to go back to the previous page and copy/paste the two lists here.\nClick the ▶️ Run Code button to re-load your data.\n\n\n\n\n\n\n\n\n\n\n\n\n\nNow that we have our regression model, we can use it to predict nitrate concentrations for new color values — even ones we didn’t measure!\n\nNo code edits needed!\nClick the ▶️ Run Code button to generate an interactive scatterplot with regression line. Then type any color value (x) into the box to see where that point falls (in terms of nitrate_ppm) on your group’s regression line.\n\n\n\n\n\n\n\n\n\nPredict The Nitrate Concentrations for New Test Pads\n\nMaterials Needed:\n- RGB Applet V2\n- Three Additional “Nitrate Test Pad” Cards\n- Handout\n- Pencil\n\n\nUse the applet linked above to find either the R, G, or B value (depending on your group’s assignment) for the new cards.\nThen, use the graphing tool above to predict the nitrate concentration (ppm) the strip pad is reporting.\nRecord these predictions on your handout.\n\n\n\n\nHow Good Is Our Model? R²\nOur regression line doesn’t pass through every data point perfectly — and that’s okay! But how do we know if our model is good enough to trust?\nThat’s where R² (pronounced “R-squared”) comes in. R² tells us how well our regression line fits the data. It’s reported between 0% and 100%, like a report card or grade:\n\n\n\n\n\n\n\nR² value\nWhat it means\n\n\n\n\nClose to 100%\nThe line fits the data very well — predictions will be accurate\n\n\nClose to 0%\nThe line barely fits — predictions won’t be reliable\n\n\nAround 70–90%\nA reasonably strong fit\n\n\n\n\nNo code edits needed!\nClick the ▶️ Run Code button to calculate your model’s R² value.\n\n\n\n\n\n\n\n\nMaterials Needed:\n- Poster Marker\n\nWrite your group’s R squared model on the poster at the front of the room. Compare your group’s R squared value with the values of the other groups. What do you notice?\nHow might we improve our model and, therefore, prediction?"
+  },
+  {
+    "objectID": "3-regression/facilitator.html",
+    "href": "3-regression/facilitator.html",
+    "title": "Facilitator’s Guide:Regression & Prediction",
+    "section": "",
+    "text": "Topics Covered:\n\n\n\n\n\n\nAI: Regression\n\nregression vs. classification\npredicting continuous values\n\nScatterplots & Lines of Best Fit\n\nplotting data\nfitting a line to noisy data\n\nLinear Regression in Python\n\nslope & intercept\npredicting new values\n\nModel Evaluation\n\nR² as a measure of fit\n\nThe Water Quality Buoy\n\nusing regression to predict nitrate levels from test pad color\n\n\n\n\n\n\n\n\n\n\n\nTN Standards Addressed:\n\n\n\n\n\n\nBIO1.LS2.1/ECO.LS2.13/EVSC.LS2.3: Use mathematical and/or computational representations to support explanations of factors that affect the carrying capacity of ecosystems at different scales.\n\nSCRE.ETS2.3: Identify the most appropriate scientific instruments and/or computer programs for different experiments and research, and learn to use, care for, and maintain them, gather data, and analyze results.\n\nPSCI.PS1.7: Develop, or use, a model to predict or explain a phenomenon by using appropriate indicators.\n\nSCRE.ETS3: Applications of Science: Use data to develop a model. Evaluate the effectiveness of the model by making and testing predictions.\nAGSCIENCE 2.1: Overview: Articulate important historical and current events impacting the agricultural industry and agricultural youth development. Include landmark laws, theories, and practices such as, but not limited to, the Morrill Act, the Smith-Lever Act, the Smith-Hughes Act, and influential figures such as John Deere, Henry Groseclose, Booker T. Washington, and important government agencies in the promotion of knowledge and technology of agricultural science, biotechnology, and key technological developments.\nAGSCIENCE 3.2: Models: Develop models for the flow of energy and matter (inorganic forms and overall biomass) in various ecosystems impacting agricultural and environmental systems. Using these models, calculate rates of productivity by analyzing the major components of a food chain. Employ mathematical models to explain growth patterns and rates, both densitydependent and density-independent factors, observed in ecosystems energy and nutrients flow."
+  },
+  {
+    "objectID": "3-regression/facilitator.html#lesson-topics-and-standards",
+    "href": "3-regression/facilitator.html#lesson-topics-and-standards",
+    "title": "Facilitator’s Guide:Regression & Prediction",
+    "section": "",
+    "text": "Topics Covered:\n\n\n\n\n\n\nAI: Regression\n\nregression vs. classification\npredicting continuous values\n\nScatterplots & Lines of Best Fit\n\nplotting data\nfitting a line to noisy data\n\nLinear Regression in Python\n\nslope & intercept\npredicting new values\n\nModel Evaluation\n\nR² as a measure of fit\n\nThe Water Quality Buoy\n\nusing regression to predict nitrate levels from test pad color\n\n\n\n\n\n\n\n\n\n\n\nTN Standards Addressed:\n\n\n\n\n\n\nBIO1.LS2.1/ECO.LS2.13/EVSC.LS2.3: Use mathematical and/or computational representations to support explanations of factors that affect the carrying capacity of ecosystems at different scales.\n\nSCRE.ETS2.3: Identify the most appropriate scientific instruments and/or computer programs for different experiments and research, and learn to use, care for, and maintain them, gather data, and analyze results.\n\nPSCI.PS1.7: Develop, or use, a model to predict or explain a phenomenon by using appropriate indicators.\n\nSCRE.ETS3: Applications of Science: Use data to develop a model. Evaluate the effectiveness of the model by making and testing predictions.\nAGSCIENCE 2.1: Overview: Articulate important historical and current events impacting the agricultural industry and agricultural youth development. Include landmark laws, theories, and practices such as, but not limited to, the Morrill Act, the Smith-Lever Act, the Smith-Hughes Act, and influential figures such as John Deere, Henry Groseclose, Booker T. Washington, and important government agencies in the promotion of knowledge and technology of agricultural science, biotechnology, and key technological developments.\nAGSCIENCE 3.2: Models: Develop models for the flow of energy and matter (inorganic forms and overall biomass) in various ecosystems impacting agricultural and environmental systems. Using these models, calculate rates of productivity by analyzing the major components of a food chain. Employ mathematical models to explain growth patterns and rates, both densitydependent and density-independent factors, observed in ecosystems energy and nutrients flow."
+  },
+  {
+    "objectID": "3-regression/facilitator.html#lesson-overview-video-tour",
+    "href": "3-regression/facilitator.html#lesson-overview-video-tour",
+    "title": "Facilitator’s Guide:Regression & Prediction",
+    "section": "Lesson Overview Video Tour",
+    "text": "Lesson Overview Video Tour\n\n  \n  Your browser does not support the video tag.\n\n If you would like a more in-depth overview of the lesson, please consult the slides with visible facilitator notes."
+  },
+  {
+    "objectID": "3-regression/facilitator.html#slide-deck-for-lesson",
+    "href": "3-regression/facilitator.html#slide-deck-for-lesson",
+    "title": "Facilitator’s Guide:Regression & Prediction",
+    "section": "Slide Deck for Lesson",
+    "text": "Slide Deck for Lesson\nWorkshop #3 Slides"
+  },
+  {
+    "objectID": "3-regression/facilitator.html#student-handout",
+    "href": "3-regression/facilitator.html#student-handout",
+    "title": "Facilitator’s Guide:Regression & Prediction",
+    "section": "Student Handout",
+    "text": "Student Handout\nYou can make a copy of the student handout for this lesson.\n\nIf you would like to provide students a copy of the slides with spaces for note taking, we have prepared a handout for this purpose."
+  },
+  {
+    "objectID": "3-regression/facilitator.html#lesson-prep",
+    "href": "3-regression/facilitator.html#lesson-prep",
+    "title": "Facilitator’s Guide:Regression & Prediction",
+    "section": "Lesson Prep",
+    "text": "Lesson Prep\n\n1. Purchase/Prepare Materials for Lesson\nThis lesson makes use of the large/sticky 3M Post-It Grid paper, the red/green/yellow/blue circular yard sale stickers available at most office supply stores, black poster markers, and yardsticks. Optionally, depending on the grade level of your students, it may be advantageous to consider pre-labeling the graph paper with x and y axes (to save time).\n\n\n2. Ensure Student Access to Webcam\nThis lesson is reliant on the student use of their device’s webcam. Please double check that the webcam on their device is enabled and works with the AAIC Applet used in this lesson.\n\n\n3. Print and Cut Purple Test Pad Card Deck\nFor this lesson, we recommend one deck of purple nitrate test strip cards per student group. It is important that these cards be printed in color and of high quality. While the colors are approximations of the exact colors that result from the nitrate test strips used in lesson #1, the key is that they capture the mathematical differences in usefulness of the red, green, and blue channels in meaningfully predicting nitrate concentrations in water samples. This behavior mirrors the reality of the ML model driving the buoy’s predictions.\n\n\n4. Make Copies of the Student Handout\nEach student will need one copy of the student handout. You can make a copy of the handout by clicking the link above.\n\n\n5. Create copy of exit ticket for end-of-lesson implementation.\nWe have drafted an exit ticket that aligns with this lesson. We are providing the Google Form here if you would like to use it or modify it for your own needs.\n\n\n6. Create copy of the exercise for after-lesson practice.\nWe have also created an exercise that you can use with students to practice the concepts covered in this lesson. It is available here."
+  },
+  {
+    "objectID": "3-regression/facilitator.html#lesson-overview-takeaways",
+    "href": "3-regression/facilitator.html#lesson-overview-takeaways",
+    "title": "Facilitator’s Guide:Regression & Prediction",
+    "section": "Lesson Overview & Takeaways",
+    "text": "Lesson Overview & Takeaways\nBy the end of the lesson, students will be able to:\n\nDistinguish between classification and regression and explain when each is appropriate\nDescribe how Smokey Buoy uses regression to predict nitrate levels from test pad images\nExplain how mean RGB values from an image can serve as inputs to a regression model\nConstruct a scatterplot and interpret a line of best fit\nUse a linear regression model in Python to predict new values from color data\nEvaluate a regression model’s performance using R²"
+  },
+  {
+    "objectID": "3-regression/facilitator.html#reference-materials",
+    "href": "3-regression/facilitator.html#reference-materials",
+    "title": "Facilitator’s Guide:Regression & Prediction",
+    "section": "Reference Materials",
+    "text": "Reference Materials\nWhole-Class Video Links:\n- Scatter Graphs: What they are and how to plot them\n- Scatter Graphs: Line of best fit"
+  },
+  {
+    "objectID": "3-regression/regression-activity-1.html",
+    "href": "3-regression/regression-activity-1.html",
+    "title": "Regression Activity - Pt. I: RGB and Scatterplots",
+    "section": "",
+    "text": "In workshop #2, we learned how computers “see” color - through RBG values! But the buoy does more. Did you notice that there were lots of little pixels on the screen in the applet we used last time? Which one is best? The buoy takes all of the pixels for each test pad and calculates their mean, which results in a mean Red, mean Green, and mean Blue value for each pad.\n\n\n\n\n\n\n\n\n\nDuring this activity, we’ll learn a bit more about linear regression and how the buoy can use regression to predict nitrate values.\n\nMaterials Needed:\n- RGB Applet V2\n- Deck of Purple “Nitrate Test Pad” Cards\n- Pencil\n- Highlighter (optional but helpful)\n- Handout\n- Dot Stickers\n- Large Graph Paper\n- Poster Markers\n\n\n\n\n\n\n\n\nOpen the RGB Applet V2.\n\nFind card #1 in your deck. Hold it 1 to 2 inches in front of your webcam.\nUsing the middle square in the frame, record the RGB values for the card on your handout.\n\nRepeat this process for all other numbered cards in your deck. Make sure you hold each card the same distance away from your webcam.\n\n\n\n\n\n\n\n\n\n  \n  \n\n\n\nThis portion of the activity will be completed with your group.Each group will be assigned either to red, green, or blue.\n\n\nUsing the round stickies and graph paper, create a scatterplot.\n\nPlace the color values (either red, green or blue, depending on your group assignment) on the x-axis and the nitrate concentrations on the y-axis."
+  },
+  {
+    "objectID": "3-regression/regression-activity-1.html#rgb-and-scatterplots",
+    "href": "3-regression/regression-activity-1.html#rgb-and-scatterplots",
+    "title": "Regression Activity - Pt. I: RGB and Scatterplots",
+    "section": "",
+    "text": "During this activity, we’ll learn a bit more about linear regression and how the buoy can use regression to predict nitrate values.\n\nMaterials Needed:\n- RGB Applet V2\n- Deck of Purple “Nitrate Test Pad” Cards\n- Pencil\n- Highlighter (optional but helpful)\n- Handout\n- Dot Stickers\n- Large Graph Paper\n- Poster Markers"
+  },
+  {
+    "objectID": "3-regression/regression-activity-1.html#rgb-activity-part-1",
+    "href": "3-regression/regression-activity-1.html#rgb-activity-part-1",
+    "title": "Regression Activity - Pt. I: RGB and Scatterplots",
+    "section": "",
+    "text": "Open the RGB Applet V2.\n\nFind card #1 in your deck. Hold it 1 to 2 inches in front of your webcam.\nUsing the middle square in the frame, record the RGB values for the card on your handout.\n\nRepeat this process for all other numbered cards in your deck. Make sure you hold each card the same distance away from your webcam."
+  },
+  {
+    "objectID": "3-regression/regression-activity-1.html#scatterplots-activity-part-2",
+    "href": "3-regression/regression-activity-1.html#scatterplots-activity-part-2",
+    "title": "Regression Activity - Pt. I: RGB and Scatterplots",
+    "section": "",
+    "text": "This portion of the activity will be completed with your group.Each group will be assigned either to red, green, or blue.\n\n\nUsing the round stickies and graph paper, create a scatterplot.\n\nPlace the color values (either red, green or blue, depending on your group assignment) on the x-axis and the nitrate concentrations on the y-axis."
+  },
+  {
+    "objectID": "3-regression/slides.html#lets-predict-1-cube-1",
+    "href": "3-regression/slides.html#lets-predict-1-cube-1",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 1 Cube",
+    "text": "Let’s Predict! — 1 Cube\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2"
+  },
+  {
+    "objectID": "3-regression/slides.html#lets-predict-2-cubes-1",
+    "href": "3-regression/slides.html#lets-predict-2-cubes-1",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 2 Cubes",
+    "text": "Let’s Predict! — 2 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2"
+  },
+  {
+    "objectID": "3-regression/slides.html#lets-predict-3-cubes-1",
+    "href": "3-regression/slides.html#lets-predict-3-cubes-1",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 3 Cubes",
+    "text": "Let’s Predict! — 3 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3\n3"
+  },
+  {
+    "objectID": "3-regression/slides.html#lets-predict-4-cubes-1",
+    "href": "3-regression/slides.html#lets-predict-4-cubes-1",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 4 Cubes",
+    "text": "Let’s Predict! — 4 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3\n3\n\n\n4\n4"
+  },
+  {
+    "objectID": "3-regression/slides.html#lets-predict-5-cubes-1",
+    "href": "3-regression/slides.html#lets-predict-5-cubes-1",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 5 Cubes",
+    "text": "Let’s Predict! — 5 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3\n3\n\n\n4\n4\n\n\n5\n5"
+  },
+  {
+    "objectID": "3-regression/slides.html#lets-predict-10-cubes-1",
+    "href": "3-regression/slides.html#lets-predict-10-cubes-1",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 10 Cubes",
+    "text": "Let’s Predict! — 10 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3\n3\n\n\n4\n4\n\n\n5\n5\n\n\n10\n10"
+  },
+  {
+    "objectID": "3-regression/slides.html#lets-predict-2-cube",
+    "href": "3-regression/slides.html#lets-predict-2-cube",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 2 Cube",
+    "text": "Let’s Predict! — 2 Cube\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2"
+  },
+  {
+    "objectID": "3-regression/slides.html#the-case-for-regression-2",
+    "href": "3-regression/slides.html#the-case-for-regression-2",
+    "title": "Workshop #3",
+    "section": "The Case for Regression",
+    "text": "The Case for Regression\n\n\n\n\n\n\nReality with Uncle Bob’s cubes\n\n\n\nBob’s cubes saved us money, but now tower heights are all over the place.  We need a better way to predict."
+  },
+  {
+    "objectID": "3-regression/slides.html#the-case-for-regression-3",
+    "href": "3-regression/slides.html#the-case-for-regression-3",
+    "title": "Workshop #3",
+    "section": "The Case for Regression",
+    "text": "The Case for Regression\n\n\nBob’s cubes saved us money, but now tower heights are all over the place. We need a better way to predict.\n\n\n\n\n\n\nTrue with perfectly 1” cubes\n\n\n\n\n\n\nReality with Uncle Bob’s cubes"
+  },
+  {
+    "objectID": "3-regression/slides.html#averaging-rgb",
+    "href": "3-regression/slides.html#averaging-rgb",
+    "title": "Workshop #3",
+    "section": "Averaging RGB",
+    "text": "Averaging RGB\n\n\nIn Workshop #2, we learned how computers “see” color through RGB values. The buoy takes all the pixels for each test pad and finds their mean."
+  },
+  {
+    "objectID": "3-regression/slides.html#averaging-rgb-1",
+    "href": "3-regression/slides.html#averaging-rgb-1",
+    "title": "Workshop #3",
+    "section": "Averaging RGB",
+    "text": "Averaging RGB\n\n\nIn Workshop #2, we learned how computers “see” color through RGB values. The buoy takes all the pixels for each test pad and finds their mean."
+  },
+  {
+    "objectID": "3-regression/slides.html#averaging-rgb-2",
+    "href": "3-regression/slides.html#averaging-rgb-2",
+    "title": "Workshop #3",
+    "section": "Averaging RGB",
+    "text": "Averaging RGB\n\n\nIn our applet (for the next activity), we split the pixels into a grid and meaned each section. We will treat the center box like the test pad (use that number)."
+  },
+  {
+    "objectID": "3-regression/slides.html#averaging-rgb-3",
+    "href": "3-regression/slides.html#averaging-rgb-3",
+    "title": "Workshop #3",
+    "section": "Averaging RGB",
+    "text": "Averaging RGB\n\n\nIn our applet (for the next activity), we split the pixels into a grid and meaned each section. We will treat the center box like the test pad (use that number)."
+  },
+  {
+    "objectID": "3-regression/slides.html#averaging-rgb-4",
+    "href": "3-regression/slides.html#averaging-rgb-4",
+    "title": "Workshop #3",
+    "section": "Averaging RGB",
+    "text": "Averaging RGB\n\n\nIn our applet (for the next activity), we split the pixels into a grid and meaned each section. We will treat the center box like the test pad (use that number)."
+  },
+  {
+    "objectID": "3-regression/slides.html#averaging-rgb-5",
+    "href": "3-regression/slides.html#averaging-rgb-5",
+    "title": "Workshop #3",
+    "section": "Averaging RGB",
+    "text": "Averaging RGB\n\n\nIn our applet (for the next activity), we split the pixels into a grid and meaned each section. We will treat the center box like the test pad (use that number)."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#lesson-objective",
+    "href": "3-regression/facilitator_notes.html#lesson-objective",
+    "title": "Workshop #3",
+    "section": "Lesson Objective",
+    "text": "Lesson Objective\n\nIn this lesson, you will learn how to use scatterplots and regression lines in Python to predict nitrate levels from RGB color values on test strips.  \n\nMaterials Needed:\n\n💻 A computer with a webcam\nA web browser (Chrome, Firefox, or Safari)"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#workshop-structure",
+    "href": "3-regression/facilitator_notes.html#workshop-structure",
+    "title": "Workshop #3",
+    "section": "Workshop Structure",
+    "text": "Workshop Structure\n\n\n💻 Navigate to:\n\nhttps://tinyurl.com/aaic-wq-3"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#review",
+    "href": "3-regression/facilitator_notes.html#review",
+    "title": "Workshop #3",
+    "section": "Review",
+    "text": "Review\n\n\nLast workshop we learned:\n\nAI: Classification\n\nModel Accuracy\n\nAgricultural Uses of Classification\nData Ownership\nComputers & Color"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#rgb-values-color",
+    "href": "3-regression/facilitator_notes.html#rgb-values-color",
+    "title": "Workshop #3",
+    "section": "RGB Values –> Color",
+    "text": "RGB Values –&gt; Color\n\n\n🎯 Checkpoint 7. a: Using RGB Values to Create Color\n\n\nMaterials Needed:\n\n💻 Slider Tool on Pg. 0\n📝 Handout from last workshop"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#using-rgb-values-to-create-color",
+    "href": "3-regression/facilitator_notes.html#using-rgb-values-to-create-color",
+    "title": "Workshop #3",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n\nUse the slider tool below to convert the RGB values (from last workshop) to colors\nRecord your answers on the handout\nWe’ll do one together!\n\n\n\n\n  Slide the R, G, or B to see how it affects the color of the square!\n\n  \n    \n      \n        R:\n        \n        128\n      \n\n      \n        G:\n        \n        128\n      \n\n      \n        B:\n        \n        128"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#using-rgb-values-to-create-color-1",
+    "href": "3-regression/facilitator_notes.html#using-rgb-values-to-create-color-1",
+    "title": "Workshop #3",
+    "section": "Using RGB Values to Create Color",
+    "text": "Using RGB Values to Create Color\n\n\n🎯 Checkpoint 7. b: Use the slider tool!\n What color does this RGB value represent? (110, 164, 212)\n Just like the computer last workshop, try to classify/make a prediction about what fruit this could be!"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#remember-me-smokey-buoy",
+    "href": "3-regression/facilitator_notes.html#remember-me-smokey-buoy",
+    "title": "Workshop #3",
+    "section": "Remember Me, Smokey Buoy!?",
+    "text": "Remember Me, Smokey Buoy!?\n\nWe met Smokey Buoy last workshop and learned a bit about how it works."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#smokey-buoy-components",
+    "href": "3-regression/facilitator_notes.html#smokey-buoy-components",
+    "title": "Workshop #3",
+    "section": "Smokey Buoy: Components",
+    "text": "Smokey Buoy: Components\n\nLet’s recall Smokey’s components and how they work together"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#smokey-buoy-camera",
+    "href": "3-regression/facilitator_notes.html#smokey-buoy-camera",
+    "title": "Workshop #3",
+    "section": "Smokey Buoy: 🎥 Camera",
+    "text": "Smokey Buoy: 🎥 Camera\n\n\n\nSmokey Buoy’s camera has two jobs:\n\nWatch for a test pad\n\nWe talked about this last workshop!\nRecall: What is the process called?\n\nWhen pad is present, take a picture\n\nWe’ll discuss what happens with the picture today!\nA new process!"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#introduction-to-regression-1",
+    "href": "3-regression/facilitator_notes.html#introduction-to-regression-1",
+    "title": "Workshop #3",
+    "section": "Introduction to Regression",
+    "text": "Introduction to Regression\n\n\n\nLast workshop, we learned about classification.\nIn this workshop, we will learn about regression.\nRegression is all about predicting something (a number!) from something else (other numbers)."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#scenario-1-cube-towers",
+    "href": "3-regression/facilitator_notes.html#scenario-1-cube-towers",
+    "title": "Workshop #3",
+    "section": "Scenario 1: Cube Towers",
+    "text": "Scenario 1: Cube Towers\n\n\n\nWe want to build a tower\nWe have 1” inch cubes to use"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#lets-predict-1-cube",
+    "href": "3-regression/facilitator_notes.html#lets-predict-1-cube",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 1 Cube",
+    "text": "Let’s Predict! — 1 Cube\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#lets-predict-2-cubes",
+    "href": "3-regression/facilitator_notes.html#lets-predict-2-cubes",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 2 Cubes",
+    "text": "Let’s Predict! — 2 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#lets-predict-2-cubes-1",
+    "href": "3-regression/facilitator_notes.html#lets-predict-2-cubes-1",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 2 Cubes",
+    "text": "Let’s Predict! — 2 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#lets-predict-3-cubes",
+    "href": "3-regression/facilitator_notes.html#lets-predict-3-cubes",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 3 Cubes",
+    "text": "Let’s Predict! — 3 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#lets-predict-3-cubes-1",
+    "href": "3-regression/facilitator_notes.html#lets-predict-3-cubes-1",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 3 Cubes",
+    "text": "Let’s Predict! — 3 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3\n3"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#lets-predict-4-cubes",
+    "href": "3-regression/facilitator_notes.html#lets-predict-4-cubes",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 4 Cubes",
+    "text": "Let’s Predict! — 4 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3\n3\n\n\n4"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#lets-predict-4-cubes-1",
+    "href": "3-regression/facilitator_notes.html#lets-predict-4-cubes-1",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 4 Cubes",
+    "text": "Let’s Predict! — 4 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3\n3\n\n\n4\n4"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#lets-predict-5-cubes",
+    "href": "3-regression/facilitator_notes.html#lets-predict-5-cubes",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 5 Cubes",
+    "text": "Let’s Predict! — 5 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3\n3\n\n\n4\n4\n\n\n5"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#lets-predict-5-cubes-1",
+    "href": "3-regression/facilitator_notes.html#lets-predict-5-cubes-1",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 5 Cubes",
+    "text": "Let’s Predict! — 5 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3\n3\n\n\n4\n4\n\n\n5\n5"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#lets-predict-10-cubes",
+    "href": "3-regression/facilitator_notes.html#lets-predict-10-cubes",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 10 Cubes",
+    "text": "Let’s Predict! — 10 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3\n3\n\n\n4\n4\n\n\n5\n5\n\n\n10"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#lets-predict-10-cubes-1",
+    "href": "3-regression/facilitator_notes.html#lets-predict-10-cubes-1",
+    "title": "Workshop #3",
+    "section": "Let’s Predict! — 10 Cubes",
+    "text": "Let’s Predict! — 10 Cubes\n\n\n\n\n\n\n# of Cubes\nHeight (inches)\n\n\n\n\n1\n1\n\n\n2\n2\n\n\n3\n3\n\n\n4\n4\n\n\n5\n5\n\n\n10\n10"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#discuss-in-your-group",
+    "href": "3-regression/facilitator_notes.html#discuss-in-your-group",
+    "title": "Workshop #3",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\n🎯 Checkpoint 2. a:  Q1: How tall will our tower be if we use 100 cubes?\n Q2: Your friend argues that the tower will be 99 inches tall. What would you tell him? Why?"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#scenario-2-cheap-uncle-bob",
+    "href": "3-regression/facilitator_notes.html#scenario-2-cheap-uncle-bob",
+    "title": "Workshop #3",
+    "section": "Scenario 2: Cheap Uncle Bob",
+    "text": "Scenario 2: Cheap Uncle Bob\n\n\n\nWe want to build a much taller tower than our current 10” one, but we ran out of 1” cubes.\n🎉 Uncle Bob volunteers to make us more cubes — cheaper!"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#scenario-2-cheap-uncle-bob-1",
+    "href": "3-regression/facilitator_notes.html#scenario-2-cheap-uncle-bob-1",
+    "title": "Workshop #3",
+    "section": "Scenario 2: Cheap Uncle Bob",
+    "text": "Scenario 2: Cheap Uncle Bob\n\nOh no! Uncle Bob’s cubes are all slightly different heights!"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#discuss-in-your-group-1",
+    "href": "3-regression/facilitator_notes.html#discuss-in-your-group-1",
+    "title": "Workshop #3",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\n🎯 Checkpoint 2. b:  How will Uncle Bob’s new cubes affect our tower height predictions?"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#the-case-for-regression-1",
+    "href": "3-regression/facilitator_notes.html#the-case-for-regression-1",
+    "title": "Workshop #3",
+    "section": "The Case for Regression",
+    "text": "The Case for Regression\n\n\n\n\n\n\nTrue with perfectly 1” cubes"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#the-case-for-regression-2",
+    "href": "3-regression/facilitator_notes.html#the-case-for-regression-2",
+    "title": "Workshop #3",
+    "section": "The Case for Regression",
+    "text": "The Case for Regression\n\n\n\n\n\n\nReality with Uncle Bob’s cubes\n\n\n\nBob’s cubes saved us money, but now tower heights are all over the place.  We need a better way to predict."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#how-do-we-fit-our-line",
+    "href": "3-regression/facilitator_notes.html#how-do-we-fit-our-line",
+    "title": "Workshop #3",
+    "section": "How Do We Fit Our Line?",
+    "text": "How Do We Fit Our Line?\n\n\n\n\n\n\nVery clear line with perfect cubes\n\n\n\n\n\n\nNeed regression — the mathematical best-fit line"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#smokey-buoy-regression",
+    "href": "3-regression/facilitator_notes.html#smokey-buoy-regression",
+    "title": "Workshop #3",
+    "section": "Smokey Buoy: Regression",
+    "text": "Smokey Buoy: Regression\n\n\n\nThe buoy also uses regression to predict nitrate levels.\nLet’s learn a bit more about this!"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#averaging-rgb",
+    "href": "3-regression/facilitator_notes.html#averaging-rgb",
+    "title": "Workshop #3",
+    "section": "Averaging RGB",
+    "text": "Averaging RGB\n\n\nIn Workshop #2, we learned how computers “see” color through RGB values. The buoy takes all the pixels for each test pad and finds their mean."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#averaging-rgb-1",
+    "href": "3-regression/facilitator_notes.html#averaging-rgb-1",
+    "title": "Workshop #3",
+    "section": "Averaging RGB",
+    "text": "Averaging RGB\n\n\nIn Workshop #2, we learned how computers “see” color through RGB values. The buoy takes all the pixels for each test pad and finds their mean."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#averaging-rgb-2",
+    "href": "3-regression/facilitator_notes.html#averaging-rgb-2",
+    "title": "Workshop #3",
+    "section": "Averaging RGB",
+    "text": "Averaging RGB\n\n\nIn our applet (for the next activity), we split the pixels into a grid and meaned each section. We will treat the center box like the test pad (use that number)."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#averaging-rgb-3",
+    "href": "3-regression/facilitator_notes.html#averaging-rgb-3",
+    "title": "Workshop #3",
+    "section": "Averaging RGB",
+    "text": "Averaging RGB\n\n\nIn our applet (for the next activity), we split the pixels into a grid and meaned each section. We will treat the center box like the test pad (use that number)."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#averaging-rgb-4",
+    "href": "3-regression/facilitator_notes.html#averaging-rgb-4",
+    "title": "Workshop #3",
+    "section": "Averaging RGB",
+    "text": "Averaging RGB\n\n\nIn our applet (for the next activity), we split the pixels into a grid and meaned each section. We will treat the center box like the test pad (use that number)."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#averaging-rgb-5",
+    "href": "3-regression/facilitator_notes.html#averaging-rgb-5",
+    "title": "Workshop #3",
+    "section": "Averaging RGB",
+    "text": "Averaging RGB\n\n\nIn our applet (for the next activity), we split the pixels into a grid and meaned each section. We will treat the center box like the test pad (use that number)."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#rgb-activity-part-1",
+    "href": "3-regression/facilitator_notes.html#rgb-activity-part-1",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Part 1)",
+    "text": "RGB Activity (Part 1)\n\n\nMaterials Needed:\n\n💻 RGB Applet V2\nDeck of Purple “Nitrate Test Pad” Cards\nPencil / Highlighter (optional)\nHandout / Dot Stickers\nLarge Graph Paper / Poster Markers"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#rgb-activity-part-1-instructions",
+    "href": "3-regression/facilitator_notes.html#rgb-activity-part-1-instructions",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Part 1) — Instructions",
+    "text": "RGB Activity (Part 1) — Instructions\n\n\n\nOpen the RGB Applet V2 in a new tab.\nFind card #1 in your deck and hold it in front of your webcam.\nUsing the middle square in the frame, record the RGB values on your handout.\nRepeat for all other numbered cards in your deck."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#scatterplots-activity-part-2",
+    "href": "3-regression/facilitator_notes.html#scatterplots-activity-part-2",
+    "title": "Workshop #3",
+    "section": "Scatterplots Activity (Part 2)",
+    "text": "Scatterplots Activity (Part 2)"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#scatterplots-activity-part-2-instructions",
+    "href": "3-regression/facilitator_notes.html#scatterplots-activity-part-2-instructions",
+    "title": "Workshop #3",
+    "section": "Scatterplots Activity (Part 2) — Instructions",
+    "text": "Scatterplots Activity (Part 2) — Instructions\n\n\n\nUsing the round stickies and graph paper, create a scatterplot.\nPlace color values (R, G, or B — per your group) on the x-axis.\nPlace nitrate concentrations on the y-axis."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#scatterplots-activity-part-2-instructions-1",
+    "href": "3-regression/facilitator_notes.html#scatterplots-activity-part-2-instructions-1",
+    "title": "Workshop #3",
+    "section": "Scatterplots Activity (Part 2) — Instructions",
+    "text": "Scatterplots Activity (Part 2) — Instructions\n\n\n\nUsing the round stickies and graph paper, create a scatterplot.\nPlace color values (R, G, or B — per your group) on the x-axis.\nPlace nitrate concentrations on the y-axis."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#regression-modeling",
+    "href": "3-regression/facilitator_notes.html#regression-modeling",
+    "title": "Workshop #3",
+    "section": "Regression Modeling",
+    "text": "Regression Modeling"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#storing-your-data",
+    "href": "3-regression/facilitator_notes.html#storing-your-data",
+    "title": "Workshop #3",
+    "section": "Storing Your Data",
+    "text": "Storing Your Data\n\n\nReplace the ?? placeholders with your color values and nitrate concentrations.\nIMPORTANT: Values must be in the exact same order.\nClick ▶️ Run Code to store your data.\n\n\ncolor_data = [188, 179, 176, 176, 172, 167, 166, 162]\nnitrate_ppm = [0, 1, 2, 3, 4, 5, 6, 7]\n\nprint(color_data)\nprint(nitrate_ppm)\n\ncolor_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\ndf = process_df(color_data, nitrate_ppm)\n\n[188, 179, 176, 176, 172, 167, 166, 162]\n[0, 1, 2, 3, 4, 5, 6, 7]"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#recreating-your-teams-scatterplot",
+    "href": "3-regression/facilitator_notes.html#recreating-your-teams-scatterplot",
+    "title": "Workshop #3",
+    "section": "Recreating Your Team’s Scatterplot",
+    "text": "Recreating Your Team’s Scatterplot\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to create a scatterplot matching your group’s paper plot.\n\nplt.figure(figsize=(6, 5))\nplt.scatter(df[\"color_data\"], df[\"nitrate_ppm\"], s=60, color=\"black\")\nplt.title(\"Nitrate vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate (ppm)\")\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#running-the-linear-regression",
+    "href": "3-regression/facilitator_notes.html#running-the-linear-regression",
+    "title": "Workshop #3",
+    "section": "Running the Linear Regression",
+    "text": "Running the Linear Regression\n\n\nReplace the ?? placeholders:\n\nFirst blank → color_data\nSecond blank → nitrate_ppm\n\nClick ▶️ Run Code to generate the line of best fit equation.\n\n\nslope, intercept = linear_regression(color_data, nitrate_ppm)\n\nprint(\"slope (m):\", slope)\nprint(\"intercept (b):\", intercept)\n\nslope (m): -0.28630278063851533\nintercept (b): 53.10195674562279"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#from-regression-to-equation",
+    "href": "3-regression/facilitator_notes.html#from-regression-to-equation",
+    "title": "Workshop #3",
+    "section": "From Regression to Equation",
+    "text": "From Regression to Equation\n\n\nThe linear regression produces the equation for the line of best fit.\n\n\nRemember y = mx + b? We can just substitute!\n\n\nClick ▶️ Run Code to see the slope-intercept equation.\n\n\nprint(f\"y = {slope:.2f}x + {intercept:.2f}\")\n\ny = -0.29x + 53.10"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#plotting-the-regression-line",
+    "href": "3-regression/facilitator_notes.html#plotting-the-regression-line",
+    "title": "Workshop #3",
+    "section": "Plotting the Regression Line",
+    "text": "Plotting the Regression Line\n\n\nClick ▶️ Run Code to plot the scatterplot with the regression line.\n\nnitrate_pred = slope * color_data + intercept\n\nplt.figure(figsize=(6, 5))\nplt.scatter(color_data, nitrate_ppm, s=60, color=\"black\")\nplt.plot(color_data, nitrate_pred, color=\"black\", linewidth=1)\nplt.title(\"Nitrate Concentration vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate Concentration (ppm)\")\nplt.text(\n    min(color_data), max(nitrate_ppm),\n    f\"y = {slope:.2f}x + {intercept:.2f}\\n\",\n    ha=\"left\", fontsize=10, color=\"gray\"\n)\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#activity-draw-your-line-of-best-fit",
+    "href": "3-regression/facilitator_notes.html#activity-draw-your-line-of-best-fit",
+    "title": "Workshop #3",
+    "section": "Activity — Draw Your Line of Best Fit",
+    "text": "Activity — Draw Your Line of Best Fit\n\n\nMaterials Needed:\n\nPoster Markers\nScatterplot\nYardstick"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#activity-draw-your-line-of-best-fit-1",
+    "href": "3-regression/facilitator_notes.html#activity-draw-your-line-of-best-fit-1",
+    "title": "Workshop #3",
+    "section": "Activity — Draw Your Line of Best Fit",
+    "text": "Activity — Draw Your Line of Best Fit\n\n\nUsing the exact positioning Python generated, copy the regression line onto your group’s scatterplot. When finished, bring your group’s plot to the front of the class."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#making-predictions-reload-your-data",
+    "href": "3-regression/facilitator_notes.html#making-predictions-reload-your-data",
+    "title": "Workshop #3",
+    "section": "Making Predictions — Reload Your Data",
+    "text": "Making Predictions — Reload Your Data\n\n\nRe-enter your color values and nitrate concentrations.\nNOTE: You can copy/paste the two lists from the previous activity.\nClick ▶️ Run Code to re-load your data.\n\n\ncolor_data = [188, 179, 176, 176, 172, 167, 166, 162]\nnitrate_ppm = [0, 1, 2, 3, 4, 5, 6, 7]\n\n# Do not change the code below ------------------------------------\ncolor_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\nslope, intercept = linear_regression(color_data, nitrate_ppm)\nprint(f\"Slope: {slope:.2f}, Intercept: {intercept:.2f}\")\n\nSlope: -0.29, Intercept: 53.10"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#using-the-model-to-predict",
+    "href": "3-regression/facilitator_notes.html#using-the-model-to-predict",
+    "title": "Workshop #3",
+    "section": "Using the Model to Predict",
+    "text": "Using the Model to Predict\n\n\nNow that we have our regression model, we can predict nitrate concentrations for new color values — even ones we didn’t measure!\n\n\nClick ▶️ Run Code, then type any color value into the box to see the predicted nitrate concentration.\n\n\nshow_prediction_plot(color_data, nitrate_ppm, slope, intercept)"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#predict-nitrate-concentrations-for-new-test-pads",
+    "href": "3-regression/facilitator_notes.html#predict-nitrate-concentrations-for-new-test-pads",
+    "title": "Workshop #3",
+    "section": "Predict Nitrate Concentrations for New Test Pads",
+    "text": "Predict Nitrate Concentrations for New Test Pads\n\n\nMaterials Needed:\n\n💻 RGB Applet V2\nThree Additional “Nitrate Test Pad” Cards\nHandout / Pencil"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#predict-nitrate-concentrations-for-new-test-pads-1",
+    "href": "3-regression/facilitator_notes.html#predict-nitrate-concentrations-for-new-test-pads-1",
+    "title": "Workshop #3",
+    "section": "Predict Nitrate Concentrations for New Test Pads",
+    "text": "Predict Nitrate Concentrations for New Test Pads\n\n\n\nUse the applet to find the R, G, or B value for the new cards (per your group).\nUse the graphing tool to predict the nitrate concentration (ppm).\nRecord these predictions on your handout."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#how-good-is-our-model-r²",
+    "href": "3-regression/facilitator_notes.html#how-good-is-our-model-r²",
+    "title": "Workshop #3",
+    "section": "How Good Is Our Model? R²",
+    "text": "How Good Is Our Model? R²\n\n\nR² (R-squared) tells us how well our regression line fits the data — like a report card:\n\n\n\n\n\n\n\n\nR² value\nWhat it means\n\n\n\n\nClose to 100%\nLine fits very well — predictions will be accurate\n\n\nAround 70–90%\nA reasonably strong fit\n\n\nClose to 0%\nLine barely fits — predictions won’t be reliable"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#calculate-your-r²-value",
+    "href": "3-regression/facilitator_notes.html#calculate-your-r²-value",
+    "title": "Workshop #3",
+    "section": "Calculate Your R² Value",
+    "text": "Calculate Your R² Value\n\n\nClick ▶️ Run Code to calculate your model’s R² value.\n\n\nr_squared = calculate_rsquared(color_data, nitrate_ppm, slope, intercept)\n\nprint(f\"R² = {r_squared * 100:.1f}%\")\n\nR² = 94.8%"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#discuss-in-your-group-2",
+    "href": "3-regression/facilitator_notes.html#discuss-in-your-group-2",
+    "title": "Workshop #3",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\n🎯 Checkpoint 6. a:  Write your group’s R² value on the poster at the front of the room.\nCompare with the other groups — what do you notice?  How might we improve our model and, therefore, our predictions?"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#exit-ticket-1",
+    "href": "3-regression/facilitator_notes.html#exit-ticket-1",
+    "title": "Workshop #3",
+    "section": "🎟️ Exit Ticket",
+    "text": "🎟️ Exit Ticket\n\n  \n\n🎉 Great job! You’ve learned so much!\nShare what you’ve learned on the Exit Ticket."
+  },
+  {
+    "objectID": "3-regression/slides.html#rgb-activity-part-1-1",
+    "href": "3-regression/slides.html#rgb-activity-part-1-1",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Part 1)",
+    "text": "RGB Activity (Part 1)\n\nRoles\n\n\nHuman Buoy (1 person): Needs the nitrate test cards and computer handy\nData Recorders (2+ people): Need handout and pencil"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#rgb-activity-part-1-1",
+    "href": "3-regression/facilitator_notes.html#rgb-activity-part-1-1",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Part 1)",
+    "text": "RGB Activity (Part 1)\n\nRoles\n\n\nHuman Buoy (1 person): Needs the nitrate test cards and computer handy\nData Recorders (2+ people): Need handout and pencil"
+  },
+  {
+    "objectID": "3-regression/slides.html#rgb-activity-part-1-instructions-1",
+    "href": "3-regression/slides.html#rgb-activity-part-1-instructions-1",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Part 1) — Instructions",
+    "text": "RGB Activity (Part 1) — Instructions\n\n\n\nWhen finished, make sure all group members have the data values recorded on their handouts."
+  },
+  {
+    "objectID": "3-regression/slides.html#rgb-activity-pt.-i",
+    "href": "3-regression/slides.html#rgb-activity-pt.-i",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Pt. I)",
+    "text": "RGB Activity (Pt. I)\n\n\nMaterials Needed:\n\n💻 RGB Applet V2\nDeck of Purple “Nitrate Test Pad” Cards\nPencil / Highlighter (optional)\nHandout / Dot Stickers\nLarge Graph Paper / Poster Markers"
+  },
+  {
+    "objectID": "3-regression/slides.html#rgb-activity-pt.-i-1",
+    "href": "3-regression/slides.html#rgb-activity-pt.-i-1",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Pt. I)",
+    "text": "RGB Activity (Pt. I)\n\nRoles\n\n\nHuman Buoy (1 person): Needs the nitrate test cards and computer handy\nData Recorders (2+ people): Need handout and pencil"
+  },
+  {
+    "objectID": "3-regression/slides.html#rgb-activity-pt.-i-instructions",
+    "href": "3-regression/slides.html#rgb-activity-pt.-i-instructions",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Pt. I) — Instructions",
+    "text": "RGB Activity (Pt. I) — Instructions\n\n\n\nHB: Open the RGB Applet V2 in a new tab.\nHB: Find card #1 in your deck and hold it in front of your webcam.\nDRs: Using the middle square in the frame, record the RGB values on your handout.\nRepeat for all other cards in deck."
+  },
+  {
+    "objectID": "3-regression/slides.html#rgb-activity-pt.-i-instructions-1",
+    "href": "3-regression/slides.html#rgb-activity-pt.-i-instructions-1",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Pt. I) — Instructions",
+    "text": "RGB Activity (Pt. I) — Instructions\n\n\n\nWhen finished, make sure all group members have the data values recorded on their handouts."
+  },
+  {
+    "objectID": "3-regression/slides.html#scatterplots-activity-pt.-ii",
+    "href": "3-regression/slides.html#scatterplots-activity-pt.-ii",
+    "title": "Workshop #3",
+    "section": "Scatterplots Activity (Pt. II)",
+    "text": "Scatterplots Activity (Pt. II)"
+  },
+  {
+    "objectID": "3-regression/slides.html#rgb-activity-pt.-ii---scatterplots",
+    "href": "3-regression/slides.html#rgb-activity-pt.-ii---scatterplots",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Pt. II) - Scatterplots",
+    "text": "RGB Activity (Pt. II) - Scatterplots"
+  },
+  {
+    "objectID": "3-regression/slides.html#activity-pt.-ii---scatterplots",
+    "href": "3-regression/slides.html#activity-pt.-ii---scatterplots",
+    "title": "Workshop #3",
+    "section": "Activity (Pt. II) - Scatterplots",
+    "text": "Activity (Pt. II) - Scatterplots"
+  },
+  {
+    "objectID": "3-regression/slides.html#activity-pt.-ii-instructions",
+    "href": "3-regression/slides.html#activity-pt.-ii-instructions",
+    "title": "Workshop #3",
+    "section": "Activity (Pt. II) — Instructions",
+    "text": "Activity (Pt. II) — Instructions\n\n\nFor this portion, each group is assigned either red, green, or blue, based on the color of your stickers!"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#rgb-activity-pt.-i",
+    "href": "3-regression/facilitator_notes.html#rgb-activity-pt.-i",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Pt. I)",
+    "text": "RGB Activity (Pt. I)\n\n\nMaterials Needed:\n\n💻 RGB Applet V2\nDeck of Purple “Nitrate Test Pad” Cards\nPencil / Highlighter (optional)\nHandout / Dot Stickers\nLarge Graph Paper / Poster Markers"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#rgb-activity-pt.-i-1",
+    "href": "3-regression/facilitator_notes.html#rgb-activity-pt.-i-1",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Pt. I)",
+    "text": "RGB Activity (Pt. I)\n\nRoles\n\n\nHuman Buoy (1 person): Needs the nitrate test cards and computer handy\nData Recorders (2+ people): Need handout and pencil"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#rgb-activity-pt.-i-instructions",
+    "href": "3-regression/facilitator_notes.html#rgb-activity-pt.-i-instructions",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Pt. I) — Instructions",
+    "text": "RGB Activity (Pt. I) — Instructions\n\n\n\nHB: Open the RGB Applet V2 in a new tab.\nHB: Find card #1 in your deck and hold it in front of your webcam.\nDRs: Using the middle square in the frame, record the RGB values on your handout.\nRepeat for all other cards in deck."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#rgb-activity-pt.-i-instructions-1",
+    "href": "3-regression/facilitator_notes.html#rgb-activity-pt.-i-instructions-1",
+    "title": "Workshop #3",
+    "section": "RGB Activity (Pt. I) — Instructions",
+    "text": "RGB Activity (Pt. I) — Instructions\n\n\n\nWhen finished, make sure all group members have the data values recorded on their handouts."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#activity-pt.-ii---scatterplots",
+    "href": "3-regression/facilitator_notes.html#activity-pt.-ii---scatterplots",
+    "title": "Workshop #3",
+    "section": "Activity (Pt. II) - Scatterplots",
+    "text": "Activity (Pt. II) - Scatterplots"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#activity-pt.-ii-instructions",
+    "href": "3-regression/facilitator_notes.html#activity-pt.-ii-instructions",
+    "title": "Workshop #3",
+    "section": "Activity (Pt. II) — Instructions",
+    "text": "Activity (Pt. II) — Instructions\n\n\nThis portion will be completed with your group. Each group is assigned either red, green, or blue."
+  },
+  {
+    "objectID": "3-regression/slides.html#activity-pt.-ii-instructions-1",
+    "href": "3-regression/slides.html#activity-pt.-ii-instructions-1",
+    "title": "Workshop #3",
+    "section": "Activity (Pt. II) — Instructions",
+    "text": "Activity (Pt. II) — Instructions\n\n\n\nUsing the round stickies and graph paper, create a scatterplot.\nColor values (R, G, or B — per your group) go on the x-axis.\nNitrate concentrations go on the y-axis."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#activity-pt.-ii-instructions-1",
+    "href": "3-regression/facilitator_notes.html#activity-pt.-ii-instructions-1",
+    "title": "Workshop #3",
+    "section": "Activity (Pt. II) — Instructions",
+    "text": "Activity (Pt. II) — Instructions\n\n\n\nUsing the round stickies and graph paper, create a scatterplot.\nPlace color values (R, G, or B — per your group) on the x-axis.\nPlace nitrate concentrations on the y-axis."
   }
 ]

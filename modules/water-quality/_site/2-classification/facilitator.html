@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Facilitator’s Guide: Water Quality and Summary Statistics</title>
+<title>Facilitator’s Guide: Classification and Color</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,20 +106,16 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">L2: Classification &amp; Color</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../3-gradient-updates/index">
- <span class="dropdown-text">L3: Gradient Updates</span></a>
+    <a class="dropdown-item" href="../3-regression/index">
+ <span class="dropdown-text">L3: Regression</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../4-cnn/index">
- <span class="dropdown-text">L4: CNNs</span></a>
+    <a class="dropdown-item" href="../4-physical-computing/index">
+ <span class="dropdown-text">L4: Physical Computing</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../5-sensor-data/index">
  <span class="dropdown-text">L5: Sensor Data</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../6-gis/index">
- <span class="dropdown-text">L6: GIS Mapping</span></a>
   </li>  
     </ul>
   </li>
@@ -168,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Facilitator’s Guide:<br>Water Quality and Summary Statistics</h1>
+<h1 class="title">Facilitator’s Guide:<br>Classification and Color</h1>
 </div>
 
 
@@ -200,21 +196,26 @@ ul.task-list li input[type="checkbox"] {
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li>Introducion to physical computing
+<li>AI: Classification
 <ul>
-<li>water quality buoy<br>
-</li>
-<li>components</li>
+<li>binary vs.&nbsp;multiclass classification</li>
+<li>training &amp; evaluating a model</li>
+<li>convolutional neural nets (CNNs)</li>
 </ul></li>
-<li>AI: classifying images
+<li>The Water Quality Buoy
 <ul>
-<li>training &amp; evaluating models</li>
-<li>convolutional neural nets</li>
+<li>components &amp; how it works</li>
+<li>classification within the buoy</li>
 </ul></li>
 <li>Computers &amp; Color
 <ul>
 <li>images as pixels</li>
-<li>color as R, G, B</li>
+<li>color as R, G, B values</li>
+</ul></li>
+<li>Ethics of AI in Agriculture
+<ul>
+<li>data ownership</li>
+<li>fairness</li>
 </ul></li>
 </ul>
 </div>
@@ -239,14 +240,9 @@ ul.task-list li input[type="checkbox"] {
 </li>
 <li><em>PSCI.PS1.7:</em> Develop, or use, a model to predict or explain a phenomenon by using appropriate indicators.<br>
 </li>
-<li><em>SCRE.ETS3:</em> Applications of Science: Select and use appropriate data tables, graphs, and diagrams to represent data. Use mathematics and computational thinking to look for patterns in data.</li>
-<li><em>SCRE.ETS3:</em> Applications of Science: Select and use appropriate statistical procedures (descriptive statistics, t-tests, regression and correlation, chi-square, etc.) to analyze data.<br>
-</li>
-<li><em>A1.S.ID.A.1:</em> Use measures of center to solve real-world and mathematical problems.<br>
-</li>
-<li><em>A1.S.ID.A.3:</em> Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points.<br>
-</li>
-<li><em>AGSCIENCE 3.3:</em> Biodiversity: Evaluate the impact of habitat fragmentation, destruction, and other environmental pressures, such as invasive species, overharvesting, pollution, and climate change on local and global biodiversity (genetic, species, and ecosystems.) Distinguish between types of pollution (point and nonpoint sources) and their sources to predict the effects on environmental conditions (e.g., water, soil, and air), animal populations, and plant populations from various kinds of human activity.</li>
+<li><em>SCRE.ETS3:</em> Applications of Science: Use data to develop a model. Evaluate the effectiveness of the model by making and testing predictions.</li>
+<li><em>AGSCIENCE 2.1:</em> Overview: Articulate important historical and current events impacting the agricultural industry and agricultural youth development. Include landmark laws, theories, and practices such as, but not limited to, the Morrill Act, the Smith-Lever Act, the Smith-Hughes Act, and influential figures such as John Deere, Henry Groseclose, Booker T. Washington, and important government agencies in the promotion of knowledge and technology of agricultural science, biotechnology, and key technological developments.</li>
+<li><em>AGSCIENCE 3.2:</em> Models: Develop models for the flow of energy and matter (inorganic forms and overall biomass) in various ecosystems impacting agricultural and environmental systems. Using these models, calculate rates of productivity by analyzing the major components of a food chain. Employ mathematical models to explain growth patterns and rates, both densitydependent and density-independent factors, observed in ecosystems energy and nutrients flow.</li>
 </ul>
 </div>
 </div>
@@ -262,153 +258,53 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="slide-deck-for-lesson" class="level2">
 <h2 class="anchored" data-anchor-id="slide-deck-for-lesson">Slide Deck for Lesson</h2>
-<p><a href="https://appalachianaicorps.org/modules/water-quality/2-classification/slides.html" target="_blank" rel="nofollow noopener noreferrer">Workshop #1 Slides</a></p>
+<p><a href="https://appalachianaicorps.org/modules/water-quality/2-classification/slides.html" target="_blank" rel="nofollow noopener noreferrer">Workshop #2 Slides</a></p>
 </section>
 <section id="student-handout" class="level2">
 <h2 class="anchored" data-anchor-id="student-handout">Student Handout</h2>
-<p>You can make a copy of the <a href="https://docs.google.com/document/d/1Oc6QdS_XJ--WyFC83-kmh5iWaKRTFvEh3kUxyyw8ylA/copy">student handout for this lesson</a>.</p>
+<p>You can make a copy of the <a href="https://docs.google.com/document/d/1YlHKArDan-SWoDWpHBdIyw4bPZv3ZG8LF711mCvDTAk/copy">student handout for this lesson</a>.</p>
 <p><br></p>
 <p>If you would like to provide students a copy of the slides with spaces for note taking, we have prepared a <a href="https://appalachianaicorps.org/modules/water-quality/2-classification/student_handout.pdf" target="_blank" rel="noopener noreferrer">handout for this purpose</a>.</p>
 </section>
 <section id="lesson-prep" class="level2">
 <h2 class="anchored" data-anchor-id="lesson-prep">Lesson Prep</h2>
-<section id="prepare-materials-for-nitrates-lab" class="level4">
-<h4 class="anchored">1. Prepare Materials for Nitrates Lab</h4>
-<p>We suggest creating water samples the for nitrates lab the day before. This will allow the nitrates to fully dissolve in the water.</p>
-<p><strong>Materials needed:</strong></p>
-<ul>
-<li>Miracle-Gro Fertilizer Liquid<br>
-</li>
-<li>Dropper/Pipette<br>
-</li>
-<li>Small cups for student use (to hold samples for testing)<br>
-</li>
-<li>Small sticky notes (we use the 1.875” stickies) grouped into sets of 1 red, 1 green, 1 blue, 1 yellow, etc.
-<ul>
-<li>Each group will be assigned a color (red, green, blue, yellow, etc.), so the number of stickies in a set will be dictated by the number of groups.<br>
-</li>
-<li>Each group will need one multi-colored sticky set per water sample.<br>
-</li>
-</ul></li>
-<li>1 Sharpie/Poster marker per group<br>
-</li>
-<li>Nitrate/Nitrate test strips<br>
-</li>
-<li>Masking tape/ sharpies to label cups/samples</li>
-</ul>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Nitrate Sample Creation Guide
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<section id="mixing-guide" class="level3 callout-body-container callout-body">
-<h3 class="anchored" data-anchor-id="mixing-guide">Mixing Guide</h3>
-<p><em>This plan is written to provide samples for 5 groups with 4 samples each.</em></p>
-<p>For 5 groups × 4 samples = 20 total samples<br>
-Fill each cup with 1 cup (8 oz) water, then add liquid fertilizer drops with dropper/pipette:</p>
-<p><strong>Normal/Low Range (8 samples) - 0-5 ppm</strong><br>
-4 samples: Plain water (0 drops)<br>
-4 samples: 1-2 drops per cup</p>
-<p><strong>Moderate Range (6 samples) - 8-12 ppm</strong><br>
-6 samples: 4-6 drops per cup</p>
-<p><strong>Medium-High Range (3 samples) - 15-20 ppm</strong><br>
-3 samples: 8-10 drops per cup</p>
-<p><strong>Extreme Outliers (3 samples) - 35-50 ppm</strong><br>
-2 samples: 20-25 drops per cup (~35-40 ppm)<br>
-1 sample: 30+ drops per cup (50 ppm, maxes out strip)</p>
+<section id="ensure-student-access-to-webcam" class="level4">
+<h4 class="anchored" data-anchor-id="ensure-student-access-to-webcam">1. Ensure Student Access to Webcam</h4>
+<p>This lesson is reliant on the student use of their device’s webcam. Please double check that the webcam on their device is enabled and works with both <a href="https://teachablemachine.withgoogle.com/">Teachable Machine</a> and the <a href="https://appalachianaicorps.org/modules/water-quality/RGB-Applet-1.html">AAIC Applet</a> used in this lesson.</p>
 </section>
-</div>
-</div>
+<section id="purchase-fruit-and-distractor" class="level4">
+<h4 class="anchored" data-anchor-id="purchase-fruit-and-distractor">2. Purchase Fruit and Distractor</h4>
+<p>For this lesson, we recommend one red apple per child, and at least one Granny Smith and mandarin orange per small group. If you want to lengthen this lesson, you could vary the types of red apples purchased and have discussion about the importance of training classification models for different varieities of apples and fruits. We also purchased an orange rubber ball, similarly sized to the mandarin oranges.</p>
 </section>
-<section id="prepare-materials-for-boxplot-activity" class="level4">
-<h4 class="anchored" data-anchor-id="prepare-materials-for-boxplot-activity">2. Prepare Materials for Boxplot Activity</h4>
-<p><strong>Materials needed:</strong></p>
-<ul>
-<li>1 Post-It Gridded Sticky Page/Group
-<ul>
-<li>We pre-drew the axis on the page due to time limitations<br>
-</li>
-</ul></li>
-<li>1 poster marker per group</li>
-</ul>
-</section>
-<section id="make-copies-1-handout-per-student" class="level4">
-<h4 class="anchored" data-anchor-id="make-copies-1-handout-per-student">3. Make Copies: 1 Handout Per Student</h4>
-<ul>
-<li>You will need to make 1 copy per student of the <a href="https://docs.google.com/document/d/1Oc6QdS_XJ--WyFC83-kmh5iWaKRTFvEh3kUxyyw8ylA/copy">workshop handout</a>. If color-copying is not possible, make sure to have a reference of the color key for the nitrate/nitrite test strips available for each group. Note that the keys vary depending on the brand of test strips you purchase, so you may need to modify the handout to match the specific test strips you are using. Also, the colors are sensitive to lighting and printer setup, so if may be preferrable to have several bottles available for comparison to the orginal key on the bottle itself.</li>
-</ul>
-</section>
-<section id="create-and-share-link-for-nitrates-lab-data-collection" class="level4">
-<h4 class="anchored" data-anchor-id="create-and-share-link-for-nitrates-lab-data-collection">4. Create and Share Link for Nitrates Lab Data Collection</h4>
-<ul>
-<li>Make sure you are logged into your school Google Account</li>
-<li>Use <a href="https://docs.google.com/forms/d/1xfxu1m-vVqFbG0K70ndde9DHtzwFCPIeKQsYvaR5IyQ/copy" rel="noopener noreferrer">this link</a> to make a copy of the Nitrate/Nitrite Lab Google Form</li>
-<li>Open your copy of the Nitrate/Nitrite Lab Google Form. Publish the form. Double check the sharing settings to make sure all of your students can respond.<br>
-<img src="images/check-sharing-settings-google-form.png" class="img-fluid" style="width:50.0%"></li>
-<li>While on the sharing settings, copy the respondent link and be prepared to share this link with your students, probably via email or your LMS. Close the sharing settings.</li>
-<li>On the “Responses” tab, click “Link to Sheet” &gt; “Create a New Sheet” to aggregate all of the student responses into one spreadsheet.</li>
-<li>Open the spreadsheet it generates (it may automatically open) and go to “File” &gt; “Share” &gt; “Publish to web” and use the following options:<br>
-<img src="images/publish-to-web-options-for-google-form.png" class="img-fluid" style="width:50.0%"></li>
-<li>When you click <strong>publish</strong>, it will give you a link. Please be prepared to share this link with your students during the second half of class… perhaps via email or via LMS. They will need to copy/paste it to access the data. You can set this up well in advance of class.<br>
-</li>
-<li><em>Note: If you are facilitating this module for more than one class, you will want to repeat this process once for each class, so that each class has their own submission form and spreadsheet.</em></li>
-<li>This can be done well in advance, just make sure to keep the form link <strong>(respondent link)</strong> and spreadsheet link <strong>(publish to web link)</strong> for each class ready to disseminate.</li>
-</ul>
-</section>
-<section id="create-group-tents-using-colored-paper-that-matches-the-sticky-notes." class="level4">
-<h4 class="anchored" data-anchor-id="create-group-tents-using-colored-paper-that-matches-the-sticky-notes.">5. Create group tents using colored paper that matches the sticky notes.</h4>
+<section id="make-copies-of-the-student-handout" class="level4">
+<h4 class="anchored" data-anchor-id="make-copies-of-the-student-handout">3. Make Copies of the Student Handout</h4>
+<p>Each student will need one copy of the student handout. You can make a copy of the handout by clicking the link above.</p>
 </section>
 <section id="create-copy-of-exit-ticket-for-end-of-lesson-implementation." class="level4">
-<h4 class="anchored" data-anchor-id="create-copy-of-exit-ticket-for-end-of-lesson-implementation.">6. Create copy of exit ticket for end-of-lesson implementation.</h4>
-<ul>
-<li>We have drafted a three-question exit ticket that aligns with the three major content areas of this lesson (Water Quality, Python, and Statistics). We are providing the <a href="https://docs.google.com/forms/d/1ElNPJxW6w3OTOAUHia8L1RF_q2yqebzvwnI18XVjj5Y/copy">Google Form here</a> if you would like to use it or modify it for your own needs.</li>
-</ul>
+<h4 class="anchored" data-anchor-id="create-copy-of-exit-ticket-for-end-of-lesson-implementation.">4. Create copy of exit ticket for end-of-lesson implementation.</h4>
+<p>We have drafted an exit ticket that aligns with tthis lesson. We are providing the <a href="https://docs.google.com/forms/d/1qs_1RupqOY17vGspY___I6kDrig4PxWnLrMiVLCj0IQ/copy">Google Form here</a> if you would like to use it or modify it for your own needs.</p>
 </section>
 <section id="create-copy-of-the-exercise-for-after-lesson-practice." class="level4">
-<h4 class="anchored" data-anchor-id="create-copy-of-the-exercise-for-after-lesson-practice.">7. Create copy of the exercise for after-lesson practice.</h4>
-<ul>
-<li>We have also created a Google Colab exercise that you can use with students to practice the concepts covered in this lesson. It is available <a href="https://colab.research.google.com/drive/1xm5qwxA6ZCm3BxuTKFL6n1ItlWgR84jM?usp=sharing">here</a>.</li>
-</ul>
+<h4 class="anchored" data-anchor-id="create-copy-of-the-exercise-for-after-lesson-practice.">5. Create copy of the exercise for after-lesson practice.</h4>
+<p>We have also created an exercise that you can use with students to practice the concepts covered in this lesson. It is available <a href="https://docs.google.com/forms/d/1CRdhhvLsr_5YXHe5P8TK6QvB8wANtHGMzgxQd3ynsWI/copy">here</a>.</p>
 </section>
 </section>
 <section id="lesson-overview-takeaways" class="level2">
 <h2 class="anchored" data-anchor-id="lesson-overview-takeaways">Lesson Overview &amp; Takeaways</h2>
 <p>By the end of the lesson, students will be able to:</p>
 <ul>
-<li>Write and run a basic python script that includes:
-<ul>
-<li>strings<br>
-</li>
-<li>mathematical operators<br>
-</li>
-<li>statistics functions<br>
-</li>
-<li>print statements<br>
-</li>
-<li>lists<br>
-</li>
-</ul></li>
-<li>Explain, at a high level, the role of nitrogen in water quality evaluations<br>
-</li>
-<li>Carry out procedures to collect and interpret data concerning nitrate and nirite concentrations from a water quality test<br>
-</li>
-<li>Construct boxplots, manually and computationally, to visualize water quality data</li>
+<li>Describe the components of the Smokey Buoy and explain how it uses classification to monitor water quality</li>
+<li>Distinguish between binary and multiclass classification and provide examples of each</li>
+<li>Train and evaluate an image classification model using Teachable Machine</li>
+<li>Explain, at a high level, how a Convolutional Neural Net (CNN) works</li>
+<li>Explain how computers represent images as pixels and colors as R, G, B values</li>
+<li>Discuss ethical considerations around data ownership and fairness in AI-assisted agriculture</li>
 </ul>
 </section>
 <section id="reference-materials" class="level2">
 <h2 class="anchored" data-anchor-id="reference-materials">Reference Materials</h2>
 <p>Whole-Class Video Links:<br>
-- <a href="https://edpuzzle.com/embed/media/695b558ffb53770c2e4fa1bd" rel="noopener noreferrer">Water Quality</a><br>
-- <a href="https://edpuzzle.com/embed/media/695c86636c7ddd288faebc26" rel="noopener noreferrer">Nitrogen Cycle</a><br>
-- <a href="https://edpuzzle.com/embed/media/695c8e7d1b8b4b96f64b0e80" rel="noopener noreferrer">Nitrogen as Polutant</a><br>
-- <a href="https://youtu.be/Ge9je05uYJ0?si=FspiImxmEBP8xHuN" rel="noopener noreferrer">What is Statistics?</a><br>
-- <a href="https://youtu.be/01WLS9X3FhY?si=0InxJE5vzH78qau3" rel="noopener noreferrer">Mean, Median &amp; Mode</a></p>
+- <a href="https://youtu.be/oV3ZY6tJiA0?si=ur273VN6VpnoqXoZ" rel="noopener noreferrer">PBS Convolutional Neural Networks</a></p>
 
 
 <script type="ojs-module-contents">

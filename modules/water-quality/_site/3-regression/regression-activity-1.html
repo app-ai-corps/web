@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Regression</title>
+<title>Regression Activity - Pt. I: RGB and Scatterplots</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -144,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Regression</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Regression Activity - Pt. I: RGB and Scatterplots</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -169,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../3-regression/" class="sidebar-item-text sidebar-link active">
+  <a href="../3-regression/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1. Overview</span></a>
   </div>
 </li>
@@ -225,11 +225,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome-back-scientists" id="toc-welcome-back-scientists" class="nav-link active" data-scroll-target="#welcome-back-scientists">🔬💧 Welcome Back, Scientists!</a></li>
-  <li><a href="#remember-me-smokey-buoy" id="toc-remember-me-smokey-buoy" class="nav-link" data-scroll-target="#remember-me-smokey-buoy">Remember Me, Smokey Buoy!?</a>
+  <li><a href="#meaning-rgb" id="toc-meaning-rgb" class="nav-link active" data-scroll-target="#meaning-rgb">Meaning RGB</a>
   <ul class="collapse">
-  <li><a href="#smokey-buoy-components" id="toc-smokey-buoy-components" class="nav-link" data-scroll-target="#smokey-buoy-components">Smokey Buoy: Components</a></li>
-  <li><a href="#smokey-buoy-camera" id="toc-smokey-buoy-camera" class="nav-link" data-scroll-target="#smokey-buoy-camera">Smokey Buoy: 🎥 Camera</a></li>
+  <li><a href="#rgb-and-scatterplots" id="toc-rgb-and-scatterplots" class="nav-link" data-scroll-target="#rgb-and-scatterplots">RGB and Scatterplots</a></li>
+  <li><a href="#rgb-activity-part-1" id="toc-rgb-activity-part-1" class="nav-link" data-scroll-target="#rgb-activity-part-1">RGB Activity (Part 1)</a>
+  <ul class="collapse">
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a></li>
+  </ul></li>
+  <li><a href="#scatterplots-activity-part-2" id="toc-scatterplots-activity-part-2" class="nav-link" data-scroll-target="#scatterplots-activity-part-2">Scatterplots Activity (Part 2)</a>
+  <ul class="collapse">
+  <li><a href="#instructions-1" id="toc-instructions-1" class="nav-link" data-scroll-target="#instructions-1">Instructions</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -239,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Regression</h1>
+<h1 class="title">Regression Activity - Pt. I: RGB and Scatterplots</h1>
 </div>
 
 
@@ -256,74 +262,64 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>This module is designed to be used in conjunction with the Lesson 3 slide deck and other resources located in the facilitator’s guide.</strong></p>
-<div class="gray-container">
-<p><strong>Lesson Objective:</strong> In this lesson, you will learn how to use scatterplots and regression lines in Python to predict nitrate levels from RGB color values on test strips.</p>
-<p><strong>Materials Needed:</strong><br>
-- A computer with a webcam<br>
-- A web browser (Chrome, Firefox, or Safari)</p>
+<section id="meaning-rgb" class="level1">
+<h1>Meaning RGB</h1>
+<p>In workshop #2, we learned how computers “see” color - through RBG values! But the buoy does more. Did you notice that there were lots of little pixels on the screen in the applet we used last time? Which one is best? The buoy takes all of the pixels for each test pad and calculates their mean, which results in a mean Red, mean Green, and mean Blue value for each pad.</p>
+<div class="columns">
+<div class="column">
+<p><img src="images/Red_Pixels.png" class="img-fluid"></p>
+</div><div class="column">
+<p><img src="images/Red_Meaned_Pixels.png" class="img-fluid" style="width:90.0%"></p>
 </div>
-<div class="ltblue-container">
-<p><strong>Checkpoints on this Page:</strong></p>
-<ul>
-<li><a href="#lst-review"><strong>Checkpoint 1.a:</strong> Recalling Workshop #2</a></li>
-</ul>
+</div>
+<section id="rgb-and-scatterplots" class="level2">
+<h2 class="anchored" data-anchor-id="rgb-and-scatterplots">RGB and Scatterplots</h2>
+<p>During this activity, we’ll learn a bit more about linear regression and how the buoy can use regression to predict nitrate values.</p>
+<div class="gray-container">
+<p><strong>Materials Needed:</strong><br>
+- <a href="https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html" target="_blank">RGB Applet V2</a><br>
+- Deck of Purple “Nitrate Test Pad” Cards<br>
+- Pencil<br>
+- Highlighter (optional but helpful)<br>
+- Handout<br>
+- Dot Stickers<br>
+- Large Graph Paper<br>
+- Poster Markers</p>
 </div>
 <p><br></p>
-<section id="welcome-back-scientists" class="level2">
-<h2 class="anchored" data-anchor-id="welcome-back-scientists">🔬💧 Welcome Back, Scientists!</h2>
-<div id="lst-review" class="listing quarto-float quarto-figure quarto-figure-left anchored">
-<figure class="quarto-float quarto-float-lst figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-review-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-🎯 Checkpoint 1.&nbsp;a: Review—Looking back to Workshop #2
-</figcaption>
-<div aria-describedby="lst-review-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<ul>
-<li>Let’s remember what we learned during workshop #2:
-<ul>
-<li>AI: Classification
-<ul>
-<li>Model Accuracy</li>
-</ul></li>
-<li>Agricultural Uses of Classification</li>
-<li>Data Ownership</li>
-<li>Computers &amp; Color</li>
-</ul></li>
-</ul>
-</div>
-</figure>
-</div>
 </section>
-<section id="remember-me-smokey-buoy" class="level2">
-<h2 class="anchored" data-anchor-id="remember-me-smokey-buoy">Remember Me, Smokey Buoy!?</h2>
-<p>We met Smokey Buoy last workshop and learned a bit about how it works.</p>
-<p><img src="images/smokey_buoy.png" class="img-fluid"></p>
-<section id="smokey-buoy-components" class="level3">
-<h3 class="anchored" data-anchor-id="smokey-buoy-components">Smokey Buoy: Components</h3>
-<p>Let’s recall Smokey’s components and how they work together:<br>
-<img src="images/buoy_diagram_modified_fullylabeled.png" class="img-fluid" style="width:60.0%"></p>
+<section id="rgb-activity-part-1" class="level2">
+<h2 class="anchored" data-anchor-id="rgb-activity-part-1">RGB Activity (Part 1)</h2>
+<section id="instructions" class="level3">
+<h3 class="anchored" data-anchor-id="instructions">Instructions</h3>
+<ol type="1">
+<li>Open the <a href="https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html" target="_blank">RGB Applet V2</a>.<br>
+</li>
+<li>Find card #1 in your deck. Hold it 1 to 2 inches in front of your webcam.</li>
+<li>Using the middle square in the frame, record the RGB values for the card on your handout.<br>
+<img src="images/Red_Meaned_Pixels_Center.png" class="img-fluid"></li>
+<li>Repeat this process for all other numbered cards in your deck. Make sure you hold each card the same distance away from your webcam.</li>
+</ol>
 </section>
-<section id="smokey-buoy-camera" class="level3">
-<h3 class="anchored" data-anchor-id="smokey-buoy-camera">Smokey Buoy: 🎥 Camera</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Specifically, Smokey Buoy’s camera has two jobs:
-<ul>
-<li>Watch for a test pad
-<ul>
-<li>We talked about this last workshop!</li>
-</ul></li>
-<li>When pad is present, take a picture
-<ul>
-<li>We’ll discuss what happens with the picture today!</li>
-</ul></li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img src="images/buoy_diagram_modified_camera.png" class="img-fluid" style="width:75.0%"></p>
+</section>
+<section id="scatterplots-activity-part-2" class="level2">
+<h2 class="anchored" data-anchor-id="scatterplots-activity-part-2">Scatterplots Activity (Part 2)</h2>
+<section id="instructions-1" class="level3">
+<h3 class="anchored" data-anchor-id="instructions-1">Instructions</h3>
+<br>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe src="https://www.youtube.com/embed/b_Au4Ngm9pE?start=8&amp;end=86" frameborder="0" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+  </iframe>
 </div>
+<br>
+<div class="ltorange-container">
+<p>This portion of the activity will be completed with your group.<br>Each group will be assigned either to <strong>red</strong>, <strong>green</strong>, or <strong>blue</strong>.</p>
 </div>
+<ol type="1">
+<li>Using the round stickies and graph paper, create a scatterplot.<br>
+</li>
+<li>Place the color values (either red, green or blue, depending on your group assignment) on the x-axis and the nitrate concentrations on the y-axis.</li>
+</ol>
 
 
 <script type="ojs-module-contents">
@@ -340,6 +336,7 @@ eyJjb250ZW50cyI6W119
 <script type="vfs-file">
 W10=
 </script>
+</section>
 </section>
 </section>
 

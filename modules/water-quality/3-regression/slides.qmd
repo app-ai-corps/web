@@ -268,7 +268,7 @@ Smokey Buoy's camera has two jobs:
 :::{.fourtyeightpt-font .incremental}
 - Last workshop, we learned about **classification**.
 - In this workshop, we will learn about **regression**.
-- Regression is all about **predicting** something (a number!) from something else.
+- Regression is all about **predicting** something (a number!) from something else (other numbers).
 :::
 
 ## Scenario 1: Cube Towers
@@ -303,7 +303,38 @@ Smokey Buoy's camera has two jobs:
 | # of Cubes | Height (inches) |
 |:---:|:---:|
 | 1 | 1 |
+| 2 |
+:::
+::: {.column width="60%"}
+![](images/cube-plot-1.png){fig-align="center"}
+:::
+::::
+
+## Let's Predict! — 2 Cubes
+<hr>
+
+:::: {.columns}
+::: {.column width="40%"}
+| # of Cubes | Height (inches) |
+|:---:|:---:|
+| 1 | 1 |
 | 2 | 2 |
+:::
+::: {.column width="60%"}
+![](images/cube-plot-2.png){fig-align="center"}
+:::
+::::
+
+## Let's Predict! — 3 Cubes
+<hr>
+
+:::: {.columns}
+::: {.column width="40%"}
+| # of Cubes | Height (inches) |
+|:---:|:---:|
+| 1 | 1 |
+| 2 | 2 |
+| 3 |
 :::
 ::: {.column width="60%"}
 ![](images/cube-plot-2.png){fig-align="center"}
@@ -336,7 +367,42 @@ Smokey Buoy's camera has two jobs:
 | 1 | 1 |
 | 2 | 2 |
 | 3 | 3 |
+| 4 |
+:::
+::: {.column width="60%"}
+![](images/cube-plot-3.png){fig-align="center"}
+:::
+::::
+
+## Let's Predict! — 4 Cubes
+<hr>
+
+:::: {.columns}
+::: {.column width="40%"}
+| # of Cubes | Height (inches) |
+|:---:|:---:|
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
 | 4 | 4 |
+:::
+::: {.column width="60%"}
+![](images/cube-plot-4.png){fig-align="center"}
+:::
+::::
+
+## Let's Predict! — 5 Cubes
+<hr>
+
+:::: {.columns}
+::: {.column width="40%"}
+| # of Cubes | Height (inches) |
+|:---:|:---:|
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+| 5 |
 :::
 ::: {.column width="60%"}
 ![](images/cube-plot-4.png){fig-align="center"}
@@ -373,6 +439,25 @@ Smokey Buoy's camera has two jobs:
 | 3 | 3 |
 | 4 | 4 |
 | 5 | 5 |
+| 10 |
+:::
+::: {.column width="60%"}
+![](images/cube-plot-5.png){fig-align="center"}
+:::
+::::
+
+## Let's Predict! — 10 Cubes
+<hr>
+
+:::: {.columns}
+::: {.column width="40%"}
+| # of Cubes | Height (inches) |
+|:---:|:---:|
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+| 5 | 5 |
 | 10 | 10 |
 :::
 ::: {.column width="60%"}
@@ -386,15 +471,17 @@ Smokey Buoy's camera has two jobs:
 :::{.ltblue-container .thirtyfourpt-font}
 🎯 **Checkpoint 2. a:**
 <br><br>
-How tall will our tower be if we use **100 cubes**? How do you know?
+[**Q1:** How tall will our tower be if we use **100 cubes**?]{.fragment}  
+<br>
+[**Q2:** Your friend argues that the tower will be 99 inches tall. What would you tell him? Why?]{.fragment}
 :::
 
 ## Scenario 2: Cheap Uncle Bob
 <hr>
 
 :::{.fourtyeightpt-font .incremental}
-- We want to build a much taller tower, but we ran out of 1" cubes.
-- Uncle Bob volunteers to make us more cubes — cheaper!
+- We want to build a much taller tower than our current 10" one, but we ran out of 1" cubes.
+- 🎉 Uncle Bob volunteers to make us more cubes — cheaper!
 :::
 
 ## Scenario 2: Cheap Uncle Bob
@@ -418,16 +505,25 @@ How will Uncle Bob's new cubes affect our tower height predictions?
 ## The Case for Regression
 <hr>
 
-:::{.activity-text}
-Bob's cubes saved us money, but now tower heights are all over the place. We need a better way to predict.
+:::: {.columns}
+::: {.column}
+![True with perfectly 1" cubes](images/cube-plot-11-noregline.png){width=90%}
 :::
+::: {.activity-text .column}
+
+:::
+::::
+
+## The Case for Regression
+<hr>
 
 :::: {.columns}
 ::: {.column}
-![True with perfectly 1" cubes](images/cube-plot-11-noregline.png){width=50%}
+![Reality with Uncle Bob's cubes](images/cube-plot-unclebob.png){width=90%}
 :::
-::: {.column}
-![Reality with Uncle Bob's cubes](images/cube-plot-unclebob.png){width=50%}
+::: {.activity-text .column}
+Bob's cubes saved us money, but now tower heights are all over the place.  <br><br>
+We need a better way to predict.
 :::
 ::::
 
@@ -451,9 +547,9 @@ Bob's cubes saved us money, but now tower heights are all over the place. We nee
 - Let's learn a bit more about this!
 :::
 
-# 🔬 Regression Activity — Pt. I:<br>RGB and Scatterplots
+# 🔬<br>Regression Activity — Pt. I:<br>RGB and Scatterplots
 
-## Meaning RGB
+## Averaging RGB
 <hr>
 
 :::{.activity-text}
@@ -461,15 +557,122 @@ In Workshop #2, we learned how computers "see" color through RGB values. The buo
 :::
 
 :::: {.columns style="display:flex; align-items:center; justify-content:center;"}
-::: {.column width="25%" style="display:flex; justify-content:center;"}
+::: {.column style="display:flex; justify-content:center;"}
 ![](images/Red_Pixels.png){style="height:300px; width:auto; object-fit:contain;"}
 :::
-::: {.column width="25%" style="display:flex; justify-content:center;"}
-![](images/Red_Meaned_Pixels.png){style="height:300px; width:auto; object-fit:contain;"}
+::: {.column style="display:flex; justify-content:center;"}
+
 :::
 ::::
 
-## RGB Activity (Part 1)
+## Averaging RGB
+<hr>
+
+:::{.activity-text}
+In Workshop #2, we learned how computers "see" color through RGB values. The buoy takes **all the pixels** for each test pad and finds their **mean**.
+:::
+
+:::: {.columns style="display:flex; align-items:center; justify-content:center;"}
+::: {.column style="display:flex; justify-content:center;"}
+![](images/Red_Pixels.png){style="height:300px; width:auto; object-fit:contain;"}
+:::
+::: {.column style="display:flex; justify-content:center;"}
+![](images/Red_Pixels_OneMean.png){style="height:300px; width:auto; object-fit:contain;"}
+:::
+::::
+
+
+## Averaging RGB
+<hr>
+
+:::{.activity-text}
+In our applet (for the next activity), we split the pixels into a grid and meaned each section. We will treat the center box like the test pad (use that number).
+:::
+
+:::: {.columns style="display:flex; align-items:center; justify-content:center;"}
+::: {.column style="display:flex; justify-content:center;"}
+![](images/Red_Pixels.png){style="height:300px; width:auto; object-fit:contain;"}
+:::
+::: {.column style="display:flex; justify-content:center;"}
+
+:::
+::: {.column style="display:flex; justify-content:center;"}
+
+:::
+::: {.column style="display:flex; justify-content:center;"}
+
+:::
+::::
+
+## Averaging RGB
+<hr>
+
+:::{.activity-text}
+In our applet (for the next activity), we split the pixels into a grid and meaned each section. We will treat the center box like the test pad (use that number).
+:::
+
+:::: {.columns style="display:flex; align-items:center; justify-content:center;"}
+::: {.column style="display:flex; justify-content:center;"}
+![](images/Red_Pixels.png){style="height:300px; width:auto; object-fit:contain;"}
+:::
+::: {.column style="display:flex; justify-content:center;"}
+![](images/Red_Pixels_Grid.png){style="height:300px; width:auto; object-fit:contain;"}
+:::
+::: {.column style="display:flex; justify-content:center;"}
+
+:::
+::: {.column style="display:flex; justify-content:center;"}
+
+:::
+::::
+
+## Averaging RGB
+<hr>
+
+:::{.activity-text}
+In our applet (for the next activity), we split the pixels into a grid and meaned each section. We will treat the center box like the test pad (use that number).
+:::
+
+:::: {.columns style="display:flex; align-items:center; justify-content:center;"}
+::: {.column style="display:flex; justify-content:center;"}
+![](images/Red_Pixels.png){style="height:300px; width:auto; object-fit:contain;"}
+:::
+::: {.column style="display:flex; justify-content:center;"}
+![](images/Red_Pixels_Grid.png){style="height:300px; width:auto; object-fit:contain;"}
+:::
+::: {.column style="display:flex; justify-content:center;"}
+![](images/Red_Meaned_Pixels.png){style="height:300px; width:auto; object-fit:contain;"}
+:::
+::: {.column style="display:flex; justify-content:center;"}
+
+:::
+::::
+
+## Averaging RGB
+<hr>
+
+:::{.activity-text}
+In our applet (for the next activity), we split the pixels into a grid and meaned each section. We will treat the center box like the test pad (use that number).
+:::
+
+:::: {.columns style="display:flex; align-items:center; justify-content:center;"}
+::: {.column style="display:flex; justify-content:center;"}
+![](images/Red_Pixels.png){style="height:300px; width:auto; object-fit:contain;"}
+:::
+::: {.column style="display:flex; justify-content:center;"}
+![](images/Red_Pixels_Grid.png){style="height:300px; width:auto; object-fit:contain;"}
+:::
+::: {.column style="display:flex; justify-content:center;"}
+![](images/Red_Meaned_Pixels.png){style="height:300px; width:auto; object-fit:contain;"}
+:::
+::: {.column style="display:flex; justify-content:center;"}
+![](images/Red_Meaned_Pixels_CenterCircle.png){style="height:300px; width:auto; object-fit:contain;"}
+:::
+::::
+
+# 👨🏽‍🤝‍👨🏿👩🏼‍🤝‍👨🏾👩🏼‍🤝‍👩🏻<br>Groupwork!
+
+## RGB Activity (Pt. I)
 <hr>
 
 :::{.gray-container .fourtyeightpt-font}
@@ -482,17 +685,36 @@ In Workshop #2, we learned how computers "see" color through RGB values. The buo
 - Large Graph Paper / Poster Markers
 :::
 
-## RGB Activity (Part 1) — Instructions
+## RGB Activity (Pt. I)
+<hr>
+
+### Roles
+
+:::{.activity-text}
+- *Human Buoy* (1 person): Needs the nitrate test cards and computer handy
+- *Data Recorders* (2+ people): Need handout and pencil
+:::
+
+## RGB Activity (Pt. I) — Instructions
 <hr>
 
 :::{.fourtyeightpt-font}
-1. Open the [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html){target="_blank"} in a new tab.
-2. Find card #1 in your deck and hold it in front of your webcam.
-3. Using the middle square in the frame, record the RGB values on your handout.
-4. Repeat for all other numbered cards in your deck.
+1. **HB:** Open the [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html){target="_blank"} in a new tab.
+2. **HB:** Find card #1 in your deck and hold it in front of your webcam.
+3. **DRs:** Using the middle square in the frame, record the RGB values on your handout.
+4. Repeat for all other cards in deck.
 :::
 
-## Scatterplots Activity (Part 2)
+## RGB Activity (Pt. I) — Instructions
+<hr>
+
+:::{.fourtyeightpt-font}
+5. When finished, make sure all group members have the data values recorded on their handouts.
+:::
+
+# Activity Pt. II <br> Scatterplots!
+
+## Activity (Pt. II) - Scatterplots
 <hr>
 
 ```{=html}
@@ -508,25 +730,24 @@ In Workshop #2, we learned how computers "see" color through RGB values. The buo
 </center>
 ```
 
-## Scatterplots Activity (Part 2) — Instructions
+## Activity (Pt. II) — Instructions
 <hr>
 
 :::{.ltorange-container .fourtyeightpt-font}
-This portion will be completed with your group.
-Each group is assigned either **red**, **green**, or **blue**.
+For this portion, each group is assigned either **red**, **green**, or **blue**, based on the color of your stickers!
 :::
 <br>
 
-## Scatterplots Activity (Part 2) — Instructions
+## Activity (Pt. II) — Instructions
 <hr>
 
 :::{.fourtyeightpt-font}
 1. Using the round stickies and graph paper, create a scatterplot.
-2. Place color values (R, G, or B — per your group) on the **x-axis**.
-3. Place nitrate concentrations on the **y-axis**.
+2. Color values (R, G, or B — per your group) go on the **x-axis**.
+3. Nitrate concentrations go on the **y-axis**.
 :::
 
-# 💻 Regression Activity — Pt. 2:<br>Regression Modeling
+# 💻 Activity — Pt. III:<br>Regression Modeling
 
 ## Regression Modeling
 <hr>
