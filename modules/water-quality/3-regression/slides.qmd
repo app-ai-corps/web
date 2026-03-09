@@ -1189,6 +1189,7 @@ show_prediction_plot(color_data, nitrate_ppm, slope, intercept)
 | Sample 3 |  |  |  |
 
 ::: {.callout-important}
+## Consider
 Wouldn't it be great if there was a number to tell us how good our models/predictions are?
 :::
 
