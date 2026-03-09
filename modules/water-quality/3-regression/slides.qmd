@@ -1180,6 +1180,17 @@ show_prediction_plot(color_data, nitrate_ppm, slope, intercept)
 | Sample 2 |  |  |  |
 | Sample 3 |  |  |  |
 
+## 🗣️ Share Out: What Are Your Model Predictions?
+<hr>
+| Sample # | Red Model | Green Model| Blue Model |
+|:---:|:---:|:---:|:---:|
+| Sample 1 |  |  |  |
+| Sample 2 |  |  |  |
+| Sample 3 |  |  |  |
+
+::: {.callout-important}
+Wouldn't it be great if there was a number to tell us how good our models/predictions are?
+:::
 
 # Understanding R²
 
