@@ -3994,7 +3994,7 @@
     "href": "3-regression/slides.html#rgb-activity-part-1-instructions",
     "title": "Workshop #3",
     "section": "RGB Activity (Part 1) — Instructions",
-    "text": "RGB Activity (Part 1) — Instructions\n\n\n\nHB: Open the RGB Applet V2 in a new tab.\nHB: Find card #1 in your deck and hold it in front of your webcam.\nDRs: Using the middle square in the frame, record the RGB values on your handout.\nRepeat for all other cards in deck."
+    "text": "RGB Activity (Part 1) — Instructions\n\n\n\nOpen the RGB Applet V2 in a new tab.\nFind card #1 in your deck and hold it in front of your webcam.\nUsing the middle square in the frame, record the RGB values on your handout.\nRepeat for all other numbered cards in your deck."
   },
   {
     "objectID": "3-regression/slides.html#scatterplots-activity-part-2",
@@ -4008,7 +4008,7 @@
     "href": "3-regression/slides.html#scatterplots-activity-part-2-instructions",
     "title": "Workshop #3",
     "section": "Scatterplots Activity (Part 2) — Instructions",
-    "text": "Scatterplots Activity (Part 2) — Instructions\n\n\n\nUsing the round stickies and graph paper, create a scatterplot.\nPlace color values (R, G, or B — per your group) on the x-axis.\nPlace nitrate concentrations on the y-axis."
+    "text": "Scatterplots Activity (Part 2) — Instructions\n\n\nThis portion will be completed with your group. Each group is assigned either red, green, or blue."
   },
   {
     "objectID": "3-regression/slides.html#scatterplots-activity-part-2-instructions-1",
@@ -4029,28 +4029,28 @@
     "href": "3-regression/slides.html#storing-your-data",
     "title": "Workshop #3",
     "section": "Storing Your Data",
-    "text": "Storing Your Data\n\n\nReplace the ?? placeholders with your color values and nitrate concentrations.\nIMPORTANT: Values must be in the exact same order.\nClick ▶️ Run Code to store your data.\n\n\ncolor_data = [188, 179, 176, 176, 172, 167, 166, 162]\nnitrate_ppm = [0, 1, 2, 3, 4, 5, 6, 7]\n\nprint(color_data)\nprint(nitrate_ppm)\n\ncolor_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\ndf = process_df(color_data, nitrate_ppm)\n\n[188, 179, 176, 176, 172, 167, 166, 162]\n[0, 1, 2, 3, 4, 5, 6, 7]"
+    "text": "Storing Your Data\n\n\nReplace the ?? placeholders with your color values and nitrate concentrations.\nIMPORTANT: Values must be in the exact same order.\nClick ▶️ Run Code to store your data.\n\ncolor_data = [??, ??, ??, ??, ??, ??, ??, ??]\nnitrate_ppm = [??, ??, ??, ??, ??, ??, ??, ??]\n\nprint(color_data)\nprint(nitrate_ppm)\n\ncolor_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\ndf = process_df(color_data, nitrate_ppm)"
   },
   {
     "objectID": "3-regression/slides.html#recreating-your-teams-scatterplot",
     "href": "3-regression/slides.html#recreating-your-teams-scatterplot",
     "title": "Workshop #3",
     "section": "Recreating Your Team’s Scatterplot",
-    "text": "Recreating Your Team’s Scatterplot\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to create a scatterplot matching your group’s paper plot.\n\nplt.figure(figsize=(6, 5))\nplt.scatter(df[\"color_data\"], df[\"nitrate_ppm\"], s=60, color=\"black\")\nplt.title(\"Nitrate vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate (ppm)\")\nplt.tight_layout()\nplt.show()"
+    "text": "Recreating Your Team’s Scatterplot\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to create a scatterplot matching your group’s paper plot.\n\nplt.figure(figsize=(6, 5))\nplt.scatter(df[\"??\"], df[\"??\"], s=60, color=\"black\")\nplt.title(\"Nitrate vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate (ppm)\")\nplt.tight_layout()\nplt.show()"
   },
   {
     "objectID": "3-regression/slides.html#running-the-linear-regression",
     "href": "3-regression/slides.html#running-the-linear-regression",
     "title": "Workshop #3",
     "section": "Running the Linear Regression",
-    "text": "Running the Linear Regression\n\n\nReplace the ?? placeholders:\n\nFirst blank → color_data\nSecond blank → nitrate_ppm\n\nClick ▶️ Run Code to generate the line of best fit equation.\n\n\nslope, intercept = linear_regression(color_data, nitrate_ppm)\n\nprint(\"slope (m):\", slope)\nprint(\"intercept (b):\", intercept)\n\nslope (m): -0.28630278063851533\nintercept (b): 53.10195674562279"
+    "text": "Running the Linear Regression\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to generate the line of best fit equation.\n\nslope, intercept = linear_regression(??, ??)\n\nprint(\"slope (m):\", slope)\nprint(\"intercept (b):\", intercept)"
   },
   {
     "objectID": "3-regression/slides.html#from-regression-to-equation",
     "href": "3-regression/slides.html#from-regression-to-equation",
     "title": "Workshop #3",
     "section": "From Regression to Equation",
-    "text": "From Regression to Equation\n\n\nThe linear regression produces the equation for the line of best fit.\n\n\nRemember y = mx + b? We can just substitute!\n\n\nClick ▶️ Run Code to see the slope-intercept equation.\n\n\nprint(f\"y = {slope:.2f}x + {intercept:.2f}\")\n\ny = -0.29x + 53.10"
+    "text": "From Regression to Equation\n\n\nThe linear regression produces the equation for the line of best fit. \n\n\nRemember y = mx + b? We can just substitute!\n\n\nClick ▶️ Run Code to see the slope-intercept equation.\n\nprint(f\"y = {slope:.2f}x + {intercept:.2f}\")"
   },
   {
     "objectID": "3-regression/slides.html#plotting-the-regression-line",
@@ -4085,14 +4085,14 @@
     "href": "3-regression/slides.html#using-the-model-to-predict",
     "title": "Workshop #3",
     "section": "Using the Model to Predict",
-    "text": "Using the Model to Predict\n\n\nNow that we have our regression model, we can predict nitrate concentrations for new color values — even ones we didn’t measure!\n\n\nClick ▶️ Run Code, then type any color value into the box to see the predicted nitrate concentration.\n\n\nshow_prediction_plot(color_data, nitrate_ppm, slope, intercept)"
+    "text": "Using the Model to Predict\n\n\nNow that we have our regression model, we can predict nitrate concentrations for new color values — even ones we didn’t measure!\n\n\nClick ▶️ Run Code, then type any color value into the box to see the predicted nitrate concentration.\n\nshow_prediction_plot(color_data, nitrate_ppm, slope, intercept)"
   },
   {
     "objectID": "3-regression/slides.html#predict-nitrate-concentrations-for-new-test-pads",
     "href": "3-regression/slides.html#predict-nitrate-concentrations-for-new-test-pads",
     "title": "Workshop #3",
     "section": "Predict Nitrate Concentrations for New Test Pads",
-    "text": "Predict Nitrate Concentrations for New Test Pads\n\n\nMaterials Needed:\n\n💻 RGB Applet V2\nThree Additional “Nitrate Test Pad” Cards\nHandout / Pencil"
+    "text": "Predict Nitrate Concentrations for New Test Pads\n\n\n\nUse the applet to find the R, G, or B value for the new cards (per your group).\nUse the graphing tool to predict the nitrate concentration (ppm).\nRecord these predictions on your handout."
   },
   {
     "objectID": "3-regression/slides.html#predict-nitrate-concentrations-for-new-test-pads-1",
@@ -4113,7 +4113,7 @@
     "href": "3-regression/slides.html#calculate-your-r²-value",
     "title": "Workshop #3",
     "section": "Calculate Your R² Value",
-    "text": "Calculate Your R² Value\n\n\nClick ▶️ Run Code to calculate your model’s R² value.\n\n\nr_squared = calculate_rsquared(color_data, nitrate_ppm, slope, intercept)\n\nprint(f\"R² = {r_squared * 100:.1f}%\")\n\nR² = 94.8%"
+    "text": "Calculate Your R² Value\n\n\nClick ▶️ Run Code to calculate your model’s R² value.\n\nr_squared = calculate_rsquared(color_data, nitrate_ppm, slope, intercept)\n\nprint(f\"R² = {r_squared * 100:.1f}%\")"
   },
   {
     "objectID": "3-regression/slides.html#discuss-in-your-group-2",
@@ -4624,7 +4624,7 @@
     "href": "3-regression/facilitator_notes.html#scatterplots-activity-part-2-instructions",
     "title": "Workshop #3",
     "section": "Scatterplots Activity (Part 2) — Instructions",
-    "text": "Scatterplots Activity (Part 2) — Instructions\n\n\n\nUsing the round stickies and graph paper, create a scatterplot.\nPlace color values (R, G, or B — per your group) on the x-axis.\nPlace nitrate concentrations on the y-axis."
+    "text": "Scatterplots Activity (Part 2) — Instructions\n\n\nThis portion will be completed with your group. Each group is assigned either red, green, or blue."
   },
   {
     "objectID": "3-regression/facilitator_notes.html#scatterplots-activity-part-2-instructions-1",
@@ -4645,28 +4645,28 @@
     "href": "3-regression/facilitator_notes.html#storing-your-data",
     "title": "Workshop #3",
     "section": "Storing Your Data",
-    "text": "Storing Your Data\n\n\nReplace the ?? placeholders with your color values and nitrate concentrations.\nIMPORTANT: Values must be in the exact same order.\nClick ▶️ Run Code to store your data.\n\n\ncolor_data = [188, 179, 176, 176, 172, 167, 166, 162]\nnitrate_ppm = [0, 1, 2, 3, 4, 5, 6, 7]\n\nprint(color_data)\nprint(nitrate_ppm)\n\ncolor_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\ndf = process_df(color_data, nitrate_ppm)\n\n[188, 179, 176, 176, 172, 167, 166, 162]\n[0, 1, 2, 3, 4, 5, 6, 7]"
+    "text": "Storing Your Data\n\n\nReplace the ?? placeholders with your color values and nitrate concentrations.\nIMPORTANT: Values must be in the exact same order.\nClick ▶️ Run Code to store your data.\n\ncolor_data = [??, ??, ??, ??, ??, ??, ??, ??]\nnitrate_ppm = [??, ??, ??, ??, ??, ??, ??, ??]\n\nprint(color_data)\nprint(nitrate_ppm)\n\ncolor_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\ndf = process_df(color_data, nitrate_ppm)"
   },
   {
     "objectID": "3-regression/facilitator_notes.html#recreating-your-teams-scatterplot",
     "href": "3-regression/facilitator_notes.html#recreating-your-teams-scatterplot",
     "title": "Workshop #3",
     "section": "Recreating Your Team’s Scatterplot",
-    "text": "Recreating Your Team’s Scatterplot\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to create a scatterplot matching your group’s paper plot.\n\nplt.figure(figsize=(6, 5))\nplt.scatter(df[\"color_data\"], df[\"nitrate_ppm\"], s=60, color=\"black\")\nplt.title(\"Nitrate vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate (ppm)\")\nplt.tight_layout()\nplt.show()"
+    "text": "Recreating Your Team’s Scatterplot\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to create a scatterplot matching your group’s paper plot.\n\nplt.figure(figsize=(6, 5))\nplt.scatter(df[\"??\"], df[\"??\"], s=60, color=\"black\")\nplt.title(\"Nitrate vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate (ppm)\")\nplt.tight_layout()\nplt.show()"
   },
   {
     "objectID": "3-regression/facilitator_notes.html#running-the-linear-regression",
     "href": "3-regression/facilitator_notes.html#running-the-linear-regression",
     "title": "Workshop #3",
     "section": "Running the Linear Regression",
-    "text": "Running the Linear Regression\n\n\nReplace the ?? placeholders:\n\nFirst blank → color_data\nSecond blank → nitrate_ppm\n\nClick ▶️ Run Code to generate the line of best fit equation.\n\n\nslope, intercept = linear_regression(color_data, nitrate_ppm)\n\nprint(\"slope (m):\", slope)\nprint(\"intercept (b):\", intercept)\n\nslope (m): -0.28630278063851533\nintercept (b): 53.10195674562279"
+    "text": "Running the Linear Regression\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to generate the line of best fit equation.\n\nslope, intercept = linear_regression(??, ??)\n\nprint(\"slope (m):\", slope)\nprint(\"intercept (b):\", intercept)"
   },
   {
     "objectID": "3-regression/facilitator_notes.html#from-regression-to-equation",
     "href": "3-regression/facilitator_notes.html#from-regression-to-equation",
     "title": "Workshop #3",
     "section": "From Regression to Equation",
-    "text": "From Regression to Equation\n\n\nThe linear regression produces the equation for the line of best fit.\n\n\nRemember y = mx + b? We can just substitute!\n\n\nClick ▶️ Run Code to see the slope-intercept equation.\n\n\nprint(f\"y = {slope:.2f}x + {intercept:.2f}\")\n\ny = -0.29x + 53.10"
+    "text": "From Regression to Equation\n\n\nThe linear regression produces the equation for the line of best fit. \n\n\nRemember y = mx + b? We can just substitute!\n\n\nClick ▶️ Run Code to see the slope-intercept equation.\n\nprint(f\"y = {slope:.2f}x + {intercept:.2f}\")"
   },
   {
     "objectID": "3-regression/facilitator_notes.html#plotting-the-regression-line",
@@ -4701,7 +4701,7 @@
     "href": "3-regression/facilitator_notes.html#using-the-model-to-predict",
     "title": "Workshop #3",
     "section": "Using the Model to Predict",
-    "text": "Using the Model to Predict\n\n\nNow that we have our regression model, we can predict nitrate concentrations for new color values — even ones we didn’t measure!\n\n\nClick ▶️ Run Code, then type any color value into the box to see the predicted nitrate concentration.\n\n\nshow_prediction_plot(color_data, nitrate_ppm, slope, intercept)"
+    "text": "Using the Model to Predict\n\n\nNow that we have our regression model, we can predict nitrate concentrations for new color values — even ones we didn’t measure!\n\n\nClick ▶️ Run Code, then type any color value into the box to see the predicted nitrate concentration.\n\nshow_prediction_plot(color_data, nitrate_ppm, slope, intercept)"
   },
   {
     "objectID": "3-regression/facilitator_notes.html#predict-nitrate-concentrations-for-new-test-pads",
@@ -4729,7 +4729,7 @@
     "href": "3-regression/facilitator_notes.html#calculate-your-r²-value",
     "title": "Workshop #3",
     "section": "Calculate Your R² Value",
-    "text": "Calculate Your R² Value\n\n\nClick ▶️ Run Code to calculate your model’s R² value.\n\n\nr_squared = calculate_rsquared(color_data, nitrate_ppm, slope, intercept)\n\nprint(f\"R² = {r_squared * 100:.1f}%\")\n\nR² = 94.8%"
+    "text": "Calculate Your R² Value\n\n\nClick ▶️ Run Code to calculate your model’s R² value.\n\nr_squared = calculate_rsquared(color_data, nitrate_ppm, slope, intercept)\n\nprint(f\"R² = {r_squared * 100:.1f}%\")"
   },
   {
     "objectID": "3-regression/facilitator_notes.html#discuss-in-your-group-2",
@@ -4862,7 +4862,7 @@
     "href": "3-regression/facilitator_notes.html#activity-pt.-ii-instructions",
     "title": "Workshop #3",
     "section": "Activity (Pt. II) — Instructions",
-    "text": "Activity (Pt. II) — Instructions\n\n\nThis portion will be completed with your group. Each group is assigned either red, green, or blue."
+    "text": "Activity (Pt. II) — Instructions\n\n\nFor this portion, each group is assigned either red, green, or blue, based on the color of your stickers!"
   },
   {
     "objectID": "3-regression/slides.html#activity-pt.-ii-instructions-1",
@@ -4876,6 +4876,216 @@
     "href": "3-regression/facilitator_notes.html#activity-pt.-ii-instructions-1",
     "title": "Workshop #3",
     "section": "Activity (Pt. II) — Instructions",
-    "text": "Activity (Pt. II) — Instructions\n\n\n\nUsing the round stickies and graph paper, create a scatterplot.\nPlace color values (R, G, or B — per your group) on the x-axis.\nPlace nitrate concentrations on the y-axis."
+    "text": "Activity (Pt. II) — Instructions\n\n\n\nUsing the round stickies and graph paper, create a scatterplot.\nColor values (R, G, or B — per your group) go on the x-axis.\nNitrate concentrations go on the y-axis."
+  },
+  {
+    "objectID": "3-regression/slides.html#storing-your-data-1",
+    "href": "3-regression/slides.html#storing-your-data-1",
+    "title": "Workshop #3",
+    "section": "Storing Your Data",
+    "text": "Storing Your Data\n\n\nReplace the ?? placeholders with your color values and nitrate concentrations.\nIMPORTANT: Values must be in the exact same order.\nClick ▶️ Run Code to store your data.\n\n\ncolor_data = [188, 179, 176, 176, 172, 167, 166, 162]\nnitrate_ppm = [0, 1, 2, 3, 4, 5, 6, 7]\n\nprint(color_data)\nprint(nitrate_ppm)\n\ncolor_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\ndf = process_df(color_data, nitrate_ppm)\n\n[188, 179, 176, 176, 172, 167, 166, 162]\n[0, 1, 2, 3, 4, 5, 6, 7]"
+  },
+  {
+    "objectID": "3-regression/slides.html#recreating-your-teams-scatterplot-1",
+    "href": "3-regression/slides.html#recreating-your-teams-scatterplot-1",
+    "title": "Workshop #3",
+    "section": "Recreating Your Team’s Scatterplot",
+    "text": "Recreating Your Team’s Scatterplot\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to create a scatterplot matching your group’s paper plot.\n\nplt.figure(figsize=(6, 5))\nplt.scatter(df[\"color_data\"], df[\"nitrate_ppm\"], s=60, color=\"black\")\nplt.title(\"Nitrate vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate (ppm)\")\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "3-regression/slides.html#recreating-your-teams-scatterplot-2",
+    "href": "3-regression/slides.html#recreating-your-teams-scatterplot-2",
+    "title": "Workshop #3",
+    "section": "Recreating Your Team’s Scatterplot",
+    "text": "Recreating Your Team’s Scatterplot"
+  },
+  {
+    "objectID": "3-regression/slides.html#discussion-placing-the-line-of-best-fit",
+    "href": "3-regression/slides.html#discussion-placing-the-line-of-best-fit",
+    "title": "Workshop #3",
+    "section": "🗣️Discussion: Placing the Line of Best Fit",
+    "text": "🗣️Discussion: Placing the Line of Best Fit\n\n\nMaterials Needed: Complete Scatterplot, Yardstick\n\n\n🎯 Checkpoint 5. a:  With your group, discuss where your regression line will likely fall on your scatterplot. Once your group has made a decision, place your yardstick on top of your scatterplot as if it’s the line.\nNote: Lines will likely vary across groups, given that you are working with different color channels!"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#storing-your-data-1",
+    "href": "3-regression/facilitator_notes.html#storing-your-data-1",
+    "title": "Workshop #3",
+    "section": "Storing Your Data",
+    "text": "Storing Your Data\n\n\nReplace the ?? placeholders with your color values and nitrate concentrations.\nIMPORTANT: Values must be in the exact same order.\nClick ▶️ Run Code to store your data.\n\n\ncolor_data = [188, 179, 176, 176, 172, 167, 166, 162]\nnitrate_ppm = [0, 1, 2, 3, 4, 5, 6, 7]\n\nprint(color_data)\nprint(nitrate_ppm)\n\ncolor_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\ndf = process_df(color_data, nitrate_ppm)\n\n[188, 179, 176, 176, 172, 167, 166, 162]\n[0, 1, 2, 3, 4, 5, 6, 7]"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#recreating-your-teams-scatterplot-1",
+    "href": "3-regression/facilitator_notes.html#recreating-your-teams-scatterplot-1",
+    "title": "Workshop #3",
+    "section": "Recreating Your Team’s Scatterplot",
+    "text": "Recreating Your Team’s Scatterplot\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to create a scatterplot matching your group’s paper plot.\n\nplt.figure(figsize=(6, 5))\nplt.scatter(df[\"color_data\"], df[\"nitrate_ppm\"], s=60, color=\"black\")\nplt.title(\"Nitrate vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate (ppm)\")\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#recreating-your-teams-scatterplot-2",
+    "href": "3-regression/facilitator_notes.html#recreating-your-teams-scatterplot-2",
+    "title": "Workshop #3",
+    "section": "Recreating Your Team’s Scatterplot",
+    "text": "Recreating Your Team’s Scatterplot"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#discussion-placing-the-line-of-best-fit",
+    "href": "3-regression/facilitator_notes.html#discussion-placing-the-line-of-best-fit",
+    "title": "Workshop #3",
+    "section": "🗣️Discussion: Placing the Line of Best Fit",
+    "text": "🗣️Discussion: Placing the Line of Best Fit\n\n\nMaterials Needed: Complete Scatterplot, Yardstick\n\n\n🎯 Checkpoint 5. a:  With your group, discuss where your regression line will likely fall on your scatterplot. Once your group has made a decision, place your yardstick on top of your scatterplot as if it’s the line.\nNote: Lines will likely vary across groups, given that you are working with different color channels!"
+  },
+  {
+    "objectID": "3-regression/slides.html#running-the-linear-regression-1",
+    "href": "3-regression/slides.html#running-the-linear-regression-1",
+    "title": "Workshop #3",
+    "section": "Running the Linear Regression",
+    "text": "Running the Linear Regression\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to generate the line of best fit equation.\n\n\nslope, intercept = linear_regression(color_data, nitrate_ppm)\n\nprint(\"slope (m):\", slope)\nprint(\"intercept (b):\", intercept)\n\nslope (m): -0.28630278063851533\nintercept (b): 53.10195674562279"
+  },
+  {
+    "objectID": "3-regression/slides.html#from-regression-to-equation-1",
+    "href": "3-regression/slides.html#from-regression-to-equation-1",
+    "title": "Workshop #3",
+    "section": "From Regression to Equation",
+    "text": "From Regression to Equation\n\n\nThe linear regression produces the equation for the line of best fit. \n\n\nRemember y = mx + b? We can just substitute!\n\n\nClick ▶️ Run Code to see the slope-intercept equation.\n\n\nprint(f\"y = {slope:.2f}x + {intercept:.2f}\")\n\ny = -0.29x + 53.10"
+  },
+  {
+    "objectID": "3-regression/slides.html#plotting-the-regression-line-1",
+    "href": "3-regression/slides.html#plotting-the-regression-line-1",
+    "title": "Workshop #3",
+    "section": "Plotting the Regression Line",
+    "text": "Plotting the Regression Line"
+  },
+  {
+    "objectID": "3-regression/slides.html#activity-pt.-iv-draw-line-of-best-fit",
+    "href": "3-regression/slides.html#activity-pt.-iv-draw-line-of-best-fit",
+    "title": "Workshop #3",
+    "section": "Activity Pt. IV — Draw Line of Best Fit",
+    "text": "Activity Pt. IV — Draw Line of Best Fit\n\n\nMaterials Needed:\n\nPoster Markers\nCompleted Scatterplot\nYardstick"
+  },
+  {
+    "objectID": "3-regression/slides.html#activity-pt.-iv-draw-line-of-best-fit-1",
+    "href": "3-regression/slides.html#activity-pt.-iv-draw-line-of-best-fit-1",
+    "title": "Workshop #3",
+    "section": "Activity Pt. IV — Draw Line of Best Fit",
+    "text": "Activity Pt. IV — Draw Line of Best Fit\n\n\nUsing the exact positioning Python generated, copy the regression line onto your group’s scatterplot. When finished, bring your group’s plot to the front of the class."
+  },
+  {
+    "objectID": "3-regression/slides.html#using-the-model-to-predict-1",
+    "href": "3-regression/slides.html#using-the-model-to-predict-1",
+    "title": "Workshop #3",
+    "section": "Using the Model to Predict",
+    "text": "Using the Model to Predict"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#meaning-rgb",
+    "href": "3-regression/facilitator_notes.html#meaning-rgb",
+    "title": "Workshop #3",
+    "section": "Meaning RGB",
+    "text": "Meaning RGB\n\n\nIn Workshop #2, we learned how computers “see” color through RGB values. The buoy takes all the pixels for each test pad and finds their mean."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#running-the-linear-regression-1",
+    "href": "3-regression/facilitator_notes.html#running-the-linear-regression-1",
+    "title": "Workshop #3",
+    "section": "Running the Linear Regression",
+    "text": "Running the Linear Regression\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to generate the line of best fit equation.\n\n\nslope, intercept = linear_regression(color_data, nitrate_ppm)\n\nprint(\"slope (m):\", slope)\nprint(\"intercept (b):\", intercept)\n\nslope (m): -0.28630278063851533\nintercept (b): 53.10195674562279"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#from-regression-to-equation-1",
+    "href": "3-regression/facilitator_notes.html#from-regression-to-equation-1",
+    "title": "Workshop #3",
+    "section": "From Regression to Equation",
+    "text": "From Regression to Equation\n\n\nThe linear regression produces the equation for the line of best fit. \n\n\nRemember y = mx + b? We can just substitute!\n\n\nClick ▶️ Run Code to see the slope-intercept equation.\n\n\nprint(f\"y = {slope:.2f}x + {intercept:.2f}\")\n\ny = -0.29x + 53.10"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#plotting-the-regression-line-1",
+    "href": "3-regression/facilitator_notes.html#plotting-the-regression-line-1",
+    "title": "Workshop #3",
+    "section": "Plotting the Regression Line",
+    "text": "Plotting the Regression Line"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#activity-pt.-iv-draw-line-of-best-fit",
+    "href": "3-regression/facilitator_notes.html#activity-pt.-iv-draw-line-of-best-fit",
+    "title": "Workshop #3",
+    "section": "Activity Pt. IV — Draw Line of Best Fit",
+    "text": "Activity Pt. IV — Draw Line of Best Fit\n\n\nMaterials Needed:\n\nPoster Markers\nCompleted Scatterplot\nYardstick"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#activity-pt.-iv-draw-line-of-best-fit-1",
+    "href": "3-regression/facilitator_notes.html#activity-pt.-iv-draw-line-of-best-fit-1",
+    "title": "Workshop #3",
+    "section": "Activity Pt. IV — Draw Line of Best Fit",
+    "text": "Activity Pt. IV — Draw Line of Best Fit\n\n\nUsing the exact positioning Python generated, copy the regression line onto your group’s scatterplot. When finished, bring your group’s plot to the front of the class."
+  },
+  {
+    "objectID": "3-regression/slides.html#activity-pt.-v-predict-concentrations-for-new-test-pads",
+    "href": "3-regression/slides.html#activity-pt.-v-predict-concentrations-for-new-test-pads",
+    "title": "Workshop #3",
+    "section": "Activity Pt. V: Predict Concentrations for New Test Pads",
+    "text": "Activity Pt. V: Predict Concentrations for New Test Pads\n\n\nMaterials Needed:\n\n💻 RGB Applet V2\nThree Additional “Nitrate Test Pad” Cards\nHandout / Pencil"
+  },
+  {
+    "objectID": "3-regression/slides.html#activity-pt.-v-predict-new-concentrations",
+    "href": "3-regression/slides.html#activity-pt.-v-predict-new-concentrations",
+    "title": "Workshop #3",
+    "section": "Activity Pt. V: Predict New Concentrations",
+    "text": "Activity Pt. V: Predict New Concentrations\n\n\nMaterials Needed:\n\n💻 RGB Applet V2\nThree Additional “Nitrate Test Pad” Cards\nHandout / Pencil"
+  },
+  {
+    "objectID": "3-regression/slides.html#activity-pt.-v-predict-new-concentrations-1",
+    "href": "3-regression/slides.html#activity-pt.-v-predict-new-concentrations-1",
+    "title": "Workshop #3",
+    "section": "Activity Pt. V: Predict New Concentrations",
+    "text": "Activity Pt. V: Predict New Concentrations\n\n\n\nUse the applet to find the R, G, or B value for the new cards (per your group).\nUse the graphing tool to predict the nitrate concentration (ppm).\nRecord these predictions on your handout."
+  },
+  {
+    "objectID": "3-regression/slides.html#calculate-your-r²-value-1",
+    "href": "3-regression/slides.html#calculate-your-r²-value-1",
+    "title": "Workshop #3",
+    "section": "Calculate Your R² Value",
+    "text": "Calculate Your R² Value\n\n\nClick ▶️ Run Code to calculate your model’s R² value.\n\n\nr_squared = calculate_rsquared(color_data, nitrate_ppm, slope, intercept)\n\nprint(f\"R² = {r_squared * 100:.1f}%\")\n\nR² = 94.8%"
+  },
+  {
+    "objectID": "3-regression/slides.html#discuss-in-your-group-3",
+    "href": "3-regression/slides.html#discuss-in-your-group-3",
+    "title": "Workshop #3",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\nMaterials Needed: Handout, Pencil\n\n\n🎯 Checkpoint 6. b: Stop and Jot  Scenario: A local strawberry farm sells its berries in small stands throughout the area. They want to sell out every day rather than take berries out to the farm. Some days are slower than others, and they are considering offering discounts on the slow days. What different things might make a day slow? That is, when should they consider offering a discount in order to sell more berries?"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#using-the-model-to-predict-1",
+    "href": "3-regression/facilitator_notes.html#using-the-model-to-predict-1",
+    "title": "Workshop #3",
+    "section": "Using the Model to Predict",
+    "text": "Using the Model to Predict"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#activity-pt.-v-predict-new-concentrations",
+    "href": "3-regression/facilitator_notes.html#activity-pt.-v-predict-new-concentrations",
+    "title": "Workshop #3",
+    "section": "Activity Pt. V: Predict New Concentrations",
+    "text": "Activity Pt. V: Predict New Concentrations\n\n\nMaterials Needed:\n\n💻 RGB Applet V2\nThree Additional “Nitrate Test Pad” Cards\nHandout / Pencil"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#activity-pt.-v-predict-new-concentrations-1",
+    "href": "3-regression/facilitator_notes.html#activity-pt.-v-predict-new-concentrations-1",
+    "title": "Workshop #3",
+    "section": "Activity Pt. V: Predict New Concentrations",
+    "text": "Activity Pt. V: Predict New Concentrations\n\n\n\nUse the applet to find the R, G, or B value for the new cards (per your group).\nUse the graphing tool to predict the nitrate concentration (ppm).\nRecord these predictions on your handout."
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#calculate-your-r²-value-1",
+    "href": "3-regression/facilitator_notes.html#calculate-your-r²-value-1",
+    "title": "Workshop #3",
+    "section": "Calculate Your R² Value",
+    "text": "Calculate Your R² Value\n\n\nClick ▶️ Run Code to calculate your model’s R² value.\n\n\nr_squared = calculate_rsquared(color_data, nitrate_ppm, slope, intercept)\n\nprint(f\"R² = {r_squared * 100:.1f}%\")\n\nR² = 94.8%"
+  },
+  {
+    "objectID": "3-regression/facilitator_notes.html#discuss-in-your-group-3",
+    "href": "3-regression/facilitator_notes.html#discuss-in-your-group-3",
+    "title": "Workshop #3",
+    "section": "🗣️ Discuss: In Your Group",
+    "text": "🗣️ Discuss: In Your Group\n\n\nMaterials Needed: Handout, Pencil\n\n\n🎯 Checkpoint 6. b: Stop and Jot  Scenario: A local strawberry farm sells its berries in small stands throughout the area. They want to sell out every day rather than take berries out to the farm. Some days are slower than others, and they are considering offering discounts on the slow days. What different things might make a day slow? That is, when should they consider offering a discount in order to sell more berries?"
   }
 ]

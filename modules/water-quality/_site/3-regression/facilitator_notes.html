@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -185,6 +185,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+  
+  <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -1107,7 +1110,7 @@ Appalachian A. I. Corps @ UTK
 <h2>Activity (Pt. II) — Instructions</h2>
 <hr>
 <div class="ltorange-container fourtyeightpt-font">
-<p>This portion will be completed with your group. Each group is assigned either <strong>red</strong>, <strong>green</strong>, or <strong>blue</strong>.</p>
+<p>For this portion, each group is assigned either <strong>red</strong>, <strong>green</strong>, or <strong>blue</strong>, based on the color of your stickers!</p>
 </div>
 <p><br></p>
 </section>
@@ -1117,14 +1120,14 @@ Appalachian A. I. Corps @ UTK
 <div class="fourtyeightpt-font">
 <ol type="1">
 <li>Using the round stickies and graph paper, create a scatterplot.</li>
-<li>Place color values (R, G, or B — per your group) on the <strong>x-axis</strong>.</li>
-<li>Place nitrate concentrations on the <strong>y-axis</strong>.</li>
+<li>Color values (R, G, or B — per your group) go on the <strong>x-axis</strong>.</li>
+<li>Nitrate concentrations go on the <strong>y-axis</strong>.</li>
 </ol>
 </div>
 </section></section>
 <section>
-<section id="regression-activity-pt.-2-regression-modeling" class="title-slide slide level1 center">
-<h1>💻 Regression Activity — Pt. 2:<br>Regression Modeling</h1>
+<section id="activity-pt.-iii-regression-modeling" class="title-slide slide level1 center">
+<h1>💻 Activity — Pt. III:<br>Regression Modeling</h1>
 
 </section>
 <section id="regression-modeling" class="slide level2">
@@ -1145,15 +1148,32 @@ Appalachian A. I. Corps @ UTK
 <p><strong>IMPORTANT:</strong> Values must be in the <strong>exact same order</strong>.</p>
 <p>Click ▶️ <strong>Run Code</strong> to store your data.</p>
 </div>
-<div id="be5c60cf" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>color_data <span class="op">=</span> [<span class="dv">188</span>, <span class="dv">179</span>, <span class="dv">176</span>, <span class="dv">176</span>, <span class="dv">172</span>, <span class="dv">167</span>, <span class="dv">166</span>, <span class="dv">162</span>]</span>
-<span id="cb1-2"><a></a>nitrate_ppm <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>]</span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>color_data <span class="op">=</span> [??, ??, ??, ??, ??, ??, ??, ??]</span>
+<span id="cb1-2"><a></a>nitrate_ppm <span class="op">=</span> [??, ??, ??, ??, ??, ??, ??, ??]</span>
 <span id="cb1-3"><a></a></span>
 <span id="cb1-4"><a></a><span class="bu">print</span>(color_data)</span>
 <span id="cb1-5"><a></a><span class="bu">print</span>(nitrate_ppm)</span>
 <span id="cb1-6"><a></a></span>
 <span id="cb1-7"><a></a>color_data, nitrate_ppm <span class="op">=</span> process_data(color_data, nitrate_ppm)</span>
 <span id="cb1-8"><a></a>df <span class="op">=</span> process_df(color_data, nitrate_ppm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="storing-your-data-1" class="slide level2">
+<h2>Storing Your Data</h2>
+<hr>
+<div class="dkorange-container twentyeightpt-font">
+<p>Replace the <code>??</code> placeholders with your color values and nitrate concentrations.</p>
+<p><strong>IMPORTANT:</strong> Values must be in the <strong>exact same order</strong>.</p>
+<p>Click ▶️ <strong>Run Code</strong> to store your data.</p>
+</div>
+<div id="3a8151c0" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a>color_data <span class="op">=</span> [<span class="dv">188</span>, <span class="dv">179</span>, <span class="dv">176</span>, <span class="dv">176</span>, <span class="dv">172</span>, <span class="dv">167</span>, <span class="dv">166</span>, <span class="dv">162</span>]</span>
+<span id="cb2-2"><a></a>nitrate_ppm <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>]</span>
+<span id="cb2-3"><a></a></span>
+<span id="cb2-4"><a></a><span class="bu">print</span>(color_data)</span>
+<span id="cb2-5"><a></a><span class="bu">print</span>(nitrate_ppm)</span>
+<span id="cb2-6"><a></a></span>
+<span id="cb2-7"><a></a>color_data, nitrate_ppm <span class="op">=</span> process_data(color_data, nitrate_ppm)</span>
+<span id="cb2-8"><a></a>df <span class="op">=</span> process_df(color_data, nitrate_ppm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[188, 179, 176, 176, 172, 167, 166, 162]
 [0, 1, 2, 3, 4, 5, 6, 7]</code></pre>
@@ -1171,13 +1191,48 @@ Appalachian A. I. Corps @ UTK
 </ul>
 <p>Click ▶️ <strong>Run Code</strong> to create a scatterplot matching your group’s paper plot.</p>
 </div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">5</span>))</span>
-<span id="cb3-2"><a></a>plt.scatter(df[<span class="st">"color_data"</span>], df[<span class="st">"nitrate_ppm"</span>], s<span class="op">=</span><span class="dv">60</span>, color<span class="op">=</span><span class="st">"black"</span>)</span>
-<span id="cb3-3"><a></a>plt.title(<span class="st">"Nitrate vs. Color"</span>)</span>
-<span id="cb3-4"><a></a>plt.xlabel(<span class="st">"Color"</span>)</span>
-<span id="cb3-5"><a></a>plt.ylabel(<span class="st">"Nitrate (ppm)"</span>)</span>
-<span id="cb3-6"><a></a>plt.tight_layout()</span>
-<span id="cb3-7"><a></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">5</span>))</span>
+<span id="cb4-2"><a></a>plt.scatter(df[<span class="st">"??"</span>], df[<span class="st">"??"</span>], s<span class="op">=</span><span class="dv">60</span>, color<span class="op">=</span><span class="st">"black"</span>)</span>
+<span id="cb4-3"><a></a>plt.title(<span class="st">"Nitrate vs. Color"</span>)</span>
+<span id="cb4-4"><a></a>plt.xlabel(<span class="st">"Color"</span>)</span>
+<span id="cb4-5"><a></a>plt.ylabel(<span class="st">"Nitrate (ppm)"</span>)</span>
+<span id="cb4-6"><a></a>plt.tight_layout()</span>
+<span id="cb4-7"><a></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="recreating-your-teams-scatterplot-1" class="slide level2">
+<h2>Recreating Your Team’s Scatterplot</h2>
+<hr>
+<div class="dkorange-container thirtyfourpt-font">
+<p>Replace the <code>??</code> placeholders:</p>
+<ul>
+<li>First blank → x variable: <code>color_data</code></li>
+<li>Second blank → y variable: <code>nitrate_ppm</code></li>
+</ul>
+<p>Click ▶️ <strong>Run Code</strong> to create a scatterplot matching your group’s paper plot.</p>
+</div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">5</span>))</span>
+<span id="cb5-2"><a></a>plt.scatter(df[<span class="st">"color_data"</span>], df[<span class="st">"nitrate_ppm"</span>], s<span class="op">=</span><span class="dv">60</span>, color<span class="op">=</span><span class="st">"black"</span>)</span>
+<span id="cb5-3"><a></a>plt.title(<span class="st">"Nitrate vs. Color"</span>)</span>
+<span id="cb5-4"><a></a>plt.xlabel(<span class="st">"Color"</span>)</span>
+<span id="cb5-5"><a></a>plt.ylabel(<span class="st">"Nitrate (ppm)"</span>)</span>
+<span id="cb5-6"><a></a>plt.tight_layout()</span>
+<span id="cb5-7"><a></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="recreating-your-teams-scatterplot-2" class="slide level2">
+<h2>Recreating Your Team’s Scatterplot</h2>
+<hr>
+
+<img data-src="slides_files/figure-revealjs/cell-4-output-1.png" class="r-stretch"></section>
+<section id="discussion-placing-the-line-of-best-fit" class="slide level2">
+<h2>🗣️Discussion: Placing the Line of Best Fit</h2>
+<hr>
+<div class="gray-container twentyeightpt-font">
+<p><strong>Materials Needed:</strong> Complete Scatterplot, Yardstick</p>
+</div>
+<div class="ltblue-container thirtyfourpt-font">
+<p>🎯 <strong>Checkpoint 5. a:</strong> <br><br> With your group, discuss where your regression line will likely fall on your scatterplot. Once your group has made a decision, place your yardstick on top of your scatterplot as if it’s the line.</p>
+<p><strong>Note:</strong> Lines will likely vary across groups, given that you are working with different color channels!</p>
+</div>
 </section>
 <section id="running-the-linear-regression" class="slide level2">
 <h2>Running the Linear Regression</h2>
@@ -1185,16 +1240,32 @@ Appalachian A. I. Corps @ UTK
 <div class="dkorange-container thirtyfourpt-font">
 <p>Replace the <code>??</code> placeholders:</p>
 <ul>
-<li>First blank → <code>color_data</code></li>
-<li>Second blank → <code>nitrate_ppm</code></li>
+<li>First blank → x variable: <code>color_data</code></li>
+<li>Second blank → y variable: <code>nitrate_ppm</code></li>
 </ul>
 <p>Click ▶️ <strong>Run Code</strong> to generate the line of best fit equation.</p>
 </div>
-<div id="e9f23bf6" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a>slope, intercept <span class="op">=</span> linear_regression(color_data, nitrate_ppm)</span>
-<span id="cb4-2"><a></a></span>
-<span id="cb4-3"><a></a><span class="bu">print</span>(<span class="st">"slope (m):"</span>, slope)</span>
-<span id="cb4-4"><a></a><span class="bu">print</span>(<span class="st">"intercept (b):"</span>, intercept)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a>slope, intercept <span class="op">=</span> linear_regression(??, ??)</span>
+<span id="cb6-2"><a></a></span>
+<span id="cb6-3"><a></a><span class="bu">print</span>(<span class="st">"slope (m):"</span>, slope)</span>
+<span id="cb6-4"><a></a><span class="bu">print</span>(<span class="st">"intercept (b):"</span>, intercept)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="running-the-linear-regression-1" class="slide level2">
+<h2>Running the Linear Regression</h2>
+<hr>
+<div class="dkorange-container thirtyfourpt-font">
+<p>Replace the <code>??</code> placeholders:</p>
+<ul>
+<li>First blank → x variable: <code>color_data</code></li>
+<li>Second blank → y variable: <code>nitrate_ppm</code></li>
+</ul>
+<p>Click ▶️ <strong>Run Code</strong> to generate the line of best fit equation.</p>
+</div>
+<div id="47c624fc" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a>slope, intercept <span class="op">=</span> linear_regression(color_data, nitrate_ppm)</span>
+<span id="cb7-2"><a></a></span>
+<span id="cb7-3"><a></a><span class="bu">print</span>(<span class="st">"slope (m):"</span>, slope)</span>
+<span id="cb7-4"><a></a><span class="bu">print</span>(<span class="st">"intercept (b):"</span>, intercept)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>slope (m): -0.28630278063851533
 intercept (b): 53.10195674562279</code></pre>
@@ -1205,7 +1276,7 @@ intercept (b): 53.10195674562279</code></pre>
 <h2>From Regression to Equation</h2>
 <hr>
 <div class="activity-text">
-<p>The linear regression produces the equation for the <strong>line of best fit</strong>.</p>
+<p>The linear regression produces the equation for the <strong>line of best fit</strong>. <br></p>
 </div>
 <div class="fourtyeightpt-font">
 <p>Remember <strong><em>y = mx + b</em></strong>? We can just substitute!</p>
@@ -1213,8 +1284,22 @@ intercept (b): 53.10195674562279</code></pre>
 <div class="dkorange-container thirtyfourpt-font">
 <p>Click ▶️ <strong>Run Code</strong> to see the slope-intercept equation.</p>
 </div>
-<div id="f93d992a" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="bu">print</span>(<span class="ss">f"y = </span><span class="sc">{</span>slope<span class="sc">:.2f}</span><span class="ss">x + </span><span class="sc">{</span>intercept<span class="sc">:.2f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="bu">print</span>(<span class="ss">f"y = </span><span class="sc">{</span>slope<span class="sc">:.2f}</span><span class="ss">x + </span><span class="sc">{</span>intercept<span class="sc">:.2f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="from-regression-to-equation-1" class="slide level2">
+<h2>From Regression to Equation</h2>
+<hr>
+<div class="activity-text">
+<p>The linear regression produces the equation for the <strong>line of best fit</strong>. <br></p>
+</div>
+<div class="fourtyeightpt-font">
+<p>Remember <strong><em>y = mx + b</em></strong>? We can just substitute!</p>
+</div>
+<div class="dkorange-container thirtyfourpt-font">
+<p>Click ▶️ <strong>Run Code</strong> to see the slope-intercept equation.</p>
+</div>
+<div id="b96931c3" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="bu">print</span>(<span class="ss">f"y = </span><span class="sc">{</span>slope<span class="sc">:.2f}</span><span class="ss">x + </span><span class="sc">{</span>intercept<span class="sc">:.2f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>y = -0.29x + 53.10</code></pre>
 </div>
@@ -1226,36 +1311,41 @@ intercept (b): 53.10195674562279</code></pre>
 <div class="dkorange-container twentyeightpt-font">
 <p>Click ▶️ <strong>Run Code</strong> to plot the scatterplot with the regression line.</p>
 </div>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a>nitrate_pred <span class="op">=</span> slope <span class="op">*</span> color_data <span class="op">+</span> intercept</span>
-<span id="cb8-2"><a></a></span>
-<span id="cb8-3"><a></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">5</span>))</span>
-<span id="cb8-4"><a></a>plt.scatter(color_data, nitrate_ppm, s<span class="op">=</span><span class="dv">60</span>, color<span class="op">=</span><span class="st">"black"</span>)</span>
-<span id="cb8-5"><a></a>plt.plot(color_data, nitrate_pred, color<span class="op">=</span><span class="st">"black"</span>, linewidth<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb8-6"><a></a>plt.title(<span class="st">"Nitrate Concentration vs. Color"</span>)</span>
-<span id="cb8-7"><a></a>plt.xlabel(<span class="st">"Color"</span>)</span>
-<span id="cb8-8"><a></a>plt.ylabel(<span class="st">"Nitrate Concentration (ppm)"</span>)</span>
-<span id="cb8-9"><a></a>plt.text(</span>
-<span id="cb8-10"><a></a>    <span class="bu">min</span>(color_data), <span class="bu">max</span>(nitrate_ppm),</span>
-<span id="cb8-11"><a></a>    <span class="ss">f"y = </span><span class="sc">{</span>slope<span class="sc">:.2f}</span><span class="ss">x + </span><span class="sc">{</span>intercept<span class="sc">:.2f}</span><span class="ch">\n</span><span class="ss">"</span>,</span>
-<span id="cb8-12"><a></a>    ha<span class="op">=</span><span class="st">"left"</span>, fontsize<span class="op">=</span><span class="dv">10</span>, color<span class="op">=</span><span class="st">"gray"</span></span>
-<span id="cb8-13"><a></a>)</span>
-<span id="cb8-14"><a></a>plt.tight_layout()</span>
-<span id="cb8-15"><a></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a>nitrate_pred <span class="op">=</span> slope <span class="op">*</span> color_data <span class="op">+</span> intercept</span>
+<span id="cb12-2"><a></a></span>
+<span id="cb12-3"><a></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">5</span>))</span>
+<span id="cb12-4"><a></a>plt.scatter(color_data, nitrate_ppm, s<span class="op">=</span><span class="dv">60</span>, color<span class="op">=</span><span class="st">"black"</span>)</span>
+<span id="cb12-5"><a></a>plt.plot(color_data, nitrate_pred, color<span class="op">=</span><span class="st">"black"</span>, linewidth<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb12-6"><a></a>plt.title(<span class="st">"Nitrate Concentration vs. Color"</span>)</span>
+<span id="cb12-7"><a></a>plt.xlabel(<span class="st">"Color"</span>)</span>
+<span id="cb12-8"><a></a>plt.ylabel(<span class="st">"Nitrate Concentration (ppm)"</span>)</span>
+<span id="cb12-9"><a></a>plt.text(</span>
+<span id="cb12-10"><a></a>    <span class="bu">min</span>(color_data), <span class="bu">max</span>(nitrate_ppm),</span>
+<span id="cb12-11"><a></a>    <span class="ss">f"y = </span><span class="sc">{</span>slope<span class="sc">:.2f}</span><span class="ss">x + </span><span class="sc">{</span>intercept<span class="sc">:.2f}</span><span class="ch">\n</span><span class="ss">"</span>,</span>
+<span id="cb12-12"><a></a>    ha<span class="op">=</span><span class="st">"left"</span>, fontsize<span class="op">=</span><span class="dv">10</span>, color<span class="op">=</span><span class="st">"gray"</span></span>
+<span id="cb12-13"><a></a>)</span>
+<span id="cb12-14"><a></a>plt.tight_layout()</span>
+<span id="cb12-15"><a></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="activity-draw-your-line-of-best-fit" class="slide level2">
-<h2>Activity — Draw Your Line of Best Fit</h2>
+<section id="plotting-the-regression-line-1" class="slide level2">
+<h2>Plotting the Regression Line</h2>
+<hr>
+
+<img data-src="slides_files/figure-revealjs/cell-7-output-1.png" class="r-stretch"></section>
+<section id="activity-pt.-iv-draw-line-of-best-fit" class="slide level2">
+<h2>Activity Pt. IV — Draw Line of Best Fit</h2>
 <hr>
 <div class="gray-container fourtyeightpt-font">
 <p><strong>Materials Needed:</strong></p>
 <ul>
 <li>Poster Markers</li>
-<li>Scatterplot</li>
+<li>Completed Scatterplot</li>
 <li>Yardstick</li>
 </ul>
 </div>
 </section>
-<section id="activity-draw-your-line-of-best-fit-1" class="slide level2">
-<h2>Activity — Draw Your Line of Best Fit</h2>
+<section id="activity-pt.-iv-draw-line-of-best-fit-1" class="slide level2">
+<h2>Activity Pt. IV — Draw Line of Best Fit</h2>
 <hr>
 <div class="activity-text">
 <p>Using the exact positioning Python generated, <strong>copy the regression line onto your group’s scatterplot</strong>. When finished, bring your group’s plot to the front of the class.</p>
@@ -1274,14 +1364,14 @@ intercept (b): 53.10195674562279</code></pre>
 <p><strong>NOTE:</strong> You can copy/paste the two lists from the previous activity.</p>
 <p>Click ▶️ <strong>Run Code</strong> to re-load your data.</p>
 </div>
-<div id="ca72e343" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a>color_data <span class="op">=</span> [<span class="dv">188</span>, <span class="dv">179</span>, <span class="dv">176</span>, <span class="dv">176</span>, <span class="dv">172</span>, <span class="dv">167</span>, <span class="dv">166</span>, <span class="dv">162</span>]</span>
-<span id="cb9-2"><a></a>nitrate_ppm <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>]</span>
-<span id="cb9-3"><a></a></span>
-<span id="cb9-4"><a></a><span class="co"># Do not change the code below ------------------------------------</span></span>
-<span id="cb9-5"><a></a>color_data, nitrate_ppm <span class="op">=</span> process_data(color_data, nitrate_ppm)</span>
-<span id="cb9-6"><a></a>slope, intercept <span class="op">=</span> linear_regression(color_data, nitrate_ppm)</span>
-<span id="cb9-7"><a></a><span class="bu">print</span>(<span class="ss">f"Slope: </span><span class="sc">{</span>slope<span class="sc">:.2f}</span><span class="ss">, Intercept: </span><span class="sc">{</span>intercept<span class="sc">:.2f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="1659a605" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a></a>color_data <span class="op">=</span> [<span class="dv">188</span>, <span class="dv">179</span>, <span class="dv">176</span>, <span class="dv">176</span>, <span class="dv">172</span>, <span class="dv">167</span>, <span class="dv">166</span>, <span class="dv">162</span>]</span>
+<span id="cb13-2"><a></a>nitrate_ppm <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>]</span>
+<span id="cb13-3"><a></a></span>
+<span id="cb13-4"><a></a><span class="co"># Do not change the code below ------------------------------------</span></span>
+<span id="cb13-5"><a></a>color_data, nitrate_ppm <span class="op">=</span> process_data(color_data, nitrate_ppm)</span>
+<span id="cb13-6"><a></a>slope, intercept <span class="op">=</span> linear_regression(color_data, nitrate_ppm)</span>
+<span id="cb13-7"><a></a><span class="bu">print</span>(<span class="ss">f"Slope: </span><span class="sc">{</span>slope<span class="sc">:.2f}</span><span class="ss">, Intercept: </span><span class="sc">{</span>intercept<span class="sc">:.2f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Slope: -0.29, Intercept: 53.10</code></pre>
 </div>
@@ -1296,12 +1386,54 @@ intercept (b): 53.10195674562279</code></pre>
 <div class="dkorange-container thirtyfourpt-font">
 <p>Click ▶️ <strong>Run Code</strong>, then type any color value into the box to see the predicted nitrate concentration.</p>
 </div>
-<div id="c79f59fc" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a>show_prediction_plot(color_data, nitrate_ppm, slope, intercept)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a></a>show_prediction_plot(color_data, nitrate_ppm, slope, intercept)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="using-the-model-to-predict-1" class="slide level2">
+<h2>Using the Model to Predict</h2>
+<hr>
+<div id="a5997ab1" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<iframe srcdoc="<!DOCTYPE html>
+<html>
+<head>
+<script src=&quot;https://cdn.plot.ly/plotly-latest.min.js&quot;></script>
+<style>
+body { font-family: sans-serif; margin: 10px; }
+.row { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+#lbl { font-size: 15px; color: navy; font-weight: bold; }
+</style>
+</head>
+<body>
+<div class=&quot;row&quot;>
+  <b>Color value:</b>
+  <input type=&quot;number&quot; id=&quot;inp&quot; value=&quot;162&quot; step=&quot;1&quot;
+         style=&quot;font-size:15px;width:90px;padding:5px 8px;border:2px solid #ccc;border-radius:4px;&quot;
+         oninput=&quot;upd()&quot;>
+  <span id=&quot;lbl&quot;></span>
+</div>
+<div id=&quot;plt&quot;></div>
+<script>
+var m=-0.28630278063851533, b=53.10195674562279;
+var t1={x:[188, 179, 176, 176, 172, 167, 166, 162],y:[0, 1, 2, 3, 4, 5, 6, 7],mode:&quot;markers&quot;,name:&quot;Your Data&quot;,marker:{color:&quot;black&quot;,size:9}};
+var t2={x:[162.0, 162.13065326633165, 162.26130653266333, 162.39195979899498, 162.52261306532662, 162.6532663316583, 162.78391959798995, 162.9145728643216, 163.04522613065328, 163.17587939698493, 163.30653266331657, 163.43718592964825, 163.5678391959799, 163.69849246231155, 163.82914572864323, 163.95979899497488, 164.09045226130652, 164.2211055276382, 164.35175879396985, 164.4824120603015, 164.61306532663318, 164.74371859296483, 164.87437185929647, 165.00502512562815, 165.1356783919598, 165.26633165829145, 165.39698492462313, 165.52763819095478, 165.65829145728642, 165.7889447236181, 165.91959798994975, 166.0502512562814, 166.18090452261308, 166.31155778894473, 166.44221105527637, 166.57286432160805, 166.7035175879397, 166.83417085427135, 166.96482412060303, 167.09547738693468, 167.22613065326632, 167.356783919598, 167.48743718592965, 167.6180904522613, 167.74874371859298, 167.87939698492463, 168.01005025125627, 168.14070351758795, 168.2713567839196, 168.40201005025125, 168.53266331658293, 168.66331658291458, 168.79396984924622, 168.9246231155779, 169.05527638190955, 169.1859296482412, 169.31658291457288, 169.44723618090453, 169.57788944723617, 169.70854271356785, 169.8391959798995, 169.96984924623115, 170.10050251256283, 170.23115577889448, 170.36180904522612, 170.4924623115578, 170.62311557788945, 170.7537688442211, 170.88442211055278, 171.01507537688443, 171.14572864321607, 171.27638190954775, 171.4070351758794, 171.53768844221105, 171.66834170854273, 171.79899497487438, 171.92964824120602, 172.0603015075377, 172.19095477386935, 172.321608040201, 172.45226130653268, 172.58291457286433, 172.71356783919597, 172.84422110552765, 172.9748743718593, 173.10552763819095, 173.23618090452263, 173.36683417085428, 173.49748743718592, 173.6281407035176, 173.75879396984925, 173.8894472361809, 174.02010050251258, 174.15075376884423, 174.28140703517587, 174.41206030150755, 174.5427135678392, 174.67336683417085, 174.80402010050253, 174.93467336683418, 175.06532663316582, 175.1959798994975, 175.32663316582915, 175.4572864321608, 175.58793969849245, 175.71859296482413, 175.84924623115577, 175.97989949748745, 176.1105527638191, 176.24120603015075, 176.3718592964824, 176.50251256281408, 176.63316582914572, 176.7638190954774, 176.89447236180905, 177.0251256281407, 177.15577889447235, 177.28643216080403, 177.41708542713567, 177.54773869346735, 177.678391959799, 177.80904522613065, 177.9396984924623, 178.07035175879398, 178.20100502512562, 178.3316582914573, 178.46231155778895, 178.5929648241206, 178.72361809045225, 178.85427135678393, 178.98492462311557, 179.11557788944725, 179.2462311557789, 179.37688442211055, 179.5075376884422, 179.63819095477388, 179.76884422110552, 179.8994974874372, 180.03015075376885, 180.1608040201005, 180.29145728643215, 180.42211055276383, 180.55276381909547, 180.68341708542715, 180.8140703517588, 180.94472361809045, 181.0753768844221, 181.20603015075378, 181.33668341708542, 181.4673366834171, 181.59798994974875, 181.7286432160804, 181.85929648241205, 181.98994974874373, 182.12060301507537, 182.25125628140705, 182.3819095477387, 182.51256281407035, 182.643216080402, 182.77386934673368, 182.90452261306532, 183.035175879397, 183.16582914572865, 183.2964824120603, 183.42713567839195, 183.55778894472363, 183.68844221105527, 183.81909547738695, 183.9497487437186, 184.08040201005025, 184.2110552763819, 184.34170854271358, 184.47236180904522, 184.6030150753769, 184.73366834170855, 184.8643216080402, 184.99497487437185, 185.12562814070353, 185.25628140703517, 185.38693467336682, 185.5175879396985, 185.64824120603015, 185.7788944723618, 185.90954773869348, 186.04020100502512, 186.17085427135677, 186.30150753768845, 186.4321608040201, 186.56281407035175, 186.69346733668343, 186.82412060301507, 186.95477386934672, 187.0854271356784, 187.21608040201005, 187.3467336683417, 187.47738693467338, 187.60804020100502, 187.73869346733667, 187.86934673366835, 188.0],y:[6.720906282183307, 6.683499888733053, 6.646093495282791, 6.608687101832537, 6.571280708382282, 6.533874314932014, 6.496467921481759, 6.459061528031505, 6.421655134581243, 6.384248741130982, 6.346842347680727, 6.309435954230466, 6.2720295607802115, 6.234623167329957, 6.197216773879688, 6.159810380429434, 6.1224039869791795, 6.084997593528918, 6.047591200078664, 6.010184806628402, 5.9727784131781405, 5.935372019727886, 5.897965626277632, 5.860559232827363, 5.823152839377109, 5.785746445926854, 5.748340052476593, 5.710933659026338, 5.673527265576077, 5.636120872125815, 5.598714478675561, 5.561308085225306, 5.523901691775045, 5.486495298324783, 5.449088904874529, 5.411682511424267, 5.374276117974013, 5.336869724523758, 5.29946333107349, 5.262056937623235, 5.224650544172981, 5.187244150722719, 5.149837757272458, 5.112431363822203, 5.075024970371942, 5.0376185769216875, 5.000212183471433, 4.962805790021164, 4.92539939657091, 4.8879930031206555, 4.850586609670394, 4.81318021622014, 4.775773822769878, 4.7383674293196165, 4.700961035869362, 4.663554642419108, 4.626148248968839, 4.588741855518585, 4.55133546206833, 4.513929068618069, 4.476522675167814, 4.439116281717553, 4.401709888267291, 4.364303494817037, 4.326897101366782, 4.289490707916521, 4.252084314466259, 4.214677921016005, 4.177271527565743, 4.139865134115489, 4.102458740665234, 4.065052347214966, 4.027645953764711, 3.990239560314457, 3.9528331668641954, 3.915426773413934, 3.8780203799636794, 3.840613986513418, 3.8032075930631635, 3.765801199612909, 3.7283948061626404, 3.690988412712386, 3.6535820192621316, 3.61617562581187, 3.5787692323616156, 3.541362838911354, 3.5039564454610925, 3.466550052010838, 3.4291436585605837, 3.391737265110315, 3.3543308716600606, 3.316924478209806, 3.2795180847595446, 3.2421116913092902, 3.204705297859036, 3.167298904408767, 3.1298925109585127, 3.0924861175082583, 3.0550797240579968, 3.0176733306077352, 2.980266937157481, 2.9428605437072193, 2.905454150256965, 2.8680477568067104, 2.830641363356449, 2.7932349699061874, 2.755828576455933, 2.7184221830056714, 2.681015789555417, 2.6436093961051554, 2.606203002654901, 2.5687966092046395, 2.531390215754385, 2.4939838223041164, 2.456577428853862, 2.4191710354036076, 2.381764641953353, 2.3443582485030916, 2.30695185505283, 2.2695454616025685, 2.232139068152314, 2.1947326747020597, 2.1573262812518053, 2.1199198878015366, 2.082513494351282, 2.0451071009010207, 2.0077007074507662, 1.9702943140005118, 1.9328879205502503, 1.8954815270999887, 1.8580751336497343, 1.8206687401994728, 1.7832623467492112, 1.7458559532989568, 1.7084495598487024, 1.6710431663984409, 1.6336367729481864, 1.5962303794979178, 1.5588239860476634, 1.521417592597409, 1.4840111991471545, 1.446604805696893, 1.4091984122466314, 1.37179201879637, 1.3343856253461155, 1.296979231895861, 1.2595728384456066, 1.222166444995338, 1.1847600515450836, 1.147353658094822, 1.1099472646445676, 1.072540871194306, 1.0351344777440517, 0.9977280842937901, 0.9603216908435357, 0.9229152973932742, 0.8855089039430126, 0.8481025104927582, 0.8106961170425038, 0.7732897235922422, 0.7358833301419878, 0.6984769366917192, 0.6610705432414647, 0.6236641497912103, 0.5862577563409559, 0.5488513628906873, 0.5114449694404328, 0.4740385759901713, 0.43663218253991687, 0.39922578908966244, 0.3618193956394009, 0.3244130021891394, 0.28700660873888495, 0.24960021528862342, 0.212193821838369, 0.17478742838810746, 0.13738103493785303, 0.0999746414875915, 0.06256824803733707, 0.025161854587082644, -0.012244538863185994, -0.04965093231344042, -0.08705732576369485, -0.12446371921395638, -0.1618701126642179, -0.19927650611447234, -0.23668289956473387, -0.2740892930149883, -0.3114956864652427, -0.34890207991551137, -0.3863084733657658, -0.4237148668160202, -0.46112126026628175, -0.4985276537165362, -0.5359340471667977, -0.5733404406170592, -0.6107468340673137, -0.6481532275175681, -0.6855596209678367, -0.7229660144180912],mode:&quot;lines&quot;,name:&quot;Regression Line&quot;,line:{color:&quot;tomato&quot;,width:2.5},hoverinfo:&quot;skip&quot;};
+var t3={x:[162.0],y:[6.7209],mode:&quot;markers+text&quot;,name:&quot;Prediction&quot;,marker:{color:&quot;dodgerblue&quot;,size:14,line:{color:&quot;white&quot;,width:2}},text:[&quot;(162.0, 6.72 ppm)&quot;],textposition:&quot;top right&quot;,textfont:{size:13,color:&quot;navy&quot;}};
+Plotly.newPlot(&quot;plt&quot;,[t1,t2,t3],{title:&quot;Type a color value to see the predicted nitrate!&quot;,xaxis:{title:&quot;Color Value&quot;},yaxis:{title:&quot;Nitrate (ppm)&quot;},height:430,hovermode:&quot;closest&quot;});
+function upd(){
+  var x=parseFloat(document.getElementById(&quot;inp&quot;).value);
+  if(isNaN(x))return;
+  var y=m*x+b;
+  document.getElementById(&quot;lbl&quot;).textContent=&quot;Ordered pair: (&quot;+x.toFixed(1)+&quot;, &quot;+y.toFixed(2)+&quot; ppm)&quot;;
+  Plotly.restyle(&quot;plt&quot;,{x:[[x]],y:[[y]],text:[[&quot;(&quot;+x.toFixed(1)+&quot;, &quot;+y.toFixed(2)+&quot; ppm)&quot;]]}, [2]);
+}
+upd();
+</script>
+</body>
+</html>" width="100%" height="510" frameborder="0" style="border:none;"></iframe>
+</div>
 </div>
 </section>
-<section id="predict-nitrate-concentrations-for-new-test-pads" class="slide level2">
-<h2>Predict Nitrate Concentrations for New Test Pads</h2>
+<section id="activity-pt.-v-predict-new-concentrations" class="slide level2">
+<h2>Activity Pt. V: Predict New Concentrations</h2>
 <hr>
 <div class="gray-container fourtyeightpt-font">
 <p><strong>Materials Needed:</strong></p>
@@ -1312,8 +1444,8 @@ intercept (b): 53.10195674562279</code></pre>
 </ul>
 </div>
 </section>
-<section id="predict-nitrate-concentrations-for-new-test-pads-1" class="slide level2">
-<h2>Predict Nitrate Concentrations for New Test Pads</h2>
+<section id="activity-pt.-v-predict-new-concentrations-1" class="slide level2">
+<h2>Activity Pt. V: Predict New Concentrations</h2>
 <hr>
 <div class="fourtyeightpt-font">
 <ol type="1">
@@ -1322,6 +1454,11 @@ intercept (b): 53.10195674562279</code></pre>
 <li>Record these predictions on your handout.</li>
 </ol>
 </div>
+</section></section>
+<section>
+<section id="understanding-r²" class="title-slide slide level1 center">
+<h1>Understanding R²</h1>
+
 </section>
 <section id="how-good-is-our-model-r²" class="slide level2">
 <h2>How Good Is Our Model? R²</h2>
@@ -1362,10 +1499,20 @@ intercept (b): 53.10195674562279</code></pre>
 <div class="dkorange-container thirtyfourpt-font">
 <p>Click ▶️ <strong>Run Code</strong> to calculate your model’s R² value.</p>
 </div>
-<div id="9e594b75" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a>r_squared <span class="op">=</span> calculate_rsquared(color_data, nitrate_ppm, slope, intercept)</span>
-<span id="cb12-2"><a></a></span>
-<span id="cb12-3"><a></a><span class="bu">print</span>(<span class="ss">f"R² = </span><span class="sc">{</span>r_squared <span class="op">*</span> <span class="dv">100</span><span class="sc">:.1f}</span><span class="ss">%"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a></a>r_squared <span class="op">=</span> calculate_rsquared(color_data, nitrate_ppm, slope, intercept)</span>
+<span id="cb16-2"><a></a></span>
+<span id="cb16-3"><a></a><span class="bu">print</span>(<span class="ss">f"R² = </span><span class="sc">{</span>r_squared <span class="op">*</span> <span class="dv">100</span><span class="sc">:.1f}</span><span class="ss">%"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="calculate-your-r²-value-1" class="slide level2">
+<h2>Calculate Your R² Value</h2>
+<hr>
+<div class="dkorange-container thirtyfourpt-font">
+<p>Click ▶️ <strong>Run Code</strong> to calculate your model’s R² value.</p>
+</div>
+<div id="22e8d377" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a></a>r_squared <span class="op">=</span> calculate_rsquared(color_data, nitrate_ppm, slope, intercept)</span>
+<span id="cb17-2"><a></a></span>
+<span id="cb17-3"><a></a><span class="bu">print</span>(<span class="ss">f"R² = </span><span class="sc">{</span>r_squared <span class="op">*</span> <span class="dv">100</span><span class="sc">:.1f}</span><span class="ss">%"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>R² = 94.8%</code></pre>
 </div>
@@ -1377,6 +1524,16 @@ intercept (b): 53.10195674562279</code></pre>
 <div class="ltblue-container thirtyfourpt-font">
 <p>🎯 <strong>Checkpoint 6. a:</strong> <br><br> Write your group’s R² value on the poster at the front of the room.</p>
 <p>Compare with the other groups — what do you notice? <br><br> <strong>How might we improve our model and, therefore, our predictions?</strong></p>
+</div>
+</section>
+<section id="discuss-in-your-group-3" class="slide level2">
+<h2>🗣️ Discuss: In Your Group</h2>
+<hr>
+<div class="gray-container twentyeightpt-font">
+<p><strong>Materials Needed:</strong> Handout, Pencil</p>
+</div>
+<div class="ltblue-container thirtyfourpt-font">
+<p>🎯 <strong>Checkpoint 6. b:</strong> <strong><em>Stop and Jot</em></strong> <br><br> <strong>Scenario:</strong> A local strawberry farm sells its berries in small stands throughout the area. They want to sell out every day rather than take berries out to the farm. Some days are slower than others, and they are considering offering discounts on the slow days. What different things might make a day slow? That is, when should they consider offering a discount in order to sell more berries?</p>
 </div>
 </section></section>
 <section>
