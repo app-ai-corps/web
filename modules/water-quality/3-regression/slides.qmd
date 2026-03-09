@@ -1236,7 +1236,7 @@ Compare with the other groups — what do you notice?
 :::{.ltblue-container .thirtyfourpt-font}
 🎯 **Checkpoint 6. b:** ***Stop and Jot***
 <br><br>
-**Scenario:** A local strawberry farm sells its berries in small stands throughout the area. They want to sell out every day rather than take berries out to the farm. Some days are slower than others, and they are considering offering discounts on the slow days. What different things might make a day slow? That is, when should they consider offering a discount in order to sell more berries?
+**Scenario:** A local strawberry farm sells berries at small stands around town. They want to sell out every day! Some days are slower than others — so they're thinking about offering discounts to sell more. What makes a day slow or busy? What clues could help them predict when to offer a discount?
 :::
 
 # 🎟️<br>Exit Ticket
