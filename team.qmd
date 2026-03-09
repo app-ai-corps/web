@@ -40,10 +40,10 @@ function toggleMenu() {
 ::: {.contributors-grid}
 
 <div class="contributor-card">
-  <a href="https://eecs.utk.edu/people/sai-swaminathan/" class="contributor-link">
-    <img src="assets/people/Sai.jpg" alt="Sai Swaminathan" class="contributor-image">
-    <span class="contributor-name">Sai Swaminathan</span>
-    <span class="contributor-affiliation">UTK EECS Professor</span>
+  <a href="https://cehhs.utk.edu/tpte/people/sukanya-moudgalya/" class="contributor-link">
+    <img src="assets/people/sukanya.jpg" alt="Sukanya Moudgalya" class="contributor-image">
+    <span class="contributor-name">Sukanya Moudgalya</span>
+    <span class="contributor-affiliation">UTK TPTE Professor</span>
   </a>
 </div>
 
@@ -56,12 +56,14 @@ function toggleMenu() {
 </div>
 
 <div class="contributor-card">
-  <a href="https://cehhs.utk.edu/tpte/people/sukanya-moudgalya/" class="contributor-link">
-    <img src="assets/people/sukanya.jpg" alt="Sukanya Moudgalya" class="contributor-image">
-    <span class="contributor-name">Sukanya Moudgalya</span>
-    <span class="contributor-affiliation">UTK TPTE Professor</span>
+  <a href="https://eecs.utk.edu/people/sai-swaminathan/" class="contributor-link">
+    <img src="assets/people/Sai.jpg" alt="Sai Swaminathan" class="contributor-image">
+    <span class="contributor-name">Sai Swaminathan</span>
+    <span class="contributor-affiliation">UTK EECS Professor</span>
   </a>
 </div>
+
+
 
 <div class="contributor-card">
   <a href="https://eecs.utk.edu/people/michela-taufer/" class="contributor-link">
