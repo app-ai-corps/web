@@ -4218,28 +4218,28 @@
     "href": "3-regression/regression-activity-1.html",
     "title": "Regression Activity - Pt. I: RGB and Scatterplots",
     "section": "",
-    "text": "In workshop #2, we learned how computers “see” color - through RBG values! But the buoy does more. Did you notice that there were lots of little pixels on the screen in the applet we used last time? Which one is best? The buoy takes all of the pixels for each test pad and calculates their mean, which results in a mean Red, mean Green, and mean Blue value for each pad.\n\n\n\n\n\n\n\n\n\nDuring this activity, we’ll learn a bit more about linear regression and how the buoy can use regression to predict nitrate values.\n\nMaterials Needed:\n- RGB Applet V2\n- Deck of Purple “Nitrate Test Pad” Cards\n- Pencil\n- Highlighter (optional but helpful)\n- Handout\n- Dot Stickers\n- Large Graph Paper\n- Poster Markers\n\n\n\n\n\n\n\n\nOpen the RGB Applet V2.\n\nFind card #1 in your deck. Hold it 1 to 2 inches in front of your webcam.\nUsing the middle square in the frame, record the RGB values for the card on your handout.\n\nRepeat this process for all other numbered cards in your deck. Make sure you hold each card the same distance away from your webcam.\n\n\n\n\n\n\n\n\n\n  \n  \n\n\n\nThis portion of the activity will be completed with your group.Each group will be assigned either to red, green, or blue.\n\n\nUsing the round stickies and graph paper, create a scatterplot.\n\nPlace the color values (either red, green or blue, depending on your group assignment) on the x-axis and the nitrate concentrations on the y-axis."
+    "text": "Checkpoints on this Page:\n\nCheckpoint 4.a: RGBs from Test Pads"
   },
   {
     "objectID": "3-regression/regression-activity-1.html#rgb-and-scatterplots",
     "href": "3-regression/regression-activity-1.html#rgb-and-scatterplots",
     "title": "Regression Activity - Pt. I: RGB and Scatterplots",
-    "section": "",
-    "text": "During this activity, we’ll learn a bit more about linear regression and how the buoy can use regression to predict nitrate values.\n\nMaterials Needed:\n- RGB Applet V2\n- Deck of Purple “Nitrate Test Pad” Cards\n- Pencil\n- Highlighter (optional but helpful)\n- Handout\n- Dot Stickers\n- Large Graph Paper\n- Poster Markers"
+    "section": "RGB and Scatterplots",
+    "text": "RGB and Scatterplots\nDuring this activity, we’ll learn a bit more about linear regression and how the buoy can use regression to predict nitrate values.\n\nMaterials Needed:\n- RGB Applet V2\n- Deck of Purple “Nitrate Test Pad” Cards\n- Pencil\n- Highlighter (optional but helpful)\n- Handout\n- Dot Stickers\n- Large Graph Paper\n- Poster Markers"
   },
   {
     "objectID": "3-regression/regression-activity-1.html#rgb-activity-part-1",
     "href": "3-regression/regression-activity-1.html#rgb-activity-part-1",
     "title": "Regression Activity - Pt. I: RGB and Scatterplots",
-    "section": "",
-    "text": "Open the RGB Applet V2.\n\nFind card #1 in your deck. Hold it 1 to 2 inches in front of your webcam.\nUsing the middle square in the frame, record the RGB values for the card on your handout.\n\nRepeat this process for all other numbered cards in your deck. Make sure you hold each card the same distance away from your webcam."
+    "section": "RGB Activity (Part 1)",
+    "text": "RGB Activity (Part 1)\n\n\n\n🎯 Checkpoint 4. a: Read water quality test data like a computer!\n\n\nInstructions\n\nOpen the RGB Applet V2.\n\nFind card #1 in your deck. Hold it 1 to 2 inches in front of your webcam.\nUsing the middle square in the frame, record the RGB values for the card on your handout.\n\nRepeat this process for all other numbered cards in your deck. Make sure you hold each card the same distance away from your webcam."
   },
   {
     "objectID": "3-regression/regression-activity-1.html#scatterplots-activity-part-2",
     "href": "3-regression/regression-activity-1.html#scatterplots-activity-part-2",
     "title": "Regression Activity - Pt. I: RGB and Scatterplots",
-    "section": "",
-    "text": "This portion of the activity will be completed with your group.Each group will be assigned either to red, green, or blue.\n\n\nUsing the round stickies and graph paper, create a scatterplot.\n\nPlace the color values (either red, green or blue, depending on your group assignment) on the x-axis and the nitrate concentrations on the y-axis."
+    "section": "Scatterplots Activity (Part 2)",
+    "text": "Scatterplots Activity (Part 2)\n\nInstructions\n\n\n  \n  \n\n\n\nThis portion of the activity will be completed with your group.Each group will be assigned either to red, green, or blue.\n\n\nUsing the round stickies and graph paper, create a scatterplot.\n\nPlace the color values (either red, green or blue, depending on your group assignment) on the x-axis and the nitrate concentrations on the y-axis."
   },
   {
     "objectID": "3-regression/slides.html#lets-predict-1-cube-1",
