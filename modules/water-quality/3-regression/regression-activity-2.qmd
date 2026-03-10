@@ -13,7 +13,8 @@ sidebar: lesson-3
 - [**Checkpoint 5.b:** Scatterplots in Python](#lst-scatterplots)
 - [**Checkpoint 5.c:** Regression in Python](#lst-regression)
 - [**Checkpoint 5.d:** Regression Equation in Python](#lst-regression-equation)
-- [**Checkpoint 5.e:** Plotting Regression Line in Python](#lst-regression-line)
+- [**Checkpoint 5.e:** Plotting Regression Line in Python](#lst-regression-line-python)
+- [**Checkpoint 5.f:** Transferring Regression Line to Paper](#lst-regression-line-paper)
 :::
 
 ## Regression Modeling
@@ -151,7 +152,7 @@ Printing the Regression Equation
 
 ### Plotting the Regression Line
 
-:::{#lst-plotting-line}
+:::{#lst-plotting-line-python}
 :::{.dkorange-container}
 No code edits needed!
 
@@ -184,6 +185,7 @@ Plotting regression line in Python
 
 ## Activity - Draw your line of best fit on your group's scatterplot
 
+:::{#lst-plotting-line-paper}
 :::{.gray-container}
 **Materials Needed:**  
 - Poster Markers  
@@ -192,3 +194,6 @@ Plotting regression line in Python
 :::
 
 Using the exact positioning the line of best fit python generated, copy that line onto your group's scatterplot. When finished, bring your group's plot to the front of the class.
+
+Plotting regression line on paper
+:::

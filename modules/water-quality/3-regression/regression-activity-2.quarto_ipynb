@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "raw",
-   "id": "9dc01c56",
+   "id": "84ab3919",
    "metadata": {},
    "source": [
     "---\n",
@@ -17,7 +17,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "724d2048",
+   "id": "e5b8a3ab",
    "metadata": {},
    "source": [
     ":::{.ltblue-container}\n",
@@ -27,7 +27,8 @@
     "- [**Checkpoint 5.b:** Scatterplots in Python](#lst-scatterplots)\n",
     "- [**Checkpoint 5.c:** Regression in Python](#lst-regression)\n",
     "- [**Checkpoint 5.d:** Regression Equation in Python](#lst-regression-equation)\n",
-    "- [**Checkpoint 5.e:** Plotting Regression Line in Python](#lst-regression-line)\n",
+    "- [**Checkpoint 5.e:** Plotting Regression Line in Python](#lst-regression-line-python)\n",
+    "- [**Checkpoint 5.f:** Transferring Regression Line to Paper](#lst-regression-line-paper)\n",
     ":::\n",
     "\n",
     "## Regression Modeling\n",
@@ -165,7 +166,7 @@
     "\n",
     "### Plotting the Regression Line\n",
     "\n",
-    ":::{#lst-plotting-line}\n",
+    ":::{#lst-plotting-line-python}\n",
     ":::{.dkorange-container}\n",
     "No code edits needed!\n",
     "\n",
@@ -198,6 +199,7 @@
     "\n",
     "## Activity - Draw your line of best fit on your group's scatterplot\n",
     "\n",
+    ":::{#lst-plotting-line-paper}\n",
     ":::{.gray-container}\n",
     "**Materials Needed:**  \n",
     "- Poster Markers  \n",
@@ -205,7 +207,10 @@
     "- Yardstick  \n",
     ":::\n",
     "\n",
-    "Using the exact positioning the line of best fit python generated, copy that line onto your group's scatterplot. When finished, bring your group's plot to the front of the class."
+    "Using the exact positioning the line of best fit python generated, copy that line onto your group's scatterplot. When finished, bring your group's plot to the front of the class.\n",
+    "\n",
+    "Plotting regression line on paper\n",
+    ":::"
    ]
   }
  ],
