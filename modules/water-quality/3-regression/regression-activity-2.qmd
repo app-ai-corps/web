@@ -6,6 +6,12 @@ crossref:
 format: live-html
 sidebar: lesson-3
 ---
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 5.a:** Putting Data in a List](#lst-list)
+
+:::
 
 ## Regression Modeling
 
@@ -23,6 +29,8 @@ sidebar: lesson-3
 ```
 
 There are a few ways to create a line of best fit, but we will use Python to run a linear regression for us! It will generate our line of best fit.
+
+:::{#lst-activityI}
 
 :::{.dkorange-container}
 Replace the `??` placeholder with the color values and nitrate concentrations from the RBG activity and scatterplot!
@@ -71,6 +79,9 @@ print(nitrate_ppm)
 color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
 df = process_df(color_data, nitrate_ppm)
 ```
+
+Storing your team's data in a list!
+:::
 
 ### Recreating Your Team's Scatterplot
 

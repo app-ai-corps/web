@@ -1,8 +1,8 @@
 {
  "cells": [
   {
-   "cell_type": "markdown",
-   "id": "99973407",
+   "cell_type": "raw",
+   "id": "38c8a8d3",
    "metadata": {},
    "source": [
     "---\n",
@@ -12,7 +12,20 @@
     "  lst-labels: alpha a\n",
     "format: live-html\n",
     "sidebar: lesson-3\n",
-    "---\n",
+    "---"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3ca89917",
+   "metadata": {},
+   "source": [
+    ":::{.ltblue-container}\n",
+    "**Checkpoints on this Page:**\n",
+    "\n",
+    "- [**Checkpoint 5.a:** Putting Data in a List](#lst-list)\n",
+    "\n",
+    ":::\n",
     "\n",
     "## Regression Modeling\n",
     "\n",
@@ -30,6 +43,8 @@
     "```\n",
     "\n",
     "There are a few ways to create a line of best fit, but we will use Python to run a linear regression for us! It will generate our line of best fit.\n",
+    "\n",
+    ":::{#lst-activityI}\n",
     "\n",
     ":::{.dkorange-container}\n",
     "Replace the `??` placeholder with the color values and nitrate concentrations from the RBG activity and scatterplot!\n",
@@ -78,6 +93,9 @@
     "color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\n",
     "df = process_df(color_data, nitrate_ppm)\n",
     "```\n",
+    "\n",
+    "Storing your team's data in a list!\n",
+    ":::\n",
     "\n",
     "### Recreating Your Team's Scatterplot\n",
     "\n",

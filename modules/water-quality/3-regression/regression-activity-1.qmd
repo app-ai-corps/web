@@ -10,7 +10,7 @@ sidebar: lesson-3
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 4.a:** RGBs from Test Pads](#lst-activityI)
+- [**Checkpoint 4.a:** RGB Values from Test Pads](#lst-activityI)
 - [**Checkpoint 4.b:** Creating Scatterplots](#lst-activityII)
 
 :::
