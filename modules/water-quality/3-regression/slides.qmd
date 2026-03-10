@@ -89,6 +89,10 @@ In this lesson, you will learn how to use scatterplots and regression lines in P
 ## Review
 <hr>
 
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 Checkpoint 1. a: Review—Looking back to Workshop #2
+:::
+
 :::{.gray-container .fourtyeightpt-font}
 **Last workshop we learned:**
 
@@ -688,6 +692,10 @@ In our applet (for the next activity), we split the pixels into a grid and meane
 ## RGB Activity (Pt. I)
 <hr>
 
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 Checkpoint 4. a: Read water quality test data like a computer!
+:::
+
 ### Roles
 
 :::{.activity-text}
@@ -740,6 +748,10 @@ For this portion, each group is assigned either **red**, **green**, or **blue**,
 
 ## Activity (Pt. II) — Instructions
 <hr>
+
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 Checkpoint 4. b: Plotting R, G or B values against nitrate concentrations.
+:::
 
 :::{.fourtyeightpt-font}
 1. Using the round stickies and graph paper, create a scatterplot.
@@ -852,6 +864,10 @@ upd();
 ## Storing Your Data
 <hr>
 
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 Checkpoint 5. a: Storing your team’s data in lists!
+:::
+
 :::{.dkorange-container .twentyeightpt-font}
 Replace the `??` placeholders with your color values and nitrate concentrations.
 
@@ -893,8 +909,17 @@ color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
 df = process_df(color_data, nitrate_ppm)
 ```
 
+
 ## Recreating Your Team's Scatterplot
 <hr>
+
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 Checkpoint 5. b: Scatterplots in Python!
+:::
+
+## Recreating Your Team's Scatterplot
+<hr>
+
 
 :::{.dkorange-container .thirtyfourpt-font}
 Replace the `??` placeholders:
@@ -957,8 +982,8 @@ plt.show()
 :::
 
 :::{.ltblue-container .thirtyfourpt-font}
-🎯 **Checkpoint 5. a:**
-<br><br>
+<!-- 🎯 **Checkpoint 5. a:** -->
+<!-- <br><br> -->
 With your group, discuss where your regression line will likely fall on your scatterplot. Once your group has made a decision, place your yardstick on top of your scatterplot as if it's the line.
 
 **Note:** Lines will likely vary across groups, given that you are working with different color channels!
@@ -967,6 +992,10 @@ With your group, discuss where your regression line will likely fall on your sca
 
 ## Running the Linear Regression
 <hr>
+
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 Checkpoint 5. c: Running a regression in Python!
+:::
 
 :::{.dkorange-container .thirtyfourpt-font}
 Replace the `??` placeholders:
@@ -1006,6 +1035,10 @@ print("intercept (b):", intercept)
 ## From Regression to Equation
 <hr>
 
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 Checkpoint 5. d: Printing the Regression Equation
+:::
+
 :::{.activity-text}
 The linear regression produces the equation for the **line of best fit**.  <br>
 :::
@@ -1043,6 +1076,14 @@ print(f"y = {slope:.2f}x + {intercept:.2f}")
 
 ## Plotting the Regression Line
 <hr>
+
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 Checkpoint 5. e: Plotting regression line in Python
+:::
+
+## Plotting the Regression Line
+<hr>
+
 
 :::{.dkorange-container .twentyeightpt-font}
 Click ▶️ **Run Code** to plot the scatterplot with the regression line.
@@ -1091,6 +1132,10 @@ plt.show()
 ## Activity Pt. IV — Draw Line of Best Fit
 <hr>
 
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 Checkpoint 5. f: Plotting regression line on paper
+:::
+
 :::{.gray-container .fourtyeightpt-font}
 **Materials Needed:**
 
@@ -1110,6 +1155,10 @@ Using the exact positioning Python generated, **copy the regression line onto yo
 
 ## Making Predictions — Reload Your Data
 <hr>
+
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 Checkpoint 6. a: Storing your team’s data in lists (again)!
+:::
 
 :::{.dkorange-container .thirtyfourpt-font}
 Re-enter your color values and nitrate concentrations.
@@ -1131,6 +1180,14 @@ print(f"Slope: {slope:.2f}, Intercept: {intercept:.2f}")
 
 ## Using the Model to Predict
 <hr>
+
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 Checkpoint 6. b: Predicting nitrate concentrations from your regression model (like the buoy)!
+:::
+
+## Using the Model to Predict
+<hr>
+
 
 :::{.activity-text}
 Now that we have our regression model, we can **predict** nitrate concentrations for new color values — even ones we didn't measure!
@@ -1211,6 +1268,10 @@ Wouldn't it be great if there was a number to tell us how good our models/predic
 ## Calculate Your R² Value
 <hr>
 
+:::{.ltblue-container .thirtyfourpt-font}
+🎯 Checkpoint 6. c: Calculate your model’s R-squared value
+:::
+
 :::{.dkorange-container .thirtyfourpt-font}
 Click ▶️ **Run Code** to calculate your model's R² value.
 :::
@@ -1238,7 +1299,8 @@ print(f"R² = {r_squared * 100:.1f}%")
 <hr>
 
 :::{.ltblue-container .thirtyfourpt-font}
-🎯 **Checkpoint 6. a:**
+🎯 Checkpoint 6. d: Recording your model’s R-squared on paper
+:::
 <br><br>
 Write your group's R² value on the poster at the front of the room.
 
@@ -1255,7 +1317,7 @@ Compare with the other groups — what do you notice?
 :::
 
 :::{.ltblue-container .thirtyfourpt-font}
-🎯 **Checkpoint 6. b:** ***Stop and Jot***
+🎯 Checkpoint 6. e: Stop and Jot: An agriculture scenario
 <br><br>
 **Scenario:** A local strawberry farm sells berries at small stands around town. They want to sell out every day! Some days are slower than others, so they're thinking about offering discounts to sell more. What makes a day slow or busy? What clues could help them predict when to offer a discount?
 :::
