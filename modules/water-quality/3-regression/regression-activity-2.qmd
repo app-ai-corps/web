@@ -13,6 +13,7 @@ sidebar: lesson-3
 - [**Checkpoint 5.b:** Scatterplots in Python](#lst-scatterplots)
 - [**Checkpoint 5.c:** Regression in Python](#lst-regression)
 - [**Checkpoint 5.d:** Regression Equation in Python](#lst-regression-equation)
+- [**Checkpoint 5.e:** Plotting Regression Line in Python](#lst-regression-line)
 :::
 
 ## Regression Modeling
@@ -147,8 +148,10 @@ print(f"y = {slope:.2f}x + {intercept:.2f}")
 
 Printing the Regression Equation
 :::
+
 ### Plotting the Regression Line
 
+:::{#lst-plotting-line}
 :::{.dkorange-container}
 No code edits needed!
 
@@ -175,6 +178,10 @@ plt.text(
 plt.tight_layout()
 plt.show()
 ```
+
+Plotting regression line in Python
+:::
+
 ## Activity - Draw your line of best fit on your group's scatterplot
 
 :::{.gray-container}
