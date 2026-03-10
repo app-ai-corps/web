@@ -11,6 +11,7 @@ sidebar: lesson-3
 **Checkpoints on this Page:**
 
 - [**Checkpoint 4.a:** RGBs from Test Pads](#lst-activityI)
+- [**Checkpoint 4.b:** Creating Scatterplots](#lst-activityII)
 
 :::
 
@@ -80,7 +81,11 @@ Read water quality test data like a computer!
 This portion of the activity will be completed with your group.<br>Each group will be assigned either to **red**, **green**, or **blue**.
 :::
 
+:::{#lst-activityII}
 1. Using the round stickies and graph paper, create a scatterplot.  
 2. Place the color values (either red, green or blue, depending on your group assignment) on the x-axis and the nitrate concentrations on the y-axis.  
+
+Plotting R, G or B values against nitrate concentrations.
+:::
 
 

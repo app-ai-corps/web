@@ -4218,7 +4218,7 @@
     "href": "3-regression/regression-activity-1.html",
     "title": "Regression Activity - Pt. I: RGB and Scatterplots",
     "section": "",
-    "text": "Checkpoints on this Page:\n\nCheckpoint 4.a: RGBs from Test Pads"
+    "text": "Checkpoints on this Page:\n\nCheckpoint 4.a: RGBs from Test Pads\nCheckpoint 4.b: Creating Scatterplots"
   },
   {
     "objectID": "3-regression/regression-activity-1.html#rgb-and-scatterplots",
@@ -4239,7 +4239,7 @@
     "href": "3-regression/regression-activity-1.html#scatterplots-activity-part-2",
     "title": "Regression Activity - Pt. I: RGB and Scatterplots",
     "section": "Scatterplots Activity (Part 2)",
-    "text": "Scatterplots Activity (Part 2)\n\nInstructions\n\n\n  \n  \n\n\n\nThis portion of the activity will be completed with your group.Each group will be assigned either to red, green, or blue.\n\n\nUsing the round stickies and graph paper, create a scatterplot.\n\nPlace the color values (either red, green or blue, depending on your group assignment) on the x-axis and the nitrate concentrations on the y-axis."
+    "text": "Scatterplots Activity (Part 2)\n\nInstructions\n\n\n  \n  \n\n\n\nThis portion of the activity will be completed with your group.Each group will be assigned either to red, green, or blue.\n\n\n\n\n🎯 Checkpoint 4. b: Plotting R, G or B values against nitrate concentrations.\n\n\n\nUsing the round stickies and graph paper, create a scatterplot.\n\nPlace the color values (either red, green or blue, depending on your group assignment) on the x-axis and the nitrate concentrations on the y-axis."
   },
   {
     "objectID": "3-regression/slides.html#lets-predict-1-cube-1",
