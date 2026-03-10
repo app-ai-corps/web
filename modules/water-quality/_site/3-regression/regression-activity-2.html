@@ -260,7 +260,10 @@ ul.task-list li input[type="checkbox"] {
 <div class="ltblue-container">
 <p><strong>Checkpoints on this Page:</strong></p>
 <ul>
-<li><a href="#lst-activityI"><strong>Checkpoint 5.a:</strong> RGB Values from Test Pads</a></li>
+<li><a href="#lst-lists"><strong>Checkpoint 5.a:</strong> Putting Data in Lists</a></li>
+<li><a href="#lst-scatterplots"><strong>Checkpoint 5.b:</strong> Scatterplots in Python</a></li>
+<li><a href="#lst-regression"><strong>Checkpoint 5.c:</strong> Regression in Python</a></li>
+<li><a href="#lst-regression-equation"><strong>Checkpoint 5.d:</strong> Regression Equation in Python</a></li>
 </ul>
 </div>
 <section id="regression-modeling" class="level2">
@@ -272,12 +275,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <br>
 <p>There are a few ways to create a line of best fit, but we will use Python to run a linear regression for us! It will generate our line of best fit.</p>
-<div id="lst-activityI" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<div id="lst-lists" class="listing quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-lst figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-activityI-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-lists-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 🎯 Checkpoint 5.&nbsp;a: Storing your team’s data in a list!
 </figcaption>
-<div aria-describedby="lst-activityI-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="lst-lists-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="dkorange-container">
 <p>Replace the <code>??</code> placeholder with the color values and nitrate concentrations from the RBG activity and scatterplot!</p>
 <p><strong>IMPORTANT:</strong> The color values and nitrate concentrations must be in the exact same order.</p>
@@ -307,6 +310,12 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0
 </div>
 <section id="recreating-your-teams-scatterplot" class="level3">
 <h3 class="anchored" data-anchor-id="recreating-your-teams-scatterplot">Recreating Your Team’s Scatterplot</h3>
+<div id="lst-scatterplots" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-scatterplots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint 5.&nbsp;b: Scatterplots in Python!
+</figcaption>
+<div aria-describedby="lst-scatterplots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="dkorange-container">
 <p>Replace the <code>??</code> placeholders with the x variable (<code>color_data</code>) in the first blank and the y variable (<code>nitrate_ppm</code>) in the second.</p>
 <p>Click the ▶️ Run Code button to create a scatterplot that should match your group’s paper plot.</p>
@@ -319,9 +328,18 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0Ijp0cnVlfSwiY29kZSI6InBsdC5maWd1cmUoZmlnc2l6ZT0oNiwgNSkpXG5wbHQuc2NhdHRlcihkZltcIj8/XCJdLCBkZltcIj8/XCJdLCBzPTYwLCBjb2xvcj1cImJsYWNrXCIpXG5wbHQudGl0bGUoXCJOaXRyYXRlIHZzLiBDb2xvclwiKVxucGx0LnhsYWJlbChcIkNvbG9yXCIpXG5wbHQueWxhYmVsKFwiTml0cmF0ZSAocHBtKVwiKVxucGx0LnRpZ2h0X2xheW91dCgpXG5wbHQuc2hvdygpIn0=
 </script>
 </div>
+</div>
+</figure>
+</div>
 </section>
 <section id="running-the-linear-regression" class="level3">
 <h3 class="anchored" data-anchor-id="running-the-linear-regression">Running the Linear Regression</h3>
+<div id="lst-regression" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-regression-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint 5.&nbsp;c: Running a regression in Python
+</figcaption>
+<div aria-describedby="lst-regression-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="dkorange-container">
 <p>Replace the <code>??</code> placeholders with the x variable (<code>color_data</code>) in the first blank and the y variable (<code>nitrate_ppm</code>) in the second blank.</p>
 <p>Click the ▶️ Run Code button to run the block and generate the equation for the line of best fit.</p>
@@ -334,9 +352,18 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0Ijp0cnVlfSwiY29kZSI6InNsb3BlLCBpbnRlcmNlcHQgPSBsaW5lYXJfcmVncmVzc2lvbig/Pyw/PylcblxucHJpbnQoXCJzbG9wZSAobSk6XCIsc2xvcGUpXG5wcmludChcImludGVyY2VwdCAoYik6XCIsaW50ZXJjZXB0KSJ9
 </script>
 </div>
+</div>
+</figure>
+</div>
 <p><strong>NOTE:</strong> The linear regression produces the equation for the line of best fit. After we know the equation, we can graph it.</p>
 <p>Remember <strong><em>y = mx + b</em></strong>?<br>
 We can just substitute!</p>
+<div id="lst-regression-equation" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-regression-equation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint 5.&nbsp;d: Printing the Regression Equation
+</figcaption>
+<div aria-describedby="lst-regression-equation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="dkorange-container">
 <p>No code edits needed!</p>
 <p>Click the ▶️ Run Code button to see the slope-intercept equation of your regression line.</p>
@@ -348,6 +375,9 @@ We can just substitute!</p>
 <script type="pyodide-5-contents">
 eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoicHJpbnQoZlwieSA9IHtzbG9wZTouMmZ9eCArIHtpbnRlcmNlcHQ6LjJmfVwiKSJ9
 </script>
+</div>
+</div>
+</figure>
 </div>
 </section>
 <section id="plotting-the-regression-line" class="level3">

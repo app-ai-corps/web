@@ -9,8 +9,10 @@ sidebar: lesson-3
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 5.a:** Putting Data in a List](#lst-list)
-
+- [**Checkpoint 5.a:** Putting Data in Lists](#lst-lists)
+- [**Checkpoint 5.b:** Scatterplots in Python](#lst-scatterplots)
+- [**Checkpoint 5.c:** Regression in Python](#lst-regression)
+- [**Checkpoint 5.d:** Regression Equation in Python](#lst-regression-equation)
 :::
 
 ## Regression Modeling
@@ -30,7 +32,7 @@ sidebar: lesson-3
 
 There are a few ways to create a line of best fit, but we will use Python to run a linear regression for us! It will generate our line of best fit.
 
-:::{#lst-activityI}
+:::{#lst-lists}
 
 :::{.dkorange-container}
 Replace the `??` placeholder with the color values and nitrate concentrations from the RBG activity and scatterplot!
@@ -85,6 +87,7 @@ Storing your team's data in a list!
 
 ### Recreating Your Team's Scatterplot
 
+:::{#lst-scatterplots}
 :::{.dkorange-container}
 Replace the `??` placeholders with the x variable (`color_data`) in the first blank and the y variable (`nitrate_ppm`) in the second.
 
@@ -102,9 +105,12 @@ plt.ylabel("Nitrate (ppm)")
 plt.tight_layout()
 plt.show()
 ```
+Scatterplots in Python!
+:::
 
 ### Running the Linear Regression
 
+:::{#lst-regression}
 :::{.dkorange-container}
 Replace the `??` placeholders with the x variable (`color_data`) in the first blank and the y variable (`nitrate_ppm`) in the second blank.
 
@@ -120,11 +126,15 @@ print("slope (m):",slope)
 print("intercept (b):",intercept)
 ```
 
+Running a regression in Python
+:::
+
 **NOTE:** The linear regression produces the equation for the line of best fit. After we know the equation, we can graph it.
 
 Remember ***y = mx + b***?  
 We can just substitute!
 
+:::{#lst-regression-equation}
 :::{.dkorange-container}
 No code edits needed!
 
@@ -135,6 +145,8 @@ Click the ▶️ Run Code button to see the slope-intercept equation of your reg
 print(f"y = {slope:.2f}x + {intercept:.2f}")
 ```
 
+Printing the Regression Equation
+:::
 ### Plotting the Regression Line
 
 :::{.dkorange-container}
