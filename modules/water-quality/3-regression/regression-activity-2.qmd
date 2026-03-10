@@ -84,7 +84,7 @@ color_data, nitrate_ppm = process_data(color_data, nitrate_ppm)
 df = process_df(color_data, nitrate_ppm)
 ```
 
-Storing your team's data in a list!
+Storing your team's data in lists!
 :::
 
 ### Recreating Your Team's Scatterplot

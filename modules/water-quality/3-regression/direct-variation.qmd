@@ -9,7 +9,8 @@ sidebar: lesson-3
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
-- [**Checkpoint 2.a:** Making a Prediction](#lst-prediction)
+- [**Checkpoint 2.a:** Making a Prediction](#lst-predict100)
+- [**Checkpoint 2.b:** Making a More Difficult Prediction](#lst-prediction-unclebob)
 
 :::
 <br>
@@ -68,7 +69,7 @@ sidebar: lesson-3
   </tr>
 </table>
 
-:::{#lst-review}
+:::{#lst-predict100}
 
 How tall will our tower be if we use 100 cubes? How do you know?
 
