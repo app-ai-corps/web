@@ -14,6 +14,7 @@ sidebar: lesson-3
 - [**Checkpoint 6.b:** Making Predictions from Regression Model](#lst-predictions)
 - [**Checkpoint 6.c:** Calculating Model Fit](#lst-r-squared)
 - [**Checkpoint 6.d:** Adding R² to Paper Scatterplot](#lst-r-squared-paper)
+- [**Checkpoint 6.e:** Agriculture Scenario](#lst-ag-mult-reg)
 :::
 
 ### Making Predictions
@@ -189,3 +190,15 @@ Recording your model's R-squared on paper
 :::
 
 **How might we improve our model and, therefore, prediction?**
+
+### Applying to Another Agriculture Scenario
+
+:::{.gray-container}
+**Materials Needed:** Handout, Pencil
+:::
+
+:::{.lst-ag-mult-reg}
+**Scenario:** A local strawberry farm sells berries at small stands around town. They want to sell out every day! Some days are slower than others, so they're thinking about offering discounts to sell more. What makes a day slow or busy? What clues could help them predict when to offer a discount?
+
+Stop and Jot: An agriculture scenario
+:::
