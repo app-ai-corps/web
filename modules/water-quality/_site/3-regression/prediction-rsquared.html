@@ -226,7 +226,6 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#making-predictions" id="toc-making-predictions" class="nav-link active" data-scroll-target="#making-predictions">Making Predictions</a></li>
-  <li><a href="#predict-the-nitrate-concentrations-for-new-test-pads" id="toc-predict-the-nitrate-concentrations-for-new-test-pads" class="nav-link" data-scroll-target="#predict-the-nitrate-concentrations-for-new-test-pads">Predict The Nitrate Concentrations for New Test Pads</a></li>
   <li><a href="#how-good-is-our-model-r²" id="toc-how-good-is-our-model-r²" class="nav-link" data-scroll-target="#how-good-is-our-model-r²">How Good Is Our Model? R²</a></li>
   </ul>
 </nav>
@@ -253,8 +252,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="ltblue-container">
+<p><strong>Checkpoints on this Page:</strong></p>
+<ul>
+<li><a href="#lst-lists"><strong>Checkpoint 6.a:</strong> Putting Data in Lists (Again)</a></li>
+<li><a href="#lst-predictions"><strong>Checkpoint 6.b:</strong> Making Predictions from Regression Model</a></li>
+<li><a href="#lst-r-squared"><strong>Checkpoint 6.c:</strong> Calculating Model Fit</a></li>
+<li><a href="#lst-r-squared-paper"><strong>Checkpoint 6.d:</strong> Adding R² to Paper Scatterplot</a></li>
+</ul>
+</div>
 <section id="making-predictions" class="level3">
 <h3 class="anchored" data-anchor-id="making-predictions">Making Predictions</h3>
+<div id="lst-lists" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-lists-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint 6.&nbsp;a: Storing your team’s data in lists (again)!
+</figcaption>
+<div aria-describedby="lst-lists-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="dkorange-container">
 <p>Re-enter your color values and nitrate concentrations from the previous activity. Remember that it doesn’t remember them from page to page, so this is repetitive.</p>
 <p><strong>NOTE:</strong> You should be able to go back to the previous page and copy/paste the two lists here.</p>
@@ -276,7 +290,16 @@ eyJhdHRyIjp7ImVjaG8iOmZhbHNlLCJlZGl0IjpmYWxzZSwiZXZhbCI6dHJ1ZSwiaW5jbHVkZSI6ZmFs
 eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0Ijp0cnVlfSwiY29kZSI6ImNvbG9yX2RhdGEgPSBbPz8sID8/LCA/PywgPz8sID8/LCA/PywgPz8sID8/XVxubml0cmF0ZV9wcG0gPSBbPz8sID8/LCA/PywgPz8sID8/LCA/PywgPz8sID8/XVxuXG4jIERvIG5vdCBjaGFuZ2UgdGhlIGNvZGUgYmVsb3cgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG5jb2xvcl9kYXRhLCBuaXRyYXRlX3BwbSA9IHByb2Nlc3NfZGF0YShjb2xvcl9kYXRhLCBuaXRyYXRlX3BwbSlcbnNsb3BlLCBpbnRlcmNlcHQgPSBsaW5lYXJfcmVncmVzc2lvbihjb2xvcl9kYXRhLCBuaXRyYXRlX3BwbSlcbnByaW50KGZcIlNsb3BlOiB7c2xvcGU6LjJmfSwgSW50ZXJjZXB0OiB7aW50ZXJjZXB0Oi4yZn1cIikifQ==
 </script>
 </div>
+</div>
+</figure>
+</div>
 <p>Now that we have our regression model, we can use it to <strong>predict</strong> nitrate concentrations for new color values — even ones we didn’t measure!</p>
+<div id="lst-predictions" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-predictions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint 6.&nbsp;b: Predicting nitrate concentrations from your regression model (like the buoy)!
+</figcaption>
+<div aria-describedby="lst-predictions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="dkorange-container">
 <p>No code edits needed!</p>
 <p>Click the ▶️ Run Code button to generate an interactive scatterplot with regression line. Then type any color value (<code>x</code>) into the box to see where that point falls (in terms of nitrate_ppm) on your group’s regression line.</p>
@@ -289,7 +312,6 @@ eyJhdHRyIjp7ImNvbXBsZXRpb24iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlLCJwZXJzaXN0
 eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2hvd19wcmVkaWN0aW9uX3Bsb3QoY29sb3JfZGF0YSwgbml0cmF0ZV9wcG0sIHNsb3BlLCBpbnRlcmNlcHQpIn0=
 </script>
 </div>
-</section>
 <section id="predict-the-nitrate-concentrations-for-new-test-pads" class="level3">
 <h3 class="anchored" data-anchor-id="predict-the-nitrate-concentrations-for-new-test-pads">Predict The Nitrate Concentrations for New Test Pads</h3>
 <div class="gray-container">
@@ -304,6 +326,10 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2hvd19wcmVkaWN0aW9uX3Bs
 <li>Then, use the graphing tool above to predict the nitrate concentration (ppm) the strip pad is reporting.</li>
 <li>Record these predictions on your handout.</li>
 </ol>
+</section>
+</div>
+</figure>
+</div>
 <hr>
 </section>
 <section id="how-good-is-our-model-r²" class="level3">
@@ -336,6 +362,12 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2hvd19wcmVkaWN0aW9uX3Bs
 </tr>
 </tbody>
 </table>
+<div id="lst-r-squared" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-r-squared-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint 6.&nbsp;c: Calculate your model’s R-squared value
+</figcaption>
+<div aria-describedby="lst-r-squared-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="dkorange-container">
 <p>No code edits needed!</p>
 <p>Click the ▶️ Run Code button to calculate your model’s R² value.</p>
@@ -348,11 +380,23 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic2hvd19wcmVkaWN0aW9uX3Bs
 eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoicl9zcXVhcmVkID0gY2FsY3VsYXRlX3JzcXVhcmVkKGNvbG9yX2RhdGEsIG5pdHJhdGVfcHBtLCBzbG9wZSwgaW50ZXJjZXB0KVxuXG5wcmludChmXCJSwrIgPSB7cl9zcXVhcmVkICogMTAwOi4xZn0lXCIpIn0=
 </script>
 </div>
+</div>
+</figure>
+</div>
+<div id="lst-r-squared-paper" class="listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-r-squared-paper-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+🎯 Checkpoint 6.&nbsp;d: Recording your model’s R-squared on paper
+</figcaption>
+<div aria-describedby="lst-r-squared-paper-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="gray-container">
 <p><strong>Materials Needed:</strong><br>
 - Poster Marker</p>
 </div>
 <p><strong>Write your group’s R squared model on the poster at the front of the room.</strong> Compare your group’s R squared value with the values of the other groups. What do you notice?</p>
+</div>
+</figure>
+</div>
 <p><strong>How might we improve our model and, therefore, prediction?</strong></p>
 
 
