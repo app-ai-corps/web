@@ -281,7 +281,7 @@ Smokey Buoy's camera has two jobs:
 
 ![](images/green-cube.png){fig-align="center" width="35%"}
 
-## Let's Predict! — 1 Cube
+## 📝 Let's Predict! — 1 Cube
 <hr>
 
 :::: {.columns}
@@ -295,7 +295,7 @@ Smokey Buoy's camera has two jobs:
 :::
 ::::
 
-## Let's Predict! — 2 Cubes
+## 📝 Let's Predict! — 2 Cubes
 <hr>
 
 :::: {.columns}
@@ -310,7 +310,7 @@ Smokey Buoy's camera has two jobs:
 :::
 ::::
 
-## Let's Predict! — 2 Cubes
+## 📝 Let's Predict! — 2 Cubes
 <hr>
 
 :::: {.columns}
@@ -325,7 +325,7 @@ Smokey Buoy's camera has two jobs:
 :::
 ::::
 
-## Let's Predict! — 3 Cubes
+## 📝 Let's Predict! — 3 Cubes
 <hr>
 
 :::: {.columns}
@@ -341,7 +341,7 @@ Smokey Buoy's camera has two jobs:
 :::
 ::::
 
-## Let's Predict! — 3 Cubes
+## 📝 Let's Predict! — 3 Cubes
 <hr>
 
 :::: {.columns}
@@ -357,7 +357,7 @@ Smokey Buoy's camera has two jobs:
 :::
 ::::
 
-## Let's Predict! — 4 Cubes
+## 📝 Let's Predict! — 4 Cubes
 <hr>
 
 :::: {.columns}
@@ -374,7 +374,7 @@ Smokey Buoy's camera has two jobs:
 :::
 ::::
 
-## Let's Predict! — 4 Cubes
+## 📝 Let's Predict! — 4 Cubes
 <hr>
 
 :::: {.columns}
@@ -391,7 +391,7 @@ Smokey Buoy's camera has two jobs:
 :::
 ::::
 
-## Let's Predict! — 5 Cubes
+## 📝 Let's Predict! — 5 Cubes
 <hr>
 
 :::: {.columns}
@@ -409,7 +409,7 @@ Smokey Buoy's camera has two jobs:
 :::
 ::::
 
-## Let's Predict! — 5 Cubes
+## 📝 Let's Predict! — 5 Cubes
 <hr>
 
 :::: {.columns}
@@ -427,7 +427,7 @@ Smokey Buoy's camera has two jobs:
 :::
 ::::
 
-## Let's Predict! — 10 Cubes
+## 📝 Let's Predict! — 10 Cubes
 <hr>
 
 :::: {.columns}
@@ -446,7 +446,7 @@ Smokey Buoy's camera has two jobs:
 :::
 ::::
 
-## Let's Predict! — 10 Cubes
+## 📝 Let's Predict! — 10 Cubes
 <hr>
 
 :::: {.columns}
