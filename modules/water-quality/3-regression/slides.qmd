@@ -1223,7 +1223,7 @@ show_prediction_plot(color_data, nitrate_ppm, slope, intercept)
 <hr>
 
 :::{.fourtyeightpt-font}
-1. Use the applet to find the R, G, or B value for the new cards (per your group).
+1. Identify R, G, or B value for the new cards (per your group color).
 2. Use the graphing tool to **predict the nitrate concentration (ppm)**.
 3. Record these predictions on your handout.
 :::
