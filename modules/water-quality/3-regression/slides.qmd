@@ -1215,8 +1215,7 @@ show_prediction_plot(color_data, nitrate_ppm, slope, intercept)
 :::{.gray-container .fourtyeightpt-font}
 **Materials Needed:**
 
-- 💻 [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html){target="_blank"}
-- Three Additional "Nitrate Test Pad" Cards
+- Three Additional "Nitrate Test Pad" Cards from Real Buoy Data (with RGB values printed)
 - Handout / Pencil
 :::
 
@@ -1236,73 +1235,6 @@ show_prediction_plot(color_data, nitrate_ppm, slope, intercept)
 | Sample 1 |  |  |  |
 | Sample 2 |  |  |  |
 | Sample 3 |  |  |  |
-
-## 🗣️ Share Out: What Are Your Model Predictions?
-<hr>
-| Sample # | Red Model | Green Model| Blue Model |
-|:---:|:---:|:---:|:---:|
-| Sample 1 |  |  |  |
-| Sample 2 |  |  |  |
-| Sample 3 |  |  |  |
-
-::: {.callout-important}
-## Consider
-Wouldn't it be great if there was a number to tell us how good our models/predictions are?
-:::
-
-# Understanding R²
-
-## How Good Is Our Model? R²
-<hr>
-
-:::{.activity-text}
-**R²** (R-squared) tells us how well our regression line fits the data — like a report card:
-:::
-
-| R² value | What it means |
-|----------|---------------|
-| Close to **100%** | Line fits very well — predictions will be accurate |
-| Around **70–90%** | A reasonably strong fit |
-| Close to **0%** | Line barely fits — predictions won't be reliable |
-
-## Calculate Your R² Value
-<hr>
-
-:::{.ltblue-container .thirtyfourpt-font}
-🎯 Checkpoint 6. c: Calculate your model’s R-squared value
-:::
-
-:::{.dkorange-container .thirtyfourpt-font}
-Click ▶️ **Run Code** to calculate your model's R² value.
-:::
-
-```python
-r_squared = calculate_rsquared(color_data, nitrate_ppm, slope, intercept)
-
-print(f"R² = {r_squared * 100:.1f}%")
-```
-
-## Calculate Your R² Value
-<hr>
-
-:::{.dkorange-container .thirtyfourpt-font}
-Click ▶️ **Run Code** to calculate your model's R² value.
-:::
-
-```{python}
-r_squared = calculate_rsquared(color_data, nitrate_ppm, slope, intercept)
-
-print(f"R² = {r_squared * 100:.1f}%")
-```
-
-## 🗣️ Discuss: In Your Group
-<hr>
-
-:::{.ltblue-container .thirtyfourpt-font}
-🎯 Checkpoint 6. d: Recording your model’s R-squared on paper
-:::
-<br><br>
-Write your group's R² value on the poster at the front of the room.
 
 Compare with the other groups — what do you notice?
 <br><br>
