@@ -708,7 +708,7 @@ In our applet (for the next activity), we split the pixels into a grid and meane
 
 :::{.fourtyeightpt-font}
 1. **HB:** Open the [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html){target="_blank"} in a new tab.
-2. **HB:** Find card #1 in your deck and hold it in front of your webcam.
+2. **HB:** Take a deck from your water testing deck and hold it in front of your webcam.
 3. **DRs:** Using the middle square in the frame, record the RGB values on your handout.
 4. Repeat for all other cards in deck.
 :::
@@ -1214,7 +1214,7 @@ show_prediction_plot(color_data, nitrate_ppm, slope, intercept)
 
 :::{.gray-container .fourtyeightpt-font}
 **Materials Needed:**
-
+- 💻 [RGB Applet V2](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html){target="_blank"}
 - Three Additional "Nitrate Test Pad" Cards from Real Buoy Data (with RGB values printed)
 - Handout / Pencil
 :::
