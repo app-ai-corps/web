@@ -82,6 +82,14 @@ function toggleMenu() {
 </div>
 
 <div class="contributor-card">
+  <a href="https://faculty.utk.edu/Ian.Simpson/about" class="contributor-link">
+    <img src="assets/people/ian_simpson.jpg" alt="Ian Simpson" class="contributor-image">
+    <span class="contributor-name">Ian Simpson</span>
+    <span class="contributor-affiliation">UTK ISEE Professor</span>
+  </a>
+</div>
+
+<div class="contributor-card">
   <a href="https://cehhs.utk.edu/people/amanda-zeller/" class="contributor-link">
     <img src="assets/people/amanda.jpeg" alt="Amanda Zeller" class="contributor-image">
     <span class="contributor-name">Amanda Zeller</span>
