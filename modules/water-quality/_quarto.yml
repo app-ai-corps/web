@@ -126,6 +126,33 @@ website:
         - text: "Optional Exercise"
           href: #      
         
+    - title: "Lesson 5: Data Analysis" 
+      id: lesson-5
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+        - <b>Lesson Contents</b>
+        - text: "---"
+        - text: "1. Overview"
+          href: 5-dataanalysis/
+        - text: "2. Asking ?s of Data"
+          href: 5-dataanalysis/asking-questions
+        - text: "3. Question 1"
+          href: 5-dataanalysis/question-one
+        - text: "4. Question 2"
+          href: 5-dataanalysis/question-two
+        - text: "5. Question 3"
+          href: 5-dataanalysis/question-three
+        - text: "---"
+        - text: "6. AI Powered Careers"
+          href: 5-dataanalysis/ai-careers
+        - text: "---"
+        - text: "7. Exit Ticket"
+          href: https://forms.gle/hNmxRvhXzTNBZAyY6
+        - text: "---"
+        - text: "Optional Exercise"
+          href: #   
 
 format:
   html:

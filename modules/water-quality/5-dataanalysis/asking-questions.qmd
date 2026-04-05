@@ -1,0 +1,8 @@
+---
+title: "Asking Questions of Data"
+crossref:
+  lst-title: "🎯 Checkpoint 2."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-5
+---
