@@ -79,15 +79,21 @@ Learn about scatterplot, regression lines, and predicting nitrate concentrations
 :::
 
 ::: {.lesson-item}
-### [Lesson 4: Physical Computing, Edge AI, & Multiple Regression](#)
+### [Lesson 4: Physical Computing](#)
 
 Coming Soon.
 :::
 
 ::: {.lesson-item}
-### [Lesson 5: Analyzing Buoy Data](#)
+### [Lesson 5: Analyzing Buoy Data](5-dataanalysis)
 
-Coming Soon.
+Use AI to assist in analysis of the data collected by the buoy.
+
+*Estimated time: 90 minutes*
+
+<br>
+
+[**Slides & Facilitator Guide**](5-dataanalysis/facilitator){.facilitator}
 :::
 
 :::
