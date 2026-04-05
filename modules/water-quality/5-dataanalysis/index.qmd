@@ -1,174 +1,29 @@
 ---
-title: "Water Quality and Summary Statistics"
+title: "Analyzing Water Quality Data"
 crossref:
   lst-title: "🎯 Checkpoint 1."
   lst-labels: alpha a
 format: live-html
-sidebar: lesson-1
+sidebar: lesson-5
 ---
 
-**This module is designed to be used in conjunction with the Lesson 1 slide deck and other resources located in the facilitator's guide.**
+**This module is designed to be used in conjunction with the Lesson 5 slide deck and other resources located in the facilitator's guide.**
 
 ::: {.gray-container}
 
-**Lesson Objective:** In this lesson, you will learn how to use the Python programming language to calculate summary statistics and investigate nitrates and nitrates in water samples.
+**Lesson Objective:** In this lesson, you will use AI to ask questions of and analyze water quality data.
 
 **Materials Needed:**  
 - Your computer  
-- A web browser (Chrome, Firefox, or Safari)  
-- A calculator   
+- A web browser (Chrome, Firefox, or Safari)    
 :::
 
 :::{.ltblue-container}
 **Checkpoints on this Page:**
 
 - [**Checkpoint 1.a:** Print Statements](#lst-printstatements)
-- [**Checkpoint 1.b:** Mathematical Operators](#lst-mathoperators)
-- [**Checkpoint 1.c:** Comparing Values](#lst-comparingvalues)
-- [**Checkpoint 1.d:** Print Statements with Math](#lst-printstatementsmath)
-- [**Checkpoint 1.e:** Your Own Print Statements with Math](#lst-personalizedprintstatementsmath)
+
 
 :::
 
-🐍 Python is a **programming language** — a way to give instructions to a computer.
 
-## 💻 Let's Try Python!
-
-### Text/Strings
-Python will print text. Click the ▶️ button below to run your first Python code:
-
-:::{#lst-printstatements}
-
-:::{.dkorange-container}
-Click the ▶️ Run Code button to run the block.
-:::
-
-```{pyodide}
-#| completion: false
-# This is a comment - Python ignores lines that start with #
-# Let's make Python print a message!
-
-print("Hello, Water Scientist!")
-```
-
-Print Statements!
-
-:::
-
-**🎉 You just ran Python code!** See how it printed "Hello, Water Scientist!" below the block? We call text like this a ***string***. 
-
-Notice that strings must be in quotation marks within the code but those marks don't appear when printed. The quotation marks just tell the computer *"Hey! I'm writing regular text. Treat it like written English instead of code.,"* and it does!
-<br>
-<br>
-<br>
-
-### Math
-Now let's use Python to do some math!
-
-:::{#lst-mathoperators}
-
-:::{.dkorange-container}
-Click the ▶️ Run Code button to run the blocks.
-:::
-➕ **Addition:**
-```{pyodide}
-#| completion: false
-2 + 3
-```
-
-➖ **Subtraction:**
-```{pyodide}
-#| completion: false
-3 - 2
-```
-
-✖️ **Multiplication:**
-```{pyodide}
-#| completion: false
-2 * 3
-```
-
-➗ **Division:**
-```{pyodide}
-#| completion: false
-3 / 2
-```
-
-Mathematical Operators!
-:::
-<br>
-<br>
-<br>
-We can also ask Python to **compare values**:
-
-:::{#lst-comparingvalues}
-
-:::{.dkorange-container}
-Click the ▶️ Run Code button to run the blocks.
-:::
-This code states "The sum of 2 and 3 is greater than or equal to the product of 2 and 3."
-```{pyodide}
-#| completion: false
-2 + 3 >= 2 * 3
-```
-
-This code states "The sum of 2 and 3 is less than or equal to the product of 2 and 3."
-```{pyodide}
-#| completion: false
-2 + 3 <= 2 * 3
-```
-
-Comparing Values!
-:::
-<br>
-<br>
-
-### Text/Strings & Math
-
-You can even combine the strings and math!
-
-:::{#lst-printstatementsmath}
-
-:::{.dkorange-container}
-Click the ▶️ Run Code button to run the block.
-:::
-```{pyodide}
-#| completion: false
-print("2 + 3 =", 2 + 3)
-```
-
-Print Statements with Math!
-:::
-<br>
-<br>
-
-## 🧑‍💻 Try It Yourself!
-
-Now YOU try! Edit the code below. **Yes! You can type in the code block.** Change the numbers, change the message, then click ▶️:
-
-:::{#lst-personalizedprintstatementsmath}
-
-:::{.dkorange-container}
-Make the following modifications to the block below:
-
-- Change "Student" to your first name.
-- Create a new line 9 to calculate 15 times 4. Use lines 5 and 6 as models.
-- Try other math problems.
-
-Click the ▶️ Run Code button to run the block.
-:::
-```{pyodide}
-#| min-lines: 9
-#| completion: false
-# Change this message to your name!
-print("My name is Student")
-
-# Try different math problems
-print("5 + 3 =", 5 + 3)
-print("20 - 7 =", 20 - 7)
-
-# Calculate 15 times 4 below. Print the equation and result.
-```
-
-Your own print statements with math!
-:::
