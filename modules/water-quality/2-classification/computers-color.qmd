@@ -4,7 +4,7 @@ crossref:
   lst-title: "🎯 Checkpoint 7."
   lst-labels: alpha a
 format: live-html
-sidebar: lesson-3
+sidebar: lesson-2
 ---
 
 :::{.ltblue-container}

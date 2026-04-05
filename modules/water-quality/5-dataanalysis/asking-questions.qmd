@@ -6,3 +6,5 @@ crossref:
 format: live-html
 sidebar: lesson-5
 ---
+
+On this page, maybe we should link out to a Google Slides document where each group can make their poster, so they are ready (or almost ready) to print.
