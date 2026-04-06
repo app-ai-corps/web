@@ -20,6 +20,7 @@ sidebar: lesson-5
 import requests
 import csv
 import numpy as np
+import matplotlib.pyplot as plt
 from io import StringIO
 
 def load_class_data(csv_url):
@@ -34,7 +35,7 @@ def load_class_data(csv_url):
     return knox_nitrate, greene_nitrate
 ```
 
-## Import Buoy Data
+## 💻 Import Buoy Data
 
 :::{#lst-getcsv}
 
@@ -58,7 +59,7 @@ print("Greene County (Cove Creek) Nitrite values:", greene_nitrate)
 Import the buoy data!
 :::
 
-## Calculate Min, Max, & Length
+## 💻 Calculate Min, Max, & Length
 
 :::{#lst-minmaxlen}
 
@@ -79,7 +80,7 @@ len_knox = len(knox_nitrate)
 
 print("Minimum of Knoxville nitrate:", min_knox)
 print("Maximum of Knoxville nitrate:", max_knox)
-print("Length of Knoxville nitrate:", len_knox
+print("Length of Knoxville nitrate:", len_knox)
 ```
 
 ### Greene County Data (Cove Creek)
@@ -99,7 +100,7 @@ print("Length of Greene nitrate:", len_greene)
 Find the minimum, maximum, and length of the buoy data.
 :::
 
-## Calculate Measures of Center (Mean & Median)
+## 💻 Calculate Measures of Center (Mean & Median)
 
 :::{#lst-center}
 
@@ -136,7 +137,7 @@ print("Median of Greene nitrate:", median_greene)
 Find the mean and median of the buoy data.
 :::
 
-## Calculate Measures of Spread (Range)
+## 💻 Calculate Measures of Spread (Range)
 
 :::{#lst-spread}
 
@@ -167,4 +168,31 @@ print("Range of Greene nitrate:", greene_range)
 ```
 
 Find the range of the buoy data.
+:::
+
+## Understanding Boxplots
+
+Boxplots are a great way to visualize the spread of data. They show the min, max, and median of the data.
+
+:::{#lst-knoxboxplot}
+
+:::{.dkorange-container}
+No code edits needed! 
+
+Click the ▶️ Run Code button to run the block.
+:::
+
+```{pyodide}
+#| completion: false
+plt.figure(figsize=(8, 6))
+plt.boxplot(knox_nitrate, vert=True, patch_artist=True,
+            boxprops=dict(facecolor='plum'))
+plt.ylabel('Nitrate (mg/L)', fontsize=12)
+plt.xticks([])
+plt.title('Boxplot of Knoxville Nitrate Values (Second Creek)', fontsize=13)
+plt.grid(True, alpha=0.3, axis='y')
+plt.show()
+```
+
+Create a boxplot for the Knoxville nitrate data.
 :::
