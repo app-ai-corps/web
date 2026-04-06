@@ -1,7 +1,7 @@
 ---
 title: "AI-Powered Careers"
 crossref:
-  lst-title: "🎯 Checkpoint 6."
+  lst-title: "🎯 Checkpoint 7."
   lst-labels: alpha a
 format: live-html
 sidebar: lesson-5

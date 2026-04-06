@@ -1,0 +1,87 @@
+---
+title: "Intro to Statistics: Review"
+crossref:
+  lst-title: "🎯 Checkpoint 2."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-5
+---
+
+:::{.ltblue-container}
+**Checkpoints on this Page:**
+
+- [**Checkpoint 2.a:** Import Buoy Data](#lst-getcsv)
+:::
+<hr>
+
+```{pyodide}
+#| include: false
+import requests
+import csv
+from io import StringIO
+
+def load_class_data(csv_url):
+    response = requests.get(csv_url)
+    reader = csv.reader(StringIO(response.text))
+    next(reader)  # Skip header
+    rows = list(reader)
+    
+    knox_nitrate = [float(row[0]) for row in rows]
+    greene_nitrite = [float(row[1]) for row in rows]
+    
+    return knox_nitrate, greene_nitrate
+```
+
+:::{#lst-getcsv}
+
+:::{.dkorange-container}
+Import the buoy data from Cove Creek (Greene Co.) and Second Creek (Knoxville).
+
+No code edits needed! Click the ▶️ Run Code button to run the block.
+:::
+
+```{pyodide}
+#| persist: true
+#| completion: false
+
+csv_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSW_8RlRGj_e_WRurjN5hJr6KXhyK2DlujrV0xCLGCXxv698jTRBmpRO-aqHH-RaCvWep61tYE0_C7S/pub?gid=0&single=true&output=csv"
+
+knox_nitrate, greene_nitrate = load_class_data(csv_url)
+
+print("Knoxville (Second Creek) Nitrate values:", knox_nitrate)
+print("Greene County (Cove Creek) Nitrite values:", greene_nitrate)
+```
+
+Import the buoy data!
+:::
+
+:::{#lst-minmaxlen}
+:::{columns}
+:::{column}
+
+```{pyodide}
+#| persist: true
+#| completion: false
+
+min_knox = min(knox_nitrate)
+max_knox = max(knox_nitrate)
+len_knox = len(knox_nitrate)
+```
+
+:::
+
+:::{column}
+
+```{pyodide}
+#| persist: true
+#| completion: false
+
+min_greene = min(greene_nitrate)
+max_greene = max(greene_nitrate)
+len_greene = len(greene_nitrate)
+```
+
+:::
+
+Find the minimum, maximum, and length of the buoy data.
+:::
