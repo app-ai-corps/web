@@ -138,20 +138,9 @@ website:
           href: 5-dataanalysis/
         - text: "2. Intro Statistics: Review"
           href: 5-dataanalysis/intro-stats-review
-        - text: "3. Asking ?s of Data"
-          href: 5-dataanalysis/asking-questions
-        - text: "4. Question 1"
-          href: 5-dataanalysis/question-one
-        - text: "5. Question 2"
-          href: 5-dataanalysis/question-two
-        - text: "6. Question 3"
-          href: 5-dataanalysis/question-three
         - text: "---"
-        - text: "7. AI Powered Careers"
-          href: 5-dataanalysis/ai-careers
-        - text: "---"
-        - text: "8. Exit Ticket"
-          href: https://forms.gle/hNmxRvhXzTNBZAyY6
+        - text: "3. Exit Ticket"
+          href: https://docs.google.com/forms/d/e/1FAIpQLSdZ8ViE2i4VvUiLVlNWsbADCPyVfVLXc3YkQ5_t4I9Tlfp6Kw/viewform?usp=sharing&ouid=101918895079830260600
         - text: "---"
         - text: "Optional Exercise"
           href: #   

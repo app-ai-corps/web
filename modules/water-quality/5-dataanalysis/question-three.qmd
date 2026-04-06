@@ -1,8 +1,0 @@
----
-title: "Question 3"
-crossref:
-  lst-title: "🎯 Checkpoint 6."
-  lst-labels: alpha a
-format: live-html
-sidebar: lesson-5
----
