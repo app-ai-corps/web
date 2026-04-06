@@ -12,6 +12,10 @@ sidebar: lesson-5
 
 - [**Checkpoint 2.a:** Import Buoy Data](#lst-getcsv)
 - [**Checkpoint 2.b:** Calculate Minimum and Maximum](#lst-minmaxlen)
+- [**Checkpoint 2.c:** Calculate Mean and Median](#lst-center)
+- [**Checkpoint 2.d:** Calculate Range](#lst-spread)
+- [**Checkpoint 2.e:** Understand Boxplots](#lst-knoxboxplot)
+
 :::
 <hr>
 
