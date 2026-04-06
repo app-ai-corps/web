@@ -19,6 +19,7 @@ sidebar: lesson-5
 #| include: false
 import requests
 import csv
+import numpy as np
 from io import StringIO
 
 def load_class_data(csv_url):
@@ -32,6 +33,8 @@ def load_class_data(csv_url):
     
     return knox_nitrate, greene_nitrate
 ```
+
+## Import Buoy Data
 
 :::{#lst-getcsv}
 
@@ -55,25 +58,113 @@ print("Greene County (Cove Creek) Nitrite values:", greene_nitrate)
 Import the buoy data!
 :::
 
+## Calculate Min, Max, & Length
+
 :::{#lst-minmaxlen}
+
+:::{.dkorange-container}
+No code edits needed! 
+
+Click the ▶️ Run Code button to run the block.
+:::
+
+### Knoxville Data (Second Creek)
 
 ```{pyodide}
 #| persist: true
 #| completion: false
-
 min_knox = min(knox_nitrate)
 max_knox = max(knox_nitrate)
 len_knox = len(knox_nitrate)
+
+print("Minimum of Knoxville nitrate:", min_knox)
+print("Maximum of Knoxville nitrate:", max_knox)
+print("Length of Knoxville nitrate:", len_knox
 ```
+
+### Greene County Data (Cove Creek)
 
 ```{pyodide}
 #| persist: true
 #| completion: false
-
 min_greene = min(greene_nitrate)
 max_greene = max(greene_nitrate)
 len_greene = len(greene_nitrate)
+
+print("Minimum of Greene nitrate:", min_greene)
+print("Maximum of Greene nitrate:", max_greene)
+print("Length of Greene nitrate:", len_greene)
 ```
 
 Find the minimum, maximum, and length of the buoy data.
+:::
+
+## Calculate Measures of Center (Mean & Median)
+
+:::{#lst-center}
+
+:::{.dkorange-container}
+No code edits needed! 
+
+Click the ▶️ Run Code button to run the block.
+:::
+
+### Knoxville Data (Second Creek)
+
+```{pyodide}
+#| persist: true
+#| completion: false
+mean_knox = np.mean(knox_nitrate)
+median_knox = np.median(knox_nitrate)
+
+print("Mean of Knoxville nitrate:", mean_knox)
+print("Median of Knoxville nitrate:", median_knox)
+```
+
+### Greene County Data (Cove Creek)
+
+```{pyodide}
+#| persist: true
+#| completion: false
+mean_greene = np.mean(greene_nitrate)
+median_greene = np.median(greene_nitrate)
+
+print("Mean of Greene nitrate:", mean_greene)
+print("Median of Greene nitrate:", median_greene)
+```
+
+Find the mean and median of the buoy data.
+:::
+
+## Calculate Measures of Spread (Range)
+
+:::{#lst-spread}
+
+:::{.dkorange-container}
+No code edits needed! 
+
+Click the ▶️ Run Code button to run the block.
+:::
+
+### Knoxville Data (Second Creek)
+
+```{pyodide}    
+#| persist: true
+#| completion: false    
+knox_range = max(knox_nitrate) - min(knox_nitrate)
+
+print("Range of Knoxville nitrate:", knox_range)
+```
+
+### Greene County Data (Cove Creek)
+
+```{pyodide}
+#| persist: true
+#| completion: false
+greene_range = max(greene_nitrate) - min(greene_nitrate)
+
+print("Range of Greene nitrate:", greene_range)
+```
+
+Find the range of the buoy data.
 :::
