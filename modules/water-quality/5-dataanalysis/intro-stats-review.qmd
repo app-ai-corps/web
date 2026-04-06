@@ -28,7 +28,7 @@ def load_class_data(csv_url):
     rows = list(reader)
     
     knox_nitrate = [float(row[0]) for row in rows if row[0].strip()]
-    greene_nitrite = [float(row[1]) for row in rows if len(row) > 1 and row[1].strip()]
+    greene_nitrate = [float(row[1]) for row in rows if len(row) > 1 and row[1].strip()]
     
     return knox_nitrate, greene_nitrate
 ```
