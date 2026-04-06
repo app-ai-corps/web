@@ -170,7 +170,7 @@ print("Range of Greene nitrate:", greene_range)
 Find the range of the buoy data.
 :::
 
-## Understanding Boxplots
+## 💻 Understanding Boxplots
 
 Boxplots are a great way to visualize the spread of data. They show the min, max, and median of the data.
 
@@ -186,7 +186,7 @@ Click the ▶️ Run Code button to run the block.
 #| completion: false
 plt.figure(figsize=(8, 6))
 plt.boxplot(knox_nitrate, vert=True, patch_artist=True,
-            boxprops=dict(facecolor='plum'))
+            whis=[0, 100],boxprops=dict(facecolor='plum'))
 plt.ylabel('Nitrate (mg/L)', fontsize=12)
 plt.xticks([])
 plt.title('Boxplot of Knoxville Nitrate Values (Second Creek)', fontsize=13)
