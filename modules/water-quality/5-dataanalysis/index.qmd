@@ -24,10 +24,10 @@ sidebar: lesson-5
  - In workshop #3, we learned about how to use an AI regression model to predict nitrate levels from RGB color values on test strips.
  - In workshop #4, we learned about physical computing and how tiny computers, other physical components, and computer code can come together to make really great things—like marshmellow sorters!
 
- ## Today: We'll put all this together and analyze the data from Smokey Buoy!
+## Today: We'll put all this together and analyze the data from Smokey Buoy!
 
 ![](images/smokey_buoy.png){fig-align="center"}
 
- Let's get started!
+Let's get started!
 
 

@@ -8,6 +8,6 @@ sidebar: lesson-5
 ---
 
 :::{.ltblue-container}
-# **What Question Do You Want to Ask of the Data?**
+## **What Question Do You Want to Ask of the Data?**
 :::
 
