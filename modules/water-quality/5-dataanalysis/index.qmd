@@ -18,12 +18,16 @@ sidebar: lesson-5
 - A web browser (Chrome, Firefox, or Safari)    
 :::
 
-:::{.ltblue-container}
-**Checkpoints on this Page:**
+## Recalling Previous Workshops
+ - In workshop #1, we learned about introductory statistics and the Python programming language 
+ - In workshop #2, we learned how to use an AI classification model and how the buoy uses this kind of model to check for new test pads!
+ - In workshop #3, we learned about how to use an AI regression model to predict nitrate levels from RGB color values on test strips.
+ - In workshop #4, we learned about physical computing and how tiny computers, other physical components, and computer code can come together to make really great things—like marshmellow sorters!
 
-- [**Checkpoint 1.a:** Print Statements](#lst-printstatements)
+ ## Today: We'll put all this together and analyze the data from Smokey Buoy!
 
+![](images/smokey_buoy.png){fig-align="center"}
 
-:::
+ Let's get started!
 
 
