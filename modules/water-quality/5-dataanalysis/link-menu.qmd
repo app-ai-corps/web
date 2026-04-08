@@ -85,7 +85,7 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vSYCmPoxd222OlgfyWYIeUps7Mp4dnrW
 [Group 5 Slides](https://docs.google.com/presentation/d/1PdOmozmeQCIeMQ2A8azDGB92rljRLf0mKCeRW0uDyqU/edit?usp=sharing)  
 :::
 
-### Prompt for data-formulator.ai
+#### Prompt for data-formulator.ai
 
 :::{.ltgray-container}
 ```
@@ -104,7 +104,7 @@ Create a line graph using the data from the CSV. Use only the data whose nitrate
 [Group 5 Slides](https://docs.google.com/presentation/d/1Y5LZNWrDH-VPHEiFvpe2bGxhHwzXaftllcm1k8sPwgs/edit?usp=sharing)  
 :::
 
-### Prompt for data-formulator.ai
+#### Prompt for data-formulator.ai
 
 :::{.ltgray-container}
 ```
@@ -123,7 +123,7 @@ Create a line graph using the data from the CSV. Use only the data whose nitrate
 [Group 5 Slides](https://docs.google.com/presentation/d/1uTCw-waQERuXU6MnSRQH5gXZpDph6kqa6nfZljRDCmg/edit?usp=sharing)  
 :::
 
-### Prompt for data-formulator.ai
+#### Prompt for data-formulator.ai
 
 :::{.ltgray-container}
 ```
