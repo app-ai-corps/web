@@ -85,6 +85,14 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vSYCmPoxd222OlgfyWYIeUps7Mp4dnrW
 [Group 5 Slides](https://docs.google.com/presentation/d/1PdOmozmeQCIeMQ2A8azDGB92rljRLf0mKCeRW0uDyqU/edit?usp=sharing)  
 :::
 
+### Prompt for data-formulator.ai
+
+:::{.ltgray-container}
+```
+Create a line graph using the data from the CSV. Use only the data whose nitrate source is Knox creek. The X-Axis should be time. The Y-Axis should be nitrate levels (ppm). Show trends clearly and label the graph.
+```
+:::
+
 ## Greene County Explorers
 ***How does nitrate in Cove Creek change over time?***
 
@@ -96,6 +104,14 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vSYCmPoxd222OlgfyWYIeUps7Mp4dnrW
 [Group 5 Slides](https://docs.google.com/presentation/d/1Y5LZNWrDH-VPHEiFvpe2bGxhHwzXaftllcm1k8sPwgs/edit?usp=sharing)  
 :::
 
+### Prompt for data-formulator.ai
+
+:::{.ltgray-container}
+```
+Create a line graph using the data from the CSV. Use only the data whose nitrate source is Greene Creek. The X-Axis should be time. The Y-Axis should be nitrate levels (ppm). Show trends clearly and label the graph.
+```
+:::
+
 ## Creek Comparers
 ***Which creek between Knoxville (Second Creek) and Greeneville (Cove Creek) has higher nitrate levels?***
 
@@ -105,4 +121,12 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vSYCmPoxd222OlgfyWYIeUps7Mp4dnrW
 [Group 3 Slides](https://docs.google.com/presentation/d/1FNWBmPAGPpYyE-DsS3l1GYa9TmdxHcsG0SFRSMCmnDQ/edit?usp=sharing)  
 [Group 4 Slides](https://docs.google.com/presentation/d/1Qj1QI4K5NrLNF-4r1NWrPFTZJ8gf1yYClUEJzK1Y-NE/edit?usp=sharing)  
 [Group 5 Slides](https://docs.google.com/presentation/d/1uTCw-waQERuXU6MnSRQH5gXZpDph6kqa6nfZljRDCmg/edit?usp=sharing)  
+:::
+
+### Prompt for data-formulator.ai
+
+:::{.ltgray-container}
+```
+Create a parallel box plot using the data from the CSV. Compare the nitrate source from each location to the nitrate_ppm. Label the graph.
+```
 :::
