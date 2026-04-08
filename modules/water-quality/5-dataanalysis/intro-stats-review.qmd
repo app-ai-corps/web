@@ -180,6 +180,8 @@ Boxplots are a great way to visualize the spread of data. They show the min, max
 
 :::{#lst-knoxboxplot}
 
+### Box and Whisker Plot
+
 :::{.dkorange-container}
 No code edits needed! 
 
@@ -200,3 +202,25 @@ plt.show()
 
 Create a boxplot for the Knoxville nitrate data.
 :::
+
+## Modified Boxplot
+
+- Shows outliers!
+
+:::{.dkorange-container}
+No code edits needed! 
+
+Click the ▶️ Run Code button to run the block.
+:::
+
+```{pyodide}
+#| completion: false
+plt.figure(figsize=(8, 6))
+plt.boxplot(knox_nitrate, vert=True, patch_artist=True,
+            boxprops=dict(facecolor='plum'))
+plt.ylabel('Nitrate (mg/L)', fontsize=12)
+plt.xticks([])
+plt.title('Boxplot of Knoxville Nitrate Values (Second Creek)', fontsize=13)
+plt.grid(True, alpha=0.3, axis='y')
+plt.show()
+```
