@@ -3,7 +3,9 @@ title: "Links for Today"
 crossref:
   lst-title: "🎯 Checkpoint 3."
   lst-labels: alpha a
-format: live-html
+format:
+  live-html: 
+    copy-code: true
 sidebar: lesson-5
 ---
 
@@ -17,7 +19,7 @@ sidebar: lesson-5
 [3. How do the nitrate levels in Knoxville (Second Creek) and Greene County (Cove Creek) compare?](#creek-comparers)
 :::
 
-```{.text code-copy="true"}
+```
 https://docs.google.com/spreadsheets/d/e/2PACX-1vSYCmPoxd222OlgfyWYIeUps7Mp4dnrWDDRTCs5PeOCMYp1HrEDKoNwg7mn8Tl0uh-lTBwvAwuIA2eK/pub?gid=0&single=true&output=csv
 ```
 ## Knoxville Explorers
