@@ -1,0 +1,11 @@
+---
+title: "AI Careers"
+crossref:
+  lst-title: "🎯 Checkpoint 2."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-6
+---
+
+Add content here
+
