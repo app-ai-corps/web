@@ -97,7 +97,7 @@ Use AI to assist in analysis of the data collected by the buoy.
 :::
 
 ::: {.lesson-item}
-### [Lesson 5: AI Careers](6-careers)
+### [Lesson 6: AI Careers](6-careers)
 
 How will AI shape current and future careers?
 

@@ -7,5 +7,312 @@ format: live-html
 sidebar: lesson-6
 ---
 
-Add content here
+## How can you use AI in your future career?
 
+::: {.callout-tip title="Jump to a Career" appearance="simple"}
+[🐄 Animal Agriculture](#animal-agriculture)
+[⚡ Electrician](#electrician)
+[🏥 Healthcare & Nursing](#healthcare-nursing)
+[❄️🔥 HVAC](#hvac)
+[🌱 Plant Agriculture](#plant-agriculture)
+[🚰 Plumbing](#plumbing)
+[🐾 Veterinarian](#veterinarian)
+[💧 Water Quality Scientist](#water-quality-scientist)
+:::
+
+## 🐄 Animal Agriculture {#animal-agriculture}
+
+::: {.callout-note collapse="true" title="How could AI help you?"}
+AI can use sensors (video, microphones, wearables) to monitor breathing and activity, then flag early signs of sickness.
+:::
+
+::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+**Classification** — the AI predicts a label (example: "healthy" vs "needs attention").
+
+**Regression** — the AI predicts a number (example: body temperature estimate or weight gain trend).
+:::
+
+::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+- Label real examples of healthy vs sick animals and explain what "early warning" looks like.
+- Add context (feed changes, heat stress) so the AI learns what matters in real barns and pastures.
+:::
+
+::: {.callout-note collapse="true" title="How could you define rules for AI? (Animal safety + welfare)"}
+- Be extra careful during heat waves by lowering alert thresholds and responding faster.
+- Require a human check before treatment decisions, especially for urgent alerts.
+:::
+
+::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+Take classes that build your foundation: Biology, Health Science, Algebra, and Statistics.
+
+Volunteer when possible (hospital programs, clinics, community health events).
+:::
+
+::: {.callout-note collapse="true" title="East Tennessee Options"}
+**UT Extension — Agriculture**
+<https://utextension.tennessee.edu/ut-extension-master-programs/>
+
+**Walters State Community College**
+<https://ws.edu/academics/programs/ttp/as/agriculture-animal-science.aspx>
+:::
+
+---
+
+## ⚡ Electrician {#electrician}
+
+::: {.callout-note collapse="true" title="How could AI help you?"}
+AI can help spot unsafe electrical conditions faster — for example, flagging possible faulty wiring or overheating so it gets checked quickly.
+:::
+
+::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+**Classification** — the AI predicts a label (example: "safe" vs "unsafe," "normal" vs "fault").
+
+**Regression** — the AI predicts a number (example: temperature estimate, load estimate, or failure risk score).
+:::
+
+::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+Provide examples of safe/unsafe setups and label what counts as "urgent" vs "monitor," so alerts match real jobsite priorities.
+:::
+
+::: {.callout-note collapse="true" title="How could you define rules for AI? (Keeping people safe)"}
+- Alert a human immediately when danger is detected.
+- Keep standard safety procedures as the rule — AI is support, not permission to touch live systems.
+:::
+
+::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+Look for apprenticeship pathways after graduation and build basic electrical safety skills through CTE/shop courses when available.
+:::
+
+::: {.callout-note collapse="true" title="East Tennessee Options"}
+**Walters State Community College**
+<https://careertraining.ws.edu/training-programs/residential-electrician/>
+
+**TVA — Electrician Apprentice Program**
+<https://www.tva.com/Careers/Electrician-Apprentice-Program>
+
+**ApprenticeshipTN — Find a Registered Apprenticeship Program**
+<https://www.tn.gov/apprenticeshiptn/find-a-program.html>
+:::
+
+---
+
+## 🏥 Healthcare & Nursing {#healthcare-nursing}
+
+::: {.callout-note collapse="true" title="How could AI help you?"}
+AI can act like a smart assistant that looks for patterns quickly. For example, AI reviews an X‑ray and flags **"possible fracture"** vs **"no fracture seen"** so a health care professional can double-check sooner.
+:::
+
+::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+**Classification** — the AI predicts a label (example: "fracture" vs "no fracture").
+
+**Regression** — the AI predicts a number (example: estimated healing time in days/weeks, or a risk score for complications).
+:::
+
+::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+- Provide many real examples (like X‑rays) labeled correctly.
+- Point out tricky cases (unclear images, unusual anatomy, different ages).
+- Explain the clinical context that the AI can't "know," like symptoms and injury history.
+:::
+
+::: {.callout-note collapse="true" title="How could you define rules for AI? (Keeping patients safe)"}
+- **AI doesn't replace people.** A health care professional makes the final call.
+- Require **extra review** for higher-risk situations (often kids, older adults, or unclear images).
+- If symptoms look serious, a person reviews even if AI says "no fracture."
+:::
+
+::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+- Take classes that build your foundation: Biology, Health Science, Algebra, and Statistics.
+- Volunteer when possible (hospital programs, clinics, community health events).
+:::
+
+::: {.callout-note collapse="true" title="East Tennessee Options"}
+**University of Tennessee, Knoxville — Bachelor of Science in Nursing (BSN)**
+<https://nursing.utk.edu/undergraduate-programs/bachelor-of-science-in-nursing-bsn/>
+
+**Tusculum University — Pre-Medical Concentration**
+<https://catalog.tusculum.edu/preview_program.php?catoid=8&poid=1737&returnto=1133>
+
+**Walters State Community College**
+<https://ws.edu/academics/programs/aas/nursing.aspx>
+:::
+
+---
+
+## ❄️🔥 HVAC (Heating & Cooling) {#hvac}
+
+::: {.callout-note collapse="true" title="How could AI help you?"}
+AI can detect when airflow is **blocked** (dirty filter, closed vent) or when temperature patterns suggest a system problem so you can fix it faster.
+:::
+
+::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+**Classification** — the AI predicts a label (example: "normal airflow" vs "blocked airflow").
+
+**Regression** — the AI predicts a number (example: expected temperature drop, energy use, or time-to-failure estimate).
+:::
+
+::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+- Teach the AI what **normal airflow** looks like across different systems.
+- Provide examples of proper vs improper **temperature patterns** before/after repairs.
+:::
+
+::: {.callout-note collapse="true" title="How could you define rules for AI? (Safety + comfort)"}
+- Alert for **extreme temperature risks** and prioritize rapid response.
+- Flag safety issues immediately and require a human technician to verify.
+:::
+
+::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+Pursue an apprenticeship and/or an HVAC certificate program after graduation.
+:::
+
+::: {.callout-note collapse="true" title="East Tennessee Options"}
+**Walters State Community College**
+<https://careertraining.ws.edu/training-programs/hvacr-technician/>
+
+**ApprenticeshipTN — Find a Registered Apprenticeship Program**
+<https://www.tn.gov/apprenticeshiptn/find-a-program.html>
+:::
+
+---
+
+## 🌱 Plant Agriculture {#plant-agriculture}
+
+::: {.callout-note collapse="true" title="How could AI help you?"}
+AI can look at plant photos and **detect plant disease** early — before it spreads.
+:::
+
+::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+**Classification** — the AI predicts a label (example: "healthy" vs "diseased," or the disease type).
+
+**Regression** — the AI predicts a number (example: disease severity score, expected yield, or days until harvest).
+:::
+
+::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+- Collect and label images of **healthy vs unhealthy** plants across seasons, lighting, and growth stages.
+- Connect disease IDs to **research-based treatment options** so recommendations match real farming practices.
+:::
+
+::: {.callout-note collapse="true" title="How could you define rules for AI? (Keeping people + crops safe)"}
+- Be careful with **pesticide recommendations** by requiring human review and following research-based guidance.
+- Use **early alerts** to prevent crop loss while tracking false alarms so you don't over-treat.
+:::
+
+::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+Work in gardens/farms, join **4‑H**, and build biology and data skills through projects and classes.
+:::
+
+::: {.callout-note collapse="true" title="East Tennessee Options"}
+**UT Extension — Agriculture**
+<https://utextension.tennessee.edu/ut-extension-master-programs/>
+
+**Walters State Community College**
+<https://ws.edu/academics/programs/ttp/as/agriculture-plant-soil-science.aspx>
+:::
+
+---
+
+## 🚰 Plumbing {#plumbing}
+
+::: {.callout-note collapse="true" title="How could AI help you?"}
+AI can help detect **leaks** early and support predictive maintenance by spotting patterns that suggest a pipe is likely to fail.
+:::
+
+::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+**Classification** — the AI predicts a label (example: "leak" vs "no leak," "normal" vs "abnormal flow").
+
+**Regression** — the AI predicts a number (example: leak rate, pressure drop amount, or probability of failure over time).
+:::
+
+::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+Train the AI using real examples of normal vs abnormal flow (sound, pressure, meter readings) and label confirmed leak/clog cases.
+:::
+
+::: {.callout-note collapse="true" title="How could you define rules for AI? (Preventing damage)"}
+- Shut off water (or trigger urgent alerts) in true emergencies.
+- Alert a human quickly to prevent flooding and property damage.
+:::
+
+::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+Use apprenticeship pathways and registered programs to build skills while earning.
+:::
+
+::: {.callout-note collapse="true" title="East Tennessee Options"}
+**Walters State Community College**
+<https://careertraining.ws.edu/training-programs/plumbing-foundations/>
+
+**ApprenticeshipTN — Find a Registered Apprenticeship Program**
+<https://www.tn.gov/apprenticeshiptn/find-a-program.html>
+:::
+
+---
+
+## 🐾 Veterinarian {#veterinarian}
+
+::: {.callout-note collapse="true" title="How could AI help you?"}
+AI can help organize clinic information and flag possible issues from images or records so a veterinarian can review faster.
+:::
+
+::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+**Classification** — the AI predicts a label (example: "possible infection" vs "no infection," or "urgent" vs "routine").
+
+**Regression** — the AI predicts a number (example: recovery time estimate, weight-change trend, or risk score).
+:::
+
+::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+Help label cases and images correctly across species, breeds, and ages so the AI learns what "possible infection" and "no infection" look like.
+:::
+
+::: {.callout-note collapse="true" title="How could you define rules for AI? (Animal safety)"}
+Require human review for emergencies, and verify any medication/dosing guidance with a veterinarian.
+:::
+
+::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+Volunteer with animals (shelters, farms, clinics) and build a strong biology/chemistry foundation.
+:::
+
+::: {.callout-note collapse="true" title="East Tennessee Options"}
+**University of Tennessee, Knoxville — Veterinary Medicine**
+<https://vetmed.tennessee.edu/>
+
+**Tusculum University — Veterinary Concentration**
+<https://catalog.tusculum.edu/preview_program.php?catoid=8&poid=1737&returnto=1133>
+
+**Walters State Community College — Veterinary Concentration**
+<https://ws.edu/academics/programs/as/animal-science-pre-veterinary-medicine.aspx>
+:::
+
+---
+
+## 💧 Water Quality Scientist {#water-quality-scientist}
+
+::: {.callout-note collapse="true" title="How could AI help you?"}
+AI can monitor water sensors and lab data to spot unusual patterns that might indicate a **water quality problem** earlier.
+:::
+
+::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+**Classification** — the AI predicts a label (example: "normal" vs "possible contamination event").
+
+**Regression** — the AI predicts a number (example: predicted pH, turbidity, nitrate level, or a contamination risk score).
+:::
+
+::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+Use paired datasets (sensor readings + lab-confirmed results) so the AI learns from accurate "ground truth" measurements.
+:::
+
+::: {.callout-note collapse="true" title="How could you define rules for AI? (Public safety)"}
+Require confirmatory testing and clear escalation steps when AI flags a serious risk to public health.
+:::
+
+::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+Take chemistry, biology, and environmental science, and do safe local water-testing projects through school or clubs.
+:::
+
+::: {.callout-note collapse="true" title="East Tennessee Options"}
+**UTK — Environmental Engineering, BS (Tickle College of Engineering)**
+<https://tickle.utk.edu/academics-and-programs/undergraduate-programs/environmental-engineering-bs/>
+
+**Tusculum University — Environmental Science**
+<https://site.tusculum.edu/environmental-science/>
+
+**Walters State Community College**
+<https://ws.edu/academics/programs/as/pre-environmental-health.aspx>
+:::
