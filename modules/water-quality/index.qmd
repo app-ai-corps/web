@@ -96,6 +96,18 @@ Use AI to assist in analysis of the data collected by the buoy.
 [**Slides & Facilitator Guide**](5-dataanalysis/facilitator){.facilitator}
 :::
 
+::: {.lesson-item}
+### [Lesson 5: AI Careers](6-careers)
+
+How will AI shape current and future careers?
+
+*Estimated time: 90 minutes*
+
+<br>
+
+[**Slides & Facilitator Guide**](6-careers/facilitator){.facilitator}
+:::
+
 :::
 :::
 

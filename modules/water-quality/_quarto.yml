@@ -147,6 +147,25 @@ website:
         - text: "Optional Exercise"
           href: #   
 
+    - title: "Lesson 6: AI Careers" 
+      id: lesson-6
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+        - <b>Lesson Contents</b>
+        - text: "---"
+        - text: "1. Overview"
+          href: 6-careers/
+        - text: "2. AI Careers"
+          href: 6-careers/careers
+        - text: "---"
+        - text: "3. Exit Ticket"
+          href: https://docs.google.com/forms/d/e/1FAIpQLSdZ8ViE2i4VvUiLVlNWsbADCPyVfVLXc3YkQ5_t4I9Tlfp6Kw/viewform?usp=sharing&ouid=101918895079830260600
+        - text: "---"
+        - text: "Optional Exercise"
+          href: #  
+
 format:
   html:
     link-external-newwindow: true
