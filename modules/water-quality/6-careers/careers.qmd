@@ -10,14 +10,14 @@ sidebar: lesson-6
 ## How can you use AI in your future career?
 
 ::: {.callout-tip title="Jump to a Career" appearance="simple"}
-[🐄 Animal Agriculture](#animal-agriculture)
-[⚡ Electrician](#electrician)
-[🏥 Healthcare & Nursing](#healthcare-nursing)
-[❄️🔥 HVAC](#hvac)
-[🌱 Plant Agriculture](#plant-agriculture)
-[🚰 Plumbing](#plumbing)
-[🐾 Veterinarian](#veterinarian)
-[💧 Water Quality Scientist](#water-quality-scientist)
+[🐄 Animal Agriculture](#animal-agriculture)  
+[⚡ Electrician](#electrician)  
+[🏥 Healthcare & Nursing](#healthcare-nursing)  
+[❄️🔥 HVAC](#hvac)  
+[🌱 Plant Agriculture](#plant-agriculture)  
+[🚰 Plumbing](#plumbing)  
+[🐾 Veterinarian](#veterinarian)  
+[💧 Water Quality Scientist](#water-quality-scientist)  
 :::
 
 ## 🐄 Animal Agriculture {#animal-agriculture}
