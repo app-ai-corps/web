@@ -1,10 +1,10 @@
 ---
-title: "Analyzing Water Quality Data"
+title: "Lesson 6: Reflecting & Exploring AI Careers"
 crossref:
   lst-title: "🎯 Checkpoint 1."
   lst-labels: alpha a
 format: live-html
-sidebar: lesson-5
+sidebar: lesson-6
 ---
 
 **This module is designed to be used in conjunction with the Lesson 5 slide deck and other resources located in the facilitator's guide.**
