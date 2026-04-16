@@ -23,32 +23,29 @@ sidebar: lesson-6
 ## 🐄 Animal Agriculture {#animal-agriculture}
 
 ::: {.callout-note collapse="true" title="How could AI help you?"}
-AI can use sensors (video, microphones, wearables) to monitor breathing and activity, then flag early signs of sickness.
-:::
 
-::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+### How could AI help you?
+AI can use sensors (video, microphones, wearables) to monitor breathing and activity, then flag early signs of sickness.
+
+### How is AI Machine Learning used here?
 **Classification** — the AI predicts a label (example: "healthy" vs "needs attention").
 
 **Regression** — the AI predicts a number (example: body temperature estimate or weight gain trend).
-:::
 
-::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+### How could you use your expertise to train AI?
 - Label real examples of healthy vs sick animals and explain what "early warning" looks like.
 - Add context (feed changes, heat stress) so the AI learns what matters in real barns and pastures.
-:::
 
-::: {.callout-note collapse="true" title="How could you define rules for AI? (Animal safety + welfare)"}
+### How could you define rules for AI?
 - Be extra careful during heat waves by lowering alert thresholds and responding faster.
 - Require a human check before treatment decisions, especially for urgent alerts.
-:::
 
-::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+### How could you work toward this career?
 Take classes that build your foundation: Biology, Health Science, Algebra, and Statistics.
 
 Volunteer when possible (hospital programs, clinics, community health events).
-:::
 
-::: {.callout-note collapse="true" title="East Tennessee Options"}
+### Where can you pursue this career in East Tennessee?
 **UT Extension — Agriculture**
 <https://utextension.tennessee.edu/ut-extension-master-programs/>
 
