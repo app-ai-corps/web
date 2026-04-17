@@ -54,7 +54,7 @@ input[type=number] {{
   <span id="swatch"></span>
 </div>
 
-<div id="chart"></div>
+<div id="gauge"></div>
 <div id="result"></div>
 
 <script>
@@ -62,7 +62,6 @@ var betas  = {betas};
 var thresh = {thresh};
 var xmean  = {xmean};
 var xstd   = {xstd};
-var stageColors = ["#2d6a2d","#6abf3a","#c8d42a","#f0a500","#e85d04","#9b1b1b"];
 
 function clamp(v){{ return Math.min(255, Math.max(0, isNaN(v) ? 0 : v)); }}
 
@@ -73,34 +72,40 @@ function predict(R, G, B){{
   var p = [cum[0]];
   for(var k=1;k<5;k++) p.push(cum[k]-cum[k-1]);
   p.push(1-cum[4]);
-  return p;
+  return p.indexOf(Math.max.apply(null, p)) + 1;
 }}
 
-var initP = predict(200, 117, 37);
-Plotly.newPlot("chart", [{{
-  type: "bar",
-  x: ["Stage 1","Stage 2","Stage 3","Stage 4","Stage 5","Stage 6"],
-  y: initP,
-  marker: {{ color: stageColors }},
-  hovertemplate: "%{{x}}: %{{y:.1%}}<extra></extra>"
+var initStage = predict(200, 117, 37);
+Plotly.newPlot("gauge", [{{
+  type: "indicator", mode: "gauge+number",
+  value: initStage,
+  number: {{ valueformat: "d", font: {{ size: 28, color: "navy" }} }},
+  title: {{ text: "Predicted Ripeness Stage", font: {{ size: 15 }} }},
+  gauge: {{
+    axis: {{ range: [0.5, 6.5], tickvals: [1,2,3,4,5,6], tickwidth: 1 }},
+    bar: {{ color: "navy", thickness: 0.25 }},
+    steps: [
+      {{ range: [0.5, 1.5], color: "#2d6a2d" }},
+      {{ range: [1.5, 2.5], color: "#6abf3a" }},
+      {{ range: [2.5, 3.5], color: "#c8d42a" }},
+      {{ range: [3.5, 4.5], color: "#f0a500" }},
+      {{ range: [4.5, 5.5], color: "#e85d04" }},
+      {{ range: [5.5, 6.5], color: "#9b1b1b" }}
+    ]
+  }}
 }}], {{
-  xaxis: {{ title: "Ripeness Stage" }},
-  yaxis: {{ title: "Probability", range: [0, 1], tickformat: ".0%" }},
-  margin: {{ t: 20, b: 50, l: 60, r: 20 }},
-  height: 300
+  margin: {{ t: 40, b: 20, l: 30, r: 30 }}, height: 260, width: 420
 }}, {{responsive: true}});
 
 function upd(){{
   var R=clamp(parseFloat(document.getElementById("inR").value));
   var G=clamp(parseFloat(document.getElementById("inG").value));
   var B=clamp(parseFloat(document.getElementById("inB").value));
-  var p = predict(R, G, B);
-  var best = p.indexOf(Math.max.apply(null, p));
+  var stage = predict(R, G, B);
   document.getElementById("swatch").style.background =
     "rgb("+Math.round(R)+","+Math.round(G)+","+Math.round(B)+")";
-  document.getElementById("result").textContent =
-    "Most likely stage: " + (best+1) + " (" + (p[best]*100).toFixed(1) + "% probability)";
-  Plotly.update("chart", {{ y: [p] }}, {{}}, [0]);
+  document.getElementById("result").textContent = "Predicted stage: " + stage;
+  Plotly.update("gauge", {{ value: [stage] }}, {{}}, [0]);
 }}
 upd();
 </script>
