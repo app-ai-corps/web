@@ -54,38 +54,64 @@ input[type=number] {{
   <span id="swatch"></span>
 </div>
 
-<div id="gauge"></div>
+<div id="plt"></div>
+<p id="lbl" style="font-size:16px;color:navy;font-weight:bold;margin:6px 0 0 8px;"></p>
 
 <script>
 var ic={intercept}, bR={b_R}, bG={b_G}, bB={b_B};
 function clamp(v){{ return Math.min(255, Math.max(0, isNaN(v) ? 0 : v)); }}
-Plotly.newPlot("gauge", [{{
-  type: "indicator", mode: "gauge+number",
-  value: ic + bR*128 + bG*128 + bB*128,
-  number: {{ valueformat: ".2f", font: {{ size: 28, color: "navy" }} }},
-  title: {{ text: "Predicted Ripeness", font: {{ size: 15 }} }},
-  gauge: {{
-    axis: {{ range: [-6, 13], tickwidth: 1 }},
-    bar: {{ color: "navy", thickness: 0.25 }},
-    steps: [
-      {{ range: [-6, 0],  color: "#d4edda" }},
-      {{ range: [0,  5],  color: "#fff3cd" }},
-      {{ range: [5,  13], color: "#f8d7da" }}
-    ],
-    threshold: {{ line: {{ color: "black", width: 3 }}, thickness: 0.75, value: ic + bR*128 + bG*128 + bB*128 }}
+
+var N=15;
+var rVals=[], gVals=[];
+for(var i=0;i<=N;i++){{ rVals.push(i*255/N); gVals.push(i*255/N); }}
+
+function makeZ(B){{
+  var z=[];
+  for(var gi=0;gi<=N;gi++){{
+    var row=[];
+    for(var ri=0;ri<=N;ri++) row.push(ic+bR*rVals[ri]+bG*gVals[gi]+bB*B);
+    z.push(row);
   }}
-}}], {{
-  margin: {{ t: 40, b: 20, l: 30, r: 30 }}, height: 260, width: 420
-}}, {{responsive: true}});
+  return z;
+}}
+
+var initB=128, initR=128, initG=128;
+var initPred=ic+bR*initR+bG*initG+bB*initB;
+
+var surf={{
+  type:"surface", x:rVals, y:gVals, z:makeZ(initB),
+  colorscale:"RdYlGn", opacity:0.7,
+  showscale:false, hoverinfo:"skip"
+}};
+var pt={{
+  type:"scatter3d", mode:"markers",
+  x:[initR], y:[initG], z:[initPred],
+  marker:{{size:8, color:"navy", line:{{color:"white",width:1}}}},
+  name:"Your prediction"
+}};
+
+Plotly.newPlot("plt",[surf,pt],{{
+  scene:{{
+    xaxis:{{title:"R"}},
+    yaxis:{{title:"G"}},
+    zaxis:{{title:"Ripeness"}}
+  }},
+  margin:{{t:30,b:10,l:10,r:10}},
+  height:420,
+  showlegend:false
+}},{{responsive:true}});
 
 function upd(){{
   var R=clamp(parseFloat(document.getElementById("inR").value));
   var G=clamp(parseFloat(document.getElementById("inG").value));
   var B=clamp(parseFloat(document.getElementById("inB").value));
-  var pred = ic + bR*R + bG*G + bB*B;
-  document.getElementById("swatch").style.background =
+  var pred=ic+bR*R+bG*G+bB*B;
+  document.getElementById("swatch").style.background=
     "rgb("+Math.round(R)+","+Math.round(G)+","+Math.round(B)+")";
-  Plotly.update("gauge", {{ value: [pred] }}, {{}}, [0]);
+  document.getElementById("lbl").textContent=
+    "Predicted Ripeness: "+pred.toFixed(3);
+  Plotly.update("plt",{{z:[makeZ(B)]}},{{}},  [0]);
+  Plotly.update("plt",{{x:[[R]],y:[[G]],z:[[pred]]}},{{}}, [1]);
 }}
 upd();
 </script>
@@ -95,7 +121,7 @@ upd();
     with warnings.catch_warnings():
         warnings.simplefilter("ignore", UserWarning)
         display(HTML(
-            '<iframe srcdoc="{}" width="100%" height="460" '
+            '<iframe srcdoc="{}" width="100%" height="560" '
             'frameborder="0" style="border:none;"></iframe>'.format(
                 srcdoc.replace('"', '&quot;')
             )
