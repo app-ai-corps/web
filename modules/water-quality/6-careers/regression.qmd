@@ -13,10 +13,10 @@ import warnings
 from IPython.display import display, HTML
 
 def show_ripeness_prediction():
-    intercept = 2.819
-    b_R = 0.019
-    b_G = -0.030
-    b_B = 0.017
+    intercept = 2.500
+    b_R = 0.021
+    b_G = -0.029
+    b_B = 0.012
 
     srcdoc = f"""<!DOCTYPE html>
 <html>
