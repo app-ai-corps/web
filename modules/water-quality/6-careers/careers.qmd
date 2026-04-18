@@ -131,31 +131,28 @@ AI can act like a smart assistant that looks for patterns quickly. For example, 
 
 ## ❄️🔥 HVAC (Heating & Cooling) {#hvac}
 
-::: {.callout-note collapse="true" title="How could AI help you?"}
-AI can detect when airflow is **blocked** (dirty filter, closed vent) or when temperature patterns suggest a system problem so you can fix it faster.
-:::
+::: {.callout-note collapse="true" title="Expand me to read about AI in HVAC."}
 
-::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+### How could AI help you?
+AI can detect when airflow is **blocked** (dirty filter, closed vent) or when temperature patterns suggest a system problem so you can fix it faster.
+
+### How is AI Machine Learning used here?
 **Classification** — the AI predicts a label (example: "normal airflow" vs "blocked airflow").
 
 **Regression** — the AI predicts a number (example: expected temperature drop, energy use, or time-to-failure estimate).
-:::
 
-::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+### How could you use your expertise to train AI?
 - Teach the AI what **normal airflow** looks like across different systems.
 - Provide examples of proper vs improper **temperature patterns** before/after repairs.
-:::
 
-::: {.callout-note collapse="true" title="How could you define rules for AI? (Safety + comfort)"}
+### How could you define rules for AI?
 - Alert for **extreme temperature risks** and prioritize rapid response.
 - Flag safety issues immediately and require a human technician to verify.
-:::
 
-::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+### How could you work toward this career?
 Pursue an apprenticeship and/or an HVAC certificate program after graduation.
-:::
 
-::: {.callout-note collapse="true" title="East Tennessee Options"}
+### Where can you pursue this career in East Tennessee?
 **Walters State Community College**
 <https://careertraining.ws.edu/training-programs/hvacr-technician/>
 
@@ -167,31 +164,28 @@ Pursue an apprenticeship and/or an HVAC certificate program after graduation.
 
 ## 🌱 Plant Agriculture {#plant-agriculture}
 
-::: {.callout-note collapse="true" title="How could AI help you?"}
-AI can look at plant photos and **detect plant disease** early — before it spreads.
-:::
+::: {.callout-note collapse="true" title="Expand me to read about AI in plant agriculture."}
 
-::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+### How could AI help you?
+AI can look at plant photos and **detect plant disease** early — before it spreads.
+
+### How is AI Machine Learning used here?
 **Classification** — the AI predicts a label (example: "healthy" vs "diseased," or the disease type).
 
 **Regression** — the AI predicts a number (example: disease severity score, expected yield, or days until harvest).
-:::
 
-::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+### How could you use your expertise to train AI?
 - Collect and label images of **healthy vs unhealthy** plants across seasons, lighting, and growth stages.
 - Connect disease IDs to **research-based treatment options** so recommendations match real farming practices.
-:::
 
-::: {.callout-note collapse="true" title="How could you define rules for AI? (Keeping people + crops safe)"}
+### How could you define rules for AI?
 - Be careful with **pesticide recommendations** by requiring human review and following research-based guidance.
 - Use **early alerts** to prevent crop loss while tracking false alarms so you don't over-treat.
-:::
 
-::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+### How could you work toward this career?
 Work in gardens/farms, join **4‑H**, and build biology and data skills through projects and classes.
-:::
 
-::: {.callout-note collapse="true" title="East Tennessee Options"}
+### Where can you pursue this career in East Tennessee?
 **UT Extension — Agriculture**
 <https://utextension.tennessee.edu/ut-extension-master-programs/>
 
@@ -203,30 +197,27 @@ Work in gardens/farms, join **4‑H**, and build biology and data skills through
 
 ## 🚰 Plumbing {#plumbing}
 
-::: {.callout-note collapse="true" title="How could AI help you?"}
-AI can help detect **leaks** early and support predictive maintenance by spotting patterns that suggest a pipe is likely to fail.
-:::
+::: {.callout-note collapse="true" title="Expand me to read about AI in plumbing."}
 
-::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+### How could AI help you?
+AI can help detect **leaks** early and support predictive maintenance by spotting patterns that suggest a pipe is likely to fail.
+
+### How is AI Machine Learning used here?
 **Classification** — the AI predicts a label (example: "leak" vs "no leak," "normal" vs "abnormal flow").
 
 **Regression** — the AI predicts a number (example: leak rate, pressure drop amount, or probability of failure over time).
-:::
 
-::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+### How could you use your expertise to train AI?
 Train the AI using real examples of normal vs abnormal flow (sound, pressure, meter readings) and label confirmed leak/clog cases.
-:::
 
-::: {.callout-note collapse="true" title="How could you define rules for AI? (Preventing damage)"}
+### How could you define rules for AI?
 - Shut off water (or trigger urgent alerts) in true emergencies.
 - Alert a human quickly to prevent flooding and property damage.
-:::
 
-::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+### How could you work toward this career?
 Use apprenticeship pathways and registered programs to build skills while earning.
-:::
 
-::: {.callout-note collapse="true" title="East Tennessee Options"}
+### Where can you pursue this career in East Tennessee?
 **Walters State Community College**
 <https://careertraining.ws.edu/training-programs/plumbing-foundations/>
 
@@ -238,29 +229,26 @@ Use apprenticeship pathways and registered programs to build skills while earnin
 
 ## 🐾 Veterinarian {#veterinarian}
 
-::: {.callout-note collapse="true" title="How could AI help you?"}
-AI can help organize clinic information and flag possible issues from images or records so a veterinarian can review faster.
-:::
+::: {.callout-note collapse="true" title="Expand me to read about AI in veterinary medicine."}
 
-::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+### How could AI help you?
+AI can help organize clinic information and flag possible issues from images or records so a veterinarian can review faster.
+
+### How is AI Machine Learning used here?
 **Classification** — the AI predicts a label (example: "possible infection" vs "no infection," or "urgent" vs "routine").
 
 **Regression** — the AI predicts a number (example: recovery time estimate, weight-change trend, or risk score).
-:::
 
-::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+### How could you use your expertise to train AI?
 Help label cases and images correctly across species, breeds, and ages so the AI learns what "possible infection" and "no infection" look like.
-:::
 
-::: {.callout-note collapse="true" title="How could you define rules for AI? (Animal safety)"}
+### How could you define rules for AI?
 Require human review for emergencies, and verify any medication/dosing guidance with a veterinarian.
-:::
 
-::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+### How could you work toward this career?
 Volunteer with animals (shelters, farms, clinics) and build a strong biology/chemistry foundation.
-:::
 
-::: {.callout-note collapse="true" title="East Tennessee Options"}
+### Where can you pursue this career in East Tennessee?
 **University of Tennessee, Knoxville — Veterinary Medicine**
 <https://vetmed.tennessee.edu/>
 
@@ -275,29 +263,26 @@ Volunteer with animals (shelters, farms, clinics) and build a strong biology/che
 
 ## 💧 Water Quality Scientist {#water-quality-scientist}
 
-::: {.callout-note collapse="true" title="How could AI help you?"}
-AI can monitor water sensors and lab data to spot unusual patterns that might indicate a **water quality problem** earlier.
-:::
+::: {.callout-note collapse="true" title="Expand me to read about AI in water quality science."}
 
-::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+### How could AI help you?
+AI can monitor water sensors and lab data to spot unusual patterns that might indicate a **water quality problem** earlier.
+
+### How is AI Machine Learning used here?
 **Classification** — the AI predicts a label (example: "normal" vs "possible contamination event").
 
 **Regression** — the AI predicts a number (example: predicted pH, turbidity, nitrate level, or a contamination risk score).
-:::
 
-::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+### How could you use your expertise to train AI?
 Use paired datasets (sensor readings + lab-confirmed results) so the AI learns from accurate "ground truth" measurements.
-:::
 
-::: {.callout-note collapse="true" title="How could you define rules for AI? (Public safety)"}
+### How could you define rules for AI?
 Require confirmatory testing and clear escalation steps when AI flags a serious risk to public health.
-:::
 
-::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+### How could you work toward this career?
 Take chemistry, biology, and environmental science, and do safe local water-testing projects through school or clubs.
-:::
 
-::: {.callout-note collapse="true" title="East Tennessee Options"}
+### Where can you pursue this career in East Tennessee?
 **UTK — Environmental Engineering, BS (Tickle College of Engineering)**
 <https://tickle.utk.edu/academics-and-programs/undergraduate-programs/environmental-engineering-bs/>
 
