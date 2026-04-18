@@ -3,7 +3,7 @@ title: "Classification Review"
 crossref:
   lst-title: "🎯 Checkpoint 3."
   lst-labels: alpha a
-format: html
+format: live-html
 sidebar: lesson-6
 ---
 
