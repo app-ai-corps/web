@@ -7,12 +7,34 @@ format: live-html
 sidebar: lesson-6
 ---
 
+:::{.ltgray-container}
+For this station, you will think about 🍅 tomato 🍅 ripeness and how we might use AI tools to support such work.
+:::
+
+### Important Resources
+The United States Department of Agriculture (USDA) has a guide to help you rate tomato ripeness.
+
+<center>
+![](images/USDA_Tomato_Ripeness_Guide.jpg){width="75%"}
+</center>
+
+<br>
+<br>
+
+### An AI Tool: A Pre-Trained ML Model
+
+:::{.dkorange-container}
+No code edits needed!
+
+Click the ▶️ Run Code button to begin using the model.
+:::
+
 ```{pyodide}
 #| include: false
 import warnings
 from IPython.display import display, HTML
 
-def show_ripeness_prediction():
+def ripeness_prediction_tool():
     intercept = 2.500
     b_R = 0.021
     b_G = -0.029
@@ -108,5 +130,5 @@ upd();
 ```
 
 ```{pyodide}
-show_ripeness_prediction()
+ripeness_prediction_tool()
 ```

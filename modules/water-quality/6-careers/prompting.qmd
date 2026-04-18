@@ -1,13 +1,13 @@
 ---
 title: "Review: Prompting"
 crossref:
-  lst-title: "🎯 Checkpoint 2."
+  lst-title: "🎯 Checkpoint 3."
   lst-labels: alpha a
 format: live-html
 sidebar: lesson-6
 ---
 
-For this station, you will use [AgriGPT](https://chatgpt.com/g/g-yyNCmhyYL-agrigpt){target="_blank" rel="nofollow"} to use AgriGPT and prompt engineering to problem solve around a common horticultural problem.
+For this station, you will use [AgriGPT](https://chatgpt.com/g/g-yyNCmhyYL-agrigpt){target="_blank" rel="nofollow"} and prompt engineering to problem solve around a common horticultural problem.
 <br>
 <br>
 

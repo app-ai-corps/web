@@ -5112,9 +5112,9 @@
   {
     "objectID": "6-careers/prompting.html",
     "href": "6-careers/prompting.html",
-    "title": "Regression Review",
+    "title": "Review: Prompting",
     "section": "",
-    "text": "In this station, you will use AgriGPT to use AgriGPT and prompt engineering to problem solve around a common horticulture problem.  \n\nAgriGPT"
+    "text": "For this station, you will use AgriGPT to use AgriGPT and prompt engineering to problem solve around a common horticultural problem.  \n\n\nAgriGPT"
   },
   {
     "objectID": "6-careers/careers.html#jump-to-a-career",
@@ -5346,5 +5346,12 @@
     "title": "AI Careers",
     "section": "",
     "text": "🐄 Animal Agriculture ⚡ Electrician 🏥 Healthcare & Nursing ❄️🔥 HVAC 🌱 Plant Agriculture 🚰 Plumbing 🐾 Veterinarian 💧 Water Quality Scientist"
+  },
+  {
+    "objectID": "6-careers/regression.html",
+    "href": "6-careers/regression.html",
+    "title": "Review: Regression",
+    "section": "",
+    "text": "For this station, you will think about 🍅 tomato 🍅 ripeness and how we might use AI tools to support such work.\n\n\nImportant Resources\nThe United States Department of Agriculture (USDA) has a guide to help you rate tomato ripeness.\n\n\n\n \n\n\nAn AI Tool: A Pre-Trained ML Model\n\nNo code edits needed!\nClick the ▶️ Run Code button to begin using the model."
   }
 ]
