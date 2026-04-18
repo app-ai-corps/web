@@ -1,0 +1,10 @@
+---
+title: "Regression Review"
+crossref:
+  lst-title: "🎯 Checkpoint 4."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-6
+---
+
+Put stuff here about prompting.
