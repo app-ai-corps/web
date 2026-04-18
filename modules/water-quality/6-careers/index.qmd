@@ -13,7 +13,7 @@ sidebar: lesson-6
 
 **Lesson Objective:** In this final lesson, you will reflect on all five workshops, explore how AI is used in real-world careers, and rotate through five hands-on stations that revisit classification, regression, and AI prompting skills.
 
-**Materials Needed:**
+**Materials Needed:**  
 - Your computer  
 - A web browser (Chrome is recommended)  
 - A packet (from your teacher)  
@@ -32,6 +32,7 @@ Today's lesson is organized into **five stations**. You'll rotate through each o
 | 📈 **Station 4** | Review: Regression |
 | 🏢 **Station 5** | AI Careers |
 
-Your teacher will let you know when to rotate. Let's get started!
+<br>
+We will use a timer to let you know when to rotate. Let's get started!
 
 
