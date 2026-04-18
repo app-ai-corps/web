@@ -21,7 +21,7 @@ The United States Department of Agriculture (USDA) has a guide to help you rate 
 <br>
 <br>
 
-### An AI Tool: A Pre-Trained ML Model
+### An AI Tool: A Pre-Trained ML Regression Model
 
 :::{.dkorange-container}
 No code edits needed!
