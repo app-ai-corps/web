@@ -6,3 +6,13 @@ crossref:
 format: live-html
 sidebar: lesson-6
 ---
+
+## Remembering Previous Workshops
+
+Over the past five workshops, you've built a real set of skills:
+
+ - In workshop #1, we learned about introductory statistics and the Python programming language.
+ - In workshop #2, we learned how to use an AI classification model and how Smokey Buoy uses this kind of model to check for new test pads.
+ - In workshop #3, we learned how to use an AI regression model to predict nitrate levels from RGB color values on test strips.
+ - In workshop #4, we learned about physical computing — how tiny computers, other components, and computer code can come together to make really great things.
+ - In workshop #5, we used AI and prompt engineering to ask questions of and analyze real water quality data from Smokey Buoy.

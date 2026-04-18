@@ -5367,5 +5367,19 @@
     "title": "Lesson 6: Reflecting & Exploring AI Careers",
     "section": "Today: Five Stations!",
     "text": "Today: Five Stations!\nToday’s lesson is organized into five stations. You’ll rotate through each one with your group:\n\n\n\nStation\nTopic\n\n\n\n\n🔁 Station 1\nReview: Workshops\n\n\n💬 Station 2\nReview: AI Prompting\n\n\n🍅 Station 3\nReview: Classification\n\n\n📈 Station 4\nReview: Regression\n\n\n🏢 Station 5\nAI Careers\n\n\n\nYour teacher will let you know when to rotate. Let’s get started!"
+  },
+  {
+    "objectID": "6-careers/workshops.html",
+    "href": "6-careers/workshops.html",
+    "title": "Review: Workshops",
+    "section": "",
+    "text": "Over the past five workshops, you’ve built a real set of skills:\n\nIn workshop #1, we learned about introductory statistics and the Python programming language.\nIn workshop #2, we learned how to use an AI classification model and how Smokey Buoy uses this kind of model to check for new test pads.\nIn workshop #3, we learned how to use an AI regression model to predict nitrate levels from RGB color values on test strips.\nIn workshop #4, we learned about physical computing — how tiny computers, other components, and computer code can come together to make really great things.\nIn workshop #5, we used AI and prompt engineering to ask questions of and analyze real water quality data from Smokey Buoy."
+  },
+  {
+    "objectID": "6-careers/workshops.html#remembering-previous-workshops",
+    "href": "6-careers/workshops.html#remembering-previous-workshops",
+    "title": "Review: Workshops",
+    "section": "",
+    "text": "Over the past five workshops, you’ve built a real set of skills:\n\nIn workshop #1, we learned about introductory statistics and the Python programming language.\nIn workshop #2, we learned how to use an AI classification model and how Smokey Buoy uses this kind of model to check for new test pads.\nIn workshop #3, we learned how to use an AI regression model to predict nitrate levels from RGB color values on test strips.\nIn workshop #4, we learned about physical computing — how tiny computers, other components, and computer code can come together to make really great things.\nIn workshop #5, we used AI and prompt engineering to ask questions of and analyze real water quality data from Smokey Buoy."
   }
 ]
