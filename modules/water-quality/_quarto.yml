@@ -159,9 +159,11 @@ website:
           href: 6-careers/
         - text: "2. AI Careers"
           href: 6-careers/careers
-        - text: "3. Review: Regression"
+        - text: "3. Review: Classification"
           href: 6-careers/regression
-        - text: "4. Review: Prompting AI"
+        - text: "4. Review: Regression"
+          href: 6-careers/regression
+        - text: "5. Review: Prompting AI"
           href: 6-careers/prompting
         - text: "---"
         - text: "3. Exit Ticket"
