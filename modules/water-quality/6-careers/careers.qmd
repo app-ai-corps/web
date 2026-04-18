@@ -22,7 +22,7 @@ sidebar: lesson-6
 
 ## 🐄 Animal Agriculture {#animal-agriculture}
 
-::: {.callout-note collapse="true" title="How could AI help you?"}
+::: {.callout-note collapse="true" title="Expand me to read about AI in animal agriculture."}
 
 ### How could AI help you?
 AI can use sensors (video, microphones, wearables) to monitor breathing and activity, then flag early signs of sickness.
@@ -57,30 +57,27 @@ Volunteer when possible (hospital programs, clinics, community health events).
 
 ## ⚡ Electrician {#electrician}
 
-::: {.callout-note collapse="true" title="How could AI help you?"}
-AI can help spot unsafe electrical conditions faster — for example, flagging possible faulty wiring or overheating so it gets checked quickly.
-:::
+::: {.callout-note collapse="true" title="Expand me to read about AI in electrical work."}
 
-::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+### How could AI help you?
+AI can help spot unsafe electrical conditions faster — for example, flagging possible faulty wiring or overheating so it gets checked quickly.
+
+### How is AI Machine Learning used here?
 **Classification** — the AI predicts a label (example: "safe" vs "unsafe," "normal" vs "fault").
 
 **Regression** — the AI predicts a number (example: temperature estimate, load estimate, or failure risk score).
-:::
 
-::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+### How could you use your expertise to train AI?
 Provide examples of safe/unsafe setups and label what counts as "urgent" vs "monitor," so alerts match real jobsite priorities.
-:::
 
-::: {.callout-note collapse="true" title="How could you define rules for AI? (Keeping people safe)"}
+### How could you define rules for AI?
 - Alert a human immediately when danger is detected.
 - Keep standard safety procedures as the rule — AI is support, not permission to touch live systems.
-:::
 
-::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+### How could you work toward this career?
 Look for apprenticeship pathways after graduation and build basic electrical safety skills through CTE/shop courses when available.
-:::
 
-::: {.callout-note collapse="true" title="East Tennessee Options"}
+### Where can you pursue this career in East Tennessee?
 **Walters State Community College**
 <https://careertraining.ws.edu/training-programs/residential-electrician/>
 
@@ -95,34 +92,31 @@ Look for apprenticeship pathways after graduation and build basic electrical saf
 
 ## 🏥 Healthcare & Nursing {#healthcare-nursing}
 
-::: {.callout-note collapse="true" title="How could AI help you?"}
-AI can act like a smart assistant that looks for patterns quickly. For example, AI reviews an X‑ray and flags **"possible fracture"** vs **"no fracture seen"** so a health care professional can double-check sooner.
-:::
+::: {.callout-note collapse="true" title="Expand me to read about AI in healthcare & nursing."}
 
-::: {.callout-note collapse="true" title="How is AI Machine Learning used here?"}
+### How could AI help you?
+AI can act like a smart assistant that looks for patterns quickly. For example, AI reviews an X‑ray and flags **"possible fracture"** vs **"no fracture seen"** so a health care professional can double-check sooner.
+
+### How is AI Machine Learning used here?
 **Classification** — the AI predicts a label (example: "fracture" vs "no fracture").
 
 **Regression** — the AI predicts a number (example: estimated healing time in days/weeks, or a risk score for complications).
-:::
 
-::: {.callout-note collapse="true" title="How could you use your expertise to train AI?"}
+### How could you use your expertise to train AI?
 - Provide many real examples (like X‑rays) labeled correctly.
 - Point out tricky cases (unclear images, unusual anatomy, different ages).
 - Explain the clinical context that the AI can't "know," like symptoms and injury history.
-:::
 
-::: {.callout-note collapse="true" title="How could you define rules for AI? (Keeping patients safe)"}
+### How could you define rules for AI?
 - **AI doesn't replace people.** A health care professional makes the final call.
 - Require **extra review** for higher-risk situations (often kids, older adults, or unclear images).
 - If symptoms look serious, a person reviews even if AI says "no fracture."
-:::
 
-::: {.callout-note collapse="true" title="How could you work toward this career (starting in high school)?"}
+### How could you work toward this career?
 - Take classes that build your foundation: Biology, Health Science, Algebra, and Statistics.
 - Volunteer when possible (hospital programs, clinics, community health events).
-:::
 
-::: {.callout-note collapse="true" title="East Tennessee Options"}
+### Where can you pursue this career in East Tennessee?
 **University of Tennessee, Knoxville — Bachelor of Science in Nursing (BSN)**
 <https://nursing.utk.edu/undergraduate-programs/bachelor-of-science-in-nursing-bsn/>
 
