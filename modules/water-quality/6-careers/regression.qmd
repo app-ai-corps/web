@@ -41,7 +41,7 @@ input[type=number] {{
 </head>
 <body>
 <p style="margin-bottom:12px;font-size:15px;">
-  Enter R, G, and B values (0–255) to predict fruit ripeness using the multiple regression model.
+  Enter R, G, and B values (0–255) to predict fruit ripeness using the ML regression model.
 </p>
 
 <div class="row">
@@ -74,7 +74,7 @@ Plotly.newPlot("gauge", [{{
       {{ range: [2.50, 3.49], color: "#c8d42a" }},
       {{ range: [3.50, 4.49], color: "#f0a500" }},
       {{ range: [4.50, 5.49], color: "#e85d04" }},
-      {{ range: [5.50, 6.49], color: "#9b1b1b" }}
+      {{ range: [5.50, 7.00], color: "#9b1b1b" }}
     ]
   }}
 }}], {{
