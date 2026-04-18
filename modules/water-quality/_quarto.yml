@@ -158,20 +158,19 @@ website:
         - text: "---"
         - text: "1. Overview"
           href: 6-careers/
-        - text: "2. AI Careers"
-          href: 6-careers/careers
-        - text: "3. Review: Classification"
-          href: 6-careers/classification
-        - text: "4. Review: Regression"
-          href: 6-careers/regression
-        - text: "5. Review: Prompting"
+        - text: "2. Review: Workshops"
+          href: 6-careers/workshops
+        - text: "3. Review: Prompting"
           href: 6-careers/prompting
+        - text: "4. Review: Classification"
+          href: 6-careers/classification
+        - text: "5. Review: Regression"
+          href: 6-careers/regression
+        - text: "6. AI Careers"
+          href: 6-careers/careers
         - text: "---"
-        - text: "3. Exit Ticket"
+        - text: "7. Survey"
           href: https://docs.google.com/forms/d/e/1FAIpQLSdZ8ViE2i4VvUiLVlNWsbADCPyVfVLXc3YkQ5_t4I9Tlfp6Kw/viewform?usp=sharing&ouid=101918895079830260600
-        - text: "---"
-        - text: "Optional Exercise"
-          href: #  
 
 format:
   html:

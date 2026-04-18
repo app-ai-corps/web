@@ -1,0 +1,8 @@
+---
+title: "Review: Workshops"
+crossref:
+  lst-title: "🎯 Checkpoint 2."
+  lst-labels: alpha a
+format: live-html
+sidebar: lesson-6
+---

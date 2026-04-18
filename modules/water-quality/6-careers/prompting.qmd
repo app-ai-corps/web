@@ -1,10 +1,20 @@
 ---
-title: "Regression Review"
+title: "Review: Prompting"
 crossref:
-  lst-title: "🎯 Checkpoint 5."
+  lst-title: "🎯 Checkpoint 2."
   lst-labels: alpha a
 format: live-html
 sidebar: lesson-6
 ---
 
-Put stuff here about prompting.
+For this station, you will use [AgriGPT](https://chatgpt.com/g/g-yyNCmhyYL-agrigpt){target="_blank" rel="nofollow"} to use AgriGPT and prompt engineering to problem solve around a common horticultural problem.
+<br>
+<br>
+
+<center>
+
+### [**AgriGPT**](https://chatgpt.com/g/g-yyNCmhyYL-agrigpt){target="_blank" rel="nofollow"}
+
+[![](images/AgriGPT_Image.png){width=50%}](https://chatgpt.com/g/g-yyNCmhyYL-agrigpt){target="_blank" rel="nofollow"}
+
+</center>
