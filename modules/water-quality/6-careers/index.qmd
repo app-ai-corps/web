@@ -7,27 +7,41 @@ format: live-html
 sidebar: lesson-6
 ---
 
-**This module is designed to be used in conjunction with the Lesson 5 slide deck and other resources located in the facilitator's guide.**
+**This module is designed to be used in conjunction with the resources located in the Lesson 6 facilitator's guide.**
 
 ::: {.gray-container}
 
-**Lesson Objective:** In this lesson, you will use AI to ask questions of and analyze water quality data.
+**Lesson Objective:** In this final lesson, you will reflect on all five workshops, explore how AI is used in real-world careers, and rotate through five hands-on stations that revisit classification, regression, and AI prompting skills.
 
-**Materials Needed:**  
-- Your computer  
-- A web browser (Chrome, Firefox, or Safari)    
+**Materials Needed:**
+- Your computer
+- A web browser (Chrome, Firefox, or Safari)
+- A packet (from your teacher)
+- Pencil
 :::
 
-## Recalling Previous Workshops
- - In workshop #1, we learned about introductory statistics and the Python programming language 
- - In workshop #2, we learned how to use an AI classification model and how the buoy uses this kind of model to check for new test pads!
- - In workshop #3, we learned about how to use an AI regression model to predict nitrate levels from RGB color values on test strips.
- - In workshop #4, we learned about physical computing and how tiny computers, other physical components, and computer code can come together to make really great things—like marshmellow sorters!
+## 🎉 Welcome Back, Scientists — This is Our Final Workshop!
 
-## Today: We'll put all this together and analyze the data from Smokey Buoy!
+Over the past five workshops, you've built a real set of skills:
 
-![](images/smokey_buoy.png){fig-align="center"}
+ - In workshop #1, we learned about introductory statistics and the Python programming language.
+ - In workshop #2, we learned how to use an AI classification model and how Smokey Buoy uses this kind of model to check for new test pads.
+ - In workshop #3, we learned how to use an AI regression model to predict nitrate levels from RGB color values on test strips.
+ - In workshop #4, we learned about physical computing — how tiny computers, other components, and computer code can come together to make really great things.
+ - In workshop #5, we used AI and prompt engineering to ask questions of and analyze real water quality data from Smokey Buoy.
 
-Let's get started!
+## Today: Five Stations!
+
+Today's lesson is organized into **five stations**. You'll rotate through each one with your group:
+
+| Station | Topic |
+|---|---|
+| 🔁 **Station 1** | Review: Workshops |
+| 💬 **Station 2** | Review: AI Prompting |
+| 🍅 **Station 3** | Review: Classification |
+| 📈 **Station 4** | Review: Regression |
+| 🏢 **Station 5** | AI Careers |
+
+Your teacher will let you know when to rotate. Let's get started!
 
 

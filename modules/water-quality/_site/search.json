@@ -5182,7 +5182,7 @@
   {
     "objectID": "6-careers/classification.html",
     "href": "6-careers/classification.html",
-    "title": "Classification Review",
+    "title": "Review: Classification",
     "section": "",
     "text": "Drag each tomato into the Southern Restaurant or Italian Restaurant category.\n\n\n\n\n\n  \n    🟢 Southern Restaurant\n  \n  \n    🔴 Italian Restaurant\n  \n\n\n↺ Reset"
   },
@@ -5317,7 +5317,7 @@
     "href": "6-careers/index.html",
     "title": "Lesson 6: Reflecting & Exploring AI Careers",
     "section": "",
-    "text": "This module is designed to be used in conjunction with the Lesson 5 slide deck and other resources located in the facilitator’s guide."
+    "text": "This module is designed to be used in conjunction with the resources located in the Lesson 6 facilitator’s guide."
   },
   {
     "objectID": "6-careers/index.html#recalling-previous-workshops",
@@ -5353,5 +5353,19 @@
     "title": "Review: Regression",
     "section": "",
     "text": "For this station, you will think about 🍅 tomato 🍅 ripeness and how we might use AI tools to support such work.\n\n\nImportant Resources\nThe United States Department of Agriculture (USDA) has a guide to help you rate tomato ripeness.\n\n\n\n \n\n\nAn AI Tool: A Pre-Trained ML Regression Model\n\nNo code edits needed!\nClick the ▶️ Run Code button to begin using the model."
+  },
+  {
+    "objectID": "6-careers/index.html#welcome-back-scientists-this-is-our-final-workshop",
+    "href": "6-careers/index.html#welcome-back-scientists-this-is-our-final-workshop",
+    "title": "Lesson 6: Reflecting & Exploring AI Careers",
+    "section": "🎉 Welcome Back, Scientists — This is Our Final Workshop!",
+    "text": "🎉 Welcome Back, Scientists — This is Our Final Workshop!\nOver the past five workshops, you’ve built a real set of skills:\n\nIn workshop #1, we learned about introductory statistics and the Python programming language.\nIn workshop #2, we learned how to use an AI classification model and how Smokey Buoy uses this kind of model to check for new test pads.\nIn workshop #3, we learned how to use an AI regression model to predict nitrate levels from RGB color values on test strips.\nIn workshop #4, we learned about physical computing — how tiny computers, other components, and computer code can come together to make really great things.\nIn workshop #5, we used AI and prompt engineering to ask questions of and analyze real water quality data from Smokey Buoy."
+  },
+  {
+    "objectID": "6-careers/index.html#today-five-stations",
+    "href": "6-careers/index.html#today-five-stations",
+    "title": "Lesson 6: Reflecting & Exploring AI Careers",
+    "section": "Today: Five Stations!",
+    "text": "Today: Five Stations!\nToday’s lesson is organized into five stations. You’ll rotate through each one with your group:\n\n\n\nStation\nTopic\n\n\n\n\n🔁 Station 1\nReview: Workshops\n\n\n💬 Station 2\nReview: AI Prompting\n\n\n🍅 Station 3\nReview: Classification\n\n\n📈 Station 4\nReview: Regression\n\n\n🏢 Station 5\nAI Careers\n\n\n\nYour teacher will let you know when to rotate. Let’s get started!"
   }
 ]

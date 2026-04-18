@@ -1,5 +1,5 @@
 ---
-title: "Review:Classification"
+title: "Review: Classification"
 crossref:
   lst-title: "🎯 Checkpoint 4."
   lst-labels: alpha a

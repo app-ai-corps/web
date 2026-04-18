@@ -67,9 +67,9 @@ Learn about neural networks, classification, and how computers process color.
 :::
 
 ::: {.lesson-item}
-### [Lesson 3: Bivariate Regression & Color](3-regression)
+### [Lesson 3: Regression & Color](3-regression)
 
-Learn about scatterplot, regression lines, and predicting nitrate concentrations.
+Learn about scatterplots, regression, and predicting nitrate concentrations.
 
 *Estimated time: 90 minutes*
 
@@ -97,7 +97,7 @@ Use AI to assist in analysis of the data collected by the buoy.
 :::
 
 ::: {.lesson-item}
-### [Lesson 6: AI Careers](6-careers)
+### [Lesson 6: AI Careers & Further Applications](6-careers)
 
 How will AI shape current and future careers?
 
