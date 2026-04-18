@@ -35,7 +35,7 @@ input[type=number] {{
   border: 2px solid #888; display: inline-block;
 }}
 #result {{
-  font-size: 18px; color: navy; font-weight: bold; margin-top: 12px;
+  font-size: 17px; color: navy; font-weight: bold; margin: 6px 0 0 2px;
 }}
 </style>
 </head>
@@ -55,6 +55,7 @@ input[type=number] {{
 </div>
 
 <div id="gauge"></div>
+<div id="result"></div>
 
 <script>
 var ic={intercept}, bR={b_R}, bG={b_G}, bB={b_B};
@@ -65,12 +66,15 @@ Plotly.newPlot("gauge", [{{
   number: {{ valueformat: ".2f", font: {{ size: 28, color: "navy" }} }},
   title: {{ text: "Predicted Ripeness", font: {{ size: 15 }} }},
   gauge: {{
-    axis: {{ range: [-6, 13], tickwidth: 1 }},
+    axis: {{ range: [0, 7], tickwidth: 1 }},
     bar: {{ color: "navy", thickness: 0.25 }},
     steps: [
-      {{ range: [-6, 0],  color: "#d4edda" }},
-      {{ range: [0,  5],  color: "#fff3cd" }},
-      {{ range: [5,  13], color: "#f8d7da" }}
+      {{ range: [0.00, 1.49], color: "#2d6a2d" }},
+      {{ range: [1.50, 2.49], color: "#6abf3a" }},
+      {{ range: [2.50, 3.49], color: "#c8d42a" }},
+      {{ range: [3.50, 4.49], color: "#f0a500" }},
+      {{ range: [4.50, 5.49], color: "#e85d04" }},
+      {{ range: [5.50, 6.49], color: "#9b1b1b" }}
     ]
   }}
 }}], {{
@@ -84,6 +88,8 @@ function upd(){{
   var pred = ic + bR*R + bG*G + bB*B;
   document.getElementById("swatch").style.background =
     "rgb("+Math.round(R)+","+Math.round(G)+","+Math.round(B)+")";
+  document.getElementById("result").textContent =
+    "Predicted Ripeness Level: " + Math.round(pred);
   Plotly.update("gauge", {{ value: [pred] }}, {{}}, [0]);
 }}
 upd();
