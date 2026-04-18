@@ -3826,7 +3826,7 @@
     "href": "3-regression/slides.html#review",
     "title": "Workshop #3",
     "section": "Review",
-    "text": "Review\n\n\nLast workshop we learned:\n\nAI: Classification\n\nModel Accuracy\n\nAgricultural Uses of Classification\nData Ownership\nComputers & Color"
+    "text": "Review\n\n\n🎯 Checkpoint 1. a: Review—Looking back to Workshop #2\n\n\nLast workshop we learned:\n\nAI: Classification\n\nModel Accuracy\n\nAgricultural Uses of Classification\nData Ownership\nComputers & Color"
   },
   {
     "objectID": "3-regression/slides.html#rgb-values-color",
@@ -4029,35 +4029,35 @@
     "href": "3-regression/slides.html#storing-your-data",
     "title": "Workshop #3",
     "section": "Storing Your Data",
-    "text": "Storing Your Data\n\n\nReplace the ?? placeholders with your color values and nitrate concentrations.\nIMPORTANT: Values must be in the exact same order.\nClick ▶️ Run Code to store your data.\n\ncolor_data = [??, ??, ??, ??, ??, ??, ??, ??]\nnitrate_ppm = [??, ??, ??, ??, ??, ??, ??, ??]\n\nprint(color_data)\nprint(nitrate_ppm)\n\ncolor_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\ndf = process_df(color_data, nitrate_ppm)"
+    "text": "Storing Your Data\n\n\n🎯 Checkpoint 5. a: Storing your team’s data in lists!\n\n\nReplace the ?? placeholders with your color values and nitrate concentrations.\nIMPORTANT: Values must be in the exact same order.\nClick ▶️ Run Code to store your data.\n\ncolor_data = [??, ??, ??, ??, ??, ??, ??, ??]\nnitrate_ppm = [??, ??, ??, ??, ??, ??, ??, ??]\n\nprint(color_data)\nprint(nitrate_ppm)\n\ncolor_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\ndf = process_df(color_data, nitrate_ppm)"
   },
   {
     "objectID": "3-regression/slides.html#recreating-your-teams-scatterplot",
     "href": "3-regression/slides.html#recreating-your-teams-scatterplot",
     "title": "Workshop #3",
     "section": "Recreating Your Team’s Scatterplot",
-    "text": "Recreating Your Team’s Scatterplot\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to create a scatterplot matching your group’s paper plot.\n\nplt.figure(figsize=(6, 5))\nplt.scatter(df[\"??\"], df[\"??\"], s=60, color=\"black\")\nplt.title(\"Nitrate vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate (ppm)\")\nplt.tight_layout()\nplt.show()"
+    "text": "Recreating Your Team’s Scatterplot\n\n\n🎯 Checkpoint 5. b: Scatterplots in Python!"
   },
   {
     "objectID": "3-regression/slides.html#running-the-linear-regression",
     "href": "3-regression/slides.html#running-the-linear-regression",
     "title": "Workshop #3",
     "section": "Running the Linear Regression",
-    "text": "Running the Linear Regression\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to generate the line of best fit equation.\n\nslope, intercept = linear_regression(??, ??)\n\nprint(\"slope (m):\", slope)\nprint(\"intercept (b):\", intercept)"
+    "text": "Running the Linear Regression\n\n\n🎯 Checkpoint 5. c: Running a regression in Python!\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to generate the line of best fit equation.\n\nslope, intercept = linear_regression(??, ??)\n\nprint(\"slope (m):\", slope)\nprint(\"intercept (b):\", intercept)"
   },
   {
     "objectID": "3-regression/slides.html#from-regression-to-equation",
     "href": "3-regression/slides.html#from-regression-to-equation",
     "title": "Workshop #3",
     "section": "From Regression to Equation",
-    "text": "From Regression to Equation\n\n\nThe linear regression produces the equation for the line of best fit. \n\n\nRemember y = mx + b? We can just substitute!\n\n\nClick ▶️ Run Code to see the slope-intercept equation.\n\nprint(f\"y = {slope:.2f}x + {intercept:.2f}\")"
+    "text": "From Regression to Equation\n\n\n🎯 Checkpoint 5. d: Printing the Regression Equation\n\n\nThe linear regression produces the equation for the line of best fit. \n\n\nRemember y = mx + b? We can just substitute!\n\n\nClick ▶️ Run Code to see the slope-intercept equation.\n\nprint(f\"y = {slope:.2f}x + {intercept:.2f}\")"
   },
   {
     "objectID": "3-regression/slides.html#plotting-the-regression-line",
     "href": "3-regression/slides.html#plotting-the-regression-line",
     "title": "Workshop #3",
     "section": "Plotting the Regression Line",
-    "text": "Plotting the Regression Line\n\n\nClick ▶️ Run Code to plot the scatterplot with the regression line.\n\nnitrate_pred = slope * color_data + intercept\n\nplt.figure(figsize=(6, 5))\nplt.scatter(color_data, nitrate_ppm, s=60, color=\"black\")\nplt.plot(color_data, nitrate_pred, color=\"black\", linewidth=1)\nplt.title(\"Nitrate Concentration vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate Concentration (ppm)\")\nplt.text(\n    min(color_data), max(nitrate_ppm),\n    f\"y = {slope:.2f}x + {intercept:.2f}\\n\",\n    ha=\"left\", fontsize=10, color=\"gray\"\n)\nplt.tight_layout()\nplt.show()"
+    "text": "Plotting the Regression Line\n\n\n🎯 Checkpoint 5. e: Plotting regression line in Python"
   },
   {
     "objectID": "3-regression/slides.html#activity-draw-your-line-of-best-fit",
@@ -4078,14 +4078,14 @@
     "href": "3-regression/slides.html#making-predictions-reload-your-data",
     "title": "Workshop #3",
     "section": "Making Predictions — Reload Your Data",
-    "text": "Making Predictions — Reload Your Data\n\n\nRe-enter your color values and nitrate concentrations.\nNOTE: You can copy/paste the two lists from the previous activity.\nClick ▶️ Run Code to re-load your data.\n\n\ncolor_data = [188, 179, 176, 176, 172, 167, 166, 162]\nnitrate_ppm = [0, 1, 2, 3, 4, 5, 6, 7]\n\n# Do not change the code below ------------------------------------\ncolor_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\nslope, intercept = linear_regression(color_data, nitrate_ppm)\nprint(f\"Slope: {slope:.2f}, Intercept: {intercept:.2f}\")\n\nSlope: -0.29, Intercept: 53.10"
+    "text": "Making Predictions — Reload Your Data\n\n\n🎯 Checkpoint 6. a: Storing your team’s data in lists (again)!\n\n\nRe-enter your color values and nitrate concentrations.\nNOTE: You can copy/paste the two lists from the previous activity.\nClick ▶️ Run Code to re-load your data.\n\n\ncolor_data = [188, 179, 176, 176, 172, 167, 166, 162]\nnitrate_ppm = [0, 1, 2, 3, 4, 5, 6, 7]\n\n# Do not change the code below ------------------------------------\ncolor_data, nitrate_ppm = process_data(color_data, nitrate_ppm)\nslope, intercept = linear_regression(color_data, nitrate_ppm)\nprint(f\"Slope: {slope:.2f}, Intercept: {intercept:.2f}\")\n\nSlope: -0.29, Intercept: 53.10"
   },
   {
     "objectID": "3-regression/slides.html#using-the-model-to-predict",
     "href": "3-regression/slides.html#using-the-model-to-predict",
     "title": "Workshop #3",
     "section": "Using the Model to Predict",
-    "text": "Using the Model to Predict\n\n\nNow that we have our regression model, we can predict nitrate concentrations for new color values — even ones we didn’t measure!\n\n\nClick ▶️ Run Code, then type any color value into the box to see the predicted nitrate concentration.\n\nshow_prediction_plot(color_data, nitrate_ppm, slope, intercept)"
+    "text": "Using the Model to Predict\n\n\n🎯 Checkpoint 6. b: Predicting nitrate concentrations from your regression model (like the buoy)!"
   },
   {
     "objectID": "3-regression/slides.html#predict-nitrate-concentrations-for-new-test-pads",
@@ -4120,7 +4120,7 @@
     "href": "3-regression/slides.html#discuss-in-your-group-2",
     "title": "Workshop #3",
     "section": "🗣️ Discuss: In Your Group",
-    "text": "🗣️ Discuss: In Your Group\n\n\n🎯 Checkpoint 6. a:  Write your group’s R² value on the poster at the front of the room.\nCompare with the other groups — what do you notice?  How might we improve our model and, therefore, our predictions?"
+    "text": "🗣️ Discuss: In Your Group\n\n\nMaterials Needed: Handout, Pencil\n\n\n🎯 Checkpoint 6. e: Stop and Jot: An agriculture scenario  Scenario: A local strawberry farm sells berries at small stands around town. They want to sell out every day! Some days are slower than others, so they’re thinking about offering discounts to sell more. What makes a day slow or busy? What clues could help them predict when to offer a discount?"
   },
   {
     "objectID": "3-regression/slides.html#exit-ticket-1",
@@ -4778,14 +4778,14 @@
     "href": "3-regression/slides.html#rgb-activity-pt.-i-1",
     "title": "Workshop #3",
     "section": "RGB Activity (Pt. I)",
-    "text": "RGB Activity (Pt. I)\n\nRoles\n\n\nHuman Buoy (1 person): Needs the nitrate test cards and computer handy\nData Recorders (2+ people): Need handout and pencil"
+    "text": "RGB Activity (Pt. I)\n\n\n🎯 Checkpoint 4. a: Read water quality test data like a computer!\n\nRoles\n\n\nHuman Buoy (1 person): Needs the nitrate test cards and computer handy\nData Recorders (2+ people): Need handout and pencil"
   },
   {
     "objectID": "3-regression/slides.html#rgb-activity-pt.-i-instructions",
     "href": "3-regression/slides.html#rgb-activity-pt.-i-instructions",
     "title": "Workshop #3",
     "section": "RGB Activity (Pt. I) — Instructions",
-    "text": "RGB Activity (Pt. I) — Instructions\n\n\n\nHB: Open the RGB Applet V2 in a new tab.\nHB: Find card #1 in your deck and hold it in front of your webcam.\nDRs: Using the middle square in the frame, record the RGB values on your handout.\nRepeat for all other cards in deck."
+    "text": "RGB Activity (Pt. I) — Instructions\n\n\n\nHB: Open the RGB Applet V2 in a new tab.\nHB: Take a deck from your water testing deck and hold it in front of your webcam.\nDRs: Using the middle square in the frame, record the RGB values on your handout.\nRepeat for all other cards in deck."
   },
   {
     "objectID": "3-regression/slides.html#rgb-activity-pt.-i-instructions-1",
@@ -4869,7 +4869,7 @@
     "href": "3-regression/slides.html#activity-pt.-ii-instructions-1",
     "title": "Workshop #3",
     "section": "Activity (Pt. II) — Instructions",
-    "text": "Activity (Pt. II) — Instructions\n\n\n\nUsing the round stickies and graph paper, create a scatterplot.\nColor values (R, G, or B — per your group) go on the x-axis.\nNitrate concentrations go on the y-axis."
+    "text": "Activity (Pt. II) — Instructions\n\n\n🎯 Checkpoint 4. b: Plotting R, G or B values against nitrate concentrations.\n\n\n\nUsing the round stickies and graph paper, create a scatterplot.\nColor values (R, G, or B — per your group) go on the x-axis.\nNitrate concentrations go on the y-axis."
   },
   {
     "objectID": "3-regression/facilitator_notes.html#activity-pt.-ii-instructions-1",
@@ -4890,21 +4890,21 @@
     "href": "3-regression/slides.html#recreating-your-teams-scatterplot-1",
     "title": "Workshop #3",
     "section": "Recreating Your Team’s Scatterplot",
-    "text": "Recreating Your Team’s Scatterplot\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to create a scatterplot matching your group’s paper plot.\n\nplt.figure(figsize=(6, 5))\nplt.scatter(df[\"color_data\"], df[\"nitrate_ppm\"], s=60, color=\"black\")\nplt.title(\"Nitrate vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate (ppm)\")\nplt.tight_layout()\nplt.show()"
+    "text": "Recreating Your Team’s Scatterplot\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to create a scatterplot matching your group’s paper plot.\n\nplt.figure(figsize=(6, 5))\nplt.scatter(df[\"??\"], df[\"??\"], s=60, color=\"black\")\nplt.title(\"Nitrate vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate (ppm)\")\nplt.tight_layout()\nplt.show()"
   },
   {
     "objectID": "3-regression/slides.html#recreating-your-teams-scatterplot-2",
     "href": "3-regression/slides.html#recreating-your-teams-scatterplot-2",
     "title": "Workshop #3",
     "section": "Recreating Your Team’s Scatterplot",
-    "text": "Recreating Your Team’s Scatterplot"
+    "text": "Recreating Your Team’s Scatterplot\n\n\nReplace the ?? placeholders:\n\nFirst blank → x variable: color_data\nSecond blank → y variable: nitrate_ppm\n\nClick ▶️ Run Code to create a scatterplot matching your group’s paper plot.\n\nplt.figure(figsize=(6, 5))\nplt.scatter(df[\"color_data\"], df[\"nitrate_ppm\"], s=60, color=\"black\")\nplt.title(\"Nitrate vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate (ppm)\")\nplt.tight_layout()\nplt.show()"
   },
   {
     "objectID": "3-regression/slides.html#discussion-placing-the-line-of-best-fit",
     "href": "3-regression/slides.html#discussion-placing-the-line-of-best-fit",
     "title": "Workshop #3",
     "section": "🗣️Discussion: Placing the Line of Best Fit",
-    "text": "🗣️Discussion: Placing the Line of Best Fit\n\n\nMaterials Needed: Complete Scatterplot, Yardstick\n\n\n🎯 Checkpoint 5. a:  With your group, discuss where your regression line will likely fall on your scatterplot. Once your group has made a decision, place your yardstick on top of your scatterplot as if it’s the line.\nNote: Lines will likely vary across groups, given that you are working with different color channels!"
+    "text": "🗣️Discussion: Placing the Line of Best Fit\n\n\nMaterials Needed: Complete Scatterplot, Yardstick\n\n\n\n\nWith your group, discuss where your regression line will likely fall on your scatterplot. Once your group has made a decision, place your yardstick on top of your scatterplot as if it’s the line.\nNote: Lines will likely vary across groups, given that you are working with different color channels!"
   },
   {
     "objectID": "3-regression/facilitator_notes.html#storing-your-data-1",
@@ -4953,14 +4953,14 @@
     "href": "3-regression/slides.html#plotting-the-regression-line-1",
     "title": "Workshop #3",
     "section": "Plotting the Regression Line",
-    "text": "Plotting the Regression Line"
+    "text": "Plotting the Regression Line\n\n\nClick ▶️ Run Code to plot the scatterplot with the regression line.\n\nnitrate_pred = slope * color_data + intercept\n\nplt.figure(figsize=(6, 5))\nplt.scatter(color_data, nitrate_ppm, s=60, color=\"black\")\nplt.plot(color_data, nitrate_pred, color=\"black\", linewidth=1)\nplt.title(\"Nitrate Concentration vs. Color\")\nplt.xlabel(\"Color\")\nplt.ylabel(\"Nitrate Concentration (ppm)\")\nplt.text(\n    min(color_data), max(nitrate_ppm),\n    f\"y = {slope:.2f}x + {intercept:.2f}\\n\",\n    ha=\"left\", fontsize=10, color=\"gray\"\n)\nplt.tight_layout()\nplt.show()"
   },
   {
     "objectID": "3-regression/slides.html#activity-pt.-iv-draw-line-of-best-fit",
     "href": "3-regression/slides.html#activity-pt.-iv-draw-line-of-best-fit",
     "title": "Workshop #3",
     "section": "Activity Pt. IV — Draw Line of Best Fit",
-    "text": "Activity Pt. IV — Draw Line of Best Fit\n\n\nMaterials Needed:\n\nPoster Markers\nCompleted Scatterplot\nYardstick"
+    "text": "Activity Pt. IV — Draw Line of Best Fit\n\n\n🎯 Checkpoint 5. f: Plotting regression line on paper\n\n\nMaterials Needed:\n\nPoster Markers\nCompleted Scatterplot\nYardstick"
   },
   {
     "objectID": "3-regression/slides.html#activity-pt.-iv-draw-line-of-best-fit-1",
@@ -4974,7 +4974,7 @@
     "href": "3-regression/slides.html#using-the-model-to-predict-1",
     "title": "Workshop #3",
     "section": "Using the Model to Predict",
-    "text": "Using the Model to Predict"
+    "text": "Using the Model to Predict\n\n\nNow that we have our regression model, we can predict nitrate concentrations for new color values — even ones we didn’t measure!\n\n\nClick ▶️ Run Code, then type any color value into the box to see the predicted nitrate concentration.\n\nshow_prediction_plot(color_data, nitrate_ppm, slope, intercept)"
   },
   {
     "objectID": "3-regression/facilitator_notes.html#meaning-rgb",
@@ -5030,14 +5030,14 @@
     "href": "3-regression/slides.html#activity-pt.-v-predict-new-concentrations",
     "title": "Workshop #3",
     "section": "Activity Pt. V: Predict New Concentrations",
-    "text": "Activity Pt. V: Predict New Concentrations\n\n\nMaterials Needed:\n\n💻 RGB Applet V2\nThree Additional “Nitrate Test Pad” Cards\nHandout / Pencil"
+    "text": "Activity Pt. V: Predict New Concentrations\n\n\nMaterials Needed: - 💻 RGB Applet V2 - Three Additional “Nitrate Test Pad” Cards from Real Buoy Data (with RGB values printed) - Handout / Pencil"
   },
   {
     "objectID": "3-regression/slides.html#activity-pt.-v-predict-new-concentrations-1",
     "href": "3-regression/slides.html#activity-pt.-v-predict-new-concentrations-1",
     "title": "Workshop #3",
     "section": "Activity Pt. V: Predict New Concentrations",
-    "text": "Activity Pt. V: Predict New Concentrations\n\n\n\nUse the applet to find the R, G, or B value for the new cards (per your group).\nUse the graphing tool to predict the nitrate concentration (ppm).\nRecord these predictions on your handout."
+    "text": "Activity Pt. V: Predict New Concentrations\n\n\n\nIdentify R, G, or B value for the new cards (per your group color).\nUse the graphing tool to predict the nitrate concentration (ppm).\nRecord these predictions on your handout."
   },
   {
     "objectID": "3-regression/slides.html#calculate-your-r²-value-1",
@@ -5100,7 +5100,7 @@
     "href": "3-regression/slides.html#share-out-what-are-your-model-predictions",
     "title": "Workshop #3",
     "section": "🗣️ Share Out: What Are Your Model Predictions?",
-    "text": "🗣️ Share Out: What Are Your Model Predictions?\n\n\n\n\nSample #\nRed Model\nGreen Model\nBlue Model\n\n\n\n\nSample 1\n\n\n\n\n\nSample 2\n\n\n\n\n\nSample 3"
+    "text": "🗣️ Share Out: What Are Your Model Predictions?\n\n\n\n\nSample #\nRed Model\nGreen Model\nBlue Model\n\n\n\n\nSample 1\n\n\n\n\n\nSample 2\n\n\n\n\n\nSample 3\n\n\n\n\n\n\nCompare with the other groups — what do you notice?  How might we improve our model and, therefore, our predictions? :::"
   },
   {
     "objectID": "3-regression/slides.html#share-out-what-are-your-model-predictions-1",
@@ -5108,5 +5108,243 @@
     "title": "Workshop #3",
     "section": "🗣️ Share Out: What Are Your Model Predictions?",
     "text": "🗣️ Share Out: What Are Your Model Predictions?\n\n\n\n\nSample #\nRed Model\nGreen Model\nBlue Model\n\n\n\n\nSample 1\n\n\n\n\n\nSample 2\n\n\n\n\n\nSample 3\n\n\n\n\n\n\n\n\n\n\n\n\nConsider\n\n\nWouldn’t it be great if there was a number to tell us how good our models/predictions are?"
+  },
+  {
+    "objectID": "6-careers/prompting.html",
+    "href": "6-careers/prompting.html",
+    "title": "Regression Review",
+    "section": "",
+    "text": "Put stuff here about prompting."
+  },
+  {
+    "objectID": "6-careers/careers.html#jump-to-a-career",
+    "href": "6-careers/careers.html#jump-to-a-career",
+    "title": "AI Careers",
+    "section": "Jump to a Career",
+    "text": "Jump to a Career\n🐄 Animal Agriculture ⚡ Electrician 🏥 Healthcare & Nursing ❄️🔥 HVAC 🌱 Plant Agriculture 🚰 Plumbing 🐾 Veterinarian 💧 Water Quality Scientist"
+  },
+  {
+    "objectID": "6-careers/careers.html#animal-agriculture",
+    "href": "6-careers/careers.html#animal-agriculture",
+    "title": "AI Careers",
+    "section": "🐄 Animal Agriculture",
+    "text": "🐄 Animal Agriculture\nSensors attached to livestock — video cameras, microphones, ear tags — can catch early signs of illness before a farmer would notice anything is wrong.\n\n\n\n\n\n\nAI in animal agriculture\n\n\n\n\n\n\nHow could AI help you?\nThe AI watches breathing patterns, movement, and feeding behavior around the clock. When something looks off, it flags that animal for a human to check — catching problems days earlier than visual inspection alone.\n\n\nHow is AI Machine Learning used here?\nClassification — the AI predicts a label (example: “healthy” vs “needs attention”).\nRegression — the AI predicts a number (example: body temperature estimate or weight gain trend).\n\n\nHow could you use your expertise to train AI?\nAI trained in a lab doesn’t know what a heat-stressed cow looks like in August in East Tennessee. That’s where you come in:\n\nLabel real examples of healthy vs sick animals and describe what early warning actually looks like.\nAdd context — feed changes, seasonal stress, herd history — so alerts match real conditions, not just textbook cases.\n\n\n\nHow could you define rules for AI?\n\nLower alert thresholds during heat waves so the system catches problems sooner.\nNo treatment decisions without a human check, especially for urgent alerts.\n\n\n\nHow could you work toward this career?\nBuild your foundation with Biology, Health Science, Algebra, and Statistics. Hands-on experience matters — look for farm internships, 4‑H programs, or volunteer opportunities with large-animal vets.\n\n\nWhere can you pursue this career in East Tennessee?\nUT Extension — Agriculture https://utextension.tennessee.edu/ut-extension-master-programs/\nWalters State Community College https://ws.edu/academics/programs/ttp/as/agriculture-animal-science.aspx"
+  },
+  {
+    "objectID": "6-careers/careers.html#electrician",
+    "href": "6-careers/careers.html#electrician",
+    "title": "AI Careers",
+    "section": "⚡ Electrician",
+    "text": "⚡ Electrician\nA smart sensor on an electrical panel can detect overheating or abnormal current patterns — before a fire starts.\n\n\n\n\n\n\nAI in electrical work\n\n\n\n\n\n\nHow could AI help you?\nAI watches voltage, current, and temperature data continuously and flags conditions that a technician should inspect. Faults that might go unnoticed for weeks become visible in the data within hours.\n\n\nHow is AI Machine Learning used here?\nClassification — the AI predicts a label (example: “safe” vs “unsafe,” “normal” vs “fault”).\nRegression — the AI predicts a number (example: temperature estimate, load estimate, or failure risk score).\n\n\nHow could you use your expertise to train AI?\nYou know what a safe installation looks like and what “urgent” means on a real jobsite — that’s knowledge an AI can’t get from data alone. Labeling real examples of safe/unsafe setups, and defining the line between “keep watching” and “shut it down now,” is exactly what makes an AI system trustworthy.\n\n\nHow could you define rules for AI?\n\nAlert a human immediately when danger is detected.\nAI is a diagnostic tool, not a clearance. Standard safety procedures stay in place regardless of what the model says.\n\n\n\nHow could you work toward this career?\nCTE and shop courses build the hands-on foundation. After graduation, registered apprenticeship programs let you earn while you learn the full trade.\n\n\nWhere can you pursue this career in East Tennessee?\nWalters State Community College https://careertraining.ws.edu/training-programs/residential-electrician/\nTVA — Electrician Apprentice Program https://www.tva.com/Careers/Electrician-Apprentice-Program\nApprenticeshipTN https://www.tn.gov/apprenticeshiptn/find-a-program.html"
+  },
+  {
+    "objectID": "6-careers/careers.html#healthcare-nursing",
+    "href": "6-careers/careers.html#healthcare-nursing",
+    "title": "AI Careers",
+    "section": "🏥 Healthcare & Nursing",
+    "text": "🏥 Healthcare & Nursing\nAI-assisted imaging can scan an X‑ray for potential fractures in seconds — giving the care team a head start before anyone’s even opened the file.\n\n\n\n\n\n\nAI in healthcare & nursing\n\n\n\n\n\n\nHow could AI help you?\nIn clinical settings, AI acts as a second set of eyes. It reviews images, flags patterns, and surfaces cases that need closer attention — so nurses and physicians can focus their time where it matters most.\n\n\nHow is AI Machine Learning used here?\n\n\n\n\n\n\n\n\nML type\nWhat it predicts\nExample\n\n\n\n\nClassification\na label\n“fracture” vs “no fracture”\n\n\nRegression\na number\nestimated healing time, complication risk score\n\n\n\n\n\nHow could you use your expertise to train AI?\nClinical AI is only as good as its training data — and that data has to be labeled by people who know medicine.\n\nProvide correctly labeled examples (X‑rays, records, lab values) including the hard cases: unusual presentations, patients outside the typical range.\nAdd the clinical context the model can’t see, like symptom history and mechanism of injury.\n\n\n\nHow could you define rules for AI?\nAI doesn’t make the final call — a person does. No matter how confident the model looks, a healthcare professional reviews before acting. Extra scrutiny applies for high-risk populations and any case where symptoms and the AI’s output don’t line up.\n\n\nHow could you work toward this career?\nTake Biology, Health Science, Algebra, and Statistics. Volunteer at clinics, hospital programs, or community health events whenever you get the chance — hands-on exposure matters for both applications and learning.\n\n\nWhere can you pursue this career in East Tennessee?\nUniversity of Tennessee, Knoxville — BSN https://nursing.utk.edu/undergraduate-programs/bachelor-of-science-in-nursing-bsn/\nTusculum University — Pre-Medical Concentration https://catalog.tusculum.edu/preview_program.php?catoid=8&poid=1737&returnto=1133\nWalters State Community College https://ws.edu/academics/programs/aas/nursing.aspx"
+  },
+  {
+    "objectID": "6-careers/careers.html#hvac",
+    "href": "6-careers/careers.html#hvac",
+    "title": "AI Careers",
+    "section": "❄️🔥 HVAC (Heating & Cooling)",
+    "text": "❄️🔥 HVAC (Heating & Cooling)\nMost HVAC failures leave warning signs in the data days before the system actually breaks down.\n\n\n\n\n\n\nAI in HVAC\n\n\n\n\n\n\nHow could AI help you?\nBy watching temperature readings, airflow rates, and energy consumption over time, AI can recognize when a system is trending toward failure — a clogged filter, a failing motor, a refrigerant issue. A technician gets dispatched before the customer even notices a problem.\n\n\nHow is AI Machine Learning used here?\nClassification — the AI predicts a label (example: “normal airflow” vs “blocked airflow”).\nRegression — the AI predicts a number (example: expected temperature drop, energy use, or time-to-failure estimate).\n\n\nHow could you use your expertise to train AI?\n\nShow the AI what normal looks like across different makes, models, seasons, and building types — because “normal” varies a lot.\nProvide before/after examples from real repairs so it learns to connect the warning pattern to the actual problem.\n\n\n\nHow could you define rules for AI?\n\nAlert for extreme temperature risks and prioritize rapid response.\nFlag safety issues immediately and require a human technician to verify before any action is taken.\n\n\n\nHow could you work toward this career?\nHVAC is one of the best trades for apprenticeship — you can enter a certificate program right out of high school and be working in the field quickly.\n\n\nWhere can you pursue this career in East Tennessee?\nWalters State Community College https://careertraining.ws.edu/training-programs/hvacr-technician/\nApprenticeshipTN https://www.tn.gov/apprenticeshiptn/find-a-program.html"
+  },
+  {
+    "objectID": "6-careers/careers.html#plant-agriculture",
+    "href": "6-careers/careers.html#plant-agriculture",
+    "title": "AI Careers",
+    "section": "🌱 Plant Agriculture",
+    "text": "🌱 Plant Agriculture\nA photo taken on a phone can give an AI-powered app enough information to identify early blight or nutrient deficiency — before the damage is visible to the naked eye.\n\n\n\n\n\n\nAI in plant agriculture\n\n\n\n\n\n\nHow could AI help you?\nAI systems trained on images of healthy and diseased crops can scan photos faster than any scouting team. Some systems go further, estimating yield from aerial imagery or predicting harvest timing based on weather and growth data.\n\n\nHow is AI Machine Learning used here?\nClassification — the AI predicts a label (example: “healthy” vs “diseased,” or the specific disease type).\nRegression — the AI predicts a number (example: disease severity score, expected yield, or days until harvest).\n\n\nHow could you use your expertise to train AI?\n\nCollect and label images across seasons, lighting conditions, and growth stages — a disease looks different on a seedling than on a mature plant.\nConnect disease IDs to research-based treatment options. A recommendation is only useful if it matches how farmers actually work.\n\n\n\nHow could you define rules for AI?\n\nAny pesticide recommendation requires human review and must follow research-based guidance.\nUse early alerts to prevent crop loss, but track false alarms so you don’t end up over-treating healthy fields.\n\n\n\nHow could you work toward this career?\nWork in gardens and on farms whenever possible. Join 4‑H. Take biology and data courses. Practical experience with crops is something no classroom can fully replace.\n\n\nWhere can you pursue this career in East Tennessee?\nUT Extension — Agriculture https://utextension.tennessee.edu/ut-extension-master-programs/\nWalters State Community College https://ws.edu/academics/programs/ttp/as/agriculture-plant-soil-science.aspx"
+  },
+  {
+    "objectID": "6-careers/careers.html#plumbing",
+    "href": "6-careers/careers.html#plumbing",
+    "title": "AI Careers",
+    "section": "🚰 Plumbing",
+    "text": "🚰 Plumbing\nWater is expensive to lose and expensive to repair — AI helps catch leaks before a slow drip becomes a flooded basement.\n\n\n\n\n\n\nAI in plumbing\n\n\n\n\n\n\nHow could AI help you?\nSensors measuring flow rate, pressure, and acoustic signatures can detect the early signs of a leak or blockage. AI learns what “normal” sounds and feels like in a system, so it can flag the moment something changes.\n\n\nHow is AI Machine Learning used here?\nClassification — the AI predicts a label (example: “leak” vs “no leak,” “normal” vs “abnormal flow”).\nRegression — the AI predicts a number (example: estimated leak rate, pressure drop amount, or probability of failure over the next 30–90 days).\n\n\nHow could you use your expertise to train AI?\nReal training data comes from real systems. Labeled examples of normal vs abnormal readings — captured at the time of a confirmed leak or clog — are what make a model accurate in the field rather than just in testing.\n\n\nHow could you define rules for AI?\n\nShut off water (or trigger urgent alerts) in true emergencies.\nAlert a human quickly enough to prevent flooding and property damage.\n\n\n\nHow could you work toward this career?\nApprenticeship programs are the primary path — you earn while you learn. Look for registered programs through ApprenticeshipTN or start with a foundations certificate.\n\n\nWhere can you pursue this career in East Tennessee?\nWalters State Community College https://careertraining.ws.edu/training-programs/plumbing-foundations/\nApprenticeshipTN https://www.tn.gov/apprenticeshiptn/find-a-program.html"
+  },
+  {
+    "objectID": "6-careers/careers.html#veterinarian",
+    "href": "6-careers/careers.html#veterinarian",
+    "title": "AI Careers",
+    "section": "🐾 Veterinarian",
+    "text": "🐾 Veterinarian\nFrom flagging abnormal lab values to sorting urgent from routine cases, AI can help a busy clinic stay on top of every patient.\n\n\n\n\n\n\nAI in veterinary medicine\n\n\n\n\n\n\nHow could AI help you?\nVeterinary clinics generate a lot of data — records, images, lab panels, weight histories. AI can surface patterns a busy staff might miss: a value trending in the wrong direction, an imaging result that warrants a closer look, a patient overdue for follow-up.\n\n\nHow is AI Machine Learning used here?\nClassification — the AI predicts a label (example: “possible infection” vs “no infection,” or “urgent” vs “routine”).\nRegression — the AI predicts a number (example: recovery time estimate, weight-change trend, or risk score).\n\n\nHow could you use your expertise to train AI?\nThe challenge in veterinary medicine is variation — dogs, cats, cattle, and horses don’t look the same on an X-ray, and a healthy value for one breed isn’t healthy for another. Getting AI right requires labeled examples across species, breeds, ages, and body conditions.\n\n\nHow could you define rules for AI?\nAny medication or dosing guidance from an AI system gets verified by a licensed veterinarian. Emergency cases always get human review, regardless of what the model says.\n\n\nHow could you work toward this career?\nVolunteer with animals early — shelters, farms, and vet clinics all need help, and that experience is invaluable. Build a strong foundation in Biology and Chemistry.\n\n\nWhere can you pursue this career in East Tennessee?\nUniversity of Tennessee, Knoxville — Veterinary Medicine https://vetmed.tennessee.edu/\nTusculum University — Veterinary Concentration https://catalog.tusculum.edu/preview_program.php?catoid=8&poid=1737&returnto=1133\nWalters State Community College — Veterinary Concentration https://ws.edu/academics/programs/as/animal-science-pre-veterinary-medicine.aspx"
+  },
+  {
+    "objectID": "6-careers/careers.html#water-quality-scientist",
+    "href": "6-careers/careers.html#water-quality-scientist",
+    "title": "AI Careers",
+    "section": "💧 Water Quality Scientist",
+    "text": "💧 Water Quality Scientist\nYou’ve been using sensors to track nitrate levels this week — water quality scientists are the people building the AI that makes sense of that data at scale, across hundreds of sites at once.\n\n\n\n\n\n\nAI in water quality science\n\n\n\n\n\n\nHow could AI help you?\nSensors in rivers, lakes, and distribution systems collect continuous readings of pH, turbidity, nitrates, dissolved oxygen, and more. AI watches for patterns that fall outside what’s normal for that location and season — and alerts scientists before a problem reaches the public.\n\n\nHow is AI Machine Learning used here?\nClassification — the AI predicts a label (example: “normal” vs “possible contamination event”).\nRegression — the AI predicts a number (example: predicted pH, turbidity, nitrate level, or contamination risk score).\n\n\nHow could you use your expertise to train AI?\nThe buoy you’ve been studying is a good example of this: sensors collect the raw signal, but a scientist’s knowledge shapes what gets labeled as “safe” and what gets flagged. Paired datasets — sensor readings plus lab-confirmed results — are what give a model something trustworthy to learn from.\n\n\nHow could you define rules for AI?\nAI flags the anomaly; it doesn’t issue the public health advisory. Confirmatory lab testing and clear escalation procedures are required before any action that affects public safety.\n\n\nHow could you work toward this career?\nChemistry, Biology, and Environmental Science are your core classes. Water-testing projects through school clubs or local stream monitoring programs give you real field experience before college.\n\n\nWhere can you pursue this career in East Tennessee?\nUTK — Environmental Engineering (Tickle College of Engineering) https://tickle.utk.edu/academics-and-programs/undergraduate-programs/environmental-engineering-bs/\nTusculum University — Environmental Science https://site.tusculum.edu/environmental-science/\nWalters State Community College https://ws.edu/academics/programs/as/pre-environmental-health.aspx"
+  },
+  {
+    "objectID": "6-careers/classification.html",
+    "href": "6-careers/classification.html",
+    "title": "Classification Review",
+    "section": "",
+    "text": "Drag each tomato into the Southern Restaurant or Italian Restaurant category.\n\n\n\n\n\n  \n    🟢 Southern Restaurant\n  \n  \n    🔴 Italian Restaurant\n  \n\n\n↺ Reset"
+  },
+  {
+    "objectID": "3-regression/slides.html#recreating-your-teams-scatterplot-3",
+    "href": "3-regression/slides.html#recreating-your-teams-scatterplot-3",
+    "title": "Workshop #3",
+    "section": "Recreating Your Team’s Scatterplot",
+    "text": "Recreating Your Team’s Scatterplot"
+  },
+  {
+    "objectID": "3-regression/slides.html#plotting-the-regression-line-2",
+    "href": "3-regression/slides.html#plotting-the-regression-line-2",
+    "title": "Workshop #3",
+    "section": "Plotting the Regression Line",
+    "text": "Plotting the Regression Line"
+  },
+  {
+    "objectID": "3-regression/slides.html#using-the-model-to-predict-2",
+    "href": "3-regression/slides.html#using-the-model-to-predict-2",
+    "title": "Workshop #3",
+    "section": "Using the Model to Predict",
+    "text": "Using the Model to Predict"
+  },
+  {
+    "objectID": "5-dataanalysis/link-menu.html",
+    "href": "5-dataanalysis/link-menu.html",
+    "title": "Links for Today",
+    "section": "",
+    "text": "1. How does nitrate in a Knoxville creek (Second Creek) change over time?\n2. How does nitrtate in a Greene County (Cove Creek) change over time?\n3. How do the nitrate levels in Knoxville (Second Creek) and Greene County (Cove Creek) compare?"
+  },
+  {
+    "objectID": "5-dataanalysis/link-menu.html#what-question-do-you-want-to-ask-of-the-data",
+    "href": "5-dataanalysis/link-menu.html#what-question-do-you-want-to-ask-of-the-data",
+    "title": "Links for Today",
+    "section": "",
+    "text": "1. How does nitrate in a Knoxville creek (Second Creek) change over time?\n2. How does nitrtate in a Greene County (Cove Creek) change over time?\n3. How do the nitrate levels in Knoxville (Second Creek) and Greene County (Cove Creek) compare?"
+  },
+  {
+    "objectID": "5-dataanalysis/link-menu.html#knoxville-explorers",
+    "href": "5-dataanalysis/link-menu.html#knoxville-explorers",
+    "title": "Links for Today",
+    "section": "Knoxville Explorers",
+    "text": "Knoxville Explorers\nHow does nitrate in Second Creek change over time?\n\nGroup 1 Slides\nGroup 2 Slides\nGroup 3 Slides\nGroup 4 Slides\nGroup 5 Slides\n\n\nPrompt for data-formulator.ai\n\nCreate a line graph using the data from the CSV. Use only the data whose nitrate source is Knox creek. The X-Axis should be time. The Y-Axis should be nitrate levels (ppm). Show trends clearly and label the graph."
+  },
+  {
+    "objectID": "5-dataanalysis/link-menu.html#greene-county-explorers",
+    "href": "5-dataanalysis/link-menu.html#greene-county-explorers",
+    "title": "Links for Today",
+    "section": "Greene County Explorers",
+    "text": "Greene County Explorers\nHow does nitrate in Cove Creek change over time?\n\nGroup 1 Slides\nGroup 2 Slides\nGroup 3 Slides\nGroup 4 Slides\nGroup 5 Slides\n\n\nPrompt for data-formulator.ai\n\nCreate a line graph using the data from the CSV. Use only the data whose nitrate source is Greene Creek. The X-Axis should be time. The Y-Axis should be nitrate levels (ppm). Show trends clearly and label the graph."
+  },
+  {
+    "objectID": "5-dataanalysis/link-menu.html#creek-comparers",
+    "href": "5-dataanalysis/link-menu.html#creek-comparers",
+    "title": "Links for Today",
+    "section": "Creek Comparers",
+    "text": "Creek Comparers\nWhich creek between Knoxville (Second Creek) and Greeneville (Cove Creek) has higher nitrate levels?\n\nGroup 1 Slides\nGroup 2 Slides\nGroup 3 Slides\nGroup 4 Slides\nGroup 5 Slides\n\n\nPrompt for data-formulator.ai\n\nCreate a parallel box plot using the data from the CSV. Compare the nitrate source from each location to the nitrate_ppm. Label the graph."
+  },
+  {
+    "objectID": "5-dataanalysis/intro-stats-review.html",
+    "href": "5-dataanalysis/intro-stats-review.html",
+    "title": "Intro to Statistics: Review",
+    "section": "",
+    "text": "Checkpoints on this Page:\n\nCheckpoint 2.a: Import Buoy Data\nCheckpoint 2.b: Calculate Minimum and Maximum\nCheckpoint 2.c: Calculate Mean and Median\nCheckpoint 2.d: Calculate Range\nCheckpoint 2.e: Understand Boxplots"
+  },
+  {
+    "objectID": "5-dataanalysis/intro-stats-review.html#import-buoy-data",
+    "href": "5-dataanalysis/intro-stats-review.html#import-buoy-data",
+    "title": "Intro to Statistics: Review",
+    "section": "💻 Import Buoy Data",
+    "text": "💻 Import Buoy Data\n\n\n\n🎯 Checkpoint 2. a: Import the buoy data!\n\n\n\nImport the buoy data from Cove Creek (Greene Co.) and Second Creek (Knoxville).\nNo code edits needed! Click the ▶️ Run Code button to run the block."
+  },
+  {
+    "objectID": "5-dataanalysis/intro-stats-review.html#calculate-min-max-length",
+    "href": "5-dataanalysis/intro-stats-review.html#calculate-min-max-length",
+    "title": "Intro to Statistics: Review",
+    "section": "💻 Calculate Min, Max, & Length",
+    "text": "💻 Calculate Min, Max, & Length\n\n\n\n🎯 Checkpoint 2. b: Find the minimum, maximum, and length of the buoy data.\n\n\n\nNo code edits needed!\nClick the ▶️ Run Code button to run the block.\n\n\nKnoxville Data (Second Creek)\n\n\n\n\n\n\n\n\nGreene County Data (Cove Creek)"
+  },
+  {
+    "objectID": "5-dataanalysis/intro-stats-review.html#calculate-measures-of-center-mean-median",
+    "href": "5-dataanalysis/intro-stats-review.html#calculate-measures-of-center-mean-median",
+    "title": "Intro to Statistics: Review",
+    "section": "💻 Calculate Measures of Center (Mean & Median)",
+    "text": "💻 Calculate Measures of Center (Mean & Median)\n\n\n\n🎯 Checkpoint 2. c: Find the mean and median of the buoy data.\n\n\n\nNo code edits needed!\nClick the ▶️ Run Code button to run the block.\n\n\nKnoxville Data (Second Creek)\n\n\n\n\n\n\n\n\nGreene County Data (Cove Creek)"
+  },
+  {
+    "objectID": "5-dataanalysis/intro-stats-review.html#calculate-measures-of-spread-range",
+    "href": "5-dataanalysis/intro-stats-review.html#calculate-measures-of-spread-range",
+    "title": "Intro to Statistics: Review",
+    "section": "💻 Calculate Measures of Spread (Range)",
+    "text": "💻 Calculate Measures of Spread (Range)\n\n\n\n🎯 Checkpoint 2. d: Find the range of the buoy data.\n\n\n\nNo code edits needed!\nClick the ▶️ Run Code button to run the block.\n\n\nKnoxville Data (Second Creek)\n\n\n\n\n\n\n\n\nGreene County Data (Cove Creek)"
+  },
+  {
+    "objectID": "5-dataanalysis/intro-stats-review.html#understanding-boxplots",
+    "href": "5-dataanalysis/intro-stats-review.html#understanding-boxplots",
+    "title": "Intro to Statistics: Review",
+    "section": "💻 Understanding Boxplots",
+    "text": "💻 Understanding Boxplots\nBoxplots are a great way to visualize the spread of data. They show the min, max, and median of the data.\n\n\n\n🎯 Checkpoint 2. e: Create a boxplot for the Knoxville nitrate data.\n\n\nBox and Whisker Plot\n\nNo code edits needed!\nClick the ▶️ Run Code button to run the block."
+  },
+  {
+    "objectID": "5-dataanalysis/intro-stats-review.html#modified-boxplot",
+    "href": "5-dataanalysis/intro-stats-review.html#modified-boxplot",
+    "title": "Intro to Statistics: Review",
+    "section": "Modified Boxplot",
+    "text": "Modified Boxplot\n\nShows outliers!\n\n\nNo code edits needed!\nClick the ▶️ Run Code button to run the block."
+  },
+  {
+    "objectID": "5-dataanalysis/index.html",
+    "href": "5-dataanalysis/index.html",
+    "title": "Analyzing Water Quality Data",
+    "section": "",
+    "text": "This module is designed to be used in conjunction with the Lesson 5 slide deck and other resources located in the facilitator’s guide."
+  },
+  {
+    "objectID": "5-dataanalysis/index.html#recalling-previous-workshops",
+    "href": "5-dataanalysis/index.html#recalling-previous-workshops",
+    "title": "Analyzing Water Quality Data",
+    "section": "Recalling Previous Workshops",
+    "text": "Recalling Previous Workshops\n\nIn workshop #1, we learned about introductory statistics and the Python programming language\nIn workshop #2, we learned how to use an AI classification model and how the buoy uses this kind of model to check for new test pads!\nIn workshop #3, we learned about how to use an AI regression model to predict nitrate levels from RGB color values on test strips.\nIn workshop #4, we learned about physical computing and how tiny computers, other physical components, and computer code can come together to make really great things—like marshmellow sorters!"
+  },
+  {
+    "objectID": "5-dataanalysis/index.html#today-well-put-all-this-together-and-analyze-the-data-from-smokey-buoy",
+    "href": "5-dataanalysis/index.html#today-well-put-all-this-together-and-analyze-the-data-from-smokey-buoy",
+    "title": "Analyzing Water Quality Data",
+    "section": "Today: We’ll put all this together and analyze the data from Smokey Buoy!",
+    "text": "Today: We’ll put all this together and analyze the data from Smokey Buoy!\n\n\n\n\n\nLet’s get started!"
+  },
+  {
+    "objectID": "6-careers/index.html",
+    "href": "6-careers/index.html",
+    "title": "Lesson 6: Reflecting & Exploring AI Careers",
+    "section": "",
+    "text": "This module is designed to be used in conjunction with the Lesson 5 slide deck and other resources located in the facilitator’s guide."
+  },
+  {
+    "objectID": "6-careers/index.html#recalling-previous-workshops",
+    "href": "6-careers/index.html#recalling-previous-workshops",
+    "title": "Lesson 6: Reflecting & Exploring AI Careers",
+    "section": "Recalling Previous Workshops",
+    "text": "Recalling Previous Workshops\n\nIn workshop #1, we learned about introductory statistics and the Python programming language\nIn workshop #2, we learned how to use an AI classification model and how the buoy uses this kind of model to check for new test pads!\nIn workshop #3, we learned about how to use an AI regression model to predict nitrate levels from RGB color values on test strips.\nIn workshop #4, we learned about physical computing and how tiny computers, other physical components, and computer code can come together to make really great things—like marshmellow sorters!"
+  },
+  {
+    "objectID": "6-careers/index.html#today-well-put-all-this-together-and-analyze-the-data-from-smokey-buoy",
+    "href": "6-careers/index.html#today-well-put-all-this-together-and-analyze-the-data-from-smokey-buoy",
+    "title": "Lesson 6: Reflecting & Exploring AI Careers",
+    "section": "Today: We’ll put all this together and analyze the data from Smokey Buoy!",
+    "text": "Today: We’ll put all this together and analyze the data from Smokey Buoy!\n\n\n\n\n\nLet’s get started!"
+  },
+  {
+    "objectID": "6-careers/careers.html",
+    "href": "6-careers/careers.html",
+    "title": "AI Careers",
+    "section": "",
+    "text": "🐄 Animal Agriculture ⚡ Electrician 🏥 Healthcare & Nursing ❄️🔥 HVAC 🌱 Plant Agriculture 🚰 Plumbing 🐾 Veterinarian 💧 Water Quality Scientist"
+  },
+  {
+    "objectID": "6-careers/careers.html#how-can-you-use-ai-in-your-future-career",
+    "href": "6-careers/careers.html#how-can-you-use-ai-in-your-future-career",
+    "title": "AI Careers",
+    "section": "",
+    "text": "🐄 Animal Agriculture ⚡ Electrician 🏥 Healthcare & Nursing ❄️🔥 HVAC 🌱 Plant Agriculture 🚰 Plumbing 🐾 Veterinarian 💧 Water Quality Scientist"
   }
 ]

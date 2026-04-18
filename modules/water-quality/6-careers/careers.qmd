@@ -11,7 +11,6 @@ sidebar: lesson-6
 <style>
 /* Career section headers */
 h2 {
-  border-left: 5px solid #00746f;
   padding-left: 14px;
   margin-top: 2rem;
 }
@@ -34,7 +33,18 @@ h2 + p {
 }
 
 /* Pill-style jump links */
-.callout-tip a {
+.ltorange-container {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ltorange-container h3 {
+  margin-top: 0;
+}
+
+/* Pill-style jump links */
+.ltorange-container a {
   display: inline-block;
   background: #e8f5f4;
   border: 1px solid #00746f;
@@ -46,7 +56,7 @@ h2 + p {
   color: #00746f !important;
   line-height: 1.8;
 }
-.callout-tip a:hover {
+.ltorange-container a:hover {
   background: #00746f;
   color: white !important;
 }
@@ -55,7 +65,8 @@ h2 + p {
 
 ## How can you use AI in your future career?
 
-::: {.callout-tip title="Jump to a Career" appearance="simple"}
+::: {.ltorange-container}
+### **Jump to a Career**
 [🐄 Animal Agriculture](#animal-agriculture)
 [⚡ Electrician](#electrician)
 [🏥 Healthcare & Nursing](#healthcare-nursing)
@@ -70,7 +81,7 @@ h2 + p {
 
 Sensors attached to livestock — video cameras, microphones, ear tags — can catch early signs of illness before a farmer would notice anything is wrong.
 
-::: {.callout-note collapse="true" title="AI in animal agriculture"}
+::: {.callout-tip collapse="true" title="AI in animal agriculture"}
 
 ### How could AI help you?
 The AI watches breathing patterns, movement, and feeding behavior around the clock. When something looks off, it flags that animal for a human to check — catching problems days earlier than visual inspection alone.
@@ -107,7 +118,7 @@ Build your foundation with Biology, Health Science, Algebra, and Statistics. Han
 
 A smart sensor on an electrical panel can detect overheating or abnormal current patterns — before a fire starts.
 
-::: {.callout-note collapse="true" title="AI in electrical work"}
+::: {.callout-tip collapse="true" title="AI in electrical work"}
 
 ### How could AI help you?
 AI watches voltage, current, and temperature data continuously and flags conditions that a technician should inspect. Faults that might go unnoticed for weeks become visible in the data within hours.
@@ -144,7 +155,7 @@ CTE and shop courses build the hands-on foundation. After graduation, registered
 
 AI-assisted imaging can scan an X‑ray for potential fractures in seconds — giving the care team a head start before anyone's even opened the file.
 
-::: {.callout-note collapse="true" title="AI in healthcare & nursing"}
+::: {.callout-tip collapse="true" title="AI in healthcare & nursing"}
 
 ### How could AI help you?
 In clinical settings, AI acts as a second set of eyes. It reviews images, flags patterns, and surfaces cases that need closer attention — so nurses and physicians can focus their time where it matters most.
@@ -185,7 +196,7 @@ Take Biology, Health Science, Algebra, and Statistics. Volunteer at clinics, hos
 
 Most HVAC failures leave warning signs in the data days before the system actually breaks down.
 
-::: {.callout-note collapse="true" title="AI in HVAC"}
+::: {.callout-tip collapse="true" title="AI in HVAC"}
 
 ### How could AI help you?
 By watching temperature readings, airflow rates, and energy consumption over time, AI can recognize when a system is trending toward failure — a clogged filter, a failing motor, a refrigerant issue. A technician gets dispatched before the customer even notices a problem.
@@ -220,7 +231,7 @@ HVAC is one of the best trades for apprenticeship — you can enter a certificat
 
 A photo taken on a phone can give an AI-powered app enough information to identify early blight or nutrient deficiency — before the damage is visible to the naked eye.
 
-::: {.callout-note collapse="true" title="AI in plant agriculture"}
+::: {.callout-tip collapse="true" title="AI in plant agriculture"}
 
 ### How could AI help you?
 AI systems trained on images of healthy and diseased crops can scan photos faster than any scouting team. Some systems go further, estimating yield from aerial imagery or predicting harvest timing based on weather and growth data.
@@ -255,7 +266,7 @@ Work in gardens and on farms whenever possible. Join **4‑H**. Take biology and
 
 Water is expensive to lose and expensive to repair — AI helps catch leaks before a slow drip becomes a flooded basement.
 
-::: {.callout-note collapse="true" title="AI in plumbing"}
+::: {.callout-tip collapse="true" title="AI in plumbing"}
 
 ### How could AI help you?
 Sensors measuring flow rate, pressure, and acoustic signatures can detect the early signs of a leak or blockage. AI learns what "normal" sounds and feels like in a system, so it can flag the moment something changes.
@@ -289,7 +300,7 @@ Apprenticeship programs are the primary path — you earn while you learn. Look 
 
 From flagging abnormal lab values to sorting urgent from routine cases, AI can help a busy clinic stay on top of every patient.
 
-::: {.callout-note collapse="true" title="AI in veterinary medicine"}
+::: {.callout-tip collapse="true" title="AI in veterinary medicine"}
 
 ### How could AI help you?
 Veterinary clinics generate a lot of data — records, images, lab panels, weight histories. AI can surface patterns a busy staff might miss: a value trending in the wrong direction, an imaging result that warrants a closer look, a patient overdue for follow-up.
@@ -325,7 +336,7 @@ Volunteer with animals early — shelters, farms, and vet clinics all need help,
 
 You've been using sensors to track nitrate levels this week — water quality scientists are the people building the AI that makes sense of that data at scale, across hundreds of sites at once.
 
-::: {.callout-note collapse="true" title="AI in water quality science"}
+::: {.callout-tip collapse="true" title="AI in water quality science"}
 
 ### How could AI help you?
 Sensors in rivers, lakes, and distribution systems collect continuous readings of pH, turbidity, nitrates, dissolved oxygen, and more. AI watches for patterns that fall outside what's normal for that location and season — and alerts scientists before a problem reaches the public.
