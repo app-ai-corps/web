@@ -5,6 +5,7 @@ project:
     - "RGB-Applet-1.html"
     - "RGB-Applet-2.html"
     - "1-statistics/facilitator-video-overview.mp4"
+    - "6-careers/images/tomatoes/"
 
 website:
   title: ""
@@ -160,7 +161,7 @@ website:
         - text: "2. AI Careers"
           href: 6-careers/careers
         - text: "3. Review: Classification"
-          href: 6-careers/regression
+          href: 6-careers/classification
         - text: "4. Review: Regression"
           href: 6-careers/regression
         - text: "5. Review: Prompting AI"

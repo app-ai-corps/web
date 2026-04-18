@@ -3,11 +3,11 @@ title: "Classification Review"
 crossref:
   lst-title: "🎯 Checkpoint 3."
   lst-labels: alpha a
-format: live-html
+format: html
 sidebar: lesson-6
 ---
 
-Drag each tomato into the **Unripe** or **Ripe** category.
+Drag each tomato into the **Southern Restaurant** or **Italian Restaurant** category.
 
 ```{=html}
 <style>
@@ -84,10 +84,10 @@ Drag each tomato into the **Unripe** or **Ripe** category.
 
 <div class="drop-zones">
   <div class="zone zone-unripe" id="zone-unripe">
-    <div class="zone-title" style="color:#2d6a2d;">🟢 Unripe</div>
+    <div class="zone-title" style="color:#2d6a2d;">🟢 Southern Restaurant</div>
   </div>
   <div class="zone zone-ripe" id="zone-ripe">
-    <div class="zone-title" style="color:#9b1b1b;">🔴 Ripe</div>
+    <div class="zone-title" style="color:#9b1b1b;">🔴 Italian Restaurant</div>
   </div>
 </div>
 
