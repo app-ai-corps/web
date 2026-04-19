@@ -234,6 +234,15 @@ By watching temperature readings, airflow rates, and energy consumption over tim
 
 **Regression** — the AI predicts a number (example: expected temperature drop, energy use, or time-to-failure estimate).
 
+:::{.ltorange-container}
+**See how AI is reshaping work in the HVAC Industry.**
+
+🎥 ["Meet the Next-Gen Nest Learning Thermostat"](https://youtu.be/iJ7ZZ1Xy5HU?si=x90mxPteENUIZbl6)  
+
+["ChatGPT-Style AI Tool for HVAC Takes Aim at Labor Shortage"](https://www.achrnews.com/articles/print/153649-chatgpt-style-ai-tool-for-hvac-takes-aim-at-labor-shortage)  
+
+:::
+
 ### How could you use your expertise to train AI?
 - Show the AI what normal looks like across different makes, models, seasons, and building types — because "normal" varies a lot.
 - Provide before/after examples from real repairs so it learns to connect the warning pattern to the actual problem.
@@ -268,6 +277,15 @@ AI systems trained on images of healthy and diseased crops can scan photos faste
 **Classification** — the AI predicts a label (example: "healthy" vs "diseased," or the specific disease type).
 
 **Regression** — the AI predicts a number (example: disease severity score, expected yield, or days until harvest).
+
+:::{.ltorange-container}
+**See how AI is reshaping work in plant agriculture.**
+
+["How AI Can Impact Agriculture"](https://www.ffa.org/technology/how-ai-can-impact-agriculture/)  
+
+🎥  ["A new generation of smart robots could take over farm tasks once handled by humans"](https://youtu.be/vy7VxJCnBCw?si=4kj2rzAe-KyGwft6)  
+
+:::
 
 ### How could you use your expertise to train AI?
 - Collect and label images across seasons, lighting conditions, and growth stages — a disease looks different on a seedling than on a mature plant.
@@ -304,6 +322,15 @@ Sensors measuring flow rate, pressure, and acoustic signatures can detect the ea
 
 **Regression** — the AI predicts a number (example: estimated leak rate, pressure drop amount, or probability of failure over the next 30–90 days).
 
+:::{.ltorange-container}
+**See how AI is reshaping work in plumbing.**
+
+["Your plumber has a new favorite tool: ChatGPT"](https://www.cnn.com/2025/10/10/tech/ai-chatgpt-blue-collar-jobs)  
+
+🎥  ["SewerAI AutoCode Demo"](https://youtu.be/InVX7jDerzM?si=aj6mPHWxmAbG2Zpm)  
+
+:::
+
 ### How could you use your expertise to train AI?
 Real training data comes from real systems. Labeled examples of normal vs abnormal readings — captured at the time of a confirmed leak or clog — are what make a model accurate in the field rather than just in testing.
 
@@ -337,6 +364,15 @@ Veterinary clinics generate a lot of data — records, images, lab panels, weigh
 **Classification** — the AI predicts a label (example: "possible infection" vs "no infection," or "urgent" vs "routine").
 
 **Regression** — the AI predicts a number (example: recovery time estimate, weight-change trend, or risk score).
+
+:::{.ltorange-container}
+**See how AI is reshaping work in veterinary medicine.**
+
+🎥 ["AI helps vets pinpoint X-ray abnormalities"](https://youtu.be/KkjgmZP8DFs?si=3jusBBpkyv3WwK2_)  
+
+["Artificial intelligence poised to transform veterminary care"](https://www.avma.org/news/artificial-intelligence-poised-transform-veterinary-care)  
+
+:::
 
 ### How could you use your expertise to train AI?
 The challenge in veterinary medicine is variation — dogs, cats, cattle, and horses don't look the same on an X-ray, and a healthy value for one breed isn't healthy for another. Getting AI right requires labeled examples across species, breeds, ages, and body conditions.
@@ -373,6 +409,15 @@ Sensors in rivers, lakes, and distribution systems collect continuous readings o
 **Classification** — the AI predicts a label (example: "normal" vs "possible contamination event").
 
 **Regression** — the AI predicts a number (example: predicted pH, turbidity, nitrate level, or contamination risk score).
+
+:::{.ltorange-container}
+**See how AI is reshaping work in hydrology.**
+
+["Applying Machine Learning to Harmful Algal Blooms"](https://www.earthdata.nasa.gov/news/blog/applying-machine-learning-harmful-algal-blooms)  
+
+["First-of-its-Kind Monitoring Tool Uses AI to Forecast Water Contamination"](https://www.usu.edu/today/story/first-of-its-kind-monitoring-tool-uses-ai-to-forecast-water-contamination)  
+
+:::
 
 ### How could you use your expertise to train AI?
 The buoy you've been studying is a good example of this: sensors collect the raw signal, but a scientist's knowledge shapes what gets labeled as "safe" and what gets flagged. Paired datasets — sensor readings plus lab-confirmed results — are what give a model something trustworthy to learn from.
