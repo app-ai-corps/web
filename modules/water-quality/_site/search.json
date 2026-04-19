@@ -5112,9 +5112,9 @@
   {
     "objectID": "6-careers/prompting.html",
     "href": "6-careers/prompting.html",
-    "title": "Review: Prompting",
+    "title": "Review: Prompting Chatbots",
     "section": "",
-    "text": "For this station, you will use AgriGPT to use AgriGPT and prompt engineering to problem solve around a common horticultural problem.  \n\n\nAgriGPT"
+    "text": "For this station, you will use the AI Chatbot AgriGPT and prompt engineering to brainstorm possible solutions around a common horticultural problem.  \n\n\nAgriGPT"
   },
   {
     "objectID": "6-careers/careers.html#jump-to-a-career",
@@ -5381,5 +5381,12 @@
     "title": "Review: Workshops",
     "section": "",
     "text": "Over the past five workshops, you’ve built a real set of skills:\n\nIn workshop #1, we learned about introductory statistics and the Python programming language.\nIn workshop #2, we learned how to use an AI classification model and how Smokey Buoy uses this kind of model to check for new test pads.\nIn workshop #3, we learned how to use an AI regression model to predict nitrate levels from RGB color values on test strips.\nIn workshop #4, we learned about physical computing — how tiny computers, other components, and computer code can come together to make really great things.\nIn workshop #5, we used AI and prompt engineering to ask questions of and analyze real water quality data from Smokey Buoy."
+  },
+  {
+    "objectID": "6-careers/facilitator.html",
+    "href": "6-careers/facilitator.html",
+    "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
+    "section": "",
+    "text": "BigTimer.net"
   }
 ]
