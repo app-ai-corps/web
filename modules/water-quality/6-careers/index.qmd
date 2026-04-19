@@ -27,7 +27,7 @@ Today's lesson is organized into **five stations**. You'll rotate through each o
 | Station | Topic |
 |---|---|
 | 🔁 **Station 1** | Review: Workshops |
-| 💬 **Station 2** | Review: AI Prompting |
+| 💬 **Station 2** | Review: Chatbot Prompting |
 | 🍅 **Station 3** | Review: Classification |
 | 📈 **Station 4** | Review: Regression |
 | 🏢 **Station 5** | AI Careers |
