@@ -91,6 +91,16 @@ The AI watches breathing patterns, movement, and feeding behavior around the clo
 
 **Regression** — the AI predicts a number (example: body temperature estimate or weight gain trend).
 
+:::{.ltorange-container}
+**See how AI is reshaping work in animal agriculture.**
+
+["AI isn't likely to wipe out all farming jobs—but it is changing who bears the risks"](https://theconversation.com/ai-isnt-likely-to-wipe-out-all-farming-jobs-but-it-is-changing-who-bears-the-risks-275227)  
+*We suggest watching the video. It's neat!*
+
+
+["'It's already here:' How AI is transforming livestock farmer operations"](https://www.cargill.com/story/artificial-intelligence-in-animal-farming)
+:::
+
 ### How could you use your expertise to train AI?
 AI trained in a lab doesn't know what a heat-stressed cow looks like in August in East Tennessee. That's where you come in:
 
