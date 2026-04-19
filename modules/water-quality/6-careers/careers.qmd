@@ -95,10 +95,11 @@ The AI watches breathing patterns, movement, and feeding behavior around the clo
 **See how AI is reshaping work in animal agriculture.**
 
 ["AI isn't likely to wipe out all farming jobs—but it is changing who bears the risks"](https://theconversation.com/ai-isnt-likely-to-wipe-out-all-farming-jobs-but-it-is-changing-who-bears-the-risks-275227)  
-*We suggest watching the video. It's neat!*
-
+*We suggest watching the video.*
 
 ["'It's already here:' How AI is transforming livestock farmer operations"](https://www.cargill.com/story/artificial-intelligence-in-animal-farming)
+
+["After growing up on a dairy farm, this Peter Thiel-backed founder is using AI to save cattle raching."](https://fortune.com/2026/04/13/halter-ceo-craig-piggott-peter-thiel-ai-cowgorithm/)
 :::
 
 ### How could you use your expertise to train AI?
@@ -138,6 +139,14 @@ AI watches voltage, current, and temperature data continuously and flags conditi
 
 **Regression** — the AI predicts a number (example: temperature estimate, load estimate, or failure risk score).
 
+:::{.ltorange-container}
+**See how AI is reshaping work in the electrical industry.**
+
+["Artificial Intelligence in the Electrical Industry"](https://www.rogerselectric.com/resources/artifical-intelligence-electrical-industry/)  
+
+🎥 ["How the AI Boom is Creating Electrician Jobs for Young Workers"](https://youtu.be/LAC7Mi9epvw?si=KZcUS_Fitl7f_AT_)
+:::
+
 ### How could you use your expertise to train AI?
 You know what a safe installation looks like and what "urgent" means on a real jobsite — that's knowledge an AI can't get from data alone. Labeling real examples of safe/unsafe setups, and defining the line between "keep watching" and "shut it down now," is exactly what makes an AI system trustworthy.
 
@@ -176,6 +185,15 @@ In clinical settings, AI acts as a second set of eyes. It reviews images, flags 
 |---|---|---|
 | **Classification** | a label | "fracture" vs "no fracture" |
 | **Regression** | a number | estimated healing time, complication risk score |
+
+:::{.ltorange-container}
+**See how AI is reshaping work in healthcare.**
+
+🎥 ["How AI is transforming healthcare across the country"](https://www.nbcnews.com/video/how-ai-is-transforming-healthcare-across-the-country-251919941722)  
+
+["Could AI nursing robots help health care staffing shortages?"](https://www.cnn.com/2025/09/12/tech/taiwan-nursing-robots-nurabot-foxconn-nvidia-hnk-spc)  
+
+:::
 
 ### How could you use your expertise to train AI?
 Clinical AI is only as good as its training data — and that data has to be labeled by people who know medicine.
