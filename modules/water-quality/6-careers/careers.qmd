@@ -99,7 +99,6 @@ The AI watches breathing patterns, movement, and feeding behavior around the clo
 
 ["'It's already here:' How AI is transforming livestock farmer operations"](https://www.cargill.com/story/artificial-intelligence-in-animal-farming)
 
-["After growing up on a dairy farm, this Peter Thiel-backed founder is using AI to save cattle ranching."](https://fortune.com/2026/04/13/halter-ceo-craig-piggott-peter-thiel-ai-cowgorithm/)
 :::
 
 ### How could you use your expertise to train AI?
