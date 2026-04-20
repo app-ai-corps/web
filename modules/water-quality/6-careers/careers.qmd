@@ -161,6 +161,9 @@ CTE and shop courses build the hands-on foundation. After graduation, registered
 **Walters State Community College**
 <https://careertraining.ws.edu/training-programs/residential-electrician/>
 
+**TCAT Morristown - Industrial Electricity**
+<https://tcatmorristown.edu/programs/industrial-electricity>
+
 **TVA — Electrician Apprentice Program**
 <https://www.tva.com/Careers/Electrician-Apprentice-Program>
 
@@ -211,8 +214,14 @@ Take Biology, Health Science, Algebra, and Statistics. Volunteer at clinics, hos
 **University of Tennessee, Knoxville — BSN**
 <https://nursing.utk.edu/undergraduate-programs/bachelor-of-science-in-nursing-bsn/>
 
+**East Tennessee State University — BSN**
+<https://www.etsu.edu/bachelor/nursing.php>
+
 **Tusculum University — Pre-Medical Concentration**
 <https://catalog.tusculum.edu/preview_program.php?catoid=8&poid=1737&returnto=1133>
+
+**TCAT Morristown - Practical Nursing**
+<https://tcatmorristown.edu/programs/practical-nursing>
 
 **Walters State Community College**
 <https://ws.edu/academics/programs/aas/nursing.aspx>
@@ -258,6 +267,9 @@ HVAC is one of the best trades for apprenticeship — you can enter a certificat
 **Walters State Community College**
 <https://careertraining.ws.edu/training-programs/hvacr-technician/>
 
+**TCAT Morristown - Heating, Ventilation, Air Conditioning, Refrigeration**
+<https://tcatmorristown.edu/programs/heating-ventilation-air-conditioningrefrigeration>
+
 **ApprenticeshipTN**
 <https://www.tn.gov/apprenticeshiptn/find-a-program.html>
 :::
@@ -299,6 +311,9 @@ AI systems trained on images of healthy and diseased crops can scan photos faste
 Work in gardens and on farms whenever possible. Join **4‑H**. Take biology and data courses. Practical experience with crops is something no classroom can fully replace.
 
 ### Where can you pursue this career in East Tennessee?
+**East Tennessee State University - Plant Science**
+<https://www.etsu.edu/cas/biology/academics/plantscience.php>
+
 **UT Extension — Agriculture**
 <https://utextension.tennessee.edu/ut-extension-master-programs/>
 
@@ -342,8 +357,12 @@ Real training data comes from real systems. Labeled examples of normal vs abnorm
 Apprenticeship programs are the primary path — you earn while you learn. Look for registered programs through ApprenticeshipTN or start with a foundations certificate.
 
 ### Where can you pursue this career in East Tennessee?
+
 **Walters State Community College**
 <https://careertraining.ws.edu/training-programs/plumbing-foundations/>
+
+**TCAT Morristown - Pipe Fitting and Plumbing Technology**
+<https://tcatmorristown.edu/programs/pipefitting-and-plumbing-technology>
 
 **ApprenticeshipTN**
 <https://www.tn.gov/apprenticeshiptn/find-a-program.html>
@@ -434,6 +453,9 @@ Chemistry, Biology, and Environmental Science are your core classes. Water-testi
 
 **Tusculum University — Environmental Science**
 <https://site.tusculum.edu/environmental-science/>
+
+**East Tennessee State University - Biology with a Concentration in Natural Resource Ecology**
+<https://catalog.etsu.edu/preview_program.php?catoid=65&poid=18984>
 
 **Walters State Community College**
 <https://ws.edu/academics/programs/as/pre-environmental-health.aspx>
