@@ -3,6 +3,9 @@
 //Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+
+
+
 //Fonts
 $font-family-sans-serif: 'Montserrat', sans-serif !default;
 
@@ -11,6 +14,12 @@ $presentation-heading-font: "Tinos", serif !default;
 $presentation-heading-color: #006C93 !default;
 $subheading-font: "Montserrat", sans-serif !default;
 $subheading-color: #006C93 !default;
+
+$presentation-font-size-root: 32px;
+$presentation-h1-font-size: 2.5em;
+$presentation-h2-font-size: 1.8em;
+$presentation-h3-font-size: 1.3em;
+$presentation-h4-font-size: 1.0em;
 
 //Colors
 $orange: #FF8200;
@@ -32,6 +41,20 @@ $regalia: #754A7E;
 $fountain: #2197A9;
 $eureka: #EBEA64;
 $energy: #EE3E80;
+
+.reveal pre.sourceCode code {
+  font-size: 1.6rem !important;
+  line-height: 1.4;
+}
+
+.reveal pre.sourceCode code span {
+  font-size: inherit !important;
+}
+
+.reveal .cell-output pre {
+  font-size: 1.6rem !important;
+  line-height: 1.4;
+}
 
 //Font Color Classes
 .valley-color {
@@ -100,6 +123,8 @@ $energy: #EE3E80;
   }
 }
 
+
+
 // Base Document colors
 $link-color: $fountain;
 $link-color-hover: $valley;
@@ -122,11 +147,15 @@ hr {
 };
 
 .sixtypt-font{
-  font-size: 60px;
+  font-size: 60px !important;
+}
+
+.fourtyeightpt-font{
+  font-size: 48px !important;
 }
 
 .thirtyfourpt-font{
-  font-size: 34px;
+  font-size: 34px !important;
 }
 
 .twentyeightpt-font{
@@ -202,4 +231,17 @@ figcaption {
   border-style: solid;
   font-weight: 600;
   font-size: 0.6em;
+}
+
+.activity-text {
+  font-size: 1.6em;   
+  line-height: 1.6;
+}
+
+.line-height {
+  line-height: 1.0;
+}
+
+.reveal .slides {
+  font-size: 35px; /* Adjust as needed */
 }
