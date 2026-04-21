@@ -169,8 +169,6 @@ website:
         - text: "6. AI Careers"
           href: 6-careers/careers
         - text: "---"
-        - text: "7. Survey"
-          href: https://docs.google.com/forms/d/e/1FAIpQLSdZ8ViE2i4VvUiLVlNWsbADCPyVfVLXc3YkQ5_t4I9Tlfp6Kw/viewform?usp=sharing&ouid=101918895079830260600
 
 format:
   html:
