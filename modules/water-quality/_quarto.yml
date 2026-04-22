@@ -169,8 +169,6 @@ website:
         - text: "6. AI Careers"
           href: 6-careers/careers
         - text: "---"
-        - test: "Final Survey"
-          href: https://forms.gle/KySKNRX1E5kYvgyAA
 
 format:
   html:
