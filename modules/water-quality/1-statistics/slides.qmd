@@ -757,7 +757,7 @@ def median(values):
     else:
         return sorted_values[mid]
 
-def std(values):
+def stdev(values):
     m = mean(values)
     variance = sum((x - m) ** 2 for x in values) / len(values)
     return variance ** 0.5
@@ -855,6 +855,8 @@ csv_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQcExgyfklx3OXtLbqLra
 
 class_nitrate, class_nitrite = load_class_data(csv_url)
 ```
+
+## 💻 Class Data
 ```{python}
 print("Nitrate values:", class_nitrate)
 print("Nitrite values:", class_nitrite)
@@ -875,11 +877,10 @@ Click the ▶️ Run Code button to run the block.
 ```python
 # Calculate mean nitrate and nitrite for class data (replace the ???)
 
-mean_class_nitrate = mean(???)
-mean_class_nitrite = mean(???)
+mean(???)
+mean(???)
 
-print("Class nitrate:", mean_class_nitrate, "mg/L")
-print("Class nitrite:", mean_class_nitrite, "mg/L")
+
 ```
 
 ## 💻 Class Data: Mean
@@ -898,11 +899,9 @@ Click the ▶️ Run Code button to run the block.
 ```{python}
 # Calculate mean nitrate and nitrite for class data (replace the ???)
 
-mean_class_nitrate = mean(class_nitrate)
-mean_class_nitrite = mean(class_nitrite)
+mean(class_nitrate)
+mean(class_nitrite)
 
-print("Class nitrate:", mean_class_nitrate, "mg/L")
-print("Class nitrite:", mean_class_nitrite, "mg/L")
 ```
 **Your answers will differ. This is example data.**
 
@@ -922,11 +921,9 @@ Click the ▶️ Run Code button to run the block.
 ```python
 # Calculate median nitrate and nitrite for class data (replace the ???)
 
-median_class_nitrate = median(???)
-median_class_nitrite = median(???)
+median(???)
+median(???)
 
-print("Class nitrate:", median_class_nitrate, "mg/L")
-print("Class nitrite:", median_class_nitrite, "mg/L")
 ```
 
 ## 💻 Class Data: Median
@@ -945,11 +942,8 @@ Click the ▶️ Run Code button to run the block.
 ```{python}
 # Calculate median nitrate and nitrite for class data (replace the ???)
 
-median_class_nitrate = median(class_nitrate)
-median_class_nitrite = median(class_nitrite)
-
-print("Class nitrate:", median_class_nitrate, "mg/L")
-print("Class nitrite:", median_class_nitrite, "mg/L")
+median(class_nitrate)
+median(class_nitrite)
 ```
 
 **Your answers will differ. This is example data.**
@@ -958,10 +952,8 @@ print("Class nitrite:", median_class_nitrite, "mg/L")
 <hr>
 - Spread is a second type of statistical measure.
 - Like it sounds, it tells us how spread out our data are.
-- Spread, also referred to as **variability**, is *the backbone* of statistics!
 
 #### Range
-The **range** is a fairly simple calculation. It's the maximum minus the minimum in a dataset.
 
 :::{.ltorange-container}
 **max()** - **min()**
@@ -971,9 +963,7 @@ The **range** is a fairly simple calculation. It's the maximum minus the minimum
 # Same sample dataset
 sample_data = [1, 2, 6, 5, 1]
 
-sample_range = max(sample_data) - min(sample_data)
-
-print("Range of sample data:", sample_range)
+max(sample_data) - min(sample_data)
 ```
 
 ## 💻 Class Data: Range
@@ -991,11 +981,8 @@ Click the ▶️ Run Code button to run the block.
 :::
 
 ```python
-class_nitrate_range = max(???) - min(???)
-class_nitrite_range = max(???) - min(???)
-
-print("Range of class nitrate data:", class_nitrate_range)
-print("Range of class nitrite data:", class_nitrite_range)
+max(???) - min(???)
+max(???) - min(???)
 ```
 
 ## 💻 Class Data: Range
@@ -1013,11 +1000,9 @@ Click the ▶️ Run Code button to run the block.
 :::
 
 ```{python}
-class_nitrate_range = max(class_nitrate) - min(class_nitrate)
-class_nitrite_range = max(class_nitrite) - min(class_nitrite)
+max(class_nitrate) - min(class_nitrate)
+max(class_nitrite) - min(class_nitrite)
 
-print("Range of class nitrate data:", class_nitrate_range)
-print("Range of class nitrite data:", class_nitrite_range)
 ```
 **Your answers will differ. This is example data.**
 
@@ -1032,9 +1017,7 @@ print("Range of class nitrite data:", class_nitrite_range)
 # Same sample dataset
 sample_data = [1, 2, 6, 5, 1]
 
-sample_stdev = std(sample_data)
-
-print("Standard Deviation of sample data:", sample_stdev)
+stdev(sample_data)
 ```
 
 ## 💻 Class Data: Standard Deviation
@@ -1052,11 +1035,8 @@ Click the ▶️ Run Code button to run the block.
 :::
 
 ```python
-class_nitrate_stdev = std(???)
-class_nitrite_stdev = std(???)
-
-print("Standard deviation of class nitrate data:", class_nitrate_stdev)
-print("Standard deviation of class nitrite data:", class_nitrite_stdev)
+stdev(???)
+stdev(???)
 ```
 
 ## 💻 Class Data: Standard Deviation
@@ -1074,66 +1054,19 @@ Click the ▶️ Run Code button to run the block.
 :::
 
 ```{python}
-class_nitrate_stdev = std(class_nitrate)
-class_nitrite_stdev = std(class_nitrite)
-
-print("Standard deviation of class nitrate data:", class_nitrate_stdev)
-print("Standard deviation of class nitrite data:", class_nitrite_stdev)
+stdev(class_nitrate)
+stdev(class_nitrite)
 ```
 
 **Your answers will differ. This is example data.**
 
-## ❓ Causes of High Variability
-<hr>
-If a creek's reading has high standard deviation (lots of variability in comparison to other creeks), it might mean:
 
-:::{.incremental}
-1. **Pollution events** - A factory dumps waste occasionally
-2. **Storm runoff** - Rain washes fertilizer from farms into the creek
-3. **Natural cycles** - Some creeks naturally vary
-4. **Sensor problems** - The equipment might need calibration
-5. **Different sampling times** - Morning vs afternoon can be different
-:::
 
 <!-- ##  💻 Boxplots & Outliers
 <hr>
 Next Page 👉  
 ![](images/sidebar_boxplots_outliers.png){width="40%"} -->
 
-# Boxplots Activity
-
-## Boxplots: Visualizing Data
-<hr>
-- A key practice in statistics is to visualize the data!
-- One type of plot we can use to do this is a **boxplot**.
-- To make a boxplot, we will order the data and then divide the data into four equal groups (by number of observations), called **quartiles**.
-<br>
-<br>
-<br>
-[❗️❗️**Attention**❗️❗️ *Data Recorder (Sticky Notes)*]{.thirtyfourpt-font}
-
-:::{.gray-container}
-*Data Recorders (Sticky Notes)*, sort all of your sticky notes by color. Pass them out to each group, matching the sticky's color to the group's tent color. This will result in each group having a full set of stickies representing the class nitrate data.
-:::
-
-## 🖍️ Boxplots: Activity
-<hr>
-
-:::{.ltblue-container .twentyfourpt-font}
-🎯 **Checkpoint 7.a**: As a group, construct a boxplot for the class nitrate data by hand.
-:::
-
-:::{.gray-container}
-**Materials Needed:**  
-- 1 Post-It grid paper sheet per group  
-- 1 poster marker per group  
-- Your group's full set of stickies (including those from other groups) from the nitrate lab  
-- Lab sheet handout (back)  
-:::
-
-Follow the steps on the back of your lab sheet to create a boxplot for the class nitrate data.
-
-[🚀 **LET'S GO** 🚀]{.sixtypt-font}
 
 # Boxplots & Outliers
 
@@ -1159,10 +1092,7 @@ csv_url = "replace_this_with_your_csv_url"
 
 class_nitrate, class_nitrite = load_class_data(csv_url)
 ```
-```{python}
-print("Nitrate values:", class_nitrate)
-print("Nitrite values:", class_nitrite)
-```
+
 
 ## 💻 Class Data: Boxplots
 <hr>
@@ -1174,6 +1104,8 @@ print("Nitrite values:", class_nitrite)
 :::{.dkorange-container}
 Click the ▶️ Run Code button to run the block and create a boxplot for the class nitrate data.
 :::
+
+
 
 ```python
 import matplotlib.pyplot as plt
