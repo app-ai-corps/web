@@ -61,7 +61,7 @@ website:
           href: 1-statistics/boxplots-outliers
         - text: "---"
         - text: "9. Exit Ticket"
-          href: https://forms.gle/k4P6FK6BpnusNMyZ9
+          href: #
         - text: "---"
         - text: "Optional Exercise"
           href: https://colab.research.google.com/drive/1xm5qwxA6ZCm3BxuTKFL6n1ItlWgR84jM?usp=sharing
@@ -122,7 +122,7 @@ website:
           href: 3-regression/prediction-rsquared
         - text: "---"
         - text: "7. Exit Ticket"
-          href: https://forms.gle/hNmxRvhXzTNBZAyY6
+          href: #
         - text: "---"
         - text: "Optional Exercise"
           href: #      
@@ -143,8 +143,7 @@ website:
           href: 5-dataanalysis/link-menu
         - text: "---"
         - text: "3. Exit Ticket"
-          href: https://docs.google.com/forms/d/e/1FAIpQLSdZ8ViE2i4VvUiLVlNWsbADCPyVfVLXc3YkQ5_t4I9Tlfp6Kw/viewform?usp=sharing&ouid=101918895079830260600
-        - text: "---"
+          href: #
         - text: "Optional Exercise"
           href: #   
 
