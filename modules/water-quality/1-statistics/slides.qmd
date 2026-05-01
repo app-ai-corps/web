@@ -760,7 +760,7 @@ def median(values):
 def stdev(values):
     m = mean(values)
     variance = sum((x - m) ** 2 for x in values) / len(values)
-    return variance ** 0.5
+    return round(variance ** 0.5, 1)
 ```
 
 ```{python}
@@ -877,8 +877,8 @@ Click the ▶️ Run Code button to run the block.
 ```python
 # Calculate mean nitrate and nitrite for class data (replace the ???)
 
-mean(???)
-mean(???)
+mean_nitrate = mean(???)
+mean_nitrite = (???)
 
 
 ```
@@ -899,10 +899,16 @@ Click the ▶️ Run Code button to run the block.
 ```{python}
 # Calculate mean nitrate and nitrite for class data (replace the ???)
 
-mean(class_nitrate)
-mean(class_nitrite)
+mean_nitrate = mean(class_nitrate)
+mean_nitrite = mean(class_nitrite)
+
+print(mean_nitrate)
+print(mean_nitrite)
 
 ```
+
+
+
 **Your answers will differ. This is example data.**
 
 ## 💻 Class Data: Median
@@ -921,8 +927,8 @@ Click the ▶️ Run Code button to run the block.
 ```python
 # Calculate median nitrate and nitrite for class data (replace the ???)
 
-median(???)
-median(???)
+median_nitrate = median(???)
+median_nitrite = median(???)
 
 ```
 
@@ -942,8 +948,12 @@ Click the ▶️ Run Code button to run the block.
 ```{python}
 # Calculate median nitrate and nitrite for class data (replace the ???)
 
-median(class_nitrate)
-median(class_nitrite)
+median_nitrate = median(class_nitrate)
+median_nitrite = median(class_nitrite)
+
+print(median_nitrate)
+print(median_nitrite)
+
 ```
 
 **Your answers will differ. This is example data.**
@@ -981,8 +991,8 @@ Click the ▶️ Run Code button to run the block.
 :::
 
 ```python
-max(???) - min(???)
-max(???) - min(???)
+nitrate_range = max(???) - min(???)
+nitrite_range = max(???) - min(???)
 ```
 
 ## 💻 Class Data: Range
@@ -1000,8 +1010,11 @@ Click the ▶️ Run Code button to run the block.
 :::
 
 ```{python}
-max(class_nitrate) - min(class_nitrate)
-max(class_nitrite) - min(class_nitrite)
+nitrate_range = max(class_nitrate) - min(class_nitrate)
+nitrite_range = max(class_nitrite) - min(class_nitrite)
+
+print(nitrate_range)
+print(nitrite_range)
 
 ```
 **Your answers will differ. This is example data.**
@@ -1035,8 +1048,8 @@ Click the ▶️ Run Code button to run the block.
 :::
 
 ```python
-stdev(???)
-stdev(???)
+nitrite_stdev = stdev(???)
+nitrate_stdev = stdev(???)
 ```
 
 ## 💻 Class Data: Standard Deviation
@@ -1054,8 +1067,11 @@ Click the ▶️ Run Code button to run the block.
 :::
 
 ```{python}
-stdev(class_nitrate)
-stdev(class_nitrite)
+nitrate_stdev = stdev(class_nitrate)
+nitrite_stdev = stdev(class_nitrite)
+
+print(nitrate_stdev)
+print(nitrite_stdev)
 ```
 
 **Your answers will differ. This is example data.**
