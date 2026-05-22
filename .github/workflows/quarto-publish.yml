@@ -29,9 +29,9 @@ jobs:
             -o "$TEXMFHOME/tex/latex/handoutwithnotes/handoutWithNotes.sty"
           /home/runner/.TinyTeX/bin/x86_64-linux/mktexlsr
 
-      - name: Fix tlmgr repository
-        # CTAN moved to 2026 repos; pin to 2025 archive to avoid version mismatch
-        run: /home/runner/.TinyTeX/bin/x86_64-linux/tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/tlnet-final
+      - name: Install LaTeX packages
+        # luatexbase needed for PDF slides; tlmgr uses default CTAN (TL 2026)
+        run: /home/runner/.TinyTeX/bin/x86_64-linux/tlmgr install luatexbase
 
       - name: Set up Python
         uses: actions/setup-python@v5.6.0
