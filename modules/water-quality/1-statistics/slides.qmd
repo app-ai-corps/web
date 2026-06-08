@@ -238,6 +238,18 @@ Click the ▶️ Run Code button to run the blocks.
 3 - 2
 ```
 
+## 💻 Python Does Math!
+<hr>
+- Python can do math problems way faster than we can!
+
+:::{.ltblue-container .twentyfourpt-font}
+🎯 **Checkpoint 1.b**: Mathematical Operators
+:::
+
+:::{.dkorange-container}
+Click the ▶️ Run Code button to run the blocks.
+:::
+
 ✖️ **Multiplication:**
 ```python
 2 * 3
@@ -364,9 +376,9 @@ Next Page 👉
 
 ## Water Quality 💧
 <hr>
-<div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden;">
+<div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden; display: flex; justify-content: center;">
   <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    style="position: absolute; top: 0; left: 0; width: 80%; height: 80%;"
     src="https://edpuzzle.com/embed/media/695b558ffb53770c2e4fa1bd" 
     frameborder="0" 
     allowfullscreen>
@@ -393,16 +405,19 @@ Next Page 👉
 
 ## 🌳 Nitrogen as Nutrient
 <hr>
+
+:::{.fourtyeightpt-font}
 - Nitrogen is naturally occurring.   
 - When it combines with air and water, it forms ions: nitrates (NO<sub>3</sub>) and nitrites (NO<sub>2</sub>).
 - Nitrogen within water is an important part of the nitrogen cycle, an important process necessary for life.
+:::
 
 ## 🌳 Nitrogen as Nutrient
 <hr>
 
 <div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden;">
   <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    style="position: absolute; top: 0; left: 0; width: 80%; height: 80%;"
     src="https://edpuzzle.com/embed/media/695c86636c7ddd288faebc26" 
     frameborder="0" 
     allowfullscreen>
@@ -419,18 +434,21 @@ Next Page 👉
 
 ## Nitrogen as Pollutant
 <hr>
+
+:::{.thirtyfourpt-font}
 - Too much nitrogen in water can be a **pollutant**.   
 - Excess nitrogen–in the form of nitrates and nitrites–can result from:
   - Agricultural operations (fertilizer runoff and livestock manure)
   - Sewage and septic systems (human waste)
   - Acid rain
+:::
 
 ## Nitrogen as Pollutant
 <hr>
 
 <div style="position: relative; padding-bottom: 65%; height: 0; overflow: hidden;">
   <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    style="position: absolute; top: 0; left: 0; width: 80%; height: 80%;"
     src="https://edpuzzle.com/embed/media/695c8e7d1b8b4b96f64b0e80" 
     frameborder="0" 
     allowfullscreen>
@@ -465,14 +483,22 @@ Next Page 👉
 
 ## Monitoring Nitrogen: YOU! 🔬💧
 <hr>
-- We can also monitor our own water for nitrogen!
 
-:::{.columns}
-:::{.column width = "33%"}
-![](images/nitrate-nitrite-test-strips.png){width="90%"}
+We can also monitor our own water for nitrogen!
+
+::: {.columns align="top"}
+::: {.column width="33%"}
+<div style="text-align:center;">
+  <img src="images/nitrate-nitrite-test-strips.png"
+       style="max-width:100%; max-height:220px; height:auto; display:block; margin:0 auto;" />
+</div>
 :::
-:::{.column width = "67%"}
-![Note that 10 mg/L is the EPA limit for nitrate and 1 mg/L is the EPA limit for nitrite.](images/nitrate-test-strip-scale-epalimits.png)
+
+::: {.column width="67%"}
+<div style="text-align:center;">
+  <img src="images/nitrate-test-strip-scale-epalimits.png"
+       style="max-width:100%; max-height:220px; height:auto; display:block; margin:0 auto;" />
+</div>
 :::
 :::
 
