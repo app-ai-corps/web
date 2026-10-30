@@ -161,11 +161,10 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#lesson-topics-and-standards" id="toc-lesson-topics-and-standards" class="nav-link" data-scroll-target="#lesson-topics-and-standards">Lesson Topics and Standards</a></li>
-  <li><a href="#slide-deck-with-facilitator-notes" id="toc-slide-deck-with-facilitator-notes" class="nav-link" data-scroll-target="#slide-deck-with-facilitator-notes">Slide Deck with Facilitator Notes</a></li>
+  <li><a href="#facilitation-notes" id="toc-facilitation-notes" class="nav-link" data-scroll-target="#facilitation-notes">Facilitation Notes</a></li>
   <li><a href="#lesson-materials" id="toc-lesson-materials" class="nav-link" data-scroll-target="#lesson-materials">Lesson Materials</a></li>
   <li><a href="#lesson-prep" id="toc-lesson-prep" class="nav-link" data-scroll-target="#lesson-prep">Lesson Prep</a></li>
   <li><a href="#estimated-lesson-timing" id="toc-estimated-lesson-timing" class="nav-link" data-scroll-target="#estimated-lesson-timing">Estimated Lesson Timing</a></li>
-  <li><a href="#facilitation-notes" id="toc-facilitation-notes" class="nav-link" data-scroll-target="#facilitation-notes">Facilitation Notes</a></li>
   <li><a href="#reference-materials" id="toc-reference-materials" class="nav-link" data-scroll-target="#reference-materials">Reference Materials</a></li>
   </ul>
 </nav>
@@ -265,7 +264,8 @@ ul.task-list li input[type="checkbox"] {
      SECTION START: Lesson Topics and Standards
      Expandable panels. Each panel opens when clicked.
      - The panel title is the text inside label="...".
-     - open="true" makes a panel start open. Use it on one panel only.
+     - open="true" makes a panel start open. Use it on one panel at most;
+       leave it off and all panels start closed.
      - To add a panel: copy one panel (COPY START to COPY END) and
        paste it right below another panel's COPY END line.
      - The "Prior Knowledge & Vocabulary" box below the panels is
@@ -307,7 +307,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="lesson-topics-and-standards">Lesson Topics and Standards</h2>
 <div class="fg-accordion">
 <!-- ======== COPY START: one expandable panel ======== -->
-<div class="fg-panel" data-label="TN AgriScience Standards" open="true">
+<div class="fg-panel" data-label="TN AgriScience Standards">
 <!-- One topic per line. To indent a subtopic, start the line with
      two spaces before the dash. -->
 <ul>
@@ -373,11 +373,71 @@ ul.task-list li input[type="checkbox"] {
  -->
 <!-- ########## SECTION END: Lesson Overview Video Tour ########## -->
 </section>
-<section id="slide-deck-with-facilitator-notes" class="level2">
-<h2 class="anchored" data-anchor-id="slide-deck-with-facilitator-notes">Slide Deck with Facilitator Notes</h2>
+<section id="facilitation-notes" class="level2">
+<h2 class="anchored" data-anchor-id="facilitation-notes">Facilitation Notes</h2>
 <div class="ltblue-container">
-<p>For a more in-depth walkthrough, see the <a href="{{FACILITATOR_NOTES_URL}}">slides with visible facilitator notes</a>.</p>
+<p><strong>Slide Deck with Facilitator Notes:</strong> For an in-depth walkthrough, see the <a href="{{FACILITATOR_NOTES_URL}}">slides with visible facilitator notes</a>.</p>
 </div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">❓ Discussion Questions</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">🔀 Differentiation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">🛠 Troubleshooting</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ol type="1">
+<li>{{QUESTION}}</li>
+<li>{{QUESTION}}</li>
+<li>{{QUESTION}} <!-- ======== COPY END: one tab ========== --></li>
+</ol>
+<!-- ======== COPY START: one tab ======== -->
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><strong>Extra support:</strong> {{SUPPORT_STRATEGY}}</p>
+<p><strong>Extension:</strong> {{EXTENSION_STRATEGY}}</p>
+<p><strong>If you’re short on time:</strong> {{WHAT_TO_CUT}}</p>
+<!-- ======== COPY END: one tab ========== -->
+<!-- ======== COPY START: one tab ======== -->
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<!-- ======== COPY START: one problem + fix ======== -->
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>{{PROBLEM}}
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>{{FIX}}</p>
+</div>
+</div>
+</div>
+<!-- ======== COPY END: one problem + fix ========== -->
+<!-- ======== COPY START: one problem + fix ======== -->
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>{{PROBLEM}}
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>{{FIX}}</p>
+</div>
+</div>
+</div>
+<!-- ======== COPY END: one problem + fix ========== -->
+<!-- ======== COPY END: one tab ========== -->
+</div>
+</div>
+</div>
+<!-- ########## SECTION END: Facilitation Notes ########## -->
 <!-- 
 ###################################################################
      SECTION START: Lesson Materials
@@ -476,7 +536,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- ---- OPTIONAL: collapsible detail box (e.g., a mixing guide).
           Delete from here to "END OPTIONAL" if not needed. ---- -->
 <div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -485,7 +545,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><em>{{ASSUMPTIONS — e.g., written for 5 groups × 4 samples}}</em></p>
 <table class="caption-top table">
@@ -688,7 +748,7 @@ document.addEventListener("DOMContentLoaded", () => {
   border: 1px solid var(--aaic-border, #dcdcdc);
   border-radius: var(--fg-radius, 12px);
   overflow: hidden;
-  margin: 1rem 0 1.5rem;
+  margin: 0.75rem 0 1.25rem;
 }
 
 .fg-flow-accordion > summary {
@@ -697,7 +757,7 @@ document.addEventListener("DOMContentLoaded", () => {
   justify-content: space-between;
   cursor: pointer;
   list-style: none;
-  padding: 1rem 1.25rem;
+  padding: 0.65rem 1rem;
   background: var(--aaic-ltblue, #f1f9f9);
   color: #000;
   font-size: 1rem;
@@ -730,7 +790,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 .fg-flow-accordion > .fg-timeline {
   margin: 0;
-  padding: 1rem 1.25rem;
+  padding: 0.5rem 1rem;
 }
 
 /* Heading sized like the "Prior Knowledge & Vocabulary" box header;
@@ -775,69 +835,6 @@ document.addEventListener("DOMContentLoaded", () => {
      Tabs. Each tab starts with a line beginning with ###
      The text after ### is the tab's name.
      ################################################################### -->
-</section>
-<section id="facilitation-notes" class="level2">
-<h2 class="anchored" data-anchor-id="facilitation-notes">Facilitation Notes</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">❓ Discussion Questions</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">🔀 Differentiation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">🛠 Troubleshooting</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<ol type="1">
-<li>{{QUESTION}}</li>
-<li>{{QUESTION}}</li>
-<li>{{QUESTION}} <!-- ======== COPY END: one tab ========== --></li>
-</ol>
-<!-- ======== COPY START: one tab ======== -->
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p><strong>Extra support:</strong> {{SUPPORT_STRATEGY}}</p>
-<p><strong>Extension:</strong> {{EXTENSION_STRATEGY}}</p>
-<p><strong>If you’re short on time:</strong> {{WHAT_TO_CUT}}</p>
-<!-- ======== COPY END: one tab ========== -->
-<!-- ======== COPY START: one tab ======== -->
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<!-- ======== COPY START: one problem + fix ======== -->
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>{{PROBLEM}}
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>{{FIX}}</p>
-</div>
-</div>
-</div>
-<!-- ======== COPY END: one problem + fix ========== -->
-<!-- ======== COPY START: one problem + fix ======== -->
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>{{PROBLEM}}
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>{{FIX}}</p>
-</div>
-</div>
-</div>
-<!-- ======== COPY END: one problem + fix ========== -->
-<!-- ======== COPY END: one tab ========== -->
-</div>
-</div>
-</div>
-<!-- ########## SECTION END: Facilitation Notes ########## -->
 <!-- ###################################################################
      SECTION START: Reference Materials
      Two cards of links. Each link is one line:
@@ -874,7 +871,9 @@ document.addEventListener("DOMContentLoaded", () => {
      ################################################################### -->
 <hr>
 <div class="text-center text-body-secondary small">
-<p>Questions or feedback on this lesson? Contact aaic@utk.edu</p>
+<!-- The email address is stored backwards so spam bots can't read it.
+     The page turns it back into a clickable link. -->
+<p>Questions or feedback on this lesson? Contact <span class="fg-email" data-u="ciaa" data-d="ude.ktu">aaic [at] utk [dot] edu</span></p>
 </div>
 <!-- ########## SECTION END: Footer ########## -->
 <!-- ###################################################################
@@ -957,10 +956,10 @@ document.addEventListener("DOMContentLoaded", () => {
     background: linear-gradient(135deg, var(--aaic-globe) 0%, var(--aaic-valley) 100%);
     color: #fff;
     border-radius: var(--fg-radius);
-    padding: 1.75rem 2rem;
-    margin: 1rem 0 1.5rem;
+    padding: 1.25rem 1.5rem;
+    margin: 0.75rem 0 1.25rem;
   }
-  .fg-hero p { margin-bottom: 0.6rem; }
+  .fg-hero p { margin-bottom: 0.4rem; }
   .fg-hero .lead { font-size: 1.15rem; }
   .fg-hero .fg-tag { margin-right: 0.25rem; }
   .fg-hero .fg-btn { background: #fff; border-color: #fff; color: var(--aaic-globe) !important; }
@@ -1040,20 +1039,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   .accordion-button:hover { color: var(--aaic-torch); }
   .accordion-button:focus { box-shadow: 0 0 0 0.2rem rgba(0, 108, 147, 0.25); }
+  .accordion-button { padding: 0.65rem 1rem; }
+  .accordion-body { padding: 0.75rem 1rem; }
 
   /* Always-open box (.fg-box): styled like an open accordion panel */
   .fg-box {
-    margin: 1rem 0 1.5rem; border: 1px solid var(--aaic-border);
+    margin: 0.75rem 0 1.25rem; border: 1px solid var(--aaic-border);
     border-radius: var(--fg-radius); overflow: hidden; background: #fff;
   }
   .fg-box-header {
-    margin: 0 !important; padding: 1rem 1.25rem;
+    margin: 0 !important; padding: 0.65rem 1rem;
     background: var(--aaic-ltblue); box-shadow: inset 0 -1px 0 var(--aaic-border);
     font-family: var(--fg-heading-font); font-weight: 600; font-size: 1rem;
     color: var(--aaic-globe);
   }
   .fg-box-header .anchorjs-link { display: none !important; }
-  .fg-box-body { padding: 1rem 1.25rem; }
+  .fg-box-body { padding: 0.75rem 1rem; }
   .fg-box-body > :last-child { margin-bottom: 0; }
 
   /* Tabsets — Globe text, Torch underline on the active tab
@@ -1072,8 +1073,8 @@ document.addEventListener("DOMContentLoaded", () => {
   .fg-step {
     position: relative;
     border-left: 3px solid var(--aaic-summit);
-    padding: 0.25rem 0 0.5rem 1.5rem;
-    margin: 0 0 1.5rem 1rem;
+    padding: 0.15rem 0 0.25rem 1.25rem;
+    margin: 0 0 1rem 1rem;
   }
   .fg-step::before {
     content: counter(fgstep);
@@ -1091,7 +1092,7 @@ document.addEventListener("DOMContentLoaded", () => {
   .fg-timeline { list-style: none; padding-left: 0; margin: 1rem 0; }
   .fg-timeline > li {
     display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem;
-    padding: 0.75rem 0; border-bottom: 1px dashed var(--aaic-border);
+    padding: 0.5rem 0; border-bottom: 1px dashed var(--aaic-border);
   }
   .fg-timeline > li:last-child { border-bottom: none; }
   .fg-timeline .fg-time {
@@ -1137,7 +1138,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   .fg-ef {
     border: 1px solid var(--aaic-border); border-radius: var(--fg-radius);
-    padding: 1.25rem 1.5rem; margin: 0 0 1.5rem;
+    padding: 0.9rem 1.1rem; margin: 0 0 1.25rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
   }
   .fg-ef > h3:first-child, .fg-ef > section > h3 { margin-top: 0; }
@@ -1290,7 +1291,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /* ---------- Simplified blocks (no nesting needed) ---------- */
-  .fg-grid-2, .fg-grid-3, .fg-grid-4 { display: grid; gap: 1rem; margin: 1rem 0 1.5rem; }
+  .fg-grid-2, .fg-grid-3, .fg-grid-4 { display: grid; gap: 0.75rem; margin: 0.75rem 0 1.25rem; }
   .fg-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .fg-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .fg-grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -1298,20 +1299,20 @@ document.addEventListener("DOMContentLoaded", () => {
     .fg-grid-2, .fg-grid-3 { grid-template-columns: 1fr; }
     .fg-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
-  .fg-hero + .fg-grid-3, .fg-hero + .fg-grid-4 { margin-bottom: 2rem; }
-  .fg-card { background: #fff; padding: 1rem 1.25rem; display: flex; flex-direction: column; }
+  .fg-hero + .fg-grid-3, .fg-hero + .fg-grid-4 { margin-bottom: 1.5rem; }
+  .fg-card { background: #fff; padding: 0.75rem 1rem; display: flex; flex-direction: column; }
   .fg-card > p:last-child { margin-top: auto; margin-bottom: 0; }
   .fg-card > ul:last-child { margin-bottom: 0; }
   .fg-card > p:first-child { margin-bottom: 0.25rem; }
   .fg-card, .fg-stat { overflow-wrap: anywhere; }
-  .fg-stat { padding: 1rem 0.75rem; }
-  .fg-stat p { margin-bottom: 0.25rem; }
+  .fg-stat { padding: 0.6rem 0.75rem; }
+  .fg-stat p { margin-bottom: 0.15rem; }
   .fg-card-title {
     display: block; font-family: var(--fg-heading-font); font-weight: 700;
     font-size: 1.1rem; color: var(--aaic-globe);
   }
   .fg-card-header {
-    display: block; margin: -1rem -1.25rem 0.5rem; padding: 0.6rem 1.25rem;
+    display: block; margin: -0.75rem -1rem 0.5rem; padding: 0.5rem 1rem;
     background: var(--aaic-ltblue); border-bottom: 1px solid var(--aaic-border);
     border-radius: var(--fg-radius) var(--fg-radius) 0 0;
     font-family: var(--fg-heading-font); font-weight: 700; color: var(--aaic-globe);
@@ -1329,7 +1330,7 @@ document.addEventListener("DOMContentLoaded", () => {
   .fg-linklist li a { font-weight: 600; }
   .fg-link-note { flex-basis: 100%; font-size: 0.85rem; color: var(--aaic-smokey); }
 
-  .fg-accordion { margin: 1rem 0 1.5rem; }
+  .fg-accordion { margin: 0.75rem 0 1.25rem; }
   .fg-steps { counter-reset: fgstep; }
   .fg-step { counter-increment: fgstep; }
   .fg-checklist ul { list-style: none; padding-left: 0; margin: 0; }
@@ -1338,7 +1339,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   .fg-timeline > .fg-segment {
     display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem;
-    padding: 0.75rem 0; border-bottom: 1px dashed var(--aaic-border);
+    padding: 0.5rem 0; border-bottom: 1px dashed var(--aaic-border);
   }
   .fg-timeline > .fg-segment:last-child { border-bottom: none; }
   .fg-segment-body p { margin: 0; }
@@ -1398,7 +1399,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /* Educative features pasted into the page */
-  .fg-feature { margin: 1rem 0 1.25rem; }
+  .fg-feature { margin: 0.75rem 0 1rem; }
   .fg-feature-label {
     display: block; font-family: var(--fg-heading-font); font-weight: 700;
     font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;
@@ -1464,6 +1465,16 @@ document.addEventListener("DOMContentLoaded", () => {
     body.className = "fg-box-body";
     body.append(...box.childNodes);
     box.append(header, body);
+  });
+
+  // Scrambled email addresses (.fg-email): user and domain are stored reversed
+  document.querySelectorAll(".fg-email").forEach((el) => {
+    const rev = (v) => (v || "").split("").reverse().join("");
+    const address = rev(attr(el, "u")) + "@" + rev(attr(el, "d"));
+    const link = document.createElement("a");
+    link.href = "mailto:" + address;
+    link.textContent = address;
+    el.replaceWith(link);
   });
 
   // Timeline (.fg-timeline > .fg-segment)

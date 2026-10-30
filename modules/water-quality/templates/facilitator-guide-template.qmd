@@ -156,7 +156,8 @@ By the end of the lesson, students will be able to:
      SECTION START: Lesson Topics and Standards
      Expandable panels. Each panel opens when clicked.
      - The panel title is the text inside label="...".
-     - open="true" makes a panel start open. Use it on one panel only.
+     - open="true" makes a panel start open. Use it on one panel at most;
+       leave it off and all panels start closed.
      - To add a panel: copy one panel (COPY START to COPY END) and
        paste it right below another panel's COPY END line.
      - The "Prior Knowledge & Vocabulary" box below the panels is
@@ -186,7 +187,7 @@ By the end of the lesson, students will be able to:
 ::: {.fg-accordion}
 
 <!-- ======== COPY START: one expandable panel ======== -->
-::: {.fg-panel label="TN AgriScience Standards" open="true"}
+::: {.fg-panel label="TN AgriScience Standards"}
 <!-- One topic per line. To indent a subtopic, start the line with
      two spaces before the dash. -->
 - {{TOPIC}}
@@ -253,13 +254,73 @@ By the end of the lesson, students will be able to:
 
 <!-- ########## SECTION END: Lesson Overview Video Tour ########## -->
 
-
-
-## Slide Deck with Facilitator Notes
+## Facilitation Notes
 
 ::: {.ltblue-container}
-For a more in-depth walkthrough, see the [slides with visible facilitator notes]({{FACILITATOR_NOTES_URL}}).
+**Slide Deck with Facilitator Notes:** For an in-depth walkthrough, see the [slides with visible facilitator notes]({{FACILITATOR_NOTES_URL}}).
 :::
+
+::: {.panel-tabset}
+
+<!-- ======== COPY START: one tab ======== -->
+<!-- ### 💡 Tips
+
+- {{TIP}}
+- {{TIP}} -->
+
+<!-- ======== COPY END: one tab ========== -->
+
+<!-- ======== COPY START: one tab ======== -->
+<!-- ### ⚠️ Common Misconceptions
+
+| Students may think... | Address it by... |
+|---|---|
+| {{MISCONCEPTION}} | {{STRATEGY}} |
+| {{MISCONCEPTION}} | {{STRATEGY}} | -->
+
+<!-- ======== COPY END: one tab ========== -->
+
+<!-- ======== COPY START: one tab ======== -->
+### ❓ Discussion Questions
+
+1. {{QUESTION}}
+2. {{QUESTION}}
+3. {{QUESTION}}
+<!-- ======== COPY END: one tab ========== -->
+
+<!-- ======== COPY START: one tab ======== -->
+### 🔀 Differentiation
+
+**Extra support:** {{SUPPORT_STRATEGY}}
+
+**Extension:** {{EXTENSION_STRATEGY}}
+
+**If you're short on time:** {{WHAT_TO_CUT}}
+
+<!-- ======== COPY END: one tab ========== -->
+
+<!-- ======== COPY START: one tab ======== -->
+### 🛠 Troubleshooting
+
+<!-- ======== COPY START: one problem + fix ======== -->
+::: {.callout-caution collapse="true"}
+## {{PROBLEM}}
+{{FIX}}
+:::
+<!-- ======== COPY END: one problem + fix ========== -->
+
+<!-- ======== COPY START: one problem + fix ======== -->
+::: {.callout-caution collapse="true"}
+## {{PROBLEM}}
+{{FIX}}
+:::
+<!-- ======== COPY END: one problem + fix ========== -->
+<!-- ======== COPY END: one tab ========== -->
+
+:::
+
+<!-- ########## SECTION END: Facilitation Notes ########## -->
+
 
 <!-- 
 ###################################################################
@@ -570,7 +631,7 @@ document.addEventListener("DOMContentLoaded", () => {
   border: 1px solid var(--aaic-border, #dcdcdc);
   border-radius: var(--fg-radius, 12px);
   overflow: hidden;
-  margin: 1rem 0 1.5rem;
+  margin: 0.75rem 0 1.25rem;
 }
 
 .fg-flow-accordion > summary {
@@ -579,7 +640,7 @@ document.addEventListener("DOMContentLoaded", () => {
   justify-content: space-between;
   cursor: pointer;
   list-style: none;
-  padding: 1rem 1.25rem;
+  padding: 0.65rem 1rem;
   background: var(--aaic-ltblue, #f1f9f9);
   color: #000;
   font-size: 1rem;
@@ -612,7 +673,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 .fg-flow-accordion > .fg-timeline {
   margin: 0;
-  padding: 1rem 1.25rem;
+  padding: 0.5rem 1rem;
 }
 
 /* Heading sized like the "Prior Knowledge & Vocabulary" box header;
@@ -663,69 +724,6 @@ document.addEventListener("DOMContentLoaded", () => {
      The text after ### is the tab's name.
      ################################################################### -->
 
-## Facilitation Notes
-
-::: {.panel-tabset}
-
-<!-- ======== COPY START: one tab ======== -->
-<!-- ### 💡 Tips
-
-- {{TIP}}
-- {{TIP}} -->
-
-<!-- ======== COPY END: one tab ========== -->
-
-<!-- ======== COPY START: one tab ======== -->
-<!-- ### ⚠️ Common Misconceptions
-
-| Students may think... | Address it by... |
-|---|---|
-| {{MISCONCEPTION}} | {{STRATEGY}} |
-| {{MISCONCEPTION}} | {{STRATEGY}} | -->
-
-<!-- ======== COPY END: one tab ========== -->
-
-<!-- ======== COPY START: one tab ======== -->
-### ❓ Discussion Questions
-
-1. {{QUESTION}}
-2. {{QUESTION}}
-3. {{QUESTION}}
-<!-- ======== COPY END: one tab ========== -->
-
-<!-- ======== COPY START: one tab ======== -->
-### 🔀 Differentiation
-
-**Extra support:** {{SUPPORT_STRATEGY}}
-
-**Extension:** {{EXTENSION_STRATEGY}}
-
-**If you're short on time:** {{WHAT_TO_CUT}}
-
-<!-- ======== COPY END: one tab ========== -->
-
-<!-- ======== COPY START: one tab ======== -->
-### 🛠 Troubleshooting
-
-<!-- ======== COPY START: one problem + fix ======== -->
-::: {.callout-caution collapse="true"}
-## {{PROBLEM}}
-{{FIX}}
-:::
-<!-- ======== COPY END: one problem + fix ========== -->
-
-<!-- ======== COPY START: one problem + fix ======== -->
-::: {.callout-caution collapse="true"}
-## {{PROBLEM}}
-{{FIX}}
-:::
-<!-- ======== COPY END: one problem + fix ========== -->
-<!-- ======== COPY END: one tab ========== -->
-
-:::
-
-<!-- ########## SECTION END: Facilitation Notes ########## -->
-
 
 <!-- ###################################################################
      SECTION START: Reference Materials
@@ -769,7 +767,9 @@ document.addEventListener("DOMContentLoaded", () => {
 ---
 
 ::: {.text-center .text-body-secondary .small}
-Questions or feedback on this lesson? Contact aaic@utk.edu
+<!-- The email address is stored backwards so spam bots can't read it.
+     The page turns it back into a clickable link. -->
+Questions or feedback on this lesson? Contact [aaic [at] utk [dot] edu]{.fg-email u="ciaa" d="ude.ktu"}
 :::
 
 <!-- ########## SECTION END: Footer ########## -->
@@ -857,10 +857,10 @@ Questions or feedback on this lesson? Contact aaic@utk.edu
     background: linear-gradient(135deg, var(--aaic-globe) 0%, var(--aaic-valley) 100%);
     color: #fff;
     border-radius: var(--fg-radius);
-    padding: 1.75rem 2rem;
-    margin: 1rem 0 1.5rem;
+    padding: 1.25rem 1.5rem;
+    margin: 0.75rem 0 1.25rem;
   }
-  .fg-hero p { margin-bottom: 0.6rem; }
+  .fg-hero p { margin-bottom: 0.4rem; }
   .fg-hero .lead { font-size: 1.15rem; }
   .fg-hero .fg-tag { margin-right: 0.25rem; }
   .fg-hero .fg-btn { background: #fff; border-color: #fff; color: var(--aaic-globe) !important; }
@@ -940,20 +940,22 @@ Questions or feedback on this lesson? Contact aaic@utk.edu
   }
   .accordion-button:hover { color: var(--aaic-torch); }
   .accordion-button:focus { box-shadow: 0 0 0 0.2rem rgba(0, 108, 147, 0.25); }
+  .accordion-button { padding: 0.65rem 1rem; }
+  .accordion-body { padding: 0.75rem 1rem; }
 
   /* Always-open box (.fg-box): styled like an open accordion panel */
   .fg-box {
-    margin: 1rem 0 1.5rem; border: 1px solid var(--aaic-border);
+    margin: 0.75rem 0 1.25rem; border: 1px solid var(--aaic-border);
     border-radius: var(--fg-radius); overflow: hidden; background: #fff;
   }
   .fg-box-header {
-    margin: 0 !important; padding: 1rem 1.25rem;
+    margin: 0 !important; padding: 0.65rem 1rem;
     background: var(--aaic-ltblue); box-shadow: inset 0 -1px 0 var(--aaic-border);
     font-family: var(--fg-heading-font); font-weight: 600; font-size: 1rem;
     color: var(--aaic-globe);
   }
   .fg-box-header .anchorjs-link { display: none !important; }
-  .fg-box-body { padding: 1rem 1.25rem; }
+  .fg-box-body { padding: 0.75rem 1rem; }
   .fg-box-body > :last-child { margin-bottom: 0; }
 
   /* Tabsets — Globe text, Torch underline on the active tab
@@ -972,8 +974,8 @@ Questions or feedback on this lesson? Contact aaic@utk.edu
   .fg-step {
     position: relative;
     border-left: 3px solid var(--aaic-summit);
-    padding: 0.25rem 0 0.5rem 1.5rem;
-    margin: 0 0 1.5rem 1rem;
+    padding: 0.15rem 0 0.25rem 1.25rem;
+    margin: 0 0 1rem 1rem;
   }
   .fg-step::before {
     content: counter(fgstep);
@@ -991,7 +993,7 @@ Questions or feedback on this lesson? Contact aaic@utk.edu
   .fg-timeline { list-style: none; padding-left: 0; margin: 1rem 0; }
   .fg-timeline > li {
     display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem;
-    padding: 0.75rem 0; border-bottom: 1px dashed var(--aaic-border);
+    padding: 0.5rem 0; border-bottom: 1px dashed var(--aaic-border);
   }
   .fg-timeline > li:last-child { border-bottom: none; }
   .fg-timeline .fg-time {
@@ -1037,7 +1039,7 @@ Questions or feedback on this lesson? Contact aaic@utk.edu
 
   .fg-ef {
     border: 1px solid var(--aaic-border); border-radius: var(--fg-radius);
-    padding: 1.25rem 1.5rem; margin: 0 0 1.5rem;
+    padding: 0.9rem 1.1rem; margin: 0 0 1.25rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
   }
   .fg-ef > h3:first-child, .fg-ef > section > h3 { margin-top: 0; }
@@ -1190,7 +1192,7 @@ Questions or feedback on this lesson? Contact aaic@utk.edu
 
 
   /* ---------- Simplified blocks (no nesting needed) ---------- */
-  .fg-grid-2, .fg-grid-3, .fg-grid-4 { display: grid; gap: 1rem; margin: 1rem 0 1.5rem; }
+  .fg-grid-2, .fg-grid-3, .fg-grid-4 { display: grid; gap: 0.75rem; margin: 0.75rem 0 1.25rem; }
   .fg-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .fg-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .fg-grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -1198,20 +1200,20 @@ Questions or feedback on this lesson? Contact aaic@utk.edu
     .fg-grid-2, .fg-grid-3 { grid-template-columns: 1fr; }
     .fg-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
-  .fg-hero + .fg-grid-3, .fg-hero + .fg-grid-4 { margin-bottom: 2rem; }
-  .fg-card { background: #fff; padding: 1rem 1.25rem; display: flex; flex-direction: column; }
+  .fg-hero + .fg-grid-3, .fg-hero + .fg-grid-4 { margin-bottom: 1.5rem; }
+  .fg-card { background: #fff; padding: 0.75rem 1rem; display: flex; flex-direction: column; }
   .fg-card > p:last-child { margin-top: auto; margin-bottom: 0; }
   .fg-card > ul:last-child { margin-bottom: 0; }
   .fg-card > p:first-child { margin-bottom: 0.25rem; }
   .fg-card, .fg-stat { overflow-wrap: anywhere; }
-  .fg-stat { padding: 1rem 0.75rem; }
-  .fg-stat p { margin-bottom: 0.25rem; }
+  .fg-stat { padding: 0.6rem 0.75rem; }
+  .fg-stat p { margin-bottom: 0.15rem; }
   .fg-card-title {
     display: block; font-family: var(--fg-heading-font); font-weight: 700;
     font-size: 1.1rem; color: var(--aaic-globe);
   }
   .fg-card-header {
-    display: block; margin: -1rem -1.25rem 0.5rem; padding: 0.6rem 1.25rem;
+    display: block; margin: -0.75rem -1rem 0.5rem; padding: 0.5rem 1rem;
     background: var(--aaic-ltblue); border-bottom: 1px solid var(--aaic-border);
     border-radius: var(--fg-radius) var(--fg-radius) 0 0;
     font-family: var(--fg-heading-font); font-weight: 700; color: var(--aaic-globe);
@@ -1229,7 +1231,7 @@ Questions or feedback on this lesson? Contact aaic@utk.edu
   .fg-linklist li a { font-weight: 600; }
   .fg-link-note { flex-basis: 100%; font-size: 0.85rem; color: var(--aaic-smokey); }
 
-  .fg-accordion { margin: 1rem 0 1.5rem; }
+  .fg-accordion { margin: 0.75rem 0 1.25rem; }
   .fg-steps { counter-reset: fgstep; }
   .fg-step { counter-increment: fgstep; }
   .fg-checklist ul { list-style: none; padding-left: 0; margin: 0; }
@@ -1238,7 +1240,7 @@ Questions or feedback on this lesson? Contact aaic@utk.edu
 
   .fg-timeline > .fg-segment {
     display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem;
-    padding: 0.75rem 0; border-bottom: 1px dashed var(--aaic-border);
+    padding: 0.5rem 0; border-bottom: 1px dashed var(--aaic-border);
   }
   .fg-timeline > .fg-segment:last-child { border-bottom: none; }
   .fg-segment-body p { margin: 0; }
@@ -1298,7 +1300,7 @@ Questions or feedback on this lesson? Contact aaic@utk.edu
 
 
   /* Educative features pasted into the page */
-  .fg-feature { margin: 1rem 0 1.25rem; }
+  .fg-feature { margin: 0.75rem 0 1rem; }
   .fg-feature-label {
     display: block; font-family: var(--fg-heading-font); font-weight: 700;
     font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;
@@ -1364,6 +1366,16 @@ document.addEventListener("DOMContentLoaded", () => {
     body.className = "fg-box-body";
     body.append(...box.childNodes);
     box.append(header, body);
+  });
+
+  // Scrambled email addresses (.fg-email): user and domain are stored reversed
+  document.querySelectorAll(".fg-email").forEach((el) => {
+    const rev = (v) => (v || "").split("").reverse().join("");
+    const address = rev(attr(el, "u")) + "@" + rev(attr(el, "d"));
+    const link = document.createElement("a");
+    link.href = "mailto:" + address;
+    link.textContent = address;
+    el.replaceWith(link);
   });
 
   // Timeline (.fg-timeline > .fg-segment)

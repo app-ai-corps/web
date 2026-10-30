@@ -5443,14 +5443,14 @@
     "href": "templates/facilitator-guide-template.html#facilitation-notes",
     "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
     "section": "Facilitation Notes",
-    "text": "Facilitation Notes\n\n❓ Discussion Questions🔀 Differentiation🛠 Troubleshooting\n\n\n\n{{QUESTION}}\n{{QUESTION}}\n{{QUESTION}} \n\n\n\n\nExtra support: {{SUPPORT_STRATEGY}}\nExtension: {{EXTENSION_STRATEGY}}\nIf you’re short on time: {{WHAT_TO_CUT}}\n\n\n\n\n\n\n\n\n\n\n\nCaution{{PROBLEM}}\n\n\n\n\n\n{{FIX}}\n\n\n\n\n\n\n\n\n\n\n\nCaution{{PROBLEM}}\n\n\n\n\n\n{{FIX}}"
+    "text": "Facilitation Notes\n\nSlide Deck with Facilitator Notes: For an in-depth walkthrough, see the slides with visible facilitator notes.\n\n\n❓ Discussion Questions🔀 Differentiation🛠 Troubleshooting\n\n\n\n{{QUESTION}}\n{{QUESTION}}\n{{QUESTION}} \n\n\n\n\nExtra support: {{SUPPORT_STRATEGY}}\nExtension: {{EXTENSION_STRATEGY}}\nIf you’re short on time: {{WHAT_TO_CUT}}\n\n\n\n\n\n\n\n\n\n\n\nCaution{{PROBLEM}}\n\n\n\n\n\n{{FIX}}\n\n\n\n\n\n\n\n\n\n\n\nCaution{{PROBLEM}}\n\n\n\n\n\n{{FIX}}"
   },
   {
     "objectID": "templates/facilitator-guide-template.html#reference-materials",
     "href": "templates/facilitator-guide-template.html#reference-materials",
     "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
     "section": "Reference Materials",
-    "text": "Reference Materials\n\n\n\nWhole-Class Videos\n\n{{VIDEO_TITLE}} EdPuzzle\n{{VIDEO_TITLE}} YouTube\n{{VIDEO_TITLE}} YouTube\n\n\n\n\n\nOther Useful Materials\n\n{{READING_TITLE}} {{WHY_ITS_USEFUL}}\n{{READING_TITLE}} {{WHY_ITS_USEFUL}}\n\n\n\n\n\n\n\n\nQuestions or feedback on this lesson? Contact aaic@utk.edu"
+    "text": "Reference Materials\n\n\n\nWhole-Class Videos\n\n{{VIDEO_TITLE}} EdPuzzle\n{{VIDEO_TITLE}} YouTube\n{{VIDEO_TITLE}} YouTube\n\n\n\n\n\nOther Useful Materials\n\n{{READING_TITLE}} {{WHY_ITS_USEFUL}}\n{{READING_TITLE}} {{WHY_ITS_USEFUL}}\n\n\n\n\n\n\n\n\n\nQuestions or feedback on this lesson? Contact aaic [at] utk [dot] edu"
   },
   {
     "objectID": "templates/educative-features-guide.html",
