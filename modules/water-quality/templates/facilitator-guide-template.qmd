@@ -75,7 +75,7 @@ format:
      ################################################################### -->
 
 ::: {.fg-hero}
-[{{SUBJECT_AREA}}]{.fg-tag .fg-tag-light} [{{GRADE_BAND}}]{.fg-tag .fg-tag-light} [{{CODING_LANGUAGE}}]{.fg-tag .fg-tag-light}
+<!-- [{{SUBJECT_AREA}}]{.fg-tag .fg-tag-light} [{{GRADE_BAND}}]{.fg-tag .fg-tag-light} [{{CODING_LANGUAGE}}]{.fg-tag .fg-tag-light} -->
 
 [{{ONE_SENTENCE_LESSON_SUMMARY}}]{.lead}
 
@@ -88,11 +88,11 @@ format:
 
 <!-- ###################################################################
      SECTION START: At-a-Glance Cards
-     Four small cards under the banner. Keep each answer to 1–3 words.
+     Three small cards under the banner. Keep each answer to 1–3 words.
      To change an icon, replace the emoji on the first line of a card.
      ################################################################### -->
 
-::: {.fg-grid-4}
+::: {.fg-grid-3}
 
 <!-- ======== COPY START: one at-a-glance card ======== -->
 ::: {.fg-stat}
@@ -105,13 +105,13 @@ format:
 <!-- ======== COPY END: one at-a-glance card ========== -->
 
 <!-- ======== COPY START: one at-a-glance card ======== -->
-::: {.fg-stat}
+<!-- ::: {.fg-stat}
 [🧰]{.fg-stat-icon}
 
 [{{PREP_TIME}}]{.fg-stat-value}
 
 [Prep time]{.fg-stat-label}
-:::
+::: -->
 <!-- ======== COPY END: one at-a-glance card ========== -->
 
 <!-- ======== COPY START: one at-a-glance card ======== -->
@@ -139,7 +139,18 @@ format:
 <!-- ########## SECTION END: At-a-Glance Cards ########## -->
 
 
+## Learning Objectives
 
+By the end of the lesson, students will be able to:
+
+::: {.fg-objectives}
+- [CT]{.fg-tag .fg-tag-ct} {{OBJECTIVE}}
+- [DS]{.fg-tag .fg-tag-ds} {{OBJECTIVE}}
+  - {{DETAIL}}
+  - {{DETAIL}}
+- [AgScience]{.fg-tag .fg-tag-agscience} {{OBJECTIVE}}
+:::
+<!-- ########## SECTION END: Learning Objectives ########## -->
 
 <!-- ###################################################################
      SECTION START: Lesson Topics and Standards
@@ -148,14 +159,34 @@ format:
      - open="true" makes a panel start open. Use it on one panel only.
      - To add a panel: copy one panel (COPY START to COPY END) and
        paste it right below another panel's COPY END line.
+     - The "Prior Knowledge & Vocabulary" box below the panels is
+       always open. It sits outside the panel group on purpose.
      ################################################################### -->
+
+<!-- ======== COPY START: one open box ======== -->
+<!-- Looks like a panel but is always open (it does not collapse).
+     The box title is the text inside label="...". -->
+::: {.fg-box label="Prior Knowledge & Vocabulary"}
+**Students should already know:** {{PREREQUISITES}}
+
+<!-- Table: each row is one line starting with |
+     To add a row, copy a {{TERM}} line and paste it below. -->
+
+| Term | Student-friendly definition |
+|------|-----------------------------|
+| {{TERM}} | {{DEFINITION}} |
+| {{TERM}} | {{DEFINITION}} |
+| {{TERM}} | {{DEFINITION}} |
+
+:::
+<!-- ======== COPY END: one open box ========== -->
 
 ## Lesson Topics and Standards
 
 ::: {.fg-accordion}
 
 <!-- ======== COPY START: one expandable panel ======== -->
-::: {.fg-panel label="Topics Covered" open="true"}
+::: {.fg-panel label="TN AgriScience Standards" open="true"}
 <!-- One topic per line. To indent a subtopic, start the line with
      two spaces before the dash. -->
 - {{TOPIC}}
@@ -176,27 +207,11 @@ format:
 <!-- ======== COPY END: one expandable panel ========== -->
 
 <!-- ======== COPY START: one expandable panel ======== -->
-::: {.fg-panel label="Computational Thinking Standards"}
+::: {.fg-panel label="TN Computer Science Standards"}
 <!-- One standard per line, in this format:  - *CODE:* Full text -->
 - *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
 - *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
 - *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
-:::
-<!-- ======== COPY END: one expandable panel ========== -->
-
-<!-- ======== COPY START: one expandable panel ======== -->
-::: {.fg-panel label="Prior Knowledge & Vocabulary"}
-**Students should already know:** {{PREREQUISITES}}
-
-<!-- Table: each row is one line starting with |
-     To add a row, copy a {{TERM}} line and paste it below. -->
-
-| Term | Student-friendly definition |
-|------|-----------------------------|
-| {{TERM}} | {{DEFINITION}} |
-| {{TERM}} | {{DEFINITION}} |
-| {{TERM}} | {{DEFINITION}} |
-
 :::
 <!-- ======== COPY END: one expandable panel ========== -->
 
@@ -221,22 +236,6 @@ format:
        spaces before the dash (see the example below).
      ################################################################### -->
 
-## Learning Objectives
-
-By the end of the lesson, students will be able to:
-
-::: {.fg-objectives}
-- [CT]{.fg-tag .fg-tag-ct} {{OBJECTIVE}}
-- [DS]{.fg-tag .fg-tag-ds} {{OBJECTIVE}}
-  - {{DETAIL}}
-  - {{DETAIL}}
-- [Math]{.fg-tag .fg-tag-math} {{OBJECTIVE}}
-- [Science]{.fg-tag .fg-tag-science} {{OBJECTIVE}}
-- [AgScience]{.fg-tag .fg-tag-agscience} {{OBJECTIVE}}
-:::
-<!-- ########## SECTION END: Learning Objectives ########## -->
-
-
 <!-- ###################################################################
      SECTION START: Lesson Overview Video Tour
      VIDEO: on the line just below the heading that contains
@@ -247,25 +246,30 @@ By the end of the lesson, students will be able to:
      Leave the curly braces, < > and the word "video" exactly as they are.
      ################################################################### -->
 
-## Lesson Overview Video Tour
+<!-- ## Lesson Overview Video Tour
 
 {{< video REPLACE-WITH-VIDEO.mp4 >}}
+ -->
+
+<!-- ########## SECTION END: Lesson Overview Video Tour ########## -->
+
+
+
+## Slide Deck with Facilitator Notes
 
 ::: {.ltblue-container}
 For a more in-depth walkthrough, see the [slides with visible facilitator notes]({{FACILITATOR_NOTES_URL}}).
 :::
 
-<!-- ########## SECTION END: Lesson Overview Video Tour ########## -->
-
-
-<!-- ###################################################################
+<!-- 
+###################################################################
      SECTION START: Lesson Materials
      One card per resource, each with a short description and a button.
      - The button text goes inside [ ], the link inside ( ).
      - .fg-btn = solid button, .fg-btn-outline = outlined button.
-     ################################################################### -->
-
+     ###################################################################  -->
 ## Lesson Materials
+
 
 ::: {.fg-grid-3}
 
@@ -311,7 +315,7 @@ A printable version of the slides with space for student notes.
 
 <!-- ======== COPY START: one resource card ======== -->
 ::: {.fg-card}
-[🧪 Practice Exercise]({{HANDOUT_COPY_URL}}){.fg-card-title}
+[🧑‍💻 Practice Exercise]({{HANDOUT_COPY_URL}}){.fg-card-title}
 
 {{PRACTICE_DESCRIPTION}}
 
@@ -321,11 +325,11 @@ A printable version of the slides with space for student notes.
 
 <!-- ======== COPY START: one resource card ======== -->
 ::: {.fg-card}
-[🔗 {{RESOURCE_NAME}}]{.fg-card-title}
+[🛒 Amazon Cart]{.fg-card-title}
 
 {{RESOURCE_DESCRIPTION}}
 
-[{{BUTTON_TEXT}}]({{RESOURCE_URL}}){.fg-btn-outline}
+[Share-A-Cart]({{RESOURCE_URL}}){.fg-btn-outline}
 :::
 <!-- ======== COPY END: one resource card ========== -->
 
@@ -518,40 +522,40 @@ document.addEventListener("DOMContentLoaded", () => {
      ################################################################### -->
 
 
-## Lesson Flow
+## Estimated Lesson Timing
 
 ::: {.fg-timeline}
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="0:00" length="10 min" group="Whole class"}
+::: {.fg-segment time="0:00" group="Whole class"}
 **{{SEGMENT_TITLE}}**
 {{WHAT_HAPPENS}}
 :::
 <!-- ======== COPY END: one timeline segment ========== -->
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="0:10" length="15 min" group="Direct instruction"}
+::: {.fg-segment time="0:10" group="Direct instruction"}
 **{{SEGMENT_TITLE}}**
 {{WHAT_HAPPENS}}
 :::
 <!-- ======== COPY END: one timeline segment ========== -->
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="0:25" length="20 min" group="Groups"}
+::: {.fg-segment time="0:25" group="Groups"}
 **{{SEGMENT_TITLE}}**
 {{WHAT_HAPPENS}}
 :::
 <!-- ======== COPY END: one timeline segment ========== -->
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="0:45" length="25 min" group="Coding"}
+::: {.fg-segment time="0:45" group="Coding"}
 **{{SEGMENT_TITLE}}**
 {{WHAT_HAPPENS}}
 :::
 <!-- ======== COPY END: one timeline segment ========== -->
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="1:10" length="5 min" group="Individual"}
+::: {.fg-segment time="1:10" group="Individual"}
 **Exit Ticket**
 {{WHAT_HAPPENS}}
 :::
@@ -564,7 +568,7 @@ document.addEventListener("DOMContentLoaded", () => {
 /* Single accordion for entire Lesson Flow */
 .fg-flow-accordion {
   border: 1px solid var(--aaic-border, #dcdcdc);
-  border-radius: 10px;
+  border-radius: var(--fg-radius, 12px);
   overflow: hidden;
   margin: 1rem 0 1.5rem;
 }
@@ -575,11 +579,11 @@ document.addEventListener("DOMContentLoaded", () => {
   justify-content: space-between;
   cursor: pointer;
   list-style: none;
-  padding: 0.9rem 1.1rem;
+  padding: 1rem 1.25rem;
   background: var(--aaic-ltblue, #f1f9f9);
-  color: var(--aaic-globe, #006C93);
+  color: #000;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .fg-flow-accordion > summary::-webkit-details-marker {
@@ -611,10 +615,19 @@ document.addEventListener("DOMContentLoaded", () => {
   padding: 1rem 1.25rem;
 }
 
+/* Heading sized like the "Prior Knowledge & Vocabulary" box header;
+   stays an h2 so it still appears in "On this page" */
 .fg-flow-accordion > summary > h2 {
   margin: 0;
-  color: var(--aaic-globe, #006C93);
+  padding: 0;
+  border: none;
+  font-family: var(--fg-heading-font);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000;
 }
+.fg-flow-accordion > summary > h2 .anchorjs-link { display: none !important; }
 </style>
 
 <script>
@@ -655,20 +668,20 @@ document.addEventListener("DOMContentLoaded", () => {
 ::: {.panel-tabset}
 
 <!-- ======== COPY START: one tab ======== -->
-### 💡 Tips
+<!-- ### 💡 Tips
 
 - {{TIP}}
-- {{TIP}}
+- {{TIP}} -->
 
 <!-- ======== COPY END: one tab ========== -->
 
 <!-- ======== COPY START: one tab ======== -->
-### ⚠️ Common Misconceptions
+<!-- ### ⚠️ Common Misconceptions
 
 | Students may think... | Address it by... |
 |---|---|
 | {{MISCONCEPTION}} | {{STRATEGY}} |
-| {{MISCONCEPTION}} | {{STRATEGY}} |
+| {{MISCONCEPTION}} | {{STRATEGY}} | -->
 
 <!-- ======== COPY END: one tab ========== -->
 
@@ -737,7 +750,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <!-- ======== COPY START: one link card ======== -->
 ::: {.fg-card .fg-linklist}
-[Background Reading for Facilitators]{.fg-card-header}
+[Other Useful Materials]{.fg-card-header}
 
 - [{{READING_TITLE}}]({{READING_URL}}) [{{WHY_ITS_USEFUL}}]{.fg-link-note}
 - [{{READING_TITLE}}]({{READING_URL}}) [{{WHY_ITS_USEFUL}}]{.fg-link-note}
@@ -756,7 +769,7 @@ document.addEventListener("DOMContentLoaded", () => {
 ---
 
 ::: {.text-center .text-body-secondary .small}
-Questions or feedback on this lesson? Contact {{CONTACT_NAME_OR_EMAIL}} · Last updated {{DATE}}
+Questions or feedback on this lesson? Contact aaic@utk.edu
 :::
 
 <!-- ########## SECTION END: Footer ########## -->
@@ -927,6 +940,21 @@ Questions or feedback on this lesson? Contact {{CONTACT_NAME_OR_EMAIL}} · Last 
   }
   .accordion-button:hover { color: var(--aaic-torch); }
   .accordion-button:focus { box-shadow: 0 0 0 0.2rem rgba(0, 108, 147, 0.25); }
+
+  /* Always-open box (.fg-box): styled like an open accordion panel */
+  .fg-box {
+    margin: 1rem 0 1.5rem; border: 1px solid var(--aaic-border);
+    border-radius: var(--fg-radius); overflow: hidden; background: #fff;
+  }
+  .fg-box-header {
+    margin: 0 !important; padding: 1rem 1.25rem;
+    background: var(--aaic-ltblue); box-shadow: inset 0 -1px 0 var(--aaic-border);
+    font-family: var(--fg-heading-font); font-weight: 600; font-size: 1rem;
+    color: var(--aaic-globe);
+  }
+  .fg-box-header .anchorjs-link { display: none !important; }
+  .fg-box-body { padding: 1rem 1.25rem; }
+  .fg-box-body > :last-child { margin-bottom: 0; }
 
   /* Tabsets — Globe text, Torch underline on the active tab
      (the united theme would otherwise make them orange-red) */
@@ -1170,7 +1198,7 @@ Questions or feedback on this lesson? Contact {{CONTACT_NAME_OR_EMAIL}} · Last 
     .fg-grid-2, .fg-grid-3 { grid-template-columns: 1fr; }
     .fg-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
-  .fg-hero + .fg-grid-4 { margin-bottom: 2rem; }
+  .fg-hero + .fg-grid-3, .fg-hero + .fg-grid-4 { margin-bottom: 2rem; }
   .fg-card { background: #fff; padding: 1rem 1.25rem; display: flex; flex-direction: column; }
   .fg-card > p:last-child { margin-top: auto; margin-bottom: 0; }
   .fg-card > ul:last-child { margin-bottom: 0; }
@@ -1258,9 +1286,9 @@ Questions or feedback on this lesson? Contact {{CONTACT_NAME_OR_EMAIL}} · Last 
 
 
   /* Learning objectives: subject tags */
-  .fg-tag-ct        { background: var(--aaic-globe); }
+  .fg-tag-ct        { background: var(--aaic-torch); }
   .fg-tag-ds        { background: var(--aaic-valley); }
-  .fg-tag-math      { background: var(--aaic-torch); }
+  .fg-tag-math      { background: var(--aaic-globe); }
   .fg-tag-science   { background: var(--aaic-river); }
   .fg-tag-agscience { background: #ABC178; color: #2f3a12; }  /* Switchgrass */
   .fg-objectives > ul { margin: 0.75rem 0 1.5rem; padding-left: 1.25rem; }
@@ -1325,6 +1353,17 @@ document.addEventListener("DOMContentLoaded", () => {
       item.append(header, collapse);
       panel.replaceWith(item);
     });
+  });
+
+  // Always-open boxes (.fg-box)
+  document.querySelectorAll(".fg-box").forEach((box) => {
+    const header = document.createElement("h3");
+    header.className = "fg-box-header";
+    header.textContent = attr(box, "label") || "Untitled box";
+    const body = document.createElement("div");
+    body.className = "fg-box-body";
+    body.append(...box.childNodes);
+    box.append(header, body);
   });
 
   // Timeline (.fg-timeline > .fg-segment)

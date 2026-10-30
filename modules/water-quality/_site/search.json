@@ -5388,5 +5388,166 @@
     "title": "Facilitator’s Guide:Water Quality and Summary Statistics",
     "section": "",
     "text": "BigTimer.net"
+  },
+  {
+    "objectID": "templates/facilitator-guide-template.html",
+    "href": "templates/facilitator-guide-template.html",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "",
+    "text": "{{ONE_SENTENCE_LESSON_SUMMARY}}\n▶ Open Slide Deck 📄 Student Handout"
+  },
+  {
+    "objectID": "templates/facilitator-guide-template.html#learning-objectives",
+    "href": "templates/facilitator-guide-template.html#learning-objectives",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of the lesson, students will be able to:\n\n\nCT {{OBJECTIVE}}\nDS {{OBJECTIVE}}\n\n{{DETAIL}}\n{{DETAIL}}\n\nAgScience {{OBJECTIVE}}\n\n\n\n\n\n\n\nStudents should already know: {{PREREQUISITES}}\n\n\n\n\nTerm\nStudent-friendly definition\n\n\n\n\n{{TERM}}\n{{DEFINITION}}\n\n\n{{TERM}}\n{{DEFINITION}}\n\n\n{{TERM}}\n{{DEFINITION}}"
+  },
+  {
+    "objectID": "templates/facilitator-guide-template.html#lesson-topics-and-standards",
+    "href": "templates/facilitator-guide-template.html#lesson-topics-and-standards",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Lesson Topics and Standards",
+    "text": "Lesson Topics and Standards\n\n\n\n\n\n{{TOPIC}}\n\n{{SUBTOPIC}}\n{{SUBTOPIC}}\n\n{{TOPIC}}\n{{TOPIC}}\n\n\n\n\n\n\n\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n\n\n\n\n\n\n\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}"
+  },
+  {
+    "objectID": "templates/facilitator-guide-template.html#lesson-overview-video-tour",
+    "href": "templates/facilitator-guide-template.html#lesson-overview-video-tour",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Lesson Overview Video Tour",
+    "text": "Lesson Overview Video Tour\n\n\nFor a more in-depth walkthrough, see the slides with visible facilitator notes."
+  },
+  {
+    "objectID": "templates/facilitator-guide-template.html#lesson-materials",
+    "href": "templates/facilitator-guide-template.html#lesson-materials",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Lesson Materials",
+    "text": "Lesson Materials\n\n\n\n🖥️ Slide Deck\nThe slides you’ll present during the lesson.\nOpen slides\n\n\n\n\n📄 Student Handout\nOpens a “Make a copy” prompt so you get your own editable version.\nMake a copy\n\n\n\n\n📝 Note-Taking Slides\nA printable version of the slides with space for student notes.\nDownload PDF\n\n\n\n\n✅ Exit Ticket\n{{EXIT_TICKET_DESCRIPTION}}\nCopy Google Form\n\n\n\n\n🧑‍💻 Practice Exercise\n{{PRACTICE_DESCRIPTION}}\nOpen in Colab\n\n\n\n\n🛒 Amazon Cart\n{{RESOURCE_DESCRIPTION}}\nShare-A-Cart"
+  },
+  {
+    "objectID": "templates/facilitator-guide-template.html#lesson-prep",
+    "href": "templates/facilitator-guide-template.html#lesson-prep",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Lesson Prep",
+    "text": "Lesson Prep\n\n\n\n\n\n\nTipPrep checklist\n\n\n\n\n(This list is built automatically from the step titles below.)\n\n\n\n\n\n\n{{STEP_TITLE}}\n⏱ {{TIME_NEEDED}} · 📅 {{WHEN_TO_DO_IT}}\n{{WHAT_TO_DO_AND_WHY}}\nMaterials needed:\n\n{{MATERIAL}}\n{{MATERIAL}}\n\n{{NOTE_ABOUT_THIS_MATERIAL}}\n\n{{MATERIAL}}\n\n\n\n\n\n\n\n\nImportant{{DETAIL_BOX_TITLE}}\n\n\n\n\n\n{{ASSUMPTIONS — e.g., written for 5 groups × 4 samples}}\n\n\n\n{{COLUMN}}\n{{COLUMN}}\n{{COLUMN}}\n\n\n\n\n{{VALUE}}\n{{VALUE}}\n{{VALUE}}\n\n\n{{VALUE}}\n{{VALUE}}\n{{VALUE}}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\n{{WARNING_TEXT}}\n\n\n\n\n\n\n\n{{STEP_TITLE}}\n⏱ {{TIME_NEEDED}} · 📅 {{WHEN_TO_DO_IT}}\n{{WHAT_TO_DO_AND_WHY}}\n\nWalk through each step in the slides: ▶ Open the step-by-step slides \n\n\n\n\n\n\n\nNote\n\n\n\nTeaching more than one class? {{MULTI_CLASS_NOTE}}"
+  },
+  {
+    "objectID": "templates/facilitator-guide-template.html#lesson-flow",
+    "href": "templates/facilitator-guide-template.html#lesson-flow",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Lesson Flow",
+    "text": "Lesson Flow\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\nExit Ticket {{WHAT_HAPPENS}}"
+  },
+  {
+    "objectID": "templates/facilitator-guide-template.html#facilitation-notes",
+    "href": "templates/facilitator-guide-template.html#facilitation-notes",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Facilitation Notes",
+    "text": "Facilitation Notes\n\n❓ Discussion Questions🔀 Differentiation🛠 Troubleshooting\n\n\n\n{{QUESTION}}\n{{QUESTION}}\n{{QUESTION}} \n\n\n\n\nExtra support: {{SUPPORT_STRATEGY}}\nExtension: {{EXTENSION_STRATEGY}}\nIf you’re short on time: {{WHAT_TO_CUT}}\n\n\n\n\n\n\n\n\n\n\n\nCaution{{PROBLEM}}\n\n\n\n\n\n{{FIX}}\n\n\n\n\n\n\n\n\n\n\n\nCaution{{PROBLEM}}\n\n\n\n\n\n{{FIX}}"
+  },
+  {
+    "objectID": "templates/facilitator-guide-template.html#reference-materials",
+    "href": "templates/facilitator-guide-template.html#reference-materials",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Reference Materials",
+    "text": "Reference Materials\n\n\n\nWhole-Class Videos\n\n{{VIDEO_TITLE}} EdPuzzle\n{{VIDEO_TITLE}} YouTube\n{{VIDEO_TITLE}} YouTube\n\n\n\n\n\nOther Useful Materials\n\n{{READING_TITLE}} {{WHY_ITS_USEFUL}}\n{{READING_TITLE}} {{WHY_ITS_USEFUL}}\n\n\n\n\n\n\n\n\nQuestions or feedback on this lesson? Contact aaic@utk.edu"
+  },
+  {
+    "objectID": "templates/educative-features-guide.html",
+    "href": "templates/educative-features-guide.html",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "",
+    "text": "{{SUBJECT_AREA}} {{GRADE_BAND}} {{CODING_LANGUAGE}}\n{{ONE_SENTENCE_LESSON_SUMMARY}}\n▶ Open Slide Deck 📄 Student Handout"
+  },
+  {
+    "objectID": "templates/educative-features-guide.html#lesson-topics-and-standards",
+    "href": "templates/educative-features-guide.html#lesson-topics-and-standards",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Lesson Topics and Standards",
+    "text": "Lesson Topics and Standards\n\n\n\n\n\n{{TOPIC}}\n\n{{SUBTOPIC}}\n{{SUBTOPIC}}\n\n{{TOPIC}}\n{{TOPIC}}\n\n\n\n\n\n\n\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n\n\n\n\n\n\n\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n\n\n\n\n\nStudents should already know: {{PREREQUISITES}}\n\n\n\n\nTerm\nStudent-friendly definition\n\n\n\n\n{{TERM}}\n{{DEFINITION}}\n\n\n{{TERM}}\n{{DEFINITION}}\n\n\n{{TERM}}\n{{DEFINITION}}"
+  },
+  {
+    "objectID": "templates/educative-features-guide.html#learning-objectives",
+    "href": "templates/educative-features-guide.html#learning-objectives",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of the lesson, students will be able to:\n\n\nCT {{OBJECTIVE}}\nDS {{OBJECTIVE}}\n\n{{DETAIL}}\n{{DETAIL}}\n\nMath {{OBJECTIVE}}\nScience {{OBJECTIVE}}\nAgScience {{OBJECTIVE}}"
+  },
+  {
+    "objectID": "templates/educative-features-guide.html#lesson-overview-video-tour",
+    "href": "templates/educative-features-guide.html#lesson-overview-video-tour",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Lesson Overview Video Tour",
+    "text": "Lesson Overview Video Tour\n\n\nFor a more in-depth walkthrough, see the slides with visible facilitator notes."
+  },
+  {
+    "objectID": "templates/educative-features-guide.html#lesson-materials",
+    "href": "templates/educative-features-guide.html#lesson-materials",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Lesson Materials",
+    "text": "Lesson Materials\n\n\n\n🖥️ Slide Deck\nThe slides you’ll present during the lesson.\nOpen slides\n\n\n\n\n📄 Student Handout\nOpens a “Make a copy” prompt so you get your own editable version.\nMake a copy\n\n\n\n\n📝 Note-Taking Slides\nA printable version of the slides with space for student notes.\nDownload PDF\n\n\n\n\n✅ Exit Ticket\n{{EXIT_TICKET_DESCRIPTION}}\nCopy Google Form\n\n\n\n\n🧪 Practice Exercise\n{{PRACTICE_DESCRIPTION}}\nOpen in Colab\n\n\n\n\n🔗 {{RESOURCE_NAME}}\n{{RESOURCE_DESCRIPTION}}\n{{BUTTON_TEXT}}"
+  },
+  {
+    "objectID": "templates/educative-features-guide.html#lesson-prep",
+    "href": "templates/educative-features-guide.html#lesson-prep",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Lesson Prep",
+    "text": "Lesson Prep\n\n\n\n\n\n\nTipPrep checklist\n\n\n\n\n(This list is built automatically from the step titles below.)\n\n\n\n\n\n\n{{STEP_TITLE}}\n⏱ {{TIME_NEEDED}} · 📅 {{WHEN_TO_DO_IT}}\n{{WHAT_TO_DO_AND_WHY}}\nMaterials needed:\n\n{{MATERIAL}}\n{{MATERIAL}}\n\n{{NOTE_ABOUT_THIS_MATERIAL}}\n\n{{MATERIAL}}\n\n\n\n\n\n\n\n\nImportant{{DETAIL_BOX_TITLE}}\n\n\n\n\n\n{{ASSUMPTIONS — e.g., written for 5 groups × 4 samples}}\n\n\n\n{{COLUMN}}\n{{COLUMN}}\n{{COLUMN}}\n\n\n\n\n{{VALUE}}\n{{VALUE}}\n{{VALUE}}\n\n\n{{VALUE}}\n{{VALUE}}\n{{VALUE}}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\n{{WARNING_TEXT}}\n\n\n\n\n\n\n\n{{STEP_TITLE}}\n⏱ {{TIME_NEEDED}} · 📅 {{WHEN_TO_DO_IT}}\n{{WHAT_TO_DO_AND_WHY}}\n\nWalk through each step in the slides: ▶ Open the step-by-step slides \n\n\n\n\n\n\n\nNote\n\n\n\nTeaching more than one class? {{MULTI_CLASS_NOTE}}"
+  },
+  {
+    "objectID": "templates/educative-features-guide.html#lesson-flow",
+    "href": "templates/educative-features-guide.html#lesson-flow",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Lesson Flow",
+    "text": "Lesson Flow\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\nExit Ticket {{WHAT_HAPPENS}}"
+  },
+  {
+    "objectID": "templates/educative-features-guide.html#facilitation-notes",
+    "href": "templates/educative-features-guide.html#facilitation-notes",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Facilitation Notes",
+    "text": "Facilitation Notes\n\n💡 Tips⚠️ Common Misconceptions❓ Discussion Questions🔀 Differentiation🛠 Troubleshooting\n\n\n\n{{TIP}}\n{{TIP}}\n\n\n\n\n\n\n\n\nStudents may think…\nAddress it by…\n\n\n\n\n{{MISCONCEPTION}}\n{{STRATEGY}}\n\n\n{{MISCONCEPTION}}\n{{STRATEGY}}\n\n\n\n\n\n\n\n\n{{QUESTION}}\n{{QUESTION}}\n{{QUESTION}} \n\n\n\n\nExtra support: {{SUPPORT_STRATEGY}}\nExtension: {{EXTENSION_STRATEGY}}\nIf you’re short on time: {{WHAT_TO_CUT}}\n\n\n\n\n\n\n\n\n\n\n\nCaution{{PROBLEM}}\n\n\n\n\n\n{{FIX}}\n\n\n\n\n\n\n\n\n\n\n\nCaution{{PROBLEM}}\n\n\n\n\n\n{{FIX}}"
+  },
+  {
+    "objectID": "templates/educative-features-guide.html#reference-materials",
+    "href": "templates/educative-features-guide.html#reference-materials",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Reference Materials",
+    "text": "Reference Materials\n\n\n\nWhole-Class Videos\n\n{{VIDEO_TITLE}} EdPuzzle\n{{VIDEO_TITLE}} YouTube\n{{VIDEO_TITLE}} YouTube\n\n\n\n\n\nBackground Reading for Facilitators\n\n{{READING_TITLE}} {{WHY_ITS_USEFUL}}\n{{READING_TITLE}} {{WHY_ITS_USEFUL}}\n\n\n\n\n\n\n\n\nQuestions or feedback on this lesson? Contact {{CONTACT_NAME_OR_EMAIL}} · Last updated {{DATE}}"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\nAppalachian A.I. Corps\n",
+    "section": "",
+    "text": "☰\n\n\nHome | Modules | Team | Contact"
+  },
+  {
+    "objectID": "index.html#water-quality-monitoring",
+    "href": "index.html#water-quality-monitoring",
+    "title": "\nAppalachian A.I. Corps\n",
+    "section": "Water Quality Monitoring",
+    "text": "Water Quality Monitoring\n\nA series of lessons using AI to explore and monitor Appalachian water resources.\nDesigned for 9th-12th grade students."
+  },
+  {
+    "objectID": "templates/facilitator-guide-template.html#slide-deck-with-facilitator-notes",
+    "href": "templates/facilitator-guide-template.html#slide-deck-with-facilitator-notes",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Slide Deck with Facilitator Notes",
+    "text": "Slide Deck with Facilitator Notes\n\nFor a more in-depth walkthrough, see the slides with visible facilitator notes."
+  },
+  {
+    "objectID": "templates/facilitator-guide-template.html#suggested-lesson-flow",
+    "href": "templates/facilitator-guide-template.html#suggested-lesson-flow",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Suggested Lesson Flow",
+    "text": "Suggested Lesson Flow\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\nExit Ticket {{WHAT_HAPPENS}}"
+  },
+  {
+    "objectID": "templates/facilitator-guide-template.html#estimated-lesson-timing",
+    "href": "templates/facilitator-guide-template.html#estimated-lesson-timing",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Estimated Lesson Timing",
+    "text": "Estimated Lesson Timing\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\nExit Ticket {{WHAT_HAPPENS}}"
   }
 ]
