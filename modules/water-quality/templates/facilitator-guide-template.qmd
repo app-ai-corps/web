@@ -193,31 +193,38 @@ By the end of the lesson, students will be able to:
 
 <!-- ======== COPY START: one expandable panel ======== -->
 ::: {.fg-panel label="TN AgriScience Standards"}
-<!-- One topic per line. To indent a subtopic, start the line with
+<!-- Paste the link to the standards document over {{AGRISCIENCE_STANDARDS_URL}}.
+     One topic per line. To indent a subtopic, start the line with
      two spaces before the dash. -->
-- {{TOPIC}}
-  - {{SUBTOPIC}}
-  - {{SUBTOPIC}}
-- {{TOPIC}}
-- {{TOPIC}}
+**Full document:** [TN AgriScience Standards](https://www.tn.gov/content/dam/tn/education/ccte/ag/cte_std_agriscience.pdf)
+
+- ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
+- ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
+- ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
 :::
 <!-- ======== COPY END: one expandable panel ========== -->
 
 <!-- ======== COPY START: one expandable panel ======== -->
 ::: {.fg-panel label="Data Science Standards"}
-<!-- One standard per line, in this format:  - *CODE:* Full text -->
-- *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
-- *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
-- *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
+<!-- Paste the link to the standards document over {{DATA_SCIENCE_STANDARDS_URL}}.
+     One standard per line, in this format:  - *CODE:* Full text -->
+**Full document:** [Data Science Standards](https://datasciencelearning.org/)
+
+- ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
+- ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
+- ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
 :::
 <!-- ======== COPY END: one expandable panel ========== -->
 
 <!-- ======== COPY START: one expandable panel ======== -->
 ::: {.fg-panel label="TN Computer Science Standards"}
-<!-- One standard per line, in this format:  - *CODE:* Full text -->
-- *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
-- *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
-- *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
+<!-- Paste the link to the standards document over {{CS_STANDARDS_URL}}.
+     One standard per line, in this format:  - *CODE:* Full text -->
+**Full document:** [TN Computer Science Standards](https://www.tn.gov/content/dam/tn/education/standards/comp-sci/Final_Computer_Science_Standards_Framework_for_Grades_K-12.pdf)
+
+- ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
+- ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
+- ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
 :::
 <!-- ======== COPY END: one expandable panel ========== -->
 
@@ -228,7 +235,7 @@ By the end of the lesson, students will be able to:
      open="true" after the label to make it start open.
      The box title is the text inside label="...". -->
 ::: {.fg-fold label="Prior Knowledge & Vocabulary"}
-**Students should already know:** {{PREREQUISITES}}
+**This lesson assumes that students have already:** {{PREREQUISITES}}
 
 <!-- Table: each row is one line starting with |
      To add a row, copy a {{TERM}} line and paste it below. -->

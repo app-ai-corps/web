@@ -203,10 +203,10 @@ By the end of the lesson, students will be able to:
 <!-- ======== COPY START: one expandable panel ======== -->
 ::: {.fg-panel label="Data Science Standards"}
 <!-- One standard per line, in this format:  - *CODE:* Full text -->
-- ***3-5.[B.3.1](https://datasciencelearning.org/concepts/creating-your-own-data)d:*** *Creating your own data:* Plan and conduct measurements by identifying measurable characteristics and collecting both categorical and numerical variables of objects/events.
-- ***9-10.[C.2.3](https://datasciencelearning.org/substrands/identifying-patterns-and-relationships-in-data)b:*** *Defining relationships:* Analyze data to uncover correlations, trends, and groupings that inform decision-making processes across diverse fields.
-- ***9-10.[C.5.2](https://datasciencelearning.org/concepts/creating-models)a:*** *Creating models:* Construct and analyze models to represent linear and non-linear relationships in data.
-- ***9-10.[C.5.2](https://datasciencelearning.org/concepts/creating-models)b:*** *Creating models:* Use technology to create, test, and refine models.
+- ***3-5.B.3.1d:*** *Creating your own data:* Plan and conduct measurements by identifying measurable characteristics and collecting both categorical and numerical variables of objects/events.
+- ***9-10.C.2.3b:*** *Defining relationships:* Analyze data to uncover correlations, trends, and groupings that inform decision-making processes across diverse fields.
+- ***9-10.C.5.2a:*** *Creating models:* Construct and analyze models to represent linear and non-linear relationships in data.
+- ***9-10.C.5.2b:*** *Creating models:* Use technology to create, test, and refine models.
 :::
 <!-- ======== COPY END: one expandable panel ========== -->
 
@@ -236,9 +236,11 @@ By the end of the lesson, students will be able to:
 
 | Term | Student-friendly definition |
 |------|-----------------------------|
-| {{TERM}} | {{DEFINITION}} |
-| {{TERM}} | {{DEFINITION}} |
-| {{TERM}} | {{DEFINITION}} |
+| Regression | A statistical method for finding the relationship between two variables, often shown as a “line of best fit” that runs through a set of data points. |
+| Prediction | An estimate of what will happen or what a value will be, based on patterns found in data. For example, using a regression line to guess a test score from hours studied. |
+| Scatterplot | A graph that uses dots to show the relationship between two sets of data. Each dot represents one pair of values. |
+| Independent Variable | The variable you change or control in an experiment. It goes on the x-axis (horizontal). |
+| Dependent Variable | The variable you measure to see how it responds to changes in the independent variable. It goes on the y-axis (vertical) and “depends” on the other variable. |
 
 :::
 
@@ -280,7 +282,7 @@ By the end of the lesson, students will be able to:
 
 The slides you'll present during the lesson.
 
-[Open slides]({{SLIDES_URL}}){.fg-btn}
+[Open slides](https://appalachianaicorps.org/modules/water-quality/3-regression/slides.html){.fg-btn}
 :::
 <!-- ======== COPY END: one resource card ========== -->
 
@@ -291,7 +293,7 @@ The slides you'll present during the lesson.
 
 Opens a "Make a copy" prompt so you get your own editable version.
 
-[Make a copy]({{HANDOUT_COPY_URL}}){.fg-btn}
+[Make a copy](https://docs.google.com/document/d/1wag0FSzDp6NchIcM4WAwIbBP_FqdIdcvL9YWwR8Mc8s/copy){.fg-btn}
 :::
 <!-- ======== COPY END: one resource card ========== -->
 
@@ -301,7 +303,7 @@ Opens a "Make a copy" prompt so you get your own editable version.
 
 A printable version of the slides with space for student notes.
 
-[Download PDF]({{NOTES_HANDOUT_PDF_URL}}){.fg-btn-outline}
+[Download PDF](https://appalachianaicorps.org/modules/water-quality/3-regression/student_handout.pdf){.fg-btn-outline}
 :::
 <!-- ======== COPY END: one resource card ========== -->
 
@@ -310,9 +312,9 @@ A printable version of the slides with space for student notes.
 ::: {.fg-card #exit-ticket}
 [✅ Exit Ticket]{.fg-card-title}
 
-{{EXIT_TICKET_DESCRIPTION}}
+The exit ticket asks students to describe a regression line, apply the idea of prediction to another real-world context, and apply their knowledge of prediction to the buoy's ML regression process.
 
-[Copy Google Form]({{EXIT_TICKET_COPY_URL}}){.fg-btn-outline}
+[Copy Google Form](https://forms.gle/3FKgkkyLxZrqoFnf7){.fg-btn-outline}
 :::
 <!-- ======== COPY END: one resource card ========== -->
 
@@ -331,9 +333,9 @@ A printable version of the slides with space for student notes.
 ::: {.fg-card}
 [🛒 Amazon Cart]{.fg-card-title}
 
-{{RESOURCE_DESCRIPTION}}
+Share-A-Cart link for the stickers, poster markers, and Post-It gridded sticky pad easels.
 
-[Share-A-Cart]({{RESOURCE_URL}}){.fg-btn-outline}
+[Share-A-Cart](https://share-a-cart.com/get/6FDFH){.fg-btn-outline}
 :::
 <!-- ======== COPY END: one resource card ========== -->
 
@@ -348,7 +350,7 @@ A printable version of the slides with space for student notes.
 <!-- ======== COPY START: one tab ======== -->
 ### 🖥️ Slide Deck with Notes
 
-For an in-depth walkthrough, see the [slides with visible facilitator notes]({{FACILITATOR_NOTES_URL}}).
+For an in-depth walkthrough, see the [slides with visible facilitator notes](https://appalachianaicorps.org/modules/water-quality/3-regression/facilitator_notes.html).
 <!-- ======== COPY END: one tab ========== -->
 
 <!-- ======== COPY START: one tab ======== -->
@@ -372,19 +374,27 @@ For an in-depth walkthrough, see the [slides with visible facilitator notes]({{F
 <!-- ======== COPY START: one tab ======== -->
 ### ❓ Discussion Questions
 
-1. {{QUESTION}}
-2. {{QUESTION}}
-3. {{QUESTION}}
+1. [*Pose after gruops record RGB value for each purple card with PPM values*] Compare your observed values with another group. Do you have the same values? Why do you think that that is?
+2. [*Pose after prediction card activity*] Does each group get the same predicted concentration for each card? Why do you think that is?
+3. [*Pose near end of lesson*] Today, we learned to use a regression model to predict nitrate concentrations from RGB values. What other things could we predict in AgriScience? What variable(s) could be useful to predict them? 
 <!-- ======== COPY END: one tab ========== -->
 
 <!-- ======== COPY START: one tab ======== -->
 ### 🔀 Differentiation
 
-**Extra support:** {{SUPPORT_STRATEGY}}
+**Extra support:** 
 
-**Extension:** {{EXTENSION_STRATEGY}}
+- Prelabeling the grid paper axes will support students who have never been asked to count by multiples on an axis.
+- Data entry into the code cells that generate the linear regression model is prone to error. Consider assigning one team member to enter the data, and another to double check the work before generating the model.
+- Assigning group roles can support different students' strengths. Consider drawing from complex instruction strategies and assigning a role to each team member:
+    - *Facilitator:* Keeps the group on track and makes sure everyone gets a turn to share. Asks the group’s questions to the teacher, but only after checking with teammates first.
+    - *Resource Manager:* Gets the materials your group needs and puts them away at the end. Goes to the teacher when the whole group needs help or supplies.
+    - *Recorder:* Records the group’s ideas, answers, and data so nothing gets lost.
+    - *Reporter:* Shares the group’s findings with the class when the work is done.
 
-**If you're short on time:** {{WHAT_TO_CUT}}
+**Extension:** In most machine learning regression models, we use multiple independent variables to predict a dependent variable. The buoy uses all three RGB channels (to different degrees) to predict nitrate concentrations. Ask students to brainstorm a situation when more than one independent variable predicts a dependent variable. You may wish to suggest the dependent variable of interest (e.g., observing a snow day) to get students started.
+
+**If you're short on time:** Skip the (1) two YouTube videos and model correctly placing the stickers onto the coordinate plane and (2) prediction of the regression line placement with the yardstick.
 
 <!-- ======== COPY END: one tab ========== -->
 
@@ -393,15 +403,17 @@ For an in-depth walkthrough, see the [slides with visible facilitator notes]({{F
 
 <!-- ======== COPY START: one problem + fix ======== -->
 ::: {.callout-caution collapse="true"}
-## {{PROBLEM}}
-{{FIX}}
+## Issue Accessing Applet
+Students must grant permission for the applet to access their webcam. If they decline, reload the applet.
+
+Only one working applet/computer combination per group is necessary.
 :::
 <!-- ======== COPY END: one problem + fix ========== -->
 
 <!-- ======== COPY START: one problem + fix ======== -->
 ::: {.callout-caution collapse="true"}
-## {{PROBLEM}}
-{{FIX}}
+## Generated Regression Model is a Poor Fit
+Double check the data entered into the lists for `color_data` and `nitrate_data`. Typos are common.
 :::
 <!-- ======== COPY END: one problem + fix ========== -->
 <!-- ======== COPY END: one tab ========== -->
@@ -432,45 +444,35 @@ For an in-depth walkthrough, see the [slides with visible facilitator notes]({{F
 
 <!-- ======== COPY START: one prep step ======== -->
 ::: {.fg-step}
-#### {{STEP_TITLE}} {.unnumbered}
-
-{{WHAT_TO_DO_AND_WHY}}
+#### Purchase/Gather Materials for Lesson {.unnumbered}
 
 **Materials needed:**
 
-- {{MATERIAL}}
-- {{MATERIAL}}
-  - {{NOTE_ABOUT_THIS_MATERIAL}}
-- {{MATERIAL}}
+- 🛒 1 Sheet of Post-It Super Sticky Easel Pad GRIDDED Paper Per Group
+- 🛒 1 Black Poster Marker Per Group
+- 🛒 2 Sheets of the Avery ¾" Circular Multi-Color Labels Per Group
+- 1 Yardstick Per Group (purchaseable at home improvement stores)
 
-<!-- ---- OPTIONAL: collapsible detail box (e.g., a mixing guide).
-          Delete from here to "END OPTIONAL" if not needed. ---- -->
-::: {.callout-important collapse="true"}
-## {{DETAIL_BOX_TITLE}}
+::: {.callout-note collapse="false"}
+## Stretch Your Supplies
+Each group will be assigned either red, green, or blue. They will only need their assigned color of stickers from each of the two sheets. Before class, cut the sheets into strips to conserve materials and only provide two strips of the color needed to each group.
 
-*{{ASSUMPTIONS — e.g., written for 5 groups × 4 samples}}*
-
-| {{COLUMN}} | {{COLUMN}} | {{COLUMN}} |
-|---|---|---|
-| {{VALUE}} | {{VALUE}} | {{VALUE}} |
-| {{VALUE}} | {{VALUE}} | {{VALUE}} |
+![](images/yardsale_stickers.png)
 :::
-<!-- ---- END OPTIONAL ---- -->
-
-<!-- ---- OPTIONAL: warning box.
-          Delete from here to "END OPTIONAL" if not needed. ---- -->
-::: {.callout-warning}
-{{WARNING_TEXT}}
 :::
-<!-- ---- END OPTIONAL ---- -->
-:::
-<!-- ======== COPY END: one prep step ========== -->
 
-<!-- ======== COPY START: one prep step ======== -->
 ::: {.fg-step}
-#### {{STEP_TITLE}} {.unnumbered}
+#### Ensure Student Access to Webcam and Applet {.unnumbered}
 
-{{WHAT_TO_DO_AND_WHY}}
+This lesson is reliant on the student use of device webcams (at least one per group). Please double check that the webcams on their devices are enabled and work with the AAIC Applet used in this lesson.
+
+[Test AAIC RGB V2 Applet](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html){.fg-btn}
+
+**What will it look like if the applet works?**
+  - When the "What Humans See" option is select, a low-quality full-color image is shown
+  - When the "What Computers See" option is selected, squares of that color with numbers in them are shown (for red, green, and blue channels)
+
+  ![](images/RGB_Applet_Test.png)
 
 <!-- ---- OPTIONAL: link to step-by-step slides (e.g., Google Slides
           with screenshots of each step). Put the link inside ( ).
