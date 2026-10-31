@@ -3,46 +3,15 @@
 # FACILITATOR GUIDE TEMPLATE
 # =====================================================================
 #
-# HOW TO EDIT THIS FILE (no coding experience needed)
-#
-#  1. Save a copy first. Name it facilitator.qmd and put it in the
-#     lesson's folder. Never edit the original template.
-#
-#  2. Fill in the blanks. Every blank looks like {{SOMETHING}}.
-#     Select the whole thing, including both sets of curly braces,
-#     and type your text over it. Tip: use Find (Ctrl+F / Cmd+F)
-#     and search for {{ to jump from blank to blank.
-#
-#  3. Leave the "structure" lines alone. Lines that start with :::
-#     open and close boxes, and they always come in pairs. Don't
-#     edit or delete one by itself. Also leave alone anything inside
-#     { } that comes right after a ] or ), such as {.fg-btn}.
-#
-#  4. Gray notes between <!-- and --> are instructions for you.
-#     They never show on the web page. You can leave them in.
-#
-#  5. To ADD another item (a card, panel, step, slide...):
-#     find its "COPY START" line, select everything from that line
-#     down to the matching "COPY END" line (including both lines),
-#     copy it, and paste it on a new line right after the COPY END.
-#
-#  6. To REMOVE an item: delete everything from its COPY START line
-#     down to its COPY END line (including both lines).
-#     To remove a whole section: delete from its "SECTION START"
-#     note down to its "SECTION END" note.
-#
-#  7. Don't edit anything below the line that says
-#     "STOP. DO NOT EDIT ANYTHING BELOW THIS LINE."
-#
-#  8. To see your changes, click "Preview" (Positron or RStudio)
-#     or run: quarto preview facilitator.qmd
-#     If the page looks broken, undo (Ctrl+Z / Cmd+Z) your last
-#     change. The usual cause is a deleted ::: line.
-#
-#  9. Educative features (extra supports for teachers) are ready-to-copy
-#     files in the folder _educative-features. Open the file, select
-#     all, copy, and paste it where you want it in this file. What goes
-#     in each feature is explained in educative-features-guide.qmd.
+# USAGE
+#  - Copy to <lesson>/facilitator.qmd; don't edit the template itself.
+#  - Replace every {{PLACEHOLDER}} (search for "{{").
+#  - Add/remove items by duplicating/deleting their ::: blocks; remove
+#    sections between their SECTION START/END notes.
+#  - Educative features: snippets in _educative-features/, documented
+#    in educative-features-guide.qmd.
+#  - Everything below "STOP. DO NOT EDIT ANYTHING BELOW THIS LINE." is
+#    shared page CSS/JS; change it here, not in individual guides.
 #
 # ---------------------------------------------------------------------
 # For maintainers: the page only matches the AAIC site when rendered
@@ -103,7 +72,6 @@ format:
 
 ::: {.fg-grid-3}
 
-<!-- ======== COPY START: one at-a-glance card ======== -->
 ::: {.fg-stat}
 [⏱]{.fg-stat-icon}
 
@@ -111,9 +79,7 @@ format:
 
 [Class time]{.fg-stat-label}
 :::
-<!-- ======== COPY END: one at-a-glance card ========== -->
 
-<!-- ======== COPY START: one at-a-glance card ======== -->
 <!-- ::: {.fg-stat}
 [🧰]{.fg-stat-icon}
 
@@ -121,9 +87,7 @@ format:
 
 [Prep time]{.fg-stat-label}
 ::: -->
-<!-- ======== COPY END: one at-a-glance card ========== -->
 
-<!-- ======== COPY START: one at-a-glance card ======== -->
 ::: {.fg-stat}
 [👥]{.fg-stat-icon}
 
@@ -131,9 +95,7 @@ format:
 
 [Group size]{.fg-stat-label}
 :::
-<!-- ======== COPY END: one at-a-glance card ========== -->
 
-<!-- ======== COPY START: one at-a-glance card ======== -->
 ::: {.fg-stat}
 [💻]{.fg-stat-icon}
 
@@ -141,7 +103,6 @@ format:
 
 [Tech needed]{.fg-stat-label}
 :::
-<!-- ======== COPY END: one at-a-glance card ========== -->
 
 :::
 
@@ -154,8 +115,7 @@ format:
      - The panel title is the text inside label="...".
      - open="true" makes a panel start open. Use it on one panel at most;
        leave it off and all panels start closed.
-     - To add a panel: copy one panel (COPY START to COPY END) and
-       paste it right below another panel's COPY END line.
+     - To add a panel: duplicate a whole ::: {.fg-panel} block.
      - "Prior Knowledge & Vocabulary" (right below this note) is its
        own separate fold-out box, so opening it doesn't close the others.
      ################################################################### -->
@@ -191,7 +151,6 @@ By the end of the lesson, students will be able to:
 :::
 :::
 
-<!-- ======== COPY START: one expandable panel ======== -->
 ::: {.fg-panel label="TN AgriScience Standards"}
 <!-- Paste the link to the standards document over {{AGRISCIENCE_STANDARDS_URL}}.
      One topic per line. To indent a subtopic, start the line with
@@ -202,9 +161,7 @@ By the end of the lesson, students will be able to:
 - ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
 - ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
 :::
-<!-- ======== COPY END: one expandable panel ========== -->
 
-<!-- ======== COPY START: one expandable panel ======== -->
 ::: {.fg-panel label="Data Science Standards"}
 <!-- Paste the link to the standards document over {{DATA_SCIENCE_STANDARDS_URL}}.
      One standard per line, in this format:  - *CODE:* Full text -->
@@ -214,9 +171,7 @@ By the end of the lesson, students will be able to:
 - ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
 - ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
 :::
-<!-- ======== COPY END: one expandable panel ========== -->
 
-<!-- ======== COPY START: one expandable panel ======== -->
 ::: {.fg-panel label="TN Computer Science Standards"}
 <!-- Paste the link to the standards document over {{CS_STANDARDS_URL}}.
      One standard per line, in this format:  - *CODE:* Full text -->
@@ -226,7 +181,6 @@ By the end of the lesson, students will be able to:
 - ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
 - ***{{STANDARD_CODE}}:*** *{{SUBSTANDARD}}:* {{STANDARD_TEXT}}
 :::
-<!-- ======== COPY END: one expandable panel ========== -->
 
 :::
 
@@ -280,7 +234,6 @@ By the end of the lesson, students will be able to:
 
 ::: {.fg-grid-3}
 
-<!-- ======== COPY START: one resource card ======== -->
 ::: {.fg-card}
 [🖥️ Slide Deck]{.fg-card-title}
 
@@ -288,9 +241,7 @@ The slides you'll present during the lesson.
 
 [Open slides]({{SLIDES_URL}}){.fg-btn}
 :::
-<!-- ======== COPY END: one resource card ========== -->
 
-<!-- ======== COPY START: one resource card ======== -->
 <!-- #student-handout lets other parts of the page link here: [text](#student-handout) -->
 ::: {.fg-card #student-handout}
 [📄 Student Handout]{.fg-card-title}
@@ -299,9 +250,7 @@ Opens a "Make a copy" prompt so you get your own editable version.
 
 [Make a copy]({{HANDOUT_COPY_URL}}){.fg-btn}
 :::
-<!-- ======== COPY END: one resource card ========== -->
 
-<!-- ======== COPY START: one resource card ======== -->
 ::: {.fg-card}
 [📝 Note-Taking Slides]{.fg-card-title}
 
@@ -309,9 +258,7 @@ A printable version of the slides with space for student notes.
 
 [Download PDF]({{NOTES_HANDOUT_PDF_URL}}){.fg-btn-outline}
 :::
-<!-- ======== COPY END: one resource card ========== -->
 
-<!-- ======== COPY START: one resource card ======== -->
 <!-- #exit-ticket lets other parts of the page link here: [text](#exit-ticket) -->
 ::: {.fg-card #exit-ticket}
 [✅ Exit Ticket]{.fg-card-title}
@@ -320,9 +267,7 @@ A printable version of the slides with space for student notes.
 
 [Copy Google Form]({{EXIT_TICKET_COPY_URL}}){.fg-btn-outline}
 :::
-<!-- ======== COPY END: one resource card ========== -->
 
-<!-- ======== COPY START: one resource card ======== -->
 <!-- #practice-exercise lets other parts of the page link here: [text](#practice-exercise) -->
 ::: {.fg-card #practice-exercise}
 [🧑‍💻 Practice Exercise]{.fg-card-title}
@@ -331,9 +276,7 @@ A printable version of the slides with space for student notes.
 
 [Open in Colab]({{PRACTICE_URL}}){.fg-btn-outline}
 :::
-<!-- ======== COPY END: one resource card ========== -->
 
-<!-- ======== COPY START: one resource card ======== -->
 ::: {.fg-card}
 [🛒 Amazon Cart]{.fg-card-title}
 
@@ -341,7 +284,6 @@ A printable version of the slides with space for student notes.
 
 [Share-A-Cart]({{RESOURCE_URL}}){.fg-btn-outline}
 :::
-<!-- ======== COPY END: one resource card ========== -->
 
 :::
 
@@ -351,21 +293,15 @@ A printable version of the slides with space for student notes.
 
 ::: {.panel-tabset}
 
-<!-- ======== COPY START: one tab ======== -->
 ### 🖥️ Slide Deck with Notes
 
 For an in-depth walkthrough, see the [slides with visible facilitator notes]({{FACILITATOR_NOTES_URL}}).
-<!-- ======== COPY END: one tab ========== -->
 
-<!-- ======== COPY START: one tab ======== -->
 <!-- ### 💡 Tips
 
 - {{TIP}}
 - {{TIP}} -->
 
-<!-- ======== COPY END: one tab ========== -->
-
-<!-- ======== COPY START: one tab ======== -->
 <!-- ### ⚠️ Common Misconceptions
 
 | Students may think... | Address it by... |
@@ -373,17 +309,12 @@ For an in-depth walkthrough, see the [slides with visible facilitator notes]({{F
 | {{MISCONCEPTION}} | {{STRATEGY}} |
 | {{MISCONCEPTION}} | {{STRATEGY}} | -->
 
-<!-- ======== COPY END: one tab ========== -->
-
-<!-- ======== COPY START: one tab ======== -->
 ### ❓ Discussion Questions
 
 1. {{QUESTION}}
 2. {{QUESTION}}
 3. {{QUESTION}}
-<!-- ======== COPY END: one tab ========== -->
 
-<!-- ======== COPY START: one tab ======== -->
 ### 🔀 Differentiation
 
 **Extra support:** {{SUPPORT_STRATEGY}}
@@ -392,25 +323,17 @@ For an in-depth walkthrough, see the [slides with visible facilitator notes]({{F
 
 **If you're short on time:** {{WHAT_TO_CUT}}
 
-<!-- ======== COPY END: one tab ========== -->
-
-<!-- ======== COPY START: one tab ======== -->
 ### 🛠 Troubleshooting
 
-<!-- ======== COPY START: one problem + fix ======== -->
 ::: {.callout-caution collapse="true"}
 ## {{PROBLEM}}
 {{FIX}}
 :::
-<!-- ======== COPY END: one problem + fix ========== -->
 
-<!-- ======== COPY START: one problem + fix ======== -->
 ::: {.callout-caution collapse="true"}
 ## {{PROBLEM}}
 {{FIX}}
 :::
-<!-- ======== COPY END: one problem + fix ========== -->
-<!-- ======== COPY END: one tab ========== -->
 
 :::
 
@@ -436,7 +359,6 @@ For an in-depth walkthrough, see the [slides with visible facilitator notes]({{F
 
 ::: {.fg-steps}
 
-<!-- ======== COPY START: one prep step ======== -->
 ::: {.fg-step}
 #### {{STEP_TITLE}} {.unnumbered}
 
@@ -470,9 +392,7 @@ For an in-depth walkthrough, see the [slides with visible facilitator notes]({{F
 :::
 <!-- ---- END OPTIONAL ---- -->
 :::
-<!-- ======== COPY END: one prep step ========== -->
 
-<!-- ======== COPY START: one prep step ======== -->
 ::: {.fg-step}
 #### {{STEP_TITLE}} {.unnumbered}
 
@@ -491,7 +411,6 @@ Walk through each step in the slides: [▶ Open the step-by-step slides]({{STEP_
 :::
 <!-- ---- END OPTIONAL ---- -->
 :::
-<!-- ======== COPY END: one prep step ========== -->
 
 :::
 
@@ -510,6 +429,7 @@ Walk through each step in the slides: [▶ Open the step-by-step slides]({{STEP_
 
 .fg-steps > .fg-step > details > summary > h4 {
   margin: 0;
+  font-weight: 400;
 }
 
 .fg-steps > .fg-step > details[open] > summary {
@@ -602,40 +522,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ::: {.fg-timeline}
 
-<!-- ======== COPY START: one timeline segment ======== -->
 ::: {.fg-segment time="30 min" group="Whole class"}
 **{{SEGMENT_TITLE}}**
 {{WHAT_HAPPENS}}
 :::
-<!-- ======== COPY END: one timeline segment ========== -->
 
-<!-- ======== COPY START: one timeline segment ======== -->
 ::: {.fg-segment time="10 min" group="Direct instruction"}
 **{{SEGMENT_TITLE}}**
 {{WHAT_HAPPENS}}
 :::
-<!-- ======== COPY END: one timeline segment ========== -->
 
-<!-- ======== COPY START: one timeline segment ======== -->
 ::: {.fg-segment time="20 min" group="Groups"}
 **{{SEGMENT_TITLE}}**
 {{WHAT_HAPPENS}}
 :::
-<!-- ======== COPY END: one timeline segment ========== -->
 
-<!-- ======== COPY START: one timeline segment ======== -->
 ::: {.fg-segment time="25 min" group="Coding"}
 **{{SEGMENT_TITLE}}**
 {{WHAT_HAPPENS}}
 :::
-<!-- ======== COPY END: one timeline segment ========== -->
 
-<!-- ======== COPY START: one timeline segment ======== -->
 ::: {.fg-segment time="5 min" group="Individual"}
 **Exit Ticket**
 {{WHAT_HAPPENS}}
 :::
-<!-- ======== COPY END: one timeline segment ========== -->
 
 :::
 
@@ -756,7 +666,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ::: {.fg-grid-2}
 
-<!-- ======== COPY START: one link card ======== -->
 <!-- #whole-class-videos lets other parts of the page link here: [text](#whole-class-videos) -->
 ::: {.fg-card .fg-linklist #whole-class-videos}
 [Whole-Class Videos]{.fg-card-header}
@@ -765,16 +674,13 @@ document.addEventListener("DOMContentLoaded", () => {
 - [{{VIDEO_TITLE}}]({{VIDEO_URL}}) [YouTube]{.fg-tag .fg-tag-torch}
 - [{{VIDEO_TITLE}}]({{VIDEO_URL}}) [YouTube]{.fg-tag .fg-tag-torch}
 :::
-<!-- ======== COPY END: one link card ========== -->
 
-<!-- ======== COPY START: one link card ======== -->
 ::: {.fg-card .fg-linklist}
 [Other Useful Materials]{.fg-card-header}
 
 - [{{READING_TITLE}}]({{READING_URL}}) [{{WHY_ITS_USEFUL}}]{.fg-link-note}
 - [{{READING_TITLE}}]({{READING_URL}}) [{{WHY_ITS_USEFUL}}]{.fg-link-note}
 :::
-<!-- ======== COPY END: one link card ========== -->
 
 :::
 
