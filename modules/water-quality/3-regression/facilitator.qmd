@@ -88,8 +88,8 @@ format:
 
 [How can color, scatterplots, and linear regression work together to help predict nitrate values?]{.lead}
 
-[▶ Open Slide Deck](https://appalachianaicorps.org/modules/water-quality/3-regression/slides.html){.fg-btn}
-[📄 Student Handout](https://docs.google.com/document/d/1wag0FSzDp6NchIcM4WAwIbBP_FqdIdcvL9YWwR8Mc8s/copy){.fg-btn-outline}
+<!-- [▶ Open Slide Deck](https://appalachianaicorps.org/modules/water-quality/3-regression/slides.html){.fg-btn}
+[📄 Student Handout](https://docs.google.com/document/d/1wag0FSzDp6NchIcM4WAwIbBP_FqdIdcvL9YWwR8Mc8s/copy){.fg-btn-outline} -->
 :::
 
 <!-- ########## SECTION END: Banner ########## -->
@@ -402,20 +402,14 @@ For an in-depth walkthrough, see the [slides with visible facilitator notes](htt
 ### 🛠 Troubleshooting
 
 <!-- ======== COPY START: one problem + fix ======== -->
-::: {.callout-caution collapse="true"}
 ## Issue Accessing Applet
 Students must grant permission for the applet to access their webcam. If they decline, reload the applet.
 
 Only one working applet/computer combination per group is necessary.
-:::
-<!-- ======== COPY END: one problem + fix ========== -->
 
-<!-- ======== COPY START: one problem + fix ======== -->
-::: {.callout-caution collapse="true"}
 ## Generated Regression Model is a Poor Fit
 Double check the data entered into the lists for `color_data` and `nitrate_data`. Typos are common.
-:::
-<!-- ======== COPY END: one problem + fix ========== -->
+
 <!-- ======== COPY END: one tab ========== -->
 
 :::
@@ -469,22 +463,77 @@ This lesson is reliant on the student use of device webcams (at least one per gr
 [Test AAIC RGB V2 Applet](https://appalachianaicorps.org/modules/water-quality/RGB-Applet-2.html){.fg-btn}
 
 **What will it look like if the applet works?**
+
   - When the "What Humans See" option is select, a low-quality full-color image is shown
   - When the "What Computers See" option is selected, squares of that color with numbers in them are shown (for red, green, and blue channels)
 
   ![](images/RGB_Applet_Test.png)
 
+:::
+
+::: {.fg-step}
+#### Check that Video Links are Accessible {.unnumbered}
+
+[Two YouTube videos](#whole-class-videos) are used in this lesson. Confirm that the two links are not blocked at your school, or you can access them when needed.
+
+:::
+
+::: {.fg-step}
+#### Prepare Purple Color Swatch Cards {.unnumbered}
+
+Print and cut one deck of purple color swatch cards for each group. It is important that these cards be printed in color and of high quality. While the colors are approximations of the exact colors that result from the nitrate test strips used in lesson #1, the key is that they capture the mathematical differences in usefulness of the red, green, and blue channels in meaningfully predicting nitrate concentrations in water samples. This behavior mirrors the reality of the ML model driving the buoy’s predictions.
+
+[Card Deck Optimized for Fluorescent Lighting](#){.fg-btn}
+
+[Card Deck for Standard Lighting](#){.fg-btn}
+
+::: {.callout-tip}
+## Separating the Decks
+Separate these decks into two separate piles. Groups will first use the eight cards with PPM values written on them to create their model.
+
+Later, groups will need the three predictor cards to use in predicting nitrate concentrations from their created model. 
+
+![](images/stacks_of_purplecards_aaic_l3.png)
+
+:::
+:::
+
+::: {.fg-step}
+#### Make Copies of the Student Handout
+Each student will need one copy of the student handout. You can make a copy of the [handout above](#student-handout).
+
+:::
+
+::: {.fg-step}
+#### Make (Digital) Copy of Student Exit Ticket and Link in Your LMS
+We have drafted an exit ticket that aligns with this lesson. We are providing the [Google Form here](#exit-ticket) if you would like to use it or modify it for your own needs.
+
+:::
+
+::: {.fg-step}
+#### Make (Digital) Copy of Student Exercise and Link in Your LMS
+We have also created an exercise that you can use with students to practice the concepts covered in this lesson. It is available [here](#practice-exercise).
+
+:::
+
+::: {.fg-step}
+#### (Optional but Recommended) Pre-Label Grid Paper with X,Y Axis and Tick Marks
+For the exercise to fit on the grid paper, the y and x axes will need to count by different units (y by 2s and x by 10s), given the size of the paper. This can sometimes be tricky for students. So, if pressed for time, we suggest pre-labeling the paper (see example below) so students can quickly begin plotting their values.
+
+![](images/Labeled_Grid_Paper_Crop.png)
+:::
+
 <!-- ---- OPTIONAL: link to step-by-step slides (e.g., Google Slides
           with screenshots of each step). Put the link inside ( ).
           Delete from here to "END OPTIONAL" if not needed. ---- -->
-Walk through each step in the slides: [▶ Open the step-by-step slides]({{STEP_BY_STEP_SLIDES_URL}}){.fg-btn}
+<!-- Walk through each step in the slides: [▶ Open the step-by-step slides]({{STEP_BY_STEP_SLIDES_URL}}){.fg-btn} -->
 <!-- ---- END OPTIONAL ---- -->
 
 <!-- ---- OPTIONAL: note box.
           Delete from here to "END OPTIONAL" if not needed. ---- -->
-::: {.callout-note}
+<!-- ::: {.callout-note}
 **Teaching more than one class?** {{MULTI_CLASS_NOTE}}
-:::
+::: -->
 <!-- ---- END OPTIONAL ---- -->
 :::
 <!-- ======== COPY END: one prep step ========== -->
