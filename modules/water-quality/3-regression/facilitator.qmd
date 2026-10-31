@@ -60,6 +60,15 @@ format:
     toc-depth: 2
     page-layout: article
     smooth-scroll: true
+    # Opens every link on the page in a new tab, except jumps within the page (#...)
+    include-after-body:
+      text: |
+        <script>
+        document.querySelectorAll('main a[href]:not([href^="#"])').forEach(function (a) {
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+        });
+        </script>
 ---
 
 <!-- ###################################################################
@@ -177,11 +186,9 @@ format:
 By the end of the lesson, students will be able to:
 
 ::: {.fg-objectives}
-- [CS]{.fg-tag .fg-tag-cs} {{OBJECTIVE}}
-- [DS]{.fg-tag .fg-tag-ds} {{OBJECTIVE}}
-  - {{DETAIL}}
-  - {{DETAIL}}
-- [AgScience]{.fg-tag .fg-tag-agscience} {{OBJECTIVE}}
+- [CS]{.fg-tag .fg-tag-cs} Use Python to generate a linear regression model and predict outcomes.
+- [DS]{.fg-tag .fg-tag-ds} Understand and create models of the relationship between RGB color values and nitrate concentrations using self-collected data.
+- [AgScience]{.fg-tag .fg-tag-agscience} Create and apply a linear model predicting dissolved nitrogen concentrations in waterways.
 :::
 :::
 
@@ -189,29 +196,27 @@ By the end of the lesson, students will be able to:
 ::: {.fg-panel label="TN AgriScience Standards"}
 <!-- One topic per line. To indent a subtopic, start the line with
      two spaces before the dash. -->
-- {{TOPIC}}
-  - {{SUBTOPIC}}
-  - {{SUBTOPIC}}
-- {{TOPIC}}
-- {{TOPIC}}
+- ***3.2 Models:*** Develop models for the flow of energy and matter (inorganic forms and overall biomass) in various ecosystems impacting agricultural and environmental systems. Using these models, calculate rates of productivity by analyzing the major components of a food chain. Employ mathematical models to explain growth patterns and rates, both density-dependent and density-independent factors, observed in ecosystems energy and nutrients flow.
 :::
 <!-- ======== COPY END: one expandable panel ========== -->
 
 <!-- ======== COPY START: one expandable panel ======== -->
 ::: {.fg-panel label="Data Science Standards"}
 <!-- One standard per line, in this format:  - *CODE:* Full text -->
-- *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
-- *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
-- *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
+- ***3-5.[B.3.1](https://datasciencelearning.org/concepts/creating-your-own-data)d:*** *Creating your own data:* Plan and conduct measurements by identifying measurable characteristics and collecting both categorical and numerical variables of objects/events.
+- ***9-10.[C.2.3](https://datasciencelearning.org/substrands/identifying-patterns-and-relationships-in-data)b:*** *Defining relationships:* Analyze data to uncover correlations, trends, and groupings that inform decision-making processes across diverse fields.
+- ***9-10.[C.5.2](https://datasciencelearning.org/concepts/creating-models)a:*** *Creating models:* Construct and analyze models to represent linear and non-linear relationships in data.
+- ***9-10.[C.5.2](https://datasciencelearning.org/concepts/creating-models)b:*** *Creating models:* Use technology to create, test, and refine models.
 :::
 <!-- ======== COPY END: one expandable panel ========== -->
 
 <!-- ======== COPY START: one expandable panel ======== -->
 ::: {.fg-panel label="TN Computer Science Standards"}
 <!-- One standard per line, in this format:  - *CODE:* Full text -->
-- *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
-- *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
-- *{{STANDARD_CODE}}:* {{STANDARD_TEXT}}
+- ***CS.AT.1:*** *Algorithmic Thinking:* Use lists to simplify solutions, generalizing computational problems instead of repeatedly using simple variables.
+- ***CS.DA.1:*** *Data Analysis:* Create computational models that represent the relationships among different elements of data collected from a phenomenon or process.
+- ***CS.DA.2:*** *Data Analysis:* Utilize data to answer a question using a variety of computing and data visualization methods.
+- ***CS.DA.3:*** *Data Analysis:* Use data analysis tools and techniques to identify patterns in data representing complex systems.
 :::
 <!-- ======== COPY END: one expandable panel ========== -->
 
@@ -222,7 +227,9 @@ By the end of the lesson, students will be able to:
      open="true" after the label to make it start open.
      The box title is the text inside label="...". -->
 ::: {.fg-fold label="Prior Knowledge & Vocabulary"}
-**Students should already know:** {{PREREQUISITES}}
+**This lesson assumes that students have already:**
+
+- Learned about bivariate linear regression within their mathematics classes.
 
 <!-- Table: each row is one line starting with |
      To add a row, copy a {{TERM}} line and paste it below. -->
