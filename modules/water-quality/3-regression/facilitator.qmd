@@ -352,9 +352,6 @@ Share-A-Cart link for the stickers, poster markers, and Post-It gridded sticky p
 
 For an in-depth walkthrough, see the [slides with visible facilitator notes](https://appalachianaicorps.org/modules/water-quality/3-regression/facilitator_notes.html).
 
-<div style="position: relative; width: 100%; max-width: 400px; aspect-ratio: 16 / 9; margin-top: 1rem; border: 1px solid #ddd; border-radius: 6px; overflow: hidden;">
-  <iframe src="slides.html" title="Workshop #3 slide deck preview" style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;" loading="lazy" allowfullscreen></iframe>
-</div>
 <!-- ======== COPY END: one tab ========== -->
 
 <!-- ======== COPY START: one tab ======== -->
@@ -525,7 +522,6 @@ We have also created an exercise that you can use with students to practice the 
 For the exercise to fit on the grid paper, the y and x axes will need to count by different units (y by 2s and x by 10s), given the size of the paper. This can sometimes be tricky for students. So, if pressed for time, we suggest pre-labeling the paper (see example below) so students can quickly begin plotting their values.
 
 ![](images/Labeled_Grid_Paper_Crop.png)
-:::
 
 <!-- ---- OPTIONAL: link to step-by-step slides (e.g., Google Slides
           with screenshots of each step). Put the link inside ( ).
@@ -567,17 +563,37 @@ For the exercise to fit on the grid paper, the y and x axes will need to count b
 
 .fg-steps > .fg-step > details > summary > h4 {
   margin: 0;
-  font-weight: 400;
+  font-family: var(--fg-heading-font);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+  color: var(--aaic-globe, #006C93);
+  transition: color 0.15s ease;
+}
+
+.fg-steps > .fg-step > details > summary:hover > h4 {
+  color: var(--aaic-torch, #E65933);
 }
 
 .fg-steps > .fg-step > details[open] > summary {
   margin-bottom: 0.75rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 2px solid var(--aaic-summit, #B9E1E2);
 }
 
-/* Dropdown arrow for Lesson Prep steps */
+/* Title bar for Lesson Prep steps (tinted, rounded, with arrow) */
 .fg-steps > .fg-step > details > summary {
   position: relative;
-  padding-right: 2rem;
+  padding: 0.3rem 2.25rem 0.35rem 0.75rem;
+  background: var(--aaic-ltblue, #f1f9f9);
+  border-radius: 8px;
+  transition: background 0.15s ease;
+}
+
+.fg-steps > .fg-step > details > summary:hover {
+  background: #e4f3f3;
 }
 
 .fg-steps > .fg-step > details > summary::after {
@@ -712,9 +728,11 @@ Use this time for whole-group discussion of the day's work and then individual j
 <!-- ======== COPY START: one timeline segment ======== -->
 ::: {.fg-segment time="10 min" group="Individual"}
 **Exit Ticket & (If Desired) Assignment of Practice Exercise**
-Use the final 10 minutes of class for students to complete the exit ticket. Additionally, if you'd like to assign the practice exercise for homework, do so now. 
+Use the final 10 minutes of class for students to complete the exit ticket. Additionally, if you'd like to assign the practice exercise for homework, do so now.
 :::
 <!-- ======== COPY END: one timeline segment ========== -->
+
+:::
 
 
 ```{=html}
@@ -845,12 +863,12 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- ======== COPY END: one link card ========== -->
 
 <!-- ======== COPY START: one link card ======== -->
-<!-- ::: {.fg-card .fg-linklist}
+::: {.fg-card .fg-linklist}
 [Other Useful Materials]{.fg-card-header}
 
 - [{{READING_TITLE}}]({{READING_URL}}) [{{WHY_ITS_USEFUL}}]{.fg-link-note}
 - [{{READING_TITLE}}]({{READING_URL}}) [{{WHY_ITS_USEFUL}}]{.fg-link-note}
-::: -->
+:::
 <!-- ======== COPY END: one link card ========== -->
 
 :::
