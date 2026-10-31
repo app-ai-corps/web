@@ -501,25 +501,25 @@ Later, groups will need the three predictor cards to use in predicting nitrate c
 :::
 
 ::: {.fg-step}
-#### Make Copies of the Student Handout
+#### Make Copies of the Student Handout {.unnumbered}
 Each student will need one copy of the student handout. You can make a copy of the [handout above](#student-handout).
 
 :::
 
 ::: {.fg-step}
-#### Make (Digital) Copy of Student Exit Ticket and Link in Your LMS
+#### Make (Digital) Copy of Student Exit Ticket and Link in Your LMS {.unnumbered}
 We have drafted an exit ticket that aligns with this lesson. We are providing the [Google Form here](#exit-ticket) if you would like to use it or modify it for your own needs.
 
 :::
 
 ::: {.fg-step}
-#### Make (Digital) Copy of Student Exercise and Link in Your LMS
+#### Make (Digital) Copy of Student Exercise and Link in Your LMS {.unnumbered}
 We have also created an exercise that you can use with students to practice the concepts covered in this lesson. It is available [here](#practice-exercise).
 
 :::
 
 ::: {.fg-step}
-#### (Optional but Recommended) Pre-Label Grid Paper with X,Y Axis and Tick Marks
+#### (Optional but Recommended) Pre-Label Grid Paper with X,Y Axis and Tick Marks {.unnumbered}
 For the exercise to fit on the grid paper, the y and x axes will need to count by different units (y by 2s and x by 10s), given the size of the paper. This can sometimes be tricky for students. So, if pressed for time, we suggest pre-labeling the paper (see example below) so students can quickly begin plotting their values.
 
 ![](images/Labeled_Grid_Paper_Crop.png)

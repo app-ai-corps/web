@@ -437,17 +437,37 @@ Walk through each step in the slides: [▶ Open the step-by-step slides]({{STEP_
 
 .fg-steps > .fg-step > details > summary > h4 {
   margin: 0;
-  font-weight: 400;
+  font-family: var(--fg-heading-font);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+  color: var(--aaic-globe, #006C93);
+  transition: color 0.15s ease;
+}
+
+.fg-steps > .fg-step > details > summary:hover > h4 {
+  color: var(--aaic-torch, #E65933);
 }
 
 .fg-steps > .fg-step > details[open] > summary {
   margin-bottom: 0.75rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 2px solid var(--aaic-summit, #B9E1E2);
 }
 
-/* Dropdown arrow for Lesson Prep steps */
+/* Title bar for Lesson Prep steps (tinted, rounded, with arrow) */
 .fg-steps > .fg-step > details > summary {
   position: relative;
-  padding-right: 2rem;
+  padding: 0.3rem 2.25rem 0.35rem 0.75rem;
+  background: var(--aaic-ltblue, #f1f9f9);
+  border-radius: 8px;
+  transition: background 0.15s ease;
+}
+
+.fg-steps > .fg-step > details > summary:hover {
+  background: #e4f3f3;
 }
 
 .fg-steps > .fg-step > details > summary::after {
