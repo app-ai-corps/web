@@ -404,12 +404,13 @@ For an in-depth walkthrough, see the [slides with visible facilitator notes](htt
 
 <!-- ======== COPY START: one problem + fix ======== -->
 **Issue Accessing Applet**
-Students must grant permission for the applet to access their webcam. If they decline, reload the applet.
 
-Only one working applet/computer combination per group is necessary.
+- Students must grant permission for the applet to access their webcam. If they decline, reload the applet.
+- Only one working applet/computer combination per group is necessary.
 
 **Generated Regression Model is a Poor Fit**
-Double check the data entered into the lists for `color_data` and `nitrate_data`. Typos are common.
+
+- Double check the data entered into the lists for `color_data` and `nitrate_data`. Typos are common.
 
 <!-- ======== COPY END: one tab ========== -->
 
