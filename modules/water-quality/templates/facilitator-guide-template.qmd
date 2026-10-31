@@ -592,11 +592,13 @@ document.addEventListener("DOMContentLoaded", () => {
        time="..."    about how long it takes, e.g. 10 min
        group="..."   one of: Whole class, Direct instruction, Groups,
                      Coding, Individual  (each gets its own color)
+                     For more than one, separate with commas,
+                     e.g. group="Groups, Coding"
      Type between the quote marks only.
      ################################################################### -->
 
 
-## Estimated Lesson Timing
+## Estimated Time Per Lesson Component
 
 ::: {.fg-timeline}
 
@@ -1436,12 +1438,14 @@ document.addEventListener("DOMContentLoaded", () => {
     body.append(...seg.childNodes);
     const group = attr(seg, "group");
     if (group) {
-      const tag = document.createElement("span");
-      const color = groupColors[group.trim().toLowerCase()];
-      tag.className = "fg-tag" + (color ? " fg-tag-" + color : "");
-      tag.textContent = group;
       const target = body.querySelector(":scope > p") || body;
-      target.append(" ", tag);
+      group.split(",").map((g) => g.trim()).filter(Boolean).forEach((g) => {
+        const tag = document.createElement("span");
+        const color = groupColors[g.toLowerCase()];
+        tag.className = "fg-tag" + (color ? " fg-tag-" + color : "");
+        tag.textContent = g;
+        target.append(" ", tag);
+      });
     }
     seg.replaceChildren(time, body);
   });

@@ -637,46 +637,69 @@ document.addEventListener("DOMContentLoaded", () => {
        time="..."    about how long it takes, e.g. 10 min
        group="..."   one of: Whole class, Direct instruction, Groups,
                      Coding, Individual  (each gets its own color)
+                     For more than one, separate with commas,
+                     e.g. group="Groups, Coding"
      Type between the quote marks only.
      ################################################################### -->
 
 
-## Estimated Lesson Timing
+## Estimated Time Per Lesson Component
 
 ::: {.fg-timeline}
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="30 min" group="Whole class"}
-**{{SEGMENT_TITLE}}**
-{{WHAT_HAPPENS}}
+::: {.fg-segment time="5 min" group="Direct instruction, Whole class"}
+**Introduction to Regression**
+Deliver Initial Slides/Lead up to Regression Activity Pt. I.
 :::
 <!-- ======== COPY END: one timeline segment ========== -->
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="10 min" group="Direct instruction"}
-**{{SEGMENT_TITLE}}**
-{{WHAT_HAPPENS}}
+::: {.fg-segment time="15 min" group="Groups"}
+**Regression Activity Pt. I**
+Groups will use applet to record RGB values of purple swatches in deck.
 :::
 <!-- ======== COPY END: one timeline segment ========== -->
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="20 min" group="Groups"}
-**{{SEGMENT_TITLE}}**
-{{WHAT_HAPPENS}}
+::: {.fg-segment time="10 min" group="Groups"}
+**Regression Activity Pt. II**
+Students watch short scatterplot video and plot their assign color stickers on grid.
 :::
 <!-- ======== COPY END: one timeline segment ========== -->
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="25 min" group="Coding"}
-**{{SEGMENT_TITLE}}**
-{{WHAT_HAPPENS}}
+::: {.fg-segment time="20 min" group="Coding, Groups"}
+**Regression Activity Pt. III**
+Students input values from Pt. II into Python code block to generate digital scatterplot (should match) and linear regression model. 
 :::
 <!-- ======== COPY END: one timeline segment ========== -->
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="5 min" group="Individual"}
-**Exit Ticket**
-{{WHAT_HAPPENS}}
+::: {.fg-segment time="10 min" group="Groups"}
+**Regression Activity Pt. IV**
+Students use the yardstick and marker to approximate the regression line on the gridpaper, making it match the computer version as much as possible.
+:::
+<!-- ======== COPY END: one timeline segment ========== -->
+
+<!-- ======== COPY START: one timeline segment ======== -->
+::: {.fg-segment time="10 min" group="Groups"}
+**Regression Activity Pt. V**
+Students use linear regression model to predict nitrate concentrations for their three "prediction cards."
+:::
+<!-- ======== COPY END: one timeline segment ========== -->
+
+<!-- ======== COPY START: one timeline segment ======== -->
+::: {.fg-segment time="10 min" group="Whole class, Individual"}
+**Discussion/Reflection**
+Use this time for whole-group discussion of the day's work and then individual journaling/reflection about the learning. 
+:::
+<!-- ======== COPY END: one timeline segment ========== -->
+
+<!-- ======== COPY START: one timeline segment ======== -->
+::: {.fg-segment time="10 min" group="Individual"}
+**Exit Ticket & (If Desired) Assignment of Practice Exercise**
+Use the final 10 minutes of class for students to complete the exit ticket. Additionally, if you'd like to assign the practice exercise for homework, do so now. 
 :::
 <!-- ======== COPY END: one timeline segment ========== -->
 
@@ -804,9 +827,8 @@ document.addEventListener("DOMContentLoaded", () => {
 ::: {.fg-card .fg-linklist #whole-class-videos}
 [Whole-Class Videos]{.fg-card-header}
 
-- [{{VIDEO_TITLE}}]({{VIDEO_URL}}) [EdPuzzle]{.fg-tag .fg-tag-valley}
-- [{{VIDEO_TITLE}}]({{VIDEO_URL}}) [YouTube]{.fg-tag .fg-tag-torch}
-- [{{VIDEO_TITLE}}]({{VIDEO_URL}}) [YouTube]{.fg-tag .fg-tag-torch}
+- [Scatter Graphs: What they are and how to plot them]({{VIDEO_URL}}) [YouTube]{.fg-tag .fg-tag-torch}
+- [Scatter Graphs: Line of best fit]({{VIDEO_URL}}) [YouTube]{.fg-tag .fg-tag-torch}
 :::
 <!-- ======== COPY END: one link card ========== -->
 
@@ -814,8 +836,8 @@ document.addEventListener("DOMContentLoaded", () => {
 ::: {.fg-card .fg-linklist}
 [Other Useful Materials]{.fg-card-header}
 
-- [{{READING_TITLE}}]({{READING_URL}}) [{{WHY_ITS_USEFUL}}]{.fg-link-note}
-- [{{READING_TITLE}}]({{READING_URL}}) [{{WHY_ITS_USEFUL}}]{.fg-link-note}
+<!-- - [{{READING_TITLE}}]({{READING_URL}}) [{{WHY_ITS_USEFUL}}]{.fg-link-note}
+- [{{READING_TITLE}}]({{READING_URL}}) [{{WHY_ITS_USEFUL}}]{.fg-link-note} -->
 :::
 <!-- ======== COPY END: one link card ========== -->
 
@@ -1488,12 +1510,14 @@ document.addEventListener("DOMContentLoaded", () => {
     body.append(...seg.childNodes);
     const group = attr(seg, "group");
     if (group) {
-      const tag = document.createElement("span");
-      const color = groupColors[group.trim().toLowerCase()];
-      tag.className = "fg-tag" + (color ? " fg-tag-" + color : "");
-      tag.textContent = group;
       const target = body.querySelector(":scope > p") || body;
-      target.append(" ", tag);
+      group.split(",").map((g) => g.trim()).filter(Boolean).forEach((g) => {
+        const tag = document.createElement("span");
+        const color = groupColors[g.toLowerCase()];
+        tag.className = "fg-tag" + (color ? " fg-tag-" + color : "");
+        tag.textContent = g;
+        target.append(" ", tag);
+      });
     }
     seg.replaceChildren(time, body);
   });
