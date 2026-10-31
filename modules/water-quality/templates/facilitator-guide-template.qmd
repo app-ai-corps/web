@@ -144,7 +144,7 @@ format:
 By the end of the lesson, students will be able to:
 
 ::: {.fg-objectives}
-- [CT]{.fg-tag .fg-tag-ct} {{OBJECTIVE}}
+- [CS]{.fg-tag .fg-tag-cs} {{OBJECTIVE}}
 - [DS]{.fg-tag .fg-tag-ds} {{OBJECTIVE}}
   - {{DETAIL}}
   - {{DETAIL}}
@@ -160,14 +160,15 @@ By the end of the lesson, students will be able to:
        leave it off and all panels start closed.
      - To add a panel: copy one panel (COPY START to COPY END) and
        paste it right below another panel's COPY END line.
-     - The "Prior Knowledge & Vocabulary" box below the panels is
-       always open. It sits outside the panel group on purpose.
+     - "Prior Knowledge & Vocabulary" (right below this note) is its
+       own separate fold-out box, so opening it doesn't close the others.
      ################################################################### -->
 
-<!-- ======== COPY START: one open box ======== -->
-<!-- Looks like a panel but is always open (it does not collapse).
+<!-- Prior Knowledge & Vocabulary: a fold-out box on its own, styled
+     like the Estimated Lesson Timing box. It starts closed; add
+     open="true" after the label to make it start open.
      The box title is the text inside label="...". -->
-::: {.fg-box label="Prior Knowledge & Vocabulary"}
+::: {.fg-fold label="Prior Knowledge & Vocabulary"}
 **Students should already know:** {{PREREQUISITES}}
 
 <!-- Table: each row is one line starting with |
@@ -180,7 +181,6 @@ By the end of the lesson, students will be able to:
 | {{TERM}} | {{DEFINITION}} |
 
 :::
-<!-- ======== COPY END: one open box ========== -->
 
 ## Lesson Topics and Standards
 
@@ -225,7 +225,7 @@ By the end of the lesson, students will be able to:
      SECTION START: Learning Objectives
      A bulleted list. Each objective starts with a colored tag that
      shows its subject area. Copy the tag you need from this list:
-       [CT]{.fg-tag .fg-tag-ct}                 Computational Thinking
+       [CS]{.fg-tag .fg-tag-cs}                 Computer Science
        [DS]{.fg-tag .fg-tag-ds}                 Data Science
        [Math]{.fg-tag .fg-tag-math}             Math
        [Science]{.fg-tag .fg-tag-science}       Science
@@ -254,13 +254,94 @@ By the end of the lesson, students will be able to:
 
 <!-- ########## SECTION END: Lesson Overview Video Tour ########## -->
 
-## Facilitation Notes
+<!-- 
+###################################################################
+     SECTION START: Lesson Materials
+     One card per resource, each with a short description and a button.
+     - The button text goes inside [ ], the link inside ( ).
+     - .fg-btn = solid button, .fg-btn-outline = outlined button.
+     ###################################################################  -->
+## Lesson Materials
 
-::: {.ltblue-container}
-**Slide Deck with Facilitator Notes:** For an in-depth walkthrough, see the [slides with visible facilitator notes]({{FACILITATOR_NOTES_URL}}).
+
+::: {.fg-grid-3}
+
+<!-- ======== COPY START: one resource card ======== -->
+::: {.fg-card}
+[🖥️ Slide Deck]{.fg-card-title}
+
+The slides you'll present during the lesson.
+
+[Open slides]({{SLIDES_URL}}){.fg-btn}
+:::
+<!-- ======== COPY END: one resource card ========== -->
+
+<!-- ======== COPY START: one resource card ======== -->
+<!-- #student-handout lets other parts of the page link here: [text](#student-handout) -->
+::: {.fg-card #student-handout}
+[📄 Student Handout]{.fg-card-title}
+
+Opens a "Make a copy" prompt so you get your own editable version.
+
+[Make a copy]({{HANDOUT_COPY_URL}}){.fg-btn}
+:::
+<!-- ======== COPY END: one resource card ========== -->
+
+<!-- ======== COPY START: one resource card ======== -->
+::: {.fg-card}
+[📝 Note-Taking Slides]{.fg-card-title}
+
+A printable version of the slides with space for student notes.
+
+[Download PDF]({{NOTES_HANDOUT_PDF_URL}}){.fg-btn-outline}
+:::
+<!-- ======== COPY END: one resource card ========== -->
+
+<!-- ======== COPY START: one resource card ======== -->
+<!-- #exit-ticket lets other parts of the page link here: [text](#exit-ticket) -->
+::: {.fg-card #exit-ticket}
+[✅ Exit Ticket]{.fg-card-title}
+
+{{EXIT_TICKET_DESCRIPTION}}
+
+[Copy Google Form]({{EXIT_TICKET_COPY_URL}}){.fg-btn-outline}
+:::
+<!-- ======== COPY END: one resource card ========== -->
+
+<!-- ======== COPY START: one resource card ======== -->
+<!-- #practice-exercise lets other parts of the page link here: [text](#practice-exercise) -->
+::: {.fg-card #practice-exercise}
+[🧑‍💻 Practice Exercise]{.fg-card-title}
+
+{{PRACTICE_DESCRIPTION}}
+
+[Open in Colab]({{PRACTICE_URL}}){.fg-btn-outline}
+:::
+<!-- ======== COPY END: one resource card ========== -->
+
+<!-- ======== COPY START: one resource card ======== -->
+::: {.fg-card}
+[🛒 Amazon Cart]{.fg-card-title}
+
+{{RESOURCE_DESCRIPTION}}
+
+[Share-A-Cart]({{RESOURCE_URL}}){.fg-btn-outline}
+:::
+<!-- ======== COPY END: one resource card ========== -->
+
 :::
 
+<!-- ########## SECTION END: Lesson Materials ########## -->
+
+## Facilitation Notes
+
 ::: {.panel-tabset}
+
+<!-- ======== COPY START: one tab ======== -->
+### 🖥️ Slide Deck with Notes
+
+For an in-depth walkthrough, see the [slides with visible facilitator notes]({{FACILITATOR_NOTES_URL}}).
+<!-- ======== COPY END: one tab ========== -->
 
 <!-- ======== COPY START: one tab ======== -->
 <!-- ### 💡 Tips
@@ -322,83 +403,6 @@ By the end of the lesson, students will be able to:
 <!-- ########## SECTION END: Facilitation Notes ########## -->
 
 
-<!-- 
-###################################################################
-     SECTION START: Lesson Materials
-     One card per resource, each with a short description and a button.
-     - The button text goes inside [ ], the link inside ( ).
-     - .fg-btn = solid button, .fg-btn-outline = outlined button.
-     ###################################################################  -->
-## Lesson Materials
-
-
-::: {.fg-grid-3}
-
-<!-- ======== COPY START: one resource card ======== -->
-::: {.fg-card}
-[🖥️ Slide Deck]{.fg-card-title}
-
-The slides you'll present during the lesson.
-
-[Open slides]({{SLIDES_URL}}){.fg-btn}
-:::
-<!-- ======== COPY END: one resource card ========== -->
-
-<!-- ======== COPY START: one resource card ======== -->
-::: {.fg-card}
-[📄 Student Handout]({{HANDOUT_COPY_URL}}){.fg-card-title}
-
-Opens a "Make a copy" prompt so you get your own editable version.
-
-[Make a copy]({{HANDOUT_COPY_URL}}){.fg-btn}
-:::
-<!-- ======== COPY END: one resource card ========== -->
-
-<!-- ======== COPY START: one resource card ======== -->
-::: {.fg-card}
-[📝 Note-Taking Slides]{.fg-card-title}
-
-A printable version of the slides with space for student notes.
-
-[Download PDF]({{NOTES_HANDOUT_PDF_URL}}){.fg-btn-outline}
-:::
-<!-- ======== COPY END: one resource card ========== -->
-
-<!-- ======== COPY START: one resource card ======== -->
-::: {.fg-card}
-[✅ Exit Ticket]({{HANDOUT_COPY_URL}}){.fg-card-title}
-
-{{EXIT_TICKET_DESCRIPTION}}
-
-[Copy Google Form]({{EXIT_TICKET_COPY_URL}}){.fg-btn-outline}
-:::
-<!-- ======== COPY END: one resource card ========== -->
-
-<!-- ======== COPY START: one resource card ======== -->
-::: {.fg-card}
-[🧑‍💻 Practice Exercise]({{HANDOUT_COPY_URL}}){.fg-card-title}
-
-{{PRACTICE_DESCRIPTION}}
-
-[Open in Colab]({{PRACTICE_URL}}){.fg-btn-outline}
-:::
-<!-- ======== COPY END: one resource card ========== -->
-
-<!-- ======== COPY START: one resource card ======== -->
-::: {.fg-card}
-[🛒 Amazon Cart]{.fg-card-title}
-
-{{RESOURCE_DESCRIPTION}}
-
-[Share-A-Cart]({{RESOURCE_URL}}){.fg-btn-outline}
-:::
-<!-- ======== COPY END: one resource card ========== -->
-
-:::
-
-<!-- ########## SECTION END: Lesson Materials ########## -->
-
-
 <!-- ###################################################################
      SECTION START: Lesson Prep
      A checklist, then numbered prep steps.
@@ -421,8 +425,6 @@ A printable version of the slides with space for student notes.
 <!-- ======== COPY START: one prep step ======== -->
 ::: {.fg-step}
 #### {{STEP_TITLE}} {.unnumbered}
-
-[⏱ {{TIME_NEEDED}} · 📅 {{WHEN_TO_DO_IT}}]{.fg-step-meta}
 
 {{WHAT_TO_DO_AND_WHY}}
 
@@ -459,8 +461,6 @@ A printable version of the slides with space for student notes.
 <!-- ======== COPY START: one prep step ======== -->
 ::: {.fg-step}
 #### {{STEP_TITLE}} {.unnumbered}
-
-[⏱ {{TIME_NEEDED}} · 📅 {{WHEN_TO_DO_IT}}]{.fg-step-meta}
 
 {{WHAT_TO_DO_AND_WHY}}
 
@@ -575,8 +575,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- ###################################################################
      SECTION START: Lesson Flow
      A timeline of the class period. Each segment has:
-       time="..."    when it starts, e.g. 0:00 or 9:15
-       length="..."  how long, e.g. 10 min
+       time="..."    about how long it takes, e.g. 10 min
        group="..."   one of: Whole class, Direct instruction, Groups,
                      Coding, Individual  (each gets its own color)
      Type between the quote marks only.
@@ -588,35 +587,35 @@ document.addEventListener("DOMContentLoaded", () => {
 ::: {.fg-timeline}
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="0:00" group="Whole class"}
+::: {.fg-segment time="30 min" group="Whole class"}
 **{{SEGMENT_TITLE}}**
 {{WHAT_HAPPENS}}
 :::
 <!-- ======== COPY END: one timeline segment ========== -->
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="0:10" group="Direct instruction"}
+::: {.fg-segment time="10 min" group="Direct instruction"}
 **{{SEGMENT_TITLE}}**
 {{WHAT_HAPPENS}}
 :::
 <!-- ======== COPY END: one timeline segment ========== -->
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="0:25" group="Groups"}
+::: {.fg-segment time="20 min" group="Groups"}
 **{{SEGMENT_TITLE}}**
 {{WHAT_HAPPENS}}
 :::
 <!-- ======== COPY END: one timeline segment ========== -->
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="0:45" group="Coding"}
+::: {.fg-segment time="25 min" group="Coding"}
 **{{SEGMENT_TITLE}}**
 {{WHAT_HAPPENS}}
 :::
 <!-- ======== COPY END: one timeline segment ========== -->
 
 <!-- ======== COPY START: one timeline segment ======== -->
-::: {.fg-segment time="1:10" group="Individual"}
+::: {.fg-segment time="5 min" group="Individual"}
 **Exit Ticket**
 {{WHAT_HAPPENS}}
 :::
@@ -676,9 +675,14 @@ document.addEventListener("DOMContentLoaded", () => {
   padding: 0.5rem 1rem;
 }
 
+/* Other fold-out boxes (.fg-fold) reuse this look */
+.fg-flow-accordion > .fg-fold-body { padding: 0.75rem 1rem; }
+.fg-flow-accordion > .fg-fold-body > :last-child { margin-bottom: 0; }
+
 /* Heading sized like the "Prior Knowledge & Vocabulary" box header;
    stays an h2 so it still appears in "On this page" */
-.fg-flow-accordion > summary > h2 {
+.fg-flow-accordion > summary > h2,
+.fg-flow-accordion > summary > .fg-fold-title {
   margin: 0;
   padding: 0;
   border: none;
@@ -737,8 +741,9 @@ document.addEventListener("DOMContentLoaded", () => {
 ::: {.fg-grid-2}
 
 <!-- ======== COPY START: one link card ======== -->
-::: {.fg-card .fg-linklist}
-[Whole-Class Videos]({{HANDOUT_COPY_URL}}){.fg-card-header}
+<!-- #whole-class-videos lets other parts of the page link here: [text](#whole-class-videos) -->
+::: {.fg-card .fg-linklist #whole-class-videos}
+[Whole-Class Videos]{.fg-card-header}
 
 - [{{VIDEO_TITLE}}]({{VIDEO_URL}}) [EdPuzzle]{.fg-tag .fg-tag-valley}
 - [{{VIDEO_TITLE}}]({{VIDEO_URL}}) [YouTube]{.fg-tag .fg-tag-torch}
@@ -1206,6 +1211,8 @@ Questions or feedback on this lesson? Contact [aaic [at] utk [dot] edu]{.fg-emai
   .fg-card > ul:last-child { margin-bottom: 0; }
   .fg-card > p:first-child { margin-bottom: 0.25rem; }
   .fg-card, .fg-stat { overflow-wrap: anywhere; }
+  /* Cards with an id (link targets) stop below the fixed navbar when jumped to */
+  .fg-card[id] { scroll-margin-top: 5rem; }
   .fg-stat { padding: 0.6rem 0.75rem; }
   .fg-stat p { margin-bottom: 0.15rem; }
   .fg-card-title {
@@ -1288,7 +1295,7 @@ Questions or feedback on this lesson? Contact [aaic [at] utk [dot] edu]{.fg-emai
 
 
   /* Learning objectives: subject tags */
-  .fg-tag-ct        { background: var(--aaic-torch); }
+  .fg-tag-cs        { background: var(--aaic-torch); }
   .fg-tag-ds        { background: var(--aaic-valley); }
   .fg-tag-math      { background: var(--aaic-globe); }
   .fg-tag-science   { background: var(--aaic-river); }
@@ -1355,6 +1362,23 @@ document.addEventListener("DOMContentLoaded", () => {
       item.append(header, collapse);
       panel.replaceWith(item);
     });
+  });
+
+  // Fold-out boxes (.fg-fold), styled like the Estimated Lesson Timing box
+  document.querySelectorAll(".fg-fold").forEach((fold) => {
+    const details = document.createElement("details");
+    details.className = "fg-flow-accordion";
+    details.open = attr(fold, "open") === "true";
+    const summary = document.createElement("summary");
+    const title = document.createElement("span");
+    title.className = "fg-fold-title";
+    title.textContent = attr(fold, "label") || "Untitled box";
+    summary.appendChild(title);
+    const body = document.createElement("div");
+    body.className = "fg-fold-body";
+    body.append(...fold.childNodes);
+    details.append(summary, body);
+    fold.replaceWith(details);
   });
 
   // Always-open boxes (.fg-box)

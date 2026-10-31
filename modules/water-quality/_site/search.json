@@ -5401,7 +5401,7 @@
     "href": "templates/facilitator-guide-template.html#learning-objectives",
     "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of the lesson, students will be able to:\n\n\nCT {{OBJECTIVE}}\nDS {{OBJECTIVE}}\n\n{{DETAIL}}\n{{DETAIL}}\n\nAgScience {{OBJECTIVE}}\n\n\n\n\n\n\n\nStudents should already know: {{PREREQUISITES}}\n\n\n\n\nTerm\nStudent-friendly definition\n\n\n\n\n{{TERM}}\n{{DEFINITION}}\n\n\n{{TERM}}\n{{DEFINITION}}\n\n\n{{TERM}}\n{{DEFINITION}}"
+    "text": "Learning Objectives\nBy the end of the lesson, students will be able to:\n\n\nCS {{OBJECTIVE}}\nDS {{OBJECTIVE}}\n\n{{DETAIL}}\n{{DETAIL}}\n\nAgScience {{OBJECTIVE}}\n\n\n\n\n\n\nStudents should already know: {{PREREQUISITES}}\n\n\n\n\nTerm\nStudent-friendly definition\n\n\n\n\n{{TERM}}\n{{DEFINITION}}\n\n\n{{TERM}}\n{{DEFINITION}}\n\n\n{{TERM}}\n{{DEFINITION}}"
   },
   {
     "objectID": "templates/facilitator-guide-template.html#lesson-topics-and-standards",
@@ -5422,14 +5422,14 @@
     "href": "templates/facilitator-guide-template.html#lesson-materials",
     "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
     "section": "Lesson Materials",
-    "text": "Lesson Materials\n\n\n\n🖥️ Slide Deck\nThe slides you’ll present during the lesson.\nOpen slides\n\n\n\n\n📄 Student Handout\nOpens a “Make a copy” prompt so you get your own editable version.\nMake a copy\n\n\n\n\n📝 Note-Taking Slides\nA printable version of the slides with space for student notes.\nDownload PDF\n\n\n\n\n✅ Exit Ticket\n{{EXIT_TICKET_DESCRIPTION}}\nCopy Google Form\n\n\n\n\n🧑‍💻 Practice Exercise\n{{PRACTICE_DESCRIPTION}}\nOpen in Colab\n\n\n\n\n🛒 Amazon Cart\n{{RESOURCE_DESCRIPTION}}\nShare-A-Cart"
+    "text": "Lesson Materials\n\n\n\n🖥️ Slide Deck\nThe slides you’ll present during the lesson.\nOpen slides\n\n\n\n\n\n📄 Student Handout\nOpens a “Make a copy” prompt so you get your own editable version.\nMake a copy\n\n\n\n\n📝 Note-Taking Slides\nA printable version of the slides with space for student notes.\nDownload PDF\n\n\n\n\n\n✅ Exit Ticket\n{{EXIT_TICKET_DESCRIPTION}}\nCopy Google Form\n\n\n\n\n\n🧑‍💻 Practice Exercise\n{{PRACTICE_DESCRIPTION}}\nOpen in Colab\n\n\n\n\n🛒 Amazon Cart\n{{RESOURCE_DESCRIPTION}}\nShare-A-Cart"
   },
   {
     "objectID": "templates/facilitator-guide-template.html#lesson-prep",
     "href": "templates/facilitator-guide-template.html#lesson-prep",
     "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
     "section": "Lesson Prep",
-    "text": "Lesson Prep\n\n\n\n\n\n\nTipPrep checklist\n\n\n\n\n(This list is built automatically from the step titles below.)\n\n\n\n\n\n\n{{STEP_TITLE}}\n⏱ {{TIME_NEEDED}} · 📅 {{WHEN_TO_DO_IT}}\n{{WHAT_TO_DO_AND_WHY}}\nMaterials needed:\n\n{{MATERIAL}}\n{{MATERIAL}}\n\n{{NOTE_ABOUT_THIS_MATERIAL}}\n\n{{MATERIAL}}\n\n\n\n\n\n\n\n\nImportant{{DETAIL_BOX_TITLE}}\n\n\n\n\n\n{{ASSUMPTIONS — e.g., written for 5 groups × 4 samples}}\n\n\n\n{{COLUMN}}\n{{COLUMN}}\n{{COLUMN}}\n\n\n\n\n{{VALUE}}\n{{VALUE}}\n{{VALUE}}\n\n\n{{VALUE}}\n{{VALUE}}\n{{VALUE}}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\n{{WARNING_TEXT}}\n\n\n\n\n\n\n\n{{STEP_TITLE}}\n⏱ {{TIME_NEEDED}} · 📅 {{WHEN_TO_DO_IT}}\n{{WHAT_TO_DO_AND_WHY}}\n\nWalk through each step in the slides: ▶ Open the step-by-step slides \n\n\n\n\n\n\n\nNote\n\n\n\nTeaching more than one class? {{MULTI_CLASS_NOTE}}"
+    "text": "Lesson Prep\n\n\n\n\n\n\nTipPrep checklist\n\n\n\n\n(This list is built automatically from the step titles below.)\n\n\n\n\n\n\n{{STEP_TITLE}}\n{{WHAT_TO_DO_AND_WHY}}\nMaterials needed:\n\n{{MATERIAL}}\n{{MATERIAL}}\n\n{{NOTE_ABOUT_THIS_MATERIAL}}\n\n{{MATERIAL}}\n\n\n\n\n\n\n\n\nImportant{{DETAIL_BOX_TITLE}}\n\n\n\n\n\n{{ASSUMPTIONS — e.g., written for 5 groups × 4 samples}}\n\n\n\n{{COLUMN}}\n{{COLUMN}}\n{{COLUMN}}\n\n\n\n\n{{VALUE}}\n{{VALUE}}\n{{VALUE}}\n\n\n{{VALUE}}\n{{VALUE}}\n{{VALUE}}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\n{{WARNING_TEXT}}\n\n\n\n\n\n\n\n{{STEP_TITLE}}\n{{WHAT_TO_DO_AND_WHY}}\n\nWalk through each step in the slides: ▶ Open the step-by-step slides \n\n\n\n\n\n\n\nNote\n\n\n\nTeaching more than one class? {{MULTI_CLASS_NOTE}}"
   },
   {
     "objectID": "templates/facilitator-guide-template.html#lesson-flow",
@@ -5443,14 +5443,14 @@
     "href": "templates/facilitator-guide-template.html#facilitation-notes",
     "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
     "section": "Facilitation Notes",
-    "text": "Facilitation Notes\n\nSlide Deck with Facilitator Notes: For an in-depth walkthrough, see the slides with visible facilitator notes.\n\n\n❓ Discussion Questions🔀 Differentiation🛠 Troubleshooting\n\n\n\n{{QUESTION}}\n{{QUESTION}}\n{{QUESTION}} \n\n\n\n\nExtra support: {{SUPPORT_STRATEGY}}\nExtension: {{EXTENSION_STRATEGY}}\nIf you’re short on time: {{WHAT_TO_CUT}}\n\n\n\n\n\n\n\n\n\n\n\nCaution{{PROBLEM}}\n\n\n\n\n\n{{FIX}}\n\n\n\n\n\n\n\n\n\n\n\nCaution{{PROBLEM}}\n\n\n\n\n\n{{FIX}}"
+    "text": "Facilitation Notes\n\n🖥️ Slide Deck with Notes❓ Discussion Questions🔀 Differentiation🛠 Troubleshooting\n\n\nFor an in-depth walkthrough, see the slides with visible facilitator notes. \n\n\n\n\n\n\n\n\n\n\n{{QUESTION}}\n{{QUESTION}}\n{{QUESTION}} \n\n\n\n\nExtra support: {{SUPPORT_STRATEGY}}\nExtension: {{EXTENSION_STRATEGY}}\nIf you’re short on time: {{WHAT_TO_CUT}}\n\n\n\n\n\n\n\n\n\n\n\nCaution{{PROBLEM}}\n\n\n\n\n\n{{FIX}}\n\n\n\n\n\n\n\n\n\n\n\nCaution{{PROBLEM}}\n\n\n\n\n\n{{FIX}}"
   },
   {
     "objectID": "templates/facilitator-guide-template.html#reference-materials",
     "href": "templates/facilitator-guide-template.html#reference-materials",
     "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
     "section": "Reference Materials",
-    "text": "Reference Materials\n\n\n\nWhole-Class Videos\n\n{{VIDEO_TITLE}} EdPuzzle\n{{VIDEO_TITLE}} YouTube\n{{VIDEO_TITLE}} YouTube\n\n\n\n\n\nOther Useful Materials\n\n{{READING_TITLE}} {{WHY_ITS_USEFUL}}\n{{READING_TITLE}} {{WHY_ITS_USEFUL}}\n\n\n\n\n\n\n\n\n\nQuestions or feedback on this lesson? Contact aaic [at] utk [dot] edu"
+    "text": "Reference Materials\n\n\n\n\nWhole-Class Videos\n\n{{VIDEO_TITLE}} EdPuzzle\n{{VIDEO_TITLE}} YouTube\n{{VIDEO_TITLE}} YouTube\n\n\n\n\n\nOther Useful Materials\n\n{{READING_TITLE}} {{WHY_ITS_USEFUL}}\n{{READING_TITLE}} {{WHY_ITS_USEFUL}}\n\n\n\n\n\n\n\n\n\nQuestions or feedback on this lesson? Contact aaic [at] utk [dot] edu"
   },
   {
     "objectID": "templates/educative-features-guide.html",

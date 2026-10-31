@@ -161,8 +161,8 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#lesson-topics-and-standards" id="toc-lesson-topics-and-standards" class="nav-link" data-scroll-target="#lesson-topics-and-standards">Lesson Topics and Standards</a></li>
-  <li><a href="#facilitation-notes" id="toc-facilitation-notes" class="nav-link" data-scroll-target="#facilitation-notes">Facilitation Notes</a></li>
   <li><a href="#lesson-materials" id="toc-lesson-materials" class="nav-link" data-scroll-target="#lesson-materials">Lesson Materials</a></li>
+  <li><a href="#facilitation-notes" id="toc-facilitation-notes" class="nav-link" data-scroll-target="#facilitation-notes">Facilitation Notes</a></li>
   <li><a href="#lesson-prep" id="toc-lesson-prep" class="nav-link" data-scroll-target="#lesson-prep">Lesson Prep</a></li>
   <li><a href="#estimated-lesson-timing" id="toc-estimated-lesson-timing" class="nav-link" data-scroll-target="#estimated-lesson-timing">Estimated Lesson Timing</a></li>
   <li><a href="#reference-materials" id="toc-reference-materials" class="nav-link" data-scroll-target="#reference-materials">Reference Materials</a></li>
@@ -250,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 <p>By the end of the lesson, students will be able to:</p>
 <div class="fg-objectives">
 <ul>
-<li><span class="fg-tag fg-tag-ct">CT</span> {{OBJECTIVE}}</li>
+<li><span class="fg-tag fg-tag-cs">CS</span> {{OBJECTIVE}}</li>
 <li><span class="fg-tag fg-tag-ds">DS</span> {{OBJECTIVE}}
 <ul>
 <li>{{DETAIL}}</li>
@@ -268,13 +268,14 @@ ul.task-list li input[type="checkbox"] {
        leave it off and all panels start closed.
      - To add a panel: copy one panel (COPY START to COPY END) and
        paste it right below another panel's COPY END line.
-     - The "Prior Knowledge & Vocabulary" box below the panels is
-       always open. It sits outside the panel group on purpose.
+     - "Prior Knowledge & Vocabulary" (right below this note) is its
+       own separate fold-out box, so opening it doesn't close the others.
      ################################################################### -->
-<!-- ======== COPY START: one open box ======== -->
-<!-- Looks like a panel but is always open (it does not collapse).
+<!-- Prior Knowledge & Vocabulary: a fold-out box on its own, styled
+     like the Estimated Lesson Timing box. It starts closed; add
+     open="true" after the label to make it start open.
      The box title is the text inside label="...". -->
-<div class="fg-box" data-label="Prior Knowledge &amp; Vocabulary">
+<div class="fg-fold" data-label="Prior Knowledge &amp; Vocabulary">
 <p><strong>Students should already know:</strong> {{PREREQUISITES}}</p>
 <!-- Table: each row is one line starting with |
      To add a row, copy a {{TERM}} line and paste it below. -->
@@ -301,7 +302,6 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </div>
-<!-- ======== COPY END: one open box ========== -->
 </section>
 <section id="lesson-topics-and-standards" class="level2">
 <h2 class="anchored" data-anchor-id="lesson-topics-and-standards">Lesson Topics and Standards</h2>
@@ -347,7 +347,7 @@ ul.task-list li input[type="checkbox"] {
      SECTION START: Learning Objectives
      A bulleted list. Each objective starts with a colored tag that
      shows its subject area. Copy the tag you need from this list:
-       [CT]{.fg-tag .fg-tag-ct}                 Computational Thinking
+       [CS]{.fg-tag .fg-tag-cs}                 Computer Science
        [DS]{.fg-tag .fg-tag-ds}                 Data Science
        [Math]{.fg-tag .fg-tag-math}             Math
        [Science]{.fg-tag .fg-tag-science}       Science
@@ -372,16 +372,89 @@ ul.task-list li input[type="checkbox"] {
 
  -->
 <!-- ########## SECTION END: Lesson Overview Video Tour ########## -->
+<!-- 
+###################################################################
+     SECTION START: Lesson Materials
+     One card per resource, each with a short description and a button.
+     - The button text goes inside [ ], the link inside ( ).
+     - .fg-btn = solid button, .fg-btn-outline = outlined button.
+     ###################################################################  -->
+</section>
+<section id="lesson-materials" class="level2">
+<h2 class="anchored" data-anchor-id="lesson-materials">Lesson Materials</h2>
+<div class="fg-grid-3">
+<!-- ======== COPY START: one resource card ======== -->
+<div class="fg-card">
+<p><span class="fg-card-title">🖥️ Slide Deck</span></p>
+<p>The slides you’ll present during the lesson.</p>
+<p><a href="{{SLIDES_URL}}" class="fg-btn">Open slides</a></p>
+</div>
+<!-- ======== COPY END: one resource card ========== -->
+<!-- ======== COPY START: one resource card ======== -->
+<!-- #student-handout lets other parts of the page link here: [text](#student-handout) -->
+<div id="student-handout" class="fg-card">
+<p><span class="fg-card-title">📄 Student Handout</span></p>
+<p>Opens a “Make a copy” prompt so you get your own editable version.</p>
+<p><a href="{{HANDOUT_COPY_URL}}" class="fg-btn">Make a copy</a></p>
+</div>
+<!-- ======== COPY END: one resource card ========== -->
+<!-- ======== COPY START: one resource card ======== -->
+<div class="fg-card">
+<p><span class="fg-card-title">📝 Note-Taking Slides</span></p>
+<p>A printable version of the slides with space for student notes.</p>
+<p><a href="{{NOTES_HANDOUT_PDF_URL}}" class="fg-btn-outline">Download PDF</a></p>
+</div>
+<!-- ======== COPY END: one resource card ========== -->
+<!-- ======== COPY START: one resource card ======== -->
+<!-- #exit-ticket lets other parts of the page link here: [text](#exit-ticket) -->
+<div id="exit-ticket" class="fg-card">
+<p><span class="fg-card-title">✅ Exit Ticket</span></p>
+<p>{{EXIT_TICKET_DESCRIPTION}}</p>
+<p><a href="{{EXIT_TICKET_COPY_URL}}" class="fg-btn-outline">Copy Google Form</a></p>
+</div>
+<!-- ======== COPY END: one resource card ========== -->
+<!-- ======== COPY START: one resource card ======== -->
+<!-- #practice-exercise lets other parts of the page link here: [text](#practice-exercise) -->
+<div id="practice-exercise" class="fg-card">
+<p><span class="fg-card-title">🧑‍💻 Practice Exercise</span></p>
+<p>{{PRACTICE_DESCRIPTION}}</p>
+<p><a href="{{PRACTICE_URL}}" class="fg-btn-outline">Open in Colab</a></p>
+</div>
+<!-- ======== COPY END: one resource card ========== -->
+<!-- ======== COPY START: one resource card ======== -->
+<div class="fg-card">
+<p><span class="fg-card-title">🛒 Amazon Cart</span></p>
+<p>{{RESOURCE_DESCRIPTION}}</p>
+<p><a href="{{RESOURCE_URL}}" class="fg-btn-outline">Share-A-Cart</a></p>
+</div>
+<!-- ======== COPY END: one resource card ========== -->
+</div>
+<!-- ########## SECTION END: Lesson Materials ########## -->
 </section>
 <section id="facilitation-notes" class="level2">
 <h2 class="anchored" data-anchor-id="facilitation-notes">Facilitation Notes</h2>
-<div class="ltblue-container">
-<p><strong>Slide Deck with Facilitator Notes:</strong> For an in-depth walkthrough, see the <a href="{{FACILITATOR_NOTES_URL}}">slides with visible facilitator notes</a>.</p>
-</div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">❓ Discussion Questions</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">🔀 Differentiation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">🛠 Troubleshooting</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">🖥️ Slide Deck with Notes</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">❓ Discussion Questions</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">🔀 Differentiation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">🛠 Troubleshooting</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>For an in-depth walkthrough, see the <a href="{{FACILITATOR_NOTES_URL}}">slides with visible facilitator notes</a>. <!-- ======== COPY END: one tab ========== --></p>
+<!-- ======== COPY START: one tab ======== -->
+<!-- ### 💡 Tips
+
+- {{TIP}}
+- {{TIP}} -->
+<!-- ======== COPY END: one tab ========== -->
+<!-- ======== COPY START: one tab ======== -->
+<!-- ### ⚠️ Common Misconceptions
+
+| Students may think... | Address it by... |
+|---|---|
+| {{MISCONCEPTION}} | {{STRATEGY}} |
+| {{MISCONCEPTION}} | {{STRATEGY}} | -->
+<!-- ======== COPY END: one tab ========== -->
+<!-- ======== COPY START: one tab ======== -->
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <ol type="1">
 <li>{{QUESTION}}</li>
 <li>{{QUESTION}}</li>
@@ -389,14 +462,14 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <!-- ======== COPY START: one tab ======== -->
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p><strong>Extra support:</strong> {{SUPPORT_STRATEGY}}</p>
 <p><strong>Extension:</strong> {{EXTENSION_STRATEGY}}</p>
 <p><strong>If you’re short on time:</strong> {{WHAT_TO_CUT}}</p>
 <!-- ======== COPY END: one tab ========== -->
 <!-- ======== COPY START: one tab ======== -->
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <!-- ======== COPY START: one problem + fix ======== -->
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -438,61 +511,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <!-- ########## SECTION END: Facilitation Notes ########## -->
-<!-- 
-###################################################################
-     SECTION START: Lesson Materials
-     One card per resource, each with a short description and a button.
-     - The button text goes inside [ ], the link inside ( ).
-     - .fg-btn = solid button, .fg-btn-outline = outlined button.
-     ###################################################################  -->
-</section>
-<section id="lesson-materials" class="level2">
-<h2 class="anchored" data-anchor-id="lesson-materials">Lesson Materials</h2>
-<div class="fg-grid-3">
-<!-- ======== COPY START: one resource card ======== -->
-<div class="fg-card">
-<p><span class="fg-card-title">🖥️ Slide Deck</span></p>
-<p>The slides you’ll present during the lesson.</p>
-<p><a href="{{SLIDES_URL}}" class="fg-btn">Open slides</a></p>
-</div>
-<!-- ======== COPY END: one resource card ========== -->
-<!-- ======== COPY START: one resource card ======== -->
-<div class="fg-card">
-<p><a href="{{HANDOUT_COPY_URL}}" class="fg-card-title">📄 Student Handout</a></p>
-<p>Opens a “Make a copy” prompt so you get your own editable version.</p>
-<p><a href="{{HANDOUT_COPY_URL}}" class="fg-btn">Make a copy</a></p>
-</div>
-<!-- ======== COPY END: one resource card ========== -->
-<!-- ======== COPY START: one resource card ======== -->
-<div class="fg-card">
-<p><span class="fg-card-title">📝 Note-Taking Slides</span></p>
-<p>A printable version of the slides with space for student notes.</p>
-<p><a href="{{NOTES_HANDOUT_PDF_URL}}" class="fg-btn-outline">Download PDF</a></p>
-</div>
-<!-- ======== COPY END: one resource card ========== -->
-<!-- ======== COPY START: one resource card ======== -->
-<div class="fg-card">
-<p><a href="{{HANDOUT_COPY_URL}}" class="fg-card-title">✅ Exit Ticket</a></p>
-<p>{{EXIT_TICKET_DESCRIPTION}}</p>
-<p><a href="{{EXIT_TICKET_COPY_URL}}" class="fg-btn-outline">Copy Google Form</a></p>
-</div>
-<!-- ======== COPY END: one resource card ========== -->
-<!-- ======== COPY START: one resource card ======== -->
-<div class="fg-card">
-<p><a href="{{HANDOUT_COPY_URL}}" class="fg-card-title">🧑‍💻 Practice Exercise</a></p>
-<p>{{PRACTICE_DESCRIPTION}}</p>
-<p><a href="{{PRACTICE_URL}}" class="fg-btn-outline">Open in Colab</a></p>
-</div>
-<!-- ======== COPY END: one resource card ========== -->
-<!-- ======== COPY START: one resource card ======== -->
-<div class="fg-card">
-<p><span class="fg-card-title">🛒 Amazon Cart</span></p>
-<p>{{RESOURCE_DESCRIPTION}}</p>
-<p><a href="{{RESOURCE_URL}}" class="fg-btn-outline">Share-A-Cart</a></p>
-</div>
-<!-- ======== COPY END: one resource card ========== -->
-</div>
-<!-- ########## SECTION END: Lesson Materials ########## -->
 <!-- ###################################################################
      SECTION START: Lesson Prep
      A checklist, then numbered prep steps.
@@ -522,7 +540,6 @@ ul.task-list li input[type="checkbox"] {
 <!-- ======== COPY START: one prep step ======== -->
 <section id="step_title" class="level4 unnumbered fg-step">
 <h4 class="unnumbered anchored" data-anchor-id="step_title">{{STEP_TITLE}}</h4>
-<p><span class="fg-step-meta">⏱ {{TIME_NEEDED}} · 📅 {{WHEN_TO_DO_IT}}</span></p>
 <p>{{WHAT_TO_DO_AND_WHY}}</p>
 <p><strong>Materials needed:</strong></p>
 <ul>
@@ -594,7 +611,6 @@ Warning
 <!-- ======== COPY START: one prep step ======== -->
 <section id="step_title-1" class="level4 unnumbered fg-step">
 <h4 class="unnumbered anchored" data-anchor-id="step_title-1">{{STEP_TITLE}}</h4>
-<p><span class="fg-step-meta">⏱ {{TIME_NEEDED}} · 📅 {{WHEN_TO_DO_IT}}</span></p>
 <p>{{WHAT_TO_DO_AND_WHY}}</p>
 <!-- ---- OPTIONAL: link to step-by-step slides (e.g., Google Slides
           with screenshots of each step). Put the link inside ( ).
@@ -706,8 +722,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- ###################################################################
      SECTION START: Lesson Flow
      A timeline of the class period. Each segment has:
-       time="..."    when it starts, e.g. 0:00 or 9:15
-       length="..."  how long, e.g. 10 min
+       time="..."    about how long it takes, e.g. 10 min
        group="..."   one of: Whole class, Direct instruction, Groups,
                      Coding, Individual  (each gets its own color)
      Type between the quote marks only.
@@ -717,27 +732,27 @@ document.addEventListener("DOMContentLoaded", () => {
 <h2 class="anchored" data-anchor-id="estimated-lesson-timing">Estimated Lesson Timing</h2>
 <div class="fg-timeline">
 <!-- ======== COPY START: one timeline segment ======== -->
-<div class="fg-segment" data-time="0:00" data-group="Whole class">
+<div class="fg-segment" data-time="30 min" data-group="Whole class">
 <p><strong>{{SEGMENT_TITLE}}</strong> {{WHAT_HAPPENS}}</p>
 </div>
 <!-- ======== COPY END: one timeline segment ========== -->
 <!-- ======== COPY START: one timeline segment ======== -->
-<div class="fg-segment" data-time="0:10" data-group="Direct instruction">
+<div class="fg-segment" data-time="10 min" data-group="Direct instruction">
 <p><strong>{{SEGMENT_TITLE}}</strong> {{WHAT_HAPPENS}}</p>
 </div>
 <!-- ======== COPY END: one timeline segment ========== -->
 <!-- ======== COPY START: one timeline segment ======== -->
-<div class="fg-segment" data-time="0:25" data-group="Groups">
+<div class="fg-segment" data-time="20 min" data-group="Groups">
 <p><strong>{{SEGMENT_TITLE}}</strong> {{WHAT_HAPPENS}}</p>
 </div>
 <!-- ======== COPY END: one timeline segment ========== -->
 <!-- ======== COPY START: one timeline segment ======== -->
-<div class="fg-segment" data-time="0:45" data-group="Coding">
+<div class="fg-segment" data-time="25 min" data-group="Coding">
 <p><strong>{{SEGMENT_TITLE}}</strong> {{WHAT_HAPPENS}}</p>
 </div>
 <!-- ======== COPY END: one timeline segment ========== -->
 <!-- ======== COPY START: one timeline segment ======== -->
-<div class="fg-segment" data-time="1:10" data-group="Individual">
+<div class="fg-segment" data-time="5 min" data-group="Individual">
 <p><strong>Exit Ticket</strong> {{WHAT_HAPPENS}}</p>
 </div>
 <!-- ======== COPY END: one timeline segment ========== -->
@@ -793,9 +808,14 @@ document.addEventListener("DOMContentLoaded", () => {
   padding: 0.5rem 1rem;
 }
 
+/* Other fold-out boxes (.fg-fold) reuse this look */
+.fg-flow-accordion > .fg-fold-body { padding: 0.75rem 1rem; }
+.fg-flow-accordion > .fg-fold-body > :last-child { margin-bottom: 0; }
+
 /* Heading sized like the "Prior Knowledge & Vocabulary" box header;
    stays an h2 so it still appears in "On this page" */
-.fg-flow-accordion > summary > h2 {
+.fg-flow-accordion > summary > h2,
+.fg-flow-accordion > summary > .fg-fold-title {
   margin: 0;
   padding: 0;
   border: none;
@@ -846,8 +866,9 @@ document.addEventListener("DOMContentLoaded", () => {
 <h2 class="anchored" data-anchor-id="reference-materials">Reference Materials</h2>
 <div class="fg-grid-2">
 <!-- ======== COPY START: one link card ======== -->
-<div class="fg-card fg-linklist">
-<p><a href="{{HANDOUT_COPY_URL}}" class="fg-card-header">Whole-Class Videos</a></p>
+<!-- #whole-class-videos lets other parts of the page link here: [text](#whole-class-videos) -->
+<div id="whole-class-videos" class="fg-card fg-linklist">
+<p><span class="fg-card-header">Whole-Class Videos</span></p>
 <ul>
 <li><a href="{{VIDEO_URL}}">{{VIDEO_TITLE}}</a> <span class="fg-tag fg-tag-valley">EdPuzzle</span></li>
 <li><a href="{{VIDEO_URL}}">{{VIDEO_TITLE}}</a> <span class="fg-tag fg-tag-torch">YouTube</span></li>
@@ -1305,6 +1326,8 @@ document.addEventListener("DOMContentLoaded", () => {
   .fg-card > ul:last-child { margin-bottom: 0; }
   .fg-card > p:first-child { margin-bottom: 0.25rem; }
   .fg-card, .fg-stat { overflow-wrap: anywhere; }
+  /* Cards with an id (link targets) stop below the fixed navbar when jumped to */
+  .fg-card[id] { scroll-margin-top: 5rem; }
   .fg-stat { padding: 0.6rem 0.75rem; }
   .fg-stat p { margin-bottom: 0.15rem; }
   .fg-card-title {
@@ -1387,7 +1410,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /* Learning objectives: subject tags */
-  .fg-tag-ct        { background: var(--aaic-torch); }
+  .fg-tag-cs        { background: var(--aaic-torch); }
   .fg-tag-ds        { background: var(--aaic-valley); }
   .fg-tag-math      { background: var(--aaic-globe); }
   .fg-tag-science   { background: var(--aaic-river); }
@@ -1454,6 +1477,23 @@ document.addEventListener("DOMContentLoaded", () => {
       item.append(header, collapse);
       panel.replaceWith(item);
     });
+  });
+
+  // Fold-out boxes (.fg-fold), styled like the Estimated Lesson Timing box
+  document.querySelectorAll(".fg-fold").forEach((fold) => {
+    const details = document.createElement("details");
+    details.className = "fg-flow-accordion";
+    details.open = attr(fold, "open") === "true";
+    const summary = document.createElement("summary");
+    const title = document.createElement("span");
+    title.className = "fg-fold-title";
+    title.textContent = attr(fold, "label") || "Untitled box";
+    summary.appendChild(title);
+    const body = document.createElement("div");
+    body.className = "fg-fold-body";
+    body.append(...fold.childNodes);
+    details.append(summary, body);
+    fold.replaceWith(details);
   });
 
   // Always-open boxes (.fg-box)
