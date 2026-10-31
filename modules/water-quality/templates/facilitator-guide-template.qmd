@@ -418,6 +418,14 @@ Walk through each step in the slides: [▶ Open the step-by-step slides]({{STEP_
 ```{=html}
 <style>
 /* Lesson Prep accordion only */
+.fg-steps > .fg-step img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0.75rem auto;
+}
+
 .fg-steps > .fg-step > details > summary {
   cursor: pointer;
   list-style: none;
@@ -1173,6 +1181,7 @@ Questions or feedback on this lesson? Contact [aaic [at] utk [dot] edu]{.fg-emai
   }
   .fg-timeline > .fg-segment:last-child { border-bottom: none; }
   .fg-segment-body p { margin: 0; }
+  .fg-segment-tags { display: block; margin-top: 0.3rem; }
   .fg-segment-body strong:first-child { display: block; font-family: var(--fg-heading-font); margin-bottom: 0.15rem; }
 
   .fg-carousel .fg-caption p { margin: 0; }
@@ -1345,13 +1354,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const group = attr(seg, "group");
     if (group) {
       const target = body.querySelector(":scope > p") || body;
+      const tagRow = document.createElement("span");
+      tagRow.className = "fg-segment-tags";
       group.split(",").map((g) => g.trim()).filter(Boolean).forEach((g) => {
         const tag = document.createElement("span");
         const color = groupColors[g.toLowerCase()];
         tag.className = "fg-tag" + (color ? " fg-tag-" + color : "");
         tag.textContent = g;
-        target.append(" ", tag);
+        tagRow.append(tag, " ");
       });
+      target.append(tagRow);
     }
     seg.replaceChildren(time, body);
   });
