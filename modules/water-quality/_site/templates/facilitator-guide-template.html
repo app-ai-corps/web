@@ -159,8 +159,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#lesson-topics-and-standards" id="toc-lesson-topics-and-standards" class="nav-link" data-scroll-target="#lesson-topics-and-standards">Lesson Topics and Standards</a></li>
+  <li><a href="#lesson-objectives-and-standards" id="toc-lesson-objectives-and-standards" class="nav-link active" data-scroll-target="#lesson-objectives-and-standards">Lesson Objectives and Standards</a></li>
   <li><a href="#lesson-materials" id="toc-lesson-materials" class="nav-link" data-scroll-target="#lesson-materials">Lesson Materials</a></li>
   <li><a href="#facilitation-notes" id="toc-facilitation-notes" class="nav-link" data-scroll-target="#facilitation-notes">Facilitation Notes</a></li>
   <li><a href="#lesson-prep" id="toc-lesson-prep" class="nav-link" data-scroll-target="#lesson-prep">Lesson Prep</a></li>
@@ -245,8 +244,35 @@ ul.task-list li input[type="checkbox"] {
 <!-- ======== COPY END: one at-a-glance card ========== -->
 </div>
 <!-- ########## SECTION END: At-a-Glance Cards ########## -->
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<!-- ###################################################################
+     SECTION START: Lesson Topics and Standards
+     Expandable panels. Each panel opens when clicked.
+     - The panel title is the text inside label="...".
+     - open="true" makes a panel start open. Use it on one panel at most;
+       leave it off and all panels start closed.
+     - To add a panel: copy one panel (COPY START to COPY END) and
+       paste it right below another panel's COPY END line.
+     - "Prior Knowledge & Vocabulary" (right below this note) is its
+       own separate fold-out box, so opening it doesn't close the others.
+     ################################################################### -->
+<section id="lesson-objectives-and-standards" class="level2">
+<h2 class="anchored" data-anchor-id="lesson-objectives-and-standards">Lesson Objectives and Standards</h2>
+<div class="fg-accordion">
+<div class="fg-panel" data-label="Learning Objectives" open="true">
+<!-- Learning Objectives (always the first panel; it starts open).
+     A bulleted list. Each objective starts with a colored tag that
+     shows its subject area. Copy the tag you need from this list:
+       [CS]{.fg-tag .fg-tag-cs}                 Computer Science
+       [DS]{.fg-tag .fg-tag-ds}                 Data Science
+       [Math]{.fg-tag .fg-tag-math}             Math
+       [Science]{.fg-tag .fg-tag-science}       Science
+       [AgScience]{.fg-tag .fg-tag-agscience}   Agricultural Science
+     - To add an objective: copy one line that starts with - and
+       paste it on the next line. Then change the tag if needed.
+     - An objective can have more than one tag. Put them side by side.
+     - To add detail under an objective, start a new line with two
+       spaces before the dash (see the example below).
+     -->
 <p>By the end of the lesson, students will be able to:</p>
 <div class="fg-objectives">
 <ul>
@@ -259,53 +285,7 @@ ul.task-list li input[type="checkbox"] {
 <li><span class="fg-tag fg-tag-agscience">AgScience</span> {{OBJECTIVE}}</li>
 </ul>
 </div>
-<!-- ########## SECTION END: Learning Objectives ########## -->
-<!-- ###################################################################
-     SECTION START: Lesson Topics and Standards
-     Expandable panels. Each panel opens when clicked.
-     - The panel title is the text inside label="...".
-     - open="true" makes a panel start open. Use it on one panel at most;
-       leave it off and all panels start closed.
-     - To add a panel: copy one panel (COPY START to COPY END) and
-       paste it right below another panel's COPY END line.
-     - "Prior Knowledge & Vocabulary" (right below this note) is its
-       own separate fold-out box, so opening it doesn't close the others.
-     ################################################################### -->
-<!-- Prior Knowledge & Vocabulary: a fold-out box on its own, styled
-     like the Estimated Lesson Timing box. It starts closed; add
-     open="true" after the label to make it start open.
-     The box title is the text inside label="...". -->
-<div class="fg-fold" data-label="Prior Knowledge &amp; Vocabulary">
-<p><strong>Students should already know:</strong> {{PREREQUISITES}}</p>
-<!-- Table: each row is one line starting with |
-     To add a row, copy a {{TERM}} line and paste it below. -->
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Term</th>
-<th>Student-friendly definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>{{TERM}}</td>
-<td>{{DEFINITION}}</td>
-</tr>
-<tr class="even">
-<td>{{TERM}}</td>
-<td>{{DEFINITION}}</td>
-</tr>
-<tr class="odd">
-<td>{{TERM}}</td>
-<td>{{DEFINITION}}</td>
-</tr>
-</tbody>
-</table>
 </div>
-</section>
-<section id="lesson-topics-and-standards" class="level2">
-<h2 class="anchored" data-anchor-id="lesson-topics-and-standards">Lesson Topics and Standards</h2>
-<div class="fg-accordion">
 <!-- ======== COPY START: one expandable panel ======== -->
 <div class="fg-panel" data-label="TN AgriScience Standards">
 <!-- One topic per line. To indent a subtopic, start the line with
@@ -342,22 +322,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <!-- ======== COPY END: one expandable panel ========== -->
 </div>
+<!-- Prior Knowledge & Vocabulary: a fold-out box on its own, styled
+     like the Estimated Lesson Timing box. It starts closed; add
+     open="true" after the label to make it start open.
+     The box title is the text inside label="...". -->
+<div class="fg-fold" data-label="Prior Knowledge &amp; Vocabulary">
+<p><strong>Students should already know:</strong> {{PREREQUISITES}}</p>
+<!-- Table: each row is one line starting with |
+     To add a row, copy a {{TERM}} line and paste it below. -->
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Student-friendly definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>{{TERM}}</td>
+<td>{{DEFINITION}}</td>
+</tr>
+<tr class="even">
+<td>{{TERM}}</td>
+<td>{{DEFINITION}}</td>
+</tr>
+<tr class="odd">
+<td>{{TERM}}</td>
+<td>{{DEFINITION}}</td>
+</tr>
+</tbody>
+</table>
+</div>
 <!-- ########## SECTION END: Lesson Topics and Standards ########## -->
-<!-- ###################################################################
-     SECTION START: Learning Objectives
-     A bulleted list. Each objective starts with a colored tag that
-     shows its subject area. Copy the tag you need from this list:
-       [CS]{.fg-tag .fg-tag-cs}                 Computer Science
-       [DS]{.fg-tag .fg-tag-ds}                 Data Science
-       [Math]{.fg-tag .fg-tag-math}             Math
-       [Science]{.fg-tag .fg-tag-science}       Science
-       [AgScience]{.fg-tag .fg-tag-agscience}   Agricultural Science
-     - To add an objective: copy one line that starts with - and
-       paste it on the next line. Then change the tag if needed.
-     - An objective can have more than one tag. Put them side by side.
-     - To add detail under an objective, start a new line with two
-       spaces before the dash (see the example below).
-     ################################################################### -->
 <!-- ###################################################################
      SECTION START: Lesson Overview Video Tour
      VIDEO: on the line just below the heading that contains

@@ -5408,7 +5408,7 @@
     "href": "templates/facilitator-guide-template.html#lesson-topics-and-standards",
     "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
     "section": "Lesson Topics and Standards",
-    "text": "Lesson Topics and Standards\n\n\n\n\n\n{{TOPIC}}\n\n{{SUBTOPIC}}\n{{SUBTOPIC}}\n\n{{TOPIC}}\n{{TOPIC}}\n\n\n\n\n\n\n\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n\n\n\n\n\n\n\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}"
+    "text": "Lesson Topics and Standards\n\n\n\nBy the end of the lesson, students will be able to:\n\n\nCS {{OBJECTIVE}}\nDS {{OBJECTIVE}}\n\n{{DETAIL}}\n{{DETAIL}}\n\nAgScience {{OBJECTIVE}}\n\n\n\n\n\n\n\n{{TOPIC}}\n\n{{SUBTOPIC}}\n{{SUBTOPIC}}\n\n{{TOPIC}}\n{{TOPIC}}\n\n\n\n\n\n\n\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n\n\n\n\n\n\n\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}"
   },
   {
     "objectID": "templates/facilitator-guide-template.html#lesson-overview-video-tour",
@@ -5549,5 +5549,12 @@
     "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
     "section": "Estimated Lesson Timing",
     "text": "Estimated Lesson Timing\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\n{{SEGMENT_TITLE}} {{WHAT_HAPPENS}}\n\n\n\n\nExit Ticket {{WHAT_HAPPENS}}"
+  },
+  {
+    "objectID": "templates/facilitator-guide-template.html#lesson-objectives-and-standards",
+    "href": "templates/facilitator-guide-template.html#lesson-objectives-and-standards",
+    "title": "Facilitator’s Guide:{{LESSON_TITLE}}",
+    "section": "Lesson Objectives and Standards",
+    "text": "Lesson Objectives and Standards\n\n\n\nBy the end of the lesson, students will be able to:\n\n\nCS {{OBJECTIVE}}\nDS {{OBJECTIVE}}\n\n{{DETAIL}}\n{{DETAIL}}\n\nAgScience {{OBJECTIVE}}\n\n\n\n\n\n\n\n{{TOPIC}}\n\n{{SUBTOPIC}}\n{{SUBTOPIC}}\n\n{{TOPIC}}\n{{TOPIC}}\n\n\n\n\n\n\n\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n\n\n\n\n\n\n\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n{{STANDARD_CODE}}: {{STANDARD_TEXT}}\n\n\n\n\n\n\nStudents should already know: {{PREREQUISITES}}\n\n\n\n\nTerm\nStudent-friendly definition\n\n\n\n\n{{TERM}}\n{{DEFINITION}}\n\n\n{{TERM}}\n{{DEFINITION}}\n\n\n{{TERM}}\n{{DEFINITION}}"
   }
 ]

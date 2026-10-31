@@ -139,19 +139,6 @@ format:
 <!-- ########## SECTION END: At-a-Glance Cards ########## -->
 
 
-## Learning Objectives
-
-By the end of the lesson, students will be able to:
-
-::: {.fg-objectives}
-- [CS]{.fg-tag .fg-tag-cs} {{OBJECTIVE}}
-- [DS]{.fg-tag .fg-tag-ds} {{OBJECTIVE}}
-  - {{DETAIL}}
-  - {{DETAIL}}
-- [AgScience]{.fg-tag .fg-tag-agscience} {{OBJECTIVE}}
-:::
-<!-- ########## SECTION END: Learning Objectives ########## -->
-
 <!-- ###################################################################
      SECTION START: Lesson Topics and Standards
      Expandable panels. Each panel opens when clicked.
@@ -164,27 +151,36 @@ By the end of the lesson, students will be able to:
        own separate fold-out box, so opening it doesn't close the others.
      ################################################################### -->
 
-<!-- Prior Knowledge & Vocabulary: a fold-out box on its own, styled
-     like the Estimated Lesson Timing box. It starts closed; add
-     open="true" after the label to make it start open.
-     The box title is the text inside label="...". -->
-::: {.fg-fold label="Prior Knowledge & Vocabulary"}
-**Students should already know:** {{PREREQUISITES}}
 
-<!-- Table: each row is one line starting with |
-     To add a row, copy a {{TERM}} line and paste it below. -->
-
-| Term | Student-friendly definition |
-|------|-----------------------------|
-| {{TERM}} | {{DEFINITION}} |
-| {{TERM}} | {{DEFINITION}} |
-| {{TERM}} | {{DEFINITION}} |
-
-:::
-
-## Lesson Topics and Standards
+## Lesson Objectives and Standards
 
 ::: {.fg-accordion}
+
+::: {.fg-panel label="Learning Objectives" open="true"}
+<!-- Learning Objectives (always the first panel; it starts open).
+     A bulleted list. Each objective starts with a colored tag that
+     shows its subject area. Copy the tag you need from this list:
+       [CS]{.fg-tag .fg-tag-cs}                 Computer Science
+       [DS]{.fg-tag .fg-tag-ds}                 Data Science
+       [Math]{.fg-tag .fg-tag-math}             Math
+       [Science]{.fg-tag .fg-tag-science}       Science
+       [AgScience]{.fg-tag .fg-tag-agscience}   Agricultural Science
+     - To add an objective: copy one line that starts with - and
+       paste it on the next line. Then change the tag if needed.
+     - An objective can have more than one tag. Put them side by side.
+     - To add detail under an objective, start a new line with two
+       spaces before the dash (see the example below).
+     -->
+By the end of the lesson, students will be able to:
+
+::: {.fg-objectives}
+- [CS]{.fg-tag .fg-tag-cs} {{OBJECTIVE}}
+- [DS]{.fg-tag .fg-tag-ds} {{OBJECTIVE}}
+  - {{DETAIL}}
+  - {{DETAIL}}
+- [AgScience]{.fg-tag .fg-tag-agscience} {{OBJECTIVE}}
+:::
+:::
 
 <!-- ======== COPY START: one expandable panel ======== -->
 ::: {.fg-panel label="TN AgriScience Standards"}
@@ -218,24 +214,26 @@ By the end of the lesson, students will be able to:
 
 :::
 
+<!-- Prior Knowledge & Vocabulary: a fold-out box on its own, styled
+     like the Estimated Lesson Timing box. It starts closed; add
+     open="true" after the label to make it start open.
+     The box title is the text inside label="...". -->
+::: {.fg-fold label="Prior Knowledge & Vocabulary"}
+**Students should already know:** {{PREREQUISITES}}
+
+<!-- Table: each row is one line starting with |
+     To add a row, copy a {{TERM}} line and paste it below. -->
+
+| Term | Student-friendly definition |
+|------|-----------------------------|
+| {{TERM}} | {{DEFINITION}} |
+| {{TERM}} | {{DEFINITION}} |
+| {{TERM}} | {{DEFINITION}} |
+
+:::
+
 <!-- ########## SECTION END: Lesson Topics and Standards ########## -->
 
-
-<!-- ###################################################################
-     SECTION START: Learning Objectives
-     A bulleted list. Each objective starts with a colored tag that
-     shows its subject area. Copy the tag you need from this list:
-       [CS]{.fg-tag .fg-tag-cs}                 Computer Science
-       [DS]{.fg-tag .fg-tag-ds}                 Data Science
-       [Math]{.fg-tag .fg-tag-math}             Math
-       [Science]{.fg-tag .fg-tag-science}       Science
-       [AgScience]{.fg-tag .fg-tag-agscience}   Agricultural Science
-     - To add an objective: copy one line that starts with - and
-       paste it on the next line. Then change the tag if needed.
-     - An objective can have more than one tag. Put them side by side.
-     - To add detail under an objective, start a new line with two
-       spaces before the dash (see the example below).
-     ################################################################### -->
 
 <!-- ###################################################################
      SECTION START: Lesson Overview Video Tour
