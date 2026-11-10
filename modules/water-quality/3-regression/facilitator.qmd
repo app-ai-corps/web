@@ -231,8 +231,6 @@ By the end of the lesson, students will be able to:
 
 - Learned about bivariate linear regression within their mathematics classes.
 
-[Additional Resources on These Topics](#additional-background-resources){.fg-btn}
-
 <!-- Table: each row is one line starting with |
      To add a row, copy a {{TERM}} line and paste it below. -->
 
@@ -243,6 +241,8 @@ By the end of the lesson, students will be able to:
 | Scatterplot | A graph that uses dots to show the relationship between two sets of data. Each dot represents one pair of values. |
 | Independent Variable | The variable you change or control in an experiment. It goes on the x-axis (horizontal). |
 | Dependent Variable | The variable you measure to see how it responds to changes in the independent variable. It goes on the y-axis (vertical) and “depends” on the other variable. |
+
+[Additional Resources on These Topics](#additional-background-resources){.fg-btn}
 
 :::
 

@@ -191,8 +191,6 @@ By the end of the lesson, students will be able to:
 ::: {.fg-fold label="Prior Knowledge & Vocabulary"}
 **This lesson assumes that students have already:** {{PREREQUISITES}}
 
-[Additional Resources on These Topics](#additional-background-resources){.fg-btn}
-
 <!-- Table: each row is one line starting with |
      To add a row, copy a {{TERM}} line and paste it below. -->
 
@@ -201,6 +199,8 @@ By the end of the lesson, students will be able to:
 | {{TERM}} | {{DEFINITION}} |
 | {{TERM}} | {{DEFINITION}} |
 | {{TERM}} | {{DEFINITION}} |
+
+[Additional Resources on These Topics](#additional-background-resources){.fg-btn}
 
 :::
 
