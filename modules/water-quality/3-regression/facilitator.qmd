@@ -231,6 +231,8 @@ By the end of the lesson, students will be able to:
 
 - Learned about bivariate linear regression within their mathematics classes.
 
+[Additional Resources on These Topics](#additional-background-resources){.fg-btn}
+
 <!-- Table: each row is one line starting with |
      To add a row, copy a {{TERM}} line and paste it below. -->
 
@@ -864,11 +866,10 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- ======== COPY END: one link card ========== -->
 
 <!-- ======== COPY START: one link card ======== -->
-::: {.fg-card .fg-linklist}
+::: {.fg-card .fg-linklist #additional-background-resources}
 [Other Useful Materials]{.fg-card-header}
 
-- [{{READING_TITLE}}]({{READING_URL}}) [{{WHY_ITS_USEFUL}}]{.fg-link-note}
-- [{{READING_TITLE}}]({{READING_URL}}) [{{WHY_ITS_USEFUL}}]{.fg-link-note}
+- [Introduction to Linear Regression](https://youtu.be/0T0z8d0_aY4?si=ssH5kEhashqLMX7t) [Provides broad overview/intuition about how linear regression works]{.fg-link-note}
 :::
 <!-- ======== COPY END: one link card ========== -->
 

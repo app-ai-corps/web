@@ -191,6 +191,8 @@ By the end of the lesson, students will be able to:
 ::: {.fg-fold label="Prior Knowledge & Vocabulary"}
 **This lesson assumes that students have already:** {{PREREQUISITES}}
 
+[Additional Resources on These Topics](#additional-background-resources){.fg-btn}
+
 <!-- Table: each row is one line starting with |
      To add a row, copy a {{TERM}} line and paste it below. -->
 
@@ -703,7 +705,7 @@ document.addEventListener("DOMContentLoaded", () => {
 - [{{VIDEO_TITLE}}]({{VIDEO_URL}}) [YouTube]{.fg-tag .fg-tag-torch}
 :::
 
-::: {.fg-card .fg-linklist}
+::: {.fg-card .fg-linklist #additional-background-resources}
 [Other Useful Materials]{.fg-card-header}
 
 - [{{READING_TITLE}}]({{READING_URL}}) [{{WHY_ITS_USEFUL}}]{.fg-link-note}
