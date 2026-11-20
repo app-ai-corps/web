@@ -35,7 +35,7 @@ A series of lessons using AI to explore and monitor Appalachian water resources.
 ::: {.lesson-outline}
 
 ::: {.guest-notice .hidden}
-Click each **lesson title** to access the corresponding learning module. Below each lesson, you'll also find links to the **Slides & Facilitator Guide**, which include slide decks, handouts, and other resources to support classroom instruction.
+Click each **lesson title** to access the corresponding student learning module. Below each lesson, you'll also find links to the **slides & facilitator guide**, which include slide decks, handouts, and other resources to support classroom instruction.
 :::
 
 
