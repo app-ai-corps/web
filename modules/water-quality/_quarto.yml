@@ -7,6 +7,8 @@ project:
     - "RGB-Applet-3.html"
     - "1-statistics/facilitator-video-overview.mp4"
     - "6-careers/images/tomatoes/"
+  post-render:
+    - templates/fix-pptx-code.py
 
 website:
   title: ""

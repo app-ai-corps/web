@@ -44,7 +44,7 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install jupyter nbformat nbclient ipykernel pandas numpy matplotlib
+          pip install jupyter nbformat nbclient ipykernel pandas numpy matplotlib python-pptx
       
       - name: Render Quarto Project
         run: |
